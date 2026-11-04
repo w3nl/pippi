@@ -148,3 +148,8 @@ button.chip:hover{border-color:var(--amber);color:var(--amber)}
 .overlay .version{position:absolute;right:12px;bottom:8px;font-family:var(--f-mono);font-size:11px;color:var(--muted);opacity:.7}
 .update-bar{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:30;display:flex;gap:12px;align-items:center;max-width:calc(100vw - 32px);
   padding:10px 14px;background:var(--panel);border:1px solid var(--amber);border-radius:6px;font-size:14px;box-shadow:0 8px 30px rgba(0,0,0,.5)}
+/* motion in the interface: a new item pops into your pockets, the end screen's title bounces in */
+@keyframes slotpop{0%{transform:scale(.4)}60%{transform:scale(1.15)}100%{transform:scale(1)}}
+.slot.pop{animation:slotpop .45s ease-out}
+@keyframes titlein{0%{transform:translateY(20px) scale(.9);opacity:0}70%{transform:translateY(-4px) scale(1.03);opacity:1}100%{transform:none}}
+#win:not([hidden]) h2{animation:titlein .6s ease-out}

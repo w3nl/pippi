@@ -36,6 +36,7 @@ function applyBedroom(){
   show('#br-ontop', !!S.f.out2);
   show('#br-zzz', !S.f.out2);
   $('#br-talight').setAttribute('fill', S.f.sos ? '#fff3c4' : '#ffd27a');
+  $('#br-talight').classList.toggle('flashing', !!S.f.sos && !S.f.morse);   // Tommy flashes his answer
   document.querySelectorAll('#sc-bedroom [data-hs="vdoor"]').forEach(h => { h.dataset.label = S.f.out2 ? 'Veranda door' : S.f.torchOn && !S.f.scared ? 'Veranda door (someone is at the lock!)' : 'Veranda door'; h.setAttribute('aria-label', h.dataset.label); });
 }
 
