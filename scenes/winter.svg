@@ -461,10 +461,12 @@
             width="160" height="110" id="hit-horse4v" />
         <rect class="hit" fill="transparent" data-hs="horse4" data-label="The horse" x="186" y="610"
             width="320" height="120" id="hit-horse4g" />
-        <rect class="hit" fill="transparent" data-hs="steps4" data-label="Veranda steps" x="560"
-            y="560" width="110" height="84" />
         <rect class="hit" fill="transparent" data-hs="oak4" data-label="The old oak" x="530" y="230"
-            width="320" height="420" />
+            width="320" height="310" />
+        <rect class="hit" fill="transparent" data-hs="oak4" data-label="The old oak" x="672" y="540"
+            width="48" height="110" />
+        <rect class="hit" fill="transparent" data-hs="steps4" data-label="Veranda steps" x="556"
+            y="546" width="114" height="88" />
         <rect class="hit" fill="transparent" data-hs="snowman4" data-label="Snowman" x="900" y="508"
             width="112" height="200" />
         <rect class="hit" fill="transparent" data-hs="tracks4" data-label="Tracks in the snow"
