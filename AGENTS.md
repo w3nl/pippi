@@ -35,7 +35,7 @@ Context for AI agents and new contributors. The README covers what the game is a
 | `js/app.js` | Chapters (`LAST_CH`, `chapterDone`, `nextChapter`, `exitLabels`, `refreshMenu`), chapter end (`CH_END`, `showWin`), scores, ranks, achievements (`ACH`), buttons, timer, title menu, PWA install, `start()` |
 | `portraits/*.svg` | `you`, `pippi`, `nilsson`, `horse`, `spunk`, `tommy`, `annika`, `karlsson`, `bloom` (120×120) |
 | `sw.js`, `manifest.webmanifest`, `icons/` | The installable, offline app. `icon.svg` is the source; PNGs are rendered from it |
-| `tests/` | Playwright: `chapter1`, `chapter2`, `progress`, `language`, `pwa`, `phone`; helpers in `helpers.js`; `serve.js` is the local server |
+| `tests/` | Playwright: `chapter1`, `chapter2`, `progress`, `language`, `pwa`, `phone`, `motion` (also in Firefox in CI); helpers in `helpers.js`; `serve.js` is the local server |
 | `tools/i18n-check.js` | For every language in `lang/`: lists English text without a translation, fails on stale keys and conflicts (`--lang=sv` for one) |
 | `.github/` | CI (`tests.yml`) and the idea → plan → PR agent workflows (see `docs/agent-workflow.md`) |
 
@@ -101,7 +101,10 @@ Achievements: `spunk` (used the spunk), `egghead` (egg on your head), `ceiling` 
 Everything in the blueprint's "Lessons learned" applies. In particular:
 - `[hidden]{display:none!important}` in `base.css` must stay.
 - CSS class names are global; search `css/` first (`.chart`, `.hand`, `.secret`, `.wheel`, `.pstep`… are taken).
-- Use `reducedMotion()` in JS; the CSS kill-switch is the last rule in `animations.css`. The flags sway (`.sway`) and the fire flickers (`.flame`).
+- **Motion:** every moving part is a **CSS animation** (no SMIL), so the kill-switch (the last rule in `animations.css`) stops them all for "Motion off" and for devices that ask for reduced motion (unless the player picks "Motion on"). In JS, use `reducedMotion()`. Things that only exist while moving (the bird, the shooting star) start off-screen or invisible, so they disappear when motion is off. `tests/motion.spec.js` checks that nothing in either room moves with Motion off.
+  - Kitchen (`css/chapter1.css`): the flags sway, the fire flickers, steam rises from the pan once it's lit (`#vk-steam`), Mr Nilsson bobs and swishes his tail, the horse nods, the curtains move in the breeze, clouds drift and a bird flies past (inside the window's `vkWinClip`), Tommy and Annika wave at the gate, the spunk crawls about its jar.
+  - Bedroom (`css/chapter2.css`): stars twinkle, the moon glows, a shooting star now and then, the burglars sneak and their lantern flickers, the shadow at the door fiddles with the lock, Pippi and Mr Nilsson breathe in their sleep, Pippi snores (z z z), Tommy's window flashes (`.flashing`, after SOS until you decode it), and the burglars' legs dangle from the wardrobe.
+  - Interface (`css/base.css`): a new item pops into its pocket (`justGiven` in `core.js`), the end screen's title bounces in, portraits pop in.
 - Check new close-ups at 412×915 and 915×412 (`tests/phone.spec.js`), also with `PW_LANG=nl` and `PW_LANG=sv`.
 - **Bump `CACHE` in `sw.js` and `GAME_VERSION` in `js/boot.js` together** on every change, and list new files in `CORE`.
 - No `alert/confirm/prompt`. Buttons have `type="button"`.

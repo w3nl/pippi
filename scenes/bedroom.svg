@@ -8,6 +8,7 @@
     <radialGradient id="brLantern" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd27a" stop-opacity=".9"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></radialGradient>
     <radialGradient id="brBeam" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff3c4" stop-opacity=".4"/><stop offset="1" stop-color="#fff3c4" stop-opacity="0"/></radialGradient>
     <linearGradient id="brGold" x1="0" x2="1"><stop offset="0" stop-color="#c9952a"/><stop offset=".5" stop-color="#f3d27a"/><stop offset="1" stop-color="#b07f1f"/></linearGradient>
+    <clipPath id="brWinClip"><rect x="706" y="136" width="308" height="288"/></clipPath>
     <radialGradient id="brVign" cx=".5" cy=".45" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".7"/></radialGradient>
   </defs>
 
@@ -42,17 +43,19 @@
     <rect x="690" y="120" width="340" height="320" rx="8" fill="#e9e1cc"/>
     <rect x="706" y="136" width="308" height="288" fill="url(#brSky)"/>
     <g fill="#fff">
-      <circle cx="740" cy="170" r="2"/><circle cx="780" cy="152" r="1.5"/><circle cx="830" cy="186" r="2"/><circle cx="880" cy="160" r="1.6"/><circle cx="925" cy="176" r="2.2"/><circle cx="960" cy="150" r="1.4"/><circle cx="990" cy="196" r="1.8"/><circle cx="760" cy="230" r="1.4"/><circle cx="850" cy="240" r="1.6"/>
+      <circle class="tw" style="animation-delay:-0.7s" cx="740" cy="170" r="2"/><circle class="tw" style="animation-delay:-1.4s" cx="780" cy="152" r="1.5"/><circle class="tw" style="animation-delay:-2.1s" cx="830" cy="186" r="2"/><circle class="tw" style="animation-delay:-2.8s" cx="880" cy="160" r="1.6"/><circle class="tw" style="animation-delay:-0.5s" cx="925" cy="176" r="2.2"/><circle class="tw" style="animation-delay:-1.2s" cx="960" cy="150" r="1.4"/><circle class="tw" style="animation-delay:-1.9s" cx="990" cy="196" r="1.8"/><circle class="tw" style="animation-delay:-2.6s" cx="760" cy="230" r="1.4"/><circle class="tw" style="animation-delay:-0.3s" cx="850" cy="240" r="1.6"/>
     </g>
-    <circle cx="955" cy="215" r="44" fill="url(#brMoonG)"/>
+    <circle class="glow" cx="955" cy="215" r="44" fill="url(#brMoonG)"/>
+    <!-- a shooting star, now and then -->
+    <g clip-path="url(#brWinClip)"><path class="shoot" d="M760 150 l-60 26" stroke="#fff8e1" stroke-width="2.4" stroke-linecap="round"/></g>
     <circle cx="955" cy="215" r="20" fill="#fff6d6"/><circle cx="964" cy="209" r="17" fill="#121a3e"/>
     <path d="M706 340 q80-30 160-10 q80 20 148-8 v102 h-308z" fill="#13241a"/>
     <!-- Tommy and Annika's house, far away -->
     <g id="br-ta"><rect x="840" y="300" width="40" height="28" fill="#2a2a3a"/><path d="M836 300 l24-18 l24 18z" fill="#1a1a28"/><rect id="br-talight" x="854" y="308" width="10" height="9" fill="#4a4a5a"/></g>
     <g fill="#0b160f"><rect x="740" y="270" width="14" height="110"/><circle cx="748" cy="262" r="42"/><circle cx="722" cy="290" r="26"/><circle cx="776" cy="288" r="28"/></g>
     <!-- the burglars in the garden, with their lantern -->
-    <g id="br-thieves">
-      <circle cx="930" cy="372" r="34" fill="url(#brLantern)"/>
+    <g id="br-thieves" class="sneak">
+      <circle class="lglow" cx="930" cy="372" r="34" fill="url(#brLantern)"/>
       <g fill="#05070d"><circle cx="905" cy="350" r="9"/><path d="M893 395 q-4-30 12-38 q16 8 12 38z"/><rect x="896" y="340" width="18" height="5"/><circle cx="950" cy="356" r="7"/><path d="M941 395 q-2-24 9-32 q11 8 9 32z"/></g>
       <rect x="926" y="368" width="8" height="10" fill="#ffd27a"/>
     </g>
@@ -68,7 +71,7 @@
     <rect x="520" y="500" width="22" height="170" rx="6" fill="#8a4b22"/>
     <rect x="60" y="560" width="480" height="70" rx="8" fill="#a5602f" stroke="#4e2a12" stroke-width="4"/>
     <ellipse cx="140" cy="540" rx="74" ry="30" fill="#f3efe3"/>
-    <path d="M150 560 q40-50 120-48 q100 0 160-6 q30-40 70-30 q34 14 22 70 q4 20 -2 24 h-370z" fill="#e8571f"/>
+    <path class="breathe" d="M150 560 q40-50 120-48 q100 0 160-6 q30-40 70-30 q34 14 22 70 q4 20 -2 24 h-370z" fill="#e8571f"/>
     <g fill="#f2c94c" opacity=".7"><circle cx="300" cy="540" r="7"/><circle cx="380" cy="548" r="7"/><circle cx="460" cy="552" r="7"/><circle cx="340" cy="568" r="7"/><circle cx="420" cy="574" r="7"/></g>
     <!-- her feet on the pillow, in odd stockings -->
     <path d="M150 548 q-30-6-46-28 q-6-14 8-16 q20 6 42 30z" fill="#6b4423"/>
@@ -99,7 +102,7 @@
     <!-- Mr Nilsson's doll's bed -->
     <rect x="712" y="430" width="120" height="38" rx="6" fill="#f3efe3" stroke="#c9b48a" stroke-width="3"/>
     <rect x="712" y="420" width="12" height="48" rx="3" fill="#c9b48a"/>
-    <g id="br-nilsson"><circle cx="748" cy="432" r="14" fill="#6b4423"/><ellipse cx="750" cy="436" rx="9" ry="7" fill="#e6c49a"/><path d="M743 434 h5 M753 434 h5" stroke="#1a120c" stroke-width="2"/><path d="M760 440 q40-4 66 2 v20 h-66z" fill="#e8571f"/></g>
+    <g id="br-nilsson" class="breathe slow"><circle cx="748" cy="432" r="14" fill="#6b4423"/><ellipse cx="750" cy="436" rx="9" ry="7" fill="#e6c49a"/><path d="M743 434 h5 M753 434 h5" stroke="#1a120c" stroke-width="2"/><path d="M760 440 q40-4 66 2 v20 h-66z" fill="#e8571f"/></g>
     <!-- the scale -->
     <g id="br-scale"><rect x="926" y="420" width="10" height="50" fill="#c9952a"/><rect x="896" y="462" width="70" height="10" rx="3" fill="#c9952a"/><path d="M886 420 h90" stroke="#c9952a" stroke-width="5"/><path d="M886 420 l-12 22 h24z M976 420 l-12 22 h24z" fill="none" stroke="#c9952a" stroke-width="3"/><path d="M872 442 h28 M962 442 h28" stroke="#c9952a" stroke-width="5"/></g>
   </g>
@@ -117,7 +120,8 @@
     <g id="br-ontop" style="display:none">
       <g fill="#3a3a44"><circle cx="1180" cy="92" r="16"/><path d="M1160 140 q-2-34 20-40 q22 6 20 40z"/><rect x="1166" y="74" width="28" height="7" fill="#1a1a1a"/></g>
       <g fill="#4a4036"><circle cx="1262" cy="100" r="13"/><path d="M1246 140 q-2-28 16-34 q18 6 16 34z"/></g>
-      <path d="M1170 140 l-6 20 M1192 140 l4 20 M1254 140 l-4 20 M1272 140 l4 20" stroke="#2a2a2a" stroke-width="5"/>
+      <path class="dangle" d="M1170 140 l-6 20 M1192 140 l4 20" stroke="#2a2a2a" stroke-width="5"/>
+      <path class="dangle b" d="M1254 140 l-4 20 M1272 140 l4 20" stroke="#2a2a2a" stroke-width="5"/>
     </g>
   </g>
 
@@ -128,7 +132,7 @@
     <rect x="1414" y="226" width="114" height="150" rx="4" fill="#f3d79a" stroke="#265a2e" stroke-width="5"/>
     <rect id="br-curtain" x="1420" y="232" width="102" height="138" fill="#f6ead2" opacity=".85"/>
     <!-- a burglar's silhouette on the curtain, from their lantern outside -->
-    <g id="br-doorthief"><circle cx="1470" cy="276" r="18" fill="#2a2018" opacity=".55"/><path d="M1446 370 q-4-60 24-76 q28 16 24 76z" fill="#2a2018" opacity=".55"/></g>
+    <g id="br-doorthief" class="fiddle"><circle cx="1470" cy="276" r="18" fill="#2a2018" opacity=".55"/><path d="M1446 370 q-4-60 24-76 q28 16 24 76z" fill="#2a2018" opacity=".55"/></g>
     <!-- Mr Nilsson's giant shadow (after the shadow puzzle) -->
     <g id="br-giant" style="display:none" fill="#1a120c" opacity=".7"><circle cx="1471" cy="262" r="26"/><circle cx="1446" cy="252" r="10"/><circle cx="1496" cy="252" r="10"/><path d="M1436 370 q0-80 35-90 q35 10 35 90z"/><path d="M1440 300 l-20-40 M1502 300 l22-44" stroke="#1a120c" stroke-width="10" stroke-linecap="round"/></g>
     <circle cx="1406" cy="440" r="11" fill="url(#brGold)"/>

@@ -54,3 +54,25 @@
 @keyframes zz{0%{opacity:0;transform:translateY(6px)}40%{opacity:.9}100%{opacity:0;transform:translateY(-14px)}}
 #br-zzz .zz{animation:zz 3s ease-in-out infinite}
 #br-zzz .zz.b{animation-delay:-1s}
+
+/* ---------- the bedroom at night (all stopped by the Motion setting: see css/animations.css) ---------- */
+@keyframes tw{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes glow{0%,100%{opacity:.8}50%{opacity:1}}
+@keyframes shoot{0%,88%{transform:translate(0,0);opacity:0}89%{opacity:1}95%{transform:translate(-160px,70px);opacity:0}100%{transform:translate(-160px,70px);opacity:0}}
+@keyframes sneak{0%,100%{transform:translateX(0)}50%{transform:translateX(-14px)}}
+@keyframes lglow{0%,100%{opacity:.75;transform:scale(1)}40%{opacity:1;transform:scale(1.08)}70%{opacity:.85;transform:scale(.96)}}
+@keyframes fiddle{0%,100%{transform:translateX(0)}25%{transform:translateX(-2px)}75%{transform:translateX(2px)}}
+@keyframes breathe{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.05)}}
+@keyframes dangle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
+@keyframes tablink{0%,49%{fill:#fff3c4}50%,100%{fill:#4a4a5a}}
+#br-window .tw{animation:tw 3s ease-in-out infinite}
+#br-window .glow{animation:glow 5s ease-in-out infinite}
+.shoot{animation:shoot 17s linear infinite;opacity:0}
+#br-thieves.sneak{animation:sneak 7s ease-in-out infinite}
+.lglow{transform-box:fill-box;transform-origin:50% 50%;animation:lglow 1.3s ease-in-out infinite}
+#br-doorthief.fiddle{animation:fiddle .25s linear infinite}
+.breathe{transform-box:fill-box;transform-origin:50% 100%;animation:breathe 3.6s ease-in-out infinite}
+.breathe.slow{animation-duration:2.6s}
+.dangle{transform-box:fill-box;transform-origin:50% 0;animation:dangle 1.4s ease-in-out infinite}
+.dangle.b{animation-delay:-.7s}
+#br-talight.flashing{animation:tablink .9s steps(1,end) infinite}
