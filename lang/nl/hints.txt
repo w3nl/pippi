@@ -1,0 +1,37 @@
+# Dutch translation: the hints (js/hints.js).
+= Pippi's note on the table is written backwards. What in this kitchen shows everything the other way round?
+> Pippi's briefje op tafel is achterstevoren geschreven. Wat in deze keuken laat alles andersom zien?
+= Take the note, select it in your pockets, and use it on the mirror.
+> Pak het briefje, kies het in je zakken en gebruik het op de spiegel.
+= Pippi's note says the matches are in her secret drawer, and the code is the answers to her sums. Her exercise book is on the table, and Annika has left a sticky note in it.
+> Volgens Pippi's briefje liggen de lucifers in haar geheime la, en de code is de antwoorden van haar sommen. Haar schrift ligt op tafel, en Annika heeft er een briefje in geplakt.
+= 2 × 3 = 6, 9 − 4 = 5 and 8 ÷ 2 = 4. Turn the bureau's padlock to 6 5 4.
+> 2 × 3 = 6, 9 − 4 = 5 en 8 ÷ 2 = 4. Zet het hangslot van het ladekastje op 6 5 4.
+= The stove is cold. The enamel sign above it says the three things a fire needs.
+> Het fornuis is koud. Op het emaillen bordje erboven staan de drie dingen die een vuur nodig heeft.
+= Open the stove: put the firewood in, open the air vent, then strike a match.
+> Open het fornuis: doe het brandhout erin, zet de luchtschuif open en strijk dan een lucifer af.
+= Pancakes need eggs. Where does Pippi keep her food?
+> Voor pannenkoeken heb je eieren nodig. Waar bewaart Pippi haar eten?
+= Open the pantry cupboard and take the eggs.
+> Open de voorraadkast en pak de eieren.
+= The stove is hot and you have eggs. Make a pancake: each step can only happen after the steps it needs.
+> Het fornuis is heet en je hebt eieren. Bak een pannenkoek: elke stap kan pas na de stappen die hij nodig heeft.
+= Eggs into the bowl, milk and flour, whisk, butter in the pan, pour, flip. (Melting the butter can come earlier.)
+> Eieren in de kom, melk en bloem erbij, glad kloppen, boter in de pan, gieten, omdraaien. (De boter smelten mag ook eerder.)
+= Pippi's note said Mr Nilsson will swap the key for one thing only.
+> Volgens Pippi's briefje ruilt meneer Nilsson de sleutel maar voor één ding.
+= Select the pancake in your pockets and click Mr Nilsson on the bureau.
+> Kies de pannenkoek in je zakken en klik op meneer Nilsson op het ladekastje.
+= You have the front-door key.
+> Je hebt de voordeursleutel.
+= Select the key and use it on the front door.
+> Kies de sleutel en gebruik hem op de voordeur.
+= The horse is leaning on the door. Horses like sugar. The captain's sea chest has a letter lock, and the flags on the string over your head spell something.
+> Het paard leunt tegen de deur. Paarden houden van suiker. De scheepskist van de kapitein heeft een letterslot, en de vlaggetjes aan het touw boven je hoofd vormen een woord.
+= Use the flag chart by the mirror: the flags read S, P, U, N, K. Set the sea chest's lock to SPUNK.
+> Gebruik de vlaggenkaart bij de spiegel: de vlaggen zijn S, P, U, N, K. Zet het slot van de scheepskist op SPUNK.
+= You have sugar, and the horse is right outside the door. But how do you give a horse a treat safely?
+> Je hebt suiker, en het paard staat vlak voor de deur. Maar hoe geef je een paard veilig iets lekkers?
+= Select the sugar cubes, click the horse in the door's window, and choose the flat, open hand.
+> Kies de suikerklontjes, klik op het paard in het raampje van de deur en kies de platte, open hand.
