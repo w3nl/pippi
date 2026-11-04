@@ -16,6 +16,7 @@ function ambKey(){
     case 'bedroom': return 'bedroom' + (f.out2 ? '' : '+snore');
     case 'school': return 'school' + (f.out3 ? '' : '+horse');
     case 'circus': return 'circus' + (f.out4 ? '+show' : '');
+    case 'ship': return 'ship' + (!f.course ? '+harbour' : f.water && !f.equator ? '+night' : '+sailing');
   }
   return null;
 }
@@ -139,6 +140,15 @@ const SOUNDSCAPES = {
     every(1000, 1000, () => burst(m, .025, .018, 3200));
     every(5000, 11000, () => [0, 1, 2].forEach(i => later(i * 120, () => blip(m, 3000 + Math.random() * 800, .07, .01, 'sine', 2600))));
     if(mods.includes('horse')) every(6000, 12000, () => [0, 1, 2, 3].forEach(i => later(i * 260, () => burst(m, .12, .02, 500, 'bandpass'))));
+  },
+  // Chapter 5, the Hoppetossa: waves against the hull and creaking timbers; gulls in the harbour,
+  // wind in the sails at sea, and the ship's bell now and then at night.
+  ship(m, mods){
+    bed(m, { freq: 380, gain: .022, wobble: .8, rate: .12 });
+    every(4000, 9000, () => blip(m, 90 + Math.random() * 40, .5, .012, 'sawtooth', 70));
+    if(mods.includes('harbour')) every(5000, 11000, () => [0, 1, 2].forEach(i => later(i * 180, () => blip(m, 1500 + Math.random() * 300, .18, .012, 'sine', 1100))));
+    if(mods.includes('sailing')) bed(m, { type: 'bandpass', freq: 900, q: .5, gain: .012, wobble: .6, rate: .2 });
+    if(mods.includes('night')) every(9000, 16000, () => { blip(m, 1320, .9, .015, 'sine'); later(450, () => blip(m, 1320, .9, .015, 'sine')); });
   }
 };
 

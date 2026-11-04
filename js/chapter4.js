@@ -78,7 +78,7 @@ Object.assign(H, {
   trapeze(){ if(notInside4()) return; if(S.f.trapeze) return say("The two trapezes swing back and forth in perfect time. The flyers catch each other every single time."); openTrapeze(); },
   seal(){ say([['seal', "Ork! Ork!"], "A seal on a stool, balancing a ball on its nose. It's the only one in the circus who's ready for the show."]); },
   curtain(){
-    if(S.f.out4) return say("The curtain is wide open, and the show is on!");
+    if(S.f.out4) return startCh5();
     say(["The performers' curtain, heavy red velvet with gold fringes. Behind it, the horses are stamping and someone is warming up a trumpet.", "It opens with the winch on its right. But only when the show is ready."]);
   },
   winch(){

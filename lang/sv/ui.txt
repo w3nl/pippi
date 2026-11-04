@@ -293,8 +293,8 @@
 > Föreställning! · kapitel 4 klart
 = Bravo
 > Bravo
-= Pippi lifted the strongman, and the circus wants her to stay. Next: a ship sails into the harbour… Chapter 5 is still being written.
-> Pippi lyfte starke mannen, och cirkusen vill att hon stannar. Härnäst: ett skepp seglar in i hamnen… Kapitel 5 håller fortfarande på att skrivas.
+= Pippi lifted the strongman, and the circus wants her to stay. Next: a ship sails into the harbour, and her captain has a red beard…
+> Pippi lyfte starke mannen, och cirkusen vill att hon stannar. Härnäst: ett skepp seglar in i hamnen, och kaptenen har rött skägg…
 = Pippi goes to the circus
 > Pippi på cirkus
 = Chapter 4: Pippi goes to the circus
@@ -313,8 +313,42 @@
 > Tillbaka på cirkusen. Direktören väntar fortfarande på biljetter.
 = Take your time. School's out, and the classroom is all yours. Mr Nilsson is finishing the cake. When you're ready, the classroom door leads on to Chapter {n}.
 > Ta den tid du behöver. Skolan är slut, och klassrummet är ditt. Herr Nilsson äter upp tårtan. När du är redo leder klassrumsdörren vidare till kapitel {n}.
-= Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming.
-> Ta den tid du behöver. Föreställningen fortsätter: hästen travar fortfarande runt i manegen, och konfettin bara fortsätter att falla.
+= Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming. When you're ready, the curtain leads on to Chapter {n}.
+> Ta den tid du behöver. Föreställningen fortsätter: hästen travar fortfarande runt i manegen, och konfettin bara fortsätter att falla. När du är redo leder ridån vidare till kapitel {n}.
+
+# ---------- Chapter 5: menus, end screen, speakers ----------
+= Curtain: on to Chapter {n}
+> Ridå: vidare till kapitel {n}
+= Continue to Chapter 5
+> Vidare till kapitel 5
+= Land ho · Chapter 5 complete
+> Land i sikte · kapitel 5 klart
+= Land ho
+> Land i sikte
+= The Hoppetossa has reached Captain Longstocking's island. Next: life on a South Sea island. Chapter 6 is still being written.
+> Hoppetossa har kommit fram till kapten Långstrumps ö. Härnäst: livet på en ö i Söderhavet. Kapitel 6 håller fortfarande på att skrivas.
+= On board the Hoppetossa
+> Ombord på Hoppetossa
+= Chapter 5: On board the Hoppetossa
+> Kapitel 5: Ombord på Hoppetossa
+= Chapter 5 · On Board the Hoppetossa
+> Kapitel 5 · Ombord på Hoppetossa
+= Tasted the sea
+> Smakade på havet
+= A horse, very close up
+> En häst, alldeles nära
+= Met King Neptune
+> Träffade kung Neptunus
+= Back on board the Hoppetossa. The captain is humming at the wheel, and Mr Nilsson is looking for things to throw.
+> Tillbaka ombord på Hoppetossa. Kaptenen nynnar vid ratten, och Herr Nilsson letar efter saker att kasta.
+= Back at the harbour. The horse is still waiting on the quay.
+> Tillbaka i hamnen. Lilla Gubben väntar fortfarande på kajen.
+= Take your time. The Hoppetossa is anchored in the lagoon, the palm trees are swaying, and Pippi is already up a coconut tree.
+> Ta den tid du behöver. Hoppetossa ligger förankrad i lagunen, palmerna vajar, och Pippi sitter redan uppe i en kokospalm.
+= Captain Longstocking
+> Kapten Långstrump
+= The Hoppetossa
+> Hoppetossa
 = The ringmaster
 > Direktören
 = The clown

@@ -292,8 +292,8 @@
 > Voorstelling! · hoofdstuk 4 voltooid
 = Bravo
 > Bravo
-= Pippi lifted the strongman, and the circus wants her to stay. Next: a ship sails into the harbour… Chapter 5 is still being written.
-> Pippi heeft de sterke man opgetild, en het circus wil dat ze blijft. Straks: er vaart een schip de haven binnen… Aan hoofdstuk 5 wordt nog geschreven.
+= Pippi lifted the strongman, and the circus wants her to stay. Next: a ship sails into the harbour, and her captain has a red beard…
+> Pippi heeft de sterke man opgetild, en het circus wil dat ze blijft. Straks: er vaart een schip de haven binnen, en de kapitein heeft een rode baard…
 = Pippi goes to the circus
 > Pippi gaat naar het circus
 = Chapter 4: Pippi goes to the circus
@@ -312,8 +312,42 @@
 > Terug bij het circus. De directeur wacht nog steeds op kaartjes.
 = Take your time. School's out, and the classroom is all yours. Mr Nilsson is finishing the cake. When you're ready, the classroom door leads on to Chapter {n}.
 > Neem de tijd. De school is uit, en de klas is helemaal van jou. Meneer Nilsson eet de taart op. Als je klaar bent, gaat de deur van de klas verder naar hoofdstuk {n}.
-= Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming.
-> Neem de tijd. De voorstelling gaat door: het paard draaft nog steeds rondjes door de piste, en de confetti blijft vallen.
+= Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming. When you're ready, the curtain leads on to Chapter {n}.
+> Neem de tijd. De voorstelling gaat door: het paard draaft nog steeds rondjes door de piste, en de confetti blijft vallen. Als je klaar bent, gaat het gordijn verder naar hoofdstuk {n}.
+
+# ---------- Chapter 5: menus, end screen, speakers ----------
+= Curtain: on to Chapter {n}
+> Gordijn: door naar hoofdstuk {n}
+= Continue to Chapter 5
+> Door naar hoofdstuk 5
+= Land ho · Chapter 5 complete
+> Land in zicht · hoofdstuk 5 voltooid
+= Land ho
+> Land in zicht
+= The Hoppetossa has reached Captain Longstocking's island. Next: life on a South Sea island. Chapter 6 is still being written.
+> De Hoppetossa heeft het eiland van kapitein Langkous bereikt. Straks: het leven op een eiland in de Zuidzee. Aan hoofdstuk 6 wordt nog geschreven.
+= On board the Hoppetossa
+> Aan boord van de Hoppetossa
+= Chapter 5: On board the Hoppetossa
+> Hoofdstuk 5: Aan boord van de Hoppetossa
+= Chapter 5 · On Board the Hoppetossa
+> Hoofdstuk 5 · Aan boord van de Hoppetossa
+= Tasted the sea
+> De zee geproefd
+= A horse, very close up
+> Een paard, heel van dichtbij
+= Met King Neptune
+> Koning Neptunus ontmoet
+= Back on board the Hoppetossa. The captain is humming at the wheel, and Mr Nilsson is looking for things to throw.
+> Terug aan boord van de Hoppetossa. De kapitein neuriet aan het roer, en meneer Nilsson zoekt dingen om weg te gooien.
+= Back at the harbour. The horse is still waiting on the quay.
+> Terug in de haven. Het paard staat nog steeds te wachten op de kade.
+= Take your time. The Hoppetossa is anchored in the lagoon, the palm trees are swaying, and Pippi is already up a coconut tree.
+> Neem de tijd. De Hoppetossa ligt voor anker in de lagune, de palmbomen wiegen, en Pippi zit al in een kokospalm.
+= Captain Longstocking
+> Kapitein Langkous
+= The Hoppetossa
+> De Hoppetossa
 = The ringmaster
 > De directeur
 = The clown

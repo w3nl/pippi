@@ -129,3 +129,41 @@
 > Alles op het lijstje is klaar. De lier rechts van het gordijn trekt het open. Tandwielen die elkaar raken, draaien de andere kant op.
 = Put 2 gears in between: crank ↻, gear ↺, gear ↻, drum ↺. Then turn the crank.
 > Zet er 2 tandwielen tussen: slinger ↻, tandwiel ↺, tandwiel ↻, trommel ↺. Draai dan aan de slinger.
+
+# ---------- Chapter 5 ----------
+= Pippi won't sail without her horse. The cargo hoist on the stern has pulleys: the more ropes hold the horse up, the less each one has to carry.
+> Pippi vaart niet zonder haar paard. De laadtakel op het achterdek heeft katrollen: hoe meer touwen het paard dragen, hoe minder elk touw hoeft te houden.
+= Click the hoist and choose 4 ropes: 400 kg ÷ 4 = 100 kg each, just what the three of you can pull. Then heave.
+> Klik op de takel en kies 4 touwen: 400 kg ÷ 4 = 100 kg per touw, precies wat jullie met z'n drieën kunnen trekken. Hijs dan.
+= The captain wants a course for his island. His chart in the cabin shows which way to go, and the compass by the wheel shows which way the ship points.
+> De kapitein wil koers zetten naar zijn eiland. Zijn zeekaart in de hut laat zien welke kant je op moet, en het kompas bij het stuurwiel laat zien welke kant het schip op wijst.
+= On the chart the island is down and to the left: south-west. Turn the wheel until the ship points south-west, then set sail.
+> Op de kaart ligt het eiland linksonder: zuidwest. Draai aan het stuurwiel tot het schip naar het zuidwesten wijst, en zet dan zeil.
+= Mr Nilsson has thrown things overboard! You'll need something to fish them out with. Look in the hold.
+> Meneer Nilsson heeft dingen overboord gegooid! Je hebt iets nodig om ze op te vissen. Kijk in het ruim.
+= Take the fishing net from the hold, select it and use it on the sea.
+> Pak het visnet uit het ruim, kies het en gebruik het op de zee.
+= Which of Mr Nilsson's things float? It depends on what they're made of, not on how big or heavy they are.
+> Welke van meneer Nilssons dingen blijven drijven? Dat hangt af van waar ze van gemaakt zijn, niet van hoe groot of zwaar ze zijn.
+= The log, the apple and the cork float. The key, the coin and the marble sink.
+> Het blok hout, de appel en de kurk drijven. De sleutel, de munt en de knikker zinken.
+= The horse drank all the drinking water, and sea water is far too salty. The hot sun can turn sea water into fresh water.
+> Het paard heeft al het drinkwater opgedronken, en zeewater is veel te zout. De hete zon kan van zeewater zoet water maken.
+= Click the water barrel and choose: a bowl of sea water, an empty cup, a glass lid, a pebble above the cup, in the hot sun.
+> Klik op het watervat en kies: een kom zeewater, een leeg bekertje, een glazen deksel, een steentje boven het bekertje, in de hete zon.
+= It's night. Where are we? The captain measures the stars with his sextant: it's in the instrument box in his cabin.
+> Het is nacht. Waar zijn we? De kapitein meet de sterren met zijn sextant: die ligt in de instrumentenkist in zijn hut.
+= Take the sextant from the instrument box, select it and use it on the sky.
+> Pak de sextant uit de instrumentenkist, kies hem en gebruik hem op de lucht.
+= The captain's logbook shows how the North Star sank lower every night on his last voyage south.
+> In het logboek van de kapitein staat hoe de Poolster op zijn vorige reis naar het zuiden elke nacht lager zakte.
+= 0° on the horizon means the Equator. South of the Equator, the North Star sinks below the horizon.
+> 0° op de horizon betekent de evenaar. Ten zuiden van de evenaar zakt de Poolster onder de horizon.
+= Dawn, and something tiny on the horizon. To see far you need the captain's spyglass, and a high place.
+> Het wordt licht, en er is iets piepkleins aan de horizon. Om ver te kijken heb je de verrekijker van de kapitein nodig, en een hoge plek.
+= Take the spyglass from its hook by the wheel, then climb to the crow's nest.
+> Pak de verrekijker van zijn haak bij het stuurwiel en klim dan naar het kraaiennest.
+= From the crow's nest you can see the island, from the deck you can't. Think about the shape of the Earth.
+> Vanuit het kraaiennest zie je het eiland, vanaf het dek niet. Denk aan de vorm van de aarde.
+= Choose: the Earth is round, so from higher up you can see further over the bend of the sea.
+> Kies: de aarde is rond, dus van hoger kun je verder over de bocht van de zee heen kijken.

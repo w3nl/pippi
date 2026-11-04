@@ -129,3 +129,41 @@
 > Allt på checklistan är klart. Vinschen till höger om ridån drar upp den. Kugghjul som rör vid varandra snurrar åt motsatta håll.
 = Put 2 gears in between: crank ↻, gear ↺, gear ↻, drum ↺. Then turn the crank.
 > Sätt 2 kugghjul emellan: vev ↻, kugghjul ↺, kugghjul ↻, trumma ↺. Veva sedan.
+
+# ---------- Chapter 5 ----------
+= Pippi won't sail without her horse. The cargo hoist on the stern has pulleys: the more ropes hold the horse up, the less each one has to carry.
+> Pippi seglar inte utan sin häst. Lastvinschen på akterdäcket har block: ju fler rep som bär Lilla Gubben, desto mindre behöver varje rep hålla.
+= Click the hoist and choose 4 ropes: 400 kg ÷ 4 = 100 kg each, just what the three of you can pull. Then heave.
+> Klicka på vinschen och välj 4 rep: 400 kg ÷ 4 = 100 kg per rep, precis vad ni tre orkar dra. Hiva sedan.
+= The captain wants a course for his island. His chart in the cabin shows which way to go, and the compass by the wheel shows which way the ship points.
+> Kaptenen vill sätta kurs mot sin ö. Sjökortet i hytten visar vart man ska, och kompassen vid ratten visar åt vilket håll skeppet pekar.
+= On the chart the island is down and to the left: south-west. Turn the wheel until the ship points south-west, then set sail.
+> På sjökortet ligger ön nere till vänster: sydväst. Vrid på ratten tills skeppet pekar mot sydväst, och sätt sedan segel.
+= Mr Nilsson has thrown things overboard! You'll need something to fish them out with. Look in the hold.
+> Herr Nilsson har kastat saker överbord! Du behöver något att fiska upp dem med. Titta i lastrummet.
+= Take the fishing net from the hold, select it and use it on the sea.
+> Ta fiskenätet från lastrummet, välj det och använd det på havet.
+= Which of Mr Nilsson's things float? It depends on what they're made of, not on how big or heavy they are.
+> Vilka av Herr Nilssons saker flyter? Det beror på vad de är gjorda av, inte på hur stora eller tunga de är.
+= The log, the apple and the cork float. The key, the coin and the marble sink.
+> Stocken, äpplet och korken flyter. Nyckeln, myntet och kulan sjunker.
+= The horse drank all the drinking water, and sea water is far too salty. The hot sun can turn sea water into fresh water.
+> Lilla Gubben drack upp allt dricksvatten, och havsvatten är alldeles för salt. Den heta solen kan göra sötvatten av havsvatten.
+= Click the water barrel and choose: a bowl of sea water, an empty cup, a glass lid, a pebble above the cup, in the hot sun.
+> Klicka på vattentunnan och välj: en skål havsvatten, en tom kopp, ett glaslock, en sten ovanför koppen, i den heta solen.
+= It's night. Where are we? The captain measures the stars with his sextant: it's in the instrument box in his cabin.
+> Det är natt. Var är vi? Kaptenen mäter stjärnorna med sin sextant: den ligger i instrumentlådan i hans hytt.
+= Take the sextant from the instrument box, select it and use it on the sky.
+> Ta sextanten ur instrumentlådan, välj den och använd den på himlen.
+= The captain's logbook shows how the North Star sank lower every night on his last voyage south.
+> I kaptenens loggbok står det hur Polstjärnan sjönk lägre varje natt på hans förra resa söderut.
+= 0° on the horizon means the Equator. South of the Equator, the North Star sinks below the horizon.
+> 0° vid horisonten betyder ekvatorn. Söder om ekvatorn sjunker Polstjärnan under horisonten.
+= Dawn, and something tiny on the horizon. To see far you need the captain's spyglass, and a high place.
+> Gryning, och något pyttelitet vid horisonten. För att se långt behöver du kaptenens kikare, och ett högt ställe.
+= Take the spyglass from its hook by the wheel, then climb to the crow's nest.
+> Ta kikaren från kroken vid ratten och klättra sedan upp i utkiken.
+= From the crow's nest you can see the island, from the deck you can't. Think about the shape of the Earth.
+> Från utkiken ser du ön, från däcket gör du det inte. Tänk på jordens form.
+= Choose: the Earth is round, so from higher up you can see further over the bend of the sea.
+> Välj: jorden är rund, så högre upp kan man se längre över havets krökning.

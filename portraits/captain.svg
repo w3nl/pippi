@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><title>Captain Longstocking</title>
+  <rect width="120" height="120" rx="14" fill="#2a6a9a"/>
+  <path d="M12 120 q4-34 48-36 q44 2 48 36z" fill="#1f3f6a"/>
+  <g fill="#f2c94c"><circle cx="60" cy="100" r="3"/><circle cx="60" cy="112" r="3"/></g>
+  <path d="M24 98 l14 -8 M96 98 l-14 -8" stroke="#f2c94c" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="60" cy="56" rx="26" ry="28" fill="#e2b38c"/>
+  <path d="M34 58 Q34 96 60 100 Q86 96 86 58 Q76 76 60 76 Q44 76 34 58 Z" fill="#c4502b"/>
+  <path d="M44 70 q16 -10 32 0" stroke="#c4502b" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <circle cx="50" cy="54" r="3.4" fill="#1a120c"/><circle cx="70" cy="54" r="3.4" fill="#1a120c"/>
+  <path d="M43 46 q7 -5 14 0 M63 46 q7 -5 14 0" stroke="#c4502b" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="60" cy="62" r="4.5" fill="#d49a76"/>
+  <path d="M18 40 Q60 0 102 40 Q60 30 18 40 Z" fill="#1a1a1a" stroke="#f2c94c" stroke-width="3"/>
+  <circle cx="60" cy="24" r="5" fill="#f2c94c"/>
+</svg>

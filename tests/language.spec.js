@@ -121,6 +121,21 @@ test('Chapter 4 in Dutch and Swedish: the ringmaster, the ticket booth and the c
   }
 });
 
+test('Chapter 5 in Dutch and Swedish: the captain, the compass points and the chapter title', async ({ page }) => {
+  for (const [lang, chap, sw, label] of [['nl', 'Hoofdstuk 5 · Aan boord van de Hoppetossa', 'zuidwest', 'Kraaiennest'], ['sv', 'Kapitel 5 · Ombord på Hoppetossa', 'sydväst', 'Utkiken']]) {
+    await seed(page, { ch: 5, scene: 'ship', f: { introDone: true, aboard: true }, hd: { i: 5 } }, ['-ch2', '-ch3', '-ch4', '-ch5']);
+    await page.evaluate(([KEY, lang]) => localStorage.setItem(KEY + '-lang', lang), [KEY, lang]);
+    await page.reload();
+    await page.locator('#btn-cont').click();
+    await skip(page);
+    await expect(page.locator('#chap')).toHaveText(chap);
+    await expect(page.locator('#sc-ship [data-hs="crow"]')).toHaveAttribute('data-label', label);
+    await hs(page, 'wheel');
+    await expect(page.locator('#hp-heading')).toContainText(sw);
+    await page.locator('#m-close').click();
+  }
+});
+
 test('every Dutch and Swedish translation still matches the English text', () => {
   // Fails when English text changed without updating lang/nl (a stale key), or one text has two translations.
   const tool = path.join(__dirname, '..', 'tools', 'i18n-check.js');
