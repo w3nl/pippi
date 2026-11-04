@@ -76,5 +76,10 @@ function useItem(item, hs){
     if(hs==='plaque' || hs==='romans' || hs==='clock3') return say("Bigger letters. Still Roman.");
     return say("Everything looks bigger. It doesn't look any cleverer.");
   }
+  if(item==='tickets'){
+    if(hs!=='ringmaster') return say("Circus tickets are for showing to the ringmaster.");
+    take('tickets'); S.f.inside = true; save(); applyVisuals(); beep(700,.06);
+    return say([['ringmaster', "Four tickets, very good. Welcome to the circus!"], ['ringmaster', "But oh dear, oh dear. The show can't begin! Everything is going wrong."], ['ringmaster', "The spotlights are all the wrong colours, the teeterboard won't balance, the clown has forgotten his juggling, and the trapeze artists can't catch each other. My checklist is on the tent pole."], ['pippi', "I've never fixed a circus, so I'm sure I can!"]]);
+  }
   say("That doesn't do anything useful.");
 }

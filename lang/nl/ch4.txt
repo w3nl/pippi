@@ -1,0 +1,275 @@
+# Dutch translation: Chapter 4, Pippi goes to the circus (js/chapter4.js).
+# Money is in crowns (kronen).
+
+= Spotlights
+> Spotlights
+= Teeterboard
+> Wipplank
+= Clown
+> Clown
+= Trapezes
+> Trapezes
+= Circus tickets
+> Circuskaartjes
+= Four tickets: for Pippi, Tommy, Annika and you. Mr Nilsson goes in free, as hand luggage.
+> Vier kaartjes: voor Pippi, Tommy, Annika en jou. Meneer Nilsson mag gratis mee, als handbagage.
+= Tickets, please! Nobody comes near my ring without a ticket. Not even strong little girls.
+> Kaartjes, alsjeblieft! Niemand komt bij mijn piste zonder kaartje. Ook geen sterke meisjes.
+= The spunk's jam jar, on the counter of the ticket booth. Pippi brought it to the circus.
+> Het jampotje van de spunk, op de toonbank van het kaartjeshokje. Pippi heeft hem meegenomen naar het circus.
+= "It has never seen a circus," she says. You take it. A spunk knows things. Even about circuses.
+> "Hij heeft nog nooit een circus gezien," zegt ze. Je neemt hem mee. Een spunk weet dingen. Zelfs over circussen.
+= The ticket booth. The ticket seller is counting Pippi's gold coin for the fourth time. It's real.
+> Het kaartjeshokje. De kaartjesverkoper telt Pippi's gouden munt voor de vierde keer. Hij is echt.
+= The ringmaster's checklist, BEFORE THE SHOW: spotlights, teeterboard, clown, trapezes. {n} of 4 done.
+> Het lijstje van de directeur, VOOR DE VOORSTELLING: spotlights, wipplank, clown, trapezes. {n} van de 4 klaar.
+= When all four are ticked off, the curtain can open.
+> Als alle vier zijn afgevinkt, mag het gordijn open.
+= Ladies and gentlemen! The strongest girl in the world!
+> Dames en heren! Het sterkste meisje van de wereld!
+= Tickets, please! The show starts in a moment. Well… it should.
+> Kaartjes, alsjeblieft! De voorstelling begint zo. Nou ja… dat zou moeten.
+= Everything's ready! Open the curtain with the winch, and the show can begin!
+> Alles is klaar! Doe het gordijn open met de lier, dan kan de voorstelling beginnen!
+= Oh, it's a disaster! The spotlights are all the wrong colours, the teeterboard won't balance, the clown has forgotten his juggling, and the trapeze artists can't catch each other.
+> O, het is een ramp! De spotlights hebben de verkeerde kleuren, de wipplank blijft niet in evenwicht, de clown is vergeten hoe hij moet jongleren, en de trapezeartiesten kunnen elkaar niet vangen.
+= My checklist is on the tent pole. If only somebody could help…
+> Mijn lijstje hangt aan de tentpaal. Kon iemand maar helpen…
+= I've never helped a circus, so I'm sure I can!
+> Ik heb nog nooit een circus geholpen, dus ik denk dat ik het wel kan!
+= The three spotlights shine white together, right in the middle of the ring. Perfect for a star.
+> De drie spotlights schijnen samen wit, precies in het midden van de piste. Perfect voor een ster.
+= The teeterboard, perfectly balanced. The strongman is very impressed.
+> De wipplank, perfect in evenwicht. De sterke man is erg onder de indruk.
+= Such a small girl. So far out. Perfect balance!
+> Zo'n klein meisje. Zo ver naar buiten. Perfect evenwicht!
+= Honk! Honk! HONK! Please stop squeezing my nose, I'm working.
+> Toet! Toet! TOET! Wil je ophouden met in mijn neus knijpen, ik ben aan het werk.
+= Look at me go! Red, blue, blue, red, blue, blue…
+> Kijk mij eens! Rood, blauw, blauw, rood, blauw, blauw…
+= The two trapezes swing back and forth in perfect time. The flyers catch each other every single time.
+> De twee trapezes schommelen precies tegelijk heen en weer. De artiesten vangen elkaar elke keer.
+= Ork! Ork!
+> Ork! Ork!
+= A seal on a stool, balancing a ball on its nose. It's the only one in the circus who's ready for the show.
+> Een zeehond op een krukje, met een bal op zijn neus. Hij is de enige in het circus die klaar is voor de voorstelling.
+= The curtain is wide open, and the show is on!
+> Het gordijn is wijd open, en de voorstelling is begonnen!
+= The performers' curtain, heavy red velvet with gold fringes. Behind it, the horses are stamping and someone is warming up a trumpet.
+> Het gordijn van de artiesten, van zwaar rood fluweel met gouden franjes. Erachter stampen de paarden en blaast iemand zich warm op een trompet.
+= It opens with the winch on its right. But only when the show is ready.
+> Hij gaat open met de lier ernaast, rechts. Maar alleen als de voorstelling klaar is.
+= The winch has done its job. The curtain is open.
+> De lier heeft zijn werk gedaan. Het gordijn is open.
+= Not yet! First the checklist: {n} of 4 acts are ready.
+> Nog niet! Eerst het lijstje: {n} van de 4 nummers zijn klaar.
+= I'm a circus star!
+> Ik ben een circusster!
+= I've got a gold coin for the tickets. It's a bit big, but they'll have change.
+> Ik heb een gouden munt voor de kaartjes. Hij is een beetje groot, maar ze hebben vast wisselgeld.
+= A circus! With a strongman! I wonder if he'd like to be lifted.
+> Een circus! Met een sterke man! Zou hij opgetild willen worden?
+= The ticket booth
+> Het kaartjeshokje
+= Tickets: 3 crowns each
+> Kaartjes: 3 kronen per stuk
+= Pippi buys {n} tickets, for herself, Tommy, Annika and you, and pays with a gold coin worth {paid} crowns. The ticket seller has gone to fetch more change, so you're in charge of the till.
+> Pippi koopt {n} kaartjes, voor zichzelf, Tommy, Annika en jou, en betaalt met een gouden munt van {paid} kronen. De kaartjesverkoper is wisselgeld halen, dus jij past op de kassa.
+= How much change does Pippi get?
+> Hoeveel wisselgeld krijgt Pippi terug?
+= Add a {v}-crown coin
+> Een munt van {v} kronen erbij
+= Take it back
+> Terugpakken
+= Give the change
+> Wisselgeld geven
+= No coins yet.
+> Nog geen munten.
+= 4 × 3 = 12 crowns for the tickets, and 20 − 12 = 8 crowns change. Four tickets for you!
+> 4 × 3 = 12 kronen voor de kaartjes, en 20 − 12 = 8 kronen wisselgeld. Vier kaartjes voor jullie!
+= Eight crowns change! That's enough for eight crowns' worth of sweets.
+> Acht kronen wisselgeld! Daar kun je voor acht kronen snoep van kopen.
+= You take the tickets. Now show them to the ringmaster.
+> Je pakt de kaartjes. Laat ze nu aan de directeur zien.
+= 12 crowns is what the tickets cost. Pippi paid 20: how much is left over?
+> 12 kronen kosten de kaartjes. Pippi betaalde 20: hoeveel blijft er over?
+= That would be right for one ticket. But Pippi buys four.
+> Dat klopt voor één kaartje. Maar Pippi koopt er vier.
+= Too much! The circus would go bankrupt. First work out what four tickets cost.
+> Te veel! Dan gaat het circus failliet. Reken eerst uit wat vier kaartjes kosten.
+= Not enough. What do four tickets cost, and how much is left of 20?
+> Te weinig. Wat kosten vier kaartjes, en hoeveel blijft er over van 20?
+= Yellow light for the clown
+> Geel licht voor de clown
+= Sea-blue light for the seal: cyan, a mix of green and blue
+> Zeeblauw licht voor de zeehond: cyaan, een mengsel van groen en blauw
+= White light for the star of the show
+> Wit licht voor de ster van de voorstelling
+= darkness
+> donker
+= red
+> rood
+= green
+> groen
+= blue
+> blauw
+= yellow
+> geel
+= cyan
+> cyaan
+= magenta (pink-purple)
+> magenta (roze-paars)
+= white
+> wit
+= The lighting desk
+> De lichttafel
+= Three spotlights: red, green and blue
+> Drie spotlights: rood, groen en blauw
+= Red
+> Rood
+= Green
+> Groen
+= Blue
+> Blauw
+= Shine!
+> Schijnen!
+= Coloured LIGHT mixes differently from paint: the more colours you add, the brighter it gets.
+> Gekleurd LICHT mengt anders dan verf: hoe meer kleuren je erbij doet, hoe lichter het wordt.
+= Round {n} of 3:
+> Ronde {n} van 3:
+= The ring is now:
+> De piste is nu:
+= Pitch dark! Somewhere in the dark, the seal goes "Ork?" Switch some lights on.
+> Pikdonker! Ergens in het donker zegt de zeehond "Ork?" Doe wat lampen aan.
+= Only red. Yellow light is red light plus another colour. Not blue!
+> Alleen rood. Geel licht is rood licht plus nog een kleur. Niet blauw!
+= Not white yet. White light is every colour of light together.
+> Nog niet wit. Wit licht is alle kleuren licht samen.
+= That makes {got}. Which two colours of light together make {want}?
+> Dat wordt {got}. Welke twee kleuren licht samen maken {want}?
+= Yellow! Red light and green light make yellow light. (With paint you would get brown!)
+> Geel! Rood licht en groen licht maken geel licht. (Met verf krijg je bruin!)
+= Cyan! Green and blue light make a bright sea-blue.
+> Cyaan! Groen en blauw licht maken een helder zeeblauw.
+= White! Red, green and blue light together make white light. A screen makes every colour from just those three.
+> Wit! Rood, groen en blauw licht samen maken wit licht. Een beeldscherm maakt elke kleur van alleen die drie.
+= The lights are perfect! Tick it off!
+> De lampen zijn perfect! Afvinken!
+= Up on the checklist, a tick appears next to Spotlights.
+> Op het lijstje verschijnt een vinkje bij Spotlights.
+= The teeterboard
+> De wipplank
+= The strongman: 90 kg, 1 metre from the middle
+> De sterke man: 90 kg, 1 meter van het midden
+= Pippi at {m} m
+> Pippi op {m} m
+= Pippi weighs 30 kg. Where must she sit so the board balances? The strongman says: "Heavy and close, or light and far, it's all the same to a teeterboard."
+> Pippi weegt 30 kg. Waar moet ze zitten zodat de plank in evenwicht is? De sterke man zegt: "Zwaar en dichtbij, of licht en ver weg, voor een wipplank is dat allemaal hetzelfde."
+= Balanced! 90 kg × 1 m = 90, and 30 kg × 3 m = 90. A light person far out balances a heavy person close in.
+> In evenwicht! 90 kg × 1 m = 90, en 30 kg × 3 m = 90. Een licht iemand ver weg houdt een zwaar iemand dichtbij in evenwicht.
+= Such a small girl, so far out, and we balance perfectly! Teeterboard act: ready!
+> Zo'n klein meisje, zo ver weg, en we zijn precies in evenwicht! Het wipplanknummer: klaar!
+= Pippi's end goes down with a bump, and the strongman flies up into the air! 30 × 4 = 120 is more than 90 × 1 = 90.
+> Pippi's kant gaat met een klap naar beneden, en de sterke man vliegt de lucht in! 30 × 4 = 120 is meer dan 90 × 1 = 90.
+= The strongman's side stays down. 30 kg × {m} m = {r}, but 90 kg × 1 m = 90. Sit further out.
+> De kant van de sterke man blijft beneden. 30 kg × {m} m = {r}, maar 90 kg × 1 m = 90. Ga verder naar buiten zitten.
+= The clown's juggling
+> Het jongleren van de clown
+= He has forgotten how it goes on
+> Hij is vergeten hoe het verder gaat
+= "I always juggle in a pattern," sniffs the clown, "but I've forgotten the end! Which balls come next?"
+> "Ik jongleer altijd in een patroon," snuift de clown, "maar ik ben het eind vergeten! Welke ballen komen er nu?"
+= Click an empty ball to change its colour.
+> Klik op een lege bal om de kleur te veranderen.
+= Juggle!
+> Jongleren!
+= Ball {n}
+> Bal {n}
+= Red, blue, blue, again and again: the pattern repeats every three balls. Up they go!
+> Rood, blauw, blauw, steeds weer: het patroon herhaalt zich om de drie ballen. Daar gaan ze!
+= Red, blue, blue! Red, blue, blue! I remember! Honk honk!
+> Rood, blauw, blauw! Rood, blauw, blauw! Ik weet het weer! Toet toet!
+= The clown juggles, and the balls fly round and round in the spotlight.
+> De clown jongleert, en de ballen vliegen rond en rond in het licht van de spotlight.
+= Yellow? There's no yellow anywhere in his pattern so far.
+> Geel? Er zit nog nergens geel in zijn patroon.
+= Choose a colour for every empty ball first.
+> Kies eerst een kleur voor elke lege bal.
+= The clown drops a ball on his foot. Look at the start: which group of colours keeps repeating?
+> De clown laat een bal op zijn voet vallen. Kijk naar het begin: welk groepje kleuren komt steeds terug?
+= The trapezes
+> De trapezes
+= The Flying Svenssons must swing in time
+> De Vliegende Svenssons moeten tegelijk schommelen
+= Left rope (Sofia, 35 kg)
+> Linker touw (Sofia, 35 kg)
+= Right rope (Sven, 70 kg)
+> Rechter touw (Sven, 70 kg)
+= Jump across!
+> Overspringen!
+= To catch each other, the two trapezes must swing in exactly the same rhythm. Sven is twice as heavy as Sofia. Does that matter?
+> Om elkaar te vangen, moeten de twee trapezes in precies hetzelfde ritme schommelen. Sven is twee keer zo zwaar als Sofia. Maakt dat uit?
+= {L} m · one swing there and back: {T} s
+> {L} m · één keer heen en terug: {T} s
+= Same length, same rhythm: Sven catches Sofia! How fast a swing goes depends on the length of the rope, not on how heavy you are.
+> Even lang, hetzelfde ritme: Sven vangt Sofia! Hoe snel een schommel gaat, hangt af van de lengte van het touw, niet van hoe zwaar je bent.
+= The Flying Svenssons swing in perfect time and catch each other in mid-air. The audience isn't even in yet, and Pippi is already clapping.
+> De Vliegende Svenssons schommelen precies tegelijk en vangen elkaar in de lucht. Het publiek zit er nog niet eens, en Pippi klapt al.
+= Bravo! Next time, I'll be the one in the middle.
+> Bravo! De volgende keer ben ik degene in het midden.
+= Swish… they miss each other, and land in the safety net. The ropes have different lengths, so they swing at different speeds. The weight doesn't matter.
+> Zwiep… ze missen elkaar, en landen in het vangnet. De touwen zijn niet even lang, dus ze schommelen niet even snel. Het gewicht maakt niet uit.
+= The curtain winch
+> De lier van het gordijn
+= Crank → gears → curtain drum
+> Slinger → tandwielen → trommel van het gordijn
+= You turn the crank clockwise ↻. The curtain drum on the right must turn anticlockwise ↺ to open the curtain. How many gears go in between?
+> Jij draait de slinger met de klok mee ↻. De trommel rechts moet tegen de klok in draaien ↺ om het gordijn open te doen. Hoeveel tandwielen moeten ertussen?
+= {n} in between
+> {n} ertussen
+= Turn the crank!
+> Draaien!
+= Two gears that touch always turn opposite ways.
+> Twee tandwielen die elkaar raken, draaien altijd de andere kant op.
+= crank ↻
+> slinger ↻
+= drum
+> trommel
+= Crank ↻, then ↺, ↻, and the drum turns ↺: the curtain opens! With an even number of gears in between, the last gear turns the other way from the crank.
+> Slinger ↻, dan ↺, ↻, en de trommel draait ↺: het gordijn gaat open! Met een even aantal tandwielen ertussen draait het laatste tandwiel de andere kant op dan de slinger.
+= Crank ↻, middle gear ↺, drum ↻: the curtain winds up even tighter! Count the turns: each gear turns the other way from the one before.
+> Slinger ↻, middelste tandwiel ↺, trommel ↻: het gordijn draait nog strakker dicht! Tel de draaiingen: elk tandwiel draait de andere kant op dan het vorige.
+= Crank ↻, ↺, ↻, ↺, and the drum ↻: tighter still! Three in between is one too many, or one too few.
+> Slinger ↻, ↺, ↻, ↺, en de trommel ↻: nog strakker! Drie ertussen is er één te veel, of één te weinig.
+= The circus has come to town! A big red-and-white tent in the meadow, music, sawdust, and the smell of candyfloss.
+> Het circus is in de stad! Een grote rood-witte tent in het weiland, muziek, zaagsel en de geur van suikerspin.
+= A circus! I've never been to a circus, so I'm sure I'll be very good at it.
+> Een circus! Ik ben nog nooit naar een circus geweest, dus ik denk dat ik het wel kan.
+= Pippi, you're supposed to WATCH the circus. Not be in it.
+> Pippi, je moet naar het circus KIJKEN. Niet erin meedoen.
+= Inside the big top, nothing is happening. The ringmaster is pacing up and down in front of the curtain, pulling at his moustache.
+> In de grote tent gebeurt helemaal niks. De directeur ijsbeert voor het gordijn heen en weer en trekt aan zijn snor.
+= Tickets, please! And then… oh dear. The show should have started ten minutes ago.
+> Kaartjes, alsjeblieft! En dan… o jee. De voorstelling had tien minuten geleden al moeten beginnen.
+= First, tickets. The booth is by the entrance.
+> Eerst kaartjes. Het hokje staat bij de ingang.
+= The drum turns, and the red velvet curtain swings open. A drumroll! The spotlights meet in the middle of the ring.
+> De trommel draait, en het rode fluwelen gordijn zwaait open. Tromgeroffel! De spotlights komen samen in het midden van de piste.
+= Ladies and gentlemen! The greatest show on earth!
+> Dames en heren! De grootste voorstelling op aarde!
+= The trapezes swing, the clown juggles, the seal bounces its ball, and round the ring trots the circus horse… with Pippi standing on its back, on one leg.
+> De trapezes zwaaien, de clown jongleert, de zeehond laat zijn bal stuiteren, en door de piste draaft het circuspaard… met Pippi op zijn rug, staand op één been.
+= Who let her in there?!
+> Wie heeft haar daar binnengelaten?!
+= You did! With a ticket! And now I'd like to lift the strongman, please.
+> U! Met een kaartje! En nu wil ik graag de sterke man optillen.
+= Nobody lifts me. Nobody has ever…
+> Niemand tilt mij op. Niemand heeft ooit…
+= Pippi lifts the strongman over her head, carries him once round the ring, and puts him down very gently. The whole tent stands up and cheers.
+> Pippi tilt de sterke man boven haar hoofd, draagt hem één keer rond de piste en zet hem heel voorzichtig neer. De hele tent staat op en juicht.
+= Best circus ever.
+> Het beste circus ooit.
+= Pippi, you were supposed to WATCH.
+> Pippi, je moest KIJKEN.
+= All done! Now the curtain can open: the winch is next to it.
+> Alles klaar! Nu mag het gordijn open: de lier zit ernaast.

@@ -1,0 +1,275 @@
+# Swedish translation: Chapter 4, Pippi goes to the circus (js/chapter4.js).
+# Money is in crowns (kronor).
+
+= Spotlights
+> Strålkastare
+= Teeterboard
+> Gungbräda
+= Clown
+> Clown
+= Trapezes
+> Trapetser
+= Circus tickets
+> Cirkusbiljetter
+= Four tickets: for Pippi, Tommy, Annika and you. Mr Nilsson goes in free, as hand luggage.
+> Fyra biljetter: till Pippi, Tommy, Annika och dig. Herr Nilsson går in gratis, som handbagage.
+= Tickets, please! Nobody comes near my ring without a ticket. Not even strong little girls.
+> Biljetter, tack! Ingen kommer nära min manege utan biljett. Inte ens starka små flickor.
+= The spunk's jam jar, on the counter of the ticket booth. Pippi brought it to the circus.
+> Spunkens syltburk, på disken i biljettluckan. Pippi har tagit med den till cirkusen.
+= "It has never seen a circus," she says. You take it. A spunk knows things. Even about circuses.
+> "Den har aldrig sett en cirkus," säger hon. Du tar den. En spunk vet saker. Till och med om cirkusar.
+= The ticket booth. The ticket seller is counting Pippi's gold coin for the fourth time. It's real.
+> Biljettluckan. Biljettförsäljaren räknar Pippis guldmynt för fjärde gången. Det är äkta.
+= The ringmaster's checklist, BEFORE THE SHOW: spotlights, teeterboard, clown, trapezes. {n} of 4 done.
+> Direktörens checklista, FÖRE FÖRESTÄLLNINGEN: strålkastare, gungbräda, clown, trapetser. {n} av 4 klara.
+= When all four are ticked off, the curtain can open.
+> När alla fyra är avbockade kan ridån gå upp.
+= Ladies and gentlemen! The strongest girl in the world!
+> Mina damer och herrar! Världens starkaste flicka!
+= Tickets, please! The show starts in a moment. Well… it should.
+> Biljetter, tack! Föreställningen börjar alldeles strax. Nåja… det borde den.
+= Everything's ready! Open the curtain with the winch, and the show can begin!
+> Allt är klart! Dra upp ridån med vinschen, så kan föreställningen börja!
+= Oh, it's a disaster! The spotlights are all the wrong colours, the teeterboard won't balance, the clown has forgotten his juggling, and the trapeze artists can't catch each other.
+> Åh, det är en katastrof! Strålkastarna har fel färger, gungbrädan väger inte jämnt, clownen har glömt hur man jonglerar, och trapetsartisterna kan inte fånga varandra.
+= My checklist is on the tent pole. If only somebody could help…
+> Min checklista sitter på tältstången. Om bara någon kunde hjälpa till…
+= I've never helped a circus, so I'm sure I can!
+> Jag har aldrig hjälpt en cirkus förut, så det klarar jag säkert!
+= The three spotlights shine white together, right in the middle of the ring. Perfect for a star.
+> De tre strålkastarna lyser vitt tillsammans, mitt i manegen. Perfekt för en stjärna.
+= The teeterboard, perfectly balanced. The strongman is very impressed.
+> Gungbrädan, i perfekt jämvikt. Starke mannen är mycket imponerad.
+= Such a small girl. So far out. Perfect balance!
+> En så liten flicka. Så långt ut. Perfekt jämvikt!
+= Honk! Honk! HONK! Please stop squeezing my nose, I'm working.
+> Tut! Tut! TUUT! Sluta klämma på min näsa, jag arbetar.
+= Look at me go! Red, blue, blue, red, blue, blue…
+> Titta på mig! Röd, blå, blå, röd, blå, blå…
+= The two trapezes swing back and forth in perfect time. The flyers catch each other every single time.
+> De två trapetserna svänger fram och tillbaka i perfekt takt. Artisterna fångar varandra varenda gång.
+= Ork! Ork!
+> Ork! Ork!
+= A seal on a stool, balancing a ball on its nose. It's the only one in the circus who's ready for the show.
+> En säl på en pall, som balanserar en boll på nosen. Den är den enda på cirkusen som är redo för föreställningen.
+= The curtain is wide open, and the show is on!
+> Ridån är vidöppen, och föreställningen är igång!
+= The performers' curtain, heavy red velvet with gold fringes. Behind it, the horses are stamping and someone is warming up a trumpet.
+> Artisternas ridå, av tung röd sammet med guldfransar. Bakom den stampar hästarna och någon värmer upp en trumpet.
+= It opens with the winch on its right. But only when the show is ready.
+> Den öppnas med vinschen till höger. Men bara när föreställningen är redo.
+= The winch has done its job. The curtain is open.
+> Vinschen har gjort sitt jobb. Ridån är uppe.
+= Not yet! First the checklist: {n} of 4 acts are ready.
+> Inte än! Först checklistan: {n} av 4 nummer är klara.
+= I'm a circus star!
+> Jag är en cirkusstjärna!
+= I've got a gold coin for the tickets. It's a bit big, but they'll have change.
+> Jag har ett guldmynt till biljetterna. Det är lite stort, men de har säkert växel.
+= A circus! With a strongman! I wonder if he'd like to be lifted.
+> En cirkus! Med en stark man! Undrar om han vill bli lyft.
+= The ticket booth
+> Biljettluckan
+= Tickets: 3 crowns each
+> Biljetter: 3 kronor styck
+= Pippi buys {n} tickets, for herself, Tommy, Annika and you, and pays with a gold coin worth {paid} crowns. The ticket seller has gone to fetch more change, so you're in charge of the till.
+> Pippi köper {n} biljetter, till sig själv, Tommy, Annika och dig, och betalar med ett guldmynt värt {paid} kronor. Biljettförsäljaren har gått för att hämta mer växel, så du har hand om kassan.
+= How much change does Pippi get?
+> Hur mycket växel får Pippi tillbaka?
+= Add a {v}-crown coin
+> Lägg till ett mynt på {v} kronor
+= Take it back
+> Ta tillbaka
+= Give the change
+> Ge växel
+= No coins yet.
+> Inga mynt än.
+= 4 × 3 = 12 crowns for the tickets, and 20 − 12 = 8 crowns change. Four tickets for you!
+> 4 × 3 = 12 kronor för biljetterna, och 20 − 12 = 8 kronor tillbaka. Fyra biljetter till er!
+= Eight crowns change! That's enough for eight crowns' worth of sweets.
+> Åtta kronor tillbaka! Det räcker till godis för åtta kronor.
+= You take the tickets. Now show them to the ringmaster.
+> Du tar biljetterna. Visa dem nu för direktören.
+= 12 crowns is what the tickets cost. Pippi paid 20: how much is left over?
+> 12 kronor kostar biljetterna. Pippi betalade 20: hur mycket blir över?
+= That would be right for one ticket. But Pippi buys four.
+> Det stämmer för en biljett. Men Pippi köper fyra.
+= Too much! The circus would go bankrupt. First work out what four tickets cost.
+> För mycket! Då går cirkusen i konkurs. Räkna först ut vad fyra biljetter kostar.
+= Not enough. What do four tickets cost, and how much is left of 20?
+> För lite. Vad kostar fyra biljetter, och hur mycket blir kvar av 20?
+= Yellow light for the clown
+> Gult ljus till clownen
+= Sea-blue light for the seal: cyan, a mix of green and blue
+> Havsblått ljus till sälen: cyan, en blandning av grönt och blått
+= White light for the star of the show
+> Vitt ljus till föreställningens stjärna
+= darkness
+> mörker
+= red
+> rött
+= green
+> grönt
+= blue
+> blått
+= yellow
+> gult
+= cyan
+> cyan
+= magenta (pink-purple)
+> magenta (rosa-lila)
+= white
+> vitt
+= The lighting desk
+> Ljusbordet
+= Three spotlights: red, green and blue
+> Tre strålkastare: röd, grön och blå
+= Red
+> Röd
+= Green
+> Grön
+= Blue
+> Blå
+= Shine!
+> Lys!
+= Coloured LIGHT mixes differently from paint: the more colours you add, the brighter it gets.
+> Färgat LJUS blandas på ett annat sätt än målarfärg: ju fler färger du lägger till, desto ljusare blir det.
+= Round {n} of 3:
+> Omgång {n} av 3:
+= The ring is now:
+> Manegen är nu:
+= Pitch dark! Somewhere in the dark, the seal goes "Ork?" Switch some lights on.
+> Kolsvart! Någonstans i mörkret säger sälen "Ork?" Tänd några lampor.
+= Only red. Yellow light is red light plus another colour. Not blue!
+> Bara rött. Gult ljus är rött ljus plus en färg till. Inte blått!
+= Not white yet. White light is every colour of light together.
+> Inte vitt än. Vitt ljus är alla ljusets färger tillsammans.
+= That makes {got}. Which two colours of light together make {want}?
+> Det blir {got}. Vilka två färger av ljus blir {want} tillsammans?
+= Yellow! Red light and green light make yellow light. (With paint you would get brown!)
+> Gult! Rött ljus och grönt ljus blir gult ljus. (Med målarfärg blir det brunt!)
+= Cyan! Green and blue light make a bright sea-blue.
+> Cyan! Grönt och blått ljus blir ett klart havsblått.
+= White! Red, green and blue light together make white light. A screen makes every colour from just those three.
+> Vitt! Rött, grönt och blått ljus tillsammans blir vitt ljus. En skärm gör alla färger av bara de tre.
+= The lights are perfect! Tick it off!
+> Ljuset är perfekt! Bocka av!
+= Up on the checklist, a tick appears next to Spotlights.
+> På checklistan dyker en bock upp bredvid Strålkastare.
+= The teeterboard
+> Gungbrädan
+= The strongman: 90 kg, 1 metre from the middle
+> Starke mannen: 90 kg, 1 meter från mitten
+= Pippi at {m} m
+> Pippi på {m} m
+= Pippi weighs 30 kg. Where must she sit so the board balances? The strongman says: "Heavy and close, or light and far, it's all the same to a teeterboard."
+> Pippi väger 30 kg. Var ska hon sitta för att brädan ska väga jämnt? Starke mannen säger: "Tung och nära, eller lätt och långt ut, det är samma sak för en gungbräda."
+= Balanced! 90 kg × 1 m = 90, and 30 kg × 3 m = 90. A light person far out balances a heavy person close in.
+> Jämvikt! 90 kg × 1 m = 90, och 30 kg × 3 m = 90. En lätt person långt ut väger jämnt med en tung person nära mitten.
+= Such a small girl, so far out, and we balance perfectly! Teeterboard act: ready!
+> En så liten flicka, så långt ut, och vi väger precis jämnt! Gungbrädsnumret: klart!
+= Pippi's end goes down with a bump, and the strongman flies up into the air! 30 × 4 = 120 is more than 90 × 1 = 90.
+> Pippis ände går ner med en duns, och starke mannen flyger upp i luften! 30 × 4 = 120 är mer än 90 × 1 = 90.
+= The strongman's side stays down. 30 kg × {m} m = {r}, but 90 kg × 1 m = 90. Sit further out.
+> Starke mannens sida stannar nere. 30 kg × {m} m = {r}, men 90 kg × 1 m = 90. Sätt dig längre ut.
+= The clown's juggling
+> Clownens jonglering
+= He has forgotten how it goes on
+> Han har glömt hur det fortsätter
+= "I always juggle in a pattern," sniffs the clown, "but I've forgotten the end! Which balls come next?"
+> "Jag jonglerar alltid i ett mönster," snyftar clownen, "men jag har glömt slutet! Vilka bollar kommer sedan?"
+= Click an empty ball to change its colour.
+> Klicka på en tom boll för att byta färg.
+= Juggle!
+> Jonglera!
+= Ball {n}
+> Boll {n}
+= Red, blue, blue, again and again: the pattern repeats every three balls. Up they go!
+> Röd, blå, blå, om och om igen: mönstret upprepas var tredje boll. Upp med dem!
+= Red, blue, blue! Red, blue, blue! I remember! Honk honk!
+> Röd, blå, blå! Röd, blå, blå! Nu minns jag! Tut tut!
+= The clown juggles, and the balls fly round and round in the spotlight.
+> Clownen jonglerar, och bollarna flyger runt, runt i strålkastarljuset.
+= Yellow? There's no yellow anywhere in his pattern so far.
+> Gul? Det finns ingen gul någonstans i hans mönster än.
+= Choose a colour for every empty ball first.
+> Välj först en färg för varje tom boll.
+= The clown drops a ball on his foot. Look at the start: which group of colours keeps repeating?
+> Clownen tappar en boll på foten. Titta på början: vilken grupp av färger kommer tillbaka hela tiden?
+= The trapezes
+> Trapetserna
+= The Flying Svenssons must swing in time
+> De flygande Svenssons måste svänga i takt
+= Left rope (Sofia, 35 kg)
+> Vänstra repet (Sofia, 35 kg)
+= Right rope (Sven, 70 kg)
+> Högra repet (Sven, 70 kg)
+= Jump across!
+> Hoppa över!
+= To catch each other, the two trapezes must swing in exactly the same rhythm. Sven is twice as heavy as Sofia. Does that matter?
+> För att fånga varandra måste de två trapetserna svänga i exakt samma takt. Sven är dubbelt så tung som Sofia. Spelar det någon roll?
+= {L} m · one swing there and back: {T} s
+> {L} m · en sväng fram och tillbaka: {T} s
+= Same length, same rhythm: Sven catches Sofia! How fast a swing goes depends on the length of the rope, not on how heavy you are.
+> Lika långa, samma takt: Sven fångar Sofia! Hur fort en gunga svänger beror på repets längd, inte på hur tung man är.
+= The Flying Svenssons swing in perfect time and catch each other in mid-air. The audience isn't even in yet, and Pippi is already clapping.
+> De flygande Svenssons svänger i perfekt takt och fångar varandra i luften. Publiken har inte ens kommit in än, och Pippi klappar redan.
+= Bravo! Next time, I'll be the one in the middle.
+> Bravo! Nästa gång är det jag som är i mitten.
+= Swish… they miss each other, and land in the safety net. The ropes have different lengths, so they swing at different speeds. The weight doesn't matter.
+> Svisch… de missar varandra och landar i skyddsnätet. Repen är olika långa, så de svänger olika fort. Vikten spelar ingen roll.
+= The curtain winch
+> Ridåvinschen
+= Crank → gears → curtain drum
+> Vev → kugghjul → ridåtrumma
+= You turn the crank clockwise ↻. The curtain drum on the right must turn anticlockwise ↺ to open the curtain. How many gears go in between?
+> Du vevar medsols ↻. Ridåtrumman till höger måste snurra motsols ↺ för att dra upp ridån. Hur många kugghjul ska sitta emellan?
+= {n} in between
+> {n} emellan
+= Turn the crank!
+> Veva!
+= Two gears that touch always turn opposite ways.
+> Två kugghjul som rör vid varandra snurrar alltid åt motsatta håll.
+= crank ↻
+> vev ↻
+= drum
+> trumma
+= Crank ↻, then ↺, ↻, and the drum turns ↺: the curtain opens! With an even number of gears in between, the last gear turns the other way from the crank.
+> Vev ↻, sedan ↺, ↻, och trumman snurrar ↺: ridån går upp! Med ett jämnt antal kugghjul emellan snurrar det sista hjulet åt andra hållet än veven.
+= Crank ↻, middle gear ↺, drum ↻: the curtain winds up even tighter! Count the turns: each gear turns the other way from the one before.
+> Vev ↻, mittenhjulet ↺, trumman ↻: ridån dras åt ännu hårdare! Räkna varven: varje hjul snurrar åt andra hållet än det förra.
+= Crank ↻, ↺, ↻, ↺, and the drum ↻: tighter still! Three in between is one too many, or one too few.
+> Vev ↻, ↺, ↻, ↺, och trumman ↻: ännu hårdare! Tre emellan är ett för många, eller ett för få.
+= The circus has come to town! A big red-and-white tent in the meadow, music, sawdust, and the smell of candyfloss.
+> Cirkusen har kommit till stan! Ett stort rött och vitt tält på ängen, musik, sågspån och doften av sockervadd.
+= A circus! I've never been to a circus, so I'm sure I'll be very good at it.
+> En cirkus! Jag har aldrig varit på cirkus förut, så det klarar jag säkert alldeles utmärkt.
+= Pippi, you're supposed to WATCH the circus. Not be in it.
+> Pippi, man ska TITTA på cirkusen. Inte vara med i den.
+= Inside the big top, nothing is happening. The ringmaster is pacing up and down in front of the curtain, pulling at his moustache.
+> Inne i cirkustältet händer ingenting. Direktören går fram och tillbaka framför ridån och drar i sin mustasch.
+= Tickets, please! And then… oh dear. The show should have started ten minutes ago.
+> Biljetter, tack! Och sedan… åh nej. Föreställningen skulle ha börjat för tio minuter sedan.
+= First, tickets. The booth is by the entrance.
+> Först biljetter. Luckan är vid ingången.
+= The drum turns, and the red velvet curtain swings open. A drumroll! The spotlights meet in the middle of the ring.
+> Trumman snurrar, och den röda sammetsridån glider isär. Trumvirvel! Strålkastarna möts mitt i manegen.
+= Ladies and gentlemen! The greatest show on earth!
+> Mina damer och herrar! Den största föreställningen på jorden!
+= The trapezes swing, the clown juggles, the seal bounces its ball, and round the ring trots the circus horse… with Pippi standing on its back, on one leg.
+> Trapetserna svänger, clownen jonglerar, sälen studsar sin boll, och runt manegen travar cirkushästen… med Pippi stående på ryggen, på ett ben.
+= Who let her in there?!
+> Vem släppte in henne där?!
+= You did! With a ticket! And now I'd like to lift the strongman, please.
+> Det gjorde ni! Med en biljett! Och nu vill jag gärna lyfta starke mannen.
+= Nobody lifts me. Nobody has ever…
+> Ingen lyfter mig. Ingen har någonsin…
+= Pippi lifts the strongman over her head, carries him once round the ring, and puts him down very gently. The whole tent stands up and cheers.
+> Pippi lyfter starke mannen över huvudet, bär honom ett varv runt manegen och ställer ner honom alldeles försiktigt. Hela tältet reser sig och jublar.
+= Best circus ever.
+> Bästa cirkusen någonsin.
+= Pippi, you were supposed to WATCH.
+> Pippi, du skulle ju TITTA.
+= All done! Now the curtain can open: the winch is next to it.
+> Allt klart! Nu kan ridån gå upp: vinschen sitter bredvid.

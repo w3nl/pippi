@@ -99,3 +99,33 @@
 > Fem guldstjärnor! Fröken sa att lovet börjar när klockan ringer.
 = Click the hand bell on Miss's desk.
 > Klicka på handklockan på frökens kateder.
+
+# ---------- Chapter 4 ----------
+= Nobody gets in without a ticket. The ticket booth is by the entrance, and the sign says what a ticket costs.
+> Ingen kommer in utan biljett. Biljettluckan står vid ingången, och på skylten står det vad en biljett kostar.
+= Four tickets at 3 crowns is 12 crowns. Pippi pays 20, so give 8 crowns change (for example 5 + 2 + 1).
+> Fyra biljetter à 3 kronor är 12 kronor. Pippi betalar 20, så ge 8 kronor tillbaka (till exempel 5 + 2 + 1).
+= You have the tickets. Who wants to see them?
+> Du har biljetterna. Vem vill se dem?
+= Select the tickets and click the ringmaster.
+> Välj biljetterna och klicka på direktören.
+= The spotlights need the right colours. Coloured light mixes differently from paint.
+> Strålkastarna behöver rätt färger. Färgat ljus blandas på ett annat sätt än målarfärg.
+= Yellow = red + green. Cyan = green + blue. White = red + green + blue.
+> Gult = rött + grönt. Cyan = grönt + blått. Vitt = rött + grönt + blått.
+= The teeterboard balances when weight × distance is the same on both sides. The strongman: 90 kg at 1 metre.
+> Gungbrädan väger jämnt när vikt × avstånd är lika på båda sidorna. Starke mannen: 90 kg på 1 meter.
+= Pippi weighs 30 kg: put her at 3 metres, because 30 × 3 = 90 × 1.
+> Pippi väger 30 kg: sätt henne på 3 meter, för 30 × 3 = 90 × 1.
+= The clown juggles in a repeating pattern. Look at the first balls: which group repeats?
+> Clownen jonglerar i ett mönster som upprepas. Titta på de första bollarna: vilken grupp kommer tillbaka hela tiden?
+= Red, blue, blue keeps repeating. The last three are blue, blue, red.
+> Röd, blå, blå upprepas hela tiden. De tre sista är blå, blå, röd.
+= The trapezes must swing in the same rhythm. Does a heavier flyer swing slower?
+> Trapetserna måste svänga i samma takt. Svänger en tyngre artist långsammare?
+= No: only the length of the rope matters. Give both ropes the same length.
+> Nej: bara repets längd spelar roll. Gör båda repen lika långa.
+= Everything on the checklist is done. The curtain winch on the right of the curtain opens it. Gears that touch turn opposite ways.
+> Allt på checklistan är klart. Vinschen till höger om ridån drar upp den. Kugghjul som rör vid varandra snurrar åt motsatta håll.
+= Put 2 gears in between: crank ↻, gear ↺, gear ↻, drum ↺. Then turn the crank.
+> Sätt 2 kugghjul emellan: vev ↻, kugghjul ↺, kugghjul ↻, trumma ↺. Veva sedan.

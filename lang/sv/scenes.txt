@@ -109,3 +109,23 @@
 > NATURBORDET
 = Miss, at the window in the door
 > Fröken, i fönstret i dörren
+
+# ---------- scenes/circus.svg ----------
+= Inside the big top
+> Inne i cirkustältet
+= Ticket booth
+> Biljettlucka
+= The ringmaster's checklist
+> Direktörens checklista
+= The performers' curtain
+> Artisternas ridå
+= Curtain winch
+> Ridåvinsch
+= CIRCUS
+> CIRKUS
+= TICKETS
+> BILJETTER
+= 3 crowns each
+> 3 kronor styck
+= BEFORE THE SHOW
+> FÖRE FÖRESTÄLLNINGEN

@@ -108,7 +108,7 @@ test('Chapter 3: Pippi earns her holidays', async ({ page }) => {
   // the bell
   await hs(page, 'bell3');
   await expectWin(page, "School's out · Chapter 3 complete");
-  await expect(page.locator('#btn-next')).toBeHidden();
+  await expect(page.locator('#btn-next')).toHaveText('Continue to Chapter 4');
   for (const a of ['Four is more than three', "Counted Pippi's freckles"])
     await expect(page.locator('#w-ach .got', { hasText: a })).toBeVisible();
   await page.locator('#btn-stay').click();

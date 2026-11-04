@@ -15,6 +15,7 @@ function ambKey(){
     case 'kitchen': return 'kitchen' + (f.fire ? '+fire' : '');
     case 'bedroom': return 'bedroom' + (f.out2 ? '' : '+snore');
     case 'school': return 'school' + (f.out3 ? '' : '+horse');
+    case 'circus': return 'circus' + (f.out4 ? '+show' : '');
   }
   return null;
 }
@@ -120,6 +121,16 @@ const SOUNDSCAPES = {
     every(180, 420, () => blip(m, 4200 + Math.random() * 500, .03, .006, 'sine'));
     every(12000, 22000, () => { blip(m, 420, .35, .02, 'sine', 380); later(500, () => blip(m, 400, .55, .02, 'sine', 360)); });
     if(mods.includes('snore')) every(3600, 3600, () => { burst(m, 1.1, .03, 220, 'lowpass'); later(1500, () => burst(m, .7, .015, 600, 'bandpass')); });
+  },
+  // Chapter 4, the big top: the murmur of the audience, a barrel-organ waltz, the odd honk from the clown,
+  // and once the show starts, a drumroll and cheering.
+  circus(m, mods){
+    bed(m, { type: 'bandpass', freq: 500, q: .5, gain: .025, wobble: .4, rate: .15 });
+    const tune = [67, 71, 74, 71, 72, 76, 74, 0, 67, 71, 74, 79, 78, 74, 76, 0]; let i = 0;
+    const play = () => { if(!AMB.master) return; const n = tune[i++ % tune.length]; if(n) blip(m, 440 * Math.pow(2, (n - 69) / 12), .3, .012, 'square'); AMB.timers.push(setTimeout(play, 330)); };
+    AMB.timers.push(setTimeout(play, 600));
+    every(9000, 17000, () => { blip(m, 330, .12, .02, 'sawtooth', 300); later(160, () => blip(m, 330, .12, .02, 'sawtooth', 300)); });
+    if(mods.includes('show')){ every(80, 120, () => burst(m, .05, .008, 300, 'lowpass')); every(3000, 6000, () => burst(m, 1.2, .03, 1500, 'bandpass')); }
   },
   // Chapter 3, the classroom on a summer morning: a quiet room, the school clock, sparrows outside,
   // and the horse munching geraniums in the schoolyard (until the holidays start).

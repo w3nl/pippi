@@ -99,3 +99,33 @@
 > Vijf gouden sterren! De juf zei dat de vakantie begint als de bel gaat.
 = Click the hand bell on Miss's desk.
 > Klik op de handbel op het bureau van de juf.
+
+# ---------- Chapter 4 ----------
+= Nobody gets in without a ticket. The ticket booth is by the entrance, and the sign says what a ticket costs.
+> Zonder kaartje kom je niet binnen. Het kaartjeshokje staat bij de ingang, en op het bord staat wat een kaartje kost.
+= Four tickets at 3 crowns is 12 crowns. Pippi pays 20, so give 8 crowns change (for example 5 + 2 + 1).
+> Vier kaartjes van 3 kronen is 12 kronen. Pippi betaalt 20, dus geef 8 kronen terug (bijvoorbeeld 5 + 2 + 1).
+= You have the tickets. Who wants to see them?
+> Je hebt de kaartjes. Wie wil ze zien?
+= Select the tickets and click the ringmaster.
+> Kies de kaartjes en klik op de directeur.
+= The spotlights need the right colours. Coloured light mixes differently from paint.
+> De spotlights moeten de goede kleuren krijgen. Gekleurd licht mengt anders dan verf.
+= Yellow = red + green. Cyan = green + blue. White = red + green + blue.
+> Geel = rood + groen. Cyaan = groen + blauw. Wit = rood + groen + blauw.
+= The teeterboard balances when weight × distance is the same on both sides. The strongman: 90 kg at 1 metre.
+> De wipplank is in evenwicht als gewicht × afstand aan beide kanten hetzelfde is. De sterke man: 90 kg op 1 meter.
+= Pippi weighs 30 kg: put her at 3 metres, because 30 × 3 = 90 × 1.
+> Pippi weegt 30 kg: zet haar op 3 meter, want 30 × 3 = 90 × 1.
+= The clown juggles in a repeating pattern. Look at the first balls: which group repeats?
+> De clown jongleert in een patroon dat zich herhaalt. Kijk naar de eerste ballen: welk groepje komt steeds terug?
+= Red, blue, blue keeps repeating. The last three are blue, blue, red.
+> Rood, blauw, blauw komt steeds terug. De laatste drie zijn blauw, blauw, rood.
+= The trapezes must swing in the same rhythm. Does a heavier flyer swing slower?
+> De trapezes moeten in hetzelfde ritme schommelen. Schommelt een zwaardere artiest langzamer?
+= No: only the length of the rope matters. Give both ropes the same length.
+> Nee: alleen de lengte van het touw telt. Maak beide touwen even lang.
+= Everything on the checklist is done. The curtain winch on the right of the curtain opens it. Gears that touch turn opposite ways.
+> Alles op het lijstje is klaar. De lier rechts van het gordijn trekt het open. Tandwielen die elkaar raken, draaien de andere kant op.
+= Put 2 gears in between: crank ↻, gear ↺, gear ↻, drum ↺. Then turn the crank.
+> Zet er 2 tandwielen tussen: slinger ↻, tandwiel ↺, tandwiel ↻, trommel ↺. Draai dan aan de slinger.

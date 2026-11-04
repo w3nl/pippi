@@ -20,7 +20,11 @@ const VOICE_STYLE = {
   annika:  { pitch: 1.4,  rate: 1,    slot: 6 },
   karlsson:{ pitch: .55,  rate: .9,   slot: 7 },   // big and gruff
   bloom:   { pitch: 1.2,  rate: 1.25, slot: 8 },   // small and nervous
-  teacher: { pitch: 1.15, rate: .95,  slot: 9 }    // kind, clear, a little bit strict
+  teacher: { pitch: 1.15, rate: .95,  slot: 9 },   // kind, clear, a little bit strict
+  ringmaster:{ pitch: .8, rate: 1.05, slot: 5 },  // booming, a bit flustered
+  clown:   { pitch: 1.6,  rate: 1.2,  slot: 3 },
+  strongman:{ pitch: .4,  rate: .85,  slot: 7 },
+  seal:    { pitch: 1.8,  rate: 1.1,  slot: 2 }
 };
 
 /* The device's voices for the current language: British English or Dutch, falling back to any English voice. */

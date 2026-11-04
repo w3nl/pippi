@@ -109,3 +109,23 @@
 > NATUURTAFEL
 = Miss, at the window in the door
 > De juf, achter het raampje in de deur
+
+# ---------- scenes/circus.svg ----------
+= Inside the big top
+> In de grote tent
+= Ticket booth
+> Kaartjeshokje
+= The ringmaster's checklist
+> Het lijstje van de directeur
+= The performers' curtain
+> Het gordijn van de artiesten
+= Curtain winch
+> Lier van het gordijn
+= CIRCUS
+> CIRCUS
+= TICKETS
+> KAARTJES
+= 3 crowns each
+> 3 kronen per stuk
+= BEFORE THE SHOW
+> VOOR DE VOORSTELLING
