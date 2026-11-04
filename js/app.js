@@ -220,6 +220,11 @@ function start(data){
     if(S.f['out' + S.ch]){ S.f['out' + (S.ch + 1)] = true; delete S.f['out' + S.ch]; }
     S.ch++; save();
   }
+  if(S.scene === 'island' && S.ch === 6){
+    S.ch = 7;
+    if(S.f.out6){ S.f.out7 = true; delete S.f.out6; }
+    setUnlocked7(); save();
+  }
   refreshMenu();
   renderInv(); applyVisuals(); $('#timer').textContent = fmt(S.t);
 }
