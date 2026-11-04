@@ -202,8 +202,6 @@
 > Inbrekers gevangen · hoofdstuk 2 voltooid
 = Caught
 > Gevangen
-= Thunder-Karlsson and Bloom are off to the police station, and the gold is safe. Next: Pippi goes to school. Chapter 3 is still being written.
-> Donder-Karlsson en Blom gaan mee naar het politiebureau, en het goud is veilig. Straks: Pippi gaat naar school. Aan hoofdstuk 3 wordt nog geschreven.
 = Burglars in the night
 > Inbrekers in de nacht
 = Chapters
@@ -252,3 +250,53 @@
 > Meneer Nilsson giechelt in zijn slaap. Verkeerde slaapkop.
 = You tickle it. It isn't ticklish. Someone in this room is, though.
 > Je kietelt het. Het is niet kietelig. Iemand anders in deze kamer wel.
+
+# ---------- Chapter 3: menus, end screen, speakers, item uses ----------
+= Veranda door: on to Chapter {n}
+> Verandadeur: door naar hoofdstuk {n}
+= Thunder-Karlsson and Bloom are off to the police station, and the gold is safe. Next: Pippi goes to school, on the very last day before the summer holidays.
+> Donder-Karlsson en Blom gaan mee naar het politiebureau, en het goud is veilig. Straks: Pippi gaat naar school, op de allerlaatste dag voor de zomervakantie.
+= Continue to Chapter 3
+> Door naar hoofdstuk 3
+= School's out · Chapter 3 complete
+> School uit · hoofdstuk 3 voltooid
+= Summer holidays
+> Zomervakantie
+= Pippi has a certificate, and the whole summer ahead. Next: the circus comes to town. Chapter 4 is still being written.
+> Pippi heeft een diploma, en de hele zomer voor zich. Straks: het circus komt naar de stad. Aan hoofdstuk 4 wordt nog geschreven.
+= Pippi goes to school
+> Pippi gaat naar school
+= Chapter 3: Pippi goes to school
+> Hoofdstuk 3: Pippi gaat naar school
+= Chapter 3 · Pippi Goes to School
+> Hoofdstuk 3 · Pippi gaat naar school
+= The whole cake for Pippi
+> De hele taart voor Pippi
+= Kissed the frog
+> De kikker gekust
+= Nine times ten
+> Negen keer tien
+= Back in the classroom. The teacher waves through the little window in the door.
+> Terug in de klas. De juf zwaait door het raampje in de deur.
+= Take your time. The burglars aren't going anywhere: they're on top of the wardrobe. When you're ready, the veranda door leads on to Chapter {n}.
+> Neem de tijd. De inbrekers gaan nergens heen: ze zitten boven op de kleerkast. Als je klaar bent, gaat de verandadeur verder naar hoofdstuk {n}.
+= Take your time. The summer holidays aren't going anywhere.
+> Neem de tijd. De zomervakantie loopt niet weg.
+= The teacher
+> De juf
+= School
+> School
+= The cake is already cut into eight fair slices.
+> De taart is al in acht eerlijke stukken gesneden.
+= You try to prise the cupboard open with the cake knife.
+> Je probeert de kast open te wrikken met het taartmes.
+= Not with my good knife, please! That's for the cake.
+> Niet met mijn goede mes, alsjeblieft! Dat is voor de taart.
+= A cake knife is for cake. Luckily, there is a very big cake in this room.
+> Een taartmes is voor taart. Gelukkig staat er een heel grote taart in dit lokaal.
+= A little brass key. It looks just right for the little lock on the nature cupboard.
+> Een klein koperen sleuteltje. Het lijkt precies te passen op het slotje van de natuurkast.
+= The little key fits! Click: the glass doors of the nature cupboard swing open.
+> Het sleuteltje past! Klik: de glazen deurtjes van de natuurkast zwaaien open.
+= The classroom key belongs in the classroom door.
+> De sleutel van het lokaal hoort in de deur van het lokaal.

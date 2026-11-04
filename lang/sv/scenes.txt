@@ -69,3 +69,41 @@
 > Verandadörr
 = Veranda door (someone is at the lock!)
 > Verandadörr (någon håller på med låset!)
+
+# ---------- scenes/classroom.svg ----------
+= The classroom
+> Klassrummet
+= Blackboard
+> Svarta tavlan
+= 9-times poster
+> Nians tabell
+= Clock
+> Klocka
+= Plan of the classroom
+> Karta över klassrummet
+= Globe
+> Jordglob
+= Nature cupboard
+> Naturskåp
+= Register
+> Klasslista
+= Teacher's desk
+> Frökens kateder
+= Pippi's cake
+> Pippis tårta
+= Classroom door
+> Klassrumsdörr
+= ✋ trick!
+> ✋ trick!
+= LAST DAY!
+> SISTA DAGEN!
+= Escape the classroom
+> Fly från klassrummet
+= = a LOT —P.
+> = JÄTTEMYCKET —P.
+= 1. Register · 2. Cake · 3. Nature · 4. Plan
+> 1. Lista · 2. Tårta · 3. Natur · 4. Karta
+= OUR CLASSROOM
+> VÅRT KLASSRUM
+= CLASS 3
+> KLASS 3

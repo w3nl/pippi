@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><title>The teacher</title>
+  <rect width="120" height="120" rx="14" fill="#2f5f9a"/>
+  <path d="M16 120 q4-32 44-34 q40 2 44 34z" fill="#c4302b"/>
+  <path d="M48 88 l12 10 l12 -10" fill="none" stroke="#fffaf0" stroke-width="4"/>
+  <rect x="52" y="74" width="16" height="14" fill="#f0c8a0"/>
+  <ellipse cx="60" cy="56" rx="24" ry="27" fill="#f0c8a0"/>
+  <path d="M34 54 q0 -34 26 -34 q26 0 26 34 q-6 -20 -26 -20 q-20 0 -26 20z" fill="#8a5a3a"/>
+  <circle cx="60" cy="20" r="12" fill="#8a5a3a"/>
+  <circle cx="50" cy="58" r="8" fill="rgba(255,255,255,.3)" stroke="#3a2a1a" stroke-width="2.4"/><circle cx="70" cy="58" r="8" fill="rgba(255,255,255,.3)" stroke="#3a2a1a" stroke-width="2.4"/>
+  <path d="M58 58 h4" stroke="#3a2a1a" stroke-width="2.4"/>
+  <circle cx="50" cy="58" r="2.4" fill="#1a1a1a"/><circle cx="70" cy="58" r="2.4" fill="#1a1a1a"/>
+  <path d="M51 72 q9 7 18 0" stroke="#9a3a2a" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

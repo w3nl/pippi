@@ -62,5 +62,21 @@ function useItem(item, hs){
     if(hs==='nilsson2') return say([['nilsson', "Hihi-eek!"], "Mr Nilsson giggles in his sleep. Wrong sleepyhead."]);
     return say("You tickle it. It isn't ticklish. Someone in this room is, though.");
   }
+  if(item==='knife'){
+    if(hs==='cake') return S.f.cut ? say("The cake is already cut into eight fair slices.") : openCake();
+    if(hs==='cupboard') return say(["You try to prise the cupboard open with the cake knife.", ['teacher', "Not with my good knife, please! That's for the cake."]]);
+    return say("A cake knife is for cake. Luckily, there is a very big cake in this room.");
+  }
+  if(item==='ckey'){
+    if(hs!=='cupboard') return say("A little brass key. It looks just right for the little lock on the nature cupboard.");
+    take('ckey'); S.f.cupOpen = true; save(); applyVisuals(); beep(300,.1,'triangle');
+    say("The little key fits! Click: the glass doors of the nature cupboard swing open.", () => openFrog());
+    return;
+  }
+  if(item==='dkey'){
+    if(hs!=='cdoor' && hs!=='teacher') return say("The classroom key belongs in the classroom door.");
+    take('dkey'); S.f.out3 = true; save(); applyVisuals(); chord([523,659,784,1046,1318]);
+    return win3();
+  }
   say("That doesn't do anything useful.");
 }

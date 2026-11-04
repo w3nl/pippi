@@ -1,0 +1,66 @@
+/* Chapter 3: the classroom. Close-ups: the blackboard, the register, Pippi's cake, the nature cupboard (frog),
+   the plan of the classroom, and the 9-times finger trick on the prize box. */
+.dialog.who-teacher{border-left-color:#7cc0f0} .dialog.who-teacher .who{color:#7cc0f0}
+
+/* the blackboard */
+.chalk{background:#2f4a3a;border:12px solid #6b4423;border-radius:6px;padding:16px 20px;color:#f3efe3;font-family:var(--f-hand);font-size:clamp(20px,3.4vw,26px);line-height:1.25}
+.chalk ol{margin:6px 0 10px;padding-left:1.4em}
+.chalk .ch-h{margin:0;font-size:1.3em;font-weight:700;color:#f2c94c;text-align:center}
+.chalk .ch-sig{margin:0;text-align:right}
+.chalk .ch-pippi{margin:6px 0 0;color:#ffb3a6}
+
+/* the register */
+.register{list-style:none;margin:0 auto;padding:0;max-width:340px;counter-reset:reg}
+.register li{display:flex;align-items:center;gap:8px;background:#fffaf0;color:#1f2a44;border-radius:4px;padding:6px 10px;margin-bottom:6px;font-family:var(--f-hand);font-size:24px;counter-increment:reg}
+.register li::before{content:counter(reg) ".";font-family:var(--f-mono);font-size:13px;color:#8a8f96;width:1.6em}
+.register li span{flex:1}
+.register .mv{border:1px solid #c9c2b2;background:#f3efe3;color:#1f2a44;border-radius:4px;width:34px;height:30px;padding:0}
+.register .mv:disabled{opacity:.3;cursor:default}
+
+/* the cake */
+.cake-wrap{display:flex;gap:20px;align-items:center;justify-content:center;flex-wrap:wrap}
+.cake-svg{width:200px;height:200px;flex:0 0 auto}
+.cake-ctl{display:flex;flex-direction:column;align-items:center;gap:8px}
+.stepper{display:flex;align-items:center;gap:10px}
+.stepper b{font-family:var(--f-mono);font-size:34px;min-width:2ch;text-align:center}
+.stepper .btn{padding:8px 14px;font-size:18px}
+.ck-l{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.ck-q{margin-top:12px;text-align:center}
+.ck-q p{margin:0 0 4px}
+.frac{font-size:18px;min-width:60px}
+
+/* the frog's life cycle */
+.frog-row{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:10px}
+.fslot{min-height:110px;border:2px dashed var(--line);border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4px;text-align:center;font-size:11px;line-height:1.2}
+.fslot b{font-family:var(--f-mono);font-size:20px;color:var(--muted)}
+.fcard{display:flex;flex-direction:column;align-items:center;gap:2px;border:1px solid var(--line);border-radius:6px;background:#cfe6e0;color:#1f2a44;padding:4px;font-size:11px;line-height:1.2;min-height:110px}
+.fcard:hover{border-color:var(--amber)}
+.fcard.gone{visibility:hidden}
+.fslot svg,.fcard svg{width:100%;max-width:76px;height:auto}
+@media (max-width:560px){.frog-row{grid-template-columns:repeat(3,1fr)}}
+
+/* the plan of the classroom */
+.plan-grid{display:grid;grid-template-columns:28px repeat(6,1fr);gap:3px;max-width:480px;margin:0 auto;background:#fffaf0;padding:10px;border-radius:6px;color:#1f4d8c}
+.plan-grid>b{font-family:var(--f-mono);display:grid;place-items:center;font-size:15px}
+.pcell{aspect-ratio:1;border:1px solid #9ab4d8;background:#eef4fb;color:#c4302b;font-size:22px;padding:0;border-radius:2px}
+.pcell.empty{background:#fffaf0}
+.pcell:hover,.pcell:focus-visible{background:#ffe9a8}
+
+/* the 9-times finger trick */
+.fingers{display:flex;gap:4px;justify-content:center;align-items:flex-end;margin:6px 0 4px;flex-wrap:nowrap}
+.finger{width:30px;height:90px;border-radius:15px 15px 6px 6px;border:2px solid #b5835a;background:#f3c9a4;display:flex;align-items:flex-end;justify-content:center;padding:0 0 6px;transition:height .15s}
+.finger:nth-child(1),.finger:nth-child(10){height:70px} .finger:nth-child(5),.finger:nth-child(6){height:60px}
+.finger:nth-child(5){margin-right:14px}
+.finger span{font-family:var(--f-mono);font-size:11px;color:#7a4a1f}
+.finger.down{height:30px!important;background:#e2a77e}
+.finger-out{text-align:center;font-family:var(--f-mono);font-size:14px;min-height:1.5em;margin-bottom:8px}
+@media (max-width:420px){.finger{width:24px}}
+
+/* the classroom comes alive (stopped by the Motion setting, see css/animations.css) */
+@keyframes legswing{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(12deg)}}
+@keyframes peek{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes hop{0%,80%,100%{transform:translateY(0)}88%{transform:translateY(-10px)}}
+#cl-pippi .swing{transform-box:fill-box;transform-origin:100% 0;animation:legswing 1.2s ease-in-out infinite}
+#cl-pippi .swing.b{transform-origin:0 0;animation-delay:-.6s}
+#cl-teacher{animation:peek 3s ease-in-out infinite}
+#cl-frog{transform-box:fill-box;animation:hop 4s ease-in-out infinite}

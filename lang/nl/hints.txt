@@ -69,3 +69,37 @@
 > Tommy zei: KIETEL. Maar Pippi slaapt andersom, en je hebt iets zachts en kriebeligs nodig.
 = Take the feather from Pippi's hat, select it, and use it on her feet on the pillow.
 > Pak de veer van Pippi's hoed, kies hem, en gebruik hem op haar voeten op het kussen.
+
+# ---------- Chapter 3 ----------
+= The teacher has written the rules of her escape room on the blackboard. Read them first.
+> De juf heeft de regels van haar escaperoom op het bord geschreven. Lees die eerst.
+= Click the blackboard. Step 1 is the register on the teacher's desk.
+> Klik op het bord. Stap 1 is de presentielijst op het bureau van de juf.
+= The register on the teacher's desk has to go from A to Z. When two names start with the same letter, look at the second letter.
+> De presentielijst op het bureau moet van A tot Z. Als twee namen met dezelfde letter beginnen, kijk dan naar de tweede letter.
+= Annika, Axel, Britta, Kalle, Olle, Pippi, Tommy. Then press Done.
+> Annika, Axel, Britta, Kalle, Olle, Pippi, Tommy. Klik dan op Klaar.
+= Share Pippi's cake fairly: count everybody in the class. The register has seven children, and someone else is in the class too.
+> Verdeel Pippi's taart eerlijk: tel iedereen in de klas. Op de lijst staan zeven kinderen, en er hoort nog iemand bij de klas.
+= Use the cake knife on the cake, cut it into 8 slices (7 children plus the teacher), then answer 1/8.
+> Gebruik het taartmes op de taart, snijd hem in 8 stukken (7 kinderen plus de juf), en kies dan 1/8.
+= You found a little key in the cake. Something in the room has a little lock.
+> Je hebt een sleuteltje gevonden in de taart. Iets in het lokaal heeft een klein slotje.
+= Use the little key on the nature cupboard.
+> Gebruik het sleuteltje op de natuurkast.
+= Put the pictures in the order a frog grows up, starting with eggs.
+> Leg de plaatjes in de volgorde waarin een kikker opgroeit, te beginnen met eitjes.
+= Frog spawn, tadpole, tadpole with back legs, froglet, frog.
+> Kikkerdril, kikkervisje, kikkervisje met achterpootjes, jonge kikker, kikker.
+= The frog's note says the prize is at A2 on the plan of the classroom. A letter across, then a number down.
+> Volgens het briefje van de kikker ligt de prijs op A2 op de plattegrond van het lokaal. Een letter naar rechts, dan een cijfer naar beneden.
+= Open the plan on the wall and click the square in column A, row 2: the nature cupboard with the globe.
+> Open de plattegrond aan de muur en klik op het vakje in kolom A, rij 2: de natuurkast met de globe.
+= The globe opens. The prize box wants 9 × 7, and the poster shows a trick with your fingers.
+> De globe gaat open. De prijzendoos wil 9 × 7, en de poster laat een truc met je vingers zien.
+= Fold down the 7th finger: 6 fingers on the left, 3 on the right. Set the lock to 63.
+> Vouw de 7e vinger om: 6 vingers links, 3 rechts. Zet het slot op 63.
+= You have the classroom key.
+> Je hebt de sleutel van het lokaal.
+= Use the classroom key on the door.
+> Gebruik de sleutel van het lokaal op de deur.

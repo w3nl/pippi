@@ -1,0 +1,295 @@
+# Swedish translation: Chapter 3, Pippi goes to school (js/chapter3.js).
+# The register's names are the same in every language, so the alphabetical order puzzle needs no translation.
+
+= Cake knife
+> Tårtkniv
+= From the teacher's drawer. For sharing, not for prising open cupboards.
+> Från frökens låda. Till att dela med, inte till att bända upp skåp.
+= Little key
+> Liten nyckel
+= A little brass key, still a bit creamy. Pippi baked it into her cake "to keep it safe".
+> En liten mässingsnyckel, fortfarande lite gräddig. Pippi bakade in den i tårtan "för att den skulle vara i säkerhet".
+= Classroom key
+> Klassrumsnyckel
+= The key to the classroom door, from the prize box. Freedom! And summer!
+> Nyckeln till klassrumsdörren, från prisasken. Frihet! Och sommar!
+= The spunk's jam jar, on the ledge under the blackboard. Pippi brought it to school.
+> Spunkens syltburk, på hyllan under tavlan. Pippi har tagit med den till skolan.
+= "It wanted to learn something," she says. You take it. A spunk knows things, even at school.
+> "Den ville också lära sig något," säger hon. Du tar den. En spunk vet saker, till och med i skolan.
+= The classroom clock: the big hand is on the 10 and the little hand nearly on the 12. Ten to twelve.
+> Klassrumsklockan: den stora visaren står på 10 och den lilla nästan på 12. Tio i tolv.
+= At twelve the bell rings, and then: SUMMER HOLIDAYS. If you're out of the classroom by then.
+> Klockan tolv ringer det, och sedan: SOMMARLOV. Om du har kommit ut ur klassrummet till dess.
+= The teacher's desk. The drawer is open and empty now, except for a red pen and a very old apple.
+> Frökens kateder. Lådan är öppen och tom nu, förutom en röd penna och ett väldigt gammalt äpple.
+= The teacher's desk. Its drawer is locked, with a note taped to it:
+> Frökens kateder. Lådan är låst, och det sitter en lapp på den:
+= "Opens when the REGISTER is in order. — Miss"
+> "Öppnas när KLASSLISTAN är i ordning. — Fröken"
+= What's left of Pippi's cake: eight fair slices, minus the ones Pippi has already eaten. That's most of them.
+> Det som är kvar av Pippis tårta: åtta rättvisa bitar, minus de som Pippi redan har ätit. Det är de flesta.
+= Pippi's cake. It's enormous: pink, with three cherries and a big P on the side.
+> Pippis tårta. Den är enorm: rosa, med tre körsbär och ett stort P på sidan.
+= I baked it myself! I'm sharing it with everybody. Fairly! Mostly fairly.
+> Jag har bakat den själv! Jag delar den med alla. Rättvist! Nästan rättvist.
+= You'll need something to cut it with.
+> Du behöver något att skära den med.
+= The frog sits on the cupboard, looking very grown-up. You give it a little kiss.
+> Grodan sitter på skåpet och ser väldigt vuxen ut. Du ger den en liten puss.
+= It stays a frog. It does look pleased, though.
+> Den förblir en groda. Men den ser nöjd ut.
+= The nature cupboard, with jars of pond water, a tank, and a frog that looks bored. The glass doors are locked with a little brass lock.
+> Naturskåpet, med burkar med dammvatten, ett akvarium och en groda som ser uttråkad ut. Glasdörrarna är låsta med ett litet mässingslås.
+= I hid that little key! Somewhere nobody will ever look. Somewhere delicious.
+> Jag har gömt den lilla nyckeln! Någonstans där ingen någonsin tittar. Någonstans gott.
+= The globe, open like a box. The prize box is empty: you've got the key and the certificates.
+> Jordgloben, öppen som en ask. Prisasken är tom: du har nyckeln och diplomen.
+= A big globe. Pippi spins it and points: "That's where my father is king! Somewhere about… here."
+> En stor jordglob. Pippi snurrar på den och pekar: "Där är min pappa kung! Någonstans ungefär… här."
+= She's pointing at the ceiling.
+> Hon pekar i taket.
+= School is lovely! You sit down, somebody tells you things, and then you get holidays. I should have come years ago.
+> Skolan är härlig! Man sätter sig, någon berättar saker, och sedan får man lov. Jag borde ha kommit för många år sedan.
+= Do you know what nine times seven is? A LOT. That's my answer for everything with a nine in it.
+> Vet du vad nio gånger sju är? JÄTTEMYCKET. Det är mitt svar på allt med en nia i.
+= I could just lift the door off its hinges. But the teacher says that's cheating. I've never cheated, so I'm sure I'd be very good at it.
+> Jag skulle bara kunna lyfta dörren av gångjärnen. Men fröken säger att det är fusk. Jag har aldrig fuskat, så det klarar jag säkert alldeles utmärkt.
+= Wonderful work! Off you go. Have a lovely summer.
+> Underbart gjort! Iväg med er nu. Ha en härlig sommar!
+= No peeking for help through the window! Well… one little tip: read the blackboard. It tells you what to do, step by step.
+> Ingen hjälp genom fönstret! Nåja… ett litet tips: läs på tavlan. Där står det vad ni ska göra, steg för steg.
+= The classroom door is open. Outside, the whole school is cheering. Summer holidays!
+> Klassrumsdörren står öppen. Ute jublar hela skolan. Sommarlov!
+= The classroom door. Locked, and the teacher has the key… no, wait: she says the key is in the prize box.
+> Klassrumsdörren. Låst, och fröken har nyckeln… nej, vänta: hon säger att nyckeln ligger i prisasken.
+= Find the prize box, and you find the way out!
+> Hitta prisasken, så hittar ni vägen ut!
+= The blackboard
+> Svarta tavlan
+= The teacher's escape room
+> Frökens escape room
+= ESCAPE THE CLASSROOM!
+> FLY FRÅN KLASSRUMMET!
+= Put the REGISTER in order, from A to Z. It opens my drawer.
+> Sätt KLASSLISTAN i ordning, från A till Ö. Då öppnas min låda.
+= Share Pippi's CAKE fairly: everybody in our class gets the same.
+> Dela Pippis TÅRTA rättvist: alla i vår klass får lika mycket.
+= Help the NATURE CUPBOARD grow up, from egg to frog.
+> Hjälp NATURSKÅPET att växa upp, från ägg till groda.
+= The PLAN of our classroom shows where the prize is hidden.
+> KARTAN över vårt klassrum visar var priset är gömt.
+= The prize box opens with 9 × 7. Use the poster!
+> Prisasken öppnas med 9 × 7. Använd affischen!
+= — Miss
+> — Fröken
+= a LOT
+> JÄTTEMYCKET
+= The register, now in perfect order: Annika, Axel, Britta, Kalle, Olle, Pippi, Tommy.
+> Klasslistan, nu i perfekt ordning: Annika, Axel, Britta, Kalle, Olle, Pippi, Tommy.
+= Pippi has written "PRESENT!!!" next to her name. Three times.
+> Pippi har skrivit "NÄRVARANDE!!!" bredvid sitt namn. Tre gånger.
+= The register
+> Klasslistan
+= Class 3 · the names must go from A to Z
+> Klass 3 · namnen ska gå från A till Ö
+= Done!
+> Klar!
+= Move the names up and down until they are in alphabetical order.
+> Flytta namnen upp och ner tills de står i bokstavsordning.
+= Move {name} up
+> Flytta {name} uppåt
+= Move {name} down
+> Flytta {name} nedåt
+= A to Z! Click: the teacher's drawer springs open.
+> Från A till Ö! Klick: frökens låda hoppar upp.
+= In the drawer: a cake knife, and a card in the teacher's neat handwriting: "Step 2: Pippi's cake. Fair shares!"
+> I lådan: en tårtkniv, och ett kort med frökens prydliga handstil: "Steg 2: Pippis tårta. Dela rättvist!"
+= You take the knife.
+> Du tar kniven.
+= {a} and {b} both start with {l}. Then look at the second letter: {x} comes before {y}.
+> {a} och {b} börjar båda på {l}. Titta då på den andra bokstaven: {x} kommer före {y}.
+= {a} is above {b}, but {y} comes after {x} in the alphabet.
+> {a} står ovanför {b}, men {y} kommer efter {x} i alfabetet.
+= Everybody in our class gets the same
+> Alla i vår klass får lika mycket
+= Fewer slices
+> Färre bitar
+= More slices
+> Fler bitar
+= slices
+> bitar
+= Cut!
+> Skär!
+= Now, how big is one slice?
+> Och hur stor är en bit?
+= Count everybody in our class: the register knows who the children are. And don't forget the teacher!
+> Räkna alla i vår klass: klasslistan vet vilka barnen är. Och glöm inte fröken!
+= One slice? Pippi grabs it: "Thank you! The whole cake, just for me!" That isn't sharing. How many people are in the class?
+> En bit? Pippi tar den: "Tack! Hela tårtan, bara till mig!" Det är inte att dela. Hur många är det i klassen?
+= Seven slices: one for every child in the register. And the teacher? She looks very sad through the window.
+> Sju bitar: en till varje barn på klasslistan. Och fröken då? Hon ser väldigt ledsen ut genom fönstret.
+= {n} slices for 8 people? Somebody gets nothing, and it might be you. Count again: the register, plus the teacher.
+> {n} bitar till 8 personer? Då får någon ingenting, och det kanske blir du. Räkna igen: klasslistan plus fröken.
+= {n} slices for 8 people? Some get two and some get one. That isn't fair.
+> {n} bitar till 8 personer? Vissa får två och vissa en. Det är inte rättvist.
+= Eight equal slices, one for everybody. Clunk! The knife hits something hard inside…
+> Åtta lika stora bitar, en till var och en. Klonk! Kniven slår emot något hårt…
+= 8 is how many slices there are. But how big is ONE of them, compared with the whole cake?
+> 8 är hur många bitar det finns. Men hur stor är EN bit, jämfört med hela tårtan?
+= Then you would only need {d} slices. You cut it into 8.
+> Då skulle du bara behöva {d} bitar. Du skar den i 8.
+= One eighth: 1/8! The whole cake is 8/8. And in one of the slices: a little brass key.
+> En åttondel: 1/8! Hela tårtan är 8/8. Och i en av bitarna: en liten mässingsnyckel.
+= There's my key! I baked it in to keep it safe. Nobody looks inside a cake. Except for cake.
+> Där är min nyckel! Jag bakade in den för att den skulle vara säker. Ingen tittar inuti en tårta. Utom efter tårta.
+= A little brass key, a bit creamy. You lick it clean. Well, you wipe it.
+> En liten mässingsnyckel, lite gräddig. Du slickar av den. Nåja, du torkar av den.
+= Frog spawn: eggs in jelly
+> Grodrom: ägg i gelé
+= Tadpole: a head and a tail
+> Grodyngel: ett huvud och en svans
+= Tadpole with back legs
+> Grodyngel med bakben
+= Froglet: four legs and a short tail
+> Grodunge: fyra ben och en kort svans
+= Frog
+> Groda
+= The nature cupboard
+> Naturskåpet
+= From egg to frog: put them in order
+> Från ägg till groda: lägg dem i ordning
+= Start again
+> Börja om
+= Click the pictures in the right order, from the very beginning of a frog's life.
+> Klicka på bilderna i rätt ordning, från allra första början av en grodas liv.
+= Not yet! First comes: {what}.
+> Inte än! Först kommer: {what}.
+= the very beginning: eggs
+> allra första början: ägg
+= the next small change
+> nästa lilla förändring
+= That one came earlier.
+> Den kom tidigare.
+= A frog first? Then where did it come from? Start with the eggs.
+> En groda först? Var kom den ifrån då? Börja med äggen.
+= Frog spawn: hundreds of eggs in jelly, floating in the pond.
+> Grodrom: hundratals ägg i gelé som flyter i dammen.
+= The eggs hatch into tadpoles. They breathe under water, like fish.
+> Äggen kläcks till grodyngel. De andas under vatten, som fiskar.
+= The tadpole grows its back legs first…
+> Grodynglet får bakbenen först…
+= …then its front legs, while its tail gets shorter and shorter.
+> …sedan frambenen, medan svansen blir kortare och kortare.
+= A frog! Now it breathes air and hops about on land.
+> En groda! Nu andas den luft och hoppar omkring på land.
+= The frog in the tank gives a big "Ribbit!" and hops out onto the top of the cupboard, very proud of having grown up.
+> Grodan i akvariet säger ett stort "Kvack!" och hoppar upp på skåpet, mycket stolt över att ha blivit vuxen.
+= Under the stone where it sat, there's a folded note: "The prize is hidden at A2 on the plan of our classroom. — Miss"
+> Under stenen där den satt ligger en hopvikt lapp: "Priset är gömt på A2 på kartan över vårt klassrum. — Fröken"
+= Start again from the very beginning.
+> Börja om från allra första början.
+= plan of the classroom
+> karta över klassrummet
+= nature cupboard, with the globe on top
+> naturskåp, med jordgloben ovanpå
+= empty floor
+> tomt golv
+= classroom door
+> klassrumsdörr
+= wastepaper basket
+> papperskorg
+= teacher's desk
+> frökens kateder
+= pupils' desks
+> elevernas bänkar
+= coat pegs
+> klädkrokar
+= umbrella stand
+> paraplyställ
+= bookshelf
+> bokhylla
+= blackboard
+> svarta tavlan
+= clock
+> klocka
+= Plan of our classroom
+> Karta över vårt klassrum
+= A letter across, then a number down
+> En bokstav åt sidan, sedan en siffra nedåt
+= The frog's note says: the prize is hidden at A2. Find A2 on the plan.
+> På grodans lapp står det: priset är gömt på A2. Hitta A2 på kartan.
+= Each square has a name: first its letter (across the top), then its number (down the side). Click a square.
+> Varje ruta har ett namn: först bokstaven (överst, åt sidan), sedan siffran (på sidan, nedåt). Klicka på en ruta.
+= A2: column A, row 2. The nature cupboard… and on top of it, the globe!
+> A2: kolumn A, rad 2. Naturskåpet… och ovanpå det, jordgloben!
+= The prize is hidden at A2: the nature cupboard, with the globe on top.
+> Priset är gömt på A2: naturskåpet, med jordgloben ovanpå.
+= Look: the globe has a thin line all the way round its middle. It opens!
+> Titta: jordgloben har en tunn linje runt hela mitten. Den går att öppna!
+= {ref}: {what}.
+> {ref}: {what}.
+= Not A2: the letter goes across, the number goes down.
+> Inte A2: bokstaven går åt sidan, siffran nedåt.
+= The 9-times trick
+> Nians trick
+= A poster, with ten paper fingers
+> En affisch med tio pappersfingrar
+= Hold up ten fingers. For 9 × 4, fold down the 4th finger. The fingers to its left are the tens (3), the fingers to its right are the ones (6): 9 × 4 = 36.
+> Håll upp tio fingrar. För 9 × 4 viker du ner det 4:e fingret. Fingrarna till vänster är tiotalen (3), fingrarna till höger är entalen (6): 9 × 4 = 36.
+= Fold down finger {n}
+> Vik ner finger {n}
+= Click a finger to fold it down.
+> Klicka på ett finger för att vika ner det.
+= 9 × {n}: {l} fingers on the left, {r} on the right. That makes {res}.
+> 9 × {n}: {l} fingrar till vänster, {r} till höger. Det blir {res}.
+= The prize box
+> Prisasken
+= Inside the globe · a lock with two wheels
+> Inuti jordgloben · ett lås med två hjul
+= The lid says: 9 × 7
+> På locket står det: 9 × 7
+= 63! The lid pops open: the classroom key, and a pile of certificates with gold stars.
+> 63! Locket hoppar upp: klassrumsnyckeln, och en hög diplom med guldstjärnor.
+= Nine times seven is sixty-three: six fingers on the left, three on the right.
+> Nio gånger sju är sextiotre: sex fingrar till vänster, tre till höger.
+= Sixty-three! That's what I meant by A LOT.
+> Sextiotre! Det var det jag menade med JÄTTEMYCKET.
+= You take the classroom key.
+> Du tar klassrumsnyckeln.
+= 99 is a LOT, Pippi agrees. But the lock wants exactly 9 × 7.
+> 99 är JÄTTEMYCKET, håller Pippi med om. Men låset vill ha exakt 9 × 7.
+= That's 9 × 4, the example on the poster. You need 9 × 7: fold down the 7th finger.
+> Det är 9 × 4, exemplet på affischen. Du behöver 9 × 7: vik ner det 7:e fingret.
+= 9 + 7 is 16. But the lid says 9 TIMES 7.
+> 9 + 7 är 16. Men på locket står det 9 GÅNGER 7.
+= The lock stays shut. Fold down the 7th finger and count the fingers on each side.
+> Låset förblir stängt. Vik ner det 7:e fingret och räkna fingrarna på varje sida.
+= The little school in town, on the very last morning before the summer holidays.
+> Den lilla skolan i stan, på allra sista morgonen före sommarlovet.
+= Good morning! Today is special: I've turned our classroom into an escape room. Tommy and Annika's group has already escaped. Now it's your turn, with Pippi.
+> God morgon! I dag är det något speciellt: jag har gjort om vårt klassrum till ett escape room. Tommys och Annikas grupp har redan kommit ut. Nu är det din tur, tillsammans med Pippi.
+= An escape room! I've never done one, so I'm sure I can!
+> Ett escape room! Det har jag aldrig provat förut, så det klarar jag säkert!
+= I'll lock the door and wait outside. Everything you need is in here, and the rules are on the blackboard.
+> Jag låser dörren och väntar utanför. Allt ni behöver finns här inne, och reglerna står på tavlan.
+= Click. The key turns, and the teacher's face appears in the little window in the door.
+> Klick. Nyckeln vrids om, och frökens ansikte dyker upp i det lilla fönstret i dörren.
+= I could just lift the door off its hinges…
+> Jag skulle ju bara kunna lyfta dörren av gångjärnen…
+= No lifting doors, Pippi!
+> Inga dörrar ska lyftas, Pippi!
+= Let's read the blackboard first.
+> Vi läser på tavlan först.
+= The key turns. The door swings open, and the school bell rings: twelve o'clock!
+> Nyckeln vrids om. Dörren svänger upp, och skolklockan ringer: klockan tolv!
+= You did it! The register, the cake, the frog, the plan and the nine-times table. I'm very proud of you.
+> Ni klarade det! Klasslistan, tårtan, grodan, kartan och nians tabell. Jag är väldigt stolt över er.
+= You took longer than us. But you had Pippi.
+> Ni tog längre tid än vi. Men ni hade Pippi.
+= Did you really share the cake fairly? There's only one slice left.
+> Delade ni verkligen tårtan rättvist? Det är bara en bit kvar.
+= Here are your certificates. And Pippi, this one is for you: "For the most surprising sums".
+> Här är era diplom. Och Pippi, det här är till dig: "För de mest överraskande talen".
+= A certificate! And now I get summer holidays too. That's why I came to school in the first place!
+> Ett diplom! Och nu får jag sommarlov också. Det var ju därför jag började skolan!

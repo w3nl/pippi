@@ -41,4 +41,23 @@ function stage2(){
   if(!S.f.swapped) return 'b_scale';
   return 'b_wake';
 }
-function stage_(){ return S.ch===2 ? stage2() : stage1(); }
+Object.assign(HINTS, {
+  s_board: ["The teacher has written the rules of her escape room on the blackboard. Read them first.", "Click the blackboard. Step 1 is the register on the teacher's desk."],
+  s_register: ["The register on the teacher's desk has to go from A to Z. When two names start with the same letter, look at the second letter.", "Annika, Axel, Britta, Kalle, Olle, Pippi, Tommy. Then press Done."],
+  s_cake: ["Share Pippi's cake fairly: count everybody in the class. The register has seven children, and someone else is in the class too.", "Use the cake knife on the cake, cut it into 8 slices (7 children plus the teacher), then answer 1/8."],
+  s_cupboard: ["You found a little key in the cake. Something in the room has a little lock.", "Use the little key on the nature cupboard."],
+  s_frog: ["Put the pictures in the order a frog grows up, starting with eggs.", "Frog spawn, tadpole, tadpole with back legs, froglet, frog."],
+  s_plan: ["The frog's note says the prize is at A2 on the plan of the classroom. A letter across, then a number down.", "Open the plan on the wall and click the square in column A, row 2: the nature cupboard with the globe."],
+  s_prize: ["The globe opens. The prize box wants 9 × 7, and the poster shows a trick with your fingers.", "Fold down the 7th finger: 6 fingers on the left, 3 on the right. Set the lock to 63."],
+  s_door: ["You have the classroom key.", "Use the classroom key on the door."]
+});
+function stage3(){
+  if(!S.f.knife) return S.f.readBoard ? 's_register' : 's_board';
+  if(!S.f.cakeDone) return 's_cake';
+  if(!S.f.cupOpen) return 's_cupboard';
+  if(!S.f.frog) return 's_frog';
+  if(!S.f.plan) return 's_plan';
+  if(!S.f.boxOpen) return 's_prize';
+  return 's_door';
+}
+function stage_(){ return S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }

@@ -101,7 +101,7 @@ test('Chapter 2: catch the burglars', async ({ page }) => {
   await useSlot(page, 'Feather');
   await hs(page, 'feet');
   await expectWin(page, 'Burglars caught · Chapter 2 complete');
-  await expect(page.locator('#btn-next')).toBeHidden();
+  await expect(page.locator('#btn-next')).toHaveText('Continue to Chapter 3');
   for (const a of ['Shook Pippi three times', 'A shadow over 5 metres tall', 'Wished upon a planet'])
     await expect(page.locator('#w-ach .got', { hasText: a })).toBeVisible();
   await page.locator('#btn-stay').click();

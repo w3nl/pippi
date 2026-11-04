@@ -27,7 +27,7 @@ test('devices that prefer reduced motion stand still, unless the player picks "M
   await expect(page.locator('#btn-motion')).toHaveText('Motion on');
 });
 
-test('"Motion off" stops everything, in both rooms', async ({ page }) => {
+test('"Motion off" stops everything, in every room', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   await seed(page, { ch: 2, scene: 'bedroom', f: { introDone: true, torchOn: true, scared: true, north: true, sos: true }, inv: ['torch'] }, ['-ch2']);
   await page.locator('#btn-cont').click();
@@ -48,6 +48,14 @@ test('"Motion off" stops everything, in both rooms', async ({ page }) => {
   await page.evaluate(() => { S.ch = 1; S.scene = 'kitchen'; S.f = { fire: true }; applyVisuals(); });
   await expect(page.locator('#vk-steam')).toBeVisible();
   expect(await moving(page)).toBe(0);
+
+  // and the classroom (Pippi swings her legs, the teacher bobs at the window, the frog hops)
+  await page.evaluate(() => { S.ch = 3; S.scene = 'classroom'; S.f = {}; applyVisuals(); });
+  await expect(page.locator('#sc-classroom')).toHaveClass(/on/);
+  expect(await moving(page)).toBe(0);
+  await page.locator('#btn-motion').click();   // auto (this device: full motion)
+  await expect.poll(() => anim(page, '#cl-teacher')).toBe('peek');
+  expect(await anim(page, '#cl-pippi .swing')).toBe('legswing');
 });
 
 test('a new item pops into your pockets', async ({ page }) => {

@@ -1,0 +1,295 @@
+# Dutch translation: Chapter 3, Pippi goes to school (js/chapter3.js).
+# The register's names are the same in every language, so the alphabetical order puzzle needs no translation.
+
+= Cake knife
+> Taartmes
+= From the teacher's drawer. For sharing, not for prising open cupboards.
+> Uit de la van de juf. Om te delen, niet om kasten open te wrikken.
+= Little key
+> Sleuteltje
+= A little brass key, still a bit creamy. Pippi baked it into her cake "to keep it safe".
+> Een klein koperen sleuteltje, nog een beetje romig. Pippi heeft het in haar taart gebakken "om het veilig te bewaren".
+= Classroom key
+> Sleutel van het lokaal
+= The key to the classroom door, from the prize box. Freedom! And summer!
+> De sleutel van de deur van het lokaal, uit de prijzendoos. Vrijheid! En zomer!
+= The spunk's jam jar, on the ledge under the blackboard. Pippi brought it to school.
+> Het jampotje van de spunk, op de richel onder het bord. Pippi heeft hem meegenomen naar school.
+= "It wanted to learn something," she says. You take it. A spunk knows things, even at school.
+> "Hij wilde ook eens wat leren," zegt ze. Je neemt hem mee. Een spunk weet dingen, zelfs op school.
+= The classroom clock: the big hand is on the 10 and the little hand nearly on the 12. Ten to twelve.
+> De klok in het lokaal: de grote wijzer staat op de 10 en de kleine bijna op de 12. Tien voor twaalf.
+= At twelve the bell rings, and then: SUMMER HOLIDAYS. If you're out of the classroom by then.
+> Om twaalf uur gaat de bel, en dan: ZOMERVAKANTIE. Als je dan tenminste uit het lokaal bent.
+= The teacher's desk. The drawer is open and empty now, except for a red pen and a very old apple.
+> Het bureau van de juf. De la is open en leeg, op een rode pen en een heel oude appel na.
+= The teacher's desk. Its drawer is locked, with a note taped to it:
+> Het bureau van de juf. De la zit op slot, en er is een briefje op geplakt:
+= "Opens when the REGISTER is in order. — Miss"
+> "Gaat open als de PRESENTIELIJST op volgorde is. — Juf"
+= What's left of Pippi's cake: eight fair slices, minus the ones Pippi has already eaten. That's most of them.
+> Wat er over is van Pippi's taart: acht eerlijke stukken, min de stukken die Pippi al op heeft. Dat zijn de meeste.
+= Pippi's cake. It's enormous: pink, with three cherries and a big P on the side.
+> Pippi's taart. Hij is enorm: roze, met drie kersen en een grote P op de zijkant.
+= I baked it myself! I'm sharing it with everybody. Fairly! Mostly fairly.
+> Zelf gebakken! Ik deel hem met iedereen. Eerlijk! Meestal eerlijk.
+= You'll need something to cut it with.
+> Je hebt iets nodig om hem mee te snijden.
+= The frog sits on the cupboard, looking very grown-up. You give it a little kiss.
+> De kikker zit op de kast en kijkt heel volwassen. Je geeft hem een klein kusje.
+= It stays a frog. It does look pleased, though.
+> Hij blijft een kikker. Maar hij kijkt wel blij.
+= The nature cupboard, with jars of pond water, a tank, and a frog that looks bored. The glass doors are locked with a little brass lock.
+> De natuurkast, met potten slootwater, een bak en een kikker die zich verveelt. De glazen deurtjes zitten op slot met een klein koperen slotje.
+= I hid that little key! Somewhere nobody will ever look. Somewhere delicious.
+> Ik heb dat sleuteltje verstopt! Ergens waar niemand ooit kijkt. Ergens lekker.
+= The globe, open like a box. The prize box is empty: you've got the key and the certificates.
+> De globe, open als een doos. De prijzendoos is leeg: jij hebt de sleutel en de diploma's.
+= A big globe. Pippi spins it and points: "That's where my father is king! Somewhere about… here."
+> Een grote globe. Pippi laat hem draaien en wijst: "Daar is mijn vader koning! Ergens ongeveer… hier."
+= She's pointing at the ceiling.
+> Ze wijst naar het plafond.
+= School is lovely! You sit down, somebody tells you things, and then you get holidays. I should have come years ago.
+> School is heerlijk! Je gaat zitten, iemand vertelt je dingen, en dan krijg je vakantie. Ik had jaren geleden al moeten komen.
+= Do you know what nine times seven is? A LOT. That's my answer for everything with a nine in it.
+> Weet je wat negen keer zeven is? HEEL VEEL. Dat is mijn antwoord op alles met een negen erin.
+= I could just lift the door off its hinges. But the teacher says that's cheating. I've never cheated, so I'm sure I'd be very good at it.
+> Ik zou de deur gewoon uit zijn scharnieren kunnen tillen. Maar de juf zegt dat dat valsspelen is. Ik heb nog nooit valsgespeeld, dus ik denk dat ik het wel kan.
+= Wonderful work! Off you go. Have a lovely summer.
+> Prachtig gedaan! Hup, naar buiten. Fijne zomer!
+= No peeking for help through the window! Well… one little tip: read the blackboard. It tells you what to do, step by step.
+> Niet door het raampje om hulp vragen! Nou… één kleine tip: lees het bord. Daar staat stap voor stap wat je moet doen.
+= The classroom door is open. Outside, the whole school is cheering. Summer holidays!
+> De deur van het lokaal staat open. Buiten juicht de hele school. Zomervakantie!
+= The classroom door. Locked, and the teacher has the key… no, wait: she says the key is in the prize box.
+> De deur van het lokaal. Op slot, en de juf heeft de sleutel… nee, wacht: ze zegt dat de sleutel in de prijzendoos zit.
+= Find the prize box, and you find the way out!
+> Vind de prijzendoos, en je vindt de weg naar buiten!
+= The blackboard
+> Het schoolbord
+= The teacher's escape room
+> De escaperoom van de juf
+= ESCAPE THE CLASSROOM!
+> ONTSNAP UIT DE KLAS!
+= Put the REGISTER in order, from A to Z. It opens my drawer.
+> Zet de PRESENTIELIJST op volgorde, van A tot Z. Dan gaat mijn la open.
+= Share Pippi's CAKE fairly: everybody in our class gets the same.
+> Verdeel Pippi's TAART eerlijk: iedereen in onze klas krijgt evenveel.
+= Help the NATURE CUPBOARD grow up, from egg to frog.
+> Help de NATUURKAST opgroeien, van eitje tot kikker.
+= The PLAN of our classroom shows where the prize is hidden.
+> De PLATTEGROND van ons lokaal laat zien waar de prijs verstopt is.
+= The prize box opens with 9 × 7. Use the poster!
+> De prijzendoos gaat open met 9 × 7. Gebruik de poster!
+= — Miss
+> — Juf
+= a LOT
+> HEEL VEEL
+= The register, now in perfect order: Annika, Axel, Britta, Kalle, Olle, Pippi, Tommy.
+> De presentielijst, nu keurig op volgorde: Annika, Axel, Britta, Kalle, Olle, Pippi, Tommy.
+= Pippi has written "PRESENT!!!" next to her name. Three times.
+> Pippi heeft "AANWEZIG!!!" achter haar naam geschreven. Drie keer.
+= The register
+> De presentielijst
+= Class 3 · the names must go from A to Z
+> Groep 5 · de namen moeten van A tot Z
+= Done!
+> Klaar!
+= Move the names up and down until they are in alphabetical order.
+> Schuif de namen omhoog en omlaag tot ze op alfabetische volgorde staan.
+= Move {name} up
+> {name} omhoog
+= Move {name} down
+> {name} omlaag
+= A to Z! Click: the teacher's drawer springs open.
+> Van A tot Z! Klik: de la van de juf springt open.
+= In the drawer: a cake knife, and a card in the teacher's neat handwriting: "Step 2: Pippi's cake. Fair shares!"
+> In de la: een taartmes, en een kaartje in het nette handschrift van de juf: "Stap 2: Pippi's taart. Eerlijk delen!"
+= You take the knife.
+> Je pakt het mes.
+= {a} and {b} both start with {l}. Then look at the second letter: {x} comes before {y}.
+> {a} en {b} beginnen allebei met een {l}. Kijk dan naar de tweede letter: de {x} komt vóór de {y}.
+= {a} is above {b}, but {y} comes after {x} in the alphabet.
+> {a} staat boven {b}, maar de {y} komt na de {x} in het alfabet.
+= Everybody in our class gets the same
+> Iedereen in onze klas krijgt evenveel
+= Fewer slices
+> Minder stukken
+= More slices
+> Meer stukken
+= slices
+> stukken
+= Cut!
+> Snijden!
+= Now, how big is one slice?
+> En hoe groot is één stuk?
+= Count everybody in our class: the register knows who the children are. And don't forget the teacher!
+> Tel iedereen in onze klas: op de presentielijst staan de kinderen. En vergeet de juf niet!
+= One slice? Pippi grabs it: "Thank you! The whole cake, just for me!" That isn't sharing. How many people are in the class?
+> Eén stuk? Pippi grijpt het: "Dankjewel! De hele taart, voor mij alleen!" Dat is niet delen. Hoeveel mensen zijn er in de klas?
+= Seven slices: one for every child in the register. And the teacher? She looks very sad through the window.
+> Zeven stukken: één voor elk kind op de lijst. En de juf dan? Ze kijkt heel verdrietig door het raampje.
+= {n} slices for 8 people? Somebody gets nothing, and it might be you. Count again: the register, plus the teacher.
+> {n} stukken voor 8 mensen? Dan krijgt iemand niks, en misschien ben jij dat. Tel nog eens: de lijst, plus de juf.
+= {n} slices for 8 people? Some get two and some get one. That isn't fair.
+> {n} stukken voor 8 mensen? Sommigen krijgen er twee en sommigen één. Dat is niet eerlijk.
+= Eight equal slices, one for everybody. Clunk! The knife hits something hard inside…
+> Acht gelijke stukken, één voor iedereen. Klonk! Het mes raakt iets hards…
+= 8 is how many slices there are. But how big is ONE of them, compared with the whole cake?
+> 8 is hoeveel stukken er zijn. Maar hoe groot is ÉÉN stuk, vergeleken met de hele taart?
+= Then you would only need {d} slices. You cut it into 8.
+> Dan had je maar {d} stukken nodig. Je hebt hem in 8 gesneden.
+= One eighth: 1/8! The whole cake is 8/8. And in one of the slices: a little brass key.
+> Eén achtste: 1/8! De hele taart is 8/8. En in een van de stukken: een klein koperen sleuteltje.
+= There's my key! I baked it in to keep it safe. Nobody looks inside a cake. Except for cake.
+> Daar is mijn sleutel! Ik had hem erin gebakken om hem veilig te bewaren. Niemand kijkt in een taart. Behalve naar taart.
+= A little brass key, a bit creamy. You lick it clean. Well, you wipe it.
+> Een koperen sleuteltje, een beetje romig. Je likt het schoon. Nou ja, je veegt het af.
+= Frog spawn: eggs in jelly
+> Kikkerdril: eitjes in gelei
+= Tadpole: a head and a tail
+> Kikkervisje: een kop en een staart
+= Tadpole with back legs
+> Kikkervisje met achterpootjes
+= Froglet: four legs and a short tail
+> Jonge kikker: vier poten en een korte staart
+= Frog
+> Kikker
+= The nature cupboard
+> De natuurkast
+= From egg to frog: put them in order
+> Van eitje tot kikker: zet ze op volgorde
+= Start again
+> Opnieuw
+= Click the pictures in the right order, from the very beginning of a frog's life.
+> Klik de plaatjes aan in de goede volgorde, vanaf het allereerste begin van een kikkerleven.
+= Not yet! First comes: {what}.
+> Nog niet! Eerst komt: {what}.
+= the very beginning: eggs
+> het allereerste begin: eitjes
+= the next small change
+> de volgende kleine verandering
+= That one came earlier.
+> Die kwam eerder.
+= A frog first? Then where did it come from? Start with the eggs.
+> Eerst een kikker? Waar komt die dan vandaan? Begin met de eitjes.
+= Frog spawn: hundreds of eggs in jelly, floating in the pond.
+> Kikkerdril: honderden eitjes in gelei, drijvend in de sloot.
+= The eggs hatch into tadpoles. They breathe under water, like fish.
+> Uit de eitjes komen kikkervisjes. Die ademen onder water, net als vissen.
+= The tadpole grows its back legs first…
+> Het kikkervisje krijgt eerst achterpootjes…
+= …then its front legs, while its tail gets shorter and shorter.
+> …dan voorpootjes, terwijl zijn staart steeds korter wordt.
+= A frog! Now it breathes air and hops about on land.
+> Een kikker! Nu ademt hij lucht en springt hij rond op het land.
+= The frog in the tank gives a big "Ribbit!" and hops out onto the top of the cupboard, very proud of having grown up.
+> De kikker in de bak roept een hard "Kwaak!" en springt boven op de kast, heel trots dat hij volwassen is.
+= Under the stone where it sat, there's a folded note: "The prize is hidden at A2 on the plan of our classroom. — Miss"
+> Onder de steen waar hij op zat, ligt een opgevouwen briefje: "De prijs is verstopt op A2 op de plattegrond van ons lokaal. — Juf"
+= Start again from the very beginning.
+> Begin weer bij het allereerste begin.
+= plan of the classroom
+> plattegrond van het lokaal
+= nature cupboard, with the globe on top
+> natuurkast, met de globe erop
+= empty floor
+> lege vloer
+= classroom door
+> deur van het lokaal
+= wastepaper basket
+> prullenbak
+= teacher's desk
+> bureau van de juf
+= pupils' desks
+> tafels van de leerlingen
+= coat pegs
+> kapstok
+= umbrella stand
+> paraplubak
+= bookshelf
+> boekenkast
+= blackboard
+> schoolbord
+= clock
+> klok
+= Plan of our classroom
+> Plattegrond van ons lokaal
+= A letter across, then a number down
+> Een letter naar rechts, dan een cijfer naar beneden
+= The frog's note says: the prize is hidden at A2. Find A2 on the plan.
+> Op het briefje van de kikker staat: de prijs is verstopt op A2. Zoek A2 op de plattegrond.
+= Each square has a name: first its letter (across the top), then its number (down the side). Click a square.
+> Elk vakje heeft een naam: eerst de letter (bovenaan, van links naar rechts), dan het cijfer (aan de zijkant, van boven naar beneden). Klik op een vakje.
+= A2: column A, row 2. The nature cupboard… and on top of it, the globe!
+> A2: kolom A, rij 2. De natuurkast… en daarbovenop, de globe!
+= The prize is hidden at A2: the nature cupboard, with the globe on top.
+> De prijs is verstopt op A2: de natuurkast, met de globe erop.
+= Look: the globe has a thin line all the way round its middle. It opens!
+> Kijk: de globe heeft een dun lijntje rond het midden. Hij kan open!
+= {ref}: {what}.
+> {ref}: {what}.
+= Not A2: the letter goes across, the number goes down.
+> Niet A2: de letter gaat naar rechts, het cijfer naar beneden.
+= The 9-times trick
+> De truc van de tafel van 9
+= A poster, with ten paper fingers
+> Een poster, met tien papieren vingers
+= Hold up ten fingers. For 9 × 4, fold down the 4th finger. The fingers to its left are the tens (3), the fingers to its right are the ones (6): 9 × 4 = 36.
+> Steek tien vingers op. Voor 9 × 4 vouw je de 4e vinger om. De vingers links ervan zijn de tientallen (3), de vingers rechts ervan de eenheden (6): 9 × 4 = 36.
+= Fold down finger {n}
+> Vouw vinger {n} om
+= Click a finger to fold it down.
+> Klik op een vinger om hem om te vouwen.
+= 9 × {n}: {l} fingers on the left, {r} on the right. That makes {res}.
+> 9 × {n}: {l} vingers links, {r} rechts. Dat is {res}.
+= The prize box
+> De prijzendoos
+= Inside the globe · a lock with two wheels
+> In de globe · een slot met twee wieltjes
+= The lid says: 9 × 7
+> Op het deksel staat: 9 × 7
+= 63! The lid pops open: the classroom key, and a pile of certificates with gold stars.
+> 63! Het deksel springt open: de sleutel van het lokaal, en een stapel diploma's met gouden sterren.
+= Nine times seven is sixty-three: six fingers on the left, three on the right.
+> Negen keer zeven is drieënzestig: zes vingers links, drie rechts.
+= Sixty-three! That's what I meant by A LOT.
+> Drieënzestig! Dat bedoelde ik dus met HEEL VEEL.
+= You take the classroom key.
+> Je pakt de sleutel van het lokaal.
+= 99 is a LOT, Pippi agrees. But the lock wants exactly 9 × 7.
+> 99 is HEEL VEEL, vindt Pippi ook. Maar het slot wil precies 9 × 7.
+= That's 9 × 4, the example on the poster. You need 9 × 7: fold down the 7th finger.
+> Dat is 9 × 4, het voorbeeld op de poster. Je hebt 9 × 7 nodig: vouw de 7e vinger om.
+= 9 + 7 is 16. But the lid says 9 TIMES 7.
+> 9 + 7 is 16. Maar op het deksel staat 9 KEER 7.
+= The lock stays shut. Fold down the 7th finger and count the fingers on each side.
+> Het slot blijft dicht. Vouw de 7e vinger om en tel de vingers aan elke kant.
+= The little school in town, on the very last morning before the summer holidays.
+> Het schooltje in de stad, op de allerlaatste ochtend voor de zomervakantie.
+= Good morning! Today is special: I've turned our classroom into an escape room. Tommy and Annika's group has already escaped. Now it's your turn, with Pippi.
+> Goedemorgen! Vandaag is een bijzondere dag: ik heb van ons lokaal een escaperoom gemaakt. Het groepje van Tommy en Annika is al ontsnapt. Nu is het jouw beurt, samen met Pippi.
+= An escape room! I've never done one, so I'm sure I can!
+> Een escaperoom! Ik heb het nog nooit gedaan, dus ik denk dat ik het wel kan!
+= I'll lock the door and wait outside. Everything you need is in here, and the rules are on the blackboard.
+> Ik doe de deur op slot en wacht buiten. Alles wat je nodig hebt is hier, en de regels staan op het bord.
+= Click. The key turns, and the teacher's face appears in the little window in the door.
+> Klik. De sleutel draait om, en het gezicht van de juf verschijnt in het raampje in de deur.
+= I could just lift the door off its hinges…
+> Ik zou de deur ook gewoon uit zijn scharnieren kunnen tillen…
+= No lifting doors, Pippi!
+> Geen deuren optillen, Pippi!
+= Let's read the blackboard first.
+> Laten we eerst het bord lezen.
+= The key turns. The door swings open, and the school bell rings: twelve o'clock!
+> De sleutel draait om. De deur zwaait open, en de schoolbel gaat: twaalf uur!
+= You did it! The register, the cake, the frog, the plan and the nine-times table. I'm very proud of you.
+> Het is gelukt! De presentielijst, de taart, de kikker, de plattegrond en de tafel van negen. Ik ben heel trots op je.
+= You took longer than us. But you had Pippi.
+> Jullie deden er langer over dan wij. Maar jullie hadden Pippi.
+= Did you really share the cake fairly? There's only one slice left.
+> Hebben jullie de taart echt eerlijk verdeeld? Er is nog maar één stuk over.
+= Here are your certificates. And Pippi, this one is for you: "For the most surprising sums".
+> Hier zijn jullie diploma's. En Pippi, deze is voor jou: "Voor de verrassendste sommen".
+= A certificate! And now I get summer holidays too. That's why I came to school in the first place!
+> Een diploma! En nu krijg ik ook zomervakantie. Daarvoor kwam ik juist naar school!

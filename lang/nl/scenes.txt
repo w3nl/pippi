@@ -69,3 +69,41 @@
 > Verandadeur
 = Veranda door (someone is at the lock!)
 > Verandadeur (er zit iemand aan het slot!)
+
+# ---------- scenes/classroom.svg ----------
+= The classroom
+> Het klaslokaal
+= Blackboard
+> Schoolbord
+= 9-times poster
+> Poster van de tafel van 9
+= Clock
+> Klok
+= Plan of the classroom
+> Plattegrond van het lokaal
+= Globe
+> Globe
+= Nature cupboard
+> Natuurkast
+= Register
+> Presentielijst
+= Teacher's desk
+> Bureau van de juf
+= Pippi's cake
+> Pippi's taart
+= Classroom door
+> Deur van het lokaal
+= ✋ trick!
+> ✋ truc!
+= LAST DAY!
+> LAATSTE DAG!
+= Escape the classroom
+> Ontsnap uit de klas
+= = a LOT —P.
+> = HEEL VEEL —P.
+= 1. Register · 2. Cake · 3. Nature · 4. Plan
+> 1. Lijst · 2. Taart · 3. Natuur · 4. Plattegrond
+= OUR CLASSROOM
+> ONS LOKAAL
+= CLASS 3
+> GROEP 5

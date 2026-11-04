@@ -203,8 +203,6 @@
 > Tjuvarna fast · kapitel 2 klart
 = Caught
 > Fast
-= Thunder-Karlsson and Bloom are off to the police station, and the gold is safe. Next: Pippi goes to school. Chapter 3 is still being written.
-> Dunder-Karlsson och Blom åker till polisstationen, och guldet är i säkerhet. Härnäst: Pippi börjar skolan. Kapitel 3 håller fortfarande på att skrivas.
 = Burglars in the night
 > Tjuvar om natten
 = Chapters
@@ -253,3 +251,53 @@
 > Herr Nilsson fnissar i sömnen. Fel sjusovare.
 = You tickle it. It isn't ticklish. Someone in this room is, though.
 > Du kittlar den. Den är inte kittlig. Men någon i det här rummet är det.
+
+# ---------- Chapter 3: menus, end screen, speakers, item uses ----------
+= Veranda door: on to Chapter {n}
+> Verandadörr: vidare till kapitel {n}
+= Thunder-Karlsson and Bloom are off to the police station, and the gold is safe. Next: Pippi goes to school, on the very last day before the summer holidays.
+> Dunder-Karlsson och Blom åker till polisstationen, och guldet är i säkerhet. Härnäst: Pippi börjar skolan, på allra sista dagen före sommarlovet.
+= Continue to Chapter 3
+> Vidare till kapitel 3
+= School's out · Chapter 3 complete
+> Skolan slut · kapitel 3 klart
+= Summer holidays
+> Sommarlov
+= Pippi has a certificate, and the whole summer ahead. Next: the circus comes to town. Chapter 4 is still being written.
+> Pippi har ett diplom, och hela sommaren framför sig. Härnäst: cirkusen kommer till stan. Kapitel 4 håller fortfarande på att skrivas.
+= Pippi goes to school
+> Pippi börjar skolan
+= Chapter 3: Pippi goes to school
+> Kapitel 3: Pippi börjar skolan
+= Chapter 3 · Pippi Goes to School
+> Kapitel 3 · Pippi börjar skolan
+= The whole cake for Pippi
+> Hela tårtan till Pippi
+= Kissed the frog
+> Pussade grodan
+= Nine times ten
+> Nio gånger tio
+= Back in the classroom. The teacher waves through the little window in the door.
+> Tillbaka i klassrummet. Fröken vinkar genom det lilla fönstret i dörren.
+= Take your time. The burglars aren't going anywhere: they're on top of the wardrobe. When you're ready, the veranda door leads on to Chapter {n}.
+> Ta den tid du behöver. Tjuvarna går ingenstans: de sitter uppe på klädskåpet. När du är redo leder verandadörren vidare till kapitel {n}.
+= Take your time. The summer holidays aren't going anywhere.
+> Ta den tid du behöver. Sommarlovet springer ingenstans.
+= The teacher
+> Fröken
+= School
+> Skolan
+= The cake is already cut into eight fair slices.
+> Tårtan är redan skuren i åtta rättvisa bitar.
+= You try to prise the cupboard open with the cake knife.
+> Du försöker bända upp skåpet med tårtkniven.
+= Not with my good knife, please! That's for the cake.
+> Inte med min fina kniv, tack! Den är till tårtan.
+= A cake knife is for cake. Luckily, there is a very big cake in this room.
+> En tårtkniv är till tårta. Som tur är finns det en väldigt stor tårta i det här rummet.
+= A little brass key. It looks just right for the little lock on the nature cupboard.
+> En liten mässingsnyckel. Den ser ut att passa precis i det lilla låset på naturskåpet.
+= The little key fits! Click: the glass doors of the nature cupboard swing open.
+> Den lilla nyckeln passar! Klick: glasdörrarna på naturskåpet glider upp.
+= The classroom key belongs in the classroom door.
+> Klassrumsnyckeln hör hemma i klassrumsdörren.

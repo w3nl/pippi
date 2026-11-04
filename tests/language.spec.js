@@ -91,6 +91,24 @@ test('Chapter 2: Tommy\'s Morse answer is a word in every language', async ({ pa
   }
 });
 
+test('Chapter 3 in Dutch and Swedish: the teacher, the blackboard and the room', async ({ page }) => {
+  for (const [lang, who, rule, label] of [['nl', 'De juf', 'ONTSNAP UIT DE KLAS!', 'Natuurkast'], ['sv', 'Fröken', 'FLY FRÅN KLASSRUMMET!', 'Naturskåp']]) {
+    await seed(page, { ch: 3, scene: 'classroom', f: { introDone: true } }, ['-ch2', '-ch3']);
+    await page.evaluate(([KEY, lang]) => localStorage.setItem(KEY + '-lang', lang), [KEY, lang]);
+    await page.reload();
+    await expect(page.locator('html')).toHaveAttribute('lang', lang);
+    await page.locator('#btn-cont').click();
+    await skip(page);
+    await expect(page.locator('#sc-classroom [data-hs="cupboard"]')).toHaveAttribute('data-label', label);
+    await hs(page, 'teacher');
+    await expect(page.locator('#d-who')).toHaveText(who);
+    await skip(page);
+    await hs(page, 'board3');
+    await expect(page.locator('.chalk')).toContainText(rule);
+    await page.locator('#m-close').click();
+  }
+});
+
 test('every Dutch and Swedish translation still matches the English text', () => {
   // Fails when English text changed without updating lang/nl (a stale key), or one text has two translations.
   const tool = path.join(__dirname, '..', 'tools', 'i18n-check.js');

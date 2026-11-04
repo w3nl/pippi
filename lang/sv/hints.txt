@@ -69,3 +69,37 @@
 > Tommy sa: KITTLA. Men Pippi sover åt andra hållet, och du behöver något mjukt och kittligt.
 = Take the feather from Pippi's hat, select it, and use it on her feet on the pillow.
 > Ta fjädern från Pippis hatt, välj den och använd den på hennes fötter på kudden.
+
+# ---------- Chapter 3 ----------
+= The teacher has written the rules of her escape room on the blackboard. Read them first.
+> Fröken har skrivit reglerna för sitt escape room på tavlan. Läs dem först.
+= Click the blackboard. Step 1 is the register on the teacher's desk.
+> Klicka på tavlan. Steg 1 är klasslistan på frökens kateder.
+= The register on the teacher's desk has to go from A to Z. When two names start with the same letter, look at the second letter.
+> Klasslistan på katedern ska gå från A till Ö. När två namn börjar på samma bokstav tittar du på den andra bokstaven.
+= Annika, Axel, Britta, Kalle, Olle, Pippi, Tommy. Then press Done.
+> Annika, Axel, Britta, Kalle, Olle, Pippi, Tommy. Tryck sedan på Klar.
+= Share Pippi's cake fairly: count everybody in the class. The register has seven children, and someone else is in the class too.
+> Dela Pippis tårta rättvist: räkna alla i klassen. Klasslistan har sju barn, och en person till hör till klassen.
+= Use the cake knife on the cake, cut it into 8 slices (7 children plus the teacher), then answer 1/8.
+> Använd tårtkniven på tårtan, skär den i 8 bitar (7 barn plus fröken) och svara sedan 1/8.
+= You found a little key in the cake. Something in the room has a little lock.
+> Du hittade en liten nyckel i tårtan. Något i rummet har ett litet lås.
+= Use the little key on the nature cupboard.
+> Använd den lilla nyckeln på naturskåpet.
+= Put the pictures in the order a frog grows up, starting with eggs.
+> Lägg bilderna i den ordning en groda växer upp, och börja med äggen.
+= Frog spawn, tadpole, tadpole with back legs, froglet, frog.
+> Grodrom, grodyngel, grodyngel med bakben, grodunge, groda.
+= The frog's note says the prize is at A2 on the plan of the classroom. A letter across, then a number down.
+> På grodans lapp står det att priset finns på A2 på kartan över klassrummet. En bokstav åt sidan, sedan en siffra nedåt.
+= Open the plan on the wall and click the square in column A, row 2: the nature cupboard with the globe.
+> Öppna kartan på väggen och klicka på rutan i kolumn A, rad 2: naturskåpet med jordgloben.
+= The globe opens. The prize box wants 9 × 7, and the poster shows a trick with your fingers.
+> Jordgloben går att öppna. Prisasken vill ha 9 × 7, och affischen visar ett trick med fingrarna.
+= Fold down the 7th finger: 6 fingers on the left, 3 on the right. Set the lock to 63.
+> Vik ner det 7:e fingret: 6 fingrar till vänster, 3 till höger. Ställ låset på 63.
+= You have the classroom key.
+> Du har klassrumsnyckeln.
+= Use the classroom key on the door.
+> Använd klassrumsnyckeln på dörren.

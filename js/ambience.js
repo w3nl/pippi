@@ -14,6 +14,7 @@ function ambKey(){
   switch(S.scene){
     case 'kitchen': return 'kitchen' + (f.fire ? '+fire' : '');
     case 'bedroom': return 'bedroom' + (f.out2 ? '' : '+snore');
+    case 'classroom': return 'classroom';
   }
   return null;
 }
@@ -112,6 +113,13 @@ const SOUNDSCAPES = {
       bed(m, { freq: 180, gain: .025, wobble: .4, rate: .3 });
       every(80, 420, () => burst(m, .04 + Math.random() * .06, .01 + Math.random() * .025, 1800 + Math.random() * 2500, 'highpass'));
     }
+  },
+  // Chapter 3, the classroom: a summer morning, children playing outside, the clock ticking, and chalk now and then.
+  classroom(m){
+    bed(m, { freq: 700, gain: .012, wobble: .5, rate: .1 });
+    every(1000, 1000, () => burst(m, .02, .015, 3600));
+    every(6000, 12000, () => [0, 1, 2].forEach(i => later(i * 180, () => blip(m, 900 + Math.random() * 500, .12, .006, 'triangle'))));
+    every(9000, 16000, () => [0, 1, 2, 3].forEach(i => later(i * 120, () => blip(m, 2600 + Math.random() * 800, .08, .01, 'sine', 2000))));
   },
   // Chapter 2, Pippi's bedroom at night: crickets, an owl now and then, the wind, and Pippi snoring (until she wakes).
   bedroom(m, mods){
