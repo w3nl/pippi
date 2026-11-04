@@ -3,7 +3,8 @@ const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
   testDir: './tests',
-  timeout: 120_000,
+  // a whole chapter's playthrough takes about two minutes when all tests run in parallel
+  timeout: 240_000,
   expect: { timeout: 10_000 },
   fullyParallel: true,
   forbidOnly: !!process.env.CI,

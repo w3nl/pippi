@@ -71,6 +71,18 @@ test('every close-up fits on a phone without sideways scrolling', async ({ page 
     await page.locator('#m-close').tap();
     expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
   }
+  // Chapter 5: the Hoppetossa's close-ups
+  await seed(page, { ch: 5, scene: 'ship', f: { introDone: true, aboard: true, course: true }, inv: ['net', 'sextant', 'spyglass'] }, ['-ch2', '-ch3', '-ch4', '-ch5']);
+  await page.locator('#btn-cont').tap();
+  await skip(page);
+  for (const open of ['openHoist()', 'S.pul = { n: 3 }; openHoist()', 'openWheel()', 'openChart5()', 'openFloat()', 'openStill()', 'openLog5()', 'openSextant5()', 'S.eqr = 1; openSextant5()', 'openLandHo()']) {
+    await page.evaluate(open);
+    await page.waitForTimeout(150);
+    const ok = await page.locator('.panel').evaluate(e => e.scrollWidth <= e.clientWidth + 1);
+    expect(ok, `${open} is wider than the screen`).toBe(true);
+    await page.locator('#m-close').tap();
+    expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
+  }
   // Chapter 4: the big top's close-ups
   await seed(page, { ch: 4, scene: 'circus', f: { introDone: true, tickets: true, inside: true } }, ['-ch2', '-ch3', '-ch4']);
   await page.locator('#btn-cont').tap();

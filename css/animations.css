@@ -12,6 +12,8 @@
 .lavab{animation:lava 7s ease-in-out infinite}
 .pulse{animation:glowp 2.4s ease-in-out infinite}
 .dead .led{fill:#1c232c!important;animation:none!important}
+/* Rooms that aren't showing keep still, so only one room's animations run at a time. */
+.scene:not(.on) *{animation-play-state:paused!important}
 /* Motion: devices that ask for reduced motion get none, unless the player chose "Motion on" (html.motion-on).
    "Motion off" (html.motion-off) stops everything on any device. See applyMotion() in js/core.js. */
 @media (prefers-reduced-motion:reduce){:root:not(.motion-on) *,:root:not(.motion-on) *::before,:root:not(.motion-on) *::after{animation:none!important;transition:none!important}}

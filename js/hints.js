@@ -41,7 +41,7 @@ function stage2(){
   if(!S.f.swapped) return 'b_scale';
   return 'b_wake';
 }
-function stage_(){ return S.ch===4 ? stage4() : S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
+function stage_(){ return S.ch===5 ? stage5() : S.ch===4 ? stage4() : S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
 Object.assign(HINTS, {
   s_drawer: ["The chalk box is empty. Miss keeps the chalk in her desk drawer, and she has written herself a note about its code.", "The plaque over the door says MDCCCXCIV: 1000 + 500 + 300 + 90 + 4 = 1894. Set the desk's padlock to 1 8 9 4."],
   s_nines: ["Task 1: Pippi's nines on the blackboard have three mistakes. The poster next to the board shows the nines trick.", "Use the chalk on the blackboard and mark 9 × 5, 9 × 8 and 9 × 10 (they should be 45, 72 and 90). Then click Done marking."],
@@ -71,4 +71,23 @@ function stage4(){
   if(!S.f.inside) return 'c_show';
   for(const k of TASKS4) if(!S.f[k]) return { lights: 'c_lights', teeter: 'c_teeter', juggle: 'c_juggle', trapeze: 'c_trapeze' }[k];
   return 'c_gears';
+}
+Object.assign(HINTS, {
+  h_hoist: ["Pippi won't sail without her horse. The cargo hoist on the stern has pulleys: the more ropes hold the horse up, the less each one has to carry.", "Click the hoist and choose 4 ropes: 400 kg ÷ 4 = 100 kg each, just what the three of you can pull. Then heave."],
+  h_course: ["The captain wants a course for his island. His chart in the cabin shows which way to go, and the compass by the wheel shows which way the ship points.", "On the chart the island is down and to the left: south-west. Turn the wheel until the ship points south-west, then set sail."],
+  h_net: ["Mr Nilsson has thrown things overboard! You'll need something to fish them out with. Look in the hold.", "Take the fishing net from the hold, select it and use it on the sea."],
+  h_floats: ["Which of Mr Nilsson's things float? It depends on what they're made of, not on how big or heavy they are.", "The log, the apple and the cork float. The key, the coin and the marble sink."],
+  h_water: ["The horse drank all the drinking water, and sea water is far too salty. The hot sun can turn sea water into fresh water.", "Click the water barrel and choose: a bowl of sea water, an empty cup, a glass lid, a pebble above the cup, in the hot sun."],
+  h_sextant: ["It's night. Where are we? The captain measures the stars with his sextant: it's in the instrument box in his cabin.", "Take the sextant from the instrument box, select it and use it on the sky."],
+  h_equator: ["The captain's logbook shows how the North Star sank lower every night on his last voyage south.", "0° on the horizon means the Equator. South of the Equator, the North Star sinks below the horizon."],
+  h_glass: ["Dawn, and something tiny on the horizon. To see far you need the captain's spyglass, and a high place.", "Take the spyglass from its hook by the wheel, then climb to the crow's nest."],
+  h_landho: ["From the crow's nest you can see the island, from the deck you can't. Think about the shape of the Earth.", "Choose: the Earth is round, so from higher up you can see further over the bend of the sea."]
+});
+function stage5(){
+  if(!S.f.aboard) return 'h_hoist';
+  if(!S.f.course) return 'h_course';
+  if(!S.f.floats) return S.inv.includes('net') ? 'h_floats' : 'h_net';
+  if(!S.f.water) return 'h_water';
+  if(!S.f.equator) return S.inv.includes('sextant') ? 'h_equator' : 'h_sextant';
+  return S.inv.includes('spyglass') ? 'h_landho' : 'h_glass';
 }

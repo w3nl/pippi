@@ -129,3 +129,39 @@
 > 3 kronen per stuk
 = BEFORE THE SHOW
 > VOOR DE VOORSTELLING
+
+# ---------- scenes/ship.svg ----------
+= On board the Hoppetossa
+> Aan boord van de Hoppetossa
+= The sky
+> De lucht
+= The sea
+> De zee
+= The harbour town
+> Het havenstadje
+= Cargo hoist
+> Laadtakel
+= Sails
+> Zeilen
+= Crow's nest
+> Kraaiennest
+= Spyglass
+> Verrekijker
+= Ship's wheel and compass
+> Stuurwiel en kompas
+= The captain's logbook
+> Het logboek van de kapitein
+= Instrument box
+> Instrumentenkist
+= Chart table
+> Kaartentafel
+= Galley stove
+> Kombuisfornuis
+= Water barrel
+> Watervat
+= Crates
+> Kisten
+= Fishing net
+> Visnet
+= The hold
+> Het ruim

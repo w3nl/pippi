@@ -129,3 +129,39 @@
 > 3 kronor styck
 = BEFORE THE SHOW
 > FÖRE FÖRESTÄLLNINGEN
+
+# ---------- scenes/ship.svg ----------
+= On board the Hoppetossa
+> Ombord på Hoppetossa
+= The sky
+> Himlen
+= The sea
+> Havet
+= The harbour town
+> Hamnstaden
+= Cargo hoist
+> Lastvinsch
+= Sails
+> Seglen
+= Crow's nest
+> Utkiken
+= Spyglass
+> Kikare
+= Ship's wheel and compass
+> Ratt och kompass
+= The captain's logbook
+> Kaptenens loggbok
+= Instrument box
+> Instrumentlåda
+= Chart table
+> Sjökortsbord
+= Galley stove
+> Bysspis
+= Water barrel
+> Vattentunna
+= Crates
+> Lådor
+= Fishing net
+> Fiskenät
+= The hold
+> Lastrummet
