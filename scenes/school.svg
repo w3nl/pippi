@@ -373,31 +373,29 @@
         <circle cx="630" cy="620" r="4" fill="#9a2420" />
     </g>
 
-    <!-- Pippi, from behind, but turned round in her seat: freckles and a grin -->
+    <!-- Pippi, from behind like the others, facing the blackboard: red plaits sticking straight out -->
     <g id="sl-pippi">
         <path d="M820 760 q0-72 50-82 q50 10 50 82z" fill="#3f8a4a" />
         <path d="M840 700 l30 18 l30 -18" fill="none" stroke="#f2c94c" stroke-width="5" />
-        <rect x="862" y="660" width="16" height="16" fill="#f3c9a4" />
+        <!-- her neck and ears -->
+        <rect x="862" y="656" width="16" height="22" rx="4" fill="#f3c9a4" />
+        <ellipse cx="841" cy="640" rx="5" ry="7" fill="#f3c9a4" />
+        <ellipse cx="899" cy="640" rx="5" ry="7" fill="#f3c9a4" />
+        <!-- the plaits grow out of her head, a bit thicker at the root, tied with blue ribbons -->
         <g class="plait">
-            <path d="M846 632 L792 622" stroke="#e8571f" stroke-width="10" stroke-linecap="round" />
-            <path d="M794 614 v15" stroke="#1f4d8c" stroke-width="4" stroke-linecap="round" />
+            <path d="M852 630 q-28 -2 -56 -8" stroke="#e8571f" stroke-width="11" stroke-linecap="round" fill="none" />
+            <path d="M812 619 l5 10 M822 621 l5 10 M832 623 l5 10" stroke="#c4441a" stroke-width="2" />
+            <path d="M798 614 v16" stroke="#1f4d8c" stroke-width="5" stroke-linecap="round" />
         </g>
         <g class="plait b">
-            <path d="M896 632 L950 622" stroke="#e8571f" stroke-width="10" stroke-linecap="round" />
-            <path d="M948 614 v15" stroke="#1f4d8c" stroke-width="4" stroke-linecap="round" />
+            <path d="M888 630 q28 -2 56 -8" stroke="#e8571f" stroke-width="11" stroke-linecap="round" fill="none" />
+            <path d="M908 623 l-5 10 M918 621 l-5 10 M928 619 l-5 10" stroke="#c4441a" stroke-width="2" />
+            <path d="M942 614 v16" stroke="#1f4d8c" stroke-width="5" stroke-linecap="round" />
         </g>
-        <!-- her face, three-quarters towards you -->
-        <ellipse cx="874" cy="636" rx="27" ry="29" fill="#f3c9a4" />
-        <!-- hair: the back of her head and a fringe -->
-        <path d="M846 640 q-4 -36 28 -38 q30 2 28 30 q-8 -14 -22 -14 q-8 10 -22 8 q-8 4 -12 14z" fill="#e8571f" />
-        <path d="M846 640 q-2 14 6 22 q-6 -12 -2 -22z" fill="#e8571f" />
-        <circle cx="868" cy="638" r="3" fill="#1a120c" />
-        <circle cx="886" cy="638" r="3" fill="#1a120c" />
-        <circle cx="869" cy="637" r="1" fill="#fff" />
-        <circle cx="887" cy="637" r="1" fill="#fff" />
-        <circle cx="879" cy="646" r="3.4" fill="#e3a07e" />
-        <g fill="#c96a3a"><circle cx="861" cy="647" r="1.3" /><circle cx="865" cy="651" r="1.3" /><circle cx="859" cy="652" r="1.3" /><circle cx="892" cy="647" r="1.3" /><circle cx="888" cy="651" r="1.3" /><circle cx="894" cy="652" r="1.3" /></g>
-        <path d="M866 655 q10 9 20 0z" fill="#fff" stroke="#9a3a2a" stroke-width="2" stroke-linejoin="round" />
+        <!-- the back of her head: red hair, parted down the middle -->
+        <circle cx="870" cy="634" r="29" fill="#e8571f" />
+        <path d="M870 606 v40" stroke="#c4441a" stroke-width="2.5" stroke-linecap="round" />
+        <path d="M858 612 q-10 10 -12 24 M882 612 q10 10 12 24" stroke="#f07a3c" stroke-width="2" fill="none" stroke-linecap="round" />
     </g>
 
     <!-- the pupils' desks -->
