@@ -26,6 +26,7 @@ const VOICE_STYLE = {
   strongman:{ pitch: .4,  rate: .85,  slot: 7 },
   seal:    { pitch: 1.8,  rate: 1.1,  slot: 2 },
   captain: { pitch: .6,   rate: .95,  slot: 4 },   // big, booming and jolly
+  parrot:  { pitch: 2,    rate: 1.3,  slot: 6 },   // squawky
   kling:   { pitch: .7,   rate: .95,  slot: 6 },   // tall and serious (mostly)
   klang:   { pitch: 1.1,  rate: 1.1,  slot: 8 }    // round and cheerful
 };

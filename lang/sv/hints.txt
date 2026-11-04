@@ -167,3 +167,37 @@
 > Från utkiken ser du ön, från däcket gör du det inte. Tänk på jordens form.
 = Choose: the Earth is round, so from higher up you can see further over the bend of the sea.
 > Välj: jorden är rund, så högre upp kan man se längre över havets krökning.
+
+# ---------- Chapter 7 ----------
+= The captain is asleep in his hammock. Wake him up: he has something for Pippi.
+> Kaptenen sover i sin hängmatta. Väck honom: han har något åt Pippi.
+= Click Captain Longstocking in the hammock. He gives you his treasure map.
+> Klicka på kapten Långstrump i hängmattan. Han ger dig sin skattkarta.
+= Before you can walk to Turtle Islet, you need to know what time it is. There are no clocks on the island, but there is a sundial.
+> Innan du kan gå till Sköldpaddsholmen måste du veta vad klockan är. Det finns inga klockor på ön, men det finns ett solur.
+= Click the sundial. The shadow points away from the sun: click the 9. At 12 o'clock the shadow is shortest.
+> Klicka på soluret. Skuggan pekar bort från solen: klicka på 9:an. Klockan 12 är skuggan som kortast.
+= It's 9 o'clock and the water is at the top of the tide post. The sign says: about 6 hours out, then 6 hours back in.
+> Klockan är 9 och vattnet når toppen av tidvattenpålen. Skylten säger: ungefär 6 timmar ut, sedan 6 timmar tillbaka.
+= Click the tide post: 9 + 6 hours = 3 o'clock. And it's the Moon that pulls the sea in and out.
+> Klicka på tidvattenpålen: 9 + 6 timmar = klockan 3. Och det är månen som drar havet ut och in.
+= Low tide! Take the captain's map to Turtle Islet. His paces are 1 metre long; other people's are shorter.
+> Ebb! Ta med kaptenens karta till Sköldpaddsholmen. Hans steg är 1 meter långa; andras är kortare.
+= Select the map and click Turtle Islet. 12 metres is 24 of Pippi's paces (50 cm), 30 of Tommy's (40 cm), 40 of Annika's (30 cm) or 6 of the horse's (2 m).
+> Välj kartan och klicka på Sköldpaddsholmen. 12 meter är 24 av Pippis steg (50 cm), 30 av Tommys (40 cm), 40 av Annikas (30 cm) eller 6 av Lilla Gubbens (2 m).
+= There's the X! You need something to dig with. Kings don't dig their own holes, but they do own a spade.
+> Där är krysset! Du behöver något att gräva med. Kungar gräver inte sina egna hål, men de har en spade.
+= Take the spade leaning on the king's hut, select it and click the X on Turtle Islet.
+> Ta spaden som står lutad mot kungens hydda, välj den och klicka på krysset på Sköldpaddsholmen.
+= The chest's lock wants a chain: from the one who feeds everybody to the one who eats the most.
+> Kistans lås vill ha en kedja: från den som ger alla mat till den som äter mest.
+= Click the chest and put in: the Sun, seaweed, a crab, an octopus. (Not the coconut.)
+> Klicka på kistan och sätt i: solen, sjögräs, en krabba, en bläckfisk. (Inte kokosnöten.)
+= A tropical shower! Light arrives at once, but thunder travels about 1 km every 3 seconds.
+> En tropisk skur! Ljuset kommer direkt, men åskan färdas ungefär 1 km på 3 sekunder.
+= Click the sky (or the captain) and watch: 9 seconds = 3 km. Then 3 seconds = 1 km: it's coming closer, so everybody into the hut.
+> Klicka på himlen (eller kaptenen) och titta: 9 sekunder = 3 km. Sedan 3 sekunder = 1 km: det kommer närmare, så alla in i hyddan.
+= The turtles are hatching! Baby turtles crawl towards the brightest light. On a dark beach that should be the sea.
+> Sköldpaddorna kläcks! Ungarna kryper mot det starkaste ljuset. På en mörk strand borde det vara havet.
+= Click the turtle nest. Switch off the torch by the nest, the torch on the dunes and the lantern in the hut window; leave the feast torches behind the hut on. Then let them go!
+> Klicka på sköldpaddsboet. Släck facklan vid boet, facklan på dynerna och lyktan i hyddans fönster; låt festfacklorna bakom hyddan brinna. Låt dem sedan gå!

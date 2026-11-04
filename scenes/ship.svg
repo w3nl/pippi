@@ -686,6 +686,7 @@
             width="150" height="134" />
         <rect class="hit" fill="transparent" data-hs="net6" data-label="Fishing net" x="1256"
             y="432" width="90" height="94" id="hit-net6" />
+        <rect class="hit" fill="transparent" data-hs="isle6" data-label="The island" x="1370" y="380" width="230" height="178" id="hit-isle6" style="display:none" />
         <rect class="hit" fill="transparent" data-hs="hold6" data-label="The hold" x="400" y="640"
             width="860" height="140" />
     </g>

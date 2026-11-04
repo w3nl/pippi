@@ -324,8 +324,6 @@
 > Land in zicht · hoofdstuk 6 voltooid
 = Land ho
 > Land in zicht
-= The Hoppetossa has reached Captain Longstocking's island. Next: life on a South Sea island. Chapter 7 is still being written.
-> De Hoppetossa heeft het eiland van kapitein Langkous bereikt. Straks: het leven op een eiland in de Zuidzee. Aan hoofdstuk 7 wordt nog geschreven.
 = On board the Hoppetossa
 > Aan boord van de Hoppetossa
 = Chapter 6: On board the Hoppetossa
@@ -342,8 +340,6 @@
 > Terug aan boord van de Hoppetossa. De kapitein neuriet aan het roer, en meneer Nilsson zoekt dingen om weg te gooien.
 = Back at the harbour. The horse is still waiting on the quay.
 > Terug in de haven. Het paard staat nog steeds te wachten op de kade.
-= Take your time. The Hoppetossa is anchored in the lagoon, the palm trees are swaying, and Pippi is already up a coconut tree.
-> Neem de tijd. De Hoppetossa ligt voor anker in de lagune, de palmbomen wiegen, en Pippi zit al in een kokospalm.
 = Captain Longstocking
 > Kapitein Langkous
 = The Hoppetossa
@@ -368,3 +364,63 @@
 > De spotlights hebben allemaal de verkeerde kleur, de wipplank blijft niet in evenwicht, de clown is vergeten hoe hij moet jongleren, en de trapezeartiesten kunnen elkaar niet vangen. Mijn lijstje hangt aan de tentpaal.
 = I've never fixed a circus, so I'm sure I can!
 > Ik heb nog nooit een circus gerepareerd, dus ik denk dat ik het wel kan!
+
+# ---------- Chapter 7: menus, end screen, speakers, item uses ----------
+= The island: on to Chapter {n}
+> Het eiland: door naar hoofdstuk {n}
+= The island
+> Het eiland
+= The Hoppetossa has reached Captain Longstocking's island. Next: a whole day on the island, with a buried surprise for Pippi…
+> De Hoppetossa heeft het eiland van kapitein Langkous bereikt. Straks: een hele dag op het eiland, met een begraven verrassing voor Pippi…
+= Continue to Chapter 7
+> Door naar hoofdstuk 7
+= Goodnight, turtles · Chapter 7 complete
+> Welterusten, schildpadjes · hoofdstuk 7 voltooid
+= Hooray
+> Hoera
+= Treasure, thunder and turtles: what a day on Captain Longstocking's island. Next: home again to Villa Villekulla… Chapter 8 is still being written.
+> Een schat, onweer en schildpadden: wat een dag op het eiland van kapitein Langkous. Straks: weer naar huis, naar Villa Kakelbont… Aan hoofdstuk 8 wordt nog geschreven.
+= The South Sea island
+> Het eiland in de Stille Zuidzee
+= Chapter 7: The South Sea island
+> Hoofdstuk 7: Het eiland in de Stille Zuidzee
+= Chapter 7 · The South Sea Island
+> Hoofdstuk 7 · Het eiland in de Stille Zuidzee
+= Bonked by a coconut
+> Een kokosnoot op je hoofd
+= Soaked to the skin
+> Doornat
+= Taught the parrot a word
+> De papegaai een woord geleerd
+= Back on the island. It's getting dark, and the turtle nest is waiting.
+> Terug op het eiland. Het wordt donker, en het schildpaddennest wacht.
+= Back on the island. It's low tide, and Turtle Islet is waiting.
+> Terug op het eiland. Het is eb, en het Schildpadeilandje wacht.
+= Back on the island. The king is still snoring in his hammock.
+> Terug op het eiland. De koning snurkt nog steeds in zijn hangmat.
+= Take your time. The Hoppetossa is anchored in the lagoon, the palm trees are swaying, and Pippi is already up a coconut tree. When you're ready, go ashore: click the island to go on to Chapter {n}.
+> Neem de tijd. De Hoppetossa ligt voor anker in de lagune, de palmbomen wuiven, en Pippi zit al in een kokospalm. Als je klaar bent, ga je aan land: klik op het eiland om door te gaan naar hoofdstuk {n}.
+= Take your time. The feast goes on behind the hut, the moon shines on the lagoon, and somewhere out there, twenty-five little turtles are swimming.
+> Neem de tijd. Achter de hut gaat het feest door, de maan schijnt op de lagune, en ergens daarbuiten zwemmen vijfentwintig kleine schildpadjes.
+= The parrot
+> De papegaai
+= Turtle Islet is still cut off by the water. Wait for low tide.
+> Het Schildpadeilandje is nog afgesneden door het water. Wacht op eb.
+= Zzz… my map? You keep it, sailor. Twelve of MY paces… zzz…
+> Zzz… mijn kaart? Hou jij hem maar, matroos. Twaalf van MIJN passen… zzz…
+= Mr Nilsson wants to eat the map. You hold it up high.
+> Meneer Nilsson wil de kaart opeten. Je houdt hem hoog in de lucht.
+= The map shows Turtle Islet, out in the lagoon. That's where the X is.
+> Op de kaart staat het Schildpadeilandje, in de lagune. Daar is de X.
+= You dig, and dig, and dig. Pippi helps, with her hands, very fast. Sand flies everywhere.
+> Je graaft, en graaft, en graaft. Pippi helpt, met haar handen, heel snel. Het zand vliegt in het rond.
+= CLONK! The spade hits wood. A treasure chest, with a strange lock on its lid!
+> KLONK! De schep raakt hout. Een schatkist, met een vreemd slot op het deksel!
+= Where to dig? The map says: 12 of the captain's paces from the turtle rock.
+> Waar moet je graven? Op de kaart staat: 12 passen van de kapitein vanaf de schildpadrots.
+= Turtle Islet is still cut off by the water.
+> Het Schildpadeilandje is nog afgesneden door het water.
+= Dig me up later, sailor. Zzz.
+> Graaf mij straks maar op, matroos. Zzz.
+= You dig a little hole. Nothing in it but sand and an offended crab. The X is somewhere else.
+> Je graaft een kuiltje. Er zit alleen zand in en een beledigde krab. De X is ergens anders.

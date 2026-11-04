@@ -116,7 +116,7 @@ test('Chapter 6: sail the Hoppetossa to the island', async ({ page }) => {
   await expect(page.locator('#hp-lfb')).toHaveClass(/good/);
   await expectWin(page, 'Land ho · Chapter 6 complete');
   await expect(page.locator('#hp-isle')).toBeVisible();
-  await expect(page.locator('#btn-next')).toBeHidden();
+  await expect(page.locator('#btn-next')).toHaveText('Continue to Chapter 7');
   for (const a of ['Tasted the sea', 'A horse, very close up', 'Met King Neptune'])
     await expect(page.locator('#w-ach .got', { hasText: a })).toBeVisible();
 });
