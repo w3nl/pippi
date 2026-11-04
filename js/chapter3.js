@@ -56,7 +56,7 @@ Object.assign(H, {
   },
   plaque(){ say(["A brass plaque over the door: BUILT IN MDCCCXCIV.", "Roman numerals. Grown-ups like them for things that are meant to look important. The chart next to the clock says what each letter is worth."]); },
   door3(){
-    if(S.f.out3) return say("The classroom door. Out there: weeks and weeks of summer holidays.");
+    if(S.f.out3) return startCh4();
     say(["The classroom door. Miss went out through it to catch the horse.", "You could go out too. But Pippi wants her holidays properly: with gold stars, and the bell."]);
   },
   tdesk(){ openDrawer3(); },

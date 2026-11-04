@@ -1,0 +1,137 @@
+# Dutch translation: Chapter 4, the circus (js/chapter4.js).
+= Five shiny stars! I'm practically the whole circus.
+> Vijf glimmende sterren! Ik ben bijna het hele circus.
+= A gold star! {n} of 5 acts are ready.
+> Een gouden ster! {n} van de 5 acts zijn klaar.
+= The ringmaster’s board: {n} of 5 acts are ready.
+> Het bord van de spreekstalmeester: {n} van de 5 acts zijn klaar.
+= The curtain is up. The crowd is still clapping, and Pippi is taking a bow with both feet.
+> Het doek is open. Het publiek klapt nog steeds, en Pippi maakt een buiging op allebei haar voeten.
+= The big red curtain. The ringmaster will open it when all five acts are ready.
+> Het grote rode doek. De spreekstalmeester doet het open als alle vijf acts klaar zijn.
+= There are {n} of 5 gold stars on the board.
+> Er staan {n} van de 5 gouden sterren op het bord.
+= The spunk has been sitting in a ticket booth, wearing a tiny paper hat.
+> De spunk zat in het kaartjeshokje met een piepklein papieren hoedje op.
+= You take it. It looks ready to see the show for free.
+> Je pakt hem op. Hij lijkt klaar om gratis naar de voorstelling te kijken.
+= The audience clapped so hard that my plaits nearly came undone. Nearly.
+> Het publiek klapte zo hard dat mijn vlechten bijna losraakten. Bijna.
+= I shall do five acts at once. Or perhaps one at a time, so everyone can see them.
+> Ik doe vijf acts tegelijk. Of misschien één voor één, zodat iedereen ze kan zien.
+= A little painting by the tent entrance shows a ship with a smiling name on its side: Hoppetossa. The circus folk say they sail tomorrow.
+> Op een schilderijtje bij de tentingang staat een schip met een vrolijke naam op de zijkant: Hoppetossa. De mensen van het circus zeggen dat ze morgen uitvaren.
+= The ticket roll is ready: even numbers, neat as buttons. Pippi says buttons are just tiny tickets for coats.
+> De kaartjesrol is klaar: even nummers, netjes als knopen. Pippi zegt dat knopen gewoon piepkleine kaartjes voor jassen zijn.
+= The ticket booth
+> Het kaartjeshokje
+= Act 1: count by twos
+> Act 1: tel in stapjes van twee
+= The tickets are numbered 12, 14, 16, 18… What number comes next?
+> Op de kaartjes staan 12, 14, 16, 18… Welk getal komt hierna?
+= The numbers are getting two bigger each time. Count 18, then 19, then the next even number.
+> Het getal wordt steeds 2 groter. Tel vanaf 18: 19, en dan het volgende even getal.
+= 20! Each ticket number is two more than the one before.
+> 20! Elk kaartjesnummer is twee hoger dan het vorige.
+= Pippi counts the crowd in twos. She gets to eighteen kilos of sweets and loses count.
+> Pippi telt het publiek in tweetallen. Bij achttien kilo snoep raakt ze de tel kwijt.
+= The mirror tent's new panels match on both sides. Mr Nilsson says his face is symmetrical, but his hat disagrees.
+> De nieuwe panelen van de spiegeltent zijn aan beide kanten gelijk. Meneer Nilsson zegt dat zijn gezicht symmetrisch is, maar zijn hoed is het daar niet mee eens.
+= The mirror tent
+> De spiegeltent
+= Act 2: symmetry
+> Act 2: symmetrie
+= The left side of each panel is shown. Choose the right side that is an exact mirror image across the dotted line.
+> Je ziet de linkerkant van elk paneel. Kies de rechterkant die precies het spiegelbeeld is over de stippellijn.
+= Mirror choice {label}
+> Spiegelbeeld {label}
+= A mirror keeps each colour the same distance from the dotted line, on the opposite side.
+> In een spiegel staat elke kleur even ver van de stippellijn, maar aan de andere kant.
+= That is symmetry: every dot has a matching dot the same distance from the mirror line.
+> Dat is symmetrie: bij elke stip hoort een stip op dezelfde afstand aan de andere kant van de spiegelas.
+= Pippi says she is symmetrical too. Her left sock and right sock are both on her hands.
+> Pippi zegt dat zij ook symmetrisch is. Haar linker- en rechtersok zitten allebei aan haar handen.
+= The juggler's colour pattern is back in order. The balls are relieved: they were going round in circles.
+> Het kleurenpatroon van de jongleur klopt weer. De ballen zijn opgelucht: ze draaiden maar rondjes.
+= The juggler's pattern
+> Het patroon van de jongleur
+= Act 3: find the repeating group
+> Act 3: zoek het herhalende groepje
+= The juggler repeats the same three-ball pattern. Which colour comes next?
+> De jongleur herhaalt steeds hetzelfde patroon met drie ballen. Welke kleur komt hierna?
+= Red
+> Rood
+= Blue
+> Blauw
+= Yellow
+> Geel
+= Red, blue, blue, red, blue, blue, red, question mark
+> Rood, blauw, blauw, rood, blauw, blauw, rood, vraagteken
+= Look for the group that repeats: one red ball, then two blue balls.
+> Zoek het groepje dat steeds terugkomt: één rode bal en dan twee blauwe ballen.
+= Red, blue, blue: the three-ball pattern starts again.
+> Rood, blauw, blauw: het patroon van drie ballen begint opnieuw.
+= Pippi can juggle eggs, but only if they are very hard-boiled.
+> Pippi kan met eieren jongleren, maar alleen als ze heel hardgekookt zijn.
+= The seesaw is level. The ringmaster has put a feather on it to check. The feather is winning.
+> De wip is in evenwicht. De spreekstalmeester legt er een veer op om het te controleren. De veer wint.
+= The strong-person act
+> De krachtpatser-act
+= Act 4: balance the seesaw at 8 kg
+> Act 4: breng de wip met 8 kg in evenwicht
+= Target: 8 kg
+> Doel: 8 kg
+= Choose weights from 1 kg, 3 kg and 5 kg. Make the total exactly 8 kg.
+> Kies gewichten van 1 kg, 3 kg en 5 kg. Maak samen precies 8 kg.
+= Check the weight
+> Controleer het gewicht
+= That makes {n} kg. Add the weights together; the target is exactly 8 kg.
+> Dat is {n} kg. Tel de gewichten bij elkaar op; het doel is precies 8 kg.
+= 3 kg + 5 kg = 8 kg. Equal totals balance the seesaw.
+> 3 kg + 5 kg = 8 kg. Met gelijke gewichten is de wip in evenwicht.
+= Pippi lifts the seesaw, the weights and the ringmaster. In that order.
+> Pippi tilt de wip, de gewichten en de spreekstalmeester op. In die volgorde.
+= The spotlights are glowing. The ringmaster says, 'Brilliant!' Pippi says, 'I know.'
+> De schijnwerpers branden. De spreekstalmeester zegt: 'Fantastisch!' Pippi zegt: 'Dat weet ik.'
+= The spotlight
+> De schijnwerper
+= Act 5: complete the circuit
+> Act 5: maak de stroomkring compleet
+= The bulb only lights when electricity has a complete loop from the battery, through the wires and switch, and back again.
+> Het lampje brandt alleen als de stroom een gesloten rondje maakt: van de batterij, door de draden en de schakelaar, en terug.
+= A battery, switch and bulb connected by wires
+> Een batterij, een schakelaar en een lampje die met draden verbonden zijn
+= Close the switch
+> Zet de schakelaar dicht
+= Test the lights
+> Test de lampen
+= Open the switch
+> Zet de schakelaar open
+= The switch is open, so the loop has a gap. Close it and try again.
+> De schakelaar staat open, dus er zit een gat in de stroomkring. Zet hem dicht en probeer het opnieuw.
+= The switch closes the loop. Current can flow all the way around, so the bulb lights.
+> De schakelaar sluit de stroomkring. De stroom kan helemaal rondgaan en het lampje brandt.
+= Pippi wants a spotlight on every sweet in the tent. The ringmaster suggests starting with the stage.
+> Pippi wil een schijnwerper op elk snoepje in de tent. De spreekstalmeester stelt voor om op het podium te beginnen.
+= The circus has come to town. Beyond its bright striped tent, the harbour shines in the evening light.
+> Het circus is in de stad aangekomen. Achter de vrolijk gestreepte tent glanst de haven in het avondlicht.
+= A circus! I have never been the star of one before, so I'm sure I can.
+> Een circus! Ik ben nog nooit de ster van een circus geweest, dus ik weet zeker dat ik het kan.
+= The ringmaster says the show cannot start until five little jobs are done.
+> De spreekstalmeester zegt dat de voorstelling pas kan beginnen als vijf kleine klusjes klaar zijn.
+= Each finished act gets a gold star. Then the curtain can go up.
+> Voor elke afgeronde act komt er een gouden ster. Daarna kan het doek open.
+= Five jobs? I can do them all at once. But first, I shall do them one at a time.
+> Vijf klusjes? Die kan ik allemaal tegelijk doen. Maar eerst doe ik ze één voor één.
+= A ticket roll, a mirror tent, a juggler, a seesaw and a dark spotlight wait around the big top.
+> Bij de grote tent wachten een kaartjesrol, een spiegeltent, een jongleur, een wip en een donkere schijnwerper.
+= The curtain rises. The crowd cheers as Pippi takes her place in the ring.
+> Het doek gaat open. Het publiek juicht als Pippi haar plek in de piste inneemt.
+= I shall juggle, balance and count tickets. Perhaps not all at the same time.
+> Ik ga jongleren, balanceren en kaartjes tellen. Misschien niet allemaal tegelijk.
+= That was the best circus show I have ever seen.
+> Dat was de mooiste circusvoorstelling die ik ooit heb gezien.
+= The ringmaster has invited everyone aboard the Hoppetossa tomorrow!
+> De spreekstalmeester heeft iedereen uitgenodigd om morgen aan boord van de Hoppetossa te gaan!
+= A ship! I shall pack eighteen kilos of sweets. A sensible amount for a short trip.
+> Een schip! Ik pak achttien kilo snoep in. Een heel normale hoeveelheid voor een kort reisje.

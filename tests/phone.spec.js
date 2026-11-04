@@ -83,4 +83,16 @@ test('every close-up fits on a phone without sideways scrolling', async ({ page 
     await page.locator('#m-close').tap();
     expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
   }
+  // Chapter 4: the circus close-ups
+  await seed(page, { ch: 4, scene: 'circus', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4']);
+  await page.locator('#btn-cont').tap();
+  await skip(page);
+  for (const open of ['openTickets4()', 'openMirror4()', 'openJuggle4()', 'openBalance4()', 'openLights4()']) {
+    await page.evaluate(open);
+    await page.waitForTimeout(150);
+    const ok = await page.locator('.panel').evaluate(e => e.scrollWidth <= e.clientWidth + 1);
+    expect(ok, `${open} is wider than the screen`).toBe(true);
+    await page.locator('#m-close').tap();
+    expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
+  }
 });

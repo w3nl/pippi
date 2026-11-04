@@ -107,3 +107,43 @@
 > GEBOUWD IN
 = NATURE TABLE
 > NATUURTAFEL
+
+# ---------- scenes/circus.svg ----------
+= The circus at night
+> Het circus 's nachts
+= Ticket booth
+> Kaartjeshokje
+= Mirror tent
+> Spiegeltent
+= The juggler
+> De jongleur
+= The seesaw
+> De wip
+= Tonight's acts
+> De acts van vanavond
+= Big red curtain
+> Groot rood doek
+= The spunk, in a ticket booth
+> De spunk in het kaartjeshokje
+= Pippi, ready for the show
+> Pippi, klaar voor de voorstelling
+= A painting of the Hoppetossa
+> Een schilderij van de Hoppetossa
+= THE BIG TOP
+> DE GROTE TENT
+= ONE NIGHT ONLY!
+> ALLEEN VANAVOND!
+= TICKETS
+> KAARTJES
+= EVENING SHOW
+> AVONDVOORSTELLING
+= MIRRORS
+> SPIEGELS
+= TONIGHT'S ACTS
+> DE ACTS VAN VANAVOND
+= THE SHOW GOES ON!
+> DE VOORSTELLING GAAT DOOR!
+= Tickets, please!
+> Kaartjes, alstublieft!
+= Step inside
+> Kom binnen

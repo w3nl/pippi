@@ -68,7 +68,7 @@ function next(){
   if(face){ box.classList.add('has-face'); fe.hidden = false;
     if(fe.getAttribute('src') !== face){ fe.src = face; fe.classList.remove('face-in'); void fe.offsetWidth; fe.classList.add('face-in'); } }
   else fe.hidden = true;
-  $('#d-who').textContent = (who==='sys' && S.ch===2) ? 'Villa Villekulla · night' : (who==='sys' && S.ch===3) ? 'The little school' : (WHO[who] || who);
+  $('#d-who').textContent = (who==='sys' && S.ch===2) ? 'Villa Villekulla · night' : (who==='sys' && S.ch===3) ? 'The little school' : (who==='sys' && S.ch===4) ? 'The circus' : (WHO[who] || who);
   $('#d-more').textContent = matchMedia('(hover: none)').matches ? (queue.length ? 'tap ▸' : 'tap ✕') : (queue.length ? 'click ▸' : 'click ✕');
   full = tx(text); let i = 0;
   const el = $('#d-txt'); el.textContent = '';
@@ -121,8 +121,9 @@ function applyVisuals(){
   $('#sc-kitchen').classList.toggle('on', S.scene==='kitchen');
   $('#sc-bedroom').classList.toggle('on', S.scene==='bedroom');
   $('#sc-school').classList.toggle('on', S.scene==='school');
-  $('#chap').textContent = S.ch===3 ? 'Chapter 3 · Pippi Goes to School' : S.ch===2 ? 'Chapter 2 · Burglars in the Night' : 'Chapter 1 · Locked In with Mr Nilsson';
-  applyKitchen(); applyBedroom(); applySchool(); exitLabels();
+  $('#sc-circus').classList.toggle('on', S.scene==='circus');
+  $('#chap').textContent = S.ch===4 ? 'Chapter 4 · The Circus' : S.ch===3 ? 'Chapter 3 · Pippi Goes to School' : S.ch===2 ? 'Chapter 2 · Burglars in the Night' : 'Chapter 1 · Locked In with Mr Nilsson';
+  applyKitchen(); applyBedroom(); applySchool(); applyCircus(); exitLabels();
   $('#hint-count').textContent = S.hints;
 }
 function go(scene){

@@ -52,6 +52,8 @@ test('"Motion off" stops everything, in every room', async ({ page }) => {
   await page.evaluate(() => { S.ch = 3; S.scene = 'school'; S.f = {}; applyVisuals(); });
   await expect(page.locator('#sl-chase')).toBeVisible();
   expect(await moving(page)).toBe(0);
+  await page.evaluate(() => { S.ch = 4; S.scene = 'circus'; S.f = {}; applyVisuals(); });
+  expect(await moving(page)).toBe(0);
 });
 
 test('the classroom moves: the horse munches, Miss chases it, the clock ticks', async ({ page }) => {
@@ -63,6 +65,15 @@ test('the classroom moves: the horse munches, Miss chases it, the clock ticks', 
   expect(await anim(page, '#sl-chase')).toBe('chase');
   expect(await anim(page, '.sl-sec')).toBe('slsec');
   expect(await moving(page)).toBeGreaterThan(8);
+});
+
+test('the circus lights twinkle', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await seed(page, { ch: 4, scene: 'circus', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4']);
+  await page.locator('#btn-cont').click();
+  await skip(page);
+  expect(await anim(page, '.ct-lights')).toBe('ctTwinkle');
+  expect(await moving(page)).toBeGreaterThan(0);
 });
 
 test('a new item pops into your pockets', async ({ page }) => {

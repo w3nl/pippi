@@ -107,3 +107,43 @@
 > BYGGD ÅR
 = NATURE TABLE
 > NATURBORDET
+
+# ---------- scenes/circus.svg ----------
+= The circus at night
+> Cirkusen på natten
+= Ticket booth
+> Biljettlucka
+= Mirror tent
+> Spegeltält
+= The juggler
+> Jonglören
+= The seesaw
+> Gungbrädan
+= Tonight's acts
+> Kvällens nummer
+= Big red curtain
+> Stor röd ridå
+= The spunk, in a ticket booth
+> Spunken i biljettluckan
+= Pippi, ready for the show
+> Pippi, redo för föreställningen
+= A painting of the Hoppetossa
+> En målning av Hoppetossa
+= THE BIG TOP
+> CIRKUSTÄLTET
+= ONE NIGHT ONLY!
+> ENDAST I KVÄLL!
+= TICKETS
+> BILJETTER
+= EVENING SHOW
+> KVÄLLSFÖRESTÄLLNING
+= MIRRORS
+> SPEGLAR
+= TONIGHT'S ACTS
+> KVÄLLENS NUMMER
+= THE SHOW GOES ON!
+> FÖRESTÄLLNINGEN FORTSÄTTER!
+= Tickets, please!
+> Biljetter, tack!
+= Step inside
+> Välkommen in

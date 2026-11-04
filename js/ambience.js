@@ -15,6 +15,7 @@ function ambKey(){
     case 'kitchen': return 'kitchen' + (f.fire ? '+fire' : '');
     case 'bedroom': return 'bedroom' + (f.out2 ? '' : '+snore');
     case 'school': return 'school' + (f.out3 ? '' : '+horse');
+    case 'circus': return 'circus' + (f.out4 ? '' : '+show');
   }
   return null;
 }
@@ -128,6 +129,11 @@ const SOUNDSCAPES = {
     every(1000, 1000, () => burst(m, .025, .018, 3200));
     every(5000, 11000, () => [0, 1, 2].forEach(i => later(i * 120, () => blip(m, 3000 + Math.random() * 800, .07, .01, 'sine', 2600))));
     if(mods.includes('horse')) every(6000, 12000, () => [0, 1, 2, 3].forEach(i => later(i * 260, () => burst(m, .12, .02, 500, 'bandpass'))));
+  },
+  circus(m, mods){
+    bed(m, { freq: 520, gain: .014, wobble: .3, rate: .12 });
+    every(2400, 4800, () => blip(m, 440 + Math.random() * 260, .12, .012, 'triangle', 660 + Math.random() * 300));
+    if(mods.includes('show')) every(5200, 9000, () => [0, 1, 2].forEach(i => later(i * 180, () => blip(m, [523, 659, 784][i], .2, .014, 'triangle'))));
   }
 };
 

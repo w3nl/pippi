@@ -263,8 +263,8 @@
 > Skolan slut · kapitel 3 klart
 = Holidays
 > Lov
-= Pippi has her holidays, and Miss has the biggest piece of cake. Next: the circus comes to town. Chapter 4 is still being written.
-> Pippi har fått sitt lov, och fröken har fått den största tårtbiten. Härnäst: cirkusen kommer till stan. Kapitel 4 håller fortfarande på att skrivas.
+= Pippi has her holidays, and Miss has the biggest piece of cake. The circus has come to town, and Pippi is already looking for a sequinned hat.
+> Pippi har fått sitt lov, och fröken har fått den största tårtbiten. Cirkusen har kommit till stan, och Pippi letar redan efter en paljettmössa.
 = Pippi goes to school
 > Pippi börjar skolan
 = Chapter 3: Pippi goes to school
@@ -283,3 +283,23 @@
 > Fröken
 = The little school
 > Den lilla skolan
+= Classroom door: on to Chapter {n}
+> Klassrumsdörr: vidare till kapitel {n}
+= Continue to Chapter 4
+> Vidare till kapitel 4
+= The big top is open · Chapter 4 complete
+> Cirkustältet är öppet · kapitel 4 klart
+= The show goes on
+> Föreställningen fortsätter
+= Pippi has earned her place in the circus. The performers are sailing on the Hoppetossa next, and Pippi has packed eighteen kilos of sweets.
+> Pippi har förtjänat sin plats på cirkusen. Nästa resa gör artisterna med Hoppetossa, och Pippi har packat arton kilo godis.
+= The circus
+> Cirkusen
+= Chapter 4 · The Circus
+> Kapitel 4 · Cirkusen
+= Chapter 4: The circus
+> Kapitel 4: Cirkusen
+= Back at the circus. The ringmaster is still saving you a place in the show.
+> Tillbaka på cirkusen. Cirkusdirektören håller fortfarande en plats åt dig i föreställningen.
+= Take your time. The circus is here, and the ringmaster is saving you a place in the show.
+> Ta den tid du behöver. Cirkusen är här och cirkusdirektören håller en plats åt dig i föreställningen.

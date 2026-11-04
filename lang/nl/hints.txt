@@ -99,3 +99,25 @@
 > Vijf gouden sterren! De juf zei dat de vakantie begint als de bel gaat.
 = Click the hand bell on Miss's desk.
 > Klik op de handbel op het bureau van de juf.
+
+# ---------- Chapter 4 ----------
+= The ticket numbers go up by the same amount each time. Compare 12 to 14 and 14 to 16.
+> De kaartjesnummers worden steeds evenveel hoger. Vergelijk 12 met 14 en 14 met 16.
+= Count up by two: 12, 14, 16, 18, 20. The next ticket is 20.
+> Tel steeds 2 erbij: 12, 14, 16, 18, 20. Het volgende kaartje is 20.
+= Look at each coloured dot on the left of the dotted line. Its partner must be just as far away on the right.
+> Kijk naar elke gekleurde stip links van de stippellijn. De stip aan de rechterkant moet even ver weg staan.
+= Choose A: the red, yellow and blue dots are reflected across the line.
+> Kies A: de rode, gele en blauwe stippen zijn in de lijn gespiegeld.
+= The juggler uses one red ball and then two blue balls. Find that group repeating.
+> De jongleur gebruikt één rode bal en dan twee blauwe ballen. Zoek dat groepje dat steeds terugkomt.
+= Red, blue, blue repeats, so the next ball is red.
+> Rood, blauw, blauw herhaalt zich, dus de volgende bal is rood.
+= The target is 8 kg. Try adding two of the weights together.
+> Het doel is 8 kg. Probeer twee gewichten bij elkaar op te tellen.
+= Choose 3 kg and 5 kg: 3 + 5 = 8.
+> Kies 3 kg en 5 kg: 3 + 5 = 8.
+= Electricity needs a complete loop. Is there a gap in the wire at the switch?
+> Elektriciteit heeft een gesloten rondje nodig. Zit er een gat in de draad bij de schakelaar?
+= Close the switch, then test the lights. A closed loop lets current flow through the bulb.
+> Zet de schakelaar dicht en test de lampen. In een gesloten stroomkring kan de stroom door het lampje lopen.

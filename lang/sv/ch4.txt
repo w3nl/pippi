@@ -1,0 +1,137 @@
+# Swedish translation: Chapter 4, the circus (js/chapter4.js).
+= Five shiny stars! I'm practically the whole circus.
+> Fem glänsande stjärnor! Jag är nästan hela cirkusen.
+= A gold star! {n} of 5 acts are ready.
+> En guldstjärna! {n} av 5 nummer är klara.
+= The ringmaster’s board: {n} of 5 acts are ready.
+> Cirkusdirektörens tavla: {n} av 5 nummer är klara.
+= The curtain is up. The crowd is still clapping, and Pippi is taking a bow with both feet.
+> Ridån är uppe. Publiken klappar fortfarande och Pippi bugar med båda fötterna.
+= The big red curtain. The ringmaster will open it when all five acts are ready.
+> Den stora röda ridån. Cirkusdirektören öppnar den när alla fem nummer är klara.
+= There are {n} of 5 gold stars on the board.
+> Det finns {n} av 5 guldstjärnor på tavlan.
+= The spunk has been sitting in a ticket booth, wearing a tiny paper hat.
+> Spunken har suttit i biljettluckan med en pytteliten pappershatt på sig.
+= You take it. It looks ready to see the show for free.
+> Du tar upp den. Den verkar redo att se föreställningen gratis.
+= The audience clapped so hard that my plaits nearly came undone. Nearly.
+> Publiken klappade så hårt att mina flätor nästan gick upp. Nästan.
+= I shall do five acts at once. Or perhaps one at a time, so everyone can see them.
+> Jag ska göra fem nummer på en gång. Eller kanske ett i taget, så att alla kan se.
+= A little painting by the tent entrance shows a ship with a smiling name on its side: Hoppetossa. The circus folk say they sail tomorrow.
+> En liten målning vid tältöppningen visar ett skepp med ett glatt namn på sidan: Hoppetossa. Cirkusfolket säger att de seglar i morgon.
+= The ticket roll is ready: even numbers, neat as buttons. Pippi says buttons are just tiny tickets for coats.
+> Biljettrullen är klar: jämna nummer, prydliga som knappar. Pippi säger att knappar bara är små biljetter till rockar.
+= The ticket booth
+> Biljettluckan
+= Act 1: count by twos
+> Nummer 1: räkna två steg i taget
+= The tickets are numbered 12, 14, 16, 18… What number comes next?
+> Biljetterna har numren 12, 14, 16, 18… Vilket tal kommer sedan?
+= The numbers are getting two bigger each time. Count 18, then 19, then the next even number.
+> Talen blir två större varje gång. Räkna från 18: 19, och sedan nästa jämna tal.
+= 20! Each ticket number is two more than the one before.
+> 20! Varje biljettnummer är två större än det förra.
+= Pippi counts the crowd in twos. She gets to eighteen kilos of sweets and loses count.
+> Pippi räknar publiken två och två. När hon kommer till arton kilo godis tappar hon räkningen.
+= The mirror tent's new panels match on both sides. Mr Nilsson says his face is symmetrical, but his hat disagrees.
+> Spegeltältets nya paneler är likadana på båda sidor. Herr Nilsson säger att hans ansikte är symmetriskt, men hatten håller inte med.
+= The mirror tent
+> Spegeltältet
+= Act 2: symmetry
+> Nummer 2: symmetri
+= The left side of each panel is shown. Choose the right side that is an exact mirror image across the dotted line.
+> Vänster sida av varje panel visas. Välj den högra sidan som är en exakt spegelbild över den prickade linjen.
+= Mirror choice {label}
+> Spegelval {label}
+= A mirror keeps each colour the same distance from the dotted line, on the opposite side.
+> En spegel placerar varje färg lika långt från den prickade linjen, fast på motsatt sida.
+= That is symmetry: every dot has a matching dot the same distance from the mirror line.
+> Det är symmetri: varje prick har en motsvarande prick lika långt från spegellinjen.
+= Pippi says she is symmetrical too. Her left sock and right sock are both on her hands.
+> Pippi säger att hon också är symmetrisk. Hennes vänstra och högra strumpa sitter båda på händerna.
+= The juggler's colour pattern is back in order. The balls are relieved: they were going round in circles.
+> Jonglörens färgmönster är i ordning igen. Bollarna är lättade: de bara snurrade runt.
+= The juggler's pattern
+> Jonglörens mönster
+= Act 3: find the repeating group
+> Nummer 3: hitta gruppen som upprepas
+= The juggler repeats the same three-ball pattern. Which colour comes next?
+> Jonglören upprepar samma mönster med tre bollar. Vilken färg kommer sedan?
+= Red
+> Röd
+= Blue
+> Blå
+= Yellow
+> Gul
+= Red, blue, blue, red, blue, blue, red, question mark
+> Röd, blå, blå, röd, blå, blå, röd, frågetecken
+= Look for the group that repeats: one red ball, then two blue balls.
+> Leta efter gruppen som upprepas: en röd boll och sedan två blå.
+= Red, blue, blue: the three-ball pattern starts again.
+> Röd, blå, blå: mönstret med tre bollar börjar om.
+= Pippi can juggle eggs, but only if they are very hard-boiled.
+> Pippi kan jonglera med ägg, men bara om de är riktigt hårdkokta.
+= The seesaw is level. The ringmaster has put a feather on it to check. The feather is winning.
+> Gungbrädan är i balans. Cirkusdirektören lägger en fjäder på den för att kontrollera. Fjädern vinner.
+= The strong-person act
+> Styrkenumret
+= Act 4: balance the seesaw at 8 kg
+> Nummer 4: balansera gungbrädan med 8 kg
+= Target: 8 kg
+> Målet: 8 kg
+= Choose weights from 1 kg, 3 kg and 5 kg. Make the total exactly 8 kg.
+> Välj vikter på 1 kg, 3 kg och 5 kg. Summan ska bli exakt 8 kg.
+= Check the weight
+> Kontrollera vikten
+= That makes {n} kg. Add the weights together; the target is exactly 8 kg.
+> Det blir {n} kg. Lägg ihop vikterna; målet är exakt 8 kg.
+= 3 kg + 5 kg = 8 kg. Equal totals balance the seesaw.
+> 3 kg + 5 kg = 8 kg. Lika stora vikter på båda sidor balanserar gungbrädan.
+= Pippi lifts the seesaw, the weights and the ringmaster. In that order.
+> Pippi lyfter gungbrädan, vikterna och cirkusdirektören. I den ordningen.
+= The spotlights are glowing. The ringmaster says, 'Brilliant!' Pippi says, 'I know.'
+> Strålkastarna lyser. Cirkusdirektören säger: "Strålande!" Pippi säger: "Det vet jag."
+= The spotlight
+> Strålkastaren
+= Act 5: complete the circuit
+> Nummer 5: slut kretsen
+= The bulb only lights when electricity has a complete loop from the battery, through the wires and switch, and back again.
+> Lampan lyser bara när elektriciteten går i en sluten krets från batteriet, genom sladdarna och strömbrytaren och tillbaka igen.
+= A battery, switch and bulb connected by wires
+> Ett batteri, en strömbrytare och en lampa som sitter ihop med sladdar
+= Close the switch
+> Slut strömbrytaren
+= Test the lights
+> Testa lamporna
+= Open the switch
+> Öppna strömbrytaren
+= The switch is open, so the loop has a gap. Close it and try again.
+> Strömbrytaren är öppen, så kretsen har ett avbrott. Slut den och försök igen.
+= The switch closes the loop. Current can flow all the way around, so the bulb lights.
+> Strömbrytaren sluter kretsen. Strömmen kan gå hela vägen runt och lampan tänds.
+= Pippi wants a spotlight on every sweet in the tent. The ringmaster suggests starting with the stage.
+> Pippi vill ha en strålkastare på varje godisbit i tältet. Cirkusdirektören föreslår att de börjar med scenen.
+= The circus has come to town. Beyond its bright striped tent, the harbour shines in the evening light.
+> Cirkusen har kommit till stan. Bortom det randiga tältet glittrar hamnen i kvällsljuset.
+= A circus! I have never been the star of one before, so I'm sure I can.
+> En cirkus! Jag har aldrig varit cirkusens stjärna förut, så det klarar jag säkert.
+= The ringmaster says the show cannot start until five little jobs are done.
+> Cirkusdirektören säger att föreställningen inte kan börja förrän fem små uppgifter är klara.
+= Each finished act gets a gold star. Then the curtain can go up.
+> Varje färdigt nummer får en guldstjärna. Sedan kan ridån gå upp.
+= Five jobs? I can do them all at once. But first, I shall do them one at a time.
+> Fem uppgifter? Jag kan göra dem allihop på en gång. Men först gör jag dem en i taget.
+= A ticket roll, a mirror tent, a juggler, a seesaw and a dark spotlight wait around the big top.
+> En biljettrulle, ett spegeltält, en jonglör, en gunga och en mörk strålkastare väntar vid cirkustältet.
+= The curtain rises. The crowd cheers as Pippi takes her place in the ring.
+> Ridån går upp. Publiken jublar när Pippi kliver in i manegen.
+= I shall juggle, balance and count tickets. Perhaps not all at the same time.
+> Jag ska jonglera, balansera och räkna biljetter. Kanske inte samtidigt.
+= That was the best circus show I have ever seen.
+> Det var den bästa cirkusföreställning jag någonsin sett.
+= The ringmaster has invited everyone aboard the Hoppetossa tomorrow!
+> Cirkusdirektören har bjudit med alla ombord på Hoppetossa i morgon!
+= A ship! I shall pack eighteen kilos of sweets. A sensible amount for a short trip.
+> Ett skepp! Jag packar arton kilo godis. En lagom mängd för en kort resa.

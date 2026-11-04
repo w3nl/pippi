@@ -13,7 +13,7 @@ test('the game is an installable web app that works offline', async ({ page, con
   expect(errors).toEqual([]);
 
   const cached = await page.evaluate(async () => { const keys = await caches.keys(); const c = await caches.open(keys[0]); return (await c.keys()).map(r => new URL(r.url).pathname); });
-  expect(cached).toEqual(expect.arrayContaining(['/', '/index.html', '/manifest.webmanifest', '/icons/icon-512.png', '/js/core.js', '/js/chapter1.js', '/css/base.css', '/scenes/kitchen.svg']));
+  expect(cached).toEqual(expect.arrayContaining(['/', '/index.html', '/manifest.webmanifest', '/icons/icon-512.png', '/js/core.js', '/js/chapter1.js', '/js/chapter4.js', '/css/base.css', '/css/chapter4.css', '/scenes/kitchen.svg', '/scenes/circus.svg']));
 
   await context.setOffline(true);
   await page.reload();

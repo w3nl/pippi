@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="scene" id="sc-circus" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-label="The circus at night">
+  <defs>
+    <linearGradient id="ctSky" x2="0" y2="1"><stop stop-color="#12293c"/><stop offset="1" stop-color="#42657a"/></linearGradient>
+    <linearGradient id="ctTent" x2="0" y2="1"><stop stop-color="#f2c94c"/><stop offset="1" stop-color="#e79735"/></linearGradient>
+    <linearGradient id="ctGround" x2="0" y2="1"><stop stop-color="#54764a"/><stop offset="1" stop-color="#263c30"/></linearGradient>
+    <radialGradient id="ctGlow"><stop stop-color="#fff5bc" stop-opacity=".9"/><stop offset="1" stop-color="#f2c94c" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#ctSky)"/>
+  <g fill="#f8e9ae" opacity=".8"><circle cx="120" cy="90" r="3"/><circle cx="350" cy="120" r="2"/><circle cx="610" cy="75" r="3"/><circle cx="935" cy="112" r="2"/><circle cx="1240" cy="68" r="3"/><circle cx="1480" cy="143" r="2"/><circle cx="770" cy="165" r="2"/></g>
+  <path d="M0 580Q260 500 520 580T1040 560T1600 585V900H0Z" fill="url(#ctGround)"/>
+  <path d="M0 620Q260 552 530 626T1060 612T1600 630" fill="none" stroke="#91a76a" stroke-width="5" opacity=".6"/>
+  <g id="ct-big-top">
+    <path d="M355 610V330Q800 30 1245 330V610Z" fill="#c64338" stroke="#f4d786" stroke-width="12"/>
+    <path d="M505 610V239L650 147V610ZM800 610V116L945 147V610ZM1095 610V239L1245 330V610Z" fill="url(#ctTent)"/>
+    <path d="M355 330Q800 30 1245 330" fill="none" stroke="#f8e9ae" stroke-width="18"/>
+    <path d="M800 116V72" stroke="#f2c94c" stroke-width="12"/><path d="M785 72h30l-15-44Z" fill="#e2483d"/>
+    <path d="M355 610H1245" stroke="#542f38" stroke-width="24"/>
+    <g fill="#f2c94c" class="ct-lights"><circle cx="420" cy="330" r="9"/><circle cx="520" cy="265" r="9"/><circle cx="620" cy="202" r="9"/><circle cx="710" cy="151" r="9"/><circle cx="800" cy="116" r="9"/><circle cx="890" cy="151" r="9"/><circle cx="980" cy="202" r="9"/><circle cx="1080" cy="265" r="9"/><circle cx="1180" cy="330" r="9"/></g>
+    <ellipse cx="800" cy="567" rx="295" ry="95" fill="#e8b44e" stroke="#fff0c1" stroke-width="7"/>
+    <ellipse cx="800" cy="567" rx="244" ry="68" fill="#b84b42" stroke="#f5d485" stroke-width="5"/>
+    <path d="M680 570q120-70 240 0v45H680Z" fill="#e0a84a"/>
+    <g id="ct-pippi" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M782 562l-32-24m68 24 32-24" stroke="#e7ae7b" stroke-width="12"/>
+      <path d="M766 570q34-30 68 0l16 48h-100Z" fill="#3a7ac0" stroke="#f2c94c" stroke-width="4"/>
+      <circle cx="800" cy="532" r="24" fill="#f3c9a4" stroke="#6b4423" stroke-width="3"/>
+      <path d="M777 529q-8-30 23-31 31 2 24 32l-8-11-8 7-7-8-10 8-7-6Z" fill="#e2483d" stroke="#8f302d" stroke-width="3"/>
+      <path d="M778 520q-24-10-19 18m63-18q24-10 19 18" fill="none" stroke="#e2483d" stroke-width="6"/>
+      <circle cx="791" cy="535" r="2.5" fill="#2b2118"/><circle cx="809" cy="535" r="2.5" fill="#2b2118"/>
+      <path d="M793 546q7 6 14 0" fill="none" stroke="#a84e42" stroke-width="2"/>
+      <path d="M784 618v18m32-18v18" stroke="#f3c9a4" stroke-width="9"/>
+      <path d="M782 637h-10m44 0h10" stroke="#e2483d" stroke-width="8"/>
+    </g>
+    <circle cx="800" cy="513" r="45" fill="#f2c94c" opacity=".12"/>
+    <text x="800" y="393" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="42" font-weight="700" fill="#fff4d2">THE BIG TOP</text>
+    <text x="800" y="438" text-anchor="middle" font-family="Caveat, cursive" font-size="33" fill="#fff4d2">ONE NIGHT ONLY!</text>
+  </g>
+  <g id="ct-ticket-booth">
+    <path d="M90 615V405H350V615Z" fill="#934b31" stroke="#efc66c" stroke-width="8"/>
+    <path d="M70 410L220 320L370 410Z" fill="#e2483d" stroke="#f2c94c" stroke-width="8"/>
+    <path d="M150 390v-40h40v40M220 390v-40h40v40M290 390v-40h40v40" fill="#f2c94c"/>
+    <rect x="125" y="448" width="190" height="92" rx="6" fill="#172832" stroke="#f2c94c" stroke-width="5"/>
+    <text x="220" y="485" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="25" font-weight="700" fill="#fff0c1">TICKETS</text>
+    <text x="220" y="519" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="18" fill="#f2c94c">EVENING SHOW</text>
+    <rect x="166" y="557" width="108" height="58" fill="#5a3429" stroke="#efc66c" stroke-width="4"/>
+  </g>
+  <g id="ct-mirror-tent">
+    <path d="M1280 600V450L1400 362L1520 450V600Z" fill="#347d78" stroke="#f2c94c" stroke-width="8"/>
+    <path d="M1280 450H1520M1400 362V600" stroke="#fff0c1" stroke-width="6"/>
+    <path d="M1320 600V475Q1400 420 1480 475V600" fill="#193a46" stroke="#f2c94c" stroke-width="5"/>
+    <ellipse cx="1400" cy="530" rx="42" ry="57" fill="#b9e4da" stroke="#fff0c1" stroke-width="5"/>
+    <circle cx="1385" cy="510" r="5" fill="#e2483d"/><circle cx="1415" cy="510" r="5" fill="#f2c94c"/><circle cx="1385" cy="535" r="5" fill="#3a7ac0"/><circle cx="1415" cy="535" r="5" fill="#3a7ac0"/>
+    <text x="1400" y="435" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="20" font-weight="700" fill="#fff4d2">MIRRORS</text>
+  </g>
+  <g id="ct-juggler">
+    <circle cx="1135" cy="496" r="22" fill="#e7ae7b"/><path d="M1110 488q25-33 50 0" fill="#493846"/>
+    <path d="M1108 520l-24 75h101l-27-75Z" fill="#315d76" stroke="#f2c94c" stroke-width="4"/>
+    <path d="M1109 530l-50-30M1155 530l49-33" stroke="#e7ae7b" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="1057" cy="492" r="12" fill="#e2483d"/><circle cx="1208" cy="488" r="12" fill="#3a7ac0"/><circle cx="1138" cy="435" r="12" fill="#3a7ac0"/>
+  </g>
+  <g id="ct-seesaw">
+    <path d="M610 628l40-70 40 70Z" fill="#f2c94c" stroke="#6b4423" stroke-width="5"/>
+    <path d="M590 552l130 16" stroke="#e2483d" stroke-width="12" stroke-linecap="round"/>
+    <path d="M600 551v-24M710 566v-24" stroke="#fff0c1" stroke-width="5"/>
+    <rect x="584" y="514" width="32" height="24" rx="4" fill="#697c88"/><rect x="695" y="530" width="32" height="24" rx="4" fill="#697c88"/>
+  </g>
+  <g id="ct-spotlight">
+    <path d="M1320 40V170" stroke="#283b48" stroke-width="14"/><path d="M1290 170h60l-18 46h-24Z" fill="#f2c94c" stroke="#fff0c1" stroke-width="4"/>
+    <path d="M1300 216L1160 485h280L1340 216Z" fill="url(#ctGlow)"/>
+  </g>
+  <g id="ct-board" font-family="Fredoka, sans-serif" text-anchor="middle">
+    <rect x="680" y="688" width="240" height="104" rx="9" fill="#fff6d8" stroke="#d8aa4d" stroke-width="5"/>
+    <text x="800" y="720" font-size="20" font-weight="700" fill="#384b57">TONIGHT'S ACTS</text>
+    <g fill="none" stroke="#c9952a" stroke-width="3"><path id="ct-star0" transform="translate(720 754)" d="M0-13L3-4L12-4L5 2L8 11L0 6L-8 11L-5 2L-12-4L-3-4Z"/><path id="ct-star1" transform="translate(760 754)" d="M0-13L3-4L12-4L5 2L8 11L0 6L-8 11L-5 2L-12-4L-3-4Z"/><path id="ct-star2" transform="translate(800 754)" d="M0-13L3-4L12-4L5 2L8 11L0 6L-8 11L-5 2L-12-4L-3-4Z"/><path id="ct-star3" transform="translate(840 754)" d="M0-13L3-4L12-4L5 2L8 11L0 6L-8 11L-5 2L-12-4L-3-4Z"/><path id="ct-star4" transform="translate(880 754)" d="M0-13L3-4L12-4L5 2L8 11L0 6L-8 11L-5 2L-12-4L-3-4Z"/></g>
+    <text id="ct-finale" x="800" y="786" font-size="24" font-weight="700" fill="#e2483d" style="display:none">THE SHOW GOES ON!</text>
+  </g>
+  <g id="ct-spunk"><rect x="101" y="551" width="34" height="38" rx="6" fill="#fff4d2" stroke="#263c30" stroke-width="3"/><ellipse cx="118" cy="570" rx="9" ry="6" fill="#4d9a4c"/><circle cx="118" cy="563" r="4" fill="#266b37"/><path d="M110 574l-5 6m21-6 5 6" stroke="#266b37" stroke-width="2"/></g>
+  <path id="ct-curtain" d="M420 460Q520 420 620 460V650H420ZM980 460Q1080 420 1180 460V650H980Z" fill="#c64338" stroke="#f4d786" stroke-width="7"/>
+  <path id="ct-curtain-open" d="M420 460q100-40 200 0L490 650h-70ZM980 460q100-40 200 0l-70 190h-70Z" fill="#e2483d" opacity=".85" style="display:none"/>
+  <g font-family="Caveat, cursive" font-size="28" fill="#fff0c1"><text x="66" y="700">Tickets, please!</text><text x="1290" y="672">Step inside</text></g>
+  <g class="hits">
+    <rect class="hit" data-hs="curtain4" data-label="Big red curtain" x="405" y="410" width="790" height="260"/>
+    <rect class="hit" data-hs="ticket4" data-label="Ticket booth" x="80" y="315" width="300" height="315"/>
+    <rect class="hit" data-hs="mirror4" data-label="Mirror tent" x="1260" y="345" width="280" height="270"/>
+    <rect class="hit" data-hs="juggler4" data-label="The juggler" x="1020" y="405" width="215" height="220"/>
+    <rect class="hit" data-hs="balance4" data-label="The seesaw" x="560" y="500" width="210" height="140"/>
+    <rect class="hit" data-hs="lights4" data-label="The spotlight" x="1120" y="30" width="350" height="300"/>
+    <rect class="hit" data-hs="stars4" data-label="Tonight's acts" x="665" y="675" width="270" height="125"/>
+    <rect class="hit" data-hs="spunk4" data-label="The spunk, in a ticket booth" x="95" y="540" width="48" height="56"/>
+    <rect class="hit" data-hs="pippi4" data-label="Pippi, ready for the show" x="755" y="500" width="90" height="125"/>
+    <rect class="hit" data-hs="boat4" data-label="A painting of the Hoppetossa" x="1440" y="690" width="110" height="100"/>
+  </g>
+</svg>

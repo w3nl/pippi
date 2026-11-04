@@ -105,6 +105,28 @@ test('Chapter 3: Pippi\'s own word for multiplying, in every language', async ({
   }
 });
 
+test('Chapter 4: circus puzzles are translated in every language', async ({ page }) => {
+  for (const [lang, chapter, booth, act] of [
+    ['nl', 'Hoofdstuk 4 · Het circus', 'Het kaartjeshokje', 'Act 1: tel in stapjes van twee'],
+    ['sv', 'Kapitel 4 · Cirkusen', 'Biljettluckan', 'Nummer 1: räkna två steg i taget']
+  ]) {
+    await seed(page, { ch: 4, scene: 'circus', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4']);
+    await page.evaluate(([KEY, lang]) => localStorage.setItem(KEY + '-lang', lang), [KEY, lang]);
+    await page.reload();
+    await expect(page.locator('#title')).not.toHaveClass(/loading/);
+    await page.locator('#btn-cont').click();
+    await skip(page);
+    await expect(page.locator('#chap')).toHaveText(chapter);
+    await hs(page, 'ticket4');
+    await expect(page.locator('#m-title')).toHaveText(booth);
+    await expect(page.locator('#m-sub')).toHaveText(act);
+    await page.locator('#m-close').click();
+    await page.locator('#btn-hint').click();
+    await expect(page.locator('#d-txt')).toContainText(lang === 'nl' ? 'kaartjesnummers' : 'Biljettnumren');
+    await skip(page);
+  }
+});
+
 test('every Dutch and Swedish translation still matches the English text', () => {
   // Fails when English text changed without updating lang/nl (a stale key), or one text has two translations.
   const tool = path.join(__dirname, '..', 'tools', 'i18n-check.js');

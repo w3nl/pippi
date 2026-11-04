@@ -8,7 +8,7 @@ Context for AI agents and new contributors. The README covers what the game is a
 
 *Villa Villekulla* is a point-and-click escape room, an unofficial fan homage to Astrid Lindgren's *Pippi Longstocking* books (Swedish original: *Pippi Långstrump*; Dutch: *Pippi Langkous*, *Villa Kakelbont*). You're a kid visiting Pippi's house. Every puzzle teaches one real idea for children, wrapped in a Pippi joke: in Chapter 1 (Mr Nilsson has locked you in) mirror writing, sums, the fire triangle, doing steps in the right order, signal flags and feeding a horse safely; in Chapter 2 (burglars in the night) how batteries go in a torch, shadows, finding the North Star, Morse code and a balance scale; in Chapter 3 (Pippi goes to school) Roman numerals, the nines times table, ABC order, insects, fractions and why the seasons happen.
 
-- 3 chapters so far: the kitchen (6 puzzles), the bedroom at night (6 puzzles) and the classroom (6 puzzles). Plain HTML, CSS, JavaScript and SVG: **no build step, no framework, no runtime dependencies** (only Google Fonts).
+- 4 chapters so far: the kitchen (6 puzzles), the bedroom at night (6 puzzles), the classroom (6 puzzles) and the circus (5 acts). Plain HTML, CSS, JavaScript and SVG: **no build step, no framework, no runtime dependencies** (only Google Fonts).
 - Hosted as a static site (GitHub Pages), installable as a PWA, playable offline.
 - Three languages: **UK English** (in the code), **Dutch** (`lang/nl/*.txt`) and **Swedish** (`lang/sv/*.txt`). The language button cycles EN → NL → SV.
 - **It must be served over http(s)** (`npm start`, http://127.0.0.1:4173); `file://` shows a "needs a web server" message.
@@ -20,23 +20,24 @@ Context for AI agents and new contributors. The README covers what the game is a
 | Path | What |
 |---|---|
 | `index.html` | Page shell: header, stage, title and end screens, inventory ("Pockets"), close-up modal |
-| `css/*.css` | Loaded in this order: `base` (tokens on `:root`), `chapter1`, `chapter2`, `chapter3`, `phone`, `animations` (last: motion kill-switch) |
-| `scenes/kitchen.svg`, `scenes/bedroom.svg`, `scenes/school.svg` | The rooms: Chapter 1 (ids prefixed `vk`/`vk-`), Chapter 2 (`br`/`br-`) and Chapter 3 (`sl`/`sl-`); hotspot rects are last |
+| `css/*.css` | Loaded in this order: `base` (tokens on `:root`), `chapter1`, `chapter2`, `chapter3`, `chapter4`, `phone`, `animations` (last: motion kill-switch) |
+| `scenes/kitchen.svg`, `scenes/bedroom.svg`, `scenes/school.svg`, `scenes/circus.svg` | The rooms: Chapter 1 (ids prefixed `vk`/`vk-`), Chapter 2 (`br`/`br-`), Chapter 3 (`sl`/`sl-`) and Chapter 4 (`ct`/`ct-`); hotspot rects are last |
 | `js/boot.js` | Start-up: fetches the scenes, loads the scripts in order; holds `GAME_VERSION` |
 | `js/i18n.js` | Languages: `LANG`, `tx()`, `setLang()`, `onLangChange()`, the translating observer (copied from Hello, IT) |
-| `lang/nl/*.txt`, `lang/sv/*.txt` | Dutch and Swedish: `ui`, `ch1`, `ch2`, `ch3`, `hints`, `scenes` (the same files in every language) |
+| `lang/nl/*.txt`, `lang/sv/*.txt` | Dutch and Swedish: `ui`, `ch1`, `ch2`, `ch3`, `ch4`, `hints`, `scenes` (the same files in every language) |
 | `js/core.js` | Engine: state `S`, `save`/`load`, sound, `say()`, portraits (`faceFor`), `ITEMS`, inventory, `applyVisuals()`, hotspot input, `openModal()`, `nope()` |
 | `js/chapter1.js` | Chapter 1: signal flags (`FLAG_SHAPES`, `flagSVG()`), `buildKitchen()`, `applyKitchen()`, `H` (the hotspot table), every close-up, `intro1()`, `win1()` |
 | `js/chapter2.js` | Chapter 2: `UNLOCK2`/`unlocked2()`/`setUnlocked2()`, its `ITEMS` (batteries, torch, feather), `MORSE`, `tickleWord()`, `applyBedroom()`, hotspots, close-ups (`openTorch2`, `openShadow`, `openSpyCard`, `openSky`, `openMorse`, `openScale`), `tickle()`, `intro2()`, `startCh2()`, `win2()` |
 | `js/chapter3.js` | Chapter 3: `UNLOCK3`/`unlocked3()`/`setUnlocked3()`, `TASKS3`/`stars3()`/`goldStar3()`, its `ITEMS` (chalk, magnifier), `applySchool()`, hotspots, close-ups (`openDrawer3`, `openRomans`, `openBoard`, `openTables`, `openRegister`, `openNature`, `openCake`, `openGlobe`), `intro3()`, `startCh3()`, `win3()` |
+| `js/chapter4.js` | Chapter 4: `UNLOCK4`/`unlocked4()`/`setUnlocked4()`, `TASKS4`/`stars4()`, `applyCircus()`, five act close-ups, `intro4()`, `startCh4()`, `win4()` |
 | `js/items.js` | `useItem(item, hotspot)` |
-| `js/hints.js` | `HINTS` and `stage1()`, `stage2()`, `stage3()`, `stage_()` |
-| `js/ambience.js` | Generated room sound (`ambKey()`, `SOUNDSCAPES.kitchen`, `.bedroom`, `.school`; crackling fire once `S.f.fire`) |
+| `js/hints.js` | `HINTS` and `stage1()`, `stage2()`, `stage3()`, `stage4()`, `stage_()` |
+| `js/ambience.js` | Generated room sound (`ambKey()`, `SOUNDSCAPES.kitchen`, `.bedroom`, `.school`, `.circus`; crackling fire once `S.f.fire`) |
 | `js/voice.js` | Optional spoken dialogue; `VOICE_STYLE` per speaker |
 | `js/app.js` | Chapters (`LAST_CH`, `chapterDone`, `nextChapter`, `exitLabels`, `refreshMenu`), chapter end (`CH_END`, `showWin`), scores, ranks, achievements (`ACH`), buttons, timer, title menu, PWA install, `start()` |
 | `portraits/*.svg` | `you`, `pippi`, `nilsson`, `horse`, `spunk`, `tommy`, `annika`, `karlsson`, `bloom`, `teacher` (120×120) |
 | `sw.js`, `manifest.webmanifest`, `icons/` | The installable, offline app. `icon.svg` is the source; PNGs are rendered from it |
-| `tests/` | Playwright: `chapter1`, `chapter2`, `chapter3`, `progress`, `language`, `pwa`, `phone`, `motion` (also in Firefox in CI); helpers in `helpers.js`; `serve.js` is the local server |
+| `tests/` | Playwright: `chapter1`, `chapter2`, `chapter3`, `chapter4`, `progress`, `language`, `pwa`, `phone`, `motion` (also in Firefox in CI); helpers in `helpers.js`; `serve.js` is the local server |
 | `tools/i18n-check.js` | For every language in `lang/`: lists English text without a translation, fails on stale keys and conflicts (`--lang=sv` for one) |
 | `.github/` | CI (`tests.yml`) and the idea → plan → PR agent workflows (see `docs/agent-workflow.md`) |
 
@@ -44,8 +45,8 @@ Context for AI agents and new contributors. The README covers what the game is a
 
 - **Classic scripts in one shared global scope**, loaded in order by `boot.js`. Names must be unique across files; chapter-specific names end in the chapter number (`stage1`, `intro1`, `win1`) or say what they are (`openPancake`). Avoid browser globals.
 - The scene SVG is in the page before any script runs; `core.js` wires up every `.hit` when it loads. `buildKitchen()` (called from `start()`) draws the flag string, the flag chart and the bureau drawers; `applyKitchen()` shows the state (fire, key, note, padlocks, horse, door light).
-- **Hotspot ids** share one namespace across all rooms. Chapter 1 uses: `flags stove sign wood pantry window spunk mirror chart nilsson suitcase bureau horse door note homework bowl chest`. Chapter 2 uses: `card2 feet pippi2 case2 clock2 torch spunk2 sky nilsson2 scale dresser stones hat wardrobe vdoor`. Chapter 3 uses: `window3 board tables romans clock3 stars plaque door3 tdesk register bell3 nature globe ta3 pippi3 cake nilsson3 spunk3`.
-- **Chapters:** `S.ch` and `S.scene` (`kitchen`, `bedroom` or `school`) pick the room. Finishing a chapter sets its `outN` flag; `exitLabels()` then labels the exit "on to Chapter N" (the kitchen's front door, the bedroom's veranda door), and clicking it (or **Continue to Chapter N** on the end screen) runs `startCh2()` / `startCh3()`. The unlocks are saved as `pippi-villa-v1-ch2` and `-ch3`, which show the chapter buttons on the title screen. `LAST_CH` in `app.js` is the newest chapter.
+- **Hotspot ids** share one namespace across all rooms. Chapter 1 uses: `flags stove sign wood pantry window spunk mirror chart nilsson suitcase bureau horse door note homework bowl chest`. Chapter 2 uses: `card2 feet pippi2 case2 clock2 torch spunk2 sky nilsson2 scale dresser stones hat wardrobe vdoor`. Chapter 3 uses: `window3 board tables romans clock3 stars plaque door3 tdesk register bell3 nature globe ta3 pippi3 cake nilsson3 spunk3`. Chapter 4 uses: `ticket4 mirror4 juggler4 balance4 lights4 stars4 curtain4 spunk4 pippi4 boat4`.
+- **Chapters:** `S.ch` and `S.scene` (`kitchen`, `bedroom`, `school` or `circus`) pick the room. Finishing a chapter sets its `outN` flag; `exitLabels()` labels its exit for the next chapter (the kitchen's front door, the bedroom's veranda door, then the classroom door). Clicking it or **Continue to Chapter N** runs the next `startChN()` function. Unlocks are saved as `pippi-villa-v1-ch2`, `-ch3` and `-ch4`, which show the chapter buttons on the title screen. `LAST_CH` in `app.js` is the newest chapter.
 - **SVG ids are global**: prefix new ones per room. Flags use generated clip-path ids (`fclipN`).
 
 ### State and saving
@@ -53,18 +54,19 @@ Context for AI agents and new contributors. The README covers what the game is a
 - Chapter 1 fields: `S.drw` (opened little drawers), `S.lockd` (bureau padlock digits), `S.stv` (`{wood, vent}` in the stove), `S.pan` (pancake steps done), `S.cl` (sea chest letter wheels).
 - Chapter 2 fields: `S.tb` (battery directions, 1 = + towards the bulb), `S.shd` (`{d}`: Mr Nilsson's distance from the torch), `S.mrs` (`{seq}`: the Morse you're typing), `S.stn` (stones on the scale). Close-ups stay as the player left them.
 - Chapter 3 fields: `S.rl` (the desk padlock's digits), `S.nn` (lines marked on the blackboard), `S.reg` (names put in the register so far), `S.bug` (creatures ticked as insects), `S.frc` (cake puzzle round: 0 or 1).
-- Other keys: `pippi-villa-v1-ch2`, `-ch3` (chapters unlocked), `pippi-villa-v1-scores`, `-sound`, `-motion`, `-voice`, `-lang`, `-norotate`. Every `localStorage` access is wrapped in `try/catch`.
+- Chapter 4 fields: `S.bal4` (weights selected), `S.closed4` (spotlight switch); `S.f.tickets`, `symmetry`, `juggle`, `balance`, `lights` mark its acts and `S.f.out4` marks the finale.
+- Other keys: `pippi-villa-v1-ch2`, `-ch3`, `-ch4` (chapters unlocked), `pippi-villa-v1-scores`, `-sound`, `-motion`, `-voice`, `-lang`, `-norotate`. Every `localStorage` access is wrapped in `try/catch`.
 - A new game keeps achievements (`S.ach`).
 
 ### Dialogue
-- `say(lines, done?)`; speakers: `you`, `sys` (narrator, label "Villa Villekulla", "Villa Villekulla · night" in Chapter 2, "The little school" in Chapter 3), `pippi`, `nilsson`, `horse`, `spunk`, `tommy`, `annika`, `karlsson` (Thunder-Karlsson), `bloom`, `teacher` ("Miss"; NL "Juf", SV "Fröken"). A new speaker needs a portrait, an entry in `WHO` and `faceFor` (core.js), a colour in the chapter's CSS (or base), and a `VOICE_STYLE`.
+- `say(lines, done?)`; speakers: `you`, `sys` (narrator, label "Villa Villekulla", "Villa Villekulla · night" in Chapter 2, "The little school" in Chapter 3 and "The circus" in Chapter 4), `pippi`, `nilsson`, `horse`, `spunk`, `tommy`, `annika`, `karlsson` (Thunder-Karlsson), `bloom`, `teacher` ("Miss"; NL "Juf", SV "Fröken"). A new speaker needs a portrait, an entry in `WHO` and `faceFor` (core.js), a colour in the chapter's CSS (or base), and a `VOICE_STYLE`.
 
 ### Items
-- `spunk` (free hint item, like the rubber duck in Hello, IT: use it on anything for the current stage's first hint, not counted), `note`, `matches`, `eggs`, `pancake`, `key`, `sugar`; Chapter 2: `spunk`, `batteries`, `torch`, `feather`; Chapter 3: `spunk`, `chalk`, `magnifier`. Four pockets; a chapter never needs more than four at once.
+- `spunk` (free hint item, like the rubber duck in Hello, IT: use it on anything for the current stage's first hint, not counted), `note`, `matches`, `eggs`, `pancake`, `key`, `sugar`; Chapter 2: `spunk`, `batteries`, `torch`, `feather`; Chapter 3: `spunk`, `chalk`, `magnifier`. Chapter 4 uses no new inventory items. Four pockets; a chapter never needs more than four at once.
 
 ### Languages
 - English in the code, translations in `lang/<code>/*.txt` as `= English` / `> translation` pairs (see the blueprint, section 4). Use `tx()` for text built from pieces.
-- `js/i18n.js`: `LANGS` and `LANG_TAGS` list the languages; the browser language picks Dutch or Swedish on the first visit. `js/app.js`: `LANG_NEXT` (button order) and `LANG_HELLO` (the line shown after switching, written in the new language). `js/voice.js` speaks `LANG_TAGS[LANG]`.
+- `js/i18n.js`: `LANGS` and `LANG_TAGS` list the languages; the browser language picks Dutch or Swedish on the first visit. `js/app.js`: `LANG_NEXT` (button order) and `LANG_HELLO` (the line shown after switching, written in the new language). `js/voice.js` speaks `LANG_TAGS[LANG]`. Chapter 4 strings live in `lang/<code>/ch4.txt`.
 - **Adding a language:** a `lang/<code>/` folder with the same four files, entries in `LANGS`, `LANG_TAGS`, `LANG_NEXT`, `LANG_HELLO`, a `<span data-l>` in the language button, the files in `CORE` in `sw.js`, and a `PW_LANG` phone run in `tests.yml`.
 - Swedish names (Astrid Lindgren's originals): Pippi Långstrump, Villa Villekulla, Herr Nilsson, the horse **Lilla Gubben** (the Swedish text calls him by name), Tommy och Annika, kapten Efraim Långstrump, *sakletare* (thing-searcher), Dunder-Karlsson och Blom.
 - Dutch names: Pippi Langkous, Villa Kakelbont, meneer Nilsson, het paard, Tommy en Annika, kapitein Efraïm Langkous, "dingen zoeken" (thing-searching). "Spunk" stays "spunk".
@@ -109,6 +111,17 @@ Chapter 3 (spoilers too). Five tasks on the blackboard, each worth a gold star f
 | 6 | The globe (the seasons come from the Earth's tilt) | "The Earth leans over…" | `seasons` |
 | – | Holidays | Click the hand bell on Miss's desk (needs all five stars) | `out3` |
 
+Chapter 4 (spoilers too). Five acts earn gold stars; click the big red curtain after all five:
+
+| # | Puzzle (real idea) | Solution | Flags |
+|---|---|---|---|
+| 1 | Ticket numbers (counting by twos) | Continue 12, 14, 16, 18 with **20** | `tickets` |
+| 2 | Mirror tent (line symmetry) | Choose the panel with each colour reflected the same distance across the dotted line | `symmetry` |
+| 3 | Juggler (repeating patterns) | Red, blue, blue repeats; choose **red** | `juggle` |
+| 4 | Strong-person act (addition and balance) | Select 3 kg and 5 kg for a total of **8 kg** | `balance` |
+| 5 | Spotlight (closed electric circuit) | Close the switch to complete the loop, then test the lights | `lights` |
+| – | The show | Click the big red curtain after all five acts | `out4` |
+
 Achievements: `spunk` (used the spunk), `egghead` (egg on your head), `ceiling` (tossed the pancake), `lift` (click the horse once the door is unlocked), `drawers` (opened all 9 little drawers), `nilsson` (clicked Mr Nilsson 3 times), `shake` (shook Pippi 3 times), `giant` (a shadow of 5 m or more: 24 cm or closer), `venus` (clicked Venus), `quarter` (picked the quarter as the biggest piece), `freckles` (magnifying glass on Pippi).
 
 ## Gotchas
@@ -120,6 +133,7 @@ Everything in the blueprint's "Lessons learned" applies. In particular:
   - Kitchen (`css/chapter1.css`): the flags sway, the fire flickers, steam rises from the pan once it's lit (`#vk-steam`), Mr Nilsson bobs and swishes his tail, the horse nods, the curtains move in the breeze, clouds drift and a bird flies past (inside the window's `vkWinClip`), Tommy and Annika wave at the gate, the spunk crawls about its jar.
   - Bedroom (`css/chapter2.css`): stars twinkle, the moon glows, a shooting star now and then, the burglars sneak and their lantern flickers, the shadow at the door fiddles with the lock, Pippi and Mr Nilsson breathe in their sleep, Pippi snores (z z z), Tommy's window flashes (`.flashing`, after SOS until you decode it), and the burglars' legs dangle from the wardrobe.
   - Classroom (`css/chapter3.css`): the horse munches the flowerbed and Miss chases it round the schoolyard (until the holidays start), clouds drift past the window, the clock's second hand ticks, Pippi's plaits bob, Mr Nilsson bobs, the spunk crawls about its jar.
+  - Circus (`css/chapter4.css`): the big-top lights twinkle.
   - Interface (`css/base.css`): a new item pops into its pocket (`justGiven` in `core.js`), the end screen's title bounces in, portraits pop in.
 - Check new close-ups at 412×915 and 915×412 (`tests/phone.spec.js`), also with `PW_LANG=nl` and `PW_LANG=sv`.
 - **Bump `CACHE` in `sw.js` and `GAME_VERSION` in `js/boot.js` together** on every change, and list new files in `CORE`.
@@ -142,7 +156,7 @@ Everything in the blueprint's "Lessons learned" applies. In particular:
 
 ## Ideas for next chapters
 
-4. The circus. 5. On board the *Hoppetossa*. 6. The South Sea island. Follow the blueprint's "Adding a chapter" checklist. The school's door is the natural exit to Chapter 4 (add it to `exitLabels()` and `H.door3`).
+5. On board the *Hoppetossa*. 6. The South Sea island. Follow the blueprint's "Adding a chapter" checklist. The classroom door leads to Chapter 4; the circus painting of the *Hoppetossa* points toward Chapter 5.
 
 ## Workflow
 

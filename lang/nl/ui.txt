@@ -262,8 +262,8 @@
 > School uit · hoofdstuk 3 voltooid
 = Holidays
 > Vakantie
-= Pippi has her holidays, and Miss has the biggest piece of cake. Next: the circus comes to town. Chapter 4 is still being written.
-> Pippi heeft vakantie, en de juf heeft het grootste stuk taart. Straks: het circus komt naar de stad. Aan hoofdstuk 4 wordt nog geschreven.
+= Pippi has her holidays, and Miss has the biggest piece of cake. The circus has come to town, and Pippi is already looking for a sequinned hat.
+> Pippi heeft vakantie en de juf heeft het grootste stuk taart. Het circus is aangekomen en Pippi zoekt nu al een hoed met lovertjes.
 = Pippi goes to school
 > Pippi gaat naar school
 = Chapter 3: Pippi goes to school
@@ -282,3 +282,23 @@
 > Juf
 = The little school
 > Het schooltje
+= Classroom door: on to Chapter {n}
+> Deur van de klas: door naar hoofdstuk {n}
+= Continue to Chapter 4
+> Door naar hoofdstuk 4
+= The big top is open · Chapter 4 complete
+> De grote tent is open · hoofdstuk 4 voltooid
+= The show goes on
+> De voorstelling gaat door
+= Pippi has earned her place in the circus. The performers are sailing on the Hoppetossa next, and Pippi has packed eighteen kilos of sweets.
+> Pippi heeft haar plek in het circus verdiend. De artiesten varen hierna met de Hoppetossa mee, en Pippi heeft achttien kilo snoep ingepakt.
+= The circus
+> Het circus
+= Chapter 4 · The Circus
+> Hoofdstuk 4 · Het circus
+= Chapter 4: The circus
+> Hoofdstuk 4: Het circus
+= Back at the circus. The ringmaster is still saving you a place in the show.
+> Terug bij het circus. De spreekstalmeester houdt nog steeds een plek voor je vrij.
+= Take your time. The circus is here, and the ringmaster is saving you a place in the show.
+> Neem de tijd. Het circus is er, en de spreekstalmeester houdt een plek voor je vrij.

@@ -41,7 +41,7 @@ function stage2(){
   if(!S.f.swapped) return 'b_scale';
   return 'b_wake';
 }
-function stage_(){ return S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
+function stage_(){ return S.ch===4 ? stage4() : S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
 Object.assign(HINTS, {
   s_drawer: ["The chalk box is empty. Miss keeps the chalk in her desk drawer, and she has written herself a note about its code.", "The plaque over the door says MDCCCXCIV: 1000 + 500 + 300 + 90 + 4 = 1894. Set the desk's padlock to 1 8 9 4."],
   s_nines: ["Task 1: Pippi's nines on the blackboard have three mistakes. The poster next to the board shows the nines trick.", "Use the chalk on the blackboard and mark 9 × 5, 9 × 8 and 9 × 10 (they should be 45, 72 and 90). Then click Done marking."],
@@ -55,4 +55,15 @@ function stage3(){
   if(!S.f.drawer) return 's_drawer';
   for(const k of TASKS3) if(!S.f[k]) return { nines:'s_nines', abc:'s_abc', bugs:'s_bugs', cake:'s_cake', seasons:'s_seasons' }[k];
   return 's_bell';
+}
+Object.assign(HINTS, {
+  c4_tickets: ["The ticket numbers go up by the same amount each time. Compare 12 to 14 and 14 to 16.", "Count up by two: 12, 14, 16, 18, 20. The next ticket is 20."],
+  c4_symmetry: ["Look at each coloured dot on the left of the dotted line. Its partner must be just as far away on the right.", "Choose A: the red, yellow and blue dots are reflected across the line."],
+  c4_juggle: ["The juggler uses one red ball and then two blue balls. Find that group repeating.", "Red, blue, blue repeats, so the next ball is red."],
+  c4_balance: ["The target is 8 kg. Try adding two of the weights together.", "Choose 3 kg and 5 kg: 3 + 5 = 8."],
+  c4_lights: ["Electricity needs a complete loop. Is there a gap in the wire at the switch?", "Close the switch, then test the lights. A closed loop lets current flow through the bulb."]
+});
+function stage4(){
+  for(const key of TASKS4) if(!S.f[key]) return { tickets:'c4_tickets', symmetry:'c4_symmetry', juggle:'c4_juggle', balance:'c4_balance', lights:'c4_lights' }[key];
+  return 'c4_lights';
 }

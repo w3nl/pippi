@@ -99,3 +99,25 @@
 > Fem guldstjärnor! Fröken sa att lovet börjar när klockan ringer.
 = Click the hand bell on Miss's desk.
 > Klicka på handklockan på frökens kateder.
+
+# ---------- Chapter 4 ----------
+= The ticket numbers go up by the same amount each time. Compare 12 to 14 and 14 to 16.
+> Biljettnumren ökar lika mycket varje gång. Jämför 12 med 14 och 14 med 16.
+= Count up by two: 12, 14, 16, 18, 20. The next ticket is 20.
+> Räkna uppåt med två: 12, 14, 16, 18, 20. Nästa biljett har nummer 20.
+= Look at each coloured dot on the left of the dotted line. Its partner must be just as far away on the right.
+> Titta på varje färgad prick till vänster om den prickade linjen. Motsvarande prick ska vara lika långt bort på höger sida.
+= Choose A: the red, yellow and blue dots are reflected across the line.
+> Välj A: de röda, gula och blå prickarna speglas över linjen.
+= The juggler uses one red ball and then two blue balls. Find that group repeating.
+> Jonglören använder en röd boll och sedan två blå. Hitta gruppen som upprepas.
+= Red, blue, blue repeats, so the next ball is red.
+> Röd, blå, blå upprepas, så nästa boll är röd.
+= The target is 8 kg. Try adding two of the weights together.
+> Målet är 8 kg. Försök att lägga ihop två av vikterna.
+= Choose 3 kg and 5 kg: 3 + 5 = 8.
+> Välj 3 kg och 5 kg: 3 + 5 = 8.
+= Electricity needs a complete loop. Is there a gap in the wire at the switch?
+> Elektricitet behöver en sluten krets. Finns det ett avbrott vid strömbrytaren?
+= Close the switch, then test the lights. A closed loop lets current flow through the bulb.
+> Slut strömbrytaren och testa lamporna. I en sluten krets kan strömmen gå genom lampan.
