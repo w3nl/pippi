@@ -13,15 +13,16 @@
 @keyframes ccBulb{0%,60%,100%{opacity:1}30%{opacity:.25}}
 @keyframes ccBall{0%,100%{transform:translateY(0)}50%{transform:translateY(-26px)}}
 @keyframes ccCane{0%,100%{transform:rotate(0)}50%{transform:rotate(-14deg)}}
-/* the horse trots round the ring: along the front facing right, then back along the far side facing left, smaller */
+/* the horse trots round the LEFT, front part of the ring, so it never crosses the teeterboard on the right or the
+   clown at the back: along the front facing right, then back along the far side facing left, smaller */
 @keyframes ccTrot{
-  0%{transform:translate(-430px,-30px) scale(1,1)}
-  25%{transform:translate(0px,10px) scale(1,1)}
-  49.9%{transform:translate(430px,-30px) scale(1,1)}
-  50%{transform:translate(430px,-30px) scale(-.85,.85)}
-  75%{transform:translate(0px,-95px) scale(-.8,.8)}
-  99.9%{transform:translate(-430px,-30px) scale(-.85,.85)}
-  100%{transform:translate(-430px,-30px) scale(1,1)}
+  0%{transform:translate(-300px,34px) scale(1,1)}
+  25%{transform:translate(-115px,58px) scale(1,1)}
+  49.9%{transform:translate(70px,34px) scale(1,1)}
+  50%{transform:translate(70px,34px) scale(-.85,.85)}
+  75%{transform:translate(-115px,-12px) scale(-.8,.8)}
+  99.9%{transform:translate(-300px,34px) scale(-.85,.85)}
+  100%{transform:translate(-300px,34px) scale(1,1)}
 }
 /* a trot: each leg swings forward while its knee folds (the hoof lifts), then pushes back along the ground, straight */
 @keyframes ccLeg{0%{transform:rotate(22deg)}50%{transform:rotate(-26deg)}100%{transform:rotate(22deg)}}
