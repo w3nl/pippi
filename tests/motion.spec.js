@@ -56,6 +56,26 @@ test('"Motion off" stops everything, in every room', async ({ page }) => {
   await page.evaluate(() => { S.ch = 4; S.scene = 'circus'; S.f = { juggle: true, out4: true }; applyVisuals(); });
   await expect(page.locator('#cc-confetti')).toBeVisible();
   expect(await moving(page)).toBe(0);
+  // and the Hoppetossa, even at land ahoy (the gulls and dolphins only exist while moving)
+  await page.evaluate(() => { S.ch = 5; S.scene = 'ship'; S.f = { course: true, out5: true }; applyVisuals(); });
+  await expect(page.locator('#hp-island')).toBeVisible();
+  expect(await moving(page)).toBe(0);
+  expect(await page.locator('#sc-ship .hp-dolphin').first().evaluate(e => getComputedStyle(e).opacity)).toBe('0');
+});
+
+test('the Hoppetossa moves: she rocks on the waves, the sails flap until she is on course, dolphins jump', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await seed(page, { ch: 5, scene: 'ship', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5']);
+  await page.locator('#btn-cont').click();
+  await skip(page);
+  expect(await anim(page, '#hp-ship')).toBe('hpRock');
+  expect(await anim(page, '#sc-ship .hp-wave.front')).toBe('hpWaveFront');
+  expect(await anim(page, '#sc-ship .sail.sq')).toBe('hpLuff');
+  expect(await anim(page, '#sc-ship .hp-dolphin.a')).toBe('hpDolphinA');
+  await page.evaluate(() => { S.f.course = true; applyVisuals(); });
+  expect(await anim(page, '#sc-ship .sail.sq')).toBe('hpFull');
+  expect(await anim(page, '#hp-spray .drop')).toBe('hpSpray');
+  expect(await moving(page)).toBeGreaterThan(30);
 });
 
 test('the big top moves: the horse trots, the spotlights sweep, the trapezes swing, and the show adds confetti', async ({ page }) => {

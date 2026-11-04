@@ -1,0 +1,381 @@
+# Swedish translation: Chapter 5, on board the Hoppetossa (js/chapter5.js).
+# Sjömansord: ratten, babord/styrbord, knop, sjömil, logglina, skeppsklocka. Hästen heter Lilla Gubben.
+
+= Captain Efraim's chart
+> Kapten Efraims sjökort
+= A sea chart, a bit damp, with squares on it. Mr Nilsson has eaten a banana over it.
+> Ett sjökort, lite fuktigt, med rutor på. Herr Nilsson har ätit en banan över det.
+= A bucket of fresh water
+> En hink sötvatten
+= Fresh water from the sun still: no salt in it at all. Somebody on board is very thirsty.
+> Sötvatten från soldestillatorn: inte ett enda saltkorn. Någon ombord är väldigt törstig.
+= The spunk's jam jar, tied to a crate so it can't roll overboard.
+> Spunkens syltburk, fastbunden vid en låda så att den inte rullar överbord.
+= Pippi says a ship should always have a spunk on board, for luck. You take it. A spunk knows things. Even about the sea.
+> Pippi säger att ett skepp alltid ska ha en spunk ombord, för turs skull. Du tar den. En spunk vet saker. Till och med om havet.
+= Land ahoy! My island! Pippi, my girl, you're a born sea captain.
+> Land i sikte! Min ö! Pippi, min flicka, du är en född sjökapten.
+= My chart! Where's my chart? Without it I'll never find my island. Islands are very small, and the sea is very big.
+> Mitt sjökort! Var är mitt sjökort? Utan det hittar jag aldrig min ö. Öar är väldigt små, och havet är väldigt stort.
+= Mr Nilsson put it in a bottle and threw it overboard. He's been tidying up.
+> Herr Nilsson stoppade det i en flaska och kastade det överbord. Han har städat.
+= Then fish it out, quick, before it floats away! Tommy has the big net at the bow.
+> Fiska upp det då, fort, innan det flyter bort! Tommy har den stora håven i fören.
+= We know where the island is, but the compass has gone mad. It says north is behind us! Something is pulling at the needle.
+> Vi vet var ön ligger, men kompassen har blivit tokig. Den säger att norr är bakom oss! Något drar i nålen.
+= The compass is working again. Now take the wheel and steer north-east, the way the chart says.
+> Kompassen fungerar igen. Ta nu ratten och styr mot nordost, som det står på sjökortet.
+= We're on course! But the horse looks terribly thirsty. And somebody had a bath in the drinking water…
+> Vi håller kursen! Men Lilla Gubben ser förskräckligt törstig ut. Och någon har badat i dricksvattnet…
+= When will we get there? Throw the log line off the back of the ship and see how fast we're sailing.
+> När är vi framme? Kasta ut logglinan från aktern och se hur fort vi seglar.
+= Three hours, then we'll see land. When it's three o'clock, ring the ship's bell, so the whole crew knows.
+> Tre timmar, sedan ser vi land. När klockan är tre ringer du i skeppsklockan, så att hela besättningen vet det.
+= The wheel is lashed with a rope, so the Hoppetossa keeps sailing north-east all by herself.
+> Ratten är fastsurrad med ett rep, så Hoppetossa seglar mot nordost alldeles av sig själv.
+= Steer? Steer where? First we need to know where the island is. My chart is somewhere in the sea.
+> Styra? Styra vart? Först måste vi veta var ön ligger. Mitt sjökort är någonstans i havet.
+= You turn the wheel, and the compass needle doesn't follow. It just keeps pointing at the side of the binnacle.
+> Du vrider på ratten, men kompassnålen följer inte med. Den pekar bara envist på sidan av kompasshuset.
+= That compass is bewitched! Something is pulling the needle.
+> Den kompassen är förhäxad! Något drar i nålen.
+= The compass needle swings gently and points north, as a compass should. The ship turns around it.
+> Kompassnålen svänger lugnt och pekar mot norr, precis som en kompass ska. Skeppet vänder sig runt den.
+= The horse has drunk the bucket dry. The sun still keeps dripping: one drop, then another.
+> Lilla Gubben har druckit hinken tom. Soldestillatorn fortsätter att droppa: en droppe, och en till.
+= The sun still is dripping away. You already have a bucket of fresh water: someone on board is very thirsty.
+> Soldestillatorn droppar och droppar. Du har redan en hink sötvatten: någon ombord är väldigt törstig.
+= Neeeigh!
+> Gnäääj!
+= The horse has had a drink and is very happy. It is wearing its sailor's hat at a jaunty angle.
+> Lilla Gubben har fått dricka och är jätteglad. Han bär sin sjömansmössa käckt på sned.
+= The horse is staring at the empty water barrel with its tongue out. It is SO thirsty.
+> Lilla Gubben stirrar på den tomma vattentunnan med tungan ute. Han är SÅ törstig.
+= Don't drink the sea, horse. Seawater is salty: the more you drink, the thirstier you get.
+> Drick inte upp havet, Lilla Gubben. Havsvatten är salt: ju mer du dricker, desto törstigare blir du.
+= The net is empty and dripping. Everything that floated is back on board. Everything that sank is with the fish.
+> Håven är tom och droppar. Allt som flöt är tillbaka ombord. Allt som sjönk är hos fiskarna.
+= The log line: 6 knots, 18 sea miles, 3 hours. The captain has written it in the ship's logbook.
+> Logglinan: 6 knop, 18 sjömil, 3 timmar. Kaptenen har skrivit det i loggboken.
+= The log line tells us how fast we're going. But first we need to be going the right way!
+> Logglinan visar hur fort vi seglar. Men först måste vi segla åt rätt håll!
+= Ding-ding, ding-ding, ding-ding. Six bells: three o'clock, and land ahoy!
+> Ding-ding, ding-ding, ding-ding. Sex slag: klockan tre, och land i sikte!
+= Ding! The ship's bell. On a ship, the bell tells the time.
+> Ding! Skeppsklockan. På ett skepp är det klockan som talar om vad tiden är.
+= Not yet! {left}
+> Inte än! {left}
+= First we need to sail the right way.
+> Först måste vi segla åt rätt håll.
+= First the horse needs a drink.
+> Först måste Lilla Gubben få dricka.
+= First find out how long the voyage will take.
+> Ta först reda på hur lång tid resan tar.
+= Captain Efraim's cabin: a hammock, a sea chest, and a big hook for his hat. Pippi says her father once lifted a whole whale out of the water with one hand.
+> Kapten Efraims hytt: en hängmatta, en sjömanskista och en stor krok för mössan. Pippi säger att hennes pappa en gång lyfte upp en hel val ur vattnet med ena handen.
+= "It was a small whale," says Captain Efraim. "But a heavy one."
+> "Det var en liten val," säger kapten Efraim. "Men en tung en."
+= The sails are full of wind, and the Hoppetossa is flying over the waves. Pippi painted the monkey on the mainsail herself.
+> Seglen är fulla av vind, och Hoppetossa flyger fram över vågorna. Pippi har själv målat apan på storseglet.
+= The big square sails flap and flutter. Without a course, the Hoppetossa is just going round in circles.
+> De stora fyrkantiga seglen slår och fladdrar. Utan kurs åker Hoppetossa bara runt i cirklar.
+= I painted Mr Nilsson on the sail, so the wind knows which ship it is.
+> Jag målade Herr Nilsson på seglet, så att vinden vet vilket skepp det är.
+= Mr Nilsson is hanging by his tail from the top of the mast, looking very pleased with himself. He has tidied up the whole ship. Into the sea.
+> Herr Nilsson hänger i svansen högst upp i masten och ser mycket nöjd ut. Han har städat hela skeppet. Ner i havet.
+= Land ahoy! I saw it first!
+> Land i sikte! Jag såg det först!
+= No, Pippi did. She's been looking through that telescope since Tuesday.
+> Nej, Pippi gjorde det. Hon har tittat i den där kikaren sedan i tisdags.
+= There's a bottle bobbing by the bow, and lots of other things. Mr Nilsson's tidying.
+> Det guppar en flaska vid fören, och massor av andra saker. Herr Nilssons städning.
+= You can only catch the things that float. The rest have gone straight to the bottom.
+> Man kan bara fånga det som flyter. Resten har sjunkit rakt till botten.
+= Pippi, are you sure your father knows the way?
+> Pippi, är du säker på att din pappa hittar?
+= Of course! He's been to his island hundreds of times. He just never remembers where it is.
+> Klart han gör! Han har varit på sin ö hundratals gånger. Han kommer bara aldrig ihåg var den ligger.
+= Land ahoy! Hello, island! Hello, Dad's crown!
+> Land i sikte! Hej, ön! Hej, pappas krona!
+= I'm the lookout. When I see the island, I'll shout so loud the fish hear it.
+> Jag är utkik. När jag ser ön ska jag ropa så högt att fiskarna hör det.
+= I'm the lookout. Right now I can see the sea. And more sea. And a dolphin!
+> Jag är utkik. Just nu ser jag havet. Och mer hav. Och en delfin!
+= A cork
+> En kork
+= A gold coin
+> Ett guldmynt
+= An apple
+> Ett äpple
+= A glass marble
+> En glaskula
+= A corked bottle with paper inside
+> En korkad flaska med papper i
+= A metal teaspoon
+> En tesked av metall
+= A wooden spoon
+> En träslev
+= A pebble
+> En sten
+= The fishing net
+> Håven
+= Mr Nilsson has tidied things overboard
+> Herr Nilsson har städat saker överbord
+= Tommy can scoop up everything that is still floating. Things that sink have gone down to the bottom of the sea already. Which ones are floating? Tick them, then scoop.
+> Tommy kan håva upp allt som fortfarande flyter. Saker som sjunker har redan hamnat på havets botten. Vilka flyter? Kryssa i dem och håva sedan.
+= Scoop with the net!
+> Håva upp!
+= Got them all! Wood, cork and apples are light for their size, so they float. The glass bottle floats because it is full of air. That's why a big wooden ship floats too: it is full of air inside.
+> Allihop! Trä, kork och äpplen är lätta för sin storlek, så de flyter. Glasflaskan flyter för att den är full av luft. Därför flyter ett stort träskepp också: det är fullt av luft inuti.
+= Tommy swings the net on board: a cork, an apple, a wooden spoon and a bottle. Inside the bottle is a rolled-up paper.
+> Tommy svingar in håven: en kork, ett äpple, en träslev och en flaska. I flaskan ligger ett hoprullat papper.
+= My chart! Mr Nilsson, you rascal!
+> Mitt sjökort! Herr Nilsson, din rackare!
+= Show it to Dad. He's the only one who can read his own handwriting.
+> Visa det för pappa. Han är den enda som kan läsa sin egen handstil.
+= Plop! The net comes up empty there: {thing} sank to the bottom straight away. Things that are heavy for their size sink.
+> Plums! Håven kommer upp tom där: {thing} sjönk rakt till botten. Saker som är tunga för sin storlek sjunker.
+= Something is still bobbing by the bow: the bottle! Glass sinks, but this one is corked and full of air.
+> Något guppar fortfarande vid fören: flaskan! Glas sjunker, men den här är korkad och full av luft.
+= Something you didn't tick is still bobbing on the waves. Look again: which things are light for their size?
+> Något som du inte kryssade i guppar fortfarande på vågorna. Titta igen: vilka saker är lätta för sin storlek?
+= Mr Nilsson's toy magnet
+> Herr Nilssons leksaksmagnet
+= A banana
+> En banan
+= The horse's spare horseshoe (iron)
+> Lilla Gubbens extra hästsko (järn)
+= A brass candlestick
+> En ljusstake av mässing
+= A tin of sardines (steel)
+> En sardinburk (stål)
+= A coil of rope
+> En rulle rep
+= The ship's compass
+> Skeppskompassen
+= North should be straight ahead… or should it?
+> Norr borde vara rakt fram… eller?
+= The needle of a compass is a little magnet, and it always turns to point north. Unless something else is pulling it! Take away everything near the compass that pulls a magnet.
+> Kompassnålen är en liten magnet, och den vänder sig alltid mot norr. Om inte något annat drar i den! Ta bort allt nära kompassen som en magnet drar till sig.
+= Check the compass
+> Titta på kompassen
+= The needle swings round and points north! Magnets pull iron and steel, and other magnets. Bananas, rope and brass don't bother a compass at all.
+> Nålen svänger runt och pekar mot norr! Magneter drar till sig järn och stål, och andra magneter. Bananer, rep och mässing stör inte en kompass ett dugg.
+= North is north again! Now we can steer.
+> Norr är norr igen! Nu kan vi styra.
+= Mr Nilsson looks sadly at his magnet. Pippi gives him the banana instead.
+> Herr Nilsson tittar ledset på sin magnet. Pippi ger honom bananen i stället.
+= The needle still points the wrong way. Something near it is pulling it: what does a magnet pull?
+> Nålen pekar fortfarande åt fel håll. Något i närheten drar i den: vad drar en magnet till sig?
+= Better, but the needle is still pulled a little to one side. Magnets don't only pull magnets: they pull iron and steel too.
+> Bättre, men nålen dras fortfarande lite åt sidan. Magneter drar inte bara till sig magneter: de drar till sig järn och stål också.
+= The needle points north, but you took away {thing} for nothing: a magnet doesn't pull that. Put it back where it was.
+> Nålen pekar mot norr, men du tog bort {thing} i onödan: en magnet drar inte till sig den. Lägg tillbaka den.
+= Columns A to F across the top, rows 1 to 5 down the side
+> Kolumner A till F längs överkanten, rader 1 till 5 längs sidan
+= Captain Efraim:
+> Kapten Efraim:
+= "My island is in square E1. But Mr Nilsson's banana is all over it. Which square is E1? Click it."
+> "Min ö ligger i ruta E1. Men Herr Nilssons banan är kladdad över hela. Vilken ruta är E1? Klicka på den."
+= "There it is! The Hoppetossa is in square B4. Which way must we sail to get to the island?"
+> "Där är den! Hoppetossa är i ruta B4. Åt vilket håll ska vi segla för att komma till ön?"
+= E1: along the top to column E, then down to row 1. You wipe off the banana, and there's the island!
+> E1: längs överkanten till kolumn E, sedan ner till rad 1. Du torkar bort bananen, och där är ön!
+= That's A5: the corner, a long way from the island. The letter tells you the column across the top; the number tells you the row down the side.
+> Det där är A5: hörnet, långt från ön. Bokstaven visar kolumnen längs överkanten; siffran visar raden längs sidan.
+= That's square {sq}. First find the letter E along the top, then go down to row 1.
+> Det där är ruta {sq}. Leta först upp bokstaven E längs överkanten, och gå sedan ner till rad 1.
+= North-east! On a chart, north is always at the top and east is on the right. The island is up and to the right of the ship: north-east.
+> Nordost! På ett sjökort är norr alltid uppåt och öster till höger. Ön ligger uppåt och till höger om skeppet: nordost.
+= North-east it is! I'll pin the chart up in my cabin, where Mr Nilsson can't reach it.
+> Nordost, alltså! Jag sätter upp sjökortet i min hytt, där Herr Nilsson inte når det.
+= Now: the compass. And then, to the wheel!
+> Nu: kompassen. Och sedan, till ratten!
+= South-west is exactly the wrong way: back home to Villa Villekulla! The island is up and to the right on the chart.
+> Sydväst är precis fel håll: hem till Villa Villekulla igen! Ön ligger uppåt och till höger på sjökortet.
+= The island is up and to the right of the ship. On a chart, north is at the top. Which direction is up AND right?
+> Ön ligger uppåt och till höger om skeppet. På ett sjökort är norr uppåt. Vilket håll är uppåt OCH till höger?
+= The ship's wheel
+> Ratten
+= Steer the Hoppetossa north-east
+> Styr Hoppetossa mot nordost
+= ◀ Turn to port (left)
+> ◀ Gira åt babord (vänster)
+= Turn to starboard (right) ▶
+> Gira åt styrbord (höger) ▶
+= Steady as she goes!
+> Stadigt så!
+= Sailors say port for left and starboard for right. The chart said: sail north-east.
+> Sjömän säger babord för vänster och styrbord för höger. Sjökortet sa: segla mot nordost.
+= The Hoppetossa is heading:
+> Hoppetossa styr mot:
+= North-east: halfway between north and east. The wind fills the sails, and off we go!
+> Nordost: mitt emellan norr och öster. Vinden fyller seglen, och iväg bär det!
+= The sails stop flapping, fill with wind with a big WHUMP, and the Hoppetossa leaps over the waves.
+> Seglen slutar fladdra, fylls med vind med ett stort VOFF, och Hoppetossa skuttar fram över vågorna.
+= Steady as she goes! Pippi, you're a natural.
+> Stadigt så! Pippi, du är en naturbegåvning.
+= I've never steered a ship before, so I knew I could.
+> Jag har aldrig styrt ett skepp förut, så jag visste att jag kunde.
+= South-west: that's the way home to Villa Villekulla! Turn the ship right round.
+> Sydväst: det är vägen hem till Villa Villekulla! Vänd skeppet helt om.
+= We're heading {dir}. North-east is halfway between north (N) and east (E).
+> Vi styr mot {dir}. Nordost är mitt emellan norr (N) och öster (O).
+= north
+> norr
+= north-east
+> nordost
+= east
+> öster
+= south-east
+> sydost
+= south
+> söder
+= south-west
+> sydväst
+= west
+> väster
+= north-west
+> nordväst
+= Where do you put the big bowl of seawater?
+> Var ställer du den stora skålen med havsvatten?
+= In the hot sun
+> I den heta solen
+= In the shade of the sail
+> I skuggan av seglet
+= In the shade it stays cool, and the water hardly evaporates. The sun's warmth makes the water rise as vapour.
+> I skuggan förblir det svalt, och vattnet avdunstar knappt. Solens värme får vattnet att stiga upp som ånga.
+= What goes in the middle of the bowl?
+> Vad ställer du mitt i skålen?
+= An empty cup
+> En tom mugg
+= A sponge
+> En tvättsvamp
+= The sponge soaks up the seawater, salt and all.
+> Tvättsvampen suger upp havsvattnet, salt och allt.
+= The horse doesn't fit in the bowl. It tried.
+> Lilla Gubben får inte plats i skålen. Han försökte.
+= What goes over the top?
+> Vad lägger du över?
+= Nothing
+> Ingenting
+= Oilcloth, tied on tight
+> Vaxduk, hårt fastknuten
+= Without a cover, the water vapour floats off into the sky. You need something to catch it.
+> Utan något över svävar vattenångan iväg upp i himlen. Du behöver något som fångar den.
+= The vapour goes straight through the holes in the net.
+> Ångan går rakt igenom hålen i håven.
+= Where does the pebble go?
+> Var lägger du stenen?
+= On the edge of the bowl
+> På kanten av skålen
+= On the cover, right above the cup
+> På duken, precis ovanför muggen
+= Inside the cup
+> I muggen
+= Then the drops run to the edge, and drip back into the salty seawater.
+> Då rinner dropparna ut mot kanten och droppar tillbaka ner i det salta havsvattnet.
+= In the cup, it just takes up room. The pebble has to make a low point in the cover, so the drops run there.
+> I muggen tar den bara plats. Stenen ska göra en grop i duken, så att dropparna rinner dit.
+= The water barrel
+> Vattentunnan
+= Empty. And all around: seawater, far too salty to drink
+> Tom. Och runt omkring: havsvatten, alldeles för salt att dricka
+= Pippi has a plan: "We'll make the sun do the work." Build a sun still to get fresh water out of seawater.
+> Pippi har en plan: "Vi låter solen göra jobbet." Bygg en soldestillator som gör sötvatten av havsvatten.
+= Wait for the sun
+> Vänta på solen
+= Answer all four questions first.
+> Svara på alla fyra frågorna först.
+= The sun warms the seawater, and the water evaporates: it rises as invisible vapour and leaves the salt behind. On the cool cover, the vapour turns back into drops, which run down to the pebble and drip into the cup. Fresh water!
+> Solen värmer havsvattnet, och vattnet avdunstar: det stiger upp som osynlig ånga och lämnar saltet kvar. Mot den svala duken blir ångan droppar igen, som rinner ner till stenen och droppar ner i muggen. Sötvatten!
+= Pippi builds a giant sun still on top of the barrel, with the spare sail as the cover. By the afternoon, there's a whole bucket of fresh water.
+> Pippi bygger en jättestor soldestillator ovanpå tunnan, med reservseglet som duk. Fram på eftermiddagen finns det en hel hink sötvatten.
+= Taste it! Not salty at all. The salt stays behind in the bowl.
+> Smaka! Inte salt alls. Saltet blir kvar i skålen.
+= You take the bucket. Somebody on board is very thirsty.
+> Du tar hinken. Någon ombord är väldigt törstig.
+= The log line
+> Logglinan
+= How fast is the Hoppetossa sailing?
+> Hur fort seglar Hoppetossa?
+= Sailors measure speed with a log line: a piece of wood on a long rope with a knot tied in it every few metres. Throw the wood overboard, turn the little sand-glass, and count the knots that run out before the sand runs through. That number is the speed, in knots.
+> Sjömän mäter farten med en logglina: en träbit på ett långt rep med en knut var och varannan meter. Kasta träbiten överbord, vänd det lilla timglaset och räkna knutarna som rinner ut innan sanden har runnit igenom. Det talet är farten, i knop.
+= Throw the log!
+> Kasta loggen!
+= Captain Efraim: "The island is 18 sea miles away." How many hours until we get there?
+> Kapten Efraim: "Ön ligger 18 sjömil bort." Hur många timmar dröjer det innan vi är framme?
+= {h} hours
+> {h} timmar
+= {n} knots ran out before the sand ran through: the Hoppetossa is sailing at {n} knots. That means {n} sea miles every hour.
+> {n} knutar rann ut innan sanden hade runnit igenom: Hoppetossa seglar i {n} knop. Det betyder {n} sjömil i timmen.
+= 3 hours! 6 sea miles every hour: 6, 12, 18. Or: 18 ÷ 6 = 3. It's 12 o'clock now, so we'll see the island at 3 o'clock.
+> 3 timmar! 6 sjömil i timmen: 6, 12, 18. Eller: 18 ÷ 6 = 3. Klockan är 12 nu, så klockan 3 ser vi ön.
+= Three o'clock! Pippi, when it's three o'clock, ring the ship's bell. Then everybody looks out for land.
+> Klockan tre! Pippi, när klockan är tre ringer du i skeppsklockan. Då spanar alla efter land.
+= How do you ring three o'clock?
+> Hur ringer man klockan tre?
+= The sailors' way! One ring for every half hour since twelve o'clock.
+> Som sjömän gör! Ett slag för varje halvtimme sedan klockan tolv.
+= 18 − 6 = 12 is taking away. But every hour we sail 6 sea miles: how many sixes make 18?
+> 18 − 6 = 12 är att dra ifrån. Men varje timme seglar vi 6 sjömil: hur många sexor blir 18?
+= After 2 hours we've sailed 2 × 6 = 12 sea miles. There are still 6 to go: too far to swim.
+> Efter 2 timmar har vi seglat 2 × 6 = 12 sjömil. Det är 6 kvar: för långt att simma.
+= After 4 hours we'd have sailed 4 × 6 = 24 sea miles: right past the island and out the other side!
+> Efter 4 timmar skulle vi ha seglat 4 × 6 = 24 sjömil: rakt förbi ön och ut på andra sidan!
+= The ship's bell
+> Skeppsklockan
+= One ring for every half hour since twelve o'clock
+> Ett slag för varje halvtimme sedan klockan tolv
+= Three hours have flown by. The clock says 3 o'clock. On a ship, the bell rings once for every half hour since 12 o'clock: half past twelve is 1 ring, 1 o'clock is 2 rings… Ring 3 o'clock!
+> Tre timmar har flugit förbi. Klockan är 3. På ett skepp slår klockan ett slag för varje halvtimme sedan klockan 12: halv ett är 1 slag, klockan 1 är 2 slag… Ring klockan 3!
+= Start again
+> Börja om
+= Ding!
+> Ding!
+= Land ahoy?
+> Land i sikte?
+= No rings yet.
+> Inga slag än.
+= Six rings: twelve o'clock and six half hours, that's 3 o'clock! Sailors ring them in pairs: ding-ding, ding-ding, ding-ding.
+> Sex slag: klockan tolv och sex halvtimmar, det blir klockan 3! Sjömän slår dem två och två: ding-ding, ding-ding, ding-ding.
+= Ring the bell first!
+> Ring i klockan först!
+= 3 rings means 1:30: three HALF hours after twelve. How many half hours are there in 3 hours?
+> 3 slag betyder 1.30: tre HALVTIMMAR efter tolv. Hur många halvtimmar är det på 3 timmar?
+= {n} rings means {t}. {more}
+> {n} slag betyder {t}. {more}
+= Too early: keep ringing.
+> För tidigt: fortsätt ringa.
+= The whole crew falls out of their hammocks!
+> Hela besättningen ramlar ur hängmattorna!
+= Too late: start again.
+> För sent: börja om.
+= The Hoppetossa, Captain Efraim's ship, is sailing on the wide blue sea. On board: Pippi, Tommy, Annika, the horse, Mr Nilsson and you.
+> Hoppetossa, kapten Efraims skepp, seglar på det vida blå havet. Ombord: Pippi, Tommy, Annika, Lilla Gubben, Herr Nilsson och du.
+= To my island in the South Sea! Where the sun always shines and the coconuts fall straight into your hand.
+> Till min ö i Söderhavet! Där solen alltid skiner och kokosnötterna ramlar rakt ner i handen.
+= Dad, where is your island, exactly?
+> Pappa, var ligger din ö, egentligen?
+= It's on my chart. My chart is in… hmm. My chart was in my cabin.
+> Den finns på mitt sjökort. Mitt sjökort ligger i… hm. Mitt sjökort låg i min hytt.
+= Pippi, Mr Nilsson has been tidying up. He's thrown things overboard. And he had a bath in the drinking water.
+> Pippi, Herr Nilsson har städat. Han har kastat saker överbord. Och han har badat i dricksvattnet.
+= Then we're lost at sea, the compass is going mad, and we've nothing to drink! Wonderful. A real adventure!
+> Då har vi gått vilse på havet, kompassen är tokig och vi har ingenting att dricka! Underbart. Ett riktigt äventyr!
+= Things are bobbing by the bow. Maybe Tommy's net can catch them.
+> Det guppar saker vid fören. Tommys håv kanske kan fånga dem.
+= Ding-ding, ding-ding, ding-ding! Everyone runs to the rail.
+> Ding-ding, ding-ding, ding-ding! Alla springer fram till relingen.
+= LAND AHOY!
+> LAND I SIKTE!
+= On the horizon, a little green island rises out of the sea: a white beach, palm trees, and a flag waving on a hut.
+> Vid horisonten stiger en liten grön ö upp ur havet: en vit strand, palmer och en flagga som vajar på en hydda.
+= My island! Right where I left it. Pippi, my girl, you found it.
+> Min ö! Precis där jag lämnade den. Pippi, min flicka, du hittade den.
+= We found it together. With a net, a compass, a chart, a sun still, a log line and a bell.
+> Vi hittade den tillsammans. Med en håv, en kompass, ett sjökort, en soldestillator, en logglina och en klocka.
+= And no help at all from Mr Nilsson.
+> Och utan någon som helst hjälp från Herr Nilsson.
+= The dolphins race ahead to the beach, and the Hoppetossa sails after them, with the horse at the bow, wearing its sailor's hat.
+> Delfinerna kappas fram mot stranden, och Hoppetossa seglar efter, med Lilla Gubben i fören i sin sjömansmössa.

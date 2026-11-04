@@ -16,6 +16,7 @@ function ambKey(){
     case 'bedroom': return 'bedroom' + (f.out2 ? '' : '+snore');
     case 'school': return 'school' + (f.out3 ? '' : '+horse');
     case 'circus': return 'circus' + (f.out4 ? '+show' : '');
+    case 'ship': return 'ship' + (f.course ? '+sail' : '') + (f.out5 ? '+land' : '');
   }
   return null;
 }
@@ -131,6 +132,14 @@ const SOUNDSCAPES = {
     AMB.timers.push(setTimeout(play, 600));
     every(9000, 17000, () => { blip(m, 330, .12, .02, 'sawtooth', 300); later(160, () => blip(m, 330, .12, .02, 'sawtooth', 300)); });
     if(mods.includes('show')){ every(80, 120, () => burst(m, .05, .008, 300, 'lowpass')); every(3000, 6000, () => burst(m, 1.2, .03, 1500, 'bandpass')); }
+  },
+  // Chapter 5, the Hoppetossa at sea: waves washing against the hull, the wind in the rigging, gulls, the ship creaking.
+  // Once she's on course the wind gets stronger; at "land ahoy" the gulls go wild.
+  ship(m, mods){
+    bed(m, { type: 'lowpass', freq: 420, gain: .05, wobble: .7, rate: .12 });
+    bed(m, { type: 'bandpass', freq: mods.includes('sail') ? 1400 : 900, q: .7, gain: mods.includes('sail') ? .018 : .009, wobble: .5, rate: .2 });
+    every(5000, 9000, () => blip(m, 140 + Math.random() * 40, .5, .012, 'sawtooth', 110));
+    every(mods.includes('land') ? 1200 : 7000, mods.includes('land') ? 2500 : 14000, () => [0, 1, 2].forEach(i => later(i * 180, () => blip(m, 2300 - i * 250, .16, .012, 'sine', 1500))));
   },
   // Chapter 3, the classroom on a summer morning: a quiet room, the school clock, sparrows outside,
   // and the horse munching geraniums in the schoolyard (until the holidays start).

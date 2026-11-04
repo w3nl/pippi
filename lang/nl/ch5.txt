@@ -1,0 +1,381 @@
+# Dutch translation: Chapter 5, on board the Hoppetossa (js/chapter5.js).
+# Sailors' words: roer (wheel), bakboord/stuurboord (port/starboard), knopen, zeemijl, loglijn, scheepsbel.
+
+= Captain Efraim's chart
+> De zeekaart van kapitein Efraïm
+= A sea chart, a bit damp, with squares on it. Mr Nilsson has eaten a banana over it.
+> Een zeekaart, een beetje nat, met vakjes erop. Meneer Nilsson heeft er een banaan boven opgegeten.
+= A bucket of fresh water
+> Een emmer zoet water
+= Fresh water from the sun still: no salt in it at all. Somebody on board is very thirsty.
+> Zoet water uit de zonnedistilleerder: er zit helemaal geen zout in. Iemand aan boord heeft heel erge dorst.
+= The spunk's jam jar, tied to a crate so it can't roll overboard.
+> Het jampotje van de spunk, vastgebonden aan een kist, zodat het niet overboord rolt.
+= Pippi says a ship should always have a spunk on board, for luck. You take it. A spunk knows things. Even about the sea.
+> Pippi zegt dat er op een schip altijd een spunk aan boord moet zijn, voor het geluk. Je neemt hem mee. Een spunk weet dingen. Zelfs over de zee.
+= Land ahoy! My island! Pippi, my girl, you're a born sea captain.
+> Land in zicht! Mijn eiland! Pippi, meisje, jij bent een geboren kapitein.
+= My chart! Where's my chart? Without it I'll never find my island. Islands are very small, and the sea is very big.
+> Mijn zeekaart! Waar is mijn zeekaart? Zonder kaart vind ik mijn eiland nooit. Eilanden zijn heel klein, en de zee is heel groot.
+= Mr Nilsson put it in a bottle and threw it overboard. He's been tidying up.
+> Meneer Nilsson heeft hem in een fles gestopt en overboord gegooid. Hij is aan het opruimen.
+= Then fish it out, quick, before it floats away! Tommy has the big net at the bow.
+> Vis hem er dan snel uit, voordat hij wegdrijft! Tommy heeft het grote net op de boeg.
+= We know where the island is, but the compass has gone mad. It says north is behind us! Something is pulling at the needle.
+> We weten waar het eiland is, maar het kompas is gek geworden. Het zegt dat het noorden achter ons ligt! Iets trekt aan de naald.
+= The compass is working again. Now take the wheel and steer north-east, the way the chart says.
+> Het kompas doet het weer. Neem nu het roer en stuur naar het noordoosten, zoals op de kaart staat.
+= We're on course! But the horse looks terribly thirsty. And somebody had a bath in the drinking water…
+> We liggen op koers! Maar het paard ziet er vreselijk dorstig uit. En iemand heeft in het drinkwater gebadderd…
+= When will we get there? Throw the log line off the back of the ship and see how fast we're sailing.
+> Wanneer zijn we er? Gooi de loglijn achter van het schip af en kijk hoe snel we varen.
+= Three hours, then we'll see land. When it's three o'clock, ring the ship's bell, so the whole crew knows.
+> Drie uur, dan zien we land. Als het drie uur is, luid je de scheepsbel, zodat de hele bemanning het weet.
+= The wheel is lashed with a rope, so the Hoppetossa keeps sailing north-east all by herself.
+> Het roer is vastgebonden met een touw, dus de Hoppetossa vaart helemaal vanzelf naar het noordoosten.
+= Steer? Steer where? First we need to know where the island is. My chart is somewhere in the sea.
+> Sturen? Waarheen dan? Eerst moeten we weten waar het eiland is. Mijn zeekaart ligt ergens in de zee.
+= You turn the wheel, and the compass needle doesn't follow. It just keeps pointing at the side of the binnacle.
+> Je draait aan het roer, maar de kompasnaald draait niet mee. Hij blijft maar naar de zijkant van het kompashuis wijzen.
+= That compass is bewitched! Something is pulling the needle.
+> Dat kompas is betoverd! Iets trekt aan de naald.
+= The compass needle swings gently and points north, as a compass should. The ship turns around it.
+> De kompasnaald zwaait zachtjes en wijst naar het noorden, zoals een kompas hoort te doen. Het schip draait eromheen.
+= The horse has drunk the bucket dry. The sun still keeps dripping: one drop, then another.
+> Het paard heeft de emmer leeggedronken. De zonnedistilleerder blijft druppen: een druppel, en nog een.
+= The sun still is dripping away. You already have a bucket of fresh water: someone on board is very thirsty.
+> De zonnedistilleerder druppelt maar door. Je hebt al een emmer zoet water: iemand aan boord heeft heel erge dorst.
+= Neeeigh!
+> Hiiihiii!
+= The horse has had a drink and is very happy. It is wearing its sailor's hat at a jaunty angle.
+> Het paard heeft gedronken en is heel blij. Zijn matrozenpet staat zwierig scheef.
+= The horse is staring at the empty water barrel with its tongue out. It is SO thirsty.
+> Het paard staart met zijn tong uit zijn mond naar het lege watervat. Het heeft ZO'N dorst.
+= Don't drink the sea, horse. Seawater is salty: the more you drink, the thirstier you get.
+> Niet de zee opdrinken, paard. Zeewater is zout: hoe meer je drinkt, hoe meer dorst je krijgt.
+= The net is empty and dripping. Everything that floated is back on board. Everything that sank is with the fish.
+> Het net is leeg en druipt. Alles wat bleef drijven is weer aan boord. Alles wat zonk ligt bij de vissen.
+= The log line: 6 knots, 18 sea miles, 3 hours. The captain has written it in the ship's logbook.
+> De loglijn: 6 knopen, 18 zeemijl, 3 uur. De kapitein heeft het in het logboek geschreven.
+= The log line tells us how fast we're going. But first we need to be going the right way!
+> De loglijn vertelt hoe snel we varen. Maar eerst moeten we de goede kant op varen!
+= Ding-ding, ding-ding, ding-ding. Six bells: three o'clock, and land ahoy!
+> Ding-ding, ding-ding, ding-ding. Zes slagen: drie uur, en land in zicht!
+= Ding! The ship's bell. On a ship, the bell tells the time.
+> Ding! De scheepsbel. Op een schip vertelt de bel hoe laat het is.
+= Not yet! {left}
+> Nog niet! {left}
+= First we need to sail the right way.
+> Eerst moeten we de goede kant op varen.
+= First the horse needs a drink.
+> Eerst moet het paard drinken.
+= First find out how long the voyage will take.
+> Zoek eerst uit hoe lang de reis nog duurt.
+= Captain Efraim's cabin: a hammock, a sea chest, and a big hook for his hat. Pippi says her father once lifted a whole whale out of the water with one hand.
+> De hut van kapitein Efraïm: een hangmat, een zeemanskist en een grote haak voor zijn pet. Pippi zegt dat haar vader eens een hele walvis met één hand uit het water tilde.
+= "It was a small whale," says Captain Efraim. "But a heavy one."
+> "Het was een kleine walvis," zegt kapitein Efraïm. "Maar wel een zware."
+= The sails are full of wind, and the Hoppetossa is flying over the waves. Pippi painted the monkey on the mainsail herself.
+> De zeilen staan bol van de wind, en de Hoppetossa vliegt over de golven. Pippi heeft het aapje zelf op het grootzeil geschilderd.
+= The big square sails flap and flutter. Without a course, the Hoppetossa is just going round in circles.
+> De grote vierkante zeilen klapperen en wapperen. Zonder koers vaart de Hoppetossa alleen maar rondjes.
+= I painted Mr Nilsson on the sail, so the wind knows which ship it is.
+> Ik heb meneer Nilsson op het zeil geschilderd, zodat de wind weet welk schip het is.
+= Mr Nilsson is hanging by his tail from the top of the mast, looking very pleased with himself. He has tidied up the whole ship. Into the sea.
+> Meneer Nilsson hangt aan zijn staart boven in de mast en kijkt erg tevreden. Hij heeft het hele schip opgeruimd. De zee in.
+= Land ahoy! I saw it first!
+> Land in zicht! Ik zag het het eerst!
+= No, Pippi did. She's been looking through that telescope since Tuesday.
+> Nee, Pippi. Die kijkt al sinds dinsdag door die verrekijker.
+= There's a bottle bobbing by the bow, and lots of other things. Mr Nilsson's tidying.
+> Er dobbert een fles bij de boeg, en nog een heleboel andere dingen. Het opruimwerk van meneer Nilsson.
+= You can only catch the things that float. The rest have gone straight to the bottom.
+> Je kunt alleen de dingen vangen die blijven drijven. De rest is meteen naar de bodem gezonken.
+= Pippi, are you sure your father knows the way?
+> Pippi, weet je zeker dat je vader de weg weet?
+= Of course! He's been to his island hundreds of times. He just never remembers where it is.
+> Natuurlijk! Hij is al honderden keren naar zijn eiland gevaren. Hij weet alleen nooit meer waar het ligt.
+= Land ahoy! Hello, island! Hello, Dad's crown!
+> Land in zicht! Hallo, eiland! Hallo, kroon van papa!
+= I'm the lookout. When I see the island, I'll shout so loud the fish hear it.
+> Ik ben de uitkijk. Als ik het eiland zie, roep ik zo hard dat de vissen het horen.
+= I'm the lookout. Right now I can see the sea. And more sea. And a dolphin!
+> Ik ben de uitkijk. Nu zie ik de zee. En nog meer zee. En een dolfijn!
+= A cork
+> Een kurk
+= A gold coin
+> Een gouden munt
+= An apple
+> Een appel
+= A glass marble
+> Een glazen knikker
+= A corked bottle with paper inside
+> Een fles met een kurk en papier erin
+= A metal teaspoon
+> Een metalen theelepeltje
+= A wooden spoon
+> Een houten lepel
+= A pebble
+> Een kiezelsteen
+= The fishing net
+> Het visnet
+= Mr Nilsson has tidied things overboard
+> Meneer Nilsson heeft dingen overboord opgeruimd
+= Tommy can scoop up everything that is still floating. Things that sink have gone down to the bottom of the sea already. Which ones are floating? Tick them, then scoop.
+> Tommy kan alles opscheppen wat nog drijft. Dingen die zinken liggen al op de bodem van de zee. Welke drijven er? Vink ze aan en schep ze op.
+= Scoop with the net!
+> Scheppen met het net!
+= Got them all! Wood, cork and apples are light for their size, so they float. The glass bottle floats because it is full of air. That's why a big wooden ship floats too: it is full of air inside.
+> Allemaal! Hout, kurk en appels zijn licht voor hun grootte, dus ze drijven. De glazen fles drijft omdat hij vol lucht zit. Daarom drijft een groot houten schip ook: het zit vanbinnen vol lucht.
+= Tommy swings the net on board: a cork, an apple, a wooden spoon and a bottle. Inside the bottle is a rolled-up paper.
+> Tommy zwaait het net aan boord: een kurk, een appel, een houten lepel en een fles. In de fles zit een opgerold papier.
+= My chart! Mr Nilsson, you rascal!
+> Mijn zeekaart! Meneer Nilsson, jij deugniet!
+= Show it to Dad. He's the only one who can read his own handwriting.
+> Laat hem aan papa zien. Hij is de enige die zijn eigen handschrift kan lezen.
+= Plop! The net comes up empty there: {thing} sank to the bottom straight away. Things that are heavy for their size sink.
+> Plons! Het net komt daar leeg boven: {thing} is meteen naar de bodem gezonken. Dingen die zwaar zijn voor hun grootte, zinken.
+= Something is still bobbing by the bow: the bottle! Glass sinks, but this one is corked and full of air.
+> Er dobbert nog iets bij de boeg: de fles! Glas zinkt, maar deze heeft een kurk en zit vol lucht.
+= Something you didn't tick is still bobbing on the waves. Look again: which things are light for their size?
+> Iets wat je niet hebt aangevinkt dobbert nog op de golven. Kijk nog eens: welke dingen zijn licht voor hun grootte?
+= Mr Nilsson's toy magnet
+> De speelgoedmagneet van meneer Nilsson
+= A banana
+> Een banaan
+= The horse's spare horseshoe (iron)
+> Het reservehoefijzer van het paard (ijzer)
+= A brass candlestick
+> Een koperen kandelaar
+= A tin of sardines (steel)
+> Een blikje sardientjes (staal)
+= A coil of rope
+> Een rol touw
+= The ship's compass
+> Het scheepskompas
+= North should be straight ahead… or should it?
+> Het noorden zou recht vooruit moeten liggen… of niet?
+= The needle of a compass is a little magnet, and it always turns to point north. Unless something else is pulling it! Take away everything near the compass that pulls a magnet.
+> De naald van een kompas is een kleine magneet, en die draait altijd naar het noorden. Tenzij iets anders eraan trekt! Haal alles bij het kompas weg wat een magneet aantrekt.
+= Check the compass
+> Kijk op het kompas
+= The needle swings round and points north! Magnets pull iron and steel, and other magnets. Bananas, rope and brass don't bother a compass at all.
+> De naald zwaait rond en wijst naar het noorden! Magneten trekken ijzer en staal aan, en andere magneten. Bananen, touw en koper storen een kompas helemaal niet.
+= North is north again! Now we can steer.
+> Het noorden is weer het noorden! Nu kunnen we sturen.
+= Mr Nilsson looks sadly at his magnet. Pippi gives him the banana instead.
+> Meneer Nilsson kijkt verdrietig naar zijn magneet. Pippi geeft hem de banaan maar.
+= The needle still points the wrong way. Something near it is pulling it: what does a magnet pull?
+> De naald wijst nog steeds de verkeerde kant op. Iets in de buurt trekt eraan: wat trekt een magneet aan?
+= Better, but the needle is still pulled a little to one side. Magnets don't only pull magnets: they pull iron and steel too.
+> Beter, maar de naald wordt nog een beetje opzij getrokken. Magneten trekken niet alleen magneten aan: ook ijzer en staal.
+= The needle points north, but you took away {thing} for nothing: a magnet doesn't pull that. Put it back where it was.
+> De naald wijst naar het noorden, maar je hebt {thing} voor niets weggehaald: een magneet trekt dat niet aan. Leg het terug.
+= Columns A to F across the top, rows 1 to 5 down the side
+> Kolommen A tot en met F bovenaan, rijen 1 tot en met 5 langs de zijkant
+= Captain Efraim:
+> Kapitein Efraïm:
+= "My island is in square E1. But Mr Nilsson's banana is all over it. Which square is E1? Click it."
+> "Mijn eiland ligt in vakje E1. Maar de banaan van meneer Nilsson zit eroverheen. Welk vakje is E1? Klik erop."
+= "There it is! The Hoppetossa is in square B4. Which way must we sail to get to the island?"
+> "Daar is het! De Hoppetossa is in vakje B4. Welke kant moeten we op varen om bij het eiland te komen?"
+= E1: along the top to column E, then down to row 1. You wipe off the banana, and there's the island!
+> E1: bovenlangs naar kolom E, dan omlaag naar rij 1. Je veegt de banaan weg, en daar is het eiland!
+= That's A5: the corner, a long way from the island. The letter tells you the column across the top; the number tells you the row down the side.
+> Dat is A5: de hoek, heel ver van het eiland. De letter is de kolom bovenaan; het cijfer is de rij langs de zijkant.
+= That's square {sq}. First find the letter E along the top, then go down to row 1.
+> Dat is vakje {sq}. Zoek eerst de letter E bovenaan, en ga dan omlaag naar rij 1.
+= North-east! On a chart, north is always at the top and east is on the right. The island is up and to the right of the ship: north-east.
+> Noordoost! Op een kaart is het noorden altijd boven en het oosten rechts. Het eiland ligt rechtsboven van het schip: noordoost.
+= North-east it is! I'll pin the chart up in my cabin, where Mr Nilsson can't reach it.
+> Noordoost dus! Ik hang de kaart op in mijn hut, waar meneer Nilsson er niet bij kan.
+= Now: the compass. And then, to the wheel!
+> Nu: het kompas. En dan naar het roer!
+= South-west is exactly the wrong way: back home to Villa Villekulla! The island is up and to the right on the chart.
+> Zuidwest is precies de verkeerde kant op: terug naar huis, naar Villa Kakelbont! Het eiland ligt rechtsboven op de kaart.
+= The island is up and to the right of the ship. On a chart, north is at the top. Which direction is up AND right?
+> Het eiland ligt rechtsboven van het schip. Op een kaart is het noorden boven. Welke richting is boven ÉN rechts?
+= The ship's wheel
+> Het roer
+= Steer the Hoppetossa north-east
+> Stuur de Hoppetossa naar het noordoosten
+= ◀ Turn to port (left)
+> ◀ Naar bakboord (links)
+= Turn to starboard (right) ▶
+> Naar stuurboord (rechts) ▶
+= Steady as she goes!
+> Zo houden!
+= Sailors say port for left and starboard for right. The chart said: sail north-east.
+> Zeelui zeggen bakboord voor links en stuurboord voor rechts. Op de kaart stond: vaar naar het noordoosten.
+= The Hoppetossa is heading:
+> De Hoppetossa vaart richting:
+= North-east: halfway between north and east. The wind fills the sails, and off we go!
+> Noordoost: precies tussen noord en oost in. De wind blaast de zeilen bol, en daar gaan we!
+= The sails stop flapping, fill with wind with a big WHUMP, and the Hoppetossa leaps over the waves.
+> De zeilen stoppen met klapperen, vullen zich met een grote WOEMP met wind, en de Hoppetossa springt over de golven.
+= Steady as she goes! Pippi, you're a natural.
+> Zo houden! Pippi, jij kunt het gewoon.
+= I've never steered a ship before, so I knew I could.
+> Ik heb nog nooit een schip gestuurd, dus ik wist wel dat ik het kon.
+= South-west: that's the way home to Villa Villekulla! Turn the ship right round.
+> Zuidwest: zo ga je terug naar Villa Kakelbont! Draai het schip helemaal om.
+= We're heading {dir}. North-east is halfway between north (N) and east (E).
+> We varen naar het {dir}. Noordoost is precies tussen noord (N) en oost (O) in.
+= north
+> noorden
+= north-east
+> noordoosten
+= east
+> oosten
+= south-east
+> zuidoosten
+= south
+> zuiden
+= south-west
+> zuidwesten
+= west
+> westen
+= north-west
+> noordwesten
+= Where do you put the big bowl of seawater?
+> Waar zet je de grote schaal zeewater neer?
+= In the hot sun
+> In de hete zon
+= In the shade of the sail
+> In de schaduw van het zeil
+= In the shade it stays cool, and the water hardly evaporates. The sun's warmth makes the water rise as vapour.
+> In de schaduw blijft het koel, en verdampt het water bijna niet. Door de warmte van de zon stijgt het water op als waterdamp.
+= What goes in the middle of the bowl?
+> Wat zet je in het midden van de schaal?
+= An empty cup
+> Een leeg bekertje
+= A sponge
+> Een spons
+= The sponge soaks up the seawater, salt and all.
+> De spons zuigt het zeewater op, met zout en al.
+= The horse doesn't fit in the bowl. It tried.
+> Het paard past niet in de schaal. Het heeft het geprobeerd.
+= What goes over the top?
+> Wat gaat er bovenover?
+= Nothing
+> Niets
+= Oilcloth, tied on tight
+> Zeildoek, strak vastgebonden
+= Without a cover, the water vapour floats off into the sky. You need something to catch it.
+> Zonder afdekking zweeft de waterdamp weg naar de lucht. Je hebt iets nodig om hem op te vangen.
+= The vapour goes straight through the holes in the net.
+> De waterdamp gaat zo door de gaten in het net.
+= Where does the pebble go?
+> Waar leg je het steentje?
+= On the edge of the bowl
+> Op de rand van de schaal
+= On the cover, right above the cup
+> Op het doek, precies boven het bekertje
+= Inside the cup
+> In het bekertje
+= Then the drops run to the edge, and drip back into the salty seawater.
+> Dan lopen de druppels naar de rand, en druppen ze terug in het zoute zeewater.
+= In the cup, it just takes up room. The pebble has to make a low point in the cover, so the drops run there.
+> In het bekertje neemt het alleen maar ruimte in. Het steentje moet een laag puntje in het doek maken, zodat de druppels daarheen lopen.
+= The water barrel
+> Het watervat
+= Empty. And all around: seawater, far too salty to drink
+> Leeg. En overal om je heen: zeewater, veel te zout om te drinken
+= Pippi has a plan: "We'll make the sun do the work." Build a sun still to get fresh water out of seawater.
+> Pippi heeft een plan: "We laten de zon het werk doen." Bouw een zonnedistilleerder om zoet water uit zeewater te halen.
+= Wait for the sun
+> Wachten op de zon
+= Answer all four questions first.
+> Beantwoord eerst alle vier de vragen.
+= The sun warms the seawater, and the water evaporates: it rises as invisible vapour and leaves the salt behind. On the cool cover, the vapour turns back into drops, which run down to the pebble and drip into the cup. Fresh water!
+> De zon verwarmt het zeewater, en het water verdampt: het stijgt op als onzichtbare waterdamp en laat het zout achter. Tegen het koele doek wordt de damp weer druppels, die naar het steentje lopen en in het bekertje druppen. Zoet water!
+= Pippi builds a giant sun still on top of the barrel, with the spare sail as the cover. By the afternoon, there's a whole bucket of fresh water.
+> Pippi bouwt een reuzenzonnedistilleerder boven op het vat, met het reservezeil als doek. 's Middags is er een hele emmer zoet water.
+= Taste it! Not salty at all. The salt stays behind in the bowl.
+> Proef maar! Helemaal niet zout. Het zout blijft achter in de schaal.
+= You take the bucket. Somebody on board is very thirsty.
+> Je neemt de emmer mee. Iemand aan boord heeft heel erge dorst.
+= The log line
+> De loglijn
+= How fast is the Hoppetossa sailing?
+> Hoe snel vaart de Hoppetossa?
+= Sailors measure speed with a log line: a piece of wood on a long rope with a knot tied in it every few metres. Throw the wood overboard, turn the little sand-glass, and count the knots that run out before the sand runs through. That number is the speed, in knots.
+> Zeelui meten hun snelheid met een loglijn: een stuk hout aan een lang touw, met om de paar meter een knoop erin. Gooi het hout overboord, draai het zandlopertje om, en tel de knopen die eruit lopen voordat het zand erdoor is. Dat getal is de snelheid, in knopen.
+= Throw the log!
+> Gooi de log!
+= Captain Efraim: "The island is 18 sea miles away." How many hours until we get there?
+> Kapitein Efraïm: "Het eiland is 18 zeemijl hiervandaan." Hoeveel uur duurt het nog voordat we er zijn?
+= {h} hours
+> {h} uur
+= {n} knots ran out before the sand ran through: the Hoppetossa is sailing at {n} knots. That means {n} sea miles every hour.
+> Er liepen {n} knopen uit voordat het zand erdoor was: de Hoppetossa vaart {n} knopen. Dat betekent {n} zeemijl per uur.
+= 3 hours! 6 sea miles every hour: 6, 12, 18. Or: 18 ÷ 6 = 3. It's 12 o'clock now, so we'll see the island at 3 o'clock.
+> 3 uur! 6 zeemijl per uur: 6, 12, 18. Of: 18 ÷ 6 = 3. Het is nu 12 uur, dus om 3 uur zien we het eiland.
+= Three o'clock! Pippi, when it's three o'clock, ring the ship's bell. Then everybody looks out for land.
+> Drie uur! Pippi, als het drie uur is, luid jij de scheepsbel. Dan gaat iedereen naar land uitkijken.
+= How do you ring three o'clock?
+> Hoe luid je drie uur?
+= The sailors' way! One ring for every half hour since twelve o'clock.
+> Zoals zeelui het doen! Eén slag voor elk half uur sinds twaalf uur.
+= 18 − 6 = 12 is taking away. But every hour we sail 6 sea miles: how many sixes make 18?
+> 18 − 6 = 12 is aftrekken. Maar elk uur varen we 6 zeemijl: hoeveel keer 6 is 18?
+= After 2 hours we've sailed 2 × 6 = 12 sea miles. There are still 6 to go: too far to swim.
+> Na 2 uur hebben we 2 × 6 = 12 zeemijl gevaren. Er zijn er nog 6 te gaan: te ver om te zwemmen.
+= After 4 hours we'd have sailed 4 × 6 = 24 sea miles: right past the island and out the other side!
+> Na 4 uur zouden we 4 × 6 = 24 zeemijl gevaren hebben: zo langs het eiland en er aan de andere kant weer af!
+= The ship's bell
+> De scheepsbel
+= One ring for every half hour since twelve o'clock
+> Eén slag voor elk half uur sinds twaalf uur
+= Three hours have flown by. The clock says 3 o'clock. On a ship, the bell rings once for every half hour since 12 o'clock: half past twelve is 1 ring, 1 o'clock is 2 rings… Ring 3 o'clock!
+> Er zijn drie uur voorbijgevlogen. De klok zegt 3 uur. Op een schip slaat de bel één keer voor elk half uur sinds 12 uur: half een is 1 slag, 1 uur is 2 slagen… Luid 3 uur!
+= Start again
+> Opnieuw beginnen
+= Ding!
+> Ding!
+= Land ahoy?
+> Land in zicht?
+= No rings yet.
+> Nog geen slagen.
+= Six rings: twelve o'clock and six half hours, that's 3 o'clock! Sailors ring them in pairs: ding-ding, ding-ding, ding-ding.
+> Zes slagen: twaalf uur plus zes halve uren, dat is 3 uur! Zeelui slaan ze twee aan twee: ding-ding, ding-ding, ding-ding.
+= Ring the bell first!
+> Luid eerst de bel!
+= 3 rings means 1:30: three HALF hours after twelve. How many half hours are there in 3 hours?
+> 3 slagen betekent 1:30: drie HALVE uren na twaalven. Hoeveel halve uren zitten er in 3 uur?
+= {n} rings means {t}. {more}
+> {n} slagen betekent {t}. {more}
+= Too early: keep ringing.
+> Te vroeg: blijf luiden.
+= The whole crew falls out of their hammocks!
+> De hele bemanning valt uit haar hangmatten!
+= Too late: start again.
+> Te laat: begin opnieuw.
+= The Hoppetossa, Captain Efraim's ship, is sailing on the wide blue sea. On board: Pippi, Tommy, Annika, the horse, Mr Nilsson and you.
+> De Hoppetossa, het schip van kapitein Efraïm, vaart over de wijde blauwe zee. Aan boord: Pippi, Tommy, Annika, het paard, meneer Nilsson en jij.
+= To my island in the South Sea! Where the sun always shines and the coconuts fall straight into your hand.
+> Naar mijn eiland in de Stille Zuidzee! Waar de zon altijd schijnt en de kokosnoten zo in je hand vallen.
+= Dad, where is your island, exactly?
+> Papa, waar ligt jouw eiland eigenlijk precies?
+= It's on my chart. My chart is in… hmm. My chart was in my cabin.
+> Dat staat op mijn zeekaart. Mijn zeekaart ligt in… hm. Mijn zeekaart lág in mijn hut.
+= Pippi, Mr Nilsson has been tidying up. He's thrown things overboard. And he had a bath in the drinking water.
+> Pippi, meneer Nilsson is aan het opruimen geweest. Hij heeft dingen overboord gegooid. En hij heeft in het drinkwater gebadderd.
+= Then we're lost at sea, the compass is going mad, and we've nothing to drink! Wonderful. A real adventure!
+> Dan zijn we verdwaald op zee, is het kompas gek geworden en hebben we niets te drinken! Prachtig. Een echt avontuur!
+= Things are bobbing by the bow. Maybe Tommy's net can catch them.
+> Er dobberen dingen bij de boeg. Misschien kan Tommy ze met zijn net vangen.
+= Ding-ding, ding-ding, ding-ding! Everyone runs to the rail.
+> Ding-ding, ding-ding, ding-ding! Iedereen rent naar de reling.
+= LAND AHOY!
+> LAND IN ZICHT!
+= On the horizon, a little green island rises out of the sea: a white beach, palm trees, and a flag waving on a hut.
+> Aan de horizon rijst een klein groen eiland op uit zee: een wit strand, palmbomen en een vlag die wappert op een hutje.
+= My island! Right where I left it. Pippi, my girl, you found it.
+> Mijn eiland! Precies waar ik het had achtergelaten. Pippi, meisje, jij hebt het gevonden.
+= We found it together. With a net, a compass, a chart, a sun still, a log line and a bell.
+> We hebben het samen gevonden. Met een net, een kompas, een zeekaart, een zonnedistilleerder, een loglijn en een bel.
+= And no help at all from Mr Nilsson.
+> En zonder enige hulp van meneer Nilsson.
+= The dolphins race ahead to the beach, and the Hoppetossa sails after them, with the horse at the bow, wearing its sailor's hat.
+> De dolfijnen racen vooruit naar het strand, en de Hoppetossa vaart erachteraan, met het paard op de boeg, met zijn matrozenpet op.

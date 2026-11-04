@@ -81,5 +81,15 @@ function useItem(item, hs){
     take('tickets'); S.f.inside = true; save(); applyVisuals(); beep(700,.06);
     return say([['ringmaster', "Four tickets, very good. Welcome to the circus!"], ['ringmaster', "But oh dear, oh dear. The show can't begin! Everything is going wrong."], ['ringmaster', "The spotlights are all the wrong colours, the teeterboard won't balance, the clown has forgotten his juggling, and the trapeze artists can't catch each other. My checklist is on the tent pole."], ['pippi', "I've never fixed a circus, so I'm sure I can!"]]);
   }
+  if(item==='chart'){
+    if(hs==='captain' || hs==='wheel' || hs==='binnacle') return openChart();
+    if(hs==='nilsson5') return say([['nilsson', "Eek!"], "Mr Nilsson reaches for the chart. You snatch it back just in time."]);
+    return say("A sea chart is for reading with the captain. He knows his own squiggles.");
+  }
+  if(item==='freshwater'){
+    if(hs!=='horse5') return say(hs==='pippi5' ? [['pippi', "Not for me, thanks. Someone on board is much thirstier: someone with four legs."]] : "Fresh water is precious at sea. Who on board is the thirstiest?");
+    take('freshwater'); S.f.water = true; save(); applyVisuals(); beep(500,.1);
+    return say(["You hold up the bucket. The horse drinks the whole lot in one go: glug, glug, glug.", ['horse', "Neeeigh!"], ['pippi', "That's the happiest horse on the seven seas."]]);
+  }
   say("That doesn't do anything useful.");
 }

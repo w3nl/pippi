@@ -24,7 +24,8 @@ const VOICE_STYLE = {
   ringmaster:{ pitch: .8, rate: 1.05, slot: 5 },  // booming, a bit flustered
   clown:   { pitch: 1.6,  rate: 1.2,  slot: 3 },
   strongman:{ pitch: .4,  rate: .85,  slot: 7 },
-  seal:    { pitch: 1.8,  rate: 1.1,  slot: 2 }
+  seal:    { pitch: 1.8,  rate: 1.1,  slot: 2 },
+  captain: { pitch: .5,   rate: .95,  slot: 4 }    // big, booming and jolly
 };
 
 /* The device's voices for the current language: British English or Dutch, falling back to any English voice. */

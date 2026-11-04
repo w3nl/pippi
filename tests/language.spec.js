@@ -121,6 +121,25 @@ test('Chapter 4 in Dutch and Swedish: the ringmaster, the ticket booth and the c
   }
 });
 
+test('Chapter 5 in Dutch and Swedish: Captain Efraim, the compass words and the chapter title', async ({ page }) => {
+  for (const [lang, who, chap, ne] of [['nl', 'Kapitein Efraïm', 'Hoofdstuk 5 · Aan boord van de Hoppetossa', 'noordoosten'], ['sv', 'Kapten Efraim', 'Kapitel 5 · Ombord på Hoppetossa', 'nordost']]) {
+    await seed(page, { ch: 5, scene: 'ship', f: { introDone: true, net: true, chart: true, compass: true } }, ['-ch2', '-ch3', '-ch4', '-ch5']);
+    await page.evaluate(([KEY, lang]) => localStorage.setItem(KEY + '-lang', lang), [KEY, lang]);
+    await page.reload();
+    await expect(page.locator('html')).toHaveAttribute('lang', lang);
+    await page.locator('#btn-cont').click();
+    await skip(page);
+    await expect(page.locator('#chap')).toHaveText(chap);
+    await hs(page, 'captain');
+    await expect(page.locator('#d-who')).toHaveText(who);
+    await skip(page);
+    await hs(page, 'wheel');
+    for (let i = 0; i < 5; i++) await page.locator('#wh-star').click();
+    await expect(page.locator('#wh-now b')).toHaveText(ne);
+    await page.locator('#m-close').click();
+  }
+});
+
 test('every Dutch and Swedish translation still matches the English text', () => {
   // Fails when English text changed without updating lang/nl (a stale key), or one text has two translations.
   const tool = path.join(__dirname, '..', 'tools', 'i18n-check.js');

@@ -292,8 +292,6 @@
 > Voorstelling! · hoofdstuk 4 voltooid
 = Bravo
 > Bravo
-= Pippi lifted the strongman, and the circus wants her to stay. Next: a ship sails into the harbour… Chapter 5 is still being written.
-> Pippi heeft de sterke man opgetild, en het circus wil dat ze blijft. Straks: er vaart een schip de haven binnen… Aan hoofdstuk 5 wordt nog geschreven.
 = Pippi goes to the circus
 > Pippi gaat naar het circus
 = Chapter 4: Pippi goes to the circus
@@ -312,8 +310,6 @@
 > Terug bij het circus. De directeur wacht nog steeds op kaartjes.
 = Take your time. School's out, and the classroom is all yours. Mr Nilsson is finishing the cake. When you're ready, the classroom door leads on to Chapter {n}.
 > Neem de tijd. De school is uit, en de klas is helemaal van jou. Meneer Nilsson eet de taart op. Als je klaar bent, gaat de deur van de klas verder naar hoofdstuk {n}.
-= Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming.
-> Neem de tijd. De voorstelling gaat door: het paard draaft nog steeds rondjes door de piste, en de confetti blijft vallen.
 = The ringmaster
 > De directeur
 = The clown
@@ -334,3 +330,51 @@
 > De spotlights hebben allemaal de verkeerde kleur, de wipplank blijft niet in evenwicht, de clown is vergeten hoe hij moet jongleren, en de trapezeartiesten kunnen elkaar niet vangen. Mijn lijstje hangt aan de tentpaal.
 = I've never fixed a circus, so I'm sure I can!
 > Ik heb nog nooit een circus gerepareerd, dus ik denk dat ik het wel kan!
+
+# ---------- Chapter 5: menus, end screen, speakers, item uses ----------
+= The performers' curtain: on to Chapter {n}
+> Het gordijn van de artiesten: door naar hoofdstuk {n}
+= Pippi lifted the strongman, and the circus wants her to stay. Next: Pippi's father sails into the harbour on the Hoppetossa, and he has an island to show her…
+> Pippi heeft de sterke man opgetild, en het circus wil dat ze blijft. Straks: Pippi's vader vaart met de Hoppetossa de haven binnen, en hij wil haar een eiland laten zien…
+= Continue to Chapter 5
+> Door naar hoofdstuk 5
+= Land ahoy · Chapter 5 complete
+> Land in zicht · hoofdstuk 5 voltooid
+= Land ahoy
+> Land in zicht
+= The Hoppetossa has found Captain Efraim's island, and the horse has had a drink. Next: the South Sea island… Chapter 6 is still being written.
+> De Hoppetossa heeft het eiland van kapitein Efraïm gevonden, en het paard heeft gedronken. Straks: het eiland in de Stille Zuidzee… Aan hoofdstuk 6 wordt nog geschreven.
+= On board the Hoppetossa
+> Aan boord van de Hoppetossa
+= Chapter 5: On board the Hoppetossa
+> Hoofdstuk 5: Aan boord van de Hoppetossa
+= Chapter 5 · On Board the Hoppetossa
+> Hoofdstuk 5 · Aan boord van de Hoppetossa
+= Sailed for home by mistake
+> Per ongeluk naar huis gevaren
+= Woke the whole crew
+> De hele bemanning gewekt
+= Back on board the Hoppetossa. She's flying north-east over the waves.
+> Terug aan boord van de Hoppetossa. Ze vliegt naar het noordoosten over de golven.
+= Back on board the Hoppetossa. Captain Efraim is still looking for his island.
+> Terug aan boord van de Hoppetossa. Kapitein Efraïm zoekt nog steeds zijn eiland.
+= Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming. When you're ready, the performers' curtain leads on to Chapter {n}.
+> Neem de tijd. De voorstelling gaat door: het paard draaft nog steeds rondjes door de piste, en de confetti blijft vallen. Als je klaar bent, gaat het gordijn van de artiesten verder naar hoofdstuk {n}.
+= Take your time. The Hoppetossa is sailing towards the island, the dolphins are leading the way, and the horse is enjoying the view.
+> Neem de tijd. De Hoppetossa vaart naar het eiland, de dolfijnen wijzen de weg, en het paard geniet van het uitzicht.
+= Captain Efraim
+> Kapitein Efraïm
+= The Hoppetossa
+> De Hoppetossa
+= Mr Nilsson reaches for the chart. You snatch it back just in time.
+> Meneer Nilsson grijpt naar de zeekaart. Je trekt hem nog net op tijd terug.
+= A sea chart is for reading with the captain. He knows his own squiggles.
+> Een zeekaart lees je samen met de kapitein. Hij kent zijn eigen krabbels.
+= Not for me, thanks. Someone on board is much thirstier: someone with four legs.
+> Niet voor mij, dank je. Iemand aan boord heeft veel meer dorst: iemand met vier benen.
+= Fresh water is precious at sea. Who on board is the thirstiest?
+> Zoet water is kostbaar op zee. Wie aan boord heeft de meeste dorst?
+= You hold up the bucket. The horse drinks the whole lot in one go: glug, glug, glug.
+> Je houdt de emmer omhoog. Het paard drinkt hem in één keer leeg: klok, klok, klok.
+= That's the happiest horse on the seven seas.
+> Dat is het gelukkigste paard van de zeven zeeën.

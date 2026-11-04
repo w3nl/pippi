@@ -53,8 +53,6 @@
 > Ork! Ork!
 = A seal on a stool, balancing a ball on its nose. It's the only one in the circus who's ready for the show.
 > En säl på en pall, som balanserar en boll på nosen. Den är den enda på cirkusen som är redo för föreställningen.
-= The curtain is wide open, and the show is on!
-> Ridån är vidöppen, och föreställningen är igång!
 = The performers' curtain, heavy red velvet with gold fringes. Behind it, the horses are stamping and someone is warming up a trumpet.
 > Artisternas ridå, av tung röd sammet med guldfransar. Bakom den stampar hästarna och någon värmer upp en trumpet.
 = It opens with the winch on its right. But only when the show is ready.

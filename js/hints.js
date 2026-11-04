@@ -41,7 +41,7 @@ function stage2(){
   if(!S.f.swapped) return 'b_scale';
   return 'b_wake';
 }
-function stage_(){ return S.ch===4 ? stage4() : S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
+function stage_(){ return S.ch===5 ? stage5() : S.ch===4 ? stage4() : S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
 Object.assign(HINTS, {
   s_drawer: ["The chalk box is empty. Miss keeps the chalk in her desk drawer, and she has written herself a note about its code.", "The plaque over the door says MDCCCXCIV: 1000 + 500 + 300 + 90 + 4 = 1894. Set the desk's padlock to 1 8 9 4."],
   s_nines: ["Task 1: Pippi's nines on the blackboard have three mistakes. The poster next to the board shows the nines trick.", "Use the chalk on the blackboard and mark 9 × 5, 9 × 8 and 9 × 10 (they should be 45, 72 and 90). Then click Done marking."],
@@ -71,4 +71,25 @@ function stage4(){
   if(!S.f.inside) return 'c_show';
   for(const k of TASKS4) if(!S.f[k]) return { lights: 'c_lights', teeter: 'c_teeter', juggle: 'c_juggle', trapeze: 'c_trapeze' }[k];
   return 'c_gears';
+}
+
+Object.assign(HINTS, {
+  o_net: ["Mr Nilsson has thrown things overboard, and the chart is in a bottle. Tommy's net at the bow can only catch the things that float.", "Use the net and tick the cork, the apple, the wooden spoon and the corked bottle (it's full of air). The coin, the marble, the teaspoon and the pebble sink."],
+  o_chart: ["You fished out Captain Efraim's chart. Show it to him.", "Select the chart and click Captain Efraim. The island is in square E1 (column E, row 1); from the ship in B4 it's up and to the right: north-east."],
+  o_compass: ["The compass needle points the wrong way. A compass needle is a magnet: what else near it could be pulling it?", "Click the compass and take away the toy magnet, the iron horseshoe and the steel sardine tin. Leave the banana, the brass candlestick and the rope."],
+  o_course: ["The compass works again, and the chart says north-east. Take the wheel.", "Click the wheel and turn until the ship points north-east, halfway between N and E. Then: Steady as she goes!"],
+  o_still: ["The horse is thirsty and the barrel is empty. Seawater is too salty to drink, but the sun can help: heat makes water evaporate and leaves the salt behind.", "Click the water barrel: the bowl in the hot sun, an empty cup in the middle, oilcloth tied on top, and the pebble on the cover right above the cup."],
+  o_horse: ["You have a bucket of fresh water. Who on board is thirsty?", "Select the bucket of fresh water and click the horse."],
+  o_knots: ["When will you get to the island? The log line at the back of the ship measures your speed.", "Click the log line and throw the log: 6 knots means 6 sea miles every hour. 18 sea miles ÷ 6 = 3 hours."],
+  o_bells: ["You'll see land at 3 o'clock. The ship's bell rings once for every half hour since 12 o'clock.", "From 12 to 3 o'clock is 6 half hours: click the ship's bell, ring it 6 times, then Land ahoy?"]
+});
+function stage5(){
+  if(!S.f.net) return 'o_net';
+  if(!S.f.chart) return 'o_chart';
+  if(!S.f.compass) return 'o_compass';
+  if(!S.f.course) return 'o_course';
+  if(!S.f.still) return 'o_still';
+  if(!S.f.water) return 'o_horse';
+  if(!S.f.knots) return 'o_knots';
+  return 'o_bells';
 }

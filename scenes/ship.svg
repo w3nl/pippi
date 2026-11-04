@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="scene" id="sc-ship" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-label="On board the Hoppetossa">
+  <defs>
+    <linearGradient id="hpSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4fa9e0"/><stop offset=".75" stop-color="#bfe6f7"/><stop offset="1" stop-color="#f2fbff"/></linearGradient>
+    <linearGradient id="hpSea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f7fb4"/><stop offset="1" stop-color="#0d4a78"/></linearGradient>
+    <linearGradient id="hpHull" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a4424"/><stop offset="1" stop-color="#4e2412"/></linearGradient>
+    <linearGradient id="hpSail" x1="0" x2="1"><stop offset="0" stop-color="#e9dcc0"/><stop offset=".5" stop-color="#fffaf0"/><stop offset="1" stop-color="#e2d3b4"/></linearGradient>
+    <linearGradient id="hpBrass" x1="0" x2="1"><stop offset="0" stop-color="#a87a22"/><stop offset=".5" stop-color="#f3d27a"/><stop offset="1" stop-color="#9a6e1a"/></linearGradient>
+    <radialGradient id="hpSun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fffbe0"/><stop offset=".6" stop-color="#ffe27a"/><stop offset="1" stop-color="#ffe27a" stop-opacity="0"/></radialGradient>
+    <clipPath id="hpSkyClip"><rect width="1600" height="382"/></clipPath>
+  </defs>
+
+  <!-- the sky, the sun and the clouds -->
+  <rect width="1600" height="900" fill="url(#hpSky)"/>
+  <g id="hp-sun"><circle cx="1400" cy="110" r="120" fill="url(#hpSun)"/>
+    <g class="rays" stroke="#ffe9a0" stroke-width="6" stroke-linecap="round" opacity=".7">
+      <path d="M1400 10 v-0 M1400 -6 v30 M1400 196 v30 M1300 110 h-30 M1500 110 h30 M1330 40 l-20 -20 M1470 180 l20 20 M1470 40 l20 -20 M1330 180 l-20 20"/></g>
+    <circle cx="1400" cy="110" r="52" fill="#ffe27a"/></g>
+  <g clip-path="url(#hpSkyClip)">
+    <g class="hp-cloud a" fill="#fff" opacity=".9"><ellipse cx="260" cy="120" rx="90" ry="28"/><ellipse cx="220" cy="104" rx="46" ry="30"/><ellipse cx="290" cy="98" rx="52" ry="36"/></g>
+    <g class="hp-cloud b" fill="#fff" opacity=".8"><ellipse cx="1040" cy="200" rx="70" ry="20"/><ellipse cx="1010" cy="188" rx="36" ry="22"/><ellipse cx="1066" cy="184" rx="40" ry="26"/></g>
+    <g class="hp-cloud c" fill="#fff" opacity=".75"><ellipse cx="600" cy="60" rx="60" ry="16"/><ellipse cx="580" cy="50" rx="30" ry="18"/></g>
+    <!-- gulls, gliding past (only while things move) -->
+    <g class="hp-gull a" stroke="#2a3a4a" stroke-width="4" fill="none" stroke-linecap="round"><path class="wings" d="M0 0 q12 -12 24 0 q12 -12 24 0"/></g>
+    <g class="hp-gull b" stroke="#2a3a4a" stroke-width="3" fill="none" stroke-linecap="round"><path class="wings" d="M0 0 q9 -9 18 0 q9 -9 18 0"/></g>
+  </g>
+
+  <!-- the horizon, and Captain Efraim's island: only in sight at the very end -->
+  <rect y="380" width="1600" height="520" fill="url(#hpSea)"/>
+  <g id="hp-island">
+    <path d="M1180 384 q60 -46 150 -44 q90 2 150 44z" fill="#e9d48a"/>
+    <path d="M1230 384 q40 -34 100 -34 q50 0 90 34z" fill="#5aa04a"/>
+    <g class="palm a"><path d="M1290 350 q-6 -40 6 -78" stroke="#8a5a2b" stroke-width="7" fill="none"/><g fill="#3f8a4a"><path d="M1296 272 q-34 -10 -54 12 q26 -8 54 -12z"/><path d="M1296 272 q30 -16 56 6 q-28 -6 -56 -6z"/><path d="M1296 272 q-10 -30 -40 -36 q24 14 40 36z"/><path d="M1296 272 q14 -30 44 -30 q-26 10 -44 30z"/></g></g>
+    <g class="palm b"><path d="M1390 356 q8 -30 -2 -60" stroke="#8a5a2b" stroke-width="6" fill="none"/><g fill="#3f8a4a"><path d="M1388 296 q-30 -6 -46 12 q22 -8 46 -12z"/><path d="M1388 296 q26 -12 48 6 q-24 -4 -48 -6z"/><path d="M1388 296 q-8 -26 -34 -30 q20 12 34 30z"/></g></g>
+    <path d="M1330 352 l20 -18 l20 18z" fill="#b5651d"/><rect x="1334" y="352" width="32" height="20" fill="#d9a861"/>
+    <path d="M1350 334 v-26" stroke="#5a3a1a" stroke-width="2"/><path class="flagw" d="M1350 308 l18 5 l-18 5z" fill="#e8571f"/>
+  </g>
+  <!-- far waves, a whale's spout and the dolphins -->
+  <g class="hp-wave far" fill="none" stroke="#7cc6f0" stroke-width="3" opacity=".6"><path d="M-200 430 q25 -10 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0"/></g>
+  <g class="hp-spout"><path d="M170 392 q-14 -30 -30 -36 M170 392 q0 -36 0 -48 M170 392 q14 -30 30 -36" stroke="#e8f6ff" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <path d="M140 398 q30 -14 60 0z" fill="#2a4a6a"/>
+  <g class="hp-dolphin a"><path d="M0 0 q30 -26 70 -12 q14 6 22 2 q-6 8 -20 8 q-30 2 -50 14 l-4 14 l-8 -14 q-6 -2 -10 -12z" fill="#5a7a9a"/><path d="M40 -14 l6 -14 l8 12z" fill="#5a7a9a"/><circle cx="74" cy="-6" r="2" fill="#111"/></g>
+  <g class="hp-dolphin b"><path d="M0 0 q30 -26 70 -12 q14 6 22 2 q-6 8 -20 8 q-30 2 -50 14 l-4 14 l-8 -14 q-6 -2 -10 -12z" fill="#6a8aa8"/><path d="M40 -14 l6 -14 l8 12z" fill="#6a8aa8"/><circle cx="74" cy="-6" r="2" fill="#111"/></g>
+  <g class="hp-wave mid" fill="none" stroke="#9fd6f2" stroke-width="4" opacity=".55"><path d="M-200 500 q30 -12 60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0"/></g>
+
+  <!-- the log line, trailing behind the ship -->
+  <path d="M132 392 Q60 520 18 664" stroke="#d9c79a" stroke-width="3" fill="none"/>
+  <g fill="#7a4a1f"><circle cx="111" cy="440" r="4"/><circle cx="88" cy="492" r="4"/><circle cx="66" cy="548" r="4"/><circle cx="46" cy="604" r="4"/></g>
+  <path class="hp-bob" d="M4 664 l28 -6 l4 12 l-28 6z" fill="#b07a3a"/>
+
+  <!-- THE HOPPETOSSA: everything on board rocks gently with the waves -->
+  <g id="hp-ship">
+    <!-- the jib (front sail), between the mast top and the bowsprit -->
+    <path d="M1590 402 L780 52" stroke="#5a3a1a" stroke-width="3"/>
+    <!-- the jib is taken down (rolled up along the bowsprit) when land is in sight, so the island shows -->
+    <path id="hp-furled" d="M1470 462 L1590 406" stroke="#fffaf0" stroke-width="12" stroke-linecap="round"/>
+    <path id="hp-jib" class="sail jib" d="M1560 404 L800 74 Q1000 330 1180 430z" fill="url(#hpSail)" stroke="#c9b48a" stroke-width="2"/>
+    <!-- the bowsprit -->
+    <path d="M1440 470 L1598 398" stroke="#6b4423" stroke-width="14" stroke-linecap="round"/>
+    <!-- rigging: the rope ladders up the mast -->
+    <g stroke="#5a3a1a" stroke-width="2.5"><path d="M760 96 L560 466 M760 96 L600 466 M760 96 L960 466 M760 96 L920 466"/></g>
+    <g stroke="#5a3a1a" stroke-width="1.6"><path d="M716 178 h86 M694 218 h130 M672 258 h174 M650 298 h218 M628 338 h262 M606 378 h306 M584 418 h350"/></g>
+    <!-- the mast, the crow's nest and the flag on top -->
+    <rect x="752" y="30" width="16" height="442" fill="#8a5a2b"/>
+    <path class="flagw" d="M768 32 l54 12 l-54 14z" fill="#e8571f"/><path class="flagw b" d="M768 36 l38 8 l-38 8z" fill="#f2c94c"/>
+    <path d="M716 74 h88 l-10 32 h-68z" fill="#6b4423" stroke="#3a2210" stroke-width="3"/>
+    <!-- the yards and the two big square sails: they flap until the ship is on course, then fill with wind -->
+    <rect x="600" y="118" width="320" height="10" rx="4" fill="#6b4423"/>
+    <rect x="570" y="252" width="380" height="10" rx="4" fill="#6b4423"/>
+    <g class="sail sq top"><path d="M612 126 H908 Q930 186 896 246 H624 Q590 186 612 126z" fill="url(#hpSail)" stroke="#c9b48a" stroke-width="2"/><path d="M640 160 H880 M636 200 H884" stroke="#d9c79a" stroke-width="2"/></g>
+    <g class="sail sq main"><path d="M582 260 H938 Q966 350 926 436 H594 Q554 350 582 260z" fill="url(#hpSail)" stroke="#c9b48a" stroke-width="2"/><path d="M610 300 H910 M604 344 H916 M608 388 H912" stroke="#d9c79a" stroke-width="2"/>
+      <!-- Pippi painted a monkey on the mainsail -->
+      <g transform="translate(760 350)" opacity=".85"><circle r="34" fill="#e8571f" opacity=".25"/><circle cy="-4" r="16" fill="#8a5a3a"/><ellipse cy="0" rx="10" ry="8" fill="#e6c49a"/><circle cx="-14" cy="-12" r="6" fill="#8a5a3a"/><circle cx="14" cy="-12" r="6" fill="#8a5a3a"/><path d="M-5 2 q5 4 10 0" stroke="#3a2210" stroke-width="2" fill="none"/><circle cx="-5" cy="-6" r="2" fill="#111"/><circle cx="5" cy="-6" r="2" fill="#111"/></g></g>
+
+    <!-- the hull -->
+    <path d="M110 470 H1470 Q1440 600 1320 690 H290 Q150 640 110 470z" fill="url(#hpHull)"/>
+    <path d="M118 510 H1458 M140 560 H1430 M190 610 H1386 M250 656 H1340" stroke="#3a1a0a" stroke-width="2" opacity=".5"/>
+    <path d="M114 488 H1466" stroke="#f2c94c" stroke-width="10"/>
+    <path d="M114 500 H1462" stroke="#2f5f9a" stroke-width="6"/>
+    <g fill="#2a1a0c" stroke="url(#hpBrass)" stroke-width="5"><circle cx="420" cy="560" r="16"/><circle cx="560" cy="560" r="16"/><circle cx="700" cy="560" r="16"/><circle cx="840" cy="560" r="16"/><circle cx="980" cy="560" r="16"/></g>
+    <text x="1170" y="566" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="34" font-weight="700" fill="#f2c94c" letter-spacing="3" translate="no">HOPPETOSSA</text>
+    <!-- the anchor on the bow -->
+    <g stroke="#3a3a3a" stroke-width="7" fill="none" stroke-linecap="round"><path d="M1398 520 v62 M1380 534 h36 M1372 566 q26 30 52 0"/><circle cx="1398" cy="514" r="7"/></g>
+    <!-- the quarterdeck at the back, with the captain's cabin under it -->
+    <path d="M110 390 H460 V470 H110z" fill="#7a4022"/>
+    <path d="M100 380 H470 V394 H100z" fill="#5a2e14"/>
+    <rect x="370" y="404" width="54" height="66" rx="4" fill="#4e2412" stroke="#c9952a" stroke-width="3"/><circle cx="414" cy="440" r="4" fill="#f2c94c"/>
+    <circle cx="300" cy="426" r="18" fill="#bfe6f7" stroke="url(#hpBrass)" stroke-width="5"/>
+    <g fill="none" stroke="#e2483d" stroke-width="10"><circle cx="190" cy="430" r="22"/></g><g stroke="#fffaf0" stroke-width="10" stroke-dasharray="10 24.5" fill="none"><circle cx="190" cy="430" r="22"/></g>
+    <!-- railings -->
+    <g stroke="#6b4423" stroke-width="6"><path d="M100 330 H470 M470 430 H1460"/><path d="M120 330 v50 M180 330 v50 M240 330 v50 M360 330 v50 M420 330 v50 M466 330 v50"/></g>
+    <g stroke="#6b4423" stroke-width="5"><path d="M520 430 v40 M600 430 v40 M680 430 v40 M840 430 v40 M920 430 v40 M1000 430 v40 M1120 430 v40 M1200 430 v40 M1280 430 v40 M1360 430 v40 M1440 430 v40"/></g>
+    <!-- the stern flag -->
+    <path d="M108 380 V250" stroke="#5a3a1a" stroke-width="5"/>
+    <g class="flagw"><rect x="110" y="252" width="56" height="36" fill="#2f5f9a"/><path d="M128 252 v36 M110 270 h56" stroke="#f2c94c" stroke-width="8"/></g>
+
+    <!-- the ship's wheel -->
+    <g id="hp-wheel">
+      <rect x="290" y="326" width="16" height="56" fill="#5a2e14"/>
+      <g class="spin"><circle cx="298" cy="318" r="40" fill="none" stroke="#8a5a2b" stroke-width="9"/><circle cx="298" cy="318" r="10" fill="#c9952a"/>
+        <g stroke="#8a5a2b" stroke-width="6" stroke-linecap="round"><path d="M298 266 v104 M246 318 h104 M261 281 l74 74 M335 281 l-74 74"/></g></g>
+    </g>
+    <!-- the binnacle: the ship's compass, under a brass dome -->
+    <g id="hp-binnacle">
+      <path d="M386 380 l6 -50 h28 l6 50z" fill="#8a5a2b"/>
+      <ellipse cx="406" cy="330" rx="26" ry="8" fill="url(#hpBrass)"/>
+      <path d="M382 330 q24 -40 48 0z" fill="#d6f0ff" opacity=".85" stroke="url(#hpBrass)" stroke-width="3"/>
+      <g id="hp-needle"><path d="M406 316 l-4 12 h8z" fill="#e2483d"/></g>
+      <!-- Mr Nilsson's toy magnet, stuck to the side (until you take it away) -->
+      <path id="hp-magnet" d="M424 348 a8 8 0 1 1 0 16 h-6 v-5 h6 a3 3 0 0 0 0 -6 h-6 v-5z" fill="#e2483d"/>
+    </g>
+
+    <!-- Captain Efraim, Pippi's father, at the wheel: big, red-bearded, very strong, very cheerful -->
+    <g id="hp-captain">
+      <path d="M188 380 v-60 M228 380 v-60" stroke="#1f2a5c" stroke-width="20"/>
+      <path d="M176 382 h26 M214 382 h26" stroke="#1a1a1a" stroke-width="10" stroke-linecap="round"/>
+      <path d="M166 326 q-4 -80 42 -84 q46 4 42 84z" fill="#1f2a5c"/>
+      <path d="M198 248 v76 M218 248 v76" stroke="#f2c94c" stroke-width="2"/>
+      <g fill="#f2c94c"><circle cx="208" cy="268" r="3"/><circle cx="208" cy="288" r="3"/><circle cx="208" cy="308" r="3"/></g>
+      <path d="M172 268 q-24 20 -14 44" stroke="#1f2a5c" stroke-width="18" fill="none" stroke-linecap="round"/>
+      <path d="M246 266 q26 14 34 40" stroke="#1f2a5c" stroke-width="18" fill="none" stroke-linecap="round"/><circle cx="282" cy="308" r="10" fill="#f0c8a0"/>
+      <circle cx="208" cy="214" r="30" fill="#f0c8a0"/>
+      <path d="M180 220 q2 34 28 40 q26 -6 28 -40 q-8 14 -28 14 q-20 0 -28 -14z" fill="#d2551a"/>
+      <path d="M194 224 q14 8 28 0" stroke="#a83a10" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <circle cx="198" cy="208" r="3" fill="#111"/><circle cx="218" cy="208" r="3" fill="#111"/>
+      <path d="M176 196 h64 l-6 -10 h-52z" fill="#1a1a1a"/><path d="M182 188 q26 -34 52 0z" fill="#fffaf0"/><path d="M182 186 h52" stroke="#1a1a1a" stroke-width="5"/>
+      <path d="M200 176 l4 -8 l4 6 l4 -6 l4 8z" fill="#f2c94c"/>
+    </g>
+
+    <!-- the ship's bell, on the mast -->
+    <g id="hp-bell">
+      <path d="M752 396 h-46 v8" stroke="#3a2210" stroke-width="5" fill="none"/>
+      <path d="M690 404 h32 q0 34 8 40 h-48 q8 -6 8 -40z" fill="url(#hpBrass)"/><circle cx="706" cy="448" r="5" fill="#9a6e1a"/>
+      <path class="rope" d="M706 452 q-2 10 2 18" stroke="#d9c79a" stroke-width="3" fill="none"/>
+    </g>
+    <!-- crates and the spunk's jar -->
+    <g><rect x="528" y="412" width="62" height="58" fill="#b07a3a" stroke="#6b4423" stroke-width="3"/><path d="M528 412 l62 58 M590 412 l-62 58" stroke="#6b4423" stroke-width="3"/>
+      <rect x="600" y="430" width="44" height="40" fill="#c08a4a" stroke="#6b4423" stroke-width="3"/></g>
+    <g id="hp-spunk"><rect x="608" y="400" width="28" height="30" rx="5" fill="#cfe9f7" opacity=".8" stroke="#8ab0c4" stroke-width="2"/><rect x="606" y="396" width="32" height="6" rx="2" fill="#c4302b"/><g class="crawl"><ellipse cx="622" cy="420" rx="6" ry="4" fill="#3f8a4a"/><path d="M617 418 l-3 -2 M627 418 l3 -2 M617 422 l-3 2 M627 422 l3 2" stroke="#1a3a1a" stroke-width="1.4"/></g></g>
+
+    <!-- the fresh-water barrel: Mr Nilsson had a bath in it, so it's empty -->
+    <g id="hp-barrel">
+      <path d="M836 384 q-10 44 0 86 h64 q10 -42 0 -86z" fill="#9a6232" stroke="#5a3a1a" stroke-width="3"/>
+      <path d="M832 400 h72 M830 454 h76" stroke="#3a3a3a" stroke-width="5"/>
+      <ellipse cx="868" cy="384" rx="32" ry="7" fill="#5a3a1a"/>
+      <rect x="896" y="428" width="16" height="6" fill="#9aa0a6"/>
+      <rect x="842" y="408" width="52" height="26" rx="3" fill="#f3efe3"/><text x="868" y="426" text-anchor="middle" font-size="12" font-weight="700" fill="#2f5f9a" font-family="sans-serif">H₂O</text>
+      <!-- the sun still Pippi builds on top of it -->
+      <g id="hp-still"><ellipse cx="868" cy="374" rx="40" ry="10" fill="#bfe6f7" stroke="#9aa0a6" stroke-width="2"/><path d="M828 372 q40 22 80 0" stroke="#e9f6ff" stroke-width="3" fill="none" opacity=".9"/><circle cx="868" cy="380" r="4" fill="#7a7a7a"/></g>
+    </g>
+
+    <!-- the horse, in a sailor's hat. It's thirsty -->
+    <g id="hp-horse">
+      <path class="htail" d="M1112 392 q22 6 18 46" stroke="#d9c79a" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <g stroke="#f6f1e6" stroke-width="12" stroke-linecap="round"><path d="M1002 414 v52 M1024 418 v50 M1078 418 v50 M1100 412 v54"/></g>
+      <g fill="#3a2a1a"><rect x="995" y="462" width="14" height="8" rx="2"/><rect x="1017" y="464" width="14" height="8" rx="2"/><rect x="1071" y="464" width="14" height="8" rx="2"/><rect x="1093" y="462" width="14" height="8" rx="2"/></g>
+      <ellipse cx="1052" cy="396" rx="64" ry="32" fill="#f6f1e6"/>
+      <g class="hhead">
+        <path d="M1006 378 q-20 -26 -30 -64 l26 -8 q8 30 30 54z" fill="#f6f1e6"/>
+        <path d="M1004 376 q-22 -28 -30 -66" stroke="#d9c79a" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <path d="M980 304 q-14 -4 -26 6 q-12 12 -6 24 q6 8 18 6 q16 -2 22 -14 q4 -16 -8 -22z" fill="#f6f1e6"/>
+        <path d="M984 302 l2 -14 l8 12z" fill="#f6f1e6"/>
+        <circle cx="976" cy="314" r="3" fill="#1a1a1a"/><circle cx="952" cy="330" r="2" fill="#8a7a6a"/>
+        <path id="hp-tongue" d="M950 338 q-4 10 4 12 q6 -2 4 -10z" fill="#e2808a"/>
+        <path d="M962 298 h34 l-4 -12 h-26z" fill="#fffaf0"/><rect x="960" y="296" width="38" height="5" fill="#2f5f9a"/>
+      </g>
+      <g fill="#1a1a1a"><circle cx="1036" cy="388" r="9"/><circle cx="1080" cy="404" r="11"/><circle cx="1062" cy="378" r="6"/><circle cx="1012" cy="404" r="5"/></g>
+    </g>
+
+    <!-- Tommy and Annika at the rail, with the big fishing net -->
+    <g id="hp-kids">
+      <path d="M1262 420 L1420 640" stroke="#8a5a2b" stroke-width="7" stroke-linecap="round"/>
+      <g id="hp-netbag"><ellipse cx="1426" cy="650" rx="34" ry="12" fill="none" stroke="#8a5a2b" stroke-width="5"/><path d="M1394 652 q32 46 64 0 M1404 654 l14 30 M1426 662 v28 M1446 654 l-12 30" stroke="#d9c79a" stroke-width="2" fill="none"/></g>
+      <!-- Tommy -->
+      <g><path d="M1166 470 v-42 M1186 470 v-42" stroke="#2f3a6a" stroke-width="10"/><rect x="1158" y="370" width="36" height="62" rx="8" fill="#2f5f9a"/><rect x="1170" y="352" width="12" height="20" fill="#f3c9a4"/><circle cx="1176" cy="336" r="22" fill="#f3c9a4"/><path d="M1154 332 q2 -26 22 -26 q22 0 24 22 q-12 -10 -46 4z" fill="#e2c46a"/><circle cx="1184" cy="336" r="2.4" fill="#111"/><path d="M1180 348 q6 4 12 0" stroke="#9a3a2a" stroke-width="2" fill="none"/>
+        <path d="M1190 384 l70 34" stroke="#f3c9a4" stroke-width="8" stroke-linecap="round"/></g>
+      <!-- Annika, holding on to her hat -->
+      <g><path d="M1220 470 v-40 M1238 470 v-40" stroke="#f3c9a4" stroke-width="8"/><path d="M1210 434 l12 -62 h20 l12 62z" fill="#e2808a"/><rect x="1224" y="354" width="12" height="20" fill="#f3c9a4"/><circle cx="1230" cy="338" r="21" fill="#f3c9a4"/><path d="M1210 334 q0 -24 20 -24 q20 0 20 24 q-6 -8 -20 -8 q-14 0 -20 8z" fill="#c9a04a"/><path d="M1206 318 q24 -18 48 0z" fill="#f2c94c"/><circle cx="1236" cy="338" r="2.4" fill="#111"/><path d="M1232 350 q5 3 10 0" stroke="#9a3a2a" stroke-width="2" fill="none"/>
+        <path d="M1248 380 q14 -26 0 -54" stroke="#f3c9a4" stroke-width="7" fill="none" stroke-linecap="round"/></g>
+    </g>
+
+    <!-- Pippi, out on the bowsprit with a telescope -->
+    <g id="hp-pippi">
+      <path d="M1516 436 v-46 M1540 428 v-46" stroke="#f3c9a4" stroke-width="9"/>
+      <path d="M1508 438 h16 M1534 430 h16" stroke="#1a1a1a" stroke-width="9" stroke-linecap="round"/>
+      <path d="M1514 412 h8 M1538 404 h8" stroke="#6b4423" stroke-width="9"/>
+      <path d="M1502 388 l8 -74 h40 l8 74z" fill="#3f8a4a"/>
+      <circle cx="1530" cy="290" r="22" fill="#f3c9a4"/>
+      <path d="M1508 286 q2 -22 22 -22 q20 0 22 22 q-8 -10 -22 -10 q-14 0 -22 10z" fill="#e8571f"/>
+      <path class="plait l" d="M1510 288 l-24 -10" stroke="#e8571f" stroke-width="7" stroke-linecap="round"/><path class="plait r" d="M1550 288 l24 -10" stroke="#e8571f" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="1524" cy="292" r="2.4" fill="#111"/><circle cx="1538" cy="292" r="2.4" fill="#111"/>
+      <path d="M1522 302 q8 7 16 0" stroke="#9a3a2a" stroke-width="2.4" fill="none"/>
+      <g class="wave"><path d="M1548 330 l28 -36" stroke="#f3c9a4" stroke-width="8" stroke-linecap="round"/><rect x="1566" y="270" width="12" height="34" rx="3" fill="url(#hpBrass)" transform="rotate(38 1572 287)"/></g>
+      <path d="M1510 330 l-20 30" stroke="#f3c9a4" stroke-width="8" stroke-linecap="round"/>
+    </g>
+
+    <!-- Mr Nilsson, swinging from the end of the top yard by his tail -->
+    <g id="hp-nilsson"><g class="swingn">
+      <path d="M906 124 q10 14 0 30" stroke="#6b4423" stroke-width="4" fill="none"/>
+      <ellipse cx="904" cy="176" rx="14" ry="18" fill="#2f5f9a"/>
+      <circle cx="904" cy="198" r="13" fill="#8a5a3a"/><ellipse cx="904" cy="202" rx="8" ry="6" fill="#e6c49a"/>
+      <circle cx="900" cy="198" r="1.8" fill="#111"/><circle cx="908" cy="198" r="1.8" fill="#111"/>
+      <path d="M894 210 h20 l-3 6 h-14z" fill="#e9d48a"/>
+      <path d="M892 166 l-14 -16 M916 166 l14 -16" stroke="#8a5a3a" stroke-width="5" stroke-linecap="round"/>
+    </g></g>
+  </g>
+
+  <!-- the sea in front: the closest waves wash past the hull -->
+  <g class="hp-wave near"><path d="M-240 700 q40 -22 80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 V900 H-240z" fill="#1a6aa0" opacity=".92"/>
+    <path d="M-240 700 q40 -22 80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0" stroke="#e8f6ff" stroke-width="5" fill="none" opacity=".7"/></g>
+  <!-- the things Mr Nilsson threw overboard, bobbing by the bow (until you net them) -->
+  <g id="hp-floaters">
+    <g class="hp-bob"><rect x="1346" y="682" width="18" height="12" rx="3" fill="#c08a4a"/></g>
+    <g class="hp-bob b"><circle cx="1400" cy="690" r="11" fill="#d62828"/><path d="M1400 679 v-6" stroke="#5a3a1a" stroke-width="3"/></g>
+    <g class="hp-bob c"><g transform="rotate(-20 1470 686)"><rect x="1452" y="678" width="36" height="16" rx="7" fill="#9fd6b0" opacity=".9"/><rect x="1486" y="682" width="12" height="8" fill="#9fd6b0"/><rect x="1496" y="681" width="6" height="10" fill="#b07a3a"/><rect x="1458" y="681" width="20" height="9" fill="#f3efe3"/></g></g>
+    <g class="hp-bob"><path d="M1520 696 l50 -10 q10 -2 10 6 q-2 8 -12 6z" fill="#b07a3a"/></g>
+  </g>
+
+  <g class="hp-wave front"><path d="M-200 790 q50 -26 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 V900 H-200z" fill="#0f5688"/>
+    <path d="M-200 790 q50 -26 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0" stroke="#bfe6f7" stroke-width="5" fill="none" opacity=".6"/></g>
+  <!-- fish and a jellyfish, deep down -->
+  <g class="hp-fish a"><g fill="#f2a13a"><path d="M300 830 q20 -14 40 0 q-20 14 -40 0z M340 830 l12 -8 v16z"/><path d="M360 852 q16 -11 32 0 q-16 11 -32 0z M392 852 l10 -6 v12z"/><path d="M270 858 q16 -11 32 0 q-16 11 -32 0z M302 858 l10 -6 v12z"/></g><g fill="#111"><circle cx="306" cy="828" r="2"/><circle cx="366" cy="851" r="1.6"/><circle cx="276" cy="857" r="1.6"/></g></g>
+  <g class="hp-fish b"><path d="M1000 860 q22 -16 44 0 q-22 16 -44 0z M1000 860 l-12 -8 v16z" fill="#e2483d"/><circle cx="1036" cy="858" r="2" fill="#111"/><path d="M1012 852 v16 M1022 850 v20" stroke="#fffaf0" stroke-width="3"/></g>
+  <g class="hp-jelly"><path d="M700 800 q24 -34 48 0z" fill="#e2a0d6" opacity=".8"/><path d="M706 800 q-4 14 2 28 M718 800 q4 14 -2 30 M730 800 q-4 14 2 28 M742 800 q4 14 -2 24" stroke="#e2a0d6" stroke-width="3" fill="none" opacity=".8"/></g>
+  <!-- the bow wave: only once the Hoppetossa is sailing on course -->
+  <g id="hp-spray" fill="#fff" opacity=".85"><circle class="drop a" cx="1470" cy="688" r="7"/><circle class="drop b" cx="1490" cy="676" r="5"/><circle class="drop c" cx="1456" cy="672" r="6"/><circle class="drop a" cx="1500" cy="694" r="4"/></g>
+
+  <!-- the hotspots -->
+  <g class="hits">
+    <rect class="hit" fill="transparent" data-hs="captain" data-label="Captain Efraim" x="150" y="160" width="100" height="226"/>
+    <rect class="hit" fill="transparent" data-hs="wheel" data-label="The ship's wheel" x="250" y="270" width="110" height="112"/>
+    <rect class="hit" fill="transparent" data-hs="binnacle" data-label="The ship's compass" x="372" y="300" width="70" height="82"/>
+    <rect class="hit" fill="transparent" data-hs="log" data-label="The log line" x="0" y="384" width="140" height="300"/>
+    <rect class="hit" fill="transparent" data-hs="cabin" data-label="The captain's cabin" x="140" y="398" width="290" height="72"/>
+    <rect class="hit" fill="transparent" data-hs="spunk5" data-label="Jam jar" x="600" y="392" width="44" height="40" id="hit-spunk5"/>
+    <rect class="hit" fill="transparent" data-hs="bell5" data-label="The ship's bell" x="676" y="390" width="60" height="80"/>
+    <rect class="hit" fill="transparent" data-hs="sails" data-label="The sails" x="560" y="40" width="300" height="340"/>
+    <rect class="hit" fill="transparent" data-hs="nilsson5" data-label="Mr Nilsson" x="870" y="120" width="70" height="110"/>
+    <rect class="hit" fill="transparent" data-hs="barrel" data-label="The water barrel" x="820" y="360" width="100" height="110"/>
+    <rect class="hit" fill="transparent" data-hs="horse5" data-label="The horse" x="940" y="280" width="200" height="190"/>
+    <rect class="hit" fill="transparent" data-hs="kids5" data-label="Tommy and Annika" x="1150" y="300" width="110" height="170"/>
+    <rect class="hit" fill="transparent" data-hs="net" data-label="The fishing net" x="1270" y="430" width="330" height="320"/>
+    <rect class="hit" fill="transparent" data-hs="pippi5" data-label="Pippi" x="1480" y="250" width="120" height="180"/>
+  </g>
+</svg>

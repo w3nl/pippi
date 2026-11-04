@@ -293,8 +293,6 @@
 > Föreställning! · kapitel 4 klart
 = Bravo
 > Bravo
-= Pippi lifted the strongman, and the circus wants her to stay. Next: a ship sails into the harbour… Chapter 5 is still being written.
-> Pippi lyfte starke mannen, och cirkusen vill att hon stannar. Härnäst: ett skepp seglar in i hamnen… Kapitel 5 håller fortfarande på att skrivas.
 = Pippi goes to the circus
 > Pippi på cirkus
 = Chapter 4: Pippi goes to the circus
@@ -313,8 +311,6 @@
 > Tillbaka på cirkusen. Direktören väntar fortfarande på biljetter.
 = Take your time. School's out, and the classroom is all yours. Mr Nilsson is finishing the cake. When you're ready, the classroom door leads on to Chapter {n}.
 > Ta den tid du behöver. Skolan är slut, och klassrummet är ditt. Herr Nilsson äter upp tårtan. När du är redo leder klassrumsdörren vidare till kapitel {n}.
-= Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming.
-> Ta den tid du behöver. Föreställningen fortsätter: hästen travar fortfarande runt i manegen, och konfettin bara fortsätter att falla.
 = The ringmaster
 > Direktören
 = The clown
@@ -335,3 +331,51 @@
 > Strålkastarna har fel färger, gungbrädan väger inte jämnt, clownen har glömt hur man jonglerar, och trapetsartisterna kan inte fånga varandra. Min checklista sitter på tältstången.
 = I've never fixed a circus, so I'm sure I can!
 > Jag har aldrig lagat en cirkus förut, så det klarar jag säkert!
+
+# ---------- Chapter 5: menus, end screen, speakers, item uses ----------
+= The performers' curtain: on to Chapter {n}
+> Artisternas ridå: vidare till kapitel {n}
+= Pippi lifted the strongman, and the circus wants her to stay. Next: Pippi's father sails into the harbour on the Hoppetossa, and he has an island to show her…
+> Pippi lyfte den starke mannen, och cirkusen vill att hon stannar. Nästa gång: Pippis pappa seglar in i hamnen med Hoppetossa, och han har en ö att visa henne…
+= Continue to Chapter 5
+> Vidare till kapitel 5
+= Land ahoy · Chapter 5 complete
+> Land i sikte · kapitel 5 klart
+= Land ahoy
+> Land i sikte
+= The Hoppetossa has found Captain Efraim's island, and the horse has had a drink. Next: the South Sea island… Chapter 6 is still being written.
+> Hoppetossa har hittat kapten Efraims ö, och Lilla Gubben har fått dricka. Nästa gång: ön i Söderhavet… Kapitel 6 skrivs fortfarande.
+= On board the Hoppetossa
+> Ombord på Hoppetossa
+= Chapter 5: On board the Hoppetossa
+> Kapitel 5: Ombord på Hoppetossa
+= Chapter 5 · On Board the Hoppetossa
+> Kapitel 5 · Ombord på Hoppetossa
+= Sailed for home by mistake
+> Seglade hemåt av misstag
+= Woke the whole crew
+> Väckte hela besättningen
+= Back on board the Hoppetossa. She's flying north-east over the waves.
+> Tillbaka ombord på Hoppetossa. Hon flyger fram mot nordost över vågorna.
+= Back on board the Hoppetossa. Captain Efraim is still looking for his island.
+> Tillbaka ombord på Hoppetossa. Kapten Efraim letar fortfarande efter sin ö.
+= Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming. When you're ready, the performers' curtain leads on to Chapter {n}.
+> Ta god tid på dig. Föreställningen fortsätter: hästen travar fortfarande runt i manegen, och konfettin bara fortsätter att falla. När du är redo leder artisternas ridå vidare till kapitel {n}.
+= Take your time. The Hoppetossa is sailing towards the island, the dolphins are leading the way, and the horse is enjoying the view.
+> Ta god tid på dig. Hoppetossa seglar mot ön, delfinerna visar vägen, och Lilla Gubben njuter av utsikten.
+= Captain Efraim
+> Kapten Efraim
+= The Hoppetossa
+> Hoppetossa
+= Mr Nilsson reaches for the chart. You snatch it back just in time.
+> Herr Nilsson sträcker sig efter sjökortet. Du rycker undan det i sista stund.
+= A sea chart is for reading with the captain. He knows his own squiggles.
+> Ett sjökort läser man tillsammans med kaptenen. Han känner igen sina egna krumelurer.
+= Not for me, thanks. Someone on board is much thirstier: someone with four legs.
+> Inte till mig, tack. Någon ombord är mycket törstigare: någon med fyra ben.
+= Fresh water is precious at sea. Who on board is the thirstiest?
+> Sötvatten är dyrbart till sjöss. Vem ombord är törstigast?
+= You hold up the bucket. The horse drinks the whole lot in one go: glug, glug, glug.
+> Du håller upp hinken. Lilla Gubben dricker upp alltihop i ett svep: klunk, klunk, klunk.
+= That's the happiest horse on the seven seas.
+> Det är den lyckligaste hästen på de sju haven.

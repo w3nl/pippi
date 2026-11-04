@@ -129,3 +129,9 @@
 > 3 kronen per stuk
 = BEFORE THE SHOW
 > VOOR DE VOORSTELLING
+
+# ---------- scenes/ship.svg ----------
+= The captain's cabin
+> De hut van de kapitein
+= The sails
+> De zeilen

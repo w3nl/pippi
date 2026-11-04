@@ -129,3 +129,9 @@
 > 3 kronor styck
 = BEFORE THE SHOW
 > FÖRE FÖRESTÄLLNINGEN
+
+# ---------- scenes/ship.svg ----------
+= The captain's cabin
+> Kaptenens hytt
+= The sails
+> Seglen
