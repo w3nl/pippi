@@ -507,3 +507,11 @@
 > Jag ser dig! Din fräkne är jättestor. Nåja, mina fräknar är det i alla fall.
 = Through the spyglass, everything nearby is a blur. It's for things far away.
 > I kikaren är allt som är nära suddigt. Den är till för saker långt borta.
+
+# winter in Sweden, sunshine at sea
+= It's winter in Sweden. Snow is falling on the quay, on the roofs, and on the horse.
+> Det är vinter i Sverige. Snön faller på kajen, på taken och på Lilla Gubben.
+= Where the sun shines all year round, Pippilotta! Leave your mittens here.
+> Där solen skiner hela året, Pippilotta! Vantarna kan du lämna här.
+= Behind you, the snowy harbour gets smaller and smaller. Ahead, the clouds open, and the sun comes out.
+> Bakom er blir den snöiga hamnen mindre och mindre. Framför er spricker molnen upp, och solen tittar fram.

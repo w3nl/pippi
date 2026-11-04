@@ -22,6 +22,10 @@ function buildShip(){
   for(let i = 0; i < 46; i++){ const x = (i * 137) % 1600, y = 20 + (i * 53) % 400, r = 1 + (i % 3) * .6;
     st += `<circle class="hp-tw" style="animation-delay:-${(i * .37 % 3).toFixed(2)}s" cx="${x}" cy="${y}" r="${r}" fill="#fff"/>`; }
   $('#hp-stars').innerHTML = st;
+  let fl = '';
+  for(let i = 0; i < 70; i++){ const x = (i * 211 + 37) % 1600, y = (i * 389) % 900, r = 1.4 + (i % 4) * .6;
+    fl += `<circle class="hp-flake" style="animation-delay:-${(i * .53 % 10).toFixed(2)}s;animation-duration:${8 + i % 5}s" cx="${x}" cy="${y}" r="${r}"/>`; }
+  $('#hp-snow').innerHTML = fl;
   // wave crests: two strips, each twice as wide as the stage so they can roll past
   const strip = (y, a, w) => { let d = `M-400 ${y}`; for(let x = -400; x < 2000; x += w) d += ` q${w / 4} ${-a} ${w / 2} 0 q${w / 4} ${a} ${w / 2} 0`; return `<path d="${d}"/>`; };
   $('#hp-waves').innerHTML = strip(560, 4, 90) + strip(580, 5, 120);
@@ -41,7 +45,8 @@ function applyShip(){
   const night = !!S.f.water && !S.f.equator, dawn = !!S.f.equator && !S.f.out6, day = !night && !dawn;
   sc.classList.toggle('sailing', !!S.f.course);
   sc.classList.toggle('night', night);
-  show('#hp-day', day); show('#hp-sun', day); show('#hp-clouds', day);
+  show('#hp-day', day); show('#hp-sun', day && !!S.f.course); show('#hp-clouds', day);
+  show('#hp-wintersky', !S.f.course); show('#hp-snow', !S.f.course);
   show('#hp-night', night); show('#hp-stars', night); show('#hp-moon', night); show('#hp-dark', night); show('#hp-glow', night);
   show('#hp-dusk', dawn); show('#hp-dawnsun', dawn);
   show('#hp-harbour', !S.f.course); show('#hit-quay6', !S.f.course); show('#hp-seafar', !!S.f.course);
@@ -221,7 +226,7 @@ function openWheel(){
       if(h === COURSE6){
         S.f.course = true; save(); chord([392,523,659,784,1046]);
         fb.className = 'feedback good'; fb.textContent = tx('South-west! Down and to the left on the chart. "Drop the sails!" roars the captain.');
-        setTimeout(() => { closeModal(); castOff6(); say(["The sails tumble down from the yards and fill with wind with a great WHUMP. The ropes creak, the quay slides away, and the Hoppetossa is off!", ['captain', "South-west it is! Steady as she goes!"], ['pippi', "Goodbye, Villa Villekulla! Goodbye, everybody! Goodbye, dog!"]]); }, 1600);
+        setTimeout(() => { closeModal(); castOff6(); say(["The sails tumble down from the yards and fill with wind with a great WHUMP. The ropes creak, the quay slides away, and the Hoppetossa is off!", ['captain', "South-west it is! Steady as she goes!"], ['sys', "Behind you, the snowy harbour gets smaller and smaller. Ahead, the clouds open, and the sun comes out."], ['pippi', "Goodbye, Villa Villekulla! Goodbye, everybody! Goodbye, dog!"]]); }, 1600);
         return;
       }
       nope(); fb.className = 'feedback bad';
@@ -449,8 +454,10 @@ function openLandHo(){
 /* ---------- intro, start and win ---------- */
 function intro6(){
   say([["sys", "The harbour, early in the morning. A big three-masted ship is tied up at the quay: the Hoppetossa. On her stern, a huge man with a red beard and a captain's hat is waving his arms."],
+       ["sys", "It's winter in Sweden. Snow is falling on the quay, on the roofs, and on the horse."],
        ["captain", "Ahoy, Pippilotta! Ahoy, Tommy and Annika! And ahoy, new sailor!"],
        ["pippi", "Daddy! We're sailing to your island in the South Seas! I've never sailed to the South Seas, so I'm sure I'll be very good at it."],
+       ["captain", "Where the sun shines all year round, Pippilotta! Leave your mittens here."],
        ["captain", "The wind is fair and the tide is high. All aboard!"],
        ["pippi", "Not without my horse!"],
        ["captain", "Then hoist it aboard with the cargo hoist on the stern, sailor. And Pippilotta: no lifting it yourself. Today we sail like proper sailors."],

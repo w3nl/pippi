@@ -9,6 +9,8 @@ test('Chapter 6: sail the Hoppetossa to the island', async ({ page }) => {
   await skip(page);
   await expect(page.locator('#chap')).toHaveText('Chapter 6 · On Board the Hoppetossa');
   await expect(page.locator('#sc-ship')).toHaveClass(/on/);
+  await expect(page.locator('#hp-snow')).toBeVisible();
+  await expect(page.locator('#hp-sun')).toBeHidden();
   await expect(page.locator('#hp-harbour')).toBeVisible();
 
   // not without the horse
@@ -48,6 +50,8 @@ test('Chapter 6: sail the Hoppetossa to the island', async ({ page }) => {
   await waitModalClosed(page);
   await expect(page.locator('#sc-ship')).toHaveClass(/sailing/);
   await expect(page.locator('#hp-harbour')).toBeHidden({ timeout: 6_000 });
+  await expect(page.locator('#hp-snow')).toBeHidden();
+  await expect(page.locator('#hp-sun')).toBeVisible();
   await expect(page.locator('#hp-sails')).toBeVisible();
 
   // 3. overboard! fetch the net first; the big log floats, the little key sinks

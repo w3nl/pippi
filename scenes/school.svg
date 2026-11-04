@@ -76,6 +76,13 @@
                 <circle cx="100" cy="390" r="5" />
                 <circle cx="178" cy="392" r="5" />
             </g>
+            <!-- after the holidays: snow on the schoolyard (behind the horse) -->
+            <g id="sl-white" style="display:none">
+                <rect x="52" y="122" width="236" height="212" fill="#d9e2ec" opacity=".6" />
+                <path d="M52 330 q120-24 236 0 v88 h-236z" fill="#f4f8fc" />
+                <path d="M52 320 h236" stroke="#fff" stroke-width="4" />
+                <rect x="68" y="392" width="144" height="8" rx="4" fill="#fff" />
+            </g>
             <!-- the horse, white with black spots, munching -->
             <g id="sl-horse" class="nod">
                 <!-- tail -->
@@ -104,6 +111,8 @@
                     <circle cx="168" cy="368" r="3" />
                 </g>
             </g>
+            <path id="sl-whitecap" style="display:none" d="M178 350 q28 -14 56 0 q-28 -5 -56 0z" fill="#fff" />
+            <g id="sl-snow" fill="#fff" style="display:none"></g>
         </g>
         <rect x="164" y="122" width="10" height="296" fill="#e9e1cc" />
         <rect x="52" y="262" width="236" height="10" fill="#e9e1cc" />

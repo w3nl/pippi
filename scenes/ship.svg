@@ -69,6 +69,8 @@
 
     <!-- the sky: day, night or dawn (applyShip picks one) -->
     <rect id="hp-day" width="1600" height="560" fill="url(#hpSkyDay)" />
+    <!-- a grey winter sky over the harbour; the sunny sky is out at sea -->
+    <rect id="hp-wintersky" width="1600" height="560" fill="#c9d3de" opacity=".6" />
     <rect id="hp-dusk" width="1600" height="560" fill="url(#hpSkyDawn)" style="display:none" />
     <rect id="hp-night" width="1600" height="560" fill="url(#hpSkyNight)" style="display:none" />
     <g id="hp-stars" style="display:none"></g>
@@ -182,21 +184,25 @@
     <!-- the harbour: the town on its hill, Villa Villekulla among the houses, the quay with the
     horse waiting -->
     <g id="hp-harbour">
-        <path d="M0 548 L0 392 Q90 356 180 380 Q230 394 260 548 Z" fill="#6aa04a" />
+        <path d="M0 548 L0 392 Q90 356 180 380 Q230 394 260 548 Z" fill="#eef3f8" stroke="#c9d8e8" stroke-width="2" />
         <g>
             <rect x="12" y="374" width="34" height="28" fill="#e9d9c0" />
             <path d="M8 376 l21 -16 l21 16z" fill="#b5342a" />
+            <path d="M10 374 l19 -14 l19 14 l-6 -2 l-13 -9 l-13 9z" fill="#fff" />
             <rect x="54" y="362" width="30" height="26" fill="#f3efe3" />
             <path d="M50 364 l19 -14 l19 14z" fill="#2f5f9a" />
+            <path d="M52 362 l17 -12 l17 12 l-5 -2 l-12 -8 l-12 8z" fill="#fff" />
         </g>
         <g transform="rotate(-4 130 380)">
             <rect x="100" y="364" width="58" height="40" fill="#f2c94c" />
             <path d="M94 366 l35 -24 l35 24z" fill="#e8571f" />
+            <path d="M96 364 l33 -22 l33 22 l-8 -2 l-25 -16 l-25 16z" fill="#fff" />
             <rect x="108" y="378" width="12" height="12" fill="#5aa0e0" />
             <rect x="136" y="378" width="12" height="12" fill="#5aa0e0" />
             <path d="M100 396 h58" stroke="#3f8a4a" stroke-width="4" />
         </g>
         <rect x="0" y="520" width="196" height="90" fill="#8a8f96" />
+        <rect x="0" y="516" width="196" height="7" rx="3" fill="#fff" />
         <g stroke="#6a6f76" stroke-width="2">
             <path
                 d="M0 548 H196 M0 578 H196 M40 520 V548 M100 548 V578 M150 520 V548 M60 578 V610 M140 578 V610" />
@@ -621,6 +627,9 @@
         <circle cx="330" cy="386" r="46" fill="url(#hpLanternG)" />
     </g>
     <rect width="1600" height="900" fill="url(#hpVign)" pointer-events="none" />
+    <!-- snow falling on the harbour; out at sea it stays behind -->
+    <clipPath id="hpSnowClip"><rect width="1600" height="548" /></clipPath>
+    <g id="hp-snow" fill="#fff" pointer-events="none" clip-path="url(#hpSnowClip)"></g>
 
     <!-- hotspots -->
     <g>

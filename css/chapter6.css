@@ -83,3 +83,10 @@
 .hp-drop{transform-box:fill-box;animation:hpDrop 1.4s ease-out infinite}
 .hp-drop.b{animation-delay:-.5s} .hp-drop.c{animation-delay:-.9s}
 #sc-ship .hp-tw{animation:hpTw 3s ease-in-out infinite}
+/* snow in the harbour; it fades behind the ship as she casts off for the sun */
+@keyframes hpSnow{from{transform:translateY(-900px)}to{transform:translateY(900px)}}
+@keyframes hpSnowGo{from{opacity:1}to{opacity:0}}
+@keyframes hpSkyGo{from{opacity:.6}to{opacity:0}}
+.hp-flake{animation:hpSnow 9s linear infinite}
+#sc-ship.castoff #hp-snow{display:inline!important;animation:hpSnowGo 3s ease-in both}
+#sc-ship.castoff #hp-wintersky{display:inline!important;animation:hpSkyGo 3s ease-in both}
