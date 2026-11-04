@@ -71,4 +71,16 @@ test('every close-up fits on a phone without sideways scrolling', async ({ page 
     await page.locator('#m-close').tap();
     expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
   }
+  // Chapter 3: the classroom's close-ups
+  await seed(page, { ch: 3, scene: 'school', f: { introDone: true }, inv: ['chalk', 'magnifier'] }, ['-ch2', '-ch3']);
+  await page.locator('#btn-cont').tap();
+  await skip(page);
+  for (const open of ['openDrawer3()', 'openRomans()', 'openBoard()', 'openTables()', 'openRegister()', 'openNature()', 'openCake()', 'S.frc = 1; openCake()', 'openGlobe()']) {
+    await page.evaluate(open);
+    await page.waitForTimeout(150);
+    const ok = await page.locator('.panel').evaluate(e => e.scrollWidth <= e.clientWidth + 1);
+    expect(ok, `${open} is wider than the screen`).toBe(true);
+    await page.locator('#m-close').tap();
+    expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
+  }
 });

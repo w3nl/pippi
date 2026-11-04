@@ -82,7 +82,7 @@ Object.assign(H, {
     say(["Two feet on the pillow, in one brown stocking and one black one.", "Pippi sleeps the other way round: feet on the pillow, head under the blanket at the far end. She says feet deserve a soft pillow too."]);
   },
   vdoor(){
-    if(S.f.out2) return say("The veranda door. Kling and Klang went out through it, with a burglar each.");
+    if(S.f.out2) return startCh3();
     if(S.f.torchOn && !S.f.scared){
       if(S.inv.includes('torch')) return openShadow();
       return say("Someone is scratching at the lock!");

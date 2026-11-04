@@ -69,3 +69,33 @@
 > Tommy zei: KIETEL. Maar Pippi slaapt andersom, en je hebt iets zachts en kriebeligs nodig.
 = Take the feather from Pippi's hat, select it, and use it on her feet on the pillow.
 > Pak de veer van Pippi's hoed, kies hem, en gebruik hem op haar voeten op het kussen.
+
+# ---------- Chapter 3 ----------
+= The chalk box is empty. Miss keeps the chalk in her desk drawer, and she has written herself a note about its code.
+> Het krijtdoosje is leeg. De juf bewaart het krijt in de la van haar bureau, en ze heeft een briefje over de code voor zichzelf geschreven.
+= The plaque over the door says MDCCCXCIV: 1000 + 500 + 300 + 90 + 4 = 1894. Set the desk's padlock to 1 8 9 4.
+> Op het bordje boven de deur staat MDCCCXCIV: 1000 + 500 + 300 + 90 + 4 = 1894. Zet het hangslot van het bureau op 1 8 9 4.
+= Task 1: Pippi's nines on the blackboard have three mistakes. The poster next to the board shows the nines trick.
+> Opdracht 1: in Pippi's negens op het bord zitten drie fouten. De poster naast het bord laat het negens-trucje zien.
+= Use the chalk on the blackboard and mark 9 × 5, 9 × 8 and 9 × 10 (they should be 45, 72 and 90). Then click Done marking.
+> Gebruik het krijtje op het schoolbord en kruis 9 × 5, 9 × 8 en 9 × 10 aan (dat moet 45, 72 en 90 zijn). Klik dan op Klaar met aankruisen.
+= Task 2: put the names in the class register on Miss's desk back in ABC order. When two names start with the same letter, look at the next letter.
+> Opdracht 2: zet de namen in de klassenlijst op het bureau van de juf weer op alfabet. Als twee namen met dezelfde letter beginnen, kijk dan naar de volgende letter.
+= Annika, Axel, Britta, Olle, Peter, Pippi, Tommy, Tora.
+> Annika, Axel, Britta, Olle, Peter, Pippi, Tommy, Tora.
+= Task 3: which creatures on the nature table are insects? They're tiny, so look through the magnifying glass. Count the legs.
+> Opdracht 3: welke beestjes op de natuurtafel zijn insecten? Ze zijn piepklein, dus kijk door het vergrootglas. Tel de poten.
+= Use the magnifying glass on the nature table and tick the ant, the ladybird and the bumblebee: six legs each.
+> Gebruik het vergrootglas op de natuurtafel en vink de mier, het lieveheersbeestje en de hommel aan: elk zes poten.
+= Task 4: Pippi's cake. The more pieces you cut a cake into, the smaller each piece is.
+> Opdracht 4: Pippi's taart. Hoe meer stukken je van een taart snijdt, hoe kleiner elk stuk.
+= Click Pippi's cake and pick the piece of the cake cut into 3. Then: 1/4 and 2/8 are the same amount.
+> Klik op Pippi's taart en kies het stuk van de taart in 3 stukken. Daarna: 1/4 en 2/8 is evenveel.
+= Task 5: the globe and the postcard from Pippi's father. Look at the way the Earth leans towards the Sun.
+> Opdracht 5: de wereldbol en de ansichtkaart van Pippi's vader. Kijk hoe de aarde scheef staat ten opzichte van de zon.
+= Click the globe and choose: the Earth leans over, and in June the northern half leans towards the Sun.
+> Klik op de wereldbol en kies: de aarde staat scheef, en in juni helt de noordelijke helft naar de zon.
+= Five gold stars! Miss said the holidays start when the bell rings.
+> Vijf gouden sterren! De juf zei dat de vakantie begint als de bel gaat.
+= Click the hand bell on Miss's desk.
+> Klik op de handbel op het bureau van de juf.

@@ -69,3 +69,33 @@
 > Tommy sa: KITTLA. Men Pippi sover åt andra hållet, och du behöver något mjukt och kittligt.
 = Take the feather from Pippi's hat, select it, and use it on her feet on the pillow.
 > Ta fjädern från Pippis hatt, välj den och använd den på hennes fötter på kudden.
+
+# ---------- Chapter 3 ----------
+= The chalk box is empty. Miss keeps the chalk in her desk drawer, and she has written herself a note about its code.
+> Kritasken är tom. Fröken har kritan i katederlådan, och hon har skrivit en lapp till sig själv om koden.
+= The plaque over the door says MDCCCXCIV: 1000 + 500 + 300 + 90 + 4 = 1894. Set the desk's padlock to 1 8 9 4.
+> På skylten ovanför dörren står det MDCCCXCIV: 1000 + 500 + 300 + 90 + 4 = 1894. Ställ katederns hänglås på 1 8 9 4.
+= Task 1: Pippi's nines on the blackboard have three mistakes. The poster next to the board shows the nines trick.
+> Uppgift 1: Pippis nior på tavlan har tre fel. Affischen bredvid tavlan visar niornas knep.
+= Use the chalk on the blackboard and mark 9 × 5, 9 × 8 and 9 × 10 (they should be 45, 72 and 90). Then click Done marking.
+> Använd kritan på svarta tavlan och kryssa 9 × 5, 9 × 8 och 9 × 10 (det ska vara 45, 72 och 90). Klicka sedan på Klar med kryssen.
+= Task 2: put the names in the class register on Miss's desk back in ABC order. When two names start with the same letter, look at the next letter.
+> Uppgift 2: sätt namnen i klasslistan på frökens kateder i bokstavsordning igen. När två namn börjar på samma bokstav, titta på nästa bokstav.
+= Annika, Axel, Britta, Olle, Peter, Pippi, Tommy, Tora.
+> Annika, Axel, Britta, Olle, Peter, Pippi, Tommy, Tora.
+= Task 3: which creatures on the nature table are insects? They're tiny, so look through the magnifying glass. Count the legs.
+> Uppgift 3: vilka djur på naturbordet är insekter? De är pyttesmå, så titta genom förstoringsglaset. Räkna benen.
+= Use the magnifying glass on the nature table and tick the ant, the ladybird and the bumblebee: six legs each.
+> Använd förstoringsglaset på naturbordet och kryssa för myran, nyckelpigan och humlan: sex ben var.
+= Task 4: Pippi's cake. The more pieces you cut a cake into, the smaller each piece is.
+> Uppgift 4: Pippis tårta. Ju fler bitar man skär en tårta i, desto mindre blir varje bit.
+= Click Pippi's cake and pick the piece of the cake cut into 3. Then: 1/4 and 2/8 are the same amount.
+> Klicka på Pippis tårta och välj biten från tårtan som är skuren i 3. Sedan: 1/4 och 2/8 är lika mycket.
+= Task 5: the globe and the postcard from Pippi's father. Look at the way the Earth leans towards the Sun.
+> Uppgift 5: jordgloben och vykortet från Pippis pappa. Titta på hur jorden lutar mot solen.
+= Click the globe and choose: the Earth leans over, and in June the northern half leans towards the Sun.
+> Klicka på jordgloben och välj: jorden lutar, och i juni lutar norra halvan mot solen.
+= Five gold stars! Miss said the holidays start when the bell rings.
+> Fem guldstjärnor! Fröken sa att lovet börjar när klockan ringer.
+= Click the hand bell on Miss's desk.
+> Klicka på handklockan på frökens kateder.

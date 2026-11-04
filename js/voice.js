@@ -19,7 +19,8 @@ const VOICE_STYLE = {
   tommy:   { pitch: 1.2,  rate: 1.05, slot: 5 },
   annika:  { pitch: 1.4,  rate: 1,    slot: 6 },
   karlsson:{ pitch: .55,  rate: .9,   slot: 7 },   // big and gruff
-  bloom:   { pitch: 1.2,  rate: 1.25, slot: 8 }    // small and nervous
+  bloom:   { pitch: 1.2,  rate: 1.25, slot: 8 },   // small and nervous
+  teacher: { pitch: 1.15, rate: .95,  slot: 9 }    // kind, clear, a little bit strict
 };
 
 /* The device's voices for the current language: British English or Dutch, falling back to any English voice. */

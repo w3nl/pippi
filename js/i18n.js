@@ -8,7 +8,7 @@
 const LANG_KEY = 'pippi-villa-v1-lang';
 const LANGS = { en: 'English', nl: 'Nederlands', sv: 'Svenska' };
 const LANG_TAGS = { en: 'en-GB', nl: 'nl-NL', sv: 'sv-SE' };   // for <html lang> (short form) and the voices
-const LANG_FILES = ['ui', 'ch1', 'ch2', 'hints', 'scenes'];
+const LANG_FILES = ['ui', 'ch1', 'ch2', 'ch3', 'hints', 'scenes'];
 let LANG = (() => {
   try{ const v = localStorage.getItem(LANG_KEY); if(v && v in LANGS) return v; }catch(e){}
   const nav = navigator.language || '';

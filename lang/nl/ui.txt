@@ -202,8 +202,8 @@
 > Inbrekers gevangen · hoofdstuk 2 voltooid
 = Caught
 > Gevangen
-= Thunder-Karlsson and Bloom are off to the police station, and the gold is safe. Next: Pippi goes to school. Chapter 3 is still being written.
-> Donder-Karlsson en Blom gaan mee naar het politiebureau, en het goud is veilig. Straks: Pippi gaat naar school. Aan hoofdstuk 3 wordt nog geschreven.
+= Thunder-Karlsson and Bloom are off to the police station, and the gold is safe. Next: Pippi goes to school for the very first time. She has heard that schoolchildren get holidays…
+> Donder-Karlsson en Blom gaan mee naar het politiebureau, en het goud is veilig. Straks: Pippi gaat voor het eerst naar school. Ze heeft gehoord dat schoolkinderen vakantie krijgen…
 = Burglars in the night
 > Inbrekers in de nacht
 = Chapters
@@ -226,8 +226,8 @@
 > Terug in Pippi's slaapkamer. Pippi snurkt nog steeds als een scheepshoorn.
 = Take your time. Pippi is handing out sweets in the garden. When you're ready, the front door leads on to Chapter {n}.
 > Neem de tijd. Pippi deelt snoep uit in de tuin. Als je klaar bent, gaat de voordeur verder naar hoofdstuk {n}.
-= Take your time. The burglars aren't going anywhere: they're on top of the wardrobe.
-> Neem de tijd. De inbrekers gaan nergens heen: ze zitten boven op de kleerkast.
+= Take your time. The burglars aren't going anywhere: they're on top of the wardrobe. When you're ready, the veranda door leads on to Chapter {n}.
+> Neem de tijd. De inbrekers gaan nergens heen: ze zitten boven op de kleerkast. Als je klaar bent, gaat de verandadeur verder naar hoofdstuk {n}.
 = Thunder-Karlsson
 > Donder-Karlsson
 = Bloom
@@ -252,3 +252,33 @@
 > Meneer Nilsson giechelt in zijn slaap. Verkeerde slaapkop.
 = You tickle it. It isn't ticklish. Someone in this room is, though.
 > Je kietelt het. Het is niet kietelig. Iemand anders in deze kamer wel.
+
+# ---------- Chapter 3: menus, end screen, speakers ----------
+= Veranda door: on to Chapter {n}
+> Verandadeur: door naar hoofdstuk {n}
+= Continue to Chapter 3
+> Door naar hoofdstuk 3
+= School's out · Chapter 3 complete
+> School uit · hoofdstuk 3 voltooid
+= Holidays
+> Vakantie
+= Pippi has her holidays, and Miss has the biggest piece of cake. Next: the circus comes to town. Chapter 4 is still being written.
+> Pippi heeft vakantie, en de juf heeft het grootste stuk taart. Straks: het circus komt naar de stad. Aan hoofdstuk 4 wordt nog geschreven.
+= Pippi goes to school
+> Pippi gaat naar school
+= Chapter 3: Pippi goes to school
+> Hoofdstuk 3: Pippi gaat naar school
+= Chapter 3 · Pippi Goes to School
+> Hoofdstuk 3 · Pippi gaat naar school
+= Four is more than three
+> Vier is meer dan drie
+= Counted Pippi's freckles
+> Pippi's sproeten geteld
+= Back in the classroom. Miss is still chasing the horse round the schoolyard.
+> Terug in de klas. De juf zit het paard nog steeds achterna over het schoolplein.
+= Take your time. School's out, and the classroom is all yours. Mr Nilsson is finishing the cake.
+> Neem de tijd. School is uit, en de klas is helemaal van jou. Meneer Nilsson eet de taart op.
+= Miss
+> Juf
+= The little school
+> Het schooltje

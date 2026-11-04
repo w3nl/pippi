@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/chapter1.css">
   <link rel="stylesheet" href="css/chapter2.css">
+  <link rel="stylesheet" href="css/chapter3.css">
   <link rel="stylesheet" href="css/phone.css">
   <link rel="stylesheet" href="css/animations.css">
 </head>
@@ -73,7 +74,8 @@
             <div class="eyebrow">Villa Villekulla · a small town in Sweden · four o'clock</div>
             <h2>Villa Villekulla<span class="cursor">!</span></h2>
             <p class="keep">You came to play at Pippi's house. Pippi has gone to town for sweets, and Mr Nilsson, her
-              monkey, has locked the front door and run off with the key. Tommy and Annika are waiting outside. Get out!</p>
+              monkey, has locked the front door and run off with the key. Tommy and Annika are waiting outside. Get out!
+            </p>
             <p>Click around the kitchen, read everything, and use the things you find. Stuck? Ask for a hint, or ask the
               spunk. Nobody knows what a spunk is, but it's very wise.</p>
             <div class="row">
@@ -84,13 +86,17 @@
             <div class="chapters" id="chapters" hidden>
               <span class="chap-l">Chapters</span>
               <button class="chapb" id="btn-ch1" type="button" hidden
-                aria-label="Chapter 1: Locked in with Mr Nilsson"><b>1</b><span>Locked in with Mr Nilsson</span></button>
+                aria-label="Chapter 1: Locked in with Mr Nilsson"><b>1</b><span>Locked in with Mr
+                  Nilsson</span></button>
               <button class="chapb" id="btn-ch2" type="button" hidden
                 aria-label="Chapter 2: Burglars in the night"><b>2</b><span>Burglars in the night</span></button>
+              <button class="chapb" id="btn-ch3" type="button" hidden
+                aria-label="Chapter 3: Pippi goes to school"><b>3</b><span>Pippi goes to school</span></button>
             </div>
             <span class="version" id="version" translate="no"></span>
             <div class="credits"><span>Unofficial fan game, inspired by Astrid Lindgren's Pippi Longstocking</span> ·
-              <a href="LICENSE" target="_blank" rel="noopener noreferrer">Licence (GPL-3.0)</a></div>
+              <a href="LICENSE" target="_blank" rel="noopener noreferrer">Licence (GPL-3.0)</a>
+            </div>
           </div>
 
           <div class="overlay" id="win" hidden>
@@ -103,8 +109,9 @@
             </div>
             <div class="ach" id="w-ach"></div>
             <p class="keep" id="w-note"></p>
-            <div class="row"><button class="btn" id="btn-next" type="button">Continue to Chapter 2</button><button class="btn ghost" id="btn-stay" type="button">Look around</button><button
-                class="btn ghost" id="btn-again" type="button">Play again</button></div>
+            <div class="row"><button class="btn" id="btn-next" type="button">Continue to Chapter 2</button><button
+                class="btn ghost" id="btn-stay" type="button">Look around</button><button class="btn ghost"
+                id="btn-again" type="button">Play again</button></div>
           </div>
         </div>
       </div>
