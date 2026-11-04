@@ -91,6 +91,20 @@ test('Chapter 2: Tommy\'s Morse answer is a word in every language', async ({ pa
   }
 });
 
+test('Chapter 3: Pippi\'s own word for multiplying, in every language', async ({ page }) => {
+  for (const [lang, word, chap] of [['nl', 'PLUTIMICEREN', 'Hoofdstuk 3 · Pippi gaat naar school'], ['sv', 'PLUTTIFIKATION', 'Kapitel 3 · Pippi börjar skolan']]) {
+    await seed(page, { ch: 3, scene: 'school', f: { introDone: true } }, ['-ch2', '-ch3']);
+    await page.evaluate(([KEY, lang]) => localStorage.setItem(KEY + '-lang', lang), [KEY, lang]);
+    await page.reload();
+    await page.locator('#btn-cont').click();
+    await skip(page);
+    await expect(page.locator('#chap')).toHaveText(chap);
+    await hs(page, 'board');
+    await expect(page.locator('.s3-h')).toHaveText(word);
+    await page.locator('#m-close').click();
+  }
+});
+
 test('every Dutch and Swedish translation still matches the English text', () => {
   // Fails when English text changed without updating lang/nl (a stale key), or one text has two translations.
   const tool = path.join(__dirname, '..', 'tools', 'i18n-check.js');

@@ -1,0 +1,343 @@
+# Swedish translation: Chapter 3, Pippi goes to school (js/chapter3.js, and its item uses in js/items.js).
+# Pippi's word for multiplying: pluttification / plutimiceren / pluttifikation. The teacher is "fröken".
+
+= Chalk
+> Krita
+= A stick of white chalk from Miss's drawer. For the blackboard, not for Mr Nilsson.
+> En vit krita från frökens låda. Till svarta tavlan, inte till Herr Nilsson.
+= Magnifying glass
+> Förstoringsglas
+= Makes small things big. Select it, then click something tiny.
+> Gör små saker stora. Välj det och klicka sedan på något pyttelitet.
+= That's five gold stars! Every task on the blackboard is done. Now the holidays can start, as soon as the bell rings.
+> Det blir fem guldstjärnor! Alla uppgifterna på tavlan är klara. Nu kan lovet börja, så fort klockan ringer.
+= Gold star number 4! Just one more to go.
+> Guldstjärna nummer 4! Bara en kvar.
+= Gold star number {n}! Only {left} to go.
+> Guldstjärna nummer {n}! Bara {left} kvar.
+= The spunk, in its jam jar on Pippi's desk. Pippi has brought it to school. "It wants to learn things," she says.
+> Spunken, i sin syltburk på Pippis bänk. Pippi har tagit med den till skolan. "Den vill lära sig saker", säger hon.
+= You take it. A spunk knows things, even at school. Especially at school.
+> Du tar den. En spunk vet saker, även i skolan. Särskilt i skolan.
+= The horse is lying in the sun in the schoolyard, full of geraniums. It's on holiday too.
+> Lilla Gubben ligger i solen på skolgården, full av pelargoner. Han har också lov.
+= Out in the schoolyard, Pippi's horse is eating Miss's flowerbed, one geranium at a time.
+> Ute på skolgården äter Lilla Gubben upp frökens rabatt, en pelargon i taget.
+= Miss chased it round and round for a while. The horse thought it was a game, and won. Now she's watching you all through the little window in the door instead.
+> Fröken sprang runt, runt efter honom en stund. Lilla Gubben trodde att det var en lek, och vann. Nu tittar hon på er genom det lilla fönstret i dörren i stället.
+= The school clock has Roman numerals: XII at the top, then III, VI and IX. The little hand is just before the XII and the big hand points at VIII: twenty to twelve.
+> Skolklockan har romerska siffror: XII högst upp, sedan III, VI och IX. Lilla visaren står strax före XII och stora visaren pekar på VIII: tjugo i tolv.
+= At twelve, Miss rings the bell and the summer holidays begin.
+> Klockan tolv ringer fröken i klockan, och då börjar sommarlovet.
+= Pippi's gold-star chart: {n} of 5 stars.
+> Pippis stjärnlista: {n} av 5 stjärnor.
+= All five! Now for the bell.
+> Alla fem! Nu är det bara klockan kvar.
+= Annika sticks on a star for every task on the blackboard that's done.
+> Annika klistrar på en stjärna för varje uppgift på tavlan som är klar.
+= A brass plaque over the door: BUILT IN MDCCCXCIV.
+> En mässingsskylt ovanför dörren: BYGGD ÅR MDCCCXCIV.
+= Roman numerals. Grown-ups like them for things that are meant to look important. The chart next to the clock says what each letter is worth.
+> Romerska siffror. Vuxna gillar dem till saker som ska se viktiga ut. Tavlan bredvid klockan visar vad varje bokstav är värd.
+= The classroom door. Out there: weeks and weeks of summer holidays.
+> Klassrumsdörren. Där ute: veckor och veckor av sommarlov.
+= The classroom door. Miss is right outside, peering in through its little window.
+> Klassrumsdörren. Fröken står precis utanför och kikar in genom det lilla fönstret.
+= You could go out too. But Pippi wants her holidays properly: with gold stars, and the bell.
+> Du kunde gå ut du också. Men Pippi vill ha sitt lov på riktigt: med guldstjärnor, och klockan.
+= Miss's hand bell. It's still humming, from all the excitement.
+> Frökens handklocka. Den surrar fortfarande av all spänning.
+= Miss's hand bell. At twelve o'clock she rings it, and the holidays begin.
+> Frökens handklocka. Klockan tolv ringer hon i den, och då börjar lovet.
+= Pippi has {n} of 5 gold stars. Miss said: no holidays until every task on the blackboard is done.
+> Pippi har {n} av 5 guldstjärnor. Fröken sa: inget lov förrän alla uppgifter på tavlan är klara.
+= Pippi's cake. A third of it is on a plate on Miss's desk, with a paper flag stuck in it: FOR MISS. THE BIGGEST PIECE.
+> Pippis tårta. En tredjedel ligger på ett fat på frökens kateder, med en pappersflagga i: TILL FRÖKEN. DEN STÖRSTA BITEN.
+= No school for ten whole weeks!
+> Ingen skola på tio hela veckor!
+= I'll miss it. A bit. Maybe.
+> Jag kommer att sakna den. Lite grann. Kanske.
+= Five stars! Miss said the holidays start when the bell rings. It's on her desk.
+> Fem stjärnor! Fröken sa att lovet börjar när klockan ringer. Den står på hennes kateder.
+= Go on, ring it!
+> Kom igen, ring!
+= Miss said Pippi only gets holidays if all five tasks on the blackboard are done.
+> Fröken sa att Pippi bara får lov om alla fem uppgifterna på tavlan är klara.
+= I'm in charge of the gold stars while she's out. I'm not allowed to do the tasks for Pippi. But you can help her!
+> Jag har hand om guldstjärnorna medan hon är ute. Jag får inte göra uppgifterna åt Pippi. Men du får hjälpa henne!
+= Miss keeps the chalk in her desk drawer. She can never remember the code, so she wrote herself a note.
+> Fröken har kritan i katederlådan. Hon kommer aldrig ihåg koden, så hon har skrivit en lapp till sig själv.
+= Holidays! I'm going to spend them thing-searching. And eating cake. And thing-searching for cake.
+> Lov! Jag ska vara sakletare hela lovet. Och äta tårta. Och leta efter tårta.
+= School is wonderful! I've already learnt that there are holidays. I've never done a task before, so I'm sure I can.
+> Skolan är underbar! Jag har redan lärt mig att det finns lov. Det har jag aldrig provat förut, så det klarar jag säkert.
+= Gold stars! I'm going to have them made into earrings.
+> Guldstjärnor! Dem ska jag göra örhängen av.
+= Five stars! Ring the bell, ring the bell!
+> Fem stjärnor! Ring i klockan, ring i klockan!
+= Mr Nilsson is licking cream off his hat. Nobody saw anything.
+> Herr Nilsson slickar grädde från sin hatt. Ingen såg någonting.
+= Eek! Eek!
+> Iii! Iii!
+= Mr Nilsson came to school in Pippi's pocket. He's sitting on the end of her desk, staring at the cake.
+> Herr Nilsson följde med till skolan i Pippis ficka. Han sitter längst ut på hennes bänk och stirrar på tårtan.
+= Miss's drawer, open. Red pens, a ruler, and a bag of peppermints labelled FOR EMERGENCIES. You already took the chalk and the magnifying glass.
+> Frökens låda, öppen. Röda pennor, en linjal och en påse pepparmyntor märkt FÖR NÖDFALL. Kritan och förstoringsglaset har du redan tagit.
+= Miss's desk
+> Frökens kateder
+= The drawer has a padlock with four number wheels
+> Lådan har ett hänglås med fyra sifferhjul
+= So I don't forget: the code is the year our school was built. It's on the plaque over the door. Nobody can read that, so it's perfectly safe. — Miss
+> Så att jag inte glömmer: koden är året då vår skola byggdes. Det står på skylten ovanför dörren. Ingen kan läsa den, så det är helt säkert. — Fröken
+= Click! 1894. The drawer slides open: chalk, red pens, and a magnifying glass.
+> Klick! 1894. Lådan glider upp: krita, röda pennor och ett förstoringsglas.
+= M is 1000, D is 500, CCC is 300, XC is 90 and IV is 4: 1894. Roman numerals add up, except when a small one stands in front of a bigger one: then you take it away.
+> M är 1000, D är 500, CCC är 300, XC är 90 och IV är 4: 1894. Romerska siffror lägger man ihop, utom när en liten står före en större: då drar man bort den.
+= You take the chalk and the magnifying glass. Now for the tasks on the blackboard.
+> Du tar kritan och förstoringsglaset. Nu till uppgifterna på tavlan.
+= Close! But XC isn't 10 + 100. When a smaller numeral stands in front of a bigger one, you take it away: XC is 100 − 10 = 90.
+> Nära! Men XC är inte 10 + 100. När en mindre siffra står före en större drar man bort den: XC är 100 − 10 = 90.
+= Nearly! But IV isn't 1 + 5. The I comes first, so take it away: IV is 5 − 1 = 4. (Look at the IX on the clock: that's 9.)
+> Nästan! Men IV är inte 1 + 5. I:et kommer först, så det drar man bort: IV är 5 − 1 = 4. (Titta på IX på klockan: det är 9.)
+= Zero, zero, zero, zero. The Romans had no zero at all, so that can't be it.
+> Noll, noll, noll, noll. Romarna hade ingen nolla alls, så det kan det inte vara.
+= The padlock doesn't budge. Read the plaque over the door one numeral at a time, with the chart next to the clock.
+> Hänglåset rör sig inte. Läs skylten ovanför dörren en siffra i taget, med tavlan bredvid klockan som hjälp.
+= Roman numerals
+> Romerska siffror
+= A chart on the classroom wall
+> En tavla på klassrumsväggen
+= <b>Add them up</b>, biggest first: VI = 5 + 1 = 6, XX = 10 + 10 = 20, CCC = 300.
+> <b>Lägg ihop dem</b>, den största först: VI = 5 + 1 = 6, XX = 10 + 10 = 20, CCC = 300.
+= <b>But</b> a small numeral IN FRONT of a bigger one is taken away: IV = 5 − 1 = 4, IX = 10 − 1 = 9, XC = 100 − 10 = 90.
+> <b>Men</b> en liten siffra FÖRE en större dras bort: IV = 5 − 1 = 4, IX = 10 − 1 = 9, XC = 100 − 10 = 90.
+= The blackboard
+> Svarta tavlan
+= Today's tasks, and Pippi's pluttification
+> Dagens uppgifter, och Pippis pluttifikation
+= To do:
+> Att göra:
+= Nines
+> Niorna
+= ABC
+> ABC
+= Insects
+> Insekter
+= Cake
+> Tårta
+= Globe
+> Jordglob
+= PLUTTIFICATION
+> PLUTTIFIKATION
+= Done marking
+> Klar med kryssen
+= Every answer is right now. Annika has given Pippi a gold star for it.
+> Nu är alla svar rätt. Annika har gett Pippi en guldstjärna för det.
+= Task 1: find Pippi's wrong answers. Click a line to mark it with the chalk, or click it again to rub the mark out.
+> Uppgift 1: hitta Pippis felaktiga svar. Klicka på en rad för att kryssa den med kritan, eller klicka igen för att sudda ut krysset.
+= Task 1: find Pippi's wrong answers and mark them. But the chalk box on the ledge is empty.
+> Uppgift 1: hitta Pippis felaktiga svar och kryssa dem. Men kritasken på hyllan under tavlan är tom.
+= You need chalk to mark anything. Miss keeps the chalk in her desk.
+> Du behöver krita för att kryssa. Fröken har kritan i sin kateder.
+= 9 × {n} = {v} is right: {t} tens and {u} units. The tens are one less than {n}, and {t} + {u} = 9. Rub that mark out.
+> 9 × {n} = {v} är rätt: {t} tiotal och {u} ental. Tiotalen är en mindre än {n}, och {t} + {u} = 9. Sudda ut det krysset.
+= There is still one wrong answer without a mark. Check each line: the tens are one less than the number you multiply by, and the two digits add up to 9.
+> Det finns fortfarande ett fel svar utan kryss. Kolla varje rad: tiotalen är en mindre än talet du gångrar med, och de två siffrorna blir 9 tillsammans.
+= There are still {k} wrong answers without a mark. Check each line: the tens are one less than the number you multiply by, and the two digits add up to 9.
+> Det finns fortfarande {k} fel svar utan kryss. Kolla varje rad: tiotalen är en mindre än talet du gångrar med, och de två siffrorna blir 9 tillsammans.
+= Marked and corrected: 9 × 5 = 45, 9 × 8 = 72 and 9 × 10 = 90. You've used up the chalk.
+> Kryssat och rättat: 9 × 5 = 45, 9 × 8 = 72 och 9 × 10 = 90. Kritan är slut.
+= In the nines, the tens go up by one and the units go down by one, and the two digits always add up to 9.
+> I niornas tabell går tiotalen upp med ett och entalen ner med ett, och de två siffrorna blir alltid 9 tillsammans.
+= Pluttification is easy once you know the trick. I'll do the nines on my toes next.
+> Pluttifikation är lätt när man kan knepet. Nästa gång räknar jag niorna på tårna.
+= The nines poster
+> Niorna-affischen
+= Pinned up next to the blackboard
+> Uppsatt bredvid svarta tavlan
+= <b>The nines on your fingers.</b> Hold up all ten fingers. For 9 × 4, fold down your 4th finger. The fingers on its left are the tens (3), the fingers on its right are the units (6): 9 × 4 = 36.
+> <b>Niorna på fingrarna.</b> Håll upp alla tio fingrar. För 9 × 4 fäller du ner ditt 4:e finger. Fingrarna till vänster om det är tiotalen (3), fingrarna till höger är entalen (6): 9 × 4 = 36.
+= And look: in the nines, the two digits always add up to 9. 3 + 6 = 9.
+> Och titta: i niornas tabell blir de två siffrorna alltid 9 tillsammans. 3 + 6 = 9.
+= The class register, in perfect ABC order again. Miss will be pleased. Pippi has drawn a small horse next to her own name.
+> Klasslistan, i perfekt bokstavsordning igen. Fröken blir glad. Pippi har ritat en liten häst bredvid sitt eget namn.
+= The class register
+> Klasslistan
+= Pippi has "tidied" it
+> Pippi har "städat" den
+= Task 2: Pippi has put the names in order of how much she likes them. Miss keeps them in ABC order. Click the names in ABC order.
+> Uppgift 2: Pippi har ordnat namnen efter hur mycket hon tycker om dem. Fröken har dem i bokstavsordning. Klicka på namnen i bokstavsordning.
+= Not yet. {b} starts with {y}, but another name starts with a letter that comes earlier in the alphabet.
+> Inte än. {b} börjar på {y}, men ett annat namn börjar på en bokstav som kommer tidigare i alfabetet.
+= Not yet. {a} and {b} both start with {pre}, so look at the next letter: {x} comes before {y}.
+> Inte än. {a} och {b} börjar båda på {pre}, så titta på nästa bokstav: {x} kommer före {y}.
+= {name}: yes.
+> {name}: ja.
+= A, A, B, O, P, P, T, T: the register is in ABC order again.
+> A, A, B, O, P, P, T, T: klasslistan är i bokstavsordning igen.
+= When two names start with the same letter, you look at the next letter: An before Ax, Pe before Pi, Tom before Tor.
+> När två namn börjar på samma bokstav tittar man på nästa bokstav: An före Ax, Pe före Pi, Tom före Tor.
+= I'd still have put me first. P is a very good letter.
+> Jag hade ändå satt mig själv först. P är en väldigt bra bokstav.
+= Ant
+> Myra
+= Spider
+> Spindel
+= Ladybird
+> Nyckelpiga
+= Woodlouse
+> Gråsugga
+= Bumblebee
+> Humla
+= The nature table. The ant, the ladybird and the bumblebee have a card each now: INSECT. The spider and the woodlouse are sulking.
+> Naturbordet. Myran, nyckelpigan och humlan har fått var sin lapp: INSEKT. Spindeln och gråsuggan surar.
+= The nature table: five jam jars, each with something tiny inside. A card says: WHICH ONES ARE INSECTS?
+> Naturbordet: fem syltburkar, med något pyttelitet i varje. På en lapp står det: VILKA ÄR INSEKTER?
+= They're far too small to see properly. You'd need something to make them bigger.
+> De är alldeles för små för att se ordentligt. Du skulle behöva något som gör dem större.
+= The nature table
+> Naturbordet
+= Seen through the magnifying glass
+> Sett genom förstoringsglaset
+= Miss says: an INSECT has <b>six legs</b>, and a body in <b>three parts</b>: head, middle and back end.
+> Fröken säger: en INSEKT har <b>sex ben</b>, och en kropp i <b>tre delar</b>: huvud, mellankropp och bakkropp.
+= These are the insects
+> Det här är insekterna
+= Task 3: click every creature that is an insect. Pippi's label says: ALL OF THEM. AND MR NILSSON.
+> Uppgift 3: klicka på alla djur som är insekter. På Pippis lapp står det: ALLIHOP. OCH HERR NILSSON.
+= Count the spider's legs: eight! And its body has only two parts. Spiders aren't insects: they're arachnids.
+> Räkna spindelns ben: åtta! Och kroppen har bara två delar. Spindlar är inte insekter: de är spindeldjur.
+= Count the woodlouse's legs: fourteen! It isn't an insect at all. It's a crustacean, more like a tiny crab than a beetle.
+> Räkna gråsuggans ben: fjorton! Den är ingen insekt alls. Den är ett kräftdjur, mer lik en pytteliten krabba än en skalbagge.
+= One insect is still not ticked. Count the legs again: six legs means insect.
+> En insekt är fortfarande inte ikryssad. Räkna benen igen: sex ben betyder insekt.
+= There are more insects than that. Count the legs: six legs means insect.
+> Det finns fler insekter. Räkna benen: sex ben betyder insekt.
+= The ant, the ladybird and the bumblebee: six legs and three body parts each. Insects!
+> Myran, nyckelpigan och humlan: sex ben och tre kroppsdelar var. Insekter!
+= Six legs and three body parts: an insect. The spider has eight legs, the woodlouse fourteen, and Mr Nilsson has no business being on the list at all.
+> Sex ben och tre kroppsdelar: en insekt. Spindeln har åtta ben, gråsuggan fjorton, och Herr Nilsson har inte på listan att göra över huvud taget.
+= And the spunk? You count its legs: six. The spunk is an insect too!
+> Och spunken? Du räknar benen: sex. Spunken är också en insekt!
+= Pippi has baked four cakes, all exactly the same size, and cut them up: one into 8 pieces, one into 3, one into 6 and one into 4. Miss gets the biggest piece. Which piece is it?
+> Pippi har bakat fyra tårtor, precis lika stora, och skurit upp dem: en i 8 bitar, en i 3, en i 6 och en i 4. Fröken ska få den största biten. Vilken bit är det?
+= A piece of the cake cut into {n}
+> En bit av tårtan som är skuren i {n}
+= Now Tommy asks for one quarter of a cake (1/4), and Annika asks for two eighths (2/8). Who gets more cake?
+> Nu vill Tommy ha en fjärdedel av en tårta (1/4), och Annika vill ha två åttondelar (2/8). Vem får mest tårta?
+= They get the same
+> De får lika mycket
+= {who} gets more
+> {who} får mest
+= Pippi's cake
+> Pippis tårta
+= Task 4: fractions
+> Uppgift 4: bråk
+= Pippi says the eighth, because 8 is the most! But the more pieces you cut a cake into, the smaller each piece is.
+> Pippi säger åttondelen, för 8 är mest! Men ju fler bitar man skär en tårta i, desto mindre blir varje bit.
+= A sixth is smaller than that: the cake is shared out into more pieces.
+> En sjättedel är mindre: den tårtan är delad i fler bitar.
+= Four is more than three, so a quarter must be bigger? No! A cake cut into 4 has smaller pieces than one cut into 3.
+> Fyra är mer än tre, så en fjärdedel måste vara större? Nej! En tårta i 4 bitar har mindre bitar än en i 3.
+= A third! Cut into only 3 pieces, each piece is the biggest.
+> En tredjedel! Skuren i bara 3 bitar blir varje bit störst.
+= Two pieces sounds like more. But each eighth is only half as big as a quarter. Look at the pink parts.
+> Två bitar låter som mer. Men varje åttondel är bara hälften så stor som en fjärdedel. Titta på de rosa delarna.
+= Look at the pink parts: they are exactly the same size. Cut a quarter in half, and you get two eighths.
+> Titta på de rosa delarna: de är precis lika stora. Skär en fjärdedel mitt itu, så får du två åttondelar.
+= The same! 2/8 is exactly 1/4.
+> Lika mycket! 2/8 är precis 1/4.
+= The more pieces you cut a cake into, the smaller each piece. A third is bigger than a quarter, and two eighths is exactly one quarter.
+> Ju fler bitar man skär en tårta i, desto mindre blir varje bit. En tredjedel är större än en fjärdedel, och två åttondelar är precis en fjärdedel.
+= Then Miss gets a third. And I'll have the other two thirds. And the other three cakes. That's only fair.
+> Då får fröken en tredjedel. Och jag tar de andra två tredjedelarna. Och de andra tre tårtorna. Det är bara rättvist.
+= The globe, leaning over as always. In June the North leans towards the Sun: summer in Sweden, winter on Pippi's father's island.
+> Jordgloben, lutande som alltid. I juni lutar norr mot solen: sommar i Sverige, vinter på Pippis pappas ö.
+= The globe
+> Jordgloben
+= Task 5: a postcard from the South Seas
+> Uppgift 5: ett vykort från Söderhavet
+= "Dear Pippi, happy summer holidays! Here on my island it is winter now, so I am wearing my woolly hat. (Only the hat.) Love, Daddy"
+> "Kära Pippi, trevligt sommarlov! Här på min ö är det vinter nu, så jag har på mig min yllemössa. (Bara mössan.) Kram, pappa"
+= Sweden
+> Sverige
+= Pippi's father's island
+> Pippis pappas ö
+= the Sun, in June
+> solen, i juni
+= Why is it winter on the island when it is summer in Sweden?
+> Varför är det vinter på ön när det är sommar i Sverige?
+= The island is further away from the Sun.
+> Ön ligger längre bort från solen.
+= The Earth leans over. In June the northern half leans towards the Sun, and the southern half leans away.
+> Jorden lutar. I juni lutar norra halvan mot solen, och södra halvan lutar bort från den.
+= Pippi's father packed all the summer into a sea chest and sent it to Sweden.
+> Pippis pappa packade all sommar i en sjömanskista och skickade den till Sverige.
+= Lots of people think so! But Sweden and the island are almost exactly as far from the Sun. Look at the globe: which half leans towards the Sun?
+> Det tror många! Men Sverige och ön ligger nästan precis lika långt från solen. Titta på jordgloben: vilken halva lutar mot solen?
+= Pippi nods: "That's exactly what happened." It isn't. Look at the way the Earth leans.
+> Pippi nickar: "Precis så gick det till." Det gjorde det inte. Titta på hur jorden lutar.
+= Yes! The Earth is tilted, and it stays tilted all the way round the Sun.
+> Ja! Jorden lutar, och den fortsätter att luta hela vägen runt solen.
+= In June the North leans towards the Sun: long days, a high sun, summer in Sweden. The South leans away: short days and winter.
+> I juni lutar norr mot solen: långa dagar, solen högt på himlen, sommar i Sverige. Söder lutar bort: korta dagar och vinter.
+= In December it's the other way round. Then Pippi's father can take his woolly hat off.
+> I december är det tvärtom. Då kan Pippis pappa ta av sig yllemössan.
+= The little school, on the last morning before the summer holidays. Sunshine through the windows, and chalk dust in the air.
+> Den lilla skolan, sista morgonen före sommarlovet. Solsken genom fönstren, och kritdamm i luften.
+= Good morning, class! And look who's here: Pippi has come to school, for the very first time.
+> God morgon, klassen! Och titta vem som är här: Pippi har kommit till skolan, för allra första gången.
+= Good morning! I heard that children who go to school get holidays. It didn't seem fair that I don't, so I've come to get some.
+> God morgon! Jag hörde att barn som går i skolan får lov. Det verkade inte rättvist att jag inte får något, så jag har kommit för att skaffa mig lite.
+= Holidays are for children who have done their work, Pippi. There are five tasks on the blackboard. Do them all, and when I ring the bell at twelve, you'll get your holidays too.
+> Lov är för barn som har gjort sitt arbete, Pippi. Det står fem uppgifter på tavlan. Gör allihop, så får du också lov när jag ringer i klockan klockan tolv.
+= Five tasks! I've never done a task before, so I'm sure I can. And my friend here will help me.
+> Fem uppgifter! Det har jag aldrig provat förut, så det klarar jag säkert. Och min kompis här hjälper mig.
+= Outside, a loud munching noise. Pippi's horse is eating the flowerbed in the schoolyard.
+> Utanför hörs ett högt mumsande. Lilla Gubben äter upp rabatten på skolgården.
+= My geraniums! Annika, you're in charge of the gold stars. I'll keep an eye on you through the window in the door!
+> Mina pelargoner! Annika, du har hand om guldstjärnorna. Jag håller ett öga på er genom fönstret i dörren!
+= Five tasks before twelve. But the chalk box is empty. Miss must keep the chalk somewhere.
+> Fem uppgifter före tolv. Men kritasken är tom. Fröken måste ha kritan någonstans.
+= Pippi grabs the hand bell and rings it. Very loudly. For a very long time. The windows rattle, and out in the schoolyard the horse stops chewing.
+> Pippi tar handklockan och ringer. Väldigt högt. Väldigt länge. Fönstren skallrar, och ute på skolgården slutar Lilla Gubben tugga.
+= Pippi! Who said you could ring the bell? It's only twenty to twelve!
+> Pippi! Vem har sagt att du får ringa i klockan? Den är bara tjugo i tolv!
+= But Miss, she's done all five tasks. Look: five gold stars. We only helped a little.
+> Men fröken, hon har gjort alla fem uppgifterna. Titta: fem guldstjärnor. Vi hjälpte bara till lite.
+= Let me see. The nines, the register, the insects, the cake, the globe… Well I never. Every one of them is right.
+> Låt mig se. Niorna, klasslistan, insekterna, tårtan, jordgloben… Det var som tusan. Allihop är rätt.
+= Twenty minutes early, but you've earned it. Happy holidays, everyone!
+> Tjugo minuter för tidigt, men du har förtjänat det. Trevligt lov, allihop!
+= Hooray! And here's the biggest piece of cake for you, Miss: a third. Not a quarter. A quarter is smaller. I learnt that today.
+> Hurra! Och här är den största tårtbiten till fröken: en tredjedel. Inte en fjärdedel. En fjärdedel är mindre. Det har jag lärt mig i dag.
+= School is lovely. I'll come back after the holidays. For the next holidays.
+> Skolan är härlig. Jag kommer tillbaka efter lovet. För att få nästa lov.
+
+# ---------- js/items.js: Chapter 3 ----------
+= Eek?
+> Iii?
+= Mr Nilsson sniffs the chalk and takes a nibble. He pulls a face. Chalk is not a biscuit.
+> Herr Nilsson nosar på kritan och tar ett litet bett. Han grimaserar. Krita är ingen kaka.
+= Chalk is for the blackboard.
+> Krita är till svarta tavlan.
+= Pippi turns round, and you look at her nose through the magnifying glass. Freckles. Lots and lots of freckles.
+> Pippi vänder sig om, och du tittar på hennes näsa genom förstoringsglaset. Fräknar. Massor av fräknar.
+= I've got exactly a thousand. That's M in Roman numerals. I counted them once, in the mirror, backwards.
+> Jag har precis tusen. Det är M med romerska siffror. Jag räknade dem en gång, i spegeln, baklänges.
+= Through the glass, the spunk is enormous. It has six legs and a shiny green shell. It looks back at you, unimpressed.
+> Genom glaset är spunken jättestor. Den har sex ben och ett glänsande grönt skal. Den tittar tillbaka på dig, inte det minsta imponerad.
+= You inspect Mr Nilsson for fleas. None. A very clean monkey. He inspects you back.
+> Du letar loppor på Herr Nilsson. Inga. En mycket ren apa. Han letar loppor på dig också.
+= Bigger letters. Still Roman.
+> Större bokstäver. Fortfarande romerska.
+= Everything looks bigger. It doesn't look any cleverer.
+> Allt ser större ut. Inte klokare.
+
+# ---------- Miss at the window in the door ----------
+= No help through the window! Well… one little tip: the blackboard says what to do. Five tasks, five gold stars, then the bell.
+> Ingen hjälp genom fönstret! Nåja… ett litet tips: på tavlan står det vad ni ska göra. Fem uppgifter, fem guldstjärnor, och sedan klockan.
+= Five gold stars? Then what are you waiting for? The bell is on my desk!
+> Fem guldstjärnor? Vad väntar ni på då? Klockan står på min kateder!
+= Miss has come back in. She's handing out certificates and humming.
+> Fröken har kommit in igen. Hon delar ut diplom och nynnar.

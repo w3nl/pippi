@@ -203,8 +203,8 @@
 > Tjuvarna fast · kapitel 2 klart
 = Caught
 > Fast
-= Thunder-Karlsson and Bloom are off to the police station, and the gold is safe. Next: Pippi goes to school. Chapter 3 is still being written.
-> Dunder-Karlsson och Blom åker till polisstationen, och guldet är i säkerhet. Härnäst: Pippi börjar skolan. Kapitel 3 håller fortfarande på att skrivas.
+= Thunder-Karlsson and Bloom are off to the police station, and the gold is safe. Next: Pippi goes to school for the very first time. She has heard that schoolchildren get holidays…
+> Dunder-Karlsson och Blom åker till polisstationen, och guldet är i säkerhet. Härnäst: Pippi börjar skolan för allra första gången. Hon har hört att skolbarn får lov…
 = Burglars in the night
 > Tjuvar om natten
 = Chapters
@@ -227,8 +227,8 @@
 > Tillbaka i Pippis sovrum. Pippi snarkar fortfarande som en mistlur.
 = Take your time. Pippi is handing out sweets in the garden. When you're ready, the front door leads on to Chapter {n}.
 > Ta den tid du behöver. Pippi delar ut godis i trädgården. När du är redo leder ytterdörren vidare till kapitel {n}.
-= Take your time. The burglars aren't going anywhere: they're on top of the wardrobe.
-> Ta den tid du behöver. Tjuvarna går ingenstans: de sitter uppe på klädskåpet.
+= Take your time. The burglars aren't going anywhere: they're on top of the wardrobe. When you're ready, the veranda door leads on to Chapter {n}.
+> Ta den tid du behöver. Tjuvarna går ingenstans: de sitter uppe på klädskåpet. När du är redo leder verandadörren vidare till kapitel {n}.
 = Thunder-Karlsson
 > Dunder-Karlsson
 = Bloom
@@ -253,3 +253,33 @@
 > Herr Nilsson fnissar i sömnen. Fel sjusovare.
 = You tickle it. It isn't ticklish. Someone in this room is, though.
 > Du kittlar den. Den är inte kittlig. Men någon i det här rummet är det.
+
+# ---------- Chapter 3: menus, end screen, speakers ----------
+= Veranda door: on to Chapter {n}
+> Verandadörr: vidare till kapitel {n}
+= Continue to Chapter 3
+> Vidare till kapitel 3
+= School's out · Chapter 3 complete
+> Skolan slut · kapitel 3 klart
+= Holidays
+> Lov
+= Pippi has her holidays, and Miss has the biggest piece of cake. Next: the circus comes to town. Chapter 4 is still being written.
+> Pippi har fått sitt lov, och fröken har fått den största tårtbiten. Härnäst: cirkusen kommer till stan. Kapitel 4 håller fortfarande på att skrivas.
+= Pippi goes to school
+> Pippi börjar skolan
+= Chapter 3: Pippi goes to school
+> Kapitel 3: Pippi börjar skolan
+= Chapter 3 · Pippi Goes to School
+> Kapitel 3 · Pippi börjar skolan
+= Four is more than three
+> Fyra är mer än tre
+= Counted Pippi's freckles
+> Räknade Pippis fräknar
+= Back in the classroom. Miss is still watching through the little window in the door.
+> Tillbaka i klassrummet. Fröken tittar fortfarande in genom det lilla fönstret i dörren.
+= Take your time. School's out, and the classroom is all yours. Mr Nilsson is finishing the cake.
+> Ta den tid du behöver. Skolan är slut, och klassrummet är ditt. Herr Nilsson äter upp resten av tårtan.
+= Miss
+> Fröken
+= The little school
+> Den lilla skolan

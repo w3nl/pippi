@@ -14,6 +14,7 @@ function ambKey(){
   switch(S.scene){
     case 'kitchen': return 'kitchen' + (f.fire ? '+fire' : '');
     case 'bedroom': return 'bedroom' + (f.out2 ? '' : '+snore');
+    case 'school': return 'school' + (f.out3 ? '' : '+horse');
   }
   return null;
 }
@@ -119,6 +120,14 @@ const SOUNDSCAPES = {
     every(180, 420, () => blip(m, 4200 + Math.random() * 500, .03, .006, 'sine'));
     every(12000, 22000, () => { blip(m, 420, .35, .02, 'sine', 380); later(500, () => blip(m, 400, .55, .02, 'sine', 360)); });
     if(mods.includes('snore')) every(3600, 3600, () => { burst(m, 1.1, .03, 220, 'lowpass'); later(1500, () => burst(m, .7, .015, 600, 'bandpass')); });
+  },
+  // Chapter 3, the classroom on a summer morning: a quiet room, the school clock, sparrows outside,
+  // and the horse munching geraniums in the schoolyard (until the holidays start).
+  school(m, mods){
+    bed(m, { freq: 400, gain: .012, wobble: .3, rate: .08 });
+    every(1000, 1000, () => burst(m, .025, .018, 3200));
+    every(5000, 11000, () => [0, 1, 2].forEach(i => later(i * 120, () => blip(m, 3000 + Math.random() * 800, .07, .01, 'sine', 2600))));
+    if(mods.includes('horse')) every(6000, 12000, () => [0, 1, 2, 3].forEach(i => later(i * 260, () => burst(m, .12, .02, 500, 'bandpass'))));
   }
 };
 

@@ -41,4 +41,18 @@ function stage2(){
   if(!S.f.swapped) return 'b_scale';
   return 'b_wake';
 }
-function stage_(){ return S.ch===2 ? stage2() : stage1(); }
+function stage_(){ return S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
+Object.assign(HINTS, {
+  s_drawer: ["The chalk box is empty. Miss keeps the chalk in her desk drawer, and she has written herself a note about its code.", "The plaque over the door says MDCCCXCIV: 1000 + 500 + 300 + 90 + 4 = 1894. Set the desk's padlock to 1 8 9 4."],
+  s_nines: ["Task 1: Pippi's nines on the blackboard have three mistakes. The poster next to the board shows the nines trick.", "Use the chalk on the blackboard and mark 9 × 5, 9 × 8 and 9 × 10 (they should be 45, 72 and 90). Then click Done marking."],
+  s_abc: ["Task 2: put the names in the class register on Miss's desk back in ABC order. When two names start with the same letter, look at the next letter.", "Annika, Axel, Britta, Olle, Peter, Pippi, Tommy, Tora."],
+  s_bugs: ["Task 3: which creatures on the nature table are insects? They're tiny, so look through the magnifying glass. Count the legs.", "Use the magnifying glass on the nature table and tick the ant, the ladybird and the bumblebee: six legs each."],
+  s_cake: ["Task 4: Pippi's cake. The more pieces you cut a cake into, the smaller each piece is.", "Click Pippi's cake and pick the piece of the cake cut into 3. Then: 1/4 and 2/8 are the same amount."],
+  s_seasons: ["Task 5: the globe and the postcard from Pippi's father. Look at the way the Earth leans towards the Sun.", "Click the globe and choose: the Earth leans over, and in June the northern half leans towards the Sun."],
+  s_bell: ["Five gold stars! Miss said the holidays start when the bell rings.", "Click the hand bell on Miss's desk."]
+});
+function stage3(){
+  if(!S.f.drawer) return 's_drawer';
+  for(const k of TASKS3) if(!S.f[k]) return { nines:'s_nines', abc:'s_abc', bugs:'s_bugs', cake:'s_cake', seasons:'s_seasons' }[k];
+  return 's_bell';
+}

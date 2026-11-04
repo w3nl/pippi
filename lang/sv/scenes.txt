@@ -69,3 +69,43 @@
 > Verandadörr
 = Veranda door (someone is at the lock!)
 > Verandadörr (någon håller på med låset!)
+
+# ---------- scenes/school.svg ----------
+= The classroom
+> Klassrummet
+= Blackboard
+> Svarta tavlan
+= Nines poster
+> Niorna-affischen
+= Roman numerals chart
+> Tavla med romerska siffror
+= School clock
+> Skolklockan
+= Gold-star chart
+> Stjärnlistan
+= Brass plaque
+> Mässingsskylt
+= Classroom door
+> Klassrumsdörren
+= Class register
+> Klasslistan
+= Hand bell
+> Handklockan
+= Nature table
+> Naturbordet
+= Tommy and Annika
+> Tommy och Annika
+= HOLIDAYS!
+> LOV!
+= THE NINES
+> NIORNA
+= ROMAN NUMERALS
+> ROMERSKA SIFFROR
+= PIPPI'S GOLD STARS
+> PIPPIS GULDSTJÄRNOR
+= BUILT IN
+> BYGGD ÅR
+= NATURE TABLE
+> NATURBORDET
+= Miss, at the window in the door
+> Fröken, i fönstret i dörren

@@ -1,0 +1,73 @@
+/* Chapter 3: the classroom. Close-ups: Miss's desk (Roman numerals), the blackboard (the nines), the nines poster,
+   the class register (ABC order), the nature table (insects), Pippi's cake (fractions) and the globe (the seasons). */
+.dialog.who-teacher{border-left-color:#ffb4a6} .dialog.who-teacher .who{color:#ffb4a6}
+
+/* Miss's note on the desk drawer */
+.s3-note{background:#fffaf0;color:#2b2118;font-family:var(--f-hand);font-size:clamp(18px,3vw,22px);line-height:1.2;padding:10px 14px;margin:0 auto 14px;max-width:460px;transform:rotate(-1deg);box-shadow:0 8px 16px -6px #000}
+.s3-note+.padlock .wheel b{width:40px}
+
+/* Roman numerals chart */
+.s3-roman{background:#f3e6c4;color:#3e200c;border-radius:6px;padding:14px 16px}
+.s3-roman p{margin:10px 0 0}
+.s3-rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(70px,1fr));gap:6px;font-family:var(--f-mono);font-size:16px}
+.s3-rgrid span{background:#fffaf0;border-radius:4px;padding:6px 8px;display:flex;gap:8px;align-items:baseline}
+.s3-rgrid b{color:#c4302b;font-size:20px}
+
+/* the blackboard */
+.s3-board{display:flex;flex-wrap:wrap;gap:12px 24px;background:#2f4f3f;border:10px solid #6b4423;border-radius:6px;padding:14px 16px;color:#f3efe3;font-family:var(--f-hand)}
+.s3-tasks{display:flex;flex-direction:column;gap:2px;font-size:22px;flex:1 1 150px}
+.s3-tasks b{font-size:26px}
+.s3-tasks .done{color:#ffe266}
+.s3-nines{flex:2 1 260px;min-width:0}
+.s3-h{font-size:26px;font-weight:700;margin-bottom:6px}
+.s3-lines{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(5,auto);grid-auto-flow:column;gap:6px 10px}
+.s3-line{font-family:var(--f-hand);font-size:24px;text-align:left;padding:2px 8px;border:2px solid transparent;border-radius:20px;background:none;color:#f3efe3;white-space:nowrap}
+.s3-line:hover:not(:disabled){border-color:rgba(243,239,227,.35)}
+.s3-line.x{border-color:#ffe266;color:#ffe266}
+.s3-line.fixed b{color:#9fdc6e}
+.s3-line:disabled{cursor:default}
+
+/* the nines poster */
+.s3-hands{width:100%;max-width:420px;height:auto;display:block;margin:0 auto}
+
+/* the class register */
+.s3-reg{min-height:2em;margin:0 0 12px;padding:10px 10px 10px 2.2em;background:#fffaf0;color:#2b2118;border-radius:4px;font-family:var(--f-hand);font-size:22px;columns:2}
+.s3-names{display:flex;flex-wrap:wrap;gap:8px}
+.s3-name{font-family:var(--f-hand);font-size:22px;padding:6px 14px;border-radius:4px;border:1px solid #c9b48a;background:#f3e6c4;color:#2b2118}
+.s3-name:hover:not(:disabled){border-color:var(--amber)}
+.s3-name:disabled{opacity:.3;cursor:default}
+
+/* the nature table */
+.s3-card{background:#fffaf0;color:#1f2a44;border-radius:4px;padding:10px 14px;font-size:14px;margin-bottom:12px}
+.s3-bugs{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.s3-bug{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px;border-radius:50%/40%;border:3px solid #c9952a;background:radial-gradient(#f6fbf8,#dfeee9);color:#1f2a44;font-size:14px;font-weight:600;position:relative}
+.s3-bug svg{width:100%;height:auto;display:block}
+.s3-bug.on{border-color:var(--phosphor);box-shadow:0 0 0 3px rgba(159,220,110,.4)}
+.s3-bug.on::after{content:"✓";position:absolute;top:6px;right:14px;color:#2b8a3e;font-size:20px}
+
+/* Pippi's cakes */
+.s3-cakes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:10px}
+.s3-cakes.two{grid-template-columns:repeat(2,minmax(0,160px));justify-content:center}
+.s3-cakes figure{margin:0;text-align:center}
+.s3-cakes figcaption{font-family:var(--f-mono);font-size:14px}
+.s3-cakeb{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px;border-radius:8px;border:1px solid var(--line);background:#3a2819;font-family:var(--f-mono);font-size:16px}
+.s3-cakeb:hover{border-color:var(--amber);color:var(--amber)}
+.s3-cakeb svg,.s3-cakes figure svg{width:100%;max-width:120px;height:auto;display:block}
+
+/* the globe and the postcard */
+.s3-post{background:#fffaf0;color:#2b2118;font-family:var(--f-hand);font-size:clamp(18px,3vw,22px);line-height:1.2;padding:10px 14px;border-left:6px solid #3a7ac0;margin-bottom:10px}
+.s3-globe{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;border-radius:6px}
+.s3-legend{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center;justify-content:center;font-size:13px;color:var(--muted);margin-top:6px}
+.s3-dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:-6px}
+.s3-dot.red{background:#e2483d} .s3-dot.yellow{background:#f2c94c} .s3-dot.sun{background:#ffd25a;box-shadow:0 0 6px #ffd25a}
+
+/* ---------- the classroom comes alive (all stopped by the Motion setting: see css/animations.css) ---------- */
+@keyframes peek{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes plait{0%,100%{transform:rotate(0)}50%{transform:rotate(-6deg)}}
+@keyframes slsec{to{transform:rotate(360deg)}}
+#sl-horse.nod{transform-box:fill-box;transform-origin:70% 100%;animation:nod 4s ease-in-out infinite}
+#sl-teacher{animation:peek 3s ease-in-out infinite}
+#sl-nilsson{animation:bob 2.4s ease-in-out infinite}
+#sl-pippi .plait{transform-box:fill-box;transform-origin:100% 100%;animation:plait 2.8s ease-in-out infinite}
+#sl-pippi .plait.b{transform-origin:0% 100%;animation-direction:reverse}
+.sl-sec{transform-box:view-box;transform-origin:1240px 118px;animation:slsec 60s steps(60,end) infinite}

@@ -69,3 +69,43 @@
 > Verandadeur
 = Veranda door (someone is at the lock!)
 > Verandadeur (er zit iemand aan het slot!)
+
+# ---------- scenes/school.svg ----------
+= The classroom
+> De klas
+= Blackboard
+> Schoolbord
+= Nines poster
+> Negens-poster
+= Roman numerals chart
+> Kaart met Romeinse cijfers
+= School clock
+> Schoolklok
+= Gold-star chart
+> Sterrenkaart
+= Brass plaque
+> Koperen bordje
+= Classroom door
+> Deur van de klas
+= Class register
+> Klassenlijst
+= Hand bell
+> Handbel
+= Nature table
+> Natuurtafel
+= Tommy and Annika
+> Tommy en Annika
+= HOLIDAYS!
+> VAKANTIE!
+= THE NINES
+> DE NEGENS
+= ROMAN NUMERALS
+> ROMEINSE CIJFERS
+= PIPPI'S GOLD STARS
+> PIPPI'S GOUDEN STERREN
+= BUILT IN
+> GEBOUWD IN
+= NATURE TABLE
+> NATUURTAFEL
+= Miss, at the window in the door
+> De juf, achter het raampje in de deur

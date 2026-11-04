@@ -62,5 +62,19 @@ function useItem(item, hs){
     if(hs==='nilsson2') return say([['nilsson', "Hihi-eek!"], "Mr Nilsson giggles in his sleep. Wrong sleepyhead."]);
     return say("You tickle it. It isn't ticklish. Someone in this room is, though.");
   }
+  if(item==='chalk'){
+    if(hs==='board') return openBoard();
+    if(hs==='nilsson3') return say([['nilsson', "Eek?"], "Mr Nilsson sniffs the chalk and takes a nibble. He pulls a face. Chalk is not a biscuit."]);
+    return say("Chalk is for the blackboard.");
+  }
+  if(item==='magnifier'){
+    if(hs==='nature') return openNature();
+    if(hs==='pippi3'){ S.ach.freckles = true; save();
+      return say(["Pippi turns round, and you look at her nose through the magnifying glass. Freckles. Lots and lots of freckles.", ['pippi', "I've got exactly a thousand. That's M in Roman numerals. I counted them once, in the mirror, backwards."]]); }
+    if(hs==='spunk3') return say("Through the glass, the spunk is enormous. It has six legs and a shiny green shell. It looks back at you, unimpressed.");
+    if(hs==='nilsson3') return say([['nilsson', "Eek!"], "You inspect Mr Nilsson for fleas. None. A very clean monkey. He inspects you back."]);
+    if(hs==='plaque' || hs==='romans' || hs==='clock3') return say("Bigger letters. Still Roman.");
+    return say("Everything looks bigger. It doesn't look any cleverer.");
+  }
   say("That doesn't do anything useful.");
 }

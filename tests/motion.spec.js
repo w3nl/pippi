@@ -27,7 +27,7 @@ test('devices that prefer reduced motion stand still, unless the player picks "M
   await expect(page.locator('#btn-motion')).toHaveText('Motion on');
 });
 
-test('"Motion off" stops everything, in both rooms', async ({ page }) => {
+test('"Motion off" stops everything, in every room', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   await seed(page, { ch: 2, scene: 'bedroom', f: { introDone: true, torchOn: true, scared: true, north: true, sos: true }, inv: ['torch'] }, ['-ch2']);
   await page.locator('#btn-cont').click();
@@ -48,6 +48,21 @@ test('"Motion off" stops everything, in both rooms', async ({ page }) => {
   await page.evaluate(() => { S.ch = 1; S.scene = 'kitchen'; S.f = { fire: true }; applyVisuals(); });
   await expect(page.locator('#vk-steam')).toBeVisible();
   expect(await moving(page)).toBe(0);
+  // and the classroom
+  await page.evaluate(() => { S.ch = 3; S.scene = 'school'; S.f = {}; applyVisuals(); });
+  await expect(page.locator('#sl-teacher')).toBeVisible();
+  expect(await moving(page)).toBe(0);
+});
+
+test('the classroom moves: the horse munches, Miss bobs at the door window, the clock ticks', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await seed(page, { ch: 3, scene: 'school', f: { introDone: true } }, ['-ch2', '-ch3']);
+  await page.locator('#btn-cont').click();
+  await skip(page);
+  expect(await anim(page, '#sl-horse')).toBe('nod');
+  expect(await anim(page, '#sl-teacher')).toBe('peek');
+  expect(await anim(page, '.sl-sec')).toBe('slsec');
+  expect(await moving(page)).toBeGreaterThan(8);
 });
 
 test('a new item pops into your pockets', async ({ page }) => {

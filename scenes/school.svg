@@ -1,0 +1,500 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="scene" id="sc-school" viewBox="0 0 1600 900"
+    preserveAspectRatio="xMidYMid slice" aria-label="The classroom">
+    <defs>
+        <linearGradient id="slWall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#cfe0bd" />
+            <stop offset="1" stop-color="#b3c99f" />
+        </linearGradient>
+        <linearGradient id="slFloor" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#9a6a3c" />
+            <stop offset="1" stop-color="#5a3a1e" />
+        </linearGradient>
+        <linearGradient id="slSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#7fb8ec" />
+            <stop offset="1" stop-color="#cfe7fb" />
+        </linearGradient>
+        <linearGradient id="slBoard" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#355a45" />
+            <stop offset="1" stop-color="#26443a" />
+        </linearGradient>
+        <linearGradient id="slBrass" x1="0" x2="1">
+            <stop offset="0" stop-color="#b07f1f" />
+            <stop offset=".5" stop-color="#f3d27a" />
+            <stop offset="1" stop-color="#b07f1f" />
+        </linearGradient>
+        <clipPath id="slWinClip">
+            <rect x="52" y="122" width="236" height="296" />
+        </clipPath>
+        <radialGradient id="slVign" cx=".5" cy=".45" r=".8">
+            <stop offset=".6" stop-color="#000" stop-opacity="0" />
+            <stop offset="1" stop-color="#000" stop-opacity=".45" />
+        </radialGradient>
+        <clipPath id="slDoorWin"><rect x="1414" y="224" width="102" height="106" /></clipPath>
+    </defs>
+
+    <!-- wall, ceiling, wood panelling, floor -->
+    <rect width="1600" height="660" fill="url(#slWall)" />
+    <rect width="1600" height="34" fill="#6b4423" />
+    <rect y="34" width="1600" height="8" fill="#4e2a12" />
+    <rect y="520" width="1600" height="140" fill="#a5743f" />
+    <rect y="516" width="1600" height="8" fill="#7a5028" />
+    <g stroke="rgba(0,0,0,.18)" stroke-width="3">
+        <path
+            d="M80 524V660M200 524V660M320 524V660M440 524V660M560 524V660M680 524V660M800 524V660M920 524V660M1040 524V660M1160 524V660M1280 524V660M1400 524V660M1520 524V660" />
+    </g>
+    <rect y="660" width="1600" height="240" fill="url(#slFloor)" />
+    <g stroke="rgba(0,0,0,.22)" stroke-width="3">
+        <path d="M0 720H1600M0 790H1600M0 860H1600" />
+    </g>
+
+    <!-- the window: the schoolyard, where the horse is eating the teacher's flowers -->
+    <g id="sl-window">
+        <rect x="40" y="110" width="260" height="320" rx="6" fill="#e9e1cc" />
+        <rect x="52" y="122" width="236" height="296" fill="url(#slSky)" />
+        <g clip-path="url(#slWinClip)">
+            <g class="cloud" fill="#fff" opacity=".9">
+                <ellipse cx="80" cy="160" rx="34" ry="12" />
+                <ellipse cx="100" cy="152" rx="20" ry="12" />
+            </g>
+            <g class="cloud slow" fill="#fff" opacity=".8">
+                <ellipse cx="40" cy="200" rx="26" ry="9" />
+                <ellipse cx="56" cy="194" rx="15" ry="9" />
+            </g>
+            <path d="M52 330 q120-24 236 0 v88 h-236z" fill="#7fbf5a" />
+            <g stroke="#f3efe3" stroke-width="4">
+                <path
+                    d="M52 322 h236 M70 310 v24 M110 310 v24 M150 310 v24 M190 310 v24 M230 310 v24 M270 310 v24" />
+            </g>
+            <!-- the teacher's flowerbed -->
+            <rect x="70" y="396" width="140" height="14" rx="6" fill="#6b4423" />
+            <g fill="#e2483d">
+                <circle cx="84" cy="392" r="5" />
+                <circle cx="160" cy="390" r="5" />
+                <circle cx="196" cy="392" r="5" />
+            </g>
+            <g fill="#f2c94c">
+                <circle cx="100" cy="390" r="5" />
+                <circle cx="178" cy="392" r="5" />
+            </g>
+            <!-- the horse, white with black spots, munching -->
+            <g id="sl-horse" class="nod">
+                <!-- tail -->
+                <path d="M238 358 q16 4 12 30" stroke="#d9c79a" stroke-width="5" fill="none" stroke-linecap="round" />
+                <!-- legs -->
+                <g stroke="#f6f1e6" stroke-width="7" stroke-linecap="round">
+                    <path d="M178 380 v28 M192 382 v27 M218 382 v27 M232 378 v28" />
+                </g>
+                <g fill="#3a2a1a"><rect x="174" y="405" width="8" height="5" rx="1" /><rect x="188" y="406" width="8" height="5" rx="1" /><rect x="214" y="406" width="8" height="5" rx="1" /><rect x="228" y="405" width="8" height="5" rx="1" /></g>
+                <!-- body -->
+                <ellipse cx="206" cy="364" rx="36" ry="19" fill="#f6f1e6" />
+                <!-- neck, sloping down to the flowers -->
+                <path d="M182 352 q-22 6 -34 26 l14 8 q10 -14 28 -18z" fill="#f6f1e6" />
+                <!-- mane along the top of the neck -->
+                <path d="M184 350 q-22 4 -36 26" stroke="#d9c79a" stroke-width="5" fill="none" stroke-linecap="round" />
+                <!-- head: long, pointing down, munching a geranium -->
+                <path d="M146 376 q-8 4 -10 14 q-2 10 6 12 q10 2 16 -6 q6 -10 2 -18 q-6 -6 -14 -2z" fill="#f6f1e6" />
+                <path d="M150 374 l-2 -9 l8 6z" fill="#f6f1e6" />
+                <circle cx="152" cy="382" r="2" fill="#1a1a1a" />
+                <circle cx="141" cy="397" r="1.6" fill="#8a7a6a" />
+                <!-- spots -->
+                <g fill="#1a1a1a">
+                    <circle cx="192" cy="358" r="5" />
+                    <circle cx="220" cy="370" r="6" />
+                    <circle cx="210" cy="353" r="3.5" />
+                    <circle cx="168" cy="368" r="3" />
+                </g>
+            </g>
+        </g>
+        <rect x="164" y="122" width="10" height="296" fill="#e9e1cc" />
+        <rect x="52" y="262" width="236" height="10" fill="#e9e1cc" />
+        <rect x="30" y="428" width="280" height="16" rx="4" fill="#d9cdb0" />
+    </g>
+
+    <!-- the blackboard: today's tasks, and Pippi's pluttification -->
+    <g id="sl-board">
+        <rect x="330" y="110" width="540" height="312" rx="6" fill="#6b4423" />
+        <rect x="342" y="122" width="516" height="288" fill="url(#slBoard)" />
+        <g font-family="Caveat, cursive" fill="#f3efe3">
+            <text x="360" y="160" font-size="28" font-weight="700">To do:</text>
+            <g font-size="24">
+                <text x="360" y="196">1</text>
+                <text x="360" y="230">2</text>
+                <text x="360" y="264">3</text>
+                <text x="360" y="298">4</text>
+                <text x="360" y="332">5</text>
+            </g>
+            <g font-size="24">
+                <text x="380" y="196">Nines</text>
+                <text x="380" y="230">ABC</text>
+                <text x="380" y="264">Insects</text>
+                <text x="380" y="298">Cake</text>
+                <text x="380" y="332">Globe</text>
+            </g>
+            <g id="sl-ticks" stroke="#ffe266" stroke-width="4" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path id="sl-tick0" d="M480 186 l8 8 l16 -18" />
+                <path id="sl-tick1" d="M480 220 l8 8 l16 -18" />
+                <path id="sl-tick2" d="M480 254 l8 8 l16 -18" />
+                <path id="sl-tick3" d="M480 288 l8 8 l16 -18" />
+                <path id="sl-tick4" d="M480 322 l8 8 l16 -18" />
+            </g>
+            <text id="sl-hol" x="360" y="392" font-size="34" font-weight="700" fill="#ffb37a">
+                HOLIDAYS!</text>
+            <path d="M560 136 v260" stroke="#f3efe3" stroke-width="2" opacity=".35" />
+            <text x="584" y="160" font-size="28" font-weight="700">PLUTTIFICATION</text>
+            <g font-size="26" translate="no">
+                <text x="590" y="204">9×1=9</text>
+                <text x="590" y="244">9×2=18</text>
+                <text x="590" y="284">9×3=27</text>
+                <text x="590" y="324">9×4=36</text>
+                <text x="590" y="364" id="sl-n5">9×5=54</text>
+                <text x="722" y="204">9×6=54</text>
+                <text x="722" y="244">9×7=63</text>
+                <text x="722" y="284" id="sl-n8">9×8=27</text>
+                <text x="722" y="324">9×9=81</text>
+                <text x="722" y="364" id="sl-n10">9×10=100</text>
+            </g>
+        </g>
+        <rect x="330" y="420" width="540" height="12" rx="3" fill="#7a5028" />
+        <path d="M384 420 v-12 h44 v12" fill="#f3efe3" stroke="#c9b48a" stroke-width="2" />
+    </g>
+
+    <!-- the nines poster: the finger trick -->
+    <g id="sl-tables">
+        <rect x="895" y="140" width="110" height="160" fill="#fffaf0"
+            transform="rotate(1.5 950 220)" />
+        <g transform="rotate(1.5 950 220)">
+            <text x="950" y="162" text-anchor="middle" font-family="Fredoka, sans-serif"
+                font-size="13" font-weight="700" fill="#c4302b">THE NINES</text>
+            <g fill="#f3c9a4" stroke="#c98a5a" stroke-width="1.2">
+                <rect x="902" y="186" width="7" height="44" rx="3" />
+                <rect x="911" y="182" width="7" height="48" rx="3" />
+                <rect x="920" y="180" width="7" height="50" rx="3" />
+                <rect x="929" y="212" width="7" height="18" rx="3" fill="#e0a77a" />
+                <rect x="938" y="196" width="7" height="34" rx="3" />
+                <rect x="955" y="196" width="7" height="34" rx="3" />
+                <rect x="964" y="182" width="7" height="48" rx="3" />
+                <rect x="973" y="180" width="7" height="50" rx="3" />
+                <rect x="982" y="182" width="7" height="48" rx="3" />
+                <rect x="991" y="186" width="7" height="44" rx="3" />
+            </g>
+            <g font-family="IBM Plex Mono, monospace" font-weight="600" fill="#1f4d8c"
+                translate="no">
+                <text x="918" y="250" font-size="14">3</text>
+                <text x="972" y="250" font-size="14">6</text>
+                <text x="950" y="282" text-anchor="middle" font-size="14">9×4=36</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Roman numerals chart -->
+    <g id="sl-romans">
+        <rect x="1025" y="140" width="110" height="160" fill="#f3e6c4"
+            transform="rotate(-1.5 1080 220)" />
+        <g transform="rotate(-1.5 1080 220)" font-family="IBM Plex Mono, monospace" fill="#3e200c">
+            <text x="1080" y="160" text-anchor="middle" font-family="Fredoka, sans-serif"
+                font-size="12" font-weight="700">ROMAN NUMERALS</text>
+            <g font-size="13" translate="no">
+                <text x="1046" y="184">I = 1</text>
+                <text x="1046" y="200">V = 5</text>
+                <text x="1046" y="216">X = 10</text>
+                <text x="1046" y="232">L = 50</text>
+                <text x="1046" y="248">C = 100</text>
+                <text x="1046" y="264">D = 500</text>
+                <text x="1046" y="280">M = 1000</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- the school clock, with Roman numerals: twenty to twelve -->
+    <g id="sl-clock">
+        <circle cx="1240" cy="118" r="48" fill="#6b4423" />
+        <circle cx="1240" cy="118" r="42" fill="#fffaf0" />
+        <g font-family="Fredoka, sans-serif" font-size="11" font-weight="600" fill="#2b2118"
+            text-anchor="middle" translate="no">
+            <text x="1240" y="88">XII</text>
+            <text x="1272" y="122">III</text>
+            <text x="1240" y="156">VI</text>
+            <text x="1208" y="122">IX</text>
+        </g>
+        <path d="M1240 118 l-3 -22 M1240 118 l-22 13" stroke="#2b2118" stroke-width="3.5"
+            stroke-linecap="round" />
+        <path class="sl-sec" d="M1240 124 v-36" stroke="#c4302b" stroke-width="1.5" />
+        <circle cx="1240" cy="118" r="3" fill="#2b2118" />
+    </g>
+
+    <!-- Pippi's gold-star chart -->
+    <g id="sl-stars">
+        <rect x="1160" y="200" width="170" height="100" fill="#fffaf0" />
+        <circle cx="1245" cy="206" r="4" fill="#c33" />
+        <text x="1245" y="228" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="13"
+            font-weight="700" fill="#1f4d8c">PIPPI'S GOLD STARS</text>
+        <g stroke="#c9952a" stroke-width="2" fill="none">
+            <path id="sl-star0" transform="translate(1181 264)"
+                d="M0 -13 L3.2 -4.5 L12.4 -4 L5.2 1.7 L7.6 10.5 L0 5.5 L-7.6 10.5 L-5.2 1.7 L-12.4 -4 L-3.2 -4.5Z" />
+            <path id="sl-star1" transform="translate(1213 264)"
+                d="M0 -13 L3.2 -4.5 L12.4 -4 L5.2 1.7 L7.6 10.5 L0 5.5 L-7.6 10.5 L-5.2 1.7 L-12.4 -4 L-3.2 -4.5Z" />
+            <path id="sl-star2" transform="translate(1245 264)"
+                d="M0 -13 L3.2 -4.5 L12.4 -4 L5.2 1.7 L7.6 10.5 L0 5.5 L-7.6 10.5 L-5.2 1.7 L-12.4 -4 L-3.2 -4.5Z" />
+            <path id="sl-star3" transform="translate(1277 264)"
+                d="M0 -13 L3.2 -4.5 L12.4 -4 L5.2 1.7 L7.6 10.5 L0 5.5 L-7.6 10.5 L-5.2 1.7 L-12.4 -4 L-3.2 -4.5Z" />
+            <path id="sl-star4" transform="translate(1309 264)"
+                d="M0 -13 L3.2 -4.5 L12.4 -4 L5.2 1.7 L7.6 10.5 L0 5.5 L-7.6 10.5 L-5.2 1.7 L-12.4 -4 L-3.2 -4.5Z" />
+        </g>
+    </g>
+
+    <!-- the classroom door, and the plaque over it -->
+    <g id="sl-door">
+        <rect x="1390" y="138" width="150" height="42" rx="4" fill="url(#slBrass)" stroke="#7a5a1a"
+            stroke-width="2" />
+        <text x="1465" y="154" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="10"
+            font-weight="700" fill="#4e2a12">BUILT IN</text>
+        <text x="1465" y="174" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="17"
+            font-weight="700" fill="#4e2a12" letter-spacing="1" translate="no">MDCCCXCIV</text>
+        <rect x="1380" y="190" width="170" height="470" rx="4" fill="#4e2a12" />
+        <rect x="1392" y="202" width="146" height="458" rx="3" fill="#8a5028" stroke="#5a3a1a"
+            stroke-width="4" />
+        <rect x="1412" y="222" width="106" height="110" rx="3" fill="#cfe7fb" stroke="#5a3a1a"
+            stroke-width="5" />
+        <!-- Miss, watching the class through the little window -->
+        <g clip-path="url(#slDoorWin)">
+            <g id="sl-teacher">
+                <path d="M1427 334 q4 -22 38 -24 q34 2 38 24z" fill="#c4302b" />
+                <path d="M1455 312 l10 8 l10 -8" fill="#fffaf0" />
+                <circle cx="1465" cy="246" r="11" fill="#6b4423" />
+                <ellipse cx="1465" cy="282" rx="22" ry="25" fill="#f3c9a4" />
+                <path d="M1442 280 q-2 -28 23 -29 q25 1 23 29 q-6 -15 -23 -17 q-17 2 -23 17z" fill="#6b4423" />
+                <g fill="none" stroke="#2b2118" stroke-width="2"><circle cx="1456" cy="283" r="6" /><circle cx="1474" cy="283" r="6" /><path d="M1462 283 h6" /></g>
+                <circle cx="1456" cy="283" r="2.2" fill="#1a120c" /><circle cx="1474" cy="283" r="2.2" fill="#1a120c" />
+                <path d="M1458 297 q7 4 14 0" stroke="#9a3a2a" stroke-width="2.4" fill="none" stroke-linecap="round" />
+            </g>
+        </g>
+        <rect x="1412" y="360" width="106" height="120" rx="3" fill="none" stroke="#5a3a1a"
+            stroke-width="3" />
+        <rect x="1412" y="510" width="106" height="120" rx="3" fill="none" stroke="#5a3a1a"
+            stroke-width="3" />
+        <circle cx="1406" cy="440" r="10" fill="url(#slBrass)" />
+    </g>
+
+    <!-- the nature table and the globe -->
+    <g id="sl-nature">
+        <rect x="20" y="600" width="360" height="14" rx="3" fill="#a5602f" />
+        <rect x="28" y="614" width="344" height="22" fill="#8a4b22" />
+        <text x="130" y="630" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="12"
+            font-weight="700" fill="#fff3d0">NATURE TABLE</text>
+        <g fill="#8a4b22">
+            <rect x="36" y="636" width="12" height="90" />
+            <rect x="352" y="636" width="12" height="90" />
+        </g>
+        <g>
+            <g fill="#dfeee9" opacity=".7" stroke="#f3faf7" stroke-width="2">
+                <rect x="40" y="560" width="34" height="40" rx="5" />
+                <rect x="82" y="560" width="34" height="40" rx="5" />
+                <rect x="124" y="560" width="34" height="40" rx="5" />
+                <rect x="166" y="560" width="34" height="40" rx="5" />
+                <rect x="208" y="560" width="34" height="40" rx="5" />
+            </g>
+            <g fill="#c9952a">
+                <rect x="38" y="554" width="38" height="7" rx="2" />
+                <rect x="80" y="554" width="38" height="7" rx="2" />
+                <rect x="122" y="554" width="38" height="7" rx="2" />
+                <rect x="164" y="554" width="38" height="7" rx="2" />
+                <rect x="206" y="554" width="38" height="7" rx="2" />
+            </g>
+            <g>
+                <circle cx="57" cy="588" r="3" fill="#2b2118" />
+                <circle cx="99" cy="588" r="4" fill="#3a3a3a" />
+                <circle cx="141" cy="588" r="3.5" fill="#d22d2d" />
+                <ellipse cx="183" cy="590" rx="5" ry="3" fill="#7a7f86" />
+                <circle cx="225" cy="588" r="4" fill="#f2c94c" />
+            </g>
+        </g>
+    </g>
+    <g id="sl-globe">
+        <ellipse cx="312" cy="598" rx="32" ry="6" fill="#5a3a1e" />
+        <rect x="308" y="560" width="8" height="38" fill="#5a3a1e" />
+        <g transform="rotate(23 312 514)">
+            <circle cx="312" cy="514" r="42" fill="#3a7ac0" />
+            <path
+                d="M290 486 q14-8 22 4 q-4 14-18 12 q-10-6-4-16z M318 508 q16-4 22 10 q-6 20-20 22 q-8-16-2-32z M284 524 q8 2 10 14 q-8 6-14-4z"
+                fill="#5aa04a" />
+            <path d="M270 514 h84" stroke="#f3d27a" stroke-width="1.5" stroke-dasharray="4 3" />
+            <path d="M312 462 v104" stroke="#5a3a1e" stroke-width="3" />
+            <path d="M268 514 a44 44 0 0 1 88 0" fill="none" stroke="#c9952a" stroke-width="3" />
+        </g>
+    </g>
+
+    <!-- the teacher's desk, on its platform: the class register, an apple, the hand bell, and a
+    locked drawer -->
+    <g id="sl-tdesk">
+        <rect x="980" y="636" width="380" height="32" fill="#7a4520" />
+        <rect x="1012" y="486" width="316" height="152" fill="#7a4520" stroke="#4e2a12"
+            stroke-width="4" />
+        <rect x="1110" y="500" width="120" height="40" rx="3" fill="#8a5028" stroke="#4e2a12"
+            stroke-width="3" />
+        <circle cx="1170" cy="520" r="4" fill="#f2c94c" />
+        <g id="sl-lock">
+            <path d="M1164 552 v-6 a6 6 0 0 1 12 0 v6" fill="none" stroke="#9aa0a6" stroke-width="3" />
+            <rect x="1160" y="550" width="20" height="16" rx="3" fill="url(#slBrass)" />
+        </g>
+        <rect x="1000" y="470" width="340" height="18" rx="3" fill="#8a5028" />
+        <g id="sl-register">
+            <rect x="1030" y="452" width="80" height="20" rx="2" fill="#b5342a" />
+            <rect x="1030" y="466" width="80" height="4" fill="#fffaf0" />
+            <rect x="1056" y="456" width="28" height="8" fill="#f3d27a" />
+        </g>
+        <g>
+            <circle cx="1160" cy="460" r="11" fill="#d22d2d" />
+            <path d="M1160 449 q2-6 8-6" stroke="#5a3a1a" stroke-width="2" fill="none" />
+            <path d="M1162 446 q8-4 10 2 q-6 2-10-2z" fill="#3f8a4a" />
+        </g>
+        <g fill="#f3efe3" stroke="#c9b48a">
+            <rect x="1200" y="462" width="54" height="8" />
+            <rect x="1203" y="454" width="50" height="8" />
+        </g>
+        <g id="sl-bell">
+            <rect x="1286" y="420" width="8" height="28" rx="3" fill="#6b4423" />
+            <path d="M1272 470 q2-24 18-24 q16 0 18 24z" fill="url(#slBrass)" stroke="#7a5a1a"
+                stroke-width="1.5" />
+            <circle cx="1290" cy="471" r="3" fill="#7a5a1a" />
+        </g>
+    </g>
+
+    <!-- Tommy and Annika, from behind -->
+    <g id="sl-ta">
+        <rect x="502" y="660" width="16" height="24" rx="4" fill="#f3c9a4" />
+        <path d="M466 760 q0-76 44-86 q44 10 44 86z" fill="#2f5f9a" />
+        <circle cx="481" cy="646" r="6" fill="#f3c9a4" />
+        <circle cx="539" cy="646" r="6" fill="#f3c9a4" />
+        <circle cx="510" cy="640" r="30" fill="#7a4a22" />
+        <path d="M590 760 q0-66 40-76 q40 10 40 76z" fill="#f2a7b8" />
+        <path d="M603 646 q-4 34 6 46 h42 q10-12 6-46z" fill="#e9c46a" />
+        <circle cx="630" cy="646" r="27" fill="#e9c46a" />
+        <path d="M630 620 l-16 -10 v20z M630 620 l16 -10 v20z" fill="#c4302b" />
+        <circle cx="630" cy="620" r="4" fill="#9a2420" />
+    </g>
+
+    <!-- Pippi, from behind like the others, facing the blackboard: red plaits sticking straight out -->
+    <g id="sl-pippi">
+        <!-- her neck (short: only a little shows above the collar) and ears -->
+        <rect x="862" y="656" width="16" height="16" rx="4" fill="#f3c9a4" />
+        <path d="M820 760 q0-76 50-88 q50 12 50 88z" fill="#3f8a4a" />
+        <path d="M840 700 l30 18 l30 -18" fill="none" stroke="#f2c94c" stroke-width="5" />
+        <ellipse cx="841" cy="640" rx="5" ry="7" fill="#f3c9a4" />
+        <ellipse cx="899" cy="640" rx="5" ry="7" fill="#f3c9a4" />
+        <!-- the plaits grow out of her head, a bit thicker at the root, tied with blue ribbons -->
+        <g class="plait">
+            <path d="M852 630 q-28 -2 -56 -8" stroke="#e8571f" stroke-width="11" stroke-linecap="round" fill="none" />
+            <path d="M812 619 l5 10 M822 621 l5 10 M832 623 l5 10" stroke="#c4441a" stroke-width="2" />
+            <path d="M798 614 v16" stroke="#1f4d8c" stroke-width="5" stroke-linecap="round" />
+        </g>
+        <g class="plait b">
+            <path d="M888 630 q28 -2 56 -8" stroke="#e8571f" stroke-width="11" stroke-linecap="round" fill="none" />
+            <path d="M908 623 l-5 10 M918 621 l-5 10 M928 619 l-5 10" stroke="#c4441a" stroke-width="2" />
+            <path d="M942 614 v16" stroke="#1f4d8c" stroke-width="5" stroke-linecap="round" />
+        </g>
+        <!-- the back of her head: red hair, parted down the middle -->
+        <circle cx="870" cy="634" r="29" fill="#e8571f" />
+        <path d="M870 606 v40" stroke="#c4441a" stroke-width="2.5" stroke-linecap="round" />
+        <path d="M858 612 q-10 10 -12 24 M882 612 q10 10 12 24" stroke="#f07a3c" stroke-width="2" fill="none" stroke-linecap="round" />
+    </g>
+
+    <!-- the pupils' desks -->
+    <g id="sl-desks">
+        <rect x="420" y="736" width="300" height="16" rx="3" fill="#8a5028" />
+        <rect x="430" y="752" width="280" height="90" fill="#6b3a1a" />
+        <g fill="#4e2a12">
+            <rect x="440" y="842" width="12" height="40" />
+            <rect x="688" y="842" width="12" height="40" />
+        </g>
+        <rect x="760" y="736" width="340" height="16" rx="3" fill="#8a5028" />
+        <rect x="770" y="752" width="320" height="90" fill="#6b3a1a" />
+        <g fill="#4e2a12">
+            <rect x="780" y="842" width="12" height="40" />
+            <rect x="1068" y="842" width="12" height="40" />
+        </g>
+        <g fill="#1a120c">
+            <circle cx="560" cy="744" r="4" />
+            <circle cx="930" cy="744" r="4" />
+        </g>
+    </g>
+
+    <!-- Pippi's cake, for the end-of-term party -->
+    <g id="sl-cake">
+        <ellipse cx="995" cy="736" rx="46" ry="8" fill="#f3efe3" />
+        <rect x="958" y="700" width="74" height="34" rx="4" fill="#e3a54e" />
+        <rect x="958" y="714" width="74" height="5" fill="#f2a7b8" />
+        <ellipse cx="995" cy="700" rx="37" ry="8" fill="#fff6e6" />
+        <path
+            d="M962 702 q4 10 8 0 q4 10 8 0 q4 10 8 0 q4 10 8 0 q4 10 8 0 q4 10 8 0 q4 10 8 0 q4 10 8 0"
+            fill="#fff6e6" />
+        <circle cx="995" cy="692" r="5" fill="#d22d2d" />
+    </g>
+
+    <!-- the spunk, in its jam jar on Pippi's desk -->
+    <g id="sl-spunk">
+        <rect x="776" y="706" width="30" height="30" rx="5" fill="#cfe6e0" opacity=".55"
+            stroke="#e9f4f0" stroke-width="2" />
+        <rect x="774" y="700" width="34" height="7" rx="3" fill="#e8571f" />
+        <ellipse class="crawl" cx="791" cy="726" rx="6" ry="4.5" fill="#2f8a3a" />
+    </g>
+
+    <!-- Mr Nilsson, sitting on the end of Pippi's desk -->
+    <g id="sl-nilsson">
+        <path d="M1082 728 q22 -2 18 -24" stroke="#6b4423" stroke-width="4" fill="none"
+            stroke-linecap="round" />
+        <rect x="1056" y="704" width="26" height="24" rx="6" fill="#2f5f9a" />
+        <path d="M1060 728 v14 M1078 728 v14" stroke="#2f5f9a" stroke-width="6"
+            stroke-linecap="round" />
+        <circle cx="1068" cy="692" r="14" fill="#6b4423" />
+        <ellipse cx="1070" cy="696" rx="9" ry="7" fill="#e6c49a" />
+        <circle cx="1066" cy="694" r="1.8" fill="#1a120c" />
+        <circle cx="1074" cy="694" r="1.8" fill="#1a120c" />
+        <ellipse cx="1068" cy="680" rx="18" ry="4" fill="#e9d48a" />
+        <rect x="1060" y="670" width="16" height="10" rx="3" fill="#e9d48a" />
+    </g>
+
+    <rect width="1600" height="900" fill="url(#slVign)" pointer-events="none" />
+
+    <!-- hotspots -->
+    <g>
+        <rect class="hit" fill="transparent" data-hs="window3" data-label="Window" x="40" y="110"
+            width="260" height="320" />
+        <rect class="hit" fill="transparent" data-hs="board" data-label="Blackboard" x="330" y="110"
+            width="540" height="322" />
+        <rect class="hit" fill="transparent" data-hs="tables" data-label="Nines poster" x="892"
+            y="136" width="116" height="168" />
+        <rect class="hit" fill="transparent" data-hs="romans" data-label="Roman numerals chart"
+            x="1022" y="136" width="116" height="168" />
+        <rect class="hit" fill="transparent" data-hs="clock3" data-label="School clock" x="1190"
+            y="68" width="100" height="100" />
+        <rect class="hit" fill="transparent" data-hs="stars" data-label="Gold-star chart" x="1156"
+            y="196" width="178" height="108" />
+        <rect class="hit" fill="transparent" data-hs="plaque" data-label="Brass plaque" x="1386"
+            y="134" width="158" height="50" />
+        <rect class="hit" fill="transparent" data-hs="door3" data-label="Classroom door" x="1380"
+            y="190" width="170" height="470" />
+        <rect class="hit" fill="transparent" data-hs="teacher3" data-label="Miss, at the window in the door" x="1412"
+            y="222" width="106" height="110" />
+        <rect class="hit" fill="transparent" data-hs="tdesk" data-label="Miss's desk" x="1008"
+            y="488" width="324" height="150" />
+        <rect class="hit" fill="transparent" data-hs="register" data-label="Class register" x="1024"
+            y="444" width="92" height="34" />
+        <rect class="hit" fill="transparent" data-hs="bell3" data-label="Hand bell" x="1262" y="412"
+            width="56" height="64" />
+        <rect class="hit" fill="transparent" data-hs="nature" data-label="Nature table" x="20"
+            y="546" width="236" height="90" />
+        <rect class="hit" fill="transparent" data-hs="globe" data-label="Globe" x="262" y="466"
+            width="104" height="140" />
+        <rect class="hit" fill="transparent" data-hs="ta3" data-label="Tommy and Annika" x="440"
+            y="606" width="260" height="130" />
+        <rect class="hit" fill="transparent" data-hs="pippi3" data-label="Pippi" x="796" y="600"
+            width="150" height="132" />
+        <rect class="hit" fill="transparent" data-hs="cake" data-label="Pippi's cake" x="948"
+            y="682" width="94" height="62" />
+        <rect class="hit" fill="transparent" data-hs="nilsson3" data-label="Mr Nilsson" x="1046"
+            y="664" width="64" height="82" />
+        <rect class="hit" fill="transparent" data-hs="spunk3" data-label="Jam jar" x="770" y="696"
+            width="44" height="46" id="hit-spunk3" />
+    </g>
+</svg>

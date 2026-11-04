@@ -1,0 +1,343 @@
+# Dutch translation: Chapter 3, Pippi goes to school (js/chapter3.js, and its item uses in js/items.js).
+# Pippi's word for multiplying: pluttification / plutimiceren / pluttifikation. The teacher is "de juf".
+
+= Chalk
+> Krijtje
+= A stick of white chalk from Miss's drawer. For the blackboard, not for Mr Nilsson.
+> Een wit krijtje uit de la van de juf. Voor het schoolbord, niet voor meneer Nilsson.
+= Magnifying glass
+> Vergrootglas
+= Makes small things big. Select it, then click something tiny.
+> Maakt kleine dingen groot. Kies het en klik dan op iets heel kleins.
+= That's five gold stars! Every task on the blackboard is done. Now the holidays can start, as soon as the bell rings.
+> Dat zijn vijf gouden sterren! Alle opdrachten op het bord zijn klaar. Nu kan de vakantie beginnen, zodra de bel gaat.
+= Gold star number 4! Just one more to go.
+> Gouden ster nummer 4! Nog maar één te gaan.
+= Gold star number {n}! Only {left} to go.
+> Gouden ster nummer {n}! Nog maar {left} te gaan.
+= The spunk, in its jam jar on Pippi's desk. Pippi has brought it to school. "It wants to learn things," she says.
+> De spunk, in zijn jampotje op Pippi's tafeltje. Pippi heeft hem meegenomen naar school. "Hij wil dingen leren," zegt ze.
+= You take it. A spunk knows things, even at school. Especially at school.
+> Je neemt hem mee. Een spunk weet dingen, ook op school. Vooral op school.
+= The horse is lying in the sun in the schoolyard, full of geraniums. It's on holiday too.
+> Het paard ligt in de zon op het schoolplein, vol geraniums. Het heeft ook vakantie.
+= Out in the schoolyard, Pippi's horse is eating Miss's flowerbed, one geranium at a time.
+> Buiten op het schoolplein eet Pippi's paard het bloemperkje van de juf op, één geranium tegelijk.
+= Miss chased it round and round for a while. The horse thought it was a game, and won. Now she's watching you all through the little window in the door instead.
+> De juf heeft er een tijdje rondjes achteraan gerend. Het paard dacht dat het een spelletje was, en won. Nu kijkt ze maar door het raampje in de deur naar jullie.
+= The school clock has Roman numerals: XII at the top, then III, VI and IX. The little hand is just before the XII and the big hand points at VIII: twenty to twelve.
+> De schoolklok heeft Romeinse cijfers: XII bovenaan, dan III, VI en IX. De kleine wijzer staat net voor de XII en de grote wijst naar VIII: twintig voor twaalf.
+= At twelve, Miss rings the bell and the summer holidays begin.
+> Om twaalf uur luidt de juf de bel, en dan begint de zomervakantie.
+= Pippi's gold-star chart: {n} of 5 stars.
+> Pippi's sterrenkaart: {n} van de 5 sterren.
+= All five! Now for the bell.
+> Alle vijf! Nu de bel nog.
+= Annika sticks on a star for every task on the blackboard that's done.
+> Annika plakt een ster op voor elke opdracht op het bord die klaar is.
+= A brass plaque over the door: BUILT IN MDCCCXCIV.
+> Een koperen bordje boven de deur: GEBOUWD IN MDCCCXCIV.
+= Roman numerals. Grown-ups like them for things that are meant to look important. The chart next to the clock says what each letter is worth.
+> Romeinse cijfers. Grote mensen gebruiken die graag voor dingen die belangrijk moeten lijken. Op de kaart naast de klok staat wat elke letter waard is.
+= The classroom door. Out there: weeks and weeks of summer holidays.
+> De deur van de klas. Daarbuiten: weken en weken zomervakantie.
+= The classroom door. Miss is right outside, peering in through its little window.
+> De deur van de klas. De juf staat er vlak achter en gluurt door het raampje naar binnen.
+= You could go out too. But Pippi wants her holidays properly: with gold stars, and the bell.
+> Jij zou ook naar buiten kunnen. Maar Pippi wil haar vakantie echt verdienen: met gouden sterren, en de bel.
+= Miss's hand bell. It's still humming, from all the excitement.
+> De handbel van de juf. Hij zoemt nog na van alle opwinding.
+= Miss's hand bell. At twelve o'clock she rings it, and the holidays begin.
+> De handbel van de juf. Om twaalf uur luidt ze hem, en dan begint de vakantie.
+= Pippi has {n} of 5 gold stars. Miss said: no holidays until every task on the blackboard is done.
+> Pippi heeft {n} van de 5 gouden sterren. De juf zei: geen vakantie tot elke opdracht op het bord klaar is.
+= Pippi's cake. A third of it is on a plate on Miss's desk, with a paper flag stuck in it: FOR MISS. THE BIGGEST PIECE.
+> Pippi's taart. Een derde ligt op een bordje op het bureau van de juf, met een papieren vlaggetje erin: VOOR DE JUF. HET GROOTSTE STUK.
+= No school for ten whole weeks!
+> Tien hele weken geen school!
+= I'll miss it. A bit. Maybe.
+> Ik ga het missen. Een beetje. Misschien.
+= Five stars! Miss said the holidays start when the bell rings. It's on her desk.
+> Vijf sterren! De juf zei dat de vakantie begint als de bel gaat. Hij staat op haar bureau.
+= Go on, ring it!
+> Toe maar, luid hem!
+= Miss said Pippi only gets holidays if all five tasks on the blackboard are done.
+> De juf zei dat Pippi alleen vakantie krijgt als alle vijf opdrachten op het bord klaar zijn.
+= I'm in charge of the gold stars while she's out. I'm not allowed to do the tasks for Pippi. But you can help her!
+> Ik ben de baas over de gouden sterren zolang zij weg is. Ik mag de opdrachten niet voor Pippi doen. Maar jij mag haar helpen!
+= Miss keeps the chalk in her desk drawer. She can never remember the code, so she wrote herself a note.
+> De juf bewaart het krijt in de la van haar bureau. Ze kan de code nooit onthouden, dus ze heeft een briefje voor zichzelf geschreven.
+= Holidays! I'm going to spend them thing-searching. And eating cake. And thing-searching for cake.
+> Vakantie! Ik ga dingen zoeken. En taart eten. En dingen zoeken naar taart.
+= School is wonderful! I've already learnt that there are holidays. I've never done a task before, so I'm sure I can.
+> School is heerlijk! Ik heb al geleerd dat er vakanties bestaan. Ik heb nog nooit een opdracht gedaan, dus ik denk dat ik het wel kan.
+= Gold stars! I'm going to have them made into earrings.
+> Gouden sterren! Daar laat ik oorbellen van maken.
+= Five stars! Ring the bell, ring the bell!
+> Vijf sterren! Luid de bel, luid de bel!
+= Mr Nilsson is licking cream off his hat. Nobody saw anything.
+> Meneer Nilsson likt de slagroom van zijn hoedje. Niemand heeft iets gezien.
+= Eek! Eek!
+> Iek! Iek!
+= Mr Nilsson came to school in Pippi's pocket. He's sitting on the end of her desk, staring at the cake.
+> Meneer Nilsson is in Pippi's zak mee naar school gekomen. Hij zit op het puntje van haar tafeltje en staart naar de taart.
+= Miss's drawer, open. Red pens, a ruler, and a bag of peppermints labelled FOR EMERGENCIES. You already took the chalk and the magnifying glass.
+> De la van de juf, open. Rode pennen, een liniaal en een zakje pepermuntjes met het etiket VOOR NOODGEVALLEN. Het krijtje en het vergrootglas heb je al.
+= Miss's desk
+> Het bureau van de juf
+= The drawer has a padlock with four number wheels
+> Op de la zit een hangslot met vier cijferwieltjes
+= So I don't forget: the code is the year our school was built. It's on the plaque over the door. Nobody can read that, so it's perfectly safe. — Miss
+> Zodat ik het niet vergeet: de code is het jaar waarin onze school gebouwd is. Het staat op het bordje boven de deur. Niemand kan dat lezen, dus het is volkomen veilig. — Juf
+= Click! 1894. The drawer slides open: chalk, red pens, and a magnifying glass.
+> Klik! 1894. De la schuift open: krijt, rode pennen en een vergrootglas.
+= M is 1000, D is 500, CCC is 300, XC is 90 and IV is 4: 1894. Roman numerals add up, except when a small one stands in front of a bigger one: then you take it away.
+> M is 1000, D is 500, CCC is 300, XC is 90 en IV is 4: 1894. Romeinse cijfers tel je op, behalve als er een kleine vóór een grotere staat: die haal je eraf.
+= You take the chalk and the magnifying glass. Now for the tasks on the blackboard.
+> Je pakt het krijtje en het vergrootglas. Nu de opdrachten op het bord.
+= Close! But XC isn't 10 + 100. When a smaller numeral stands in front of a bigger one, you take it away: XC is 100 − 10 = 90.
+> Bijna! Maar XC is niet 10 + 100. Als een kleiner cijfer vóór een groter staat, haal je het eraf: XC is 100 − 10 = 90.
+= Nearly! But IV isn't 1 + 5. The I comes first, so take it away: IV is 5 − 1 = 4. (Look at the IX on the clock: that's 9.)
+> Bijna! Maar IV is niet 1 + 5. De I staat vooraan, dus die haal je eraf: IV is 5 − 1 = 4. (Kijk naar de IX op de klok: dat is 9.)
+= Zero, zero, zero, zero. The Romans had no zero at all, so that can't be it.
+> Nul, nul, nul, nul. De Romeinen hadden helemaal geen nul, dus dat kan het niet zijn.
+= The padlock doesn't budge. Read the plaque over the door one numeral at a time, with the chart next to the clock.
+> Het hangslot geeft niet mee. Lees het bordje boven de deur cijfer voor cijfer, met de kaart naast de klok erbij.
+= Roman numerals
+> Romeinse cijfers
+= A chart on the classroom wall
+> Een kaart aan de muur van de klas
+= <b>Add them up</b>, biggest first: VI = 5 + 1 = 6, XX = 10 + 10 = 20, CCC = 300.
+> <b>Tel ze op</b>, de grootste eerst: VI = 5 + 1 = 6, XX = 10 + 10 = 20, CCC = 300.
+= <b>But</b> a small numeral IN FRONT of a bigger one is taken away: IV = 5 − 1 = 4, IX = 10 − 1 = 9, XC = 100 − 10 = 90.
+> <b>Maar</b> een klein cijfer VÓÓR een groter haal je eraf: IV = 5 − 1 = 4, IX = 10 − 1 = 9, XC = 100 − 10 = 90.
+= The blackboard
+> Het schoolbord
+= Today's tasks, and Pippi's pluttification
+> De opdrachten van vandaag, en Pippi's plutimiceren
+= To do:
+> Te doen:
+= Nines
+> Negens
+= ABC
+> ABC
+= Insects
+> Insecten
+= Cake
+> Taart
+= Globe
+> Wereldbol
+= PLUTTIFICATION
+> PLUTIMICEREN
+= Done marking
+> Klaar met aankruisen
+= Every answer is right now. Annika has given Pippi a gold star for it.
+> Alle antwoorden kloppen nu. Annika heeft Pippi er een gouden ster voor gegeven.
+= Task 1: find Pippi's wrong answers. Click a line to mark it with the chalk, or click it again to rub the mark out.
+> Opdracht 1: zoek Pippi's foute antwoorden. Klik op een regel om hem met krijt aan te kruisen, of klik nog een keer om het kruisje uit te vegen.
+= Task 1: find Pippi's wrong answers and mark them. But the chalk box on the ledge is empty.
+> Opdracht 1: zoek Pippi's foute antwoorden en kruis ze aan. Maar het krijtdoosje op de richel is leeg.
+= You need chalk to mark anything. Miss keeps the chalk in her desk.
+> Je hebt krijt nodig om iets aan te kruisen. De juf bewaart het krijt in haar bureau.
+= 9 × {n} = {v} is right: {t} tens and {u} units. The tens are one less than {n}, and {t} + {u} = 9. Rub that mark out.
+> 9 × {n} = {v} is goed: {t} tientallen en {u} eenheden. De tientallen zijn één minder dan {n}, en {t} + {u} = 9. Veeg dat kruisje uit.
+= There is still one wrong answer without a mark. Check each line: the tens are one less than the number you multiply by, and the two digits add up to 9.
+> Er staat nog één fout antwoord zonder kruisje. Controleer elke regel: de tientallen zijn één minder dan het getal waarmee je vermenigvuldigt, en de twee cijfers zijn samen 9.
+= There are still {k} wrong answers without a mark. Check each line: the tens are one less than the number you multiply by, and the two digits add up to 9.
+> Er staan nog {k} foute antwoorden zonder kruisje. Controleer elke regel: de tientallen zijn één minder dan het getal waarmee je vermenigvuldigt, en de twee cijfers zijn samen 9.
+= Marked and corrected: 9 × 5 = 45, 9 × 8 = 72 and 9 × 10 = 90. You've used up the chalk.
+> Aangekruist en verbeterd: 9 × 5 = 45, 9 × 8 = 72 en 9 × 10 = 90. Het krijtje is op.
+= In the nines, the tens go up by one and the units go down by one, and the two digits always add up to 9.
+> In de tafel van negen gaan de tientallen steeds één omhoog en de eenheden één omlaag, en de twee cijfers zijn samen altijd 9.
+= Pluttification is easy once you know the trick. I'll do the nines on my toes next.
+> Plutimiceren is makkelijk als je het trucje kent. Straks doe ik de negens op mijn tenen.
+= The nines poster
+> De negens-poster
+= Pinned up next to the blackboard
+> Opgehangen naast het schoolbord
+= <b>The nines on your fingers.</b> Hold up all ten fingers. For 9 × 4, fold down your 4th finger. The fingers on its left are the tens (3), the fingers on its right are the units (6): 9 × 4 = 36.
+> <b>De negens op je vingers.</b> Steek al je tien vingers op. Voor 9 × 4 vouw je je 4e vinger naar beneden. De vingers links ervan zijn de tientallen (3), de vingers rechts ervan de eenheden (6): 9 × 4 = 36.
+= And look: in the nines, the two digits always add up to 9. 3 + 6 = 9.
+> En kijk: in de tafel van negen zijn de twee cijfers samen altijd 9. 3 + 6 = 9.
+= The class register, in perfect ABC order again. Miss will be pleased. Pippi has drawn a small horse next to her own name.
+> De klassenlijst, weer netjes op alfabet. De juf zal blij zijn. Pippi heeft een paardje naast haar eigen naam getekend.
+= The class register
+> De klassenlijst
+= Pippi has "tidied" it
+> Pippi heeft hem "opgeruimd"
+= Task 2: Pippi has put the names in order of how much she likes them. Miss keeps them in ABC order. Click the names in ABC order.
+> Opdracht 2: Pippi heeft de namen gezet in de volgorde van hoe aardig ze ze vindt. De juf houdt ze op alfabet. Klik de namen aan in alfabetische volgorde.
+= Not yet. {b} starts with {y}, but another name starts with a letter that comes earlier in the alphabet.
+> Nog niet. {b} begint met een {y}, maar er is een naam die begint met een letter die eerder in het alfabet komt.
+= Not yet. {a} and {b} both start with {pre}, so look at the next letter: {x} comes before {y}.
+> Nog niet. {a} en {b} beginnen allebei met {pre}, dus kijk naar de volgende letter: de {x} komt vóór de {y}.
+= {name}: yes.
+> {name}: ja.
+= A, A, B, O, P, P, T, T: the register is in ABC order again.
+> A, A, B, O, P, P, T, T: de klassenlijst staat weer op alfabet.
+= When two names start with the same letter, you look at the next letter: An before Ax, Pe before Pi, Tom before Tor.
+> Als twee namen met dezelfde letter beginnen, kijk je naar de volgende letter: An vóór Ax, Pe vóór Pi, Tom vóór Tor.
+= I'd still have put me first. P is a very good letter.
+> Ik had mezelf toch bovenaan gezet. De P is een heel goede letter.
+= Ant
+> Mier
+= Spider
+> Spin
+= Ladybird
+> Lieveheersbeestje
+= Woodlouse
+> Pissebed
+= Bumblebee
+> Hommel
+= The nature table. The ant, the ladybird and the bumblebee have a card each now: INSECT. The spider and the woodlouse are sulking.
+> De natuurtafel. De mier, het lieveheersbeestje en de hommel hebben nu elk een kaartje: INSECT. De spin en de pissebed zitten te mokken.
+= The nature table: five jam jars, each with something tiny inside. A card says: WHICH ONES ARE INSECTS?
+> De natuurtafel: vijf jampotjes, met in elk iets heel kleins. Op een kaartje staat: WELKE ZIJN INSECTEN?
+= They're far too small to see properly. You'd need something to make them bigger.
+> Ze zijn veel te klein om goed te zien. Je hebt iets nodig om ze groter te maken.
+= The nature table
+> De natuurtafel
+= Seen through the magnifying glass
+> Door het vergrootglas bekeken
+= Miss says: an INSECT has <b>six legs</b>, and a body in <b>three parts</b>: head, middle and back end.
+> De juf zegt: een INSECT heeft <b>zes poten</b>, en een lijf in <b>drie delen</b>: kop, borststuk en achterlijf.
+= These are the insects
+> Dit zijn de insecten
+= Task 3: click every creature that is an insect. Pippi's label says: ALL OF THEM. AND MR NILSSON.
+> Opdracht 3: klik elk beestje aan dat een insect is. Op Pippi's etiket staat: ALLEMAAL. EN MENEER NILSSON.
+= Count the spider's legs: eight! And its body has only two parts. Spiders aren't insects: they're arachnids.
+> Tel de poten van de spin: acht! En zijn lijf heeft maar twee delen. Spinnen zijn geen insecten: het zijn spinachtigen.
+= Count the woodlouse's legs: fourteen! It isn't an insect at all. It's a crustacean, more like a tiny crab than a beetle.
+> Tel de poten van de pissebed: veertien! Het is helemaal geen insect. Het is een kreeftachtige, meer een piepklein krabbetje dan een kever.
+= One insect is still not ticked. Count the legs again: six legs means insect.
+> Er is nog één insect niet aangevinkt. Tel de poten nog eens: zes poten betekent insect.
+= There are more insects than that. Count the legs: six legs means insect.
+> Er zijn meer insecten. Tel de poten: zes poten betekent insect.
+= The ant, the ladybird and the bumblebee: six legs and three body parts each. Insects!
+> De mier, het lieveheersbeestje en de hommel: elk zes poten en drie lichaamsdelen. Insecten!
+= Six legs and three body parts: an insect. The spider has eight legs, the woodlouse fourteen, and Mr Nilsson has no business being on the list at all.
+> Zes poten en drie lichaamsdelen: een insect. De spin heeft acht poten, de pissebed veertien, en meneer Nilsson hoort helemaal niet op de lijst.
+= And the spunk? You count its legs: six. The spunk is an insect too!
+> En de spunk? Je telt zijn poten: zes. De spunk is ook een insect!
+= Pippi has baked four cakes, all exactly the same size, and cut them up: one into 8 pieces, one into 3, one into 6 and one into 4. Miss gets the biggest piece. Which piece is it?
+> Pippi heeft vier taarten gebakken, allemaal precies even groot, en ze in stukken gesneden: een in 8 stukken, een in 3, een in 6 en een in 4. De juf krijgt het grootste stuk. Welk stuk is dat?
+= A piece of the cake cut into {n}
+> Een stuk van de taart in {n} stukken
+= Now Tommy asks for one quarter of a cake (1/4), and Annika asks for two eighths (2/8). Who gets more cake?
+> Nu wil Tommy een kwart van een taart (1/4), en Annika wil twee achtsten (2/8). Wie krijgt meer taart?
+= They get the same
+> Ze krijgen evenveel
+= {who} gets more
+> {who} krijgt meer
+= Pippi's cake
+> Pippi's taart
+= Task 4: fractions
+> Opdracht 4: breuken
+= Pippi says the eighth, because 8 is the most! But the more pieces you cut a cake into, the smaller each piece is.
+> Pippi zegt het achtste, want 8 is het meest! Maar hoe meer stukken je van een taart snijdt, hoe kleiner elk stuk.
+= A sixth is smaller than that: the cake is shared out into more pieces.
+> Een zesde is kleiner: die taart is in meer stukken verdeeld.
+= Four is more than three, so a quarter must be bigger? No! A cake cut into 4 has smaller pieces than one cut into 3.
+> Vier is meer dan drie, dus een kwart is groter? Nee! Een taart in 4 stukken heeft kleinere stukken dan een taart in 3.
+= A third! Cut into only 3 pieces, each piece is the biggest.
+> Een derde! In maar 3 stukken gesneden is elk stuk het grootst.
+= Two pieces sounds like more. But each eighth is only half as big as a quarter. Look at the pink parts.
+> Twee stukken klinkt als meer. Maar elk achtste is maar half zo groot als een kwart. Kijk naar de roze stukken.
+= Look at the pink parts: they are exactly the same size. Cut a quarter in half, and you get two eighths.
+> Kijk naar de roze stukken: ze zijn precies even groot. Snijd een kwart doormidden, en je hebt twee achtsten.
+= The same! 2/8 is exactly 1/4.
+> Evenveel! 2/8 is precies 1/4.
+= The more pieces you cut a cake into, the smaller each piece. A third is bigger than a quarter, and two eighths is exactly one quarter.
+> Hoe meer stukken je van een taart snijdt, hoe kleiner elk stuk. Een derde is groter dan een kwart, en twee achtsten is precies een kwart.
+= Then Miss gets a third. And I'll have the other two thirds. And the other three cakes. That's only fair.
+> Dan krijgt de juf een derde. En ik neem de andere twee derde. En de andere drie taarten. Dat is wel zo eerlijk.
+= The globe, leaning over as always. In June the North leans towards the Sun: summer in Sweden, winter on Pippi's father's island.
+> De wereldbol, scheef zoals altijd. In juni helt het noorden naar de zon: zomer in Zweden, winter op het eiland van Pippi's vader.
+= The globe
+> De wereldbol
+= Task 5: a postcard from the South Seas
+> Opdracht 5: een ansichtkaart uit de Zuidzee
+= "Dear Pippi, happy summer holidays! Here on my island it is winter now, so I am wearing my woolly hat. (Only the hat.) Love, Daddy"
+> "Lieve Pippi, fijne zomervakantie! Hier op mijn eiland is het nu winter, dus ik draag mijn wollen muts. (Alleen de muts.) Liefs, papa"
+= Sweden
+> Zweden
+= Pippi's father's island
+> het eiland van Pippi's vader
+= the Sun, in June
+> de zon, in juni
+= Why is it winter on the island when it is summer in Sweden?
+> Waarom is het winter op het eiland als het zomer is in Zweden?
+= The island is further away from the Sun.
+> Het eiland ligt verder van de zon.
+= The Earth leans over. In June the northern half leans towards the Sun, and the southern half leans away.
+> De aarde staat scheef. In juni helt de noordelijke helft naar de zon toe, en de zuidelijke helft ervan af.
+= Pippi's father packed all the summer into a sea chest and sent it to Sweden.
+> Pippi's vader heeft alle zomer in een scheepskist gestopt en naar Zweden gestuurd.
+= Lots of people think so! But Sweden and the island are almost exactly as far from the Sun. Look at the globe: which half leans towards the Sun?
+> Dat denken veel mensen! Maar Zweden en het eiland liggen bijna precies even ver van de zon. Kijk naar de wereldbol: welke helft helt naar de zon?
+= Pippi nods: "That's exactly what happened." It isn't. Look at the way the Earth leans.
+> Pippi knikt: "Zo is het precies gegaan." Niet waar. Kijk hoe de aarde scheef staat.
+= Yes! The Earth is tilted, and it stays tilted all the way round the Sun.
+> Ja! De aarde staat scheef, en blijft scheef staan, de hele weg rond de zon.
+= In June the North leans towards the Sun: long days, a high sun, summer in Sweden. The South leans away: short days and winter.
+> In juni helt het noorden naar de zon: lange dagen, de zon hoog aan de hemel, zomer in Zweden. Het zuiden helt ervan af: korte dagen en winter.
+= In December it's the other way round. Then Pippi's father can take his woolly hat off.
+> In december is het andersom. Dan kan Pippi's vader zijn wollen muts weer afzetten.
+= The little school, on the last morning before the summer holidays. Sunshine through the windows, and chalk dust in the air.
+> Het schooltje, op de laatste ochtend voor de zomervakantie. Zon door de ramen, en krijtstof in de lucht.
+= Good morning, class! And look who's here: Pippi has come to school, for the very first time.
+> Goedemorgen, klas! En kijk eens wie er is: Pippi komt naar school, voor de allereerste keer.
+= Good morning! I heard that children who go to school get holidays. It didn't seem fair that I don't, so I've come to get some.
+> Goedemorgen! Ik hoorde dat kinderen die naar school gaan vakantie krijgen. Ik vond het niet eerlijk dat ik dat niet krijg, dus ik kom ook wat vakantie halen.
+= Holidays are for children who have done their work, Pippi. There are five tasks on the blackboard. Do them all, and when I ring the bell at twelve, you'll get your holidays too.
+> Vakantie is voor kinderen die hun werk hebben gedaan, Pippi. Er staan vijf opdrachten op het bord. Doe ze allemaal, en als ik om twaalf uur de bel luid, krijg jij ook vakantie.
+= Five tasks! I've never done a task before, so I'm sure I can. And my friend here will help me.
+> Vijf opdrachten! Ik heb nog nooit een opdracht gedaan, dus ik denk dat ik het wel kan. En mijn vriend hier helpt me.
+= Outside, a loud munching noise. Pippi's horse is eating the flowerbed in the schoolyard.
+> Buiten klinkt luid gesmak. Pippi's paard eet het bloemperkje op het schoolplein op.
+= My geraniums! Annika, you're in charge of the gold stars. I'll keep an eye on you through the window in the door!
+> Mijn geraniums! Annika, jij bent de baas over de gouden sterren. Ik hou jullie in de gaten door het raampje in de deur!
+= Five tasks before twelve. But the chalk box is empty. Miss must keep the chalk somewhere.
+> Vijf opdrachten voor twaalf uur. Maar het krijtdoosje is leeg. De juf moet het krijt ergens bewaren.
+= Pippi grabs the hand bell and rings it. Very loudly. For a very long time. The windows rattle, and out in the schoolyard the horse stops chewing.
+> Pippi grijpt de handbel en luidt hem. Heel hard. Heel lang. De ramen rammelen, en buiten op het schoolplein houdt het paard op met kauwen.
+= Pippi! Who said you could ring the bell? It's only twenty to twelve!
+> Pippi! Wie zei dat jij de bel mocht luiden? Het is pas twintig voor twaalf!
+= But Miss, she's done all five tasks. Look: five gold stars. We only helped a little.
+> Maar juf, ze heeft alle vijf opdrachten gedaan. Kijk: vijf gouden sterren. We hebben maar een beetje geholpen.
+= Let me see. The nines, the register, the insects, the cake, the globe… Well I never. Every one of them is right.
+> Laat eens zien. De negens, de klassenlijst, de insecten, de taart, de wereldbol… Nou nog mooier. Ze zijn allemaal goed.
+= Twenty minutes early, but you've earned it. Happy holidays, everyone!
+> Twintig minuten te vroeg, maar je hebt het verdiend. Fijne vakantie, allemaal!
+= Hooray! And here's the biggest piece of cake for you, Miss: a third. Not a quarter. A quarter is smaller. I learnt that today.
+> Hoera! En hier is het grootste stuk taart voor u, juf: een derde. Geen kwart. Een kwart is kleiner. Dat heb ik vandaag geleerd.
+= School is lovely. I'll come back after the holidays. For the next holidays.
+> School is heerlijk. Na de vakantie kom ik terug. Voor de volgende vakantie.
+
+# ---------- js/items.js: Chapter 3 ----------
+= Eek?
+> Iek?
+= Mr Nilsson sniffs the chalk and takes a nibble. He pulls a face. Chalk is not a biscuit.
+> Meneer Nilsson snuffelt aan het krijtje en neemt een hapje. Hij trekt een vies gezicht. Krijt is geen koekje.
+= Chalk is for the blackboard.
+> Krijt is voor het schoolbord.
+= Pippi turns round, and you look at her nose through the magnifying glass. Freckles. Lots and lots of freckles.
+> Pippi draait zich om, en je bekijkt haar neus door het vergrootglas. Sproeten. Heel veel sproeten.
+= I've got exactly a thousand. That's M in Roman numerals. I counted them once, in the mirror, backwards.
+> Ik heb er precies duizend. Dat is M in Romeinse cijfers. Ik heb ze een keer geteld, in de spiegel, achterstevoren.
+= Through the glass, the spunk is enormous. It has six legs and a shiny green shell. It looks back at you, unimpressed.
+> Door het glas is de spunk enorm. Hij heeft zes poten en een glanzend groen schild. Hij kijkt je onverschillig aan.
+= You inspect Mr Nilsson for fleas. None. A very clean monkey. He inspects you back.
+> Je zoekt meneer Nilsson af naar vlooien. Niks. Een heel schoon aapje. Hij zoekt jou ook even af.
+= Bigger letters. Still Roman.
+> Grotere letters. Nog steeds Romeins.
+= Everything looks bigger. It doesn't look any cleverer.
+> Alles ziet er groter uit. Niet slimmer.
+
+# ---------- Miss at the window in the door ----------
+= No help through the window! Well… one little tip: the blackboard says what to do. Five tasks, five gold stars, then the bell.
+> Niet om hulp vragen door het raampje! Nou… één kleine tip: op het bord staat wat je moet doen. Vijf opdrachten, vijf gouden sterren, en dan de bel.
+= Five gold stars? Then what are you waiting for? The bell is on my desk!
+> Vijf gouden sterren? Waar wachten jullie dan nog op? De bel staat op mijn bureau!
+= Miss has come back in. She's handing out certificates and humming.
+> De juf is weer binnen. Ze deelt diploma's uit en neuriet.

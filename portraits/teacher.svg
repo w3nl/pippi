@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+    <title>Miss</title>
+    <rect width="120" height="120" rx="14" fill="#3f6a52" />
+    <path d="M16 120 q4-30 44-32 q40 2 44 32z" fill="#c4302b" />
+    <path d="M46 90 l14 10 l14-10" fill="#fffaf0" />
+    <rect x="52" y="76" width="16" height="16" fill="#f3c9a4" />
+    <circle cx="60" cy="18" r="13" fill="#6b4423" />
+    <ellipse cx="60" cy="56" rx="24" ry="27" fill="#f3c9a4" />
+    <path d="M35 54 q-2-30 25-31 q27 1 25 31 q-6-16-25-18 q-19 2-25 18z" fill="#6b4423" />
+    <g fill="none" stroke="#2b2118" stroke-width="2">
+        <circle cx="50" cy="57" r="7" />
+        <circle cx="70" cy="57" r="7" />
+        <path d="M57 57 h6" />
+    </g>
+    <circle cx="50" cy="57" r="2.6" fill="#1a120c" />
+    <circle cx="70" cy="57" r="2.6" fill="#1a120c" />
+    <path d="M52 72 q8 5 16 0" stroke="#9a3a2a" stroke-width="3" fill="none" stroke-linecap="round" />
+    <circle cx="60" cy="98" r="3" fill="#c9952a" />
+</svg>
