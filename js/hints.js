@@ -22,4 +22,23 @@ function stage1(){
   if(!S.f.chest) return 'flags';
   return 'horse';
 }
-function stage_(){ return stage1(); }
+Object.assign(HINTS, {
+  b_batt: ["It's dark. The torch on the bedside table is empty. Something else on the table runs on batteries.", "Click the alarm clock to take its batteries, then click the torch."],
+  b_torch: ["Put the batteries in the torch the right way round. Look at the + and − on each one.", "Both batteries must point the same way, with + towards the bulb on the right. Then switch on."],
+  b_shadow: ["The burglars are picking the lock of the veranda door! A shadow on its curtain could scare them, if it's big enough. Mr Nilsson can help.", "Use the torch on the veranda door. Slide Mr Nilsson close to the torch (40 cm or less) so his shadow is huge, then make him wave."],
+  b_star: ["You need help. Annika's spy card above the bed says their house is due north. Look out of the window and find the North Star.", "Follow the two stars at the end of the saucepan (the Big Dipper) upwards, about five times as far: the North Star is the lone star at the top. Not the bright one: that's a planet."],
+  b_sos: ["Tommy and Annika's window is right under the North Star. Signal them with your torch in Morse code. Annika's card has the code.", "Use the torch on the window. SOS is short short short, long long long, short short short."],
+  b_decode: ["Tommy is flashing back. Each group of flashes is one letter: look them up on Annika's spy card.", "The letters spell TICKLE."],
+  b_scale: ["The burglars will be back at midnight for the gold. What if the suitcase felt just as heavy, but held something else?", "Open Pippi's scale. Put stones on the right pan until they weigh exactly 9 kg, for example 6 + 3, then swap them for the gold."],
+  b_wake: ["Tommy said: TICKLE. But Pippi sleeps the other way round, and you need something soft and tickly.", "Take the feather from Pippi's hat, select it, and use it on her feet on the pillow."]
+});
+function stage2(){
+  if(!S.f.torchOn) return S.f.batteries ? 'b_torch' : 'b_batt';
+  if(!S.f.scared) return 'b_shadow';
+  if(!S.f.north) return 'b_star';
+  if(!S.f.sos) return 'b_sos';
+  if(!S.f.morse) return 'b_decode';
+  if(!S.f.swapped) return 'b_scale';
+  return 'b_wake';
+}
+function stage_(){ return S.ch===2 ? stage2() : stage1(); }

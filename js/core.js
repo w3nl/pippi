@@ -44,7 +44,7 @@ function beep(freq=660, dur=.08, type='triangle', vol=.06){
 const chord = (arr, gap=90) => arr.forEach((f,i)=>setTimeout(()=>beep(f,.14,'triangle',.06), i*gap));
 
 /* ---------- dialogue ---------- */
-const WHO = { you:'You', sys:'Villa Villekulla', pippi:'Pippi', nilsson:'Mr Nilsson', horse:'The horse', spunk:'The spunk', tommy:'Tommy', annika:'Annika' };
+const WHO = { you:'You', sys:'Villa Villekulla', pippi:'Pippi', nilsson:'Mr Nilsson', horse:'The horse', spunk:'The spunk', tommy:'Tommy', annika:'Annika', karlsson:'Thunder-Karlsson', bloom:'Bloom' };
 let queue = [], typing = null, full = '', onDone = null, curLine = null;
 function say(lines, done){
   queue = (Array.isArray(lines) ? lines : [lines]).map(l => typeof l === 'string' ? ['you', l] : l);
@@ -53,7 +53,7 @@ function say(lines, done){
 }
 /* Portraits next to the dialogue (portraits/*.svg). The narrator ('sys') has none. */
 function faceFor(who){
-  const file = { you:'you', pippi:'pippi', nilsson:'nilsson', horse:'horse', spunk:'spunk', tommy:'tommy', annika:'annika' }[who];
+  const file = { you:'you', pippi:'pippi', nilsson:'nilsson', horse:'horse', spunk:'spunk', tommy:'tommy', annika:'annika', karlsson:'karlsson', bloom:'bloom' }[who];
   return file ? `portraits/${file}.svg` : null;
 }
 function next(){
@@ -67,7 +67,7 @@ function next(){
   if(face){ box.classList.add('has-face'); fe.hidden = false;
     if(fe.getAttribute('src') !== face){ fe.src = face; fe.classList.remove('face-in'); void fe.offsetWidth; fe.classList.add('face-in'); } }
   else fe.hidden = true;
-  $('#d-who').textContent = WHO[who] || who;
+  $('#d-who').textContent = (who==='sys' && S.ch===2) ? 'Villa Villekulla · night' : (WHO[who] || who);
   $('#d-more').textContent = matchMedia('(hover: none)').matches ? (queue.length ? 'tap ▸' : 'tap ✕') : (queue.length ? 'click ▸' : 'click ✕');
   full = tx(text); let i = 0;
   const el = $('#d-txt'); el.textContent = '';
@@ -117,8 +117,9 @@ function take(id){ S.inv = S.inv.filter(x=>x!==id); if(sel===id) sel=null; rende
 /* ---------- scene visuals ---------- */
 function applyVisuals(){
   $('#sc-kitchen').classList.toggle('on', S.scene==='kitchen');
-  $('#chap').textContent = 'Chapter 1 · Locked In with Mr Nilsson';
-  applyKitchen();
+  $('#sc-bedroom').classList.toggle('on', S.scene==='bedroom');
+  $('#chap').textContent = S.ch===2 ? 'Chapter 2 · Burglars in the Night' : 'Chapter 1 · Locked In with Mr Nilsson';
+  applyKitchen(); applyBedroom(); exitLabels();
   $('#hint-count').textContent = S.hints;
 }
 function go(scene){

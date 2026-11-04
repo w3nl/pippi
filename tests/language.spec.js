@@ -71,6 +71,26 @@ test('Swedish: the third press of the button, with the original names', async ({
   await expect(page.locator('#chap')).toHaveText('Chapter 1 · Locked In with Mr Nilsson');
 });
 
+test('Chapter 2: Tommy\'s Morse answer is a word in every language', async ({ page }) => {
+  for (const [lang, word] of [['nl', 'KIETEL'], ['sv', 'KITTLA']]) {
+    await seed(page, { ch: 2, scene: 'bedroom', f: { introDone: true, torchOn: true, scared: true, north: true, sos: true }, inv: ['torch'] }, ['-ch2']);
+    await page.evaluate(([KEY, lang]) => localStorage.setItem(KEY + '-lang', lang), [KEY, lang]);
+    await page.reload();
+    await expect(page.locator('html')).toHaveAttribute('lang', lang);
+    await page.locator('#btn-cont').click();
+    await skip(page);
+    await page.evaluate(() => openMorse());
+    const code = await page.evaluate(w => [...w].map(L => MORSE[L]).join(' '), word);
+    await expect(page.locator('.m-code')).toHaveText(code.replace(/\./g, '·').replace(/-/g, '−').split(' ').join('\u00a0\u00a0\u00a0'));
+    await page.locator('#m-ans').fill('TICKLE');
+    await page.locator('#m-form button[type=submit]').click();
+    await expect(page.locator('#m-fb')).toHaveClass(/bad/);
+    await page.locator('#m-ans').fill(word.toLowerCase());
+    await page.locator('#m-form button[type=submit]').click();
+    await expect(page.locator('#m-fb')).toHaveClass(/good/);
+  }
+});
+
 test('every Dutch and Swedish translation still matches the English text', () => {
   // Fails when English text changed without updating lang/nl (a stale key), or one text has two translations.
   const tool = path.join(__dirname, '..', 'tools', 'i18n-check.js');

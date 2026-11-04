@@ -76,8 +76,6 @@
 > Je zegt alsjeblieft, alsjeblieft-alsjeblieft, en alsjeblieft met suiker erop. Meneer Nilsson klopt je vriendelijk op je hoofd en houdt de sleutel.
 = He keeps pointing at the stove. He wants something to eat.
 > Hij blijft naar het fornuis wijzen. Hij wil iets te eten.
-= The front door is wide open. The evening air smells of grass and sweets.
-> De voordeur staat wagenwijd open. De avondlucht ruikt naar gras en snoep.
 = The front door of Villa Villekulla. Locked, and the keyhole is empty.
 > De voordeur van Villa Kakelbont. Op slot, en het sleutelgat is leeg.
 = Mr Nilsson has the key, up on the bureau.

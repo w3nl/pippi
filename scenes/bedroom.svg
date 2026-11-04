@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="scene" id="sc-bedroom" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-label="Pippi's bedroom at night">
+  <defs>
+    <linearGradient id="brWall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3d4f7a"/><stop offset="1" stop-color="#2b3a5e"/></linearGradient>
+    <pattern id="brPaper" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M45 20 l6 12 l13 2 l-10 9 l3 13 l-12-7 l-12 7 l3-13 l-10-9 l13-2z" fill="#f2c94c" opacity=".14"/><circle cx="0" cy="70" r="5" fill="#e8571f" opacity=".14"/><circle cx="90" cy="70" r="5" fill="#e8571f" opacity=".14"/></pattern>
+    <linearGradient id="brFloor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a3326"/><stop offset="1" stop-color="#22160f"/></linearGradient>
+    <linearGradient id="brSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#070b24"/><stop offset="1" stop-color="#1d2a5a"/></linearGradient>
+    <radialGradient id="brMoonG" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff6d6" stop-opacity=".55"/><stop offset="1" stop-color="#fff6d6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="brLantern" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd27a" stop-opacity=".9"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></radialGradient>
+    <radialGradient id="brBeam" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff3c4" stop-opacity=".4"/><stop offset="1" stop-color="#fff3c4" stop-opacity="0"/></radialGradient>
+    <linearGradient id="brGold" x1="0" x2="1"><stop offset="0" stop-color="#c9952a"/><stop offset=".5" stop-color="#f3d27a"/><stop offset="1" stop-color="#b07f1f"/></linearGradient>
+    <radialGradient id="brVign" cx=".5" cy=".45" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".7"/></radialGradient>
+  </defs>
+
+  <!-- wall, ceiling, floor -->
+  <rect width="1600" height="660" fill="url(#brWall)"/>
+  <rect width="1600" height="660" fill="url(#brPaper)"/>
+  <rect width="1600" height="34" fill="#2a1a10"/>
+  <rect y="34" width="1600" height="8" fill="#1a0f08"/>
+  <rect y="620" width="1600" height="40" fill="#24304e"/>
+  <rect y="660" width="1600" height="240" fill="url(#brFloor)"/>
+  <g stroke="rgba(0,0,0,.3)" stroke-width="3"><path d="M0 720H1600M0 790H1600M0 860H1600"/></g>
+
+  <!-- Annika's spy card, pinned above the bed -->
+  <g id="br-card">
+    <rect x="236" y="250" width="110" height="80" fill="#fffaf0" transform="rotate(-4 291 290)"/>
+    <g transform="rotate(-4 291 290)" fill="#1f4d8c"><circle cx="252" cy="272" r="3"/><rect x="260" y="270" width="14" height="4"/><circle cx="282" cy="272" r="3"/><rect x="252" y="286" width="14" height="4"/><circle cx="274" cy="288" r="3"/><circle cx="284" cy="288" r="3"/><rect x="252" y="302" width="14" height="4"/><rect x="270" y="302" width="14" height="4"/><circle cx="292" cy="304" r="3"/></g>
+    <text x="318" y="316" font-family="Caveat, cursive" font-size="16" fill="#c4302b" transform="rotate(-4 291 290)">A·</text>
+    <circle cx="291" cy="254" r="4" fill="#c33"/>
+  </g>
+
+  <!-- Pippi's big hat on a hook, with a long feather -->
+  <g id="br-hat" transform="translate(-520 70)">
+    <circle cx="1060" cy="190" r="5" fill="#8a7a6a"/>
+    <ellipse cx="1060" cy="232" rx="56" ry="14" fill="#3f8a4a"/>
+    <path d="M1030 232 q2-38 30-40 q28 2 30 40z" fill="#3f8a4a"/>
+    <rect x="1031" y="220" width="58" height="8" fill="#f2c94c"/>
+    <path id="br-feather" d="M1086 222 q36-40 70-34 q-20 6-34 22 q-14 10-36 12z" fill="#e8571f"/>
+  </g>
+
+  <!-- the big window: night sky, moon, garden, the old oak; Tommy and Annika's house far away -->
+  <g id="br-window">
+    <rect x="690" y="120" width="340" height="320" rx="8" fill="#e9e1cc"/>
+    <rect x="706" y="136" width="308" height="288" fill="url(#brSky)"/>
+    <g fill="#fff">
+      <circle cx="740" cy="170" r="2"/><circle cx="780" cy="152" r="1.5"/><circle cx="830" cy="186" r="2"/><circle cx="880" cy="160" r="1.6"/><circle cx="925" cy="176" r="2.2"/><circle cx="960" cy="150" r="1.4"/><circle cx="990" cy="196" r="1.8"/><circle cx="760" cy="230" r="1.4"/><circle cx="850" cy="240" r="1.6"/>
+    </g>
+    <circle cx="955" cy="215" r="44" fill="url(#brMoonG)"/>
+    <circle cx="955" cy="215" r="20" fill="#fff6d6"/><circle cx="964" cy="209" r="17" fill="#121a3e"/>
+    <path d="M706 340 q80-30 160-10 q80 20 148-8 v102 h-308z" fill="#13241a"/>
+    <!-- Tommy and Annika's house, far away -->
+    <g id="br-ta"><rect x="840" y="300" width="40" height="28" fill="#2a2a3a"/><path d="M836 300 l24-18 l24 18z" fill="#1a1a28"/><rect id="br-talight" x="854" y="308" width="10" height="9" fill="#4a4a5a"/></g>
+    <g fill="#0b160f"><rect x="740" y="270" width="14" height="110"/><circle cx="748" cy="262" r="42"/><circle cx="722" cy="290" r="26"/><circle cx="776" cy="288" r="28"/></g>
+    <!-- the burglars in the garden, with their lantern -->
+    <g id="br-thieves">
+      <circle cx="930" cy="372" r="34" fill="url(#brLantern)"/>
+      <g fill="#05070d"><circle cx="905" cy="350" r="9"/><path d="M893 395 q-4-30 12-38 q16 8 12 38z"/><rect x="896" y="340" width="18" height="5"/><circle cx="950" cy="356" r="7"/><path d="M941 395 q-2-24 9-32 q11 8 9 32z"/></g>
+      <rect x="926" y="368" width="8" height="10" fill="#ffd27a"/>
+    </g>
+    <rect x="852" y="136" width="10" height="288" fill="#e9e1cc"/>
+    <rect x="706" y="276" width="308" height="10" fill="#e9e1cc"/>
+    <path d="M682 120 q50 60 14 320 h-14z M1038 120 q-50 60-14 320 h14z" fill="#b5342a"/>
+    <rect x="676" y="436" width="368" height="16" rx="4" fill="#d9cdb0"/>
+  </g>
+
+  <!-- the bed: Pippi sleeps the wrong way round, feet on the pillow, head under the blanket -->
+  <g id="br-bed">
+    <rect x="50" y="420" width="26" height="250" rx="6" fill="#8a4b22"/>
+    <rect x="520" y="500" width="22" height="170" rx="6" fill="#8a4b22"/>
+    <rect x="60" y="560" width="480" height="70" rx="8" fill="#a5602f" stroke="#4e2a12" stroke-width="4"/>
+    <ellipse cx="140" cy="540" rx="74" ry="30" fill="#f3efe3"/>
+    <path d="M150 560 q40-50 120-48 q100 0 160-6 q30-40 70-30 q34 14 22 70 q4 20 -2 24 h-370z" fill="#e8571f"/>
+    <g fill="#f2c94c" opacity=".7"><circle cx="300" cy="540" r="7"/><circle cx="380" cy="548" r="7"/><circle cx="460" cy="552" r="7"/><circle cx="340" cy="568" r="7"/><circle cx="420" cy="574" r="7"/></g>
+    <!-- her feet on the pillow, in odd stockings -->
+    <path d="M150 548 q-30-6-46-28 q-6-14 8-16 q20 6 42 30z" fill="#6b4423"/>
+    <path d="M160 556 q-34 0-54-18 q-8-12 6-16 q24 2 50 22z" fill="#1a1a1a"/>
+    <!-- the lump: Pippi's head, under the blanket at the foot end, with a red plait sticking out -->
+    <path d="M512 540 q20 0 34 -26" stroke="#d9481a" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M540 512 l10 6" stroke="#1f4d8c" stroke-width="4" stroke-linecap="round"/>
+    <g id="br-zzz" font-family="Fredoka, sans-serif" font-weight="700" fill="#f6ead2" opacity=".85"><text x="470" y="490" font-size="26" class="zz">z</text><text x="492" y="464" font-size="20" class="zz b">z</text><text x="510" y="442" font-size="15" class="zz">z</text></g>
+    <!-- the gold suitcase, under the bed -->
+    <g id="br-case"><rect x="250" y="640" width="120" height="58" rx="6" fill="#6b3a1a" stroke="#3e200c" stroke-width="3"/><path d="M290 640 v-8 h40 v8" fill="none" stroke="#3e200c" stroke-width="5"/><g fill="url(#brGold)"><circle cx="270" cy="668" r="6"/><circle cx="350" cy="668" r="6"/></g></g>
+  </g>
+
+  <!-- the bedside table: alarm clock, torch, the spunk -->
+  <g id="br-table">
+    <rect x="560" y="520" width="104" height="140" rx="4" fill="#8a4b22" stroke="#4e2a12" stroke-width="4"/>
+    <rect x="552" y="510" width="120" height="16" rx="3" fill="#9c5a2c"/>
+    <g id="br-clock"><circle cx="590" cy="482" r="24" fill="#c4302b"/><circle cx="590" cy="482" r="18" fill="#fffaf0"/><path d="M590 482 v-13 M590 482 h-8" stroke="#1a1a1a" stroke-width="2.6" stroke-linecap="round"/><circle cx="572" cy="458" r="7" fill="#c4302b"/><circle cx="608" cy="458" r="7" fill="#c4302b"/><path d="M574 504 l-6 8 M606 504 l6 8" stroke="#1a1a1a" stroke-width="3"/></g>
+    <g id="br-torch"><rect x="624" y="494" width="40" height="14" rx="4" fill="#2f5f9a"/><path d="M664 492 h12 v18 h-12z" fill="#9aa0a6"/></g>
+    <g id="br-spunk"><rect x="566" y="574" width="32" height="32" rx="5" fill="#cfe6e0" opacity=".5" stroke="#e9f4f0" stroke-width="2"/><rect x="564" y="568" width="36" height="7" rx="3" fill="#e8571f"/><ellipse cx="582" cy="594" rx="7" ry="5" fill="#2f8a3a"/></g>
+  </g>
+
+  <!-- the dresser under the window: Mr Nilsson asleep in his doll's bed, Pippi's scale, the stones -->
+  <g id="br-dresser">
+    <rect x="700" y="470" width="320" height="160" rx="6" fill="#2f5f9a" stroke="#183a66" stroke-width="5"/>
+    <rect x="716" y="540" width="288" height="36" rx="3" fill="#3a70b0" stroke="#183a66" stroke-width="3"/>
+    <rect x="716" y="584" width="288" height="36" rx="3" fill="#3a70b0" stroke="#183a66" stroke-width="3"/>
+    <g fill="#f2c94c"><circle cx="860" cy="558" r="5"/><circle cx="860" cy="602" r="5"/></g>
+    <!-- Mr Nilsson's doll's bed -->
+    <rect x="712" y="430" width="120" height="38" rx="6" fill="#f3efe3" stroke="#c9b48a" stroke-width="3"/>
+    <rect x="712" y="420" width="12" height="48" rx="3" fill="#c9b48a"/>
+    <g id="br-nilsson"><circle cx="748" cy="432" r="14" fill="#6b4423"/><ellipse cx="750" cy="436" rx="9" ry="7" fill="#e6c49a"/><path d="M743 434 h5 M753 434 h5" stroke="#1a120c" stroke-width="2"/><path d="M760 440 q40-4 66 2 v20 h-66z" fill="#e8571f"/></g>
+    <!-- the scale -->
+    <g id="br-scale"><rect x="926" y="420" width="10" height="50" fill="#c9952a"/><rect x="896" y="462" width="70" height="10" rx="3" fill="#c9952a"/><path d="M886 420 h90" stroke="#c9952a" stroke-width="5"/><path d="M886 420 l-12 22 h24z M976 420 l-12 22 h24z" fill="none" stroke="#c9952a" stroke-width="3"/><path d="M872 442 h28 M962 442 h28" stroke="#c9952a" stroke-width="5"/></g>
+  </g>
+  <!-- Pippi's basket of thing-searching stones -->
+  <g id="br-stones"><path d="M1034 640 h86 l-10 56 h-66z" fill="#8a5a2b" stroke="#5a3a1a" stroke-width="3"/><g fill="#8a8f96"><ellipse cx="1056" cy="638" rx="14" ry="10"/><ellipse cx="1082" cy="634" rx="12" ry="9"/><ellipse cx="1102" cy="640" rx="10" ry="8"/></g></g>
+
+  <!-- the wardrobe -->
+  <g id="br-wardrobe">
+    <rect x="1130" y="150" width="190" height="510" rx="6" fill="#7a4520" stroke="#3e200c" stroke-width="5"/>
+    <rect x="1120" y="140" width="210" height="18" rx="4" fill="#8a5028"/>
+    <rect x="1146" y="176" width="74" height="460" rx="4" fill="#8a5028" stroke="#3e200c" stroke-width="3"/>
+    <rect x="1230" y="176" width="74" height="460" rx="4" fill="#8a5028" stroke="#3e200c" stroke-width="3"/>
+    <g fill="#f2c94c"><circle cx="1212" cy="400" r="5"/><circle cx="1238" cy="400" r="5"/></g>
+    <!-- after the ending: two burglars sitting on top of the wardrobe -->
+    <g id="br-ontop" style="display:none">
+      <g fill="#3a3a44"><circle cx="1180" cy="92" r="16"/><path d="M1160 140 q-2-34 20-40 q22 6 20 40z"/><rect x="1166" y="74" width="28" height="7" fill="#1a1a1a"/></g>
+      <g fill="#4a4036"><circle cx="1262" cy="100" r="13"/><path d="M1246 140 q-2-28 16-34 q18 6 16 34z"/></g>
+      <path d="M1170 140 l-6 20 M1192 140 l4 20 M1254 140 l-4 20 M1272 140 l4 20" stroke="#2a2a2a" stroke-width="5"/>
+    </g>
+  </g>
+
+  <!-- the veranda door, with a curtain over its window -->
+  <g id="br-door">
+    <rect x="1376" y="190" width="190" height="470" rx="6" fill="#4e2a12"/>
+    <rect x="1390" y="204" width="162" height="456" rx="4" fill="#3f8a4a" stroke="#265a2e" stroke-width="5"/>
+    <rect x="1414" y="226" width="114" height="150" rx="4" fill="#f3d79a" stroke="#265a2e" stroke-width="5"/>
+    <rect id="br-curtain" x="1420" y="232" width="102" height="138" fill="#f6ead2" opacity=".85"/>
+    <!-- a burglar's silhouette on the curtain, from their lantern outside -->
+    <g id="br-doorthief"><circle cx="1470" cy="276" r="18" fill="#2a2018" opacity=".55"/><path d="M1446 370 q-4-60 24-76 q28 16 24 76z" fill="#2a2018" opacity=".55"/></g>
+    <!-- Mr Nilsson's giant shadow (after the shadow puzzle) -->
+    <g id="br-giant" style="display:none" fill="#1a120c" opacity=".7"><circle cx="1471" cy="262" r="26"/><circle cx="1446" cy="252" r="10"/><circle cx="1496" cy="252" r="10"/><path d="M1436 370 q0-80 35-90 q35 10 35 90z"/><path d="M1440 300 l-20-40 M1502 300 l22-44" stroke="#1a120c" stroke-width="10" stroke-linecap="round"/></g>
+    <circle cx="1406" cy="440" r="11" fill="url(#brGold)"/>
+    <rect x="1400" y="458" width="12" height="22" rx="3" fill="#2a1a0c"/>
+  </g>
+
+  <!-- darkness: lifts a little once the torch is on -->
+  <rect id="br-dark" width="1600" height="900" fill="#05081a" opacity=".42" pointer-events="none"/>
+  <g id="br-beam" style="display:none" pointer-events="none"><ellipse cx="660" cy="500" rx="260" ry="200" fill="url(#brBeam)"/></g>
+  <rect width="1600" height="900" fill="url(#brVign)" pointer-events="none"/>
+
+  <!-- hotspots -->
+  <g>
+    <rect class="hit" fill="transparent" data-hs="card2" data-label="Annika's spy card" x="230" y="240" width="124" height="96"/>
+    <rect class="hit" fill="transparent" data-hs="feet" data-label="Pillow end of the bed" x="64" y="490" width="150" height="80"/>
+    <rect class="hit" fill="transparent" data-hs="pippi2" data-label="Pippi, fast asleep" x="214" y="480" width="330" height="90"/>
+    <rect class="hit" fill="transparent" data-hs="case2" data-label="Suitcase under the bed" x="244" y="630" width="134" height="74"/>
+    <rect class="hit" fill="transparent" data-hs="clock2" data-label="Alarm clock" x="562" y="448" width="56" height="62"/>
+    <rect class="hit" fill="transparent" data-hs="torch" data-label="Torch" x="620" y="484" width="62" height="32"/>
+    <rect class="hit" fill="transparent" data-hs="spunk2" data-label="Jam jar" x="560" y="562" width="44" height="50" id="hit-spunk2"/>
+    <rect class="hit" fill="transparent" data-hs="sky" data-label="Window" x="690" y="120" width="340" height="300"/>
+    <rect class="hit" fill="transparent" data-hs="nilsson2" data-label="Mr Nilsson, asleep" x="708" y="416" width="128" height="56"/>
+    <rect class="hit" fill="transparent" data-hs="scale" data-label="Pippi's scale" x="868" y="410" width="126" height="64"/>
+    <rect class="hit" fill="transparent" data-hs="dresser" data-label="Dresser" x="700" y="476" width="320" height="154"/>
+    <rect class="hit" fill="transparent" data-hs="stones" data-label="Basket of stones" x="1030" y="620" width="94" height="80"/>
+    <rect class="hit" fill="transparent" data-hs="hat" data-label="Pippi's hat" x="480" y="250" width="160" height="70"/>
+    <rect class="hit" fill="transparent" data-hs="wardrobe" data-label="Wardrobe" x="1124" y="140" width="206" height="520"/>
+    <rect class="hit" fill="transparent" data-hs="vdoor" data-label="Veranda door" x="1376" y="190" width="190" height="470"/>
+  </g>
+</svg>

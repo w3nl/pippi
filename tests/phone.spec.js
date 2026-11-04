@@ -59,4 +59,16 @@ test('every close-up fits on a phone without sideways scrolling', async ({ page 
       await page.locator('#m-close').tap();
     }
   }
+  // Chapter 2: the bedroom's close-ups
+  await seed(page, { ch: 2, scene: 'bedroom', f: { introDone: true, torchOn: true, north: true }, inv: ['torch', 'batteries'] }, ['-ch2']);
+  await page.locator('#btn-cont').tap();
+  await skip(page);
+  for (const open of ['openTorch2()', 'openShadow()', 'openSpyCard()', 'openSky()', 'openMorse()', 'S.f.sos = true; openMorse()', 'openScale()']) {
+    await page.evaluate(open);
+    await page.waitForTimeout(150);
+    const ok = await page.locator('.panel').evaluate(e => e.scrollWidth <= e.clientWidth + 1);
+    expect(ok, `${open} is wider than the screen`).toBe(true);
+    await page.locator('#m-close').tap();
+    expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
+  }
 });

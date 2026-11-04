@@ -2,14 +2,30 @@
 // Loaded in order by js/boot.js; all game files share the same global scope.
 
 /* ---------- chapters ---------- */
-function chapterDone(){ return !!S.f.out1; }
-function refreshMenu(){ const fin = chapterDone(); $('#btn-cont').hidden = !S.started || fin; $('#btn-cont').textContent = 'Continue'; }
+const LAST_CH = 2;   // the newest chapter; raise it when you add one
+function chapterDone(){ return S.ch===2 ? !!S.f.out2 : !!S.f.out1; }
+function nextChapter(){ const f = { 1: startCh2 }[S.ch]; if(f) f(); }
+/* Exits lead on to the next chapter once a chapter is solved. */
+function exitLabels(){
+  const done = chapterDone(), n = S.ch + 1;
+  const set = (sel, open, closed) => document.querySelectorAll(sel).forEach(h => { h.dataset.label = (done && S.ch < LAST_CH) ? tx(open, { n }) : closed; h.setAttribute('aria-label', h.dataset.label); });
+  set('#sc-kitchen [data-hs="door"]', 'Front door: on to Chapter {n}', 'Front door');
+}
+function refreshMenu(){
+  const fin = chapterDone();
+  $('#btn-cont').hidden = !S.started || (fin && S.ch >= LAST_CH);
+  $('#btn-cont').textContent = fin ? tx('Continue to Chapter {n}', { n: S.ch + 1 }) : 'Continue';
+  $('#btn-ch1').hidden = $('#btn-ch2').hidden = $('#chapters').hidden = !unlocked2();
+}
 
 const CH_END = {
-  1:['Door open · Chapter 1 complete', "You're out", "Next: that night, two burglars come creeping up to Villa Villekulla. They've heard about a certain suitcase full of gold… Chapter 2 is still being written."]
+  1:['Door open · Chapter 1 complete', "You're out", "Next: that night, two burglars come creeping up to Villa Villekulla. They've heard about a certain suitcase full of gold…", 'Continue to Chapter 2'],
+  2:['Burglars caught · Chapter 2 complete', 'Caught', "Thunder-Karlsson and Bloom are off to the police station, and the gold is safe. Next: Pippi goes to school. Chapter 3 is still being written.", '']
 };
 function showWin(){
-  const [eb, ti, note] = CH_END[S.ch] || CH_END[1];
+  if(S.ch===1) setUnlocked2();
+  const [eb, ti, note, next] = CH_END[S.ch] || CH_END[1];
+  $('#btn-next').hidden = !next; $('#btn-next').textContent = next;
   $('#w-eyebrow').textContent = eb;
   $('#w-title').innerHTML = tx(ti) + '<span class="cursor">!</span>';
   $('#w-note').textContent = note;
@@ -22,7 +38,7 @@ function showWin(){
 
 /* ---------- scores: each chapter's best result, kept across new games (KEY-scores) ---------- */
 const SCORES_KEY = KEY + '-scores';
-const CH_NAMES = ['Locked in with Mr Nilsson'];
+const CH_NAMES = ['Locked in with Mr Nilsson', 'Burglars in the night'];
 const rankFor = hints => hints===0 ? 'Strongest in the world' : hints<=2 ? 'Thing-finder' : hints<=5 ? 'Pirate in training' : 'Mr Nilsson';
 let scoresMem = null;   // also works when the browser blocks storage (for this visit only)
 function getScores(){
@@ -71,14 +87,20 @@ const fmt = s => String(Math.floor(s/60)).padStart(2,'0') + ':' + String(s%60).p
 setInterval(() => { if(S.started && !chapterDone() && $('#title').hidden && document.visibilityState==='visible'){ S.t++; $('#timer').textContent = fmt(S.t); if(S.t%5===0) save(); } }, 1000);
 
 /* ---------- flow ---------- */
-const ACH = [['spunk','Asked the spunk'],['egghead','Egg on your head'],['ceiling','Pancake on the ceiling'],['lift','Tried to lift the horse'],['drawers','Opened every little drawer'],['nilsson','Said please three times']];
+const ACH = [['spunk','Asked the spunk'],['egghead','Egg on your head'],['ceiling','Pancake on the ceiling'],['lift','Tried to lift the horse'],['drawers','Opened every little drawer'],['nilsson','Said please three times'],
+  ['shake','Shook Pippi three times'],['giant','A shadow over 5 metres tall'],['venus','Wished upon a planet']];
 function startNew(){ S = Object.assign(fresh(), { ach: S.ach || {} }); S.started = true; sel = null; $('#title').hidden = true; $('#win').hidden = true; renderInv(); applyVisuals(); $('#timer').textContent = '00:00'; save(); intro1(); }
 function cont(){ $('#title').hidden = true; S.started = true; renderInv(); applyVisuals(); $('#timer').textContent = fmt(S.t);
-  say([["sys", S.f.key ? "Back in Pippi's kitchen. Mr Nilsson is licking syrup off his fingers." : "Back in Pippi's kitchen. Mr Nilsson is still sitting on the bureau with the key."]]); }
+  say([["sys", S.scene==='bedroom' ? (S.f.scared ? "Back in Pippi's bedroom. The lantern is still waiting behind the old oak." : "Back in Pippi's bedroom. Pippi is still snoring like a ship's horn.")
+    : S.f.key ? "Back in Pippi's kitchen. Mr Nilsson is licking syrup off his fingers." : "Back in Pippi's kitchen. Mr Nilsson is still sitting on the bureau with the key."]]); }
 $('#btn-new').onclick = startNew;
-$('#btn-cont').onclick = cont;
-$('#btn-again').onclick = startNew;
-$('#btn-stay').onclick = () => { $('#win').hidden = true; say(['sys', "Take your time. Pippi is handing out sweets in the garden, and the horse is eating the lawn."]); };
+$('#btn-cont').onclick = () => chapterDone() ? nextChapter() : cont();
+$('#btn-again').onclick = () => S.ch===2 ? startCh2() : startNew();
+$('#btn-next').onclick = nextChapter;
+$('#btn-ch1').onclick = startNew;
+$('#btn-ch2').onclick = startCh2;
+$('#btn-stay').onclick = () => { $('#win').hidden = true; exitLabels();
+  say(['sys', S.ch < LAST_CH ? tx("Take your time. Pippi is handing out sweets in the garden. When you're ready, the front door leads on to Chapter {n}.", { n: S.ch + 1 }) : "Take your time. The burglars aren't going anywhere: they're on top of the wardrobe."]); };
 $('#btn-menu').onclick = () => { closeModal(); $('#dialog').hidden = true; queue = []; stopSpeaking(); $('#title').hidden = false; $('#win').hidden = true; refreshMenu(); };
 
 const ROT_LINES = [

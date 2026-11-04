@@ -1,0 +1,301 @@
+# Swedish translation: Chapter 2, burglars in the night (js/chapter2.js).
+# Tommy's Morse answer is a word puzzle: TICKLE / KIETEL / KITTLA (tickleWord() in js/chapter2.js).
+
+= TICKLE
+> KITTLA
+= Batteries
+> Batterier
+= Two batteries from Pippi's alarm clock. Look: one end says +, the other −.
+> Två batterier från Pippis väckarklocka. Titta: i ena änden står det +, i den andra −.
+= Switched on and shining. Point it at something: select it, then click.
+> Påslagen och lysande. Rikta den mot något: välj den och klicka sedan.
+= Feather
+> Fjäder
+= A long orange feather from Pippi's hat. Extremely tickly.
+> En lång orange fjäder från Pippis hatt. Väldigt kittlig.
+= The spunk, in its jam jar, on the bedside table. It doesn't seem to sleep.
+> Spunken, i sin syltburk, på nattduksbordet. Den verkar aldrig sova.
+= You take it. A spunk knows things, even at night.
+> Du tar den. En spunk vet saker, även på natten.
+= The alarm clock has stopped at twenty-five to twelve. You took its batteries. Pippi never looks at it anyway.
+> Väckarklockan har stannat på fem över halv tolv. Du har tagit batterierna. Pippi tittar ändå aldrig på den.
+= Pippi's alarm clock. The little hand is just before the 12 and the big hand on the 7: twenty-five to twelve.
+> Pippis väckarklocka. Den lilla visaren står strax före 12 och den stora på 7: fem över halv tolv.
+= The burglars said midnight. That's twenty-five minutes.
+> Tjuvarna sa midnatt. Det är om tjugofem minuter.
+= You open the back. Two batteries! You take them. The clock stops ticking. Time doesn't, unfortunately.
+> Du öppnar baksidan. Två batterier! Du tar dem. Klockan slutar ticka. Tiden gör det tyvärr inte.
+= The torch is in your pocket, switched on. Select it to point it at something.
+> Ficklampan ligger i fickan, påslagen. Välj den för att rikta den mot något.
+= A torch. You click the switch. Nothing. You shake it. It rattles: it's empty.
+> En ficklampa. Du trycker på knappen. Ingenting. Du skakar den. Den skramlar: den är tom.
+= Torches need batteries. Something else in this room runs on batteries too.
+> Ficklampor behöver batterier. Något annat i det här rummet går också på batterier.
+= Tommy and Annika's window is dark again. They've gone to wake their dad.
+> Tommys och Annikas fönster är mörkt igen. De har gått för att väcka sin pappa.
+= Tommy and Annika's window is still flashing at you. Use your torch on the window to read it again.
+> Tommys och Annikas fönster blinkar fortfarande mot dig. Använd ficklampan på fönstret för att läsa det igen.
+= The North Star, and right below it Tommy and Annika's upstairs window.
+> Polstjärnan, och rakt under den Tommys och Annikas fönster på övervåningen.
+= Select your torch and use it on the window to send them a signal.
+> Välj ficklampan och använd den på fönstret för att skicka en signal.
+= If only you had some light to signal with.
+> Om du bara hade lite ljus att signalera med.
+= Zzz… eek… zzz.
+> Zzz… iii… zzz.
+= Mr Nilsson is back in his doll's bed, very proud of himself, and fast asleep again.
+> Herr Nilsson ligger i sin docksäng igen, mycket stolt över sig själv, och sover redan.
+= Mr Nilsson is asleep in his doll's bed, with his straw hat over his eyes. He's small. But his shadow doesn't have to be.
+> Herr Nilsson sover i sin docksäng, med halmhatten över ögonen. Han är liten. Men hans skugga behöver inte vara det.
+= Pippi's dresser. The top drawer is full of odd socks. The bottom drawer is full of odd socks too, but odder.
+> Pippis byrå. Översta lådan är full av udda strumpor. Nedersta lådan också, fast ännu uddare.
+= Pippi's basket of stones, from her thing-searching. She has written a number on each one, in kilos: 1, 2, 3, 5 and 6.
+> Pippis korg med stenar, från när hon var sakletare. Hon har skrivit en siffra på varje sten, i kilo: 1, 2, 3, 5 och 6.
+= "Perfectly good stones," says the label. "For weighing things."
+> "Alldeles utmärkta stenar," står det på lappen. "Att väga saker med."
+= Pippi's enormous hat, without its feather now. She'll hardly notice.
+> Pippis enorma hatt, utan fjäder nu. Hon kommer knappt att märka det.
+= Pippi's enormous green hat, with a long orange feather.
+> Pippis enorma gröna hatt, med en lång orange fjäder.
+= You pull out the feather. It's soft and very, very tickly.
+> Du drar ut fjädern. Den är mjuk och väldigt, väldigt kittlig.
+= Thunder-Karlsson and Bloom are sitting on top of the wardrobe, looking very sorry for themselves.
+> Dunder-Karlsson och Blom sitter uppe på klädskåpet och ser väldigt ynkliga ut.
+= Pippi has made them a little sign: PLEASE DO NOT FEED THE BURGLARS.
+> Pippi har gjort en liten skylt: VAR SNÄLL OCH MATA INTE TJUVARNA.
+= A big wardrobe, much too heavy to move. Pippi could lift it with one finger. She's busy sleeping.
+> Ett stort klädskåp, alldeles för tungt att flytta. Pippi skulle kunna lyfta det med ett finger. Hon är upptagen med att sova.
+= The suitcase, full of stones. The gold is safe under Pippi's feet. Let the burglars come.
+> Kappsäcken, full med stenar. Guldet ligger tryggt under Pippis fötter. Låt tjuvarna komma.
+= Pippi's suitcase full of gold coins. She took it to bed for safekeeping, then fell asleep on top of the problem.
+> Pippis kappsäck full med guldpengar. Hon tog med den till sängen för att ha den i säkerhet, och somnade sedan.
+= The burglars want this. If they carried off a suitcase just as heavy, but full of something else, they wouldn't notice until much later.
+> Det här vill tjuvarna ha. Om de bar iväg en lika tung kappsäck, men full med något annat, skulle de inte märka det förrän mycket senare.
+= Burglars on the wardrobe and pancakes for breakfast. Best night ever!
+> Tjuvar på skåpet och pannkakor till frukost. Bästa natten någonsin!
+= You shake the lump under the blanket. "Pippi! Wake up! Burglars!"
+> Du ruskar i klumpen under täcket. "Pippi! Vakna! Tjuvar!"
+= Zzzzz… pancakes… zzz.
+> Zzzzz… pannkakor… zzz.
+= You shake harder. The lump rolls over and snores like a ship's horn.
+> Du ruskar hårdare. Klumpen vänder sig och snarkar som en mistlur.
+= Pippi sleeps the way she does everything else: completely.
+> Pippi sover som hon gör allt annat: helt och hållet.
+= You shake the lump with all your strength. Pippi doesn't notice. The bed does: it creaks.
+> Du ruskar klumpen av alla krafter. Pippi märker ingenting. Sängen gör det: den knarrar.
+= Shaking won't work. Maybe Tommy and Annika know how to wake her.
+> Att ruska hjälper inte. Kanske vet Tommy och Annika hur man väcker henne.
+= Pippi's feet, wide awake now and dancing under the blanket.
+> Pippis fötter, klarvakna nu och dansande under täcket.
+= Two feet on the pillow, in one brown stocking and one black one.
+> Två fötter på kudden, i en brun strumpa och en svart.
+= Pippi sleeps the other way round: feet on the pillow, head under the blanket at the far end. She says feet deserve a soft pillow too.
+> Pippi sover åt andra hållet: fötterna på kudden och huvudet under täcket i fotänden. Hon säger att fötter också förtjänar en mjuk kudde.
+= The veranda door. Kling and Klang went out through it, with a burglar each.
+> Verandadörren. Kling och Klang gick ut genom den, med en tjuv var.
+= Someone is scratching at the lock!
+> Någon skrapar på låset!
+= The veranda door. Through the curtain you can see a lantern bobbing about in the garden.
+> Verandadörren. Genom gardinen ser du en lykta guppa omkring i trädgården.
+= Somebody whispers outside: "…at midnight, Bloom, when everyone's asleep."
+> Någon viskar utanför: "…vid midnatt, Blom, när alla sover."
+= The veranda door. The scratching has stopped. The burglars are hiding behind the old oak, waiting for midnight.
+> Verandadörren. Skrapandet har slutat. Tjuvarna gömmer sig bakom den gamla eken och väntar på midnatt.
+= They'll be back. You need help, and you need a plan.
+> De kommer tillbaka. Du behöver hjälp, och du behöver en plan.
+= Battery {n}: turn it round
+> Batteri {n}: vänd på det
+= The torch
+> Ficklampan
+= Two batteries, one bulb, and a switch
+> Två batterier, en lampa och en knapp
+= Switch on
+> Tänd
+= Click a battery to turn it round. The bulb is on the right.
+> Klicka på ett batteri för att vända på det. Lampan sitter till höger.
+= Click. Nothing. The two batteries face each other, so they push against each other. In a torch, the + end of one battery touches the − end of the next.
+> Klick. Ingenting. De två batterierna vänder sig mot varandra, så de motverkar varandra. I en ficklampa nuddar + på det ena batteriet − på nästa.
+= Click. Nothing. They're in a line now, but the wrong way round: the + end has to point towards the bulb.
+> Klick. Ingenting. Nu ligger de på rad, men åt fel håll: + ska peka mot lampan.
+= Light! Two batteries in a line, + to −, and + towards the bulb: the electricity can go all the way round.
+> Ljus! Två batterier på rad, + mot −, och + mot lampan: strömmen kan gå hela varvet runt.
+= Torchlight! The bedroom isn't so scary now.
+> Ljus! Sovrummet är inte lika läskigt nu.
+= Then you hear it: scritch, scratch. At the veranda door. Someone is poking at the lock!
+> Då hör du det: skrap, skrap. Vid verandadörren. Någon petar i låset!
+= Hurry up, Bloom! I want that gold before the clock strikes twelve.
+> Skynda dig, Blom! Jag vill ha det där guldet innan klockan slår tolv.
+= I'm hurrying, Karlsson! This lock is very… locky.
+> Jag skyndar mig, Karlsson! Det här låset är väldigt… låsigt.
+= Mr Nilsson's shadow
+> Herr Nilssons skugga
+= Torch · Mr Nilsson · curtain
+> Ficklampa · Herr Nilsson · gardin
+= Mr Nilsson's distance from the torch
+> Herr Nilssons avstånd från ficklampan
+= Shadow on the curtain
+> Skuggan på gardinen
+= Make him wave his arms!
+> Låt honom vifta med armarna!
+= Mr Nilsson is 40 cm tall, and the curtain is 3 metres from the torch. Move him and watch his shadow.
+> Herr Nilsson är 40 cm lång, och gardinen hänger 3 meter från ficklampan. Flytta honom och titta på skuggan.
+= Outside, Bloom giggles: "Look, Karlsson, a little monkey!" They aren't scared one bit. The shadow is too small: move Mr Nilsson closer to the light.
+> Utanför fnissar Blom: "Titta, Karlsson, en liten apa!" De är inte ett dugg rädda. Skuggan är för liten: flytta Herr Nilsson närmare ljuset.
+= "What's that, Karlsson?" "Just a big cat, Bloom." Nearly! The closer Mr Nilsson is to the torch, the bigger his shadow.
+> "Vad är det där, Karlsson?" "Bara en stor katt, Blom." Nästan! Ju närmare ficklampan Herr Nilsson är, desto större blir skuggan.
+= A GIANT hairy shadow with a hat waves at the curtain. Outside, somebody shrieks!
+> En JÄTTESTOR hårig skugga med hatt viftar på gardinen. Utanför skriker någon!
+= K-K-Karlsson! There's a GORILLA in there!
+> K-K-Karlsson! Det finns en GORILLA där inne!
+= Back to the oak tree! We'll come back at midnight, when the gorilla's asleep.
+> Tillbaka till eken! Vi kommer tillbaka vid midnatt, när gorillan sover.
+= Footsteps run off across the garden. Mr Nilsson climbs back into his doll's bed, very pleased with himself.
+> Fotsteg springer iväg genom trädgården. Herr Nilsson klättrar tillbaka i sin docksäng, mycket nöjd med sig själv.
+= Close to the light, a small thing makes a huge shadow. But they'll be back at midnight. You need help. Annika's card on the wall might know how.
+> Nära ljuset gör något litet en jättestor skugga. Men de kommer tillbaka vid midnatt. Du behöver hjälp. Annikas kort på väggen kanske vet hur.
+= TOP SECRET · for Pippi, Tommy and Annika only
+> TOPPHEMLIGT · bara för Pippi, Tommy och Annika
+= <b>Our house is due NORTH of Villa Villekulla.</b> At night, find the North Star: it is always in the north. Take the two stars at the end of the Big Dipper's pan (it looks like a saucepan), go up from the bottom one through the top one, and keep going about five times as far.
+> <b>Vårt hus ligger rakt NORR om Villa Villekulla.</b> På natten hittar du Polstjärnan: den står alltid i norr. Ta de två stjärnorna längst ut i Karlavagnens korg (den ser ut som en kastrull), gå uppåt från den nedre genom den övre, och fortsätt ungefär fem gånger så långt.
+= <b>Secret signal:</b> flash your torch at our window in Morse code. A dot is a short flash, a dash is a long one. SOS means HELP!
+> <b>Hemlig signal:</b> blinka med ficklampan mot vårt fönster på morse. En punkt är en kort blink, ett streck en lång. SOS betyder HJÄLP!
+= A star
+> En stjärna
+= The night sky
+> Natthimlen
+= Out of the bedroom window
+> Ut genom sovrumsfönstret
+= Stars over the garden
+> Stjärnor över trädgården
+= Click the star you think is the North Star.
+> Klicka på stjärnan som du tror är Polstjärnan.
+= The North Star! Straight below it, far across the meadow, a window glows: Tommy and Annika's house.
+> Polstjärnan! Rakt under den, långt bort över ängen, lyser ett fönster: Tommys och Annikas hus.
+= The North Star never moves: all night, the other stars turn around it. So it always shows you where north is.
+> Polstjärnan står alltid still: hela natten snurrar de andra stjärnorna runt den. Därför visar den alltid var norr är.
+= And due north is Tommy and Annika's house. Their upstairs light is on. Time for the secret signal.
+> Och rakt norrut ligger Tommys och Annikas hus. Lampan på övervåningen lyser. Dags för den hemliga signalen.
+= That's the brightest light in the sky, but it isn't a star: it's the planet Venus. The North Star is not especially bright.
+> Det är det starkaste ljuset på himlen, men det är ingen stjärna: det är planeten Venus. Polstjärnan är inte särskilt stark.
+= Good: that's one of the two pointer stars at the end of the saucepan. Now follow the line they make, upwards.
+> Bra: det är en av de två pekarstjärnorna längst ut i kastrullen. Följ nu linjen de bildar, uppåt.
+= That's part of the Big Dipper, the saucepan. The two stars at the end of its pan point the way.
+> Det är en del av Karlavagnen, kastrullen. De två stjärnorna längst ut i korgen visar vägen.
+= That W shape is Cassiopeia. Nice, but the pointer stars of the saucepan lead somewhere else.
+> Den där W-formen är Cassiopeia. Fin, men kastrullens pekarstjärnor leder någon annanstans.
+= Close! Those faint stars are the Little Dipper. The North Star is the last star of its handle.
+> Nära! De där svaga stjärnorna är Lilla björn. Polstjärnan är den sista stjärnan i dess handtag.
+= Just an ordinary star. Follow the two pointer stars of the saucepan upwards, about five times as far.
+> Bara en vanlig stjärna. Följ kastrullens två pekarstjärnor uppåt, ungefär fem gånger så långt.
+= Signalling with the torch
+> Signalera med ficklampan
+= Tommy and Annika's window, due north
+> Tommys och Annikas fönster, rakt norrut
+= Short flash
+> Kort blink
+= Long flash
+> Lång blink
+= Next letter
+> Nästa bokstav
+= Clear
+> Sudda
+= Send
+> Skicka
+= Their window flashes back:
+> Deras fönster blinkar tillbaka:
+= Watch it again
+> Titta igen
+= What does it say?
+> Vad står det?
+= Check
+> Kolla
+= Annika's spy card has the Morse alphabet. Send the signal for HELP.
+> Annikas spionkort har morsealfabetet. Skicka signalen för HJÄLP.
+= · · · − − − · · ·  SOS! A moment later, Tommy and Annika's window starts to flash back.
+> · · · − − − · · ·  SOS! En stund senare börjar Tommys och Annikas fönster blinka tillbaka.
+= That's the other way round: long, short, long. HELP starts with three short flashes.
+> Det där är åt andra hållet: lång, kort, lång. HJÄLP börjar med tre korta blinkar.
+= You flash nothing. The night stays dark.
+> Du blinkar ingenting. Natten förblir mörk.
+= Tommy and Annika's window stays dark. They don't understand that one. The help signal is three letters: S, O, S.
+> Tommys och Annikas fönster förblir mörkt. Det förstår de inte. Nödsignalen är tre bokstäver: S, O, S.
+= "{word}"! Then their window goes dark: they have gone to wake their dad.
+> "{word}"! Sedan slocknar deras fönster: de har gått för att väcka sin pappa.
+= {word}? Tickle whom?
+> {word}? Vem då?
+= Of course: Pippi! Shaking doesn't wake her. Tickling might.
+> Förstås: Pippi! Hon vaknar inte av att man ruskar henne. Men kanske av att man kittlar henne.
+= Downstairs, the kitchen clock whirrs. Nearly midnight. Make sure the burglars don't get the gold, then wake Pippi.
+> Nere i köket surrar klockan. Snart midnatt. Se till att tjuvarna inte får guldet, och väck sedan Pippi.
+= Count the groups of flashes: each group is one letter. That makes {n} letters.
+> Räkna grupperna av blinkar: varje grupp är en bokstav. Det blir {n} bokstäver.
+= Not quite. Look up each group on Annika's card, one letter at a time.
+> Inte riktigt. Slå upp varje grupp på Annikas kort, en bokstav i taget.
+= The scale stands level and empty. The gold is safe under Pippi's feet, and the suitcase is full of stones.
+> Vågen står rak och tom. Guldet ligger tryggt under Pippis fötter, och kappsäcken är full med stenar.
+= Gold on the left, stones on the right
+> Guld till vänster, stenar till höger
+= gold
+> guld
+= stones
+> stenar
+= Swap: gold out, stones in
+> Byt: guldet ut, stenarna in
+= Click the stones to put them on the right pan, or take them off again.
+> Klicka på stenarna för att lägga dem i den högra vågskålen, eller ta bort dem igen.
+= The stones are lighter: the gold side sinks. The burglars would notice the suitcase is too light. Add {n} kg more.
+> Stenarna är lättare: guldsidan sjunker. Tjuvarna skulle märka att kappsäcken är för lätt. Lägg till {n} kg till.
+= Now the stones are heavier: the stone side sinks. Take {n} kg off.
+> Nu är stenarna tyngre: stensidan sjunker. Ta bort {n} kg.
+= Level! Same weight on both sides. You tip the gold out and fill the suitcase with the stones.
+> I jämvikt! Samma vikt på båda sidorna. Du häller ut guldet och fyller kappsäcken med stenarna.
+= A level scale means both sides weigh exactly the same. The suitcase is just as heavy as before. The burglars won't notice a thing.
+> En våg i jämvikt betyder att båda sidorna väger exakt lika mycket. Kappsäcken är lika tung som förut. Tjuvarna kommer inte att märka något.
+= You hide the gold coins in the safest place in Sweden: under Pippi's feet, on the pillow.
+> Du gömmer guldpengarna på det säkraste stället i Sverige: under Pippis fötter, på kudden.
+= You tickle the lump under the blanket. A sleepy voice: "Mmf. That's my nose. Go away, nose-tickler."
+> Du kittlar klumpen under täcket. En sömnig röst: "Mmf. Det är min näsa. Gå härifrån, näskittlare."
+= That's her head end. Pippi sleeps the other way round, remember: her feet are on the pillow.
+> Det är huvudänden. Pippi sover åt andra hållet, kom ihåg: fötterna ligger på kudden.
+= You tickle Pippi's feet. She giggles in her sleep and mumbles: "Not now. Wake me when the police come."
+> Du kittlar Pippis fötter. Hon fnissar i sömnen och mumlar: "Inte nu. Väck mig när polisen kommer."
+= Then she snores on. Nobody has called the police yet. Maybe Tommy and Annika can help.
+> Sedan snarkar hon vidare. Ingen har ringt polisen än. Kanske kan Tommy och Annika hjälpa till.
+= You lift the feather… and stop. If Pippi wakes now, she'll leap up and show the burglars where the gold is, just to be friendly.
+> Du lyfter fjädern… och stannar. Om Pippi vaknar nu hoppar hon upp och visar tjuvarna var guldet är, bara för att vara snäll.
+= Better make sure the gold is safe first.
+> Se först till att guldet är i säkerhet.
+= That night. You're sleeping over at Villa Villekulla. The moon is up, and Pippi is snoring like a ship's horn.
+> Samma natt. Du sover över i Villa Villekulla. Månen har gått upp, och Pippi snarkar som en mistlur.
+= I can't sleep. And what's that light in the garden?
+> Jag kan inte sova. Och vad är det för ljus i trädgården?
+= A lantern, bobbing between the trees. Two men are creeping towards the house: one big, one small.
+> En lykta som guppar mellan träden. Två män smyger fram mot huset: en stor och en liten.
+= Psst, Bloom. Everyone says that girl has a whole suitcase full of gold.
+> Psst, Blom. Alla säger att den där flickan har en hel kappsäck full med guld.
+= Then let's go and get it, Karlsson. At midnight, when they're all fast asleep.
+> Då går vi och hämtar den, Karlsson. Vid midnatt, när alla sover djupt.
+= Burglars! It's pitch dark in here. First things first: some light.
+> Tjuvar! Det är kolsvart här inne. Först av allt: lite ljus.
+= You tickle Pippi's feet with the feather. The blanket shakes. Then it shakes a lot.
+> Du kittlar Pippis fötter med fjädern. Täcket skakar. Sedan skakar det väldigt mycket.
+= Hihihi! Stop it! Who's tickling me in the middle of the night? Oh, it's you! Is it Christmas?
+> Hihihi! Sluta! Vem kittlar mig mitt i natten? Åh, det är du! Är det jul?
+= Burglars, Pippi! They're coming for your gold!
+> Tjuvar, Pippi! De är ute efter ditt guld!
+= Bong… bong… bong… The kitchen clock strikes twelve. The veranda door creaks. Thunder-Karlsson and Bloom tiptoe in and grab the suitcase.
+> Bong… bong… bong… Köksklockan slår tolv. Verandadörren knarrar. Dunder-Karlsson och Blom smyger in på tå och tar kappsäcken.
+= Got it! Heavy as anything. Full of gold, Bloom!
+> Jag har den! Tung som bly. Full med guld, Blom!
+= Karlsson… I peeked. It's full of stones.
+> Karlsson… jag tittade. Den är full med stenar.
+= Good evening! How lovely, visitors! Shall we dance?
+> God kväll! Vad trevligt, besök! Ska vi dansa?
+= Pippi dances the two burglars round and round the bedroom until they're dizzy, then lifts them up, one in each hand, and sits them on top of the wardrobe.
+> Pippi dansar runt med de två tjuvarna i sovrummet tills de blir yra, lyfter sedan upp dem, en i varje hand, och sätter dem uppe på klädskåpet.
+= Blue lights in the lane. Tommy and Annika's dad has called the police, and the two policemen, Kling and Klang, come stomping in.
+> Blåljus i gränden. Tommys och Annikas pappa har ringt polisen, och de två poliserna, Kling och Klang, kommer klampande in.
+= You saw our signal! I knew the spy card would come in handy.
+> Du såg vår signal! Jag visste att spionkortet skulle komma till nytta.
+= Officers! I've found two wardrobe ornaments. You can have them. They're not very pretty.
+> Konstaplar! Jag har hittat två skåpprydnader. Ni får ta dem. De är inte så vackra.
