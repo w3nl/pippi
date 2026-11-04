@@ -71,11 +71,11 @@ test('every close-up fits on a phone without sideways scrolling', async ({ page 
     await page.locator('#m-close').tap();
     expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
   }
-  // Chapter 5: the Hoppetossa's close-ups
-  await seed(page, { ch: 5, scene: 'ship', f: { introDone: true, aboard: true, course: true }, inv: ['net', 'sextant', 'spyglass'] }, ['-ch2', '-ch3', '-ch4', '-ch5']);
+  // Chapter 6: the Hoppetossa's close-ups
+  await seed(page, { ch: 6, scene: 'ship', f: { introDone: true, aboard: true, course: true }, inv: ['net', 'sextant', 'spyglass'] }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6']);
   await page.locator('#btn-cont').tap();
   await skip(page);
-  for (const open of ['openHoist()', 'S.pul = { n: 3 }; openHoist()', 'openWheel()', 'openChart5()', 'openFloat()', 'openStill()', 'openLog5()', 'openSextant5()', 'S.eqr = 1; openSextant5()', 'openLandHo()']) {
+  for (const open of ['openHoist()', 'S.pul = { n: 3 }; openHoist()', 'openWheel()', 'openChart6()', 'openFloat()', 'openStill()', 'openLog6()', 'openSextant6()', 'S.eqr = 1; openSextant6()', 'openLandHo()']) {
     await page.evaluate(open);
     await page.waitForTimeout(150);
     const ok = await page.locator('.panel').evaluate(e => e.scrollWidth <= e.clientWidth + 1);
@@ -83,8 +83,20 @@ test('every close-up fits on a phone without sideways scrolling', async ({ page 
     await page.locator('#m-close').tap();
     expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
   }
-  // Chapter 4: the big top's close-ups
-  await seed(page, { ch: 4, scene: 'circus', f: { introDone: true, tickets: true, inside: true } }, ['-ch2', '-ch3', '-ch4']);
+  // Chapter 4: the snowy garden's close-ups
+  await seed(page, { ch: 4, scene: 'winter', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4']);
+  await page.locator('#btn-cont').tap();
+  await skip(page);
+  for (const open of ['openTracks4()', 'openThermo4()', 'openFort4()', 'openSteps4()', 'openWarm4()', 'S.wrm = 1; openWarm4()', 'openThrow4()']) {
+    await page.evaluate(open);
+    await page.waitForTimeout(150);
+    const ok = await page.locator('.panel').evaluate(e => e.scrollWidth <= e.clientWidth + 1);
+    expect(ok, `${open} is wider than the screen`).toBe(true);
+    await page.locator('#m-close').tap();
+    expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
+  }
+  // Chapter 5: the big top's close-ups
+  await seed(page, { ch: 5, scene: 'circus', f: { introDone: true, tickets: true, inside: true } }, ['-ch2', '-ch3', '-ch4', '-ch5']);
   await page.locator('#btn-cont').tap();
   await skip(page);
   for (const open of ['openTickets()', 'openLights()', 'openTeeter()', 'openJuggle()', 'openTrapeze()', 'openGears()', 'S.gr = { n: 3 }; openGears()']) {

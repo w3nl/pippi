@@ -76,35 +76,41 @@ function useItem(item, hs){
     if(hs==='plaque' || hs==='romans' || hs==='clock3') return say("Bigger letters. Still Roman.");
     return say("Everything looks bigger. It doesn't look any cleverer.");
   }
+  if(item==='mittens'){
+    if(hs==='thermo4' || hs==='snow4' || hs==='steps4') return S.f.balls ? say("You've made enough snowballs. Any more and the horse won't be able to pull the sledge.") : openThermo4();
+    if(hs==='ta4') return say(['annika', "Thank you, but those are yours. Pippi says she has spare ones somewhere. Somewhere in that wardrobe."]);
+    if(hs==='oak4' || hs==='nilsson4') return say([['nilsson', "Eek!"], "Mr Nilsson eyes your mittens greedily. You put them safely back in your pocket."]);
+    return say("Warm, woolly mittens. Perfect for making snowballs, if the snow is the right kind.");
+  }
   if(item==='tickets'){
     if(hs!=='ringmaster') return say("Circus tickets are for showing to the ringmaster.");
     take('tickets'); S.f.inside = true; save(); applyVisuals(); beep(700,.06);
     return say([['ringmaster', "Four tickets, very good. Welcome to the circus!"], ['ringmaster', "But oh dear, oh dear. The show can't begin! Everything is going wrong."], ['ringmaster', "The spotlights are all the wrong colours, the teeterboard won't balance, the clown has forgotten his juggling, and the trapeze artists can't catch each other. My checklist is on the tent pole."], ['pippi', "I've never fixed a circus, so I'm sure I can!"]]);
   }
   if(item==='net'){
-    if(hs==='sea5'){
+    if(hs==='sea6'){
       if(!S.f.course) return say("In the harbour? The only thing to catch here is a bored seagull.");
       if(S.f.floats) return say("There's nothing left to fish out. Only fish, and they'd rather stay where they are.");
       return openFloat();
     }
-    if(hs==='nilsson5') return say([['nilsson', "Eek!"], "You catch Mr Nilsson in the net. He looks delighted. You let him go again."]);
+    if(hs==='nilsson6') return say([['nilsson', "Eek!"], "You catch Mr Nilsson in the net. He looks delighted. You let him go again."]);
     return say("A fishing net is for fishing things out of the sea.");
   }
   if(item==='sextant'){
-    if(hs==='sky5'){
-      if(S.f.water && !S.f.equator) return openSextant5();
+    if(hs==='sky6'){
+      if(S.f.water && !S.f.equator) return openSextant6();
       return say("The note in the box said: only works at night. Obviously.");
     }
     return say("A sextant measures how high a star is above the horizon. Point it at the sky.");
   }
   if(item==='spyglass'){
-    if(hs==='crow' || hs==='sky5' || hs==='sea5'){
-      if(S.f.equator && !S.f.out5 && hs==='crow') return openLandHo();
-      if(S.f.equator && !S.f.out5) return say("From down here on deck, there's nothing but sea. Climb higher: the crow's nest!");
+    if(hs==='crow' || hs==='sky6' || hs==='sea6'){
+      if(S.f.equator && !S.f.out6 && hs==='crow') return openLandHo();
+      if(S.f.equator && !S.f.out6) return say("From down here on deck, there's nothing but sea. Climb higher: the crow's nest!");
       return say("You look through the spyglass. Sea. More sea. A seagull, very close up.");
     }
-    if(hs==='horse5'){ S.ach.closehorse = true; save(); return say(["You look at the horse through the spyglass. An enormous eye looks back at you.", ['horse', "Pfrrrr!"]]); }
-    if(hs==='pippi5') return say(['pippi', "I can see you! Your freckle is enormous. Well, my freckles are, anyway."]);
+    if(hs==='horse6'){ S.ach.closehorse = true; save(); return say(["You look at the horse through the spyglass. An enormous eye looks back at you.", ['horse', "Pfrrrr!"]]); }
+    if(hs==='pippi6') return say(['pippi', "I can see you! Your freckle is enormous. Well, my freckles are, anyway."]);
     return say("Through the spyglass, everything nearby is a blur. It's for things far away.");
   }
   say("That doesn't do anything useful.");

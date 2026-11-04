@@ -25,7 +25,9 @@ const VOICE_STYLE = {
   clown:   { pitch: 1.6,  rate: 1.2,  slot: 3 },
   strongman:{ pitch: .4,  rate: .85,  slot: 7 },
   seal:    { pitch: 1.8,  rate: 1.1,  slot: 2 },
-  captain: { pitch: .6,   rate: .95,  slot: 4 }    // big, booming and jolly
+  captain: { pitch: .6,   rate: .95,  slot: 4 },   // big, booming and jolly
+  kling:   { pitch: .7,   rate: .95,  slot: 6 },   // tall and serious (mostly)
+  klang:   { pitch: 1.1,  rate: 1.1,  slot: 8 }    // round and cheerful
 };
 
 /* The device's voices for the current language: British English or Dutch, falling back to any English voice. */

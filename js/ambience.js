@@ -15,7 +15,8 @@ function ambKey(){
     case 'kitchen': return 'kitchen' + (f.fire ? '+fire' : '');
     case 'bedroom': return 'bedroom' + (f.out2 ? '' : '+snore');
     case 'school': return 'school' + (f.out3 ? '' : '+horse');
-    case 'circus': return 'circus' + (f.out4 ? '+show' : '');
+    case 'winter': return 'winter' + (f.out4 ? '+cheer' : '');
+    case 'circus': return 'circus' + (f.out5 ? '+show' : '');
     case 'ship': return 'ship' + (!f.course ? '+harbour' : f.water && !f.equator ? '+night' : '+sailing');
   }
   return null;
@@ -123,7 +124,7 @@ const SOUNDSCAPES = {
     every(12000, 22000, () => { blip(m, 420, .35, .02, 'sine', 380); later(500, () => blip(m, 400, .55, .02, 'sine', 360)); });
     if(mods.includes('snore')) every(3600, 3600, () => { burst(m, 1.1, .03, 220, 'lowpass'); later(1500, () => burst(m, .7, .015, 600, 'bandpass')); });
   },
-  // Chapter 4, the big top: the murmur of the audience, a barrel-organ waltz, the odd honk from the clown,
+  // Chapter 5, the big top: the murmur of the audience, a barrel-organ waltz, the odd honk from the clown,
   // and once the show starts, a drumroll and cheering.
   circus(m, mods){
     bed(m, { type: 'bandpass', freq: 500, q: .5, gain: .025, wobble: .4, rate: .15 });
@@ -141,7 +142,15 @@ const SOUNDSCAPES = {
     every(5000, 11000, () => [0, 1, 2].forEach(i => later(i * 120, () => blip(m, 3000 + Math.random() * 800, .07, .01, 'sine', 2600))));
     if(mods.includes('horse')) every(6000, 12000, () => [0, 1, 2, 3].forEach(i => later(i * 260, () => burst(m, .12, .02, 500, 'bandpass'))));
   },
-  // Chapter 5, the Hoppetossa: waves against the hull and creaking timbers; gulls in the harbour,
+  // Chapter 4, the snowy garden: a soft winter wind, crows cawing, the church bell far away now and then,
+  // and laughing once the snowball fight is won.
+  winter(m, mods){
+    bed(m, { type: 'bandpass', freq: 700, q: .4, gain: .018, wobble: .9, rate: .07 });
+    every(9000, 18000, () => [0, 1].forEach(i => later(i * 300, () => blip(m, 520, .22, .012, 'sawtooth', 430))));
+    every(20000, 35000, () => blip(m, 392, 2.2, .012, 'sine'));
+    if(mods.includes('cheer')) every(3000, 6000, () => burst(m, 1, .025, 1500, 'bandpass'));
+  },
+  // Chapter 6, the Hoppetossa: waves against the hull and creaking timbers; gulls in the harbour,
   // wind in the sails at sea, and the ship's bell now and then at night.
   ship(m, mods){
     bed(m, { freq: 380, gain: .022, wobble: .8, rate: .12 });

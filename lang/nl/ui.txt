@@ -281,25 +281,25 @@
 = The little school
 > Het schooltje
 
-# ---------- Chapter 4: menus, end screen, speakers, item uses ----------
+# ---------- Chapter 5: menus, end screen, speakers, item uses ----------
 = Classroom door: on to Chapter {n}
 > Deur van de klas: door naar hoofdstuk {n}
-= Pippi has her holidays, and Miss has the biggest piece of cake. Next: the circus comes to town, and the show can't begin…
-> Pippi heeft vakantie, en de juf het grootste stuk taart. Straks: het circus komt naar de stad, en de voorstelling kan niet beginnen…
+= Pippi has her holidays, and Miss has the biggest piece of cake. Next: winter comes to Villa Villekulla, and two policemen have a challenge…
+> Pippi heeft vakantie, en de juf het grootste stuk taart. Straks: de winter komt naar Villa Kakelbont, en twee agenten dagen jullie uit…
 = Continue to Chapter 4
 > Door naar hoofdstuk 4
-= Showtime · Chapter 4 complete
-> Voorstelling! · hoofdstuk 4 voltooid
+= Showtime · Chapter 5 complete
+> Voorstelling! · hoofdstuk 5 voltooid
 = Bravo
 > Bravo
 = Pippi lifted the strongman, and the circus wants her to stay. Next: a ship sails into the harbour, and her captain has a red beard…
 > Pippi heeft de sterke man opgetild, en het circus wil dat ze blijft. Straks: er vaart een schip de haven binnen, en de kapitein heeft een rode baard…
 = Pippi goes to the circus
 > Pippi gaat naar het circus
-= Chapter 4: Pippi goes to the circus
-> Hoofdstuk 4: Pippi gaat naar het circus
-= Chapter 4 · Pippi Goes to the Circus
-> Hoofdstuk 4 · Pippi gaat naar het circus
+= Chapter 5: Pippi goes to the circus
+> Hoofdstuk 5: Pippi gaat naar het circus
+= Chapter 5 · Pippi Goes to the Circus
+> Hoofdstuk 5 · Pippi gaat naar het circus
 = Honked the clown's nose
 > Op de neus van de clown getoeterd
 = Lights out!
@@ -315,23 +315,23 @@
 = Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming. When you're ready, the curtain leads on to Chapter {n}.
 > Neem de tijd. De voorstelling gaat door: het paard draaft nog steeds rondjes door de piste, en de confetti blijft vallen. Als je klaar bent, gaat het gordijn verder naar hoofdstuk {n}.
 
-# ---------- Chapter 5: menus, end screen, speakers ----------
+# ---------- Chapter 6: menus, end screen, speakers ----------
 = Curtain: on to Chapter {n}
 > Gordijn: door naar hoofdstuk {n}
 = Continue to Chapter 5
 > Door naar hoofdstuk 5
-= Land ho · Chapter 5 complete
-> Land in zicht · hoofdstuk 5 voltooid
+= Land ho · Chapter 6 complete
+> Land in zicht · hoofdstuk 6 voltooid
 = Land ho
 > Land in zicht
-= The Hoppetossa has reached Captain Longstocking's island. Next: life on a South Sea island. Chapter 6 is still being written.
-> De Hoppetossa heeft het eiland van kapitein Langkous bereikt. Straks: het leven op een eiland in de Zuidzee. Aan hoofdstuk 6 wordt nog geschreven.
+= The Hoppetossa has reached Captain Longstocking's island. Next: life on a South Sea island. Chapter 7 is still being written.
+> De Hoppetossa heeft het eiland van kapitein Langkous bereikt. Straks: het leven op een eiland in de Zuidzee. Aan hoofdstuk 7 wordt nog geschreven.
 = On board the Hoppetossa
 > Aan boord van de Hoppetossa
-= Chapter 5: On board the Hoppetossa
-> Hoofdstuk 5: Aan boord van de Hoppetossa
-= Chapter 5 · On Board the Hoppetossa
-> Hoofdstuk 5 · Aan boord van de Hoppetossa
+= Chapter 6: On board the Hoppetossa
+> Hoofdstuk 6: Aan boord van de Hoppetossa
+= Chapter 6 · On Board the Hoppetossa
+> Hoofdstuk 6 · Aan boord van de Hoppetossa
 = Tasted the sea
 > De zee geproefd
 = A horse, very close up

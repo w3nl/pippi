@@ -1,153 +1,111 @@
 const { test, expect } = require('@playwright/test');
 const { seed, hs, skip, useSlot, closeModal, waitModalClosed, expectWin } = require('./helpers');
 
-test('Chapter 5: sail the Hoppetossa to the island', async ({ page }) => {
+test('Chapter 5: get the circus show started', async ({ page }) => {
   await seed(page, null, ['-ch2', '-ch3', '-ch4', '-ch5']);
   await expect(page.locator('#btn-ch5')).toBeVisible();
   await page.locator('#btn-ch5').click();
-  await expect(page.locator('#d-who')).toHaveText('The Hoppetossa');
+  await expect(page.locator('#d-who')).toHaveText('The big top');
   await skip(page);
-  await expect(page.locator('#chap')).toHaveText('Chapter 5 · On Board the Hoppetossa');
-  await expect(page.locator('#sc-ship')).toHaveClass(/on/);
-  await expect(page.locator('#hp-harbour')).toBeVisible();
+  await expect(page.locator('#chap')).toHaveText('Chapter 5 · Pippi Goes to the Circus');
+  await expect(page.locator('#sc-circus')).toHaveClass(/on/);
 
-  // not without the horse
-  await hs(page, 'wheel');
-  await expect(page.locator('#d-txt')).toContainText('without the horse');
+  // nothing without a ticket
+  await hs(page, 'lamps');
+  await expect(page.locator('#d-txt')).toContainText('Tickets, please', { timeout: 5_000 });
   await skip(page);
 
-  // 1. the hoist: one rope is far too heavy, four is right
-  await hs(page, 'hoist');
-  await page.locator('#hp-heave').click();
-  await expect(page.locator('#hp-hfb')).toContainText('all 400 kg');
-  await page.locator('.hp-ropes[data-n="4"]').click();
-  await expect(page.locator('#hp-tackle')).toContainText('100 kg');
-  await page.locator('#hp-heave').click();
-  await expect(page.locator('#hp-hfb')).toHaveClass(/good/);
+  // 1. the tickets: 4 × 3 = 12, 20 − 12 = 8 change
+  await hs(page, 'booth');
+  const coin = v => page.locator(`.till .coin[data-v="${v}"]`).click();
+  await coin(5); await coin(5); await coin(2);
+  await page.locator('#chg-give').click();
+  await expect(page.locator('#chg-fb')).toContainText('12 crowns is what the tickets cost');
+  await page.locator('#chg-clear').click();
+  await coin(5); await coin(2); await coin(1);
+  await page.locator('#chg-give').click();
+  await expect(page.locator('#chg-fb')).toHaveClass(/good/);
   await waitModalClosed(page);
-  await expect(page.locator('#hp-dhorse')).toBeVisible();
-  // an achievement: the spyglass on the horse
-  await hs(page, 'glass5');
-  await skip(page);
-  await useSlot(page, 'Spyglass');
-  await hs(page, 'horse5');
+  await useSlot(page, 'Circus tickets');
+  await hs(page, 'ringmaster');
   await skip(page);
 
-  // 2. the chart and the wheel: south-west
-  await hs(page, 'chart5');
-  await expect(page.locator('.hp-chart')).toContainText('Equator 0°');
-  await closeModal(page);
-  await hs(page, 'wheel');
-  for (let i = 0; i < 4; i++) await page.locator('#hp-star').click();
-  await page.locator('#hp-setsail').click();
-  await expect(page.locator('#hp-wfb')).toContainText('Due south');
-  await page.locator('#hp-star').click();
-  await expect(page.locator('#hp-heading')).toContainText('south-west');
-  await page.locator('#hp-setsail').click();
-  await expect(page.locator('#hp-wfb')).toHaveClass(/good/);
+  // the winch won't turn before the checklist is done
+  await hs(page, 'winch');
+  await expect(page.locator('#d-txt')).toContainText('0 of 4', { timeout: 5_000 });
+  await skip(page);
+
+  // 2. the spotlights: lights out, then yellow, cyan, white
+  await hs(page, 'lamps');
+  await page.locator('#ld-go').click();
+  await expect(page.locator('#ld-fb')).toContainText('Pitch dark');
+  const sw = i => page.locator(`.ld-switches .tog[data-i="${i}"]`).click();
+  await sw(0); await sw(1); await page.locator('#ld-go').click();
+  await expect(page.locator('#ld-fb')).toContainText('Yellow!');
+  await sw(0); await sw(2); await page.locator('#ld-go').click();
+  await expect(page.locator('#ld-fb')).toContainText('Cyan!');
+  await sw(0); await page.locator('#ld-go').click();
+  await expect(page.locator('#ld-fb')).toHaveClass(/good/);
   await waitModalClosed(page);
-  await expect(page.locator('#sc-ship')).toHaveClass(/sailing/);
-  await expect(page.locator('#hp-harbour')).toBeHidden({ timeout: 6_000 });
-  await expect(page.locator('#hp-sails')).toBeVisible();
+  await expect(page.locator('#sc-circus')).toHaveClass(/lit/);
 
-  // 3. overboard! fetch the net first; the big log floats, the little key sinks
-  await hs(page, 'sea5');
-  await expect(page.locator('#d-txt')).toContainText('thrown the captain');
-  await skip(page);
-  await hs(page, 'net5');
-  await skip(page);
-  await useSlot(page, 'Fishing net');
-  await hs(page, 'sea5');
-  for (const k of ['log', 'key', 'apple', 'coin', 'cork', 'marble']) await page.locator(`.hp-fl[data-k="${k}"]`).click();
-  await page.locator('#hp-fcheck').click();
-  await expect(page.locator('#hp-ffb')).toContainText('Small things can sink');
-  for (const k of ['key', 'coin', 'marble']) await page.locator(`.hp-fl[data-k="${k}"]`).click();
-  await page.locator('#hp-fcheck').click();
-  await expect(page.locator('#hp-ffb')).toHaveClass(/good/);
+  // 3. the teeterboard: 4 m launches the strongman, 3 m balances
+  await hs(page, 'teeter');
+  await page.locator('.seat[data-m="4"]').click();
+  await expect(page.locator('#tt-fb')).toContainText('flies up');
+  await page.locator('.seat[data-m="3"]').click();
+  await expect(page.locator('#tt-fb')).toHaveClass(/good/);
   await waitModalClosed(page);
 
-  // 4. fresh water from the sea (and a taste of sea water first)
-  await hs(page, 'barrel');
-  await page.locator('#hp-drink').click();
-  await expect(page.locator('#hp-sfb')).toContainText('Never drink sea water');
-  for (const k of ['bowl', 'cup', 'lid', 'sun']) await page.locator(`.hp-part[data-k="${k}"]`).click();
-  await page.locator('#hp-wait').click();
-  await expect(page.locator('#hp-sfb')).toContainText('run down the sides');
-  await page.locator('.hp-part[data-k="pebble"]').click();
-  await page.locator('#hp-wait').click();
-  await expect(page.locator('#hp-sfb')).toHaveClass(/good/);
+  // 4. the clown's pattern: honk his nose first
+  await hs(page, 'clown');
+  const ball = async (i, clicks) => { for (let k = 0; k < clicks; k++) await page.locator(`.jb.pick[data-i="${i}"]`).click(); };
+  await page.locator('#jug-go').click();
+  await expect(page.locator('#jug-fb')).toContainText('every empty ball');
+  await ball(0, 2); await ball(1, 2); await ball(2, 1);   // blue, blue, red
+  await page.locator('#jug-go').click();
+  await expect(page.locator('#jug-fb')).toHaveClass(/good/);
   await waitModalClosed(page);
-  await expect(page.locator('#sc-ship')).toHaveClass(/night/);
+  await expect(page.locator('#cc-balls-air')).toBeVisible();
+  for (let i = 0; i < 3; i++) { await hs(page, 'clown'); await skip(page); }
 
-  // 5. the Equator, by the North Star
-  await hs(page, 'sky5');
-  await expect(page.locator('#d-txt')).toContainText('North Star hangs very low');
-  await skip(page);
-  await hs(page, 'log5');
-  await expect(page.locator('.hp-log')).toContainText('59°');
-  await closeModal(page);
-  await hs(page, 'case5');
-  await skip(page);
-  await useSlot(page, 'Sextant');
-  await hs(page, 'sky5');
-  await page.locator('.hand[data-q="pole"]').click();
-  await expect(page.locator('#hp-qfb')).toContainText('90°');
-  await page.locator('.hand[data-q="eq"]').click();
-  await expect(page.locator('#hp-qfb')).toHaveClass(/good/);
-  await page.locator('.hand[data-q="below"]').click();
-  await expect(page.locator('#hp-qfb')).toHaveClass(/good/);
+  // 5. the trapezes: same rope length
+  await hs(page, 'trapeze');
+  await page.locator('#tp-go').click();
+  await expect(page.locator('#tp-fb')).toContainText('safety net');
+  await page.locator('#tpb').fill('4');
+  await page.locator('#tp-go').click();
+  await expect(page.locator('#tp-fb')).toHaveClass(/good/);
   await waitModalClosed(page);
-  await expect(page.locator('#hp-zero')).toBeVisible();
-  await expect(page.locator('#hp-isletip')).toBeVisible();
-  // King Neptune
-  await hs(page, 'pippi5');
-  await skip(page);
 
-  // 6. land ho, from the crow's nest
-  await hs(page, 'crow');
-  await page.locator('.hp-from[data-f="nest"]').click();
-  await page.locator('.hand[data-l="near"]').click();
-  await expect(page.locator('#hp-lfb')).toHaveClass(/bad/);
-  await page.locator('.hand[data-l="round"]').click();
-  await expect(page.locator('#hp-lfb')).toHaveClass(/good/);
-  await expectWin(page, 'Land ho · Chapter 5 complete');
-  await expect(page.locator('#hp-isle')).toBeVisible();
-  await expect(page.locator('#btn-next')).toBeHidden();
-  for (const a of ['Tasted the sea', 'A horse, very close up', 'Met King Neptune'])
+  // 6. the winch: 1 gear in between is wrong, 2 is right
+  await hs(page, 'winch');
+  await page.locator('#gear-go').click();
+  await expect(page.locator('#gear-fb')).toContainText('even tighter');
+  await page.locator('.gcount[data-n="2"]').click();
+  await page.locator('#gear-go').click();
+  await expect(page.locator('#gear-fb')).toHaveClass(/good/);
+  await expectWin(page, 'Showtime · Chapter 5 complete');
+  await expect(page.locator('#sc-circus')).toHaveClass(/showtime/);
+  await expect(page.locator('#cc-rider')).toBeAttached();
+  for (const a of ['Lights out!', 'The flying strongman', "Honked the clown's nose"])
     await expect(page.locator('#w-ach .got', { hasText: a })).toBeVisible();
 });
 
-test('the hints follow the voyage, and the close-ups stay as you left them', async ({ page }) => {
-  await seed(page, { ch: 5, scene: 'ship', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5']);
-  await page.locator('#btn-cont').click();
-  await expect(page.locator('#d-txt')).toContainText('Back at the harbour', { timeout: 5_000 });
-  await skip(page);
-  await page.locator('#btn-hint').click();
-  await expect(page.locator('#d-txt')).toContainText('cargo hoist', { timeout: 5_000 });
-  await skip(page);
-  await hs(page, 'hoist');
-  await page.locator('.hp-ropes[data-n="3"]').click();
-  await page.reload();
-  await page.locator('#btn-cont').click();
-  await skip(page);
-  await hs(page, 'hoist');
-  await expect(page.locator('.hp-ropes[data-n="3"]')).toHaveClass(/on/);
-});
-
 test('finishing Chapter 4 leads to Chapter 5', async ({ page }) => {
-  await seed(page, { ch: 4, scene: 'circus', f: { out4: true }, t: 100 }, ['-ch2', '-ch3', '-ch4']);
+  await seed(page, { ch: 4, scene: 'winter', f: { out4: true } }, ['-ch2', '-ch3', '-ch4']);
   await expect(page.locator('#btn-cont')).toHaveText('Continue to Chapter 5');
   await page.locator('#btn-cont').click();
-  await expect(page.locator('#chap')).toHaveText('Chapter 5 · On Board the Hoppetossa');
+  await expect(page.locator('#chap')).toHaveText('Chapter 5 · Pippi Goes to the Circus');
   await skip(page);
-  // the curtain after "Look around"
-  await seed(page, { ch: 4, scene: 'circus', f: { out4: true, introDone: true, inside: true } }, ['-ch2', '-ch3', '-ch4']);
+  // the garden gate after "Look around"
+  await seed(page, { ch: 4, scene: 'winter', f: { out4: true, introDone: true } }, ['-ch2', '-ch3', '-ch4']);
   await expect(page.locator('#title')).not.toHaveClass(/loading/);
-  await page.evaluate(() => { document.querySelector('#title').hidden = true; S.started = true; applyVisuals(); showWin(); });
+  await page.evaluate(() => { document.querySelector('#title').hidden = true; showWin(); });
   await expect(page.locator('#btn-next')).toHaveText('Continue to Chapter 5');
   await page.locator('#btn-stay').click();
   await skip(page);
-  await expect(page.locator('#sc-circus [data-hs="curtain"]')).toHaveAttribute('data-label', 'Curtain: on to Chapter 5');
-  await hs(page, 'curtain');
-  await expect(page.locator('#chap')).toHaveText('Chapter 5 · On Board the Hoppetossa');
+  await expect(page.locator('#sc-winter [data-hs="gate4"]')).toHaveAttribute('data-label', 'Garden gate: on to Chapter 5');
+  await hs(page, 'gate4');
+  await expect(page.locator('#chap')).toHaveText('Chapter 5 · Pippi Goes to the Circus');
 });

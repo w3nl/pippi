@@ -41,7 +41,7 @@ function stage2(){
   if(!S.f.swapped) return 'b_scale';
   return 'b_wake';
 }
-function stage_(){ return S.ch===5 ? stage5() : S.ch===4 ? stage4() : S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
+function stage_(){ return S.ch===6 ? stage6() : S.ch===5 ? stage5() : S.ch===4 ? stage4() : S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
 Object.assign(HINTS, {
   s_drawer: ["The chalk box is empty. Miss keeps the chalk in her desk drawer, and she has written herself a note about its code.", "The plaque over the door says MDCCCXCIV: 1000 + 500 + 300 + 90 + 4 = 1894. Set the desk's padlock to 1 8 9 4."],
   s_nines: ["Task 1: Pippi's nines on the blackboard have three mistakes. The poster next to the board shows the nines trick.", "Use the chalk on the blackboard and mark 9 × 5, 9 × 8 and 9 × 10 (they should be 45, 72 and 90). Then click Done marking."],
@@ -58,6 +58,20 @@ function stage3(){
 }
 
 Object.assign(HINTS, {
+  w_tracks: ["Mr Nilsson has run off with your mittens. Monkeys leave very odd footprints: look at the tracks in the snow.", "Click the tracks and pick trail B: five long fingers and a thumb, like a little hand. It leads to the old oak."],
+  w_balls: ["Snowballs only stick when the snow is a little damp. The thermometer by the kitchen window shows four places in the garden.", "Pick the sunny veranda at −1 °C: just below freezing. (You need your mittens on.)"],
+  w_fort: ["Your fort is still a heap of snow blocks. A wall falls apart where the joints line up from top to bottom.", "Click our fort and shift every other row by half a block, like bricks in a house wall. Then let Pippi push."],
+  w_steps: ["The horse should pull the sledge with the snowballs, but it slides on the icy veranda steps. What melts ice even below 0 °C?", "Click the veranda steps and choose salt."],
+  w_warm: ["Annika is shivering by the fence. What keeps you warmest: one thick thing, or several thin ones?", "Click Tommy and Annika: three thin layers, then mittens (fingers together keep each other warm)."],
+  w_throw: ["Three o'clock! You always throw just as hard. Which angle makes a snowball fly furthest?", "Click Kling and Klang (or our fort) and throw at 45°, halfway between flat and straight up."]
+});
+function stage4(){
+  if(!S.f.tracks) return 'w_tracks';
+  for(const k of READY4) if(!S.f[k]) return 'w_' + k;
+  return 'w_throw';
+}
+
+Object.assign(HINTS, {
   c_tickets: ["Nobody gets in without a ticket. The ticket booth is by the entrance, and the sign says what a ticket costs.", "Four tickets at 3 crowns is 12 crowns. Pippi pays 20, so give 8 crowns change (for example 5 + 2 + 1)."],
   c_show: ["You have the tickets. Who wants to see them?", "Select the tickets and click the ringmaster."],
   c_lights: ["The spotlights need the right colours. Coloured light mixes differently from paint.", "Yellow = red + green. Cyan = green + blue. White = red + green + blue."],
@@ -66,10 +80,10 @@ Object.assign(HINTS, {
   c_trapeze: ["The trapezes must swing in the same rhythm. Does a heavier flyer swing slower?", "No: only the length of the rope matters. Give both ropes the same length."],
   c_gears: ["Everything on the checklist is done. The curtain winch on the right of the curtain opens it. Gears that touch turn opposite ways.", "Put 2 gears in between: crank ↻, gear ↺, gear ↻, drum ↺. Then turn the crank."]
 });
-function stage4(){
+function stage5(){
   if(!S.f.tickets) return 'c_tickets';
   if(!S.f.inside) return 'c_show';
-  for(const k of TASKS4) if(!S.f[k]) return { lights: 'c_lights', teeter: 'c_teeter', juggle: 'c_juggle', trapeze: 'c_trapeze' }[k];
+  for(const k of TASKS5) if(!S.f[k]) return { lights: 'c_lights', teeter: 'c_teeter', juggle: 'c_juggle', trapeze: 'c_trapeze' }[k];
   return 'c_gears';
 }
 Object.assign(HINTS, {
@@ -83,7 +97,7 @@ Object.assign(HINTS, {
   h_glass: ["Dawn, and something tiny on the horizon. To see far you need the captain's spyglass, and a high place.", "Take the spyglass from its hook by the wheel, then climb to the crow's nest."],
   h_landho: ["From the crow's nest you can see the island, from the deck you can't. Think about the shape of the Earth.", "Choose: the Earth is round, so from higher up you can see further over the bend of the sea."]
 });
-function stage5(){
+function stage6(){
   if(!S.f.aboard) return 'h_hoist';
   if(!S.f.course) return 'h_course';
   if(!S.f.floats) return S.inv.includes('net') ? 'h_floats' : 'h_net';

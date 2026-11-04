@@ -2,9 +2,9 @@
 // Loaded in order by js/boot.js; all game files share the same global scope.
 
 /* ---------- chapters ---------- */
-const LAST_CH = 5;   // the newest chapter; raise it when you add one
-function chapterDone(){ return S.ch===5 ? !!S.f.out5 : S.ch===4 ? !!S.f.out4 : S.ch===3 ? !!S.f.out3 : S.ch===2 ? !!S.f.out2 : !!S.f.out1; }
-function nextChapter(){ const f = { 1: startCh2, 2: startCh3, 3: startCh4, 4: startCh5 }[S.ch]; if(f) f(); }
+const LAST_CH = 6;   // the newest chapter; raise it when you add one
+function chapterDone(){ return !!S.f['out' + S.ch]; }
+function nextChapter(){ const f = { 1: startCh2, 2: startCh3, 3: startCh4, 4: startCh5, 5: startCh6 }[S.ch]; if(f) f(); }
 /* Exits lead on to the next chapter once a chapter is solved. */
 function exitLabels(){
   const open = chapterDone() && S.ch < LAST_CH, n = S.ch + 1;
@@ -13,7 +13,8 @@ function exitLabels(){
   // applyBedroom() sets the veranda door's other labels
   if(open && S.ch === 2) set('#sc-bedroom [data-hs="vdoor"]', tx('Veranda door: on to Chapter {n}', { n }));
   set('#sc-school [data-hs="door3"]', open && S.ch === 3 ? tx('Classroom door: on to Chapter {n}', { n }) : 'Classroom door');
-  set('#sc-circus [data-hs="curtain"]', open && S.ch === 4 ? tx('Curtain: on to Chapter {n}', { n }) : "The performers' curtain");
+  set('#sc-winter [data-hs="gate4"]', open && S.ch === 4 ? tx('Garden gate: on to Chapter {n}', { n }) : 'Garden gate');
+  set('#sc-circus [data-hs="curtain"]', open && S.ch === 5 ? tx('Curtain: on to Chapter {n}', { n }) : "The performers' curtain");
 }
 function refreshMenu(){
   const fin = chapterDone();
@@ -23,20 +24,20 @@ function refreshMenu(){
   $('#btn-ch3').hidden = !unlocked3();
   $('#btn-ch4').hidden = !unlocked4();
   $('#btn-ch5').hidden = !unlocked5();
+  $('#btn-ch6').hidden = !unlocked6();
 }
 
 const CH_END = {
   1:['Door open · Chapter 1 complete', "You're out", "Next: that night, two burglars come creeping up to Villa Villekulla. They've heard about a certain suitcase full of gold…", 'Continue to Chapter 2'],
   2:['Burglars caught · Chapter 2 complete', 'Caught', "Thunder-Karlsson and Bloom are off to the police station, and the gold is safe. Next: Pippi goes to school for the very first time. She has heard that schoolchildren get holidays…", 'Continue to Chapter 3'],
-  3:["School's out · Chapter 3 complete", 'Holidays', "Pippi has her holidays, and Miss has the biggest piece of cake. Next: the circus comes to town, and the show can't begin…", 'Continue to Chapter 4'],
-  4:['Showtime · Chapter 4 complete', 'Bravo', "Pippi lifted the strongman, and the circus wants her to stay. Next: a ship sails into the harbour, and her captain has a red beard…", 'Continue to Chapter 5'],
-  5:['Land ho · Chapter 5 complete', 'Land ho', "The Hoppetossa has reached Captain Longstocking's island. Next: life on a South Sea island. Chapter 6 is still being written.", '']
+  3:["School's out · Chapter 3 complete", 'Holidays', "Pippi has her holidays, and Miss has the biggest piece of cake. Next: winter comes to Villa Villekulla, and two policemen have a challenge…", 'Continue to Chapter 4'],
+  4:['Snowball fight · Chapter 4 complete', "Bull's-eye", "Kling and Klang surrendered, and everybody had hot chocolate. Next: the circus comes to town, and the show can't begin…", 'Continue to Chapter 5'],
+  5:['Showtime · Chapter 5 complete', 'Bravo', "Pippi lifted the strongman, and the circus wants her to stay. Next: a ship sails into the harbour, and her captain has a red beard…", 'Continue to Chapter 6'],
+  6:['Land ho · Chapter 6 complete', 'Land ho', "The Hoppetossa has reached Captain Longstocking's island. Next: life on a South Sea island. Chapter 7 is still being written.", '']
 };
 function showWin(){
-  if(S.ch===1) setUnlocked2();
-  if(S.ch===2) setUnlocked3();
-  if(S.ch===3) setUnlocked4();
-  if(S.ch===4) setUnlocked5();
+  const unlock = { 1: setUnlocked2, 2: setUnlocked3, 3: setUnlocked4, 4: setUnlocked5, 5: setUnlocked6 }[S.ch];
+  if(unlock) unlock();
   const [eb, ti, note, next] = CH_END[S.ch] || CH_END[1];
   $('#btn-next').hidden = !next; $('#btn-next').textContent = next;
   $('#w-eyebrow').textContent = eb;
@@ -51,7 +52,7 @@ function showWin(){
 
 /* ---------- scores: each chapter's best result, kept across new games (KEY-scores) ---------- */
 const SCORES_KEY = KEY + '-scores';
-const CH_NAMES = ['Locked in with Mr Nilsson', 'Burglars in the night', 'Pippi goes to school', 'Pippi goes to the circus', 'On board the Hoppetossa'];
+const CH_NAMES = ['Locked in with Mr Nilsson', 'Burglars in the night', 'Pippi goes to school', 'Snowball fight', 'Pippi goes to the circus', 'On board the Hoppetossa'];
 const rankFor = hints => hints===0 ? 'Strongest in the world' : hints<=2 ? 'Thing-finder' : hints<=5 ? 'Pirate in training' : 'Mr Nilsson';
 let scoresMem = null;   // also works when the browser blocks storage (for this visit only)
 function getScores(){
@@ -104,29 +105,33 @@ const ACH = [['spunk','Asked the spunk'],['egghead','Egg on your head'],['ceilin
   ['shake','Shook Pippi three times'],['giant','A shadow over 5 metres tall'],['venus','Wished upon a planet'],
   ['quarter','Four is more than three'],['freckles',"Counted Pippi's freckles"],
   ['honk','Honked the clown\'s nose'],['lightsout','Lights out!'],['flyer','The flying strongman'],
-  ['tasted','Tasted the sea'],['closehorse','A horse, very close up'],['neptune','Met King Neptune']];
+  ['tasted','Tasted the sea'],['closehorse','A horse, very close up'],['neptune','Met King Neptune'],
+  ['snowangel','Made a snow angel'],['carrot',"The snowman's nose"],['ownhead','Snowball on your own head']];
 function startNew(){ S = Object.assign(fresh(), { ach: S.ach || {} }); S.started = true; sel = null; $('#title').hidden = true; $('#win').hidden = true; renderInv(); applyVisuals(); $('#timer').textContent = '00:00'; save(); intro1(); }
 function cont(){ $('#title').hidden = true; S.started = true; renderInv(); applyVisuals(); $('#timer').textContent = fmt(S.t);
   say([["sys", S.scene==='ship' ? (S.f.course ? "Back on board the Hoppetossa. The captain is humming at the wheel, and Mr Nilsson is looking for things to throw." : "Back at the harbour. The horse is still waiting on the quay.")
     : S.scene==='circus' ? (S.f.inside ? "Back in the big top. The ringmaster is still pulling at his moustache." : "Back at the circus. The ringmaster is still waiting for tickets.")
+    : S.scene==='winter' ? "Back in the snowy garden. Kling and Klang are still building their fort."
     : S.scene==='school' ? "Back in the classroom. Miss is still watching through the little window in the door."
     : S.scene==='bedroom' ? (S.f.scared ? "Back in Pippi's bedroom. The lantern is still waiting behind the old oak." : "Back in Pippi's bedroom. Pippi is still snoring like a ship's horn.")
     : S.f.key ? "Back in Pippi's kitchen. Mr Nilsson is licking syrup off his fingers." : "Back in Pippi's kitchen. Mr Nilsson is still sitting on the bureau with the key."]]); }
 $('#btn-new').onclick = startNew;
 $('#btn-cont').onclick = () => chapterDone() ? nextChapter() : cont();
-$('#btn-again').onclick = () => S.ch===5 ? startCh5() : S.ch===4 ? startCh4() : S.ch===3 ? startCh3() : S.ch===2 ? startCh2() : startNew();
+$('#btn-again').onclick = () => ({ 2: startCh2, 3: startCh3, 4: startCh4, 5: startCh5, 6: startCh6 }[S.ch] || startNew)();
 $('#btn-next').onclick = nextChapter;
 $('#btn-ch1').onclick = startNew;
 $('#btn-ch2').onclick = startCh2;
 $('#btn-ch3').onclick = startCh3;
 $('#btn-ch4').onclick = startCh4;
 $('#btn-ch5').onclick = startCh5;
+$('#btn-ch6').onclick = startCh6;
 const STAY = {
   1: "Take your time. Pippi is handing out sweets in the garden. When you're ready, the front door leads on to Chapter {n}.",
   2: "Take your time. The burglars aren't going anywhere: they're on top of the wardrobe. When you're ready, the veranda door leads on to Chapter {n}.",
   3: "Take your time. School's out, and the classroom is all yours. Mr Nilsson is finishing the cake. When you're ready, the classroom door leads on to Chapter {n}.",
-  4: "Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming. When you're ready, the curtain leads on to Chapter {n}.",
-  5: "Take your time. The Hoppetossa is anchored in the lagoon, the palm trees are swaying, and Pippi is already up a coconut tree."
+  4: "Take your time. Kling and Klang are digging their cap out of the snow. When you're ready, the garden gate leads on to Chapter {n}.",
+  5: "Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming. When you're ready, the curtain leads on to Chapter {n}.",
+  6: "Take your time. The Hoppetossa is anchored in the lagoon, the palm trees are swaying, and Pippi is already up a coconut tree."
 };
 $('#btn-stay').onclick = () => { $('#win').hidden = true; exitLabels();
   say(['sys', tx(STAY[S.ch] || STAY[1], { n: S.ch + 1 })]); };
@@ -184,13 +189,30 @@ onLangChange(() => {
   if(!$('#dialog').hidden && curLine){ clearInterval(typing); typing = null; full = tx(curLine[1]); $('#d-txt').textContent = full; }
 });
 
+/* Winter became Chapter 4, so the circus (was 4) and the Hoppetossa (was 5) moved up one. Runs once per browser. */
+function renumber(){
+  try{
+    if(localStorage.getItem(KEY + '-ord')) return;
+    localStorage.setItem(KEY + '-ord', '2');
+    if(localStorage.getItem(KEY + '-ch5')) localStorage.setItem(KEY + '-ch6', '1');
+    if(localStorage.getItem(KEY + '-ch4')) localStorage.setItem(KEY + '-ch5', '1');
+    const sc = JSON.parse(localStorage.getItem(SCORES_KEY) || 'null');
+    if(sc){ const out = {}; Object.keys(sc).forEach(k => { out[+k >= 4 ? +k + 1 : k] = sc[k]; }); localStorage.setItem(SCORES_KEY, JSON.stringify(out)); }
+  }catch(e){}
+}
 function start(data){
   showLang(); document.title = tx('Villa Villekulla');
   setupRotate();
-  buildKitchen(); buildCircus(); buildShip();
+  renumber();
+  buildKitchen(); buildWinter(); buildCircus(); buildShip();
   applyMotion();
   const saved = (data && data.v===1) ? data : load();
   if(saved){ S = Object.assign(fresh(), saved); }
+  // a game saved under the old numbering: the room tells which chapter it is
+  if((S.scene === 'circus' && S.ch === 4) || (S.scene === 'ship' && S.ch === 5)){
+    if(S.f['out' + S.ch]){ S.f['out' + (S.ch + 1)] = true; delete S.f['out' + S.ch]; }
+    S.ch++; save();
+  }
   refreshMenu();
   renderInv(); applyVisuals(); $('#timer').textContent = fmt(S.t);
 }

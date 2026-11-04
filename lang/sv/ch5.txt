@@ -1,507 +1,273 @@
-# Swedish translation: Chapter 5, on board the Hoppetossa (js/chapter5.js, and its item uses in js/items.js).
-# Kapten Efraim Långstrump calls Pippi "Pippilotta". The horse is Lilla Gubben. Port = babord, starboard = styrbord.
+# Swedish translation: Chapter 5, Pippi goes to the circus (js/chapter5.js).
+# Money is in crowns (kronor).
 
-= Sextant
-> Sextant
-= A fishing net from the hold. Good for fishing things out of the sea, and for catching monkeys.
-> Ett fiskenät från lastrummet. Bra för att fiska upp saker ur havet, och för att fånga apor.
-= The captain's brass sextant. It measures how high a star stands above the horizon. Select it, then click the sky.
-> Kaptenens sextant av mässing. Den mäter hur högt en stjärna står över horisonten. Välj den och klicka sedan på himlen.
-= The captain's brass spyglass. It makes far-away things look near. Select it, then click something far away.
-> Kaptenens kikare av mässing. Den får saker långt borta att se nära ut. Välj den och klicka sedan på något långt borta.
-= The spunk's jam jar, on the captain's chart table. Pippi has brought it along: "It has never been to sea."
-> Spunkens syltburk, på kaptenens sjökortsbord. Pippi har tagit med den: "Den har aldrig varit på havet."
-= You take it. A spunk knows things. Even about ships.
-> Du tar den. En spunk vet saker. Till och med om skepp.
-= The harbour town on its hill. Right at the top, a little crooked, stands Villa Villekulla.
-> Hamnstaden på sin kulle. Högst upp, lite sned, står Villa Villekulla.
-= The whole town has come down to the quay to wave goodbye. Well, three people and a dog.
-> Hela staden har kommit ner till kajen för att vinka adjö. Nåja, tre personer och en hund.
-= Pippi's horse, on the quay, with a rope sling round its middle. It looks at the ship. It looks at you.
-> Lilla Gubben, på kajen, med en repslinga runt magen. Han tittar på skeppet. Han tittar på dig.
-= Pfrrrr?
-> Pfrrrr?
-= Pippi won't sail without it. The cargo hoist on the stern could lift it aboard.
-> Pippi seglar inte utan honom. Lastvinschen på akterdäcket kan lyfta honom ombord.
-= Hrrrm.
-> Hrrrm.
-= The horse's tongue is hanging out. It drank the whole water barrel, and it's still thirsty. So is everybody else.
-> Lilla Gubbens tunga hänger ute. Han drack upp hela vattentunnan och är fortfarande törstig. Det är alla andra också.
-= Neeeigh!
-> Gnäägg!
-= The horse stands on deck with its legs wide apart, like a real sailor.
-> Lilla Gubben står på däck med benen brett isär, som en riktig sjöman.
-= The horse is on board, sniffing the hay in the hold.
-> Lilla Gubben är ombord och nosar på höet i lastrummet.
-= The cargo hoist. Its pulleys have done their job: the horse is on board.
-> Lastvinschen. Blocken har gjort sitt jobb: Lilla Gubben är ombord.
-= The sails are full of wind. The Hoppetossa leans a little and hurries along.
-> Seglen är fulla av vind. Hoppetossa lutar lite och skyndar framåt.
-= High above, the crow's nest sways against the sky.
-> Högt däruppe gungar utkiken mot himlen.
-= The sails are rolled up tight on the yards. They come down when the ship sets off.
-> Seglen är hårt ihoprullade på rårna. De kommer ner när skeppet ger sig av.
-= First the horse, then a course. The captain is very firm about that.
-> Först hästen, sedan en kurs. Där är kaptenen mycket bestämd.
-= The crow's nest. From up here the island is all palm trees, white sand and waving people.
-> Utkiken. Härifrån är ön bara palmer, vit sand och vinkande människor.
-= You climb the rope ladder to the crow's nest. Sea, sea, and more sea, all the way round.
-> Du klättrar uppför repstegen till utkiken. Hav, hav och mer hav, runt omkring.
-= Mr Nilsson waves at you from the yard. He climbed up faster.
-> Herr Nilsson vinkar åt dig från rån. Han klättrade upp fortare.
-= You climb to the crow's nest. You can see the whole town from here, and Villa Villekulla on its hill.
-> Du klättrar upp i utkiken. Härifrån ser du hela staden, och Villa Villekulla på sin kulle.
-= The sea is waiting. The captain is waiting. The horse is waiting most of all.
-> Havet väntar. Kaptenen väntar. Lilla Gubben väntar allra mest.
-= You climb to the crow's nest. It's dawn. Far away, on the horizon, is there a tiny bump? You can't be sure.
-> Du klättrar upp i utkiken. Det gryr. Långt borta vid horisonten, är det en pytteliten bula? Du är inte säker.
-= To see that far you'd need the captain's spyglass.
-> För att se så långt skulle du behöva kaptenens kikare.
-= The captain's spyglass, hanging on the mizzen mast by the wheel.
-> Kaptenens kikare, som hänger på mesanmasten vid ratten.
-= Take it, sailor! A spyglass belongs to whoever is first to shout LAND HO.
-> Ta den, matros! En kikare tillhör den som först ropar LAND I SIKTE.
-= The ship's wheel and the compass. The needle points north, and the ship's nose points south-west. Steady as she goes.
-> Ratten och kompassen. Nålen pekar mot norr, och skeppets nos pekar mot sydväst. Håll kursen.
-= Don't touch, sailor. She's on course.
-> Rör inte, matros. Hon ligger på kurs.
-= Not so fast, sailor! We don't leave without the horse.
-> Inte så fort, matros! Vi åker inte utan hästen.
-= We don't leave without the horse!
-> Vi åker inte utan hästen!
-= My island! And my people waving! Pippilotta, you're a princess now. A princess who climbs masts.
-> Min ö! Och mitt folk som vinkar! Pippilotta, nu är du prinsessa. En prinsessa som klättrar i master.
-= Ahoy, sailor! Everything aboard except the horse. Use the hoist on the stern. No lifting it by hand, Pippilotta!
-> Ohoj, matros! Allt är ombord utom hästen. Använd vinschen på akterdäcket. Ingen lyftning med händerna, Pippilotta!
-= Spoilsport!
-> Glädjedödare!
-= Now set a course for my island. My chart is in the cabin, and the wheel is right here. The compass will tell you which way you're pointing.
-> Sätt nu kurs mot min ö. Sjökortet ligger i hytten, och ratten står här. Kompassen talar om åt vilket håll du pekar.
-= That monkey has thrown half my cabin overboard! What floats, we fish out with the net. What sinks, Pippi fetches.
-> Den där apan har kastat halva min hytt överbord! Det som flyter fiskar vi upp med nätet. Det som sjunker hämtar Pippi.
-= The horse has drunk all the drinking water. And sea water is no good: far too salty. But the sun is hot, and the sun can help.
-> Hästen har druckit upp allt dricksvatten. Och havsvatten duger inte: alldeles för salt. Men solen är het, och solen kan hjälpa till.
-= Tonight we should cross the Equator. Where are we, sailor? The stars will tell you, with my sextant.
-> I natt borde vi korsa ekvatorn. Var är vi, matros? Stjärnorna talar om det, med min sextant.
-= Dawn! My island must be close now. Up to the crow's nest with my spyglass, and keep your eyes open!
-> Gryning! Min ö måste vara nära nu. Upp i utkiken med min kikare, och håll ögonen öppna!
-= Mr Nilsson hangs by his tail from the yard, looking very innocent. He has nothing left to throw.
-> Herr Nilsson hänger i svansen från rån och ser mycket oskyldig ut. Han har inget kvar att kasta.
-= Mr Nilsson swings from the yard by his tail. Every few minutes something splashes into the sea.
-> Herr Nilsson svingar sig i svansen från rån. Med några minuters mellanrum plaskar något i havet.
-= Mr Nilsson has climbed into the rigging. He loves ships: so many things to throw.
-> Herr Nilsson har klättrat upp i riggen. Han älskar skepp: så många saker att kasta.
-= An island with real palm trees!
-> En ö med riktiga palmer!
-= And real coconuts. I hope they fall down slowly.
-> Och riktiga kokosnötter. Jag hoppas att de faller ner långsamt.
-= I've never been on a real ship. What if I get seasick?
-> Jag har aldrig varit på ett riktigt skepp. Tänk om jag blir sjösjuk?
-= What if the horse gets seasick?
-> Tänk om Lilla Gubben blir sjösjuk?
-= Look at all the stars! The North Star is so low tonight. At home it's high up in the sky.
-> Titta på alla stjärnor! Polstjärnan står så lågt i natt. Hemma står den högt uppe på himlen.
-= Maybe it's tired.
-> Den kanske är trött.
-= I'm a sailor now!
-> Nu är jag sjöman!
-= We're both sailors. I've written it in my diary.
-> Vi är sjömän båda två. Jag har skrivit det i min dagbok.
-= I'm King Neptune, the king of the sea! Everybody who crosses the Equator for the first time gets a bucket of water over their head. Ready?
-> Jag är kung Neptunus, havets kung! Alla som korsar ekvatorn för första gången får en hink vatten över huvudet. Redo?
-= Daddy's island! I'm going to be a princess. A thing-searching princess.
-> Pappas ö! Jag ska bli prinsessa. En sakletarprinsessa.
-= I'm the figurehead! Look, no hands!
-> Jag är galjonsfiguren! Titta, utan händer!
-= I've never sailed to the South Seas, so I'm sure I'll be very good at it.
-> Jag har aldrig seglat till Söderhavet, så det klarar jag säkert.
-= The instrument box. Empty, apart from a pair of dividers and a very old biscuit.
-> Instrumentlådan. Tom, utom en passare och en mycket gammal kaka.
-= The captain's instrument box. Inside, on red velvet: a brass sextant.
-> Kaptenens instrumentlåda. Därinne, på röd sammet: en sextant av mässing.
-= A note in the lid says: "For measuring how high a star is above the horizon. Only works at night. Obviously."
-> På en lapp i locket står det: "För att mäta hur högt en stjärna står över horisonten. Fungerar bara på natten. Förstås."
-= The galley stove. A pot of fish soup is bubbling. Pippi made it. There's a whole fish in it, and a sock.
-> Bysspisen. En gryta fisksoppa puttrar. Pippi har gjort den. Det finns en hel fisk i den, och en strumpa.
-= The galley stove, with a pot of soup bubbling away.
-> Bysspisen, med en puttrande gryta soppa.
-= Soup needs fresh water too. Everything on a ship needs fresh water.
-> Soppa behöver också sötvatten. Allt på ett skepp behöver sötvatten.
-= The water barrel, filling up again, cupful by cupful, from the bowls in the sun.
-> Vattentunnan fylls på igen, kopp för kopp, från skålarna i solen.
-= The drinking-water barrel, full to the top.
-> Dricksvattentunnan, full ända upp.
-= On a ship, fresh water is precious. There's water all around you, but the sea is far too salty to drink.
-> På ett skepp är sötvatten dyrbart. Det finns vatten runt omkring, men havet är alldeles för salt att dricka.
-= Crates of supplies. Two of them are labelled 18 kg.
-> Lådor med förråd. På två av dem står det 18 kg.
-= Pippi says that's sweets for the voyage. Eighteen kilos each. "In case we're becalmed."
-> Pippi säger att det är godis för resan. Arton kilo var. "Ifall det blir stiltje."
-= A fishing net, hanging on a hook in the hold. You take it. It might come in handy at sea.
-> Ett fiskenät på en krok i lastrummet. Du tar det. Det kan komma till nytta på havet.
-= The lower hold: barrels of salted fish, and a pile of heavy stones.
-> Det nedre lastrummet: tunnor med saltfisk, och en hög tunga stenar.
-= The stones are ballast. They sit low down in the ship so she doesn't tip over in the wind.
-> Stenarna är barlast. De ligger långt ner i skeppet så att det inte välter i vinden.
-= The sky is full of stars. The North Star hangs very low, just above the sea.
-> Himlen är full av stjärnor. Polstjärnan hänger mycket lågt, strax över havet.
-= The captain measures stars with his sextant. It's in the instrument box in his cabin.
-> Kaptenen mäter stjärnor med sin sextant. Den ligger i instrumentlådan i hans hytt.
-= Dawn. The sky turns pink, then orange, then gold. Somewhere ahead is an island.
-> Gryning. Himlen blir rosa, sedan orange, sedan guld. Någonstans framför er ligger en ö.
-= Blue sky, white clouds, and the sun getting hotter every day as you sail south.
-> Blå himmel, vita moln, och solen blir hetare för varje dag ni seglar söderut.
-= Seagulls circle over the harbour, hoping somebody drops a sandwich.
-> Måsar cirklar över hamnen och hoppas att någon tappar en smörgås.
-= Harbour water, green and calm. A seagull floats on it, looking bored.
-> Hamnvatten, grönt och lugnt. En mås guppar på det och ser uttråkad ut.
-= Splash! Mr Nilsson has thrown the captain's things overboard. Some are bobbing on the waves; some have gone straight down.
-> Plask! Herr Nilsson har kastat kaptenens saker överbord. En del guppar på vågorna, en del har sjunkit rakt ner.
-= You'll need something to fish them out with.
-> Du behöver något att fiska upp dem med.
-= The water around the island is so clear you can see the fish nibbling your shadow.
-> Vattnet runt ön är så klart att man ser fiskarna nafsa på ens skugga.
-= Fish swim alongside the ship. A dolphin jumps, now and then, just to show off.
-> Fiskar simmar bredvid skeppet. Då och då hoppar en delfin, bara för att visa sig.
-= The cargo hoist
-> Lastvinschen
-= Pulleys and rope, on the stern
-> Block och rep, på akterdäcket
-= The horse weighs 400 kg. You, Tommy and Annika can pull 100 kg together. The more ropes hold the horse up, the less each rope has to carry.
-> Lilla Gubben väger 400 kg. Du, Tommy och Annika orkar dra 100 kg tillsammans. Ju fler rep som bär hästen, desto mindre behöver varje rep hålla.
-= 1 rope
-> 1 rep
-= {n} ropes
-> {n} rep
-= Heave!
-> Hiva!
-= Each rope: {kg} kg
-> Varje rep: {kg} kg
-= Four ropes share the 400 kg: 100 kg each. Up goes the horse! You had to pull four metres of rope for every metre it rose, but you could do it.
-> Fyra rep delar på de 400 kilona: 100 kg var. Upp åker Lilla Gubben! Du fick dra fyra meter rep för varje meter han steg, men du orkade.
-= The horse rises gently into the air, swings over the rail, and lands on deck with four clonks.
-> Lilla Gubben svävar försiktigt upp i luften, svänger över relingen och landar på däck med fyra klonk.
-= Well hoisted, sailor! Now: a course for my island. My chart is in the cabin.
-> Bra hissat, matros! Och nu: kurs mot min ö. Sjökortet ligger i hytten.
-= You pull with all your might. With one rope you are lifting all 400 kg. The horse doesn't even notice.
-> Du drar av alla krafter. Med ett rep lyfter du alla 400 kilona. Lilla Gubben märker ingenting.
-= Two ropes: 200 kg each. The horse's front hooves lift off… and land again with a clonk. More ropes!
-> Två rep: 200 kg var. Framhovarna lättar… och landar igen med ett klonk. Fler rep!
-= Three ropes: about 133 kg each. So close! The horse dangles half a centimetre above the quay. One more rope!
-> Tre rep: ungefär 133 kg var. Så nära! Lilla Gubben dinglar en halv centimeter över kajen. Ett rep till!
-= N
-> N
-= E
-> O
-= S
-> S
-= W
-> V
-= NE
-> NO
-= SE
-> SO
-= SW
-> SV
-= NW
-> NV
-= north
-> norr
-= north-east
-> nordost
-= east
-> öster
-= south-east
-> sydost
-= south
-> söder
-= south-west
-> sydväst
-= west
-> väster
-= north-west
-> nordväst
-= The ship's wheel
-> Ratten
-= Turn the ship until she points the right way
-> Vrid skeppet tills det pekar åt rätt håll
-= Turn to port (left)
-> Babord (vänster)
-= Turn to starboard (right)
-> Styrbord (höger)
-= Set sail!
-> Sätt segel!
-= The compass card always points north, whichever way the ship turns. The little ship in the middle shows where her nose is pointing.
-> Kompassrosen pekar alltid mot norr, hur skeppet än vänder. Det lilla skeppet i mitten visar vart nosen pekar.
-= The ship points:
-> Skeppet pekar mot:
-= South-west! Down and to the left on the chart. "Drop the sails!" roars the captain.
-> Sydväst! Nere till vänster på sjökortet. "Släpp seglen!" vrålar kaptenen.
-= The sails tumble down from the yards and fill with wind with a great WHUMP. The ropes creak, the quay slides away, and the Hoppetossa is off!
-> Seglen rullar ner från rårna och fylls av vind med ett väldigt VOMP. Repen knakar, kajen glider bort, och Hoppetossa har gett sig av!
-= South-west it is! Steady as she goes!
-> Sydväst! Håll kursen!
-= Goodbye, Villa Villekulla! Goodbye, everybody! Goodbye, dog!
-> Hej då, Villa Villekulla! Hej då, allihop! Hej då, hunden!
-= North? That way is ice and polar bears. Pippi would love it, but the island is the other way.
-> Norr? Där är det is och isbjörnar. Pippi skulle älska det, men ön ligger åt andra hållet.
-= Due south runs straight down the chart. The island is south, but it's west as well.
-> Rakt söderut går rakt nedåt på sjökortet. Ön ligger söderut, men också västerut.
-= Due west goes straight across the chart. The island is west, but it's south as well.
-> Rakt västerut går rakt åt vänster på sjökortet. Ön ligger västerut, men också söderut.
-= East would take you to Finland. The captain's island is nowhere near Finland.
-> Österut kommer du till Finland. Kaptenens ö ligger inte i närheten av Finland.
-= North-east is exactly the wrong way. Turn the ship right round.
-> Nordost är precis fel håll. Vänd skeppet helt om.
-= South-east: the right way down, but the wrong way across. Look at the chart again.
-> Sydost: rätt håll nedåt, men fel håll åt sidan. Titta på sjökortet igen.
-= North-west: the right way across, but the wrong way up and down. Look at the chart again.
-> Nordväst: rätt håll åt sidan, men fel håll upp och ner. Titta på sjökortet igen.
-= The captain's chart
-> Kaptenens sjökort
-= Spread out on the chart table
-> Utbrett på sjökortsbordet
-= Equator 0°
-> Ekvatorn 0°
-= The captain's island
-> Kaptenens ö
-= On a chart, north is always at the top, south at the bottom, west on the left and east on the right. The dotted line is the way to the captain's island.
-> På ett sjökort är norr alltid upptill, söder nertill, väster till vänster och öster till höger. Den prickade linjen är vägen till kaptenens ö.
-= A big, heavy log
-> En stor, tung stock
-= The captain's little iron key
-> Kaptenens lilla järnnyckel
-= An apple
-> Ett äpple
-= A gold coin
-> Ett guldmynt
-= A cork
-> En kork
-= A glass marble
-> En glaskula
-= Overboard!
-> Överbord!
-= Mr Nilsson's six splashes
-> Herr Nilssons sex plask
-= What floats, you can scoop up with the net. What sinks, Pippi will have to dive for. Which of these float?
-> Det som flyter kan du håva upp med nätet. Det som sjunker får Pippi dyka efter. Vilka flyter?
-= Out with the net!
-> Ut med nätet!
-= Click a thing to say whether it floats or sinks.
-> Klicka på en sak för att säga om den flyter eller sjunker.
-= floats
-> flyter
-= sinks
-> sjunker
-= Decide for every one of them first: floats or sinks?
-> Bestäm först för varenda en: flyter den eller sjunker den?
-= The log is big and heavy, but it's made of wood, and wood is lighter than the same amount of water. Big things can float!
-> Stocken är stor och tung, men den är gjord av trä, och trä är lättare än lika mycket vatten. Stora saker kan flyta!
-= The key is tiny and light, but iron is much heavier than the same amount of water. Small things can sink!
-> Nyckeln är liten och lätt, men järn är mycket tyngre än lika mycket vatten. Små saker kan sjunka!
-= An apple is full of tiny pockets of air. Ever tried apple-bobbing?
-> Ett äpple är fullt av små luftfickor. Har du någon gång försökt bita i äpplen som guppar i en balja?
-= Gold is very, very heavy for its size. Plop.
-> Guld är väldigt, väldigt tungt för sin storlek. Plopp.
-= Cork is so light for its size that fishermen use it to keep their nets afloat.
-> Kork är så lätt för sin storlek att fiskare använder den för att hålla näten flytande.
-= Glass is heavier than the same amount of water. The marble goes straight to the bottom.
-> Glas är tyngre än lika mycket vatten. Kulan går rakt till botten.
-= The log, the apple and the cork bob on the waves: into the net they go! Whether a thing floats depends on what it's made of, not on how big it is.
-> Stocken, äpplet och korken guppar på vågorna: in i nätet med dem! Om en sak flyter beror på vad den är gjord av, inte på hur stor den är.
-= And now the sinkers!
-> Och nu sänkena!
-= Pippi dives in head first. A long time later she comes up again with the key in her teeth, the coin in her ear and the marble up her nose.
-> Pippi dyker i med huvudet först. Långt senare kommer hon upp igen med nyckeln mellan tänderna, myntet i örat och kulan i näsan.
-= In Egypt everybody can hold their breath for a week.
-> I Egypten kan alla hålla andan i en vecka.
-= It's getting hotter every day. Then, from the galley, a long slurping noise…
-> Det blir hetare för varje dag. Sedan hörs ett långt slurpande från byssan…
-= The horse has drunk the water barrel dry!
-> Hästen har druckit ur hela vattentunnan!
-= A bowl of sea water
-> En skål havsvatten
-= An empty cup in the middle of the bowl
-> En tom kopp mitt i skålen
-= A clear glass lid over the bowl
-> Ett genomskinligt glaslock över skålen
-= A pebble on the lid, right above the cup
-> En liten sten på locket, precis ovanför koppen
-= Put it in the hot sun
-> Ställ den i den heta solen
-= Put it in the cool shade
-> Ställ den i den svala skuggan
-= Add a spoonful of salt
-> Häll i en sked salt
-= Fresh water from the sea
-> Sötvatten ur havet
-= The captain's old trick
-> Kaptenens gamla knep
-= Just drink the sea water
-> Drick havsvattnet ändå
-= Wait for the sun to work
-> Vänta på att solen gör sitt
-= Sea water is too salty to drink. But when water dries up in the sun, the salt is left behind. Choose what you need.
-> Havsvatten är för salt att dricka. Men när vatten torkar i solen blir saltet kvar. Välj vad du behöver.
-= Bleurgh! It's horribly salty, and salty water makes you even thirstier. Never drink sea water.
-> Blä! Det är hemskt salt, och salt vatten gör en ännu törstigare. Drick aldrig havsvatten.
-= More salt? The sea has plenty already, thank you.
-> Mer salt? Havet har gott om salt redan, tack.
-= In the shade it hardly warms up. You'd be waiting till next Christmas.
-> I skuggan blir det knappt varmt. Då får du vänta till nästa jul.
-= There's no sea water to make fresh water from.
-> Det finns inget havsvatten att göra sötvatten av.
-= Where are you going to put it? Something has to warm the water up.
-> Var ska du ställa den? Något måste värma upp vattnet.
-= The warm water turns into vapour and floats away into the sky. Something has to catch it.
-> Det varma vattnet blir ånga och svävar iväg upp i luften. Något måste fånga den.
-= Drops form under the lid and fall… straight back into the salty water. Something has to catch them.
-> Droppar bildas under locket och faller… rakt tillbaka i det salta vattnet. Något måste fånga dem.
-= Drops form under the lid but run down the sides, back into the salty bowl. Make the lid dip, right above the cup.
-> Droppar bildas under locket men rinner ner längs kanterna, tillbaka i den salta skålen. Få locket att svackas, precis ovanför koppen.
-= The sun warms the sea water and it evaporates: the salt stays behind. The vapour cools on the lid, turns back into drops, runs down to the pebble and drips into the cup. Fresh water!
-> Solen värmer havsvattnet och det avdunstar: saltet blir kvar. Ångan kyls av mot locket, blir droppar igen, rinner ner till stenen och droppar i koppen. Sötvatten!
-= Soon there are bowls in the sun all over the deck, and the cups fill up drop by drop. The horse gets the first cupful.
-> Snart står det skålar i solen över hela däcket, och kopparna fylls droppe för droppe. Lilla Gubben får den första koppen.
-= Slurrrp. Neigh!
-> Slurrrp. Gnägg!
-= The sun sets, red and gold. Night falls over the sea, and one by one the stars come out.
-> Solen går ner, röd och guldig. Natten faller över havet, och en efter en tänds stjärnorna.
-= Tonight we cross the Equator, sailor. Or do we? Ask the stars. My sextant is in my cabin.
-> I natt korsar vi ekvatorn, matros. Eller gör vi det? Fråga stjärnorna. Min sextant ligger i min hytt.
-= His last voyage to the South Seas
-> Hans förra resa till Söderhavet
-= Day 1. Left Villa Villekulla. North Star 59° above the horizon. Fair wind.
-> Dag 1. Lämnade Villa Villekulla. Polstjärnan 59° över horisonten. God vind.
-= Day 8. North Star 40°. Ate a whole shark. Well, half.
-> Dag 8. Polstjärnan 40°. Åt upp en hel haj. Nåja, en halv.
-= Day 15. North Star 20°. Hot. Very hot.
-> Dag 15. Polstjärnan 20°. Varmt. Mycket varmt.
-= Day 22. Crossed the Equator! King Neptune came aboard. (It was the cook in a beard made of seaweed.)
-> Dag 22. Korsade ekvatorn! Kung Neptunus kom ombord. (Det var kocken med ett skägg av sjögräs.)
-= SAILOR'S RULE: the higher the North Star, the further north you are. At the North Pole it is straight overhead, 90° up. Sail south, and every night it sinks a little lower.
-> SJÖMANSREGEL: ju högre Polstjärnan står, desto längre norrut är du. På Nordpolen står den rakt ovanför huvudet, 90° upp. Seglar du söderut sjunker den lite lägre varje natt.
-= the North Star
-> Polstjärnan
-= At the North Pole
-> På Nordpolen
-= Back home near Villa Villekulla
-> Hemma igen vid Villa Villekulla
-= Halfway between home and the Equator
-> Halvvägs mellan hemma och ekvatorn
-= On the Equator
-> På ekvatorn
-= Higher up again
-> Högre upp igen
-= Exactly the same, on the horizon
-> Precis likadant, vid horisonten
-= Below the horizon: we can't see it any more
-> Under horisonten: vi kan inte se den längre
-= The captain's sextant
-> Kaptenens sextant
-= Measuring the North Star
-> Att mäta Polstjärnan
-= And tomorrow night?
-> Och i morgon natt?
-= Through the sextant, the North Star sits right on the horizon. The sextant reads: 0°. Where is the Hoppetossa tonight?
-> Genom sextanten sitter Polstjärnan precis på horisonten. Sextanten visar: 0°. Var är Hoppetossa i natt?
-= Tomorrow night the ship will be south of the Equator. Where will the North Star be then?
-> I morgon natt är skeppet söder om ekvatorn. Var står Polstjärnan då?
-= 0° up means 0° north: the Equator, right in the middle between the North Pole and the South Pole!
-> 0° upp betyder 0° nord: ekvatorn, precis mittemellan Nordpolen och Sydpolen!
-= Below the horizon! South of the Equator, the North Star is hidden behind the curve of the Earth. Instead, new stars appear, like the Southern Cross.
-> Under horisonten! Söder om ekvatorn göms Polstjärnan bakom jordens krökning. I stället syns nya stjärnor, som Södra korset.
-= We're crossing the line! Hurrah for the Equator!
-> Vi korsar linjen! Hurra för ekvatorn!
-= Pippi paints a big red 0° on the mainsail, and everybody gets a bucket of sea water over their head. Even the horse.
-> Pippi målar en stor röd 0° på storseglet, och alla får en hink havsvatten över huvudet. Till och med Lilla Gubben.
-= The night goes by in songs and splashes. Then the sky in the east turns pink… and something tiny shows on the horizon.
-> Natten går med sång och plask. Sedan blir himlen i öster rosa… och något pyttelitet syns vid horisonten.
-= Is that… Quick, sailor! My spyglass, and up to the crow's nest!
-> Är det… Fort, matros! Min kikare, och upp i utkiken!
-= At the North Pole, the North Star is straight above your head: 90° up. Tonight it's 0°.
-> På Nordpolen står Polstjärnan rakt ovanför huvudet: 90° upp. I natt är den 0°.
-= At home it stood 59° up, high in the sky. Look at the captain's logbook: it sinks as you sail south.
-> Hemma stod den 59° upp, högt på himlen. Titta i kaptenens loggbok: den sjunker när man seglar söderut.
-= Halfway, it would be about 30° up. Tonight it's sitting right on the sea: 0°.
-> Halvvägs skulle den stå ungefär 30° upp. I natt sitter den precis på havet: 0°.
-= It has been sinking lower every night as you sailed south. Why would it climb again now?
-> Den har sjunkit lägre varje natt medan ni seglat söderut. Varför skulle den klättra upp igen nu?
-= It has moved every single night. Keep sailing south, and it keeps sinking.
-> Den har flyttat sig varenda natt. Fortsätter ni söderut fortsätter den att sjunka.
-= Land ho?
-> Land i sikte?
-= In the crow's nest, with the spyglass
-> I utkiken, med kikaren
-= Look from the deck
-> Titta från däcket
-= Look from the crow's nest
-> Titta från utkiken
-= From the crow's nest you can see the top of the island's mountain. From the deck, you can't see it at all. Why?
-> Från utkiken ser du toppen av öns berg. Från däcket ser du ingenting alls. Varför?
-= Up in the crow's nest you're closer to the island.
-> Uppe i utkiken är du närmare ön.
-= The Earth is round. The sea curves down, and from higher up you can see further over the bend.
-> Jorden är rund. Havet kröker sig nedåt, och högre upp kan man se längre över krökningen.
-= The island is shy and ducks down when people on deck look at it.
-> Ön är blyg och huckar sig när folk på däck tittar på den.
-= From the crow's nest: your eye skims over the bend and finds the mountain top.
-> Från utkiken: blicken sveper över krökningen och hittar bergstoppen.
-= From the deck: the bend of the sea is in the way.
-> Från däcket: havets krökning är i vägen.
-= Only about 20 metres closer, and the island is many kilometres away. That's not it. Look at the picture: what is in the way of the line from the deck?
-> Bara ungefär 20 meter närmare, och ön ligger många kilometer bort. Det är inte det. Titta på bilden: vad är i vägen för linjen från däcket?
-= Pippi says some islands are very shy. This one isn't. Look at the shape of the sea in the picture.
-> Pippi säger att vissa öar är mycket blyga. Den här är det inte. Titta på havets form på bilden.
-= The Earth is round! Ships and islands far away hide behind the curve of the sea. The higher you climb, the further you can see.
-> Jorden är rund! Skepp och öar långt borta gömmer sig bakom havets krökning. Ju högre man klättrar, desto längre ser man.
-= The harbour, early in the morning. A big three-masted ship is tied up at the quay: the Hoppetossa. On her stern, a huge man with a red beard and a captain's hat is waving his arms.
-> Hamnen, tidigt på morgonen. Vid kajen ligger ett stort tremastat skepp: Hoppetossa. På akterdäcket står en jättestor man med rött skägg och kaptensmössa och viftar med armarna.
-= Ahoy, Pippilotta! Ahoy, Tommy and Annika! And ahoy, new sailor!
-> Ohoj, Pippilotta! Ohoj, Tommy och Annika! Och ohoj, nya matrosen!
-= Daddy! We're sailing to your island in the South Seas! I've never sailed to the South Seas, so I'm sure I'll be very good at it.
-> Pappa! Vi ska segla till din ö i Söderhavet! Det har jag aldrig provat förut, så det klarar jag säkert.
-= The wind is fair and the tide is high. All aboard!
-> Vinden är god och vattnet står högt. Alla ombord!
-= Not without my horse!
-> Inte utan min häst!
-= Then hoist it aboard with the cargo hoist on the stern, sailor. And Pippilotta: no lifting it yourself. Today we sail like proper sailors.
-> Hissa då ombord honom med lastvinschen på akterdäcket, matros. Och Pippilotta: inte lyfta själv. I dag seglar vi som riktiga sjömän.
-= A horse on a rope. Let's see how that hoist works.
-> En häst i ett rep. Får se hur den där vinschen fungerar.
-= LAND HO!
-> LAND I SIKTE!
-= Land ho! That's my island! Pippilotta, look: the palm trees, the beach, and all my people running down to wave!
-> Land i sikte! Det är min ö! Pippilotta, titta: palmerna, stranden, och allt mitt folk som springer ner för att vinka!
-= The Hoppetossa sails into a turquoise lagoon. Palm trees sway, the sand is white, and a crowd of children is dancing on the beach.
-> Hoppetossa seglar in i en turkos lagun. Palmerna vajar, sanden är vit, och en hel skara barn dansar på stranden.
-= Daddy is a king, so I'm a princess! A thing-searching princess with a horse.
-> Pappa är kung, så jag är prinsessa! En sakletarprinsessa med häst.
-= We hoisted a horse, crossed the Equator, made water out of the sea, and saw the island over the curve of the Earth. I've written it all down.
-> Vi har hissat en häst, korsat ekvatorn, gjort vatten av havet och sett ön över jordens krökning. Jag har skrivit upp allt.
-= Best. Voyage. Ever.
-> Bästa. Resan. Någonsin.
-
-# ---------- js/items.js: Chapter 5 ----------
-= In the harbour? The only thing to catch here is a bored seagull.
-> I hamnen? Det enda man kan fånga här är en uttråkad mås.
-= There's nothing left to fish out. Only fish, and they'd rather stay where they are.
-> Det finns inget kvar att fiska upp. Bara fisk, och de stannar helst där de är.
-= You catch Mr Nilsson in the net. He looks delighted. You let him go again.
-> Du fångar Herr Nilsson i nätet. Han ser förtjust ut. Du släpper honom igen.
-= A fishing net is for fishing things out of the sea.
-> Ett fiskenät är till för att fiska upp saker ur havet.
-= The note in the box said: only works at night. Obviously.
-> På lappen i lådan stod det: fungerar bara på natten. Förstås.
-= A sextant measures how high a star is above the horizon. Point it at the sky.
-> En sextant mäter hur högt en stjärna står över horisonten. Rikta den mot himlen.
-= From down here on deck, there's nothing but sea. Climb higher: the crow's nest!
-> Härnere på däck finns bara hav. Klättra högre: utkiken!
-= You look through the spyglass. Sea. More sea. A seagull, very close up.
-> Du tittar i kikaren. Hav. Mer hav. En mås, alldeles nära.
-= You look at the horse through the spyglass. An enormous eye looks back at you.
-> Du tittar på Lilla Gubben i kikaren. Ett jättestort öga tittar tillbaka.
-= Pfrrrr!
-> Pfrrrr!
-= I can see you! Your freckle is enormous. Well, my freckles are, anyway.
-> Jag ser dig! Din fräkne är jättestor. Nåja, mina fräknar är det i alla fall.
+= Spotlights
+> Strålkastare
+= Teeterboard
+> Gungbräda
+= Clown
+> Clown
+= Trapezes
+> Trapetser
+= Circus tickets
+> Cirkusbiljetter
+= Four tickets: for Pippi, Tommy, Annika and you. Mr Nilsson goes in free, as hand luggage.
+> Fyra biljetter: till Pippi, Tommy, Annika och dig. Herr Nilsson går in gratis, som handbagage.
+= Tickets, please! Nobody comes near my ring without a ticket. Not even strong little girls.
+> Biljetter, tack! Ingen kommer nära min manege utan biljett. Inte ens starka små flickor.
+= The spunk's jam jar, on the counter of the ticket booth. Pippi brought it to the circus.
+> Spunkens syltburk, på disken i biljettluckan. Pippi har tagit med den till cirkusen.
+= "It has never seen a circus," she says. You take it. A spunk knows things. Even about circuses.
+> "Den har aldrig sett en cirkus," säger hon. Du tar den. En spunk vet saker. Till och med om cirkusar.
+= The ticket booth. The ticket seller is counting Pippi's gold coin for the fourth time. It's real.
+> Biljettluckan. Biljettförsäljaren räknar Pippis guldmynt för fjärde gången. Det är äkta.
+= The ringmaster's checklist, BEFORE THE SHOW: spotlights, teeterboard, clown, trapezes. {n} of 4 done.
+> Direktörens checklista, FÖRE FÖRESTÄLLNINGEN: strålkastare, gungbräda, clown, trapetser. {n} av 4 klara.
+= When all four are ticked off, the curtain can open.
+> När alla fyra är avbockade kan ridån gå upp.
+= Ladies and gentlemen! The strongest girl in the world!
+> Mina damer och herrar! Världens starkaste flicka!
+= Tickets, please! The show starts in a moment. Well… it should.
+> Biljetter, tack! Föreställningen börjar alldeles strax. Nåja… det borde den.
+= Everything's ready! Open the curtain with the winch, and the show can begin!
+> Allt är klart! Dra upp ridån med vinschen, så kan föreställningen börja!
+= Oh, it's a disaster! The spotlights are all the wrong colours, the teeterboard won't balance, the clown has forgotten his juggling, and the trapeze artists can't catch each other.
+> Åh, det är en katastrof! Strålkastarna har fel färger, gungbrädan väger inte jämnt, clownen har glömt hur man jonglerar, och trapetsartisterna kan inte fånga varandra.
+= My checklist is on the tent pole. If only somebody could help…
+> Min checklista sitter på tältstången. Om bara någon kunde hjälpa till…
+= I've never helped a circus, so I'm sure I can!
+> Jag har aldrig hjälpt en cirkus förut, så det klarar jag säkert!
+= The three spotlights shine white together, right in the middle of the ring. Perfect for a star.
+> De tre strålkastarna lyser vitt tillsammans, mitt i manegen. Perfekt för en stjärna.
+= The teeterboard, perfectly balanced. The strongman is very impressed.
+> Gungbrädan, i perfekt jämvikt. Starke mannen är mycket imponerad.
+= Such a small girl. So far out. Perfect balance!
+> En så liten flicka. Så långt ut. Perfekt jämvikt!
+= Honk! Honk! HONK! Please stop squeezing my nose, I'm working.
+> Tut! Tut! TUUT! Sluta klämma på min näsa, jag arbetar.
+= Look at me go! Red, blue, blue, red, blue, blue…
+> Titta på mig! Röd, blå, blå, röd, blå, blå…
+= The two trapezes swing back and forth in perfect time. The flyers catch each other every single time.
+> De två trapetserna svänger fram och tillbaka i perfekt takt. Artisterna fångar varandra varenda gång.
+= Ork! Ork!
+> Ork! Ork!
+= A seal on a stool, balancing a ball on its nose. It's the only one in the circus who's ready for the show.
+> En säl på en pall, som balanserar en boll på nosen. Den är den enda på cirkusen som är redo för föreställningen.
+= The performers' curtain, heavy red velvet with gold fringes. Behind it, the horses are stamping and someone is warming up a trumpet.
+> Artisternas ridå, av tung röd sammet med guldfransar. Bakom den stampar hästarna och någon värmer upp en trumpet.
+= It opens with the winch on its right. But only when the show is ready.
+> Den öppnas med vinschen till höger. Men bara när föreställningen är redo.
+= The winch has done its job. The curtain is open.
+> Vinschen har gjort sitt jobb. Ridån är uppe.
+= Not yet! First the checklist: {n} of 4 acts are ready.
+> Inte än! Först checklistan: {n} av 4 nummer är klara.
+= I'm a circus star!
+> Jag är en cirkusstjärna!
+= I've got a gold coin for the tickets. It's a bit big, but they'll have change.
+> Jag har ett guldmynt till biljetterna. Det är lite stort, men de har säkert växel.
+= A circus! With a strongman! I wonder if he'd like to be lifted.
+> En cirkus! Med en stark man! Undrar om han vill bli lyft.
+= The ticket booth
+> Biljettluckan
+= Tickets: 3 crowns each
+> Biljetter: 3 kronor styck
+= Pippi buys {n} tickets, for herself, Tommy, Annika and you, and pays with a gold coin worth {paid} crowns. The ticket seller has gone to fetch more change, so you're in charge of the till.
+> Pippi köper {n} biljetter, till sig själv, Tommy, Annika och dig, och betalar med ett guldmynt värt {paid} kronor. Biljettförsäljaren har gått för att hämta mer växel, så du har hand om kassan.
+= How much change does Pippi get?
+> Hur mycket växel får Pippi tillbaka?
+= Add a {v}-crown coin
+> Lägg till ett mynt på {v} kronor
+= Take it back
+> Ta tillbaka
+= Give the change
+> Ge växel
+= No coins yet.
+> Inga mynt än.
+= 4 × 3 = 12 crowns for the tickets, and 20 − 12 = 8 crowns change. Four tickets for you!
+> 4 × 3 = 12 kronor för biljetterna, och 20 − 12 = 8 kronor tillbaka. Fyra biljetter till er!
+= Eight crowns change! That's enough for eight crowns' worth of sweets.
+> Åtta kronor tillbaka! Det räcker till godis för åtta kronor.
+= You take the tickets. Now show them to the ringmaster.
+> Du tar biljetterna. Visa dem nu för direktören.
+= 12 crowns is what the tickets cost. Pippi paid 20: how much is left over?
+> 12 kronor kostar biljetterna. Pippi betalade 20: hur mycket blir över?
+= That would be right for one ticket. But Pippi buys four.
+> Det stämmer för en biljett. Men Pippi köper fyra.
+= Too much! The circus would go bankrupt. First work out what four tickets cost.
+> För mycket! Då går cirkusen i konkurs. Räkna först ut vad fyra biljetter kostar.
+= Not enough. What do four tickets cost, and how much is left of 20?
+> För lite. Vad kostar fyra biljetter, och hur mycket blir kvar av 20?
+= Yellow light for the clown
+> Gult ljus till clownen
+= Sea-blue light for the seal: cyan, a mix of green and blue
+> Havsblått ljus till sälen: cyan, en blandning av grönt och blått
+= White light for the star of the show
+> Vitt ljus till föreställningens stjärna
+= darkness
+> mörker
+= red
+> rött
+= green
+> grönt
+= blue
+> blått
+= yellow
+> gult
+= cyan
+> cyan
+= magenta (pink-purple)
+> magenta (rosa-lila)
+= white
+> vitt
+= The lighting desk
+> Ljusbordet
+= Three spotlights: red, green and blue
+> Tre strålkastare: röd, grön och blå
+= Red
+> Röd
+= Green
+> Grön
+= Blue
+> Blå
+= Shine!
+> Lys!
+= Coloured LIGHT mixes differently from paint: the more colours you add, the brighter it gets.
+> Färgat LJUS blandas på ett annat sätt än målarfärg: ju fler färger du lägger till, desto ljusare blir det.
+= Round {n} of 3:
+> Omgång {n} av 3:
+= The ring is now:
+> Manegen är nu:
+= Pitch dark! Somewhere in the dark, the seal goes "Ork?" Switch some lights on.
+> Kolsvart! Någonstans i mörkret säger sälen "Ork?" Tänd några lampor.
+= Only red. Yellow light is red light plus another colour. Not blue!
+> Bara rött. Gult ljus är rött ljus plus en färg till. Inte blått!
+= Not white yet. White light is every colour of light together.
+> Inte vitt än. Vitt ljus är alla ljusets färger tillsammans.
+= That makes {got}. Which two colours of light together make {want}?
+> Det blir {got}. Vilka två färger av ljus blir {want} tillsammans?
+= Yellow! Red light and green light make yellow light. (With paint you would get brown!)
+> Gult! Rött ljus och grönt ljus blir gult ljus. (Med målarfärg blir det brunt!)
+= Cyan! Green and blue light make a bright sea-blue.
+> Cyan! Grönt och blått ljus blir ett klart havsblått.
+= White! Red, green and blue light together make white light. A screen makes every colour from just those three.
+> Vitt! Rött, grönt och blått ljus tillsammans blir vitt ljus. En skärm gör alla färger av bara de tre.
+= The lights are perfect! Tick it off!
+> Ljuset är perfekt! Bocka av!
+= Up on the checklist, a tick appears next to Spotlights.
+> På checklistan dyker en bock upp bredvid Strålkastare.
+= The teeterboard
+> Gungbrädan
+= The strongman: 90 kg, 1 metre from the middle
+> Starke mannen: 90 kg, 1 meter från mitten
+= Pippi at {m} m
+> Pippi på {m} m
+= Pippi weighs 30 kg. Where must she sit so the board balances? The strongman says: "Heavy and close, or light and far, it's all the same to a teeterboard."
+> Pippi väger 30 kg. Var ska hon sitta för att brädan ska väga jämnt? Starke mannen säger: "Tung och nära, eller lätt och långt ut, det är samma sak för en gungbräda."
+= Balanced! 90 kg × 1 m = 90, and 30 kg × 3 m = 90. A light person far out balances a heavy person close in.
+> Jämvikt! 90 kg × 1 m = 90, och 30 kg × 3 m = 90. En lätt person långt ut väger jämnt med en tung person nära mitten.
+= Such a small girl, so far out, and we balance perfectly! Teeterboard act: ready!
+> En så liten flicka, så långt ut, och vi väger precis jämnt! Gungbrädsnumret: klart!
+= Pippi's end goes down with a bump, and the strongman flies up into the air! 30 × 4 = 120 is more than 90 × 1 = 90.
+> Pippis ände går ner med en duns, och starke mannen flyger upp i luften! 30 × 4 = 120 är mer än 90 × 1 = 90.
+= The strongman's side stays down. 30 kg × {m} m = {r}, but 90 kg × 1 m = 90. Sit further out.
+> Starke mannens sida stannar nere. 30 kg × {m} m = {r}, men 90 kg × 1 m = 90. Sätt dig längre ut.
+= The clown's juggling
+> Clownens jonglering
+= He has forgotten how it goes on
+> Han har glömt hur det fortsätter
+= "I always juggle in a pattern," sniffs the clown, "but I've forgotten the end! Which balls come next?"
+> "Jag jonglerar alltid i ett mönster," snyftar clownen, "men jag har glömt slutet! Vilka bollar kommer sedan?"
+= Click an empty ball to change its colour.
+> Klicka på en tom boll för att byta färg.
+= Juggle!
+> Jonglera!
+= Ball {n}
+> Boll {n}
+= Red, blue, blue, again and again: the pattern repeats every three balls. Up they go!
+> Röd, blå, blå, om och om igen: mönstret upprepas var tredje boll. Upp med dem!
+= Red, blue, blue! Red, blue, blue! I remember! Honk honk!
+> Röd, blå, blå! Röd, blå, blå! Nu minns jag! Tut tut!
+= The clown juggles, and the balls fly round and round in the spotlight.
+> Clownen jonglerar, och bollarna flyger runt, runt i strålkastarljuset.
+= Yellow? There's no yellow anywhere in his pattern so far.
+> Gul? Det finns ingen gul någonstans i hans mönster än.
+= Choose a colour for every empty ball first.
+> Välj först en färg för varje tom boll.
+= The clown drops a ball on his foot. Look at the start: which group of colours keeps repeating?
+> Clownen tappar en boll på foten. Titta på början: vilken grupp av färger kommer tillbaka hela tiden?
+= The trapezes
+> Trapetserna
+= The Flying Svenssons must swing in time
+> De flygande Svenssons måste svänga i takt
+= Left rope (Sofia, 35 kg)
+> Vänstra repet (Sofia, 35 kg)
+= Right rope (Sven, 70 kg)
+> Högra repet (Sven, 70 kg)
+= Jump across!
+> Hoppa över!
+= To catch each other, the two trapezes must swing in exactly the same rhythm. Sven is twice as heavy as Sofia. Does that matter?
+> För att fånga varandra måste de två trapetserna svänga i exakt samma takt. Sven är dubbelt så tung som Sofia. Spelar det någon roll?
+= {L} m · one swing there and back: {T} s
+> {L} m · en sväng fram och tillbaka: {T} s
+= Same length, same rhythm: Sven catches Sofia! How fast a swing goes depends on the length of the rope, not on how heavy you are.
+> Lika långa, samma takt: Sven fångar Sofia! Hur fort en gunga svänger beror på repets längd, inte på hur tung man är.
+= The Flying Svenssons swing in perfect time and catch each other in mid-air. The audience isn't even in yet, and Pippi is already clapping.
+> De flygande Svenssons svänger i perfekt takt och fångar varandra i luften. Publiken har inte ens kommit in än, och Pippi klappar redan.
+= Bravo! Next time, I'll be the one in the middle.
+> Bravo! Nästa gång är det jag som är i mitten.
+= Swish… they miss each other, and land in the safety net. The ropes have different lengths, so they swing at different speeds. The weight doesn't matter.
+> Svisch… de missar varandra och landar i skyddsnätet. Repen är olika långa, så de svänger olika fort. Vikten spelar ingen roll.
+= The curtain winch
+> Ridåvinschen
+= Crank → gears → curtain drum
+> Vev → kugghjul → ridåtrumma
+= You turn the crank clockwise ↻. The curtain drum on the right must turn anticlockwise ↺ to open the curtain. How many gears go in between?
+> Du vevar medsols ↻. Ridåtrumman till höger måste snurra motsols ↺ för att dra upp ridån. Hur många kugghjul ska sitta emellan?
+= {n} in between
+> {n} emellan
+= Turn the crank!
+> Veva!
+= Two gears that touch always turn opposite ways.
+> Två kugghjul som rör vid varandra snurrar alltid åt motsatta håll.
+= crank ↻
+> vev ↻
+= drum
+> trumma
+= Crank ↻, then ↺, ↻, and the drum turns ↺: the curtain opens! With an even number of gears in between, the last gear turns the other way from the crank.
+> Vev ↻, sedan ↺, ↻, och trumman snurrar ↺: ridån går upp! Med ett jämnt antal kugghjul emellan snurrar det sista hjulet åt andra hållet än veven.
+= Crank ↻, middle gear ↺, drum ↻: the curtain winds up even tighter! Count the turns: each gear turns the other way from the one before.
+> Vev ↻, mittenhjulet ↺, trumman ↻: ridån dras åt ännu hårdare! Räkna varven: varje hjul snurrar åt andra hållet än det förra.
+= Crank ↻, ↺, ↻, ↺, and the drum ↻: tighter still! Three in between is one too many, or one too few.
+> Vev ↻, ↺, ↻, ↺, och trumman ↻: ännu hårdare! Tre emellan är ett för många, eller ett för få.
+= The circus has come to town! A big red-and-white tent in the meadow, music, sawdust, and the smell of candyfloss.
+> Cirkusen har kommit till stan! Ett stort rött och vitt tält på ängen, musik, sågspån och doften av sockervadd.
+= A circus! I've never been to a circus, so I'm sure I'll be very good at it.
+> En cirkus! Jag har aldrig varit på cirkus förut, så det klarar jag säkert alldeles utmärkt.
+= Pippi, you're supposed to WATCH the circus. Not be in it.
+> Pippi, man ska TITTA på cirkusen. Inte vara med i den.
+= Inside the big top, nothing is happening. The ringmaster is pacing up and down in front of the curtain, pulling at his moustache.
+> Inne i cirkustältet händer ingenting. Direktören går fram och tillbaka framför ridån och drar i sin mustasch.
+= Tickets, please! And then… oh dear. The show should have started ten minutes ago.
+> Biljetter, tack! Och sedan… åh nej. Föreställningen skulle ha börjat för tio minuter sedan.
+= First, tickets. The booth is by the entrance.
+> Först biljetter. Luckan är vid ingången.
+= The drum turns, and the red velvet curtain swings open. A drumroll! The spotlights meet in the middle of the ring.
+> Trumman snurrar, och den röda sammetsridån glider isär. Trumvirvel! Strålkastarna möts mitt i manegen.
+= Ladies and gentlemen! The greatest show on earth!
+> Mina damer och herrar! Den största föreställningen på jorden!
+= The trapezes swing, the clown juggles, the seal bounces its ball, and round the ring trots the circus horse… with Pippi standing on its back, on one leg.
+> Trapetserna svänger, clownen jonglerar, sälen studsar sin boll, och runt manegen travar cirkushästen… med Pippi stående på ryggen, på ett ben.
+= Who let her in there?!
+> Vem släppte in henne där?!
+= You did! With a ticket! And now I'd like to lift the strongman, please.
+> Det gjorde ni! Med en biljett! Och nu vill jag gärna lyfta starke mannen.
+= Nobody lifts me. Nobody has ever…
+> Ingen lyfter mig. Ingen har någonsin…
+= Pippi lifts the strongman over her head, carries him once round the ring, and puts him down very gently. The whole tent stands up and cheers.
+> Pippi lyfter starke mannen över huvudet, bär honom ett varv runt manegen och ställer ner honom alldeles försiktigt. Hela tältet reser sig och jublar.
+= Best circus ever.
+> Bästa cirkusen någonsin.
+= Pippi, you were supposed to WATCH.
+> Pippi, du skulle ju TITTA.
+= All done! Now the curtain can open: the winch is next to it.
+> Allt klart! Nu kan ridån gå upp: vinschen sitter bredvid.

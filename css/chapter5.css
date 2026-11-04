@@ -1,85 +1,114 @@
-/* Chapter 5: on board the Hoppetossa. Close-ups: the cargo hoist (pulleys), the wheel and the chart (compass points),
-   Mr Nilsson's things overboard (floating), fresh water from the sea (evaporation), the sextant (the Equator) and
-   the crow's nest (the Earth is round). Every moving part stops with the Motion setting (css/animations.css). */
-.dialog.who-captain .who{color:#7fc8ff} .dialog.who-captain{border-left-color:#7fc8ff}
+/* Chapter 5: the big top. Close-ups: the ticket booth, the lighting desk, the teeterboard, the clown's juggling,
+   the trapezes and the curtain winch. Lots of moving parts, all stopped by the Motion setting (css/animations.css). */
+.dialog.who-ringmaster .who{color:#f2c94c} .dialog.who-ringmaster{border-left-color:#f2c94c}
+.dialog.who-clown .who,.dialog.who-seal .who{color:#ff8fa3} .dialog.who-clown,.dialog.who-seal{border-left-color:#ff8fa3}
+.dialog.who-strongman .who{color:#d9c79a} .dialog.who-strongman{border-left-color:#d9c79a}
 
-/* close-ups */
-.hp-tackle,.hp-compass,.hp-chart,.hp-still,.hp-night,.hp-curve{width:100%;height:auto;display:block;margin:0 auto;border-radius:6px}
-.hp-tackle{max-width:360px} .hp-compass{max-width:240px} .hp-chart{max-width:480px} .hp-still{max-width:420px} .hp-night,.hp-curve{max-width:520px}
-.hp-ropes.on,.hp-from.on{background:var(--amber);color:#24120a}
-.hp-heading{text-align:center;font-family:var(--f-mono);font-size:15px;margin-top:8px} .hp-heading b{color:var(--amber);text-transform:uppercase}
-.hp-floats{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
-.hp-fl{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px;border-radius:8px;border:2px solid var(--line);background:#2a3550;color:var(--paper);font-size:13px}
-.hp-fl svg{width:100%;height:auto;display:block}
-.hp-fl .hp-fs{font-family:var(--f-mono);font-size:13px;color:var(--muted)}
-.hp-fl.f{border-color:#7fc8ff} .hp-fl.f .hp-fs{color:#7fc8ff}
-.hp-fl.s{border-color:#c9952a} .hp-fl.s .hp-fs{color:#f3d27a}
-.hp-parts{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:6px;margin-top:10px}
-.hp-log{background:#f3e6c4;color:#3e200c;border-radius:4px;padding:12px 16px;font-family:var(--f-hand);font-size:clamp(18px,3vw,22px);line-height:1.2}
-.hp-log p{margin:0 0 8px}
-.hp-log .hp-rule{font-family:var(--f-display);font-size:14px;border-top:2px dashed #c4302b;padding-top:8px;margin:4px 0 0}
-@keyframes hpDrip{0%{transform:translateY(0);opacity:1}80%{transform:translateY(30px);opacity:1}100%{transform:translateY(34px);opacity:0}}
-.hp-dripdot{animation:hpDrip 1.2s ease-in infinite}
+/* ---------- the big top comes alive ---------- */
+@keyframes ccSweepA{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(10deg)}}
+@keyframes ccSweepB{0%,100%{transform:rotate(12deg)}50%{transform:rotate(-12deg)}}
+@keyframes ccSwing{0%,100%{transform:rotate(-16deg)}50%{transform:rotate(16deg)}}
+@keyframes ccFlag{0%,100%{transform:skewY(0) scaleX(1)}50%{transform:skewY(-8deg) scaleX(.86)}}
+@keyframes ccPennant{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+@keyframes ccBulb{0%,60%,100%{opacity:1}30%{opacity:.25}}
+@keyframes ccBall{0%,100%{transform:translateY(0)}50%{transform:translateY(-26px)}}
+@keyframes ccCane{0%,100%{transform:rotate(0)}50%{transform:rotate(-14deg)}}
+/* the horse trots round the LEFT, front part of the ring, so it never crosses the teeterboard on the right or the
+   clown at the back: along the front facing right, then back along the far side facing left, smaller */
+@keyframes ccTrot{
+  0%{transform:translate(-300px,34px) scale(1,1)}
+  25%{transform:translate(-115px,58px) scale(1,1)}
+  49.9%{transform:translate(70px,34px) scale(1,1)}
+  50%{transform:translate(70px,34px) scale(-.85,.85)}
+  75%{transform:translate(-115px,-12px) scale(-.8,.8)}
+  99.9%{transform:translate(-300px,34px) scale(-.85,.85)}
+  100%{transform:translate(-300px,34px) scale(1,1)}
+}
+/* a trot: each leg swings forward while its knee folds (the hoof lifts), then pushes back along the ground, straight */
+@keyframes ccLeg{0%{transform:rotate(22deg)}50%{transform:rotate(-26deg)}100%{transform:rotate(22deg)}}
+@keyframes ccKneeFore{0%{transform:rotate(0)}18%{transform:rotate(70deg)}40%{transform:rotate(10deg)}50%,100%{transform:rotate(0)}}
+@keyframes ccKneeHind{0%{transform:rotate(0)}18%{transform:rotate(-55deg)}40%{transform:rotate(-8deg)}50%,100%{transform:rotate(0)}}
+@keyframes ccHop{0%,50%,100%{transform:translateY(0)}25%,75%{transform:translateY(-3px)}}
+@keyframes ccTail{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(8deg)}}
+@keyframes ccJugA{0%{transform:translate(-30px,40px)}25%{transform:translate(-14px,-30px)}50%{transform:translate(30px,40px)}75%{transform:translate(14px,-10px)}100%{transform:translate(-30px,40px)}}
+@keyframes ccConfetti{0%{transform:translateY(0) rotate(0)}100%{transform:translateY(960px) rotate(720deg)}}
+@keyframes ccBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 
-/* ---------- the Hoppetossa comes alive ---------- */
-@keyframes hpBob{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
-@keyframes hpRock{0%,100%{transform:rotate(-.7deg) translateY(0)}50%{transform:rotate(.7deg) translateY(5px)}}
-@keyframes hpWaves{from{transform:translateX(0)}to{transform:translateX(-200px)}}
-@keyframes hpCloud{from{transform:translateX(-500px)}to{transform:translateX(1700px)}}
-@keyframes hpGull{0%{transform:translate(0,0)}50%{transform:translate(140px,-20px)}100%{transform:translate(0,0)}}
-@keyframes hpFlag{0%,100%{transform:skewY(0) scaleX(1)}50%{transform:skewY(-7deg) scaleX(.88)}}
-@keyframes hpFull{0%,100%{transform:scaleX(1)}50%{transform:scaleX(1.03)}}
-@keyframes hpUnfurl{from{transform:scaleY(.05)}to{transform:scaleY(1)}}
-@keyframes hpLeave{from{transform:translateX(0);opacity:1}to{transform:translateX(-700px);opacity:0}}
-@keyframes hpSwing{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
-@keyframes hpNod{0%,70%,100%{transform:rotate(0)}80%{transform:rotate(-4deg)}90%{transform:rotate(2deg)}}
-@keyframes hpPlait{0%,100%{transform:rotate(0)}50%{transform:rotate(-10deg)}}
-@keyframes hpFish{0%,100%{transform:translateX(0)}50%{transform:translateX(60px)}}
-@keyframes hpJelly{0%,100%{transform:translateY(0) scaleY(1)}50%{transform:translateY(-14px) scaleY(.9)}}
-@keyframes hpPalm{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
-@keyframes hpRipple{0%{transform:scale(.4);opacity:.9}100%{transform:scale(1.6);opacity:0}}
-@keyframes hpSpout{0%,70%,100%{opacity:0}78%,90%{opacity:1}}
-@keyframes hpDolphin{0%{transform:translate(-200px,620px) rotate(0)}10%{transform:translate(180px,560px) rotate(-20deg)}18%{transform:translate(420px,630px) rotate(30deg)}18.01%,100%{transform:translate(-300px,700px)}}
-@keyframes hpDrop{0%{transform:translate(0,0);opacity:0}20%{opacity:1}100%{transform:translate(30px,-40px);opacity:0}}
-@keyframes hpTw{0%,100%{opacity:1}50%{opacity:.25}}
-@keyframes hpWheel{0%,100%{transform:rotate(-12deg)}50%{transform:rotate(12deg)}}
+#sc-circus .beam{transform-box:fill-box;transform-origin:50% 0}
+#sc-circus .beam.a{animation:ccSweepA 7s ease-in-out infinite}
+#sc-circus .beam.b{animation:ccSweepB 9s ease-in-out infinite}
+#sc-circus .beam.c{animation:ccSweepA 8s ease-in-out infinite reverse}
+/* once the lights are fixed, the three white beams meet in the middle of the ring */
+#sc-circus.lit .beam{animation:none}
+#sc-circus.lit .beam.a{transform:rotate(-28deg)}
+#sc-circus.lit .beam.c{transform:rotate(28deg)}
+#sc-circus .swing{transform-box:fill-box;transform-origin:50% 0;animation:ccSwing 2.2s ease-in-out infinite}
+#sc-circus .swing.r{animation-duration:1.6s}
+#sc-circus.synced .swing.r{animation-duration:2.2s;animation-direction:reverse}
+#sc-circus .flagw{transform-box:fill-box;transform-origin:0 50%;animation:ccFlag 1.4s ease-in-out infinite}
+#sc-circus .flagw.b{animation-delay:-.7s}
+#sc-circus .pennant{transform-box:fill-box;transform-origin:50% 0;animation:ccPennant 3s ease-in-out infinite}
+#sc-circus .bulb{animation:ccBulb .9s steps(1,end) infinite}
+#sc-circus .sealball{animation:ccBall 1s ease-in-out infinite}
+#sc-circus .cane{transform-box:fill-box;transform-origin:0 0;animation:ccCane 3s ease-in-out infinite}
+#cc-horse{transform-box:fill-box;transform-origin:50% 100%;animation:ccTrot 14s linear infinite}
+/* diagonal pairs move together: near fore with far hind (a), far fore with near hind (b), half a stride apart */
+#cc-horse .hleg,#cc-horse .shin{transform-box:view-box}
+#cc-horse .hleg{animation:ccLeg .6s linear infinite}
+#cc-horse .hleg.b{animation-delay:-.3s}
+#cc-horse .fore .shin{animation:ccKneeFore .6s linear infinite}
+#cc-horse .hind .shin{animation:ccKneeHind .6s linear infinite}
+#cc-horse .hleg.b .shin{animation-delay:-.3s}
+#cc-horse .hbody{animation:ccHop .6s ease-in-out infinite}
+#cc-horse .htail{transform-box:fill-box;transform-origin:100% 0;animation:ccTail 1.2s ease-in-out infinite}
+#cc-balls-air .jball{animation:ccJugA 1.2s linear infinite}
+#cc-balls-air .jball.b{animation-delay:-.4s} #cc-balls-air .jball.c{animation-delay:-.8s}
+#cc-pippi .bob{animation:ccBob 2s ease-in-out infinite}
+#cc-board{transition:transform .6s ease}
+/* showtime: the curtain opens and confetti rains */
+#cc-curl,#cc-curr{transition:transform 2.4s ease-in-out}
+#sc-circus.showtime #cc-curl{transform:translateX(-190px)}
+#sc-circus.showtime #cc-curr{transform:translateX(190px)}
+#sc-circus .confetto{animation:ccConfetti 4s linear infinite}
+#sc-circus.showtime #cc-horse{animation-duration:9s}
 
-#hp-ship{transform-box:view-box;transform-origin:800px 620px;animation:hpBob 4s ease-in-out infinite}
-#sc-ship.sailing #hp-ship{animation:hpRock 5s ease-in-out infinite}
-.hp-waves{animation:hpWaves 6s linear infinite}
-.hp-waves.front{animation-duration:4s}
-#sc-ship.sailing .hp-waves{animation-duration:3s}
-#sc-ship.sailing .hp-waves.front{animation-duration:2s}
-.hp-cloud{animation:hpCloud 70s linear infinite}
-.hp-cloud.slow{animation-duration:110s;animation-delay:-50s}
-.hp-gull{transform-box:fill-box;animation:hpGull 9s ease-in-out infinite}
-.hp-gull.b{animation-duration:12s;animation-delay:-4s}
-.hp-flag{transform-box:fill-box;transform-origin:0 50%;animation:hpFlag 1.2s ease-in-out infinite}
-#hp-sails .hp-sail{transform-box:fill-box;transform-origin:50% 0;animation:hpFull 3s ease-in-out infinite}
-#hp-sails .hp-sail.b{animation-delay:-1.5s}
-#sc-ship.castoff #hp-sails{display:inline!important}
-#sc-ship.castoff #hp-furl{display:none!important}
-#sc-ship.castoff #hp-sails .hp-sail{animation:hpUnfurl 1.2s ease-out both}
-#sc-ship.castoff #hp-harbour{animation:hpLeave 3s ease-in both}
-#hp-lamp{transform-box:view-box;transform-origin:330px 338px;animation:hpSwing 3s ease-in-out infinite}
-#hp-nilsson{transform-box:view-box;transform-origin:1264px 198px;animation:hpSwing 2.2s ease-in-out infinite}
-.hp-nod{animation:none}
-.hp-nod use{transform-box:fill-box;transform-origin:30% 100%;animation:hpNod 5s ease-in-out infinite}
-#hp-pippi .plait{transform-box:fill-box;transform-origin:100% 50%;animation:hpPlait 1.4s ease-in-out infinite}
-#hp-pippi .plait.b{transform-origin:0 50%;animation-direction:reverse}
-#sc-ship:not(.sailing) #hp-wheel{animation:none}
-#sc-ship.sailing #hp-wheel{transform-box:fill-box;transform-origin:50% 50%;animation:hpWheel 6s ease-in-out infinite}
-.hp-fish{transform-box:fill-box;animation:hpFish 7s ease-in-out infinite}
-.hp-fish.b{animation-duration:9s;animation-delay:-3s}
-.hp-fish.c{animation-duration:11s;animation-direction:reverse}
-.hp-jelly{transform-box:fill-box;animation:hpJelly 4s ease-in-out infinite}
-.hp-palm{transform-box:fill-box;transform-origin:50% 100%;animation:hpPalm 3s ease-in-out infinite}
-.hp-palm.b{animation-delay:-1.5s}
-.hp-ripple{transform-box:fill-box;transform-origin:50% 50%;animation:hpRipple 2s ease-out infinite}
-.hp-ripple.b{animation-delay:-1s}
-.hp-spout{animation:hpSpout 9s linear infinite}
-.hp-dolphin{animation:hpDolphin 14s linear infinite}
-.hp-dolphin.b{animation-delay:-1.2s}
-.hp-drop{transform-box:fill-box;animation:hpDrop 1.4s ease-out infinite}
-.hp-drop.b{animation-delay:-.5s} .hp-drop.c{animation-delay:-.9s}
-#sc-ship .hp-tw{animation:hpTw 3s ease-in-out infinite}
+/* ---------- close-ups ---------- */
+.booth4 p{margin:0 0 8px}
+.till{display:flex;gap:12px;justify-content:center;margin:8px 0}
+.coin{width:56px;height:56px;border-radius:50%;border:3px solid #7a5a1a;background:radial-gradient(circle at 35% 30%,#fff3b0,#c9952a);color:#4e2a12;font-family:var(--f-mono);font-size:20px;font-weight:700;display:inline-grid;place-items:center;padding:0}
+.coin.c2{width:48px;height:48px;font-size:17px;background:radial-gradient(circle at 35% 30%,#f3f3f3,#9aa0a6);border-color:#5a6068}
+.coin.c1{width:40px;height:40px;font-size:15px;background:radial-gradient(circle at 35% 30%,#ffd9b0,#b5651d);border-color:#7a3a10}
+.change{min-height:64px;display:flex;gap:6px;align-items:center;justify-content:center;flex-wrap:wrap;background:#2a1a0c;border-radius:8px;padding:8px;font-family:var(--f-mono)}
+.change .coin{cursor:default}
+
+.lightdesk{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:center}
+.mix-svg{width:220px;height:auto;border-radius:8px;flex:0 0 auto}
+.ld-ctl{display:flex;flex-direction:column;gap:8px;min-width:220px;flex:1 1 220px}
+.ld-switches{display:flex;gap:6px}
+.ld-switches .tog{flex:1;text-align:center}
+.ld-switches .ld0.on{border-color:#ff4a4a;color:#ff8a8a} .ld-switches .ld1.on{border-color:#4aff6a;color:#8aff9a} .ld-switches .ld2.on{border-color:#4a7aff;color:#9ab4ff}
+.ld-now{font-size:14px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.swatch{display:inline-block;width:22px;height:22px;border-radius:50%;border:2px solid var(--line)}
+
+.teeter-svg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;border-radius:6px}
+.tt-board{transition:transform .6s ease}
+.seat.on{background:var(--amber);color:#24120a}
+
+.jrow{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:10px 0}
+.jb{width:36px;height:36px;border-radius:50%;display:inline-grid;place-items:center;border:2px solid rgba(0,0,0,.3);box-shadow:inset -4px -4px 0 rgba(0,0,0,.18)}
+.jb.pick{border:2px dashed var(--amber);color:var(--amber);font-weight:700;padding:0}
+.hint-s{text-align:center;font-size:13px;color:var(--muted);margin:0}
+
+@keyframes ccPend{0%,100%{transform:rotate(-18deg)}50%{transform:rotate(18deg)}}
+.trap-svg{width:100%;max-width:440px;height:auto;display:block;margin:0 auto;border-radius:6px}
+.trap-svg .tp{transform-box:view-box;animation:ccPend 3s ease-in-out infinite}
+.trap-ctl{display:flex;flex-direction:column;gap:8px;margin-top:10px;font-size:14px}
+.trap-ctl input{width:100%;accent-color:var(--amber)}
+
+@keyframes ccSpinCW{to{transform:rotate(360deg)}}
+@keyframes ccSpinCCW{to{transform:rotate(-360deg)}}
+.gear-svg{width:100%;height:auto;display:block;border-radius:6px}
+.gear-svg .gear{transform-box:view-box}
+.gear-svg .gear.cw{animation:ccSpinCW 2s linear infinite}
+.gear-svg .gear.ccw{animation:ccSpinCCW 2s linear infinite}
+.gcount.on{background:var(--amber);color:#24120a}

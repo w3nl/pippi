@@ -1,273 +1,403 @@
-# Swedish translation: Chapter 4, Pippi goes to the circus (js/chapter4.js).
-# Money is in crowns (kronor).
+# Swedish translation: Chapter 4, snowball fight (js/chapter4.js, its hints, item uses, scene labels and menus).
+# The policemen are Kling och Klang. The horse is Lilla Gubben. Mittens = vantar. Half past two = halv tre.
 
-= Spotlights
-> Strålkastare
-= Teeterboard
-> Gungbräda
-= Clown
-> Clown
-= Trapezes
-> Trapetser
-= Circus tickets
-> Cirkusbiljetter
-= Four tickets: for Pippi, Tommy, Annika and you. Mr Nilsson goes in free, as hand luggage.
-> Fyra biljetter: till Pippi, Tommy, Annika och dig. Herr Nilsson går in gratis, som handbagage.
-= Tickets, please! Nobody comes near my ring without a ticket. Not even strong little girls.
-> Biljetter, tack! Ingen kommer nära min manege utan biljett. Inte ens starka små flickor.
-= The spunk's jam jar, on the counter of the ticket booth. Pippi brought it to the circus.
-> Spunkens syltburk, på disken i biljettluckan. Pippi har tagit med den till cirkusen.
-= "It has never seen a circus," she says. You take it. A spunk knows things. Even about circuses.
-> "Den har aldrig sett en cirkus," säger hon. Du tar den. En spunk vet saker. Till och med om cirkusar.
-= The ticket booth. The ticket seller is counting Pippi's gold coin for the fourth time. It's real.
-> Biljettluckan. Biljettförsäljaren räknar Pippis guldmynt för fjärde gången. Det är äkta.
-= The ringmaster's checklist, BEFORE THE SHOW: spotlights, teeterboard, clown, trapezes. {n} of 4 done.
-> Direktörens checklista, FÖRE FÖRESTÄLLNINGEN: strålkastare, gungbräda, clown, trapetser. {n} av 4 klara.
-= When all four are ticked off, the curtain can open.
-> När alla fyra är avbockade kan ridån gå upp.
-= Ladies and gentlemen! The strongest girl in the world!
-> Mina damer och herrar! Världens starkaste flicka!
-= Tickets, please! The show starts in a moment. Well… it should.
-> Biljetter, tack! Föreställningen börjar alldeles strax. Nåja… det borde den.
-= Everything's ready! Open the curtain with the winch, and the show can begin!
-> Allt är klart! Dra upp ridån med vinschen, så kan föreställningen börja!
-= Oh, it's a disaster! The spotlights are all the wrong colours, the teeterboard won't balance, the clown has forgotten his juggling, and the trapeze artists can't catch each other.
-> Åh, det är en katastrof! Strålkastarna har fel färger, gungbrädan väger inte jämnt, clownen har glömt hur man jonglerar, och trapetsartisterna kan inte fånga varandra.
-= My checklist is on the tent pole. If only somebody could help…
-> Min checklista sitter på tältstången. Om bara någon kunde hjälpa till…
-= I've never helped a circus, so I'm sure I can!
-> Jag har aldrig hjälpt en cirkus förut, så det klarar jag säkert!
-= The three spotlights shine white together, right in the middle of the ring. Perfect for a star.
-> De tre strålkastarna lyser vitt tillsammans, mitt i manegen. Perfekt för en stjärna.
-= The teeterboard, perfectly balanced. The strongman is very impressed.
-> Gungbrädan, i perfekt jämvikt. Starke mannen är mycket imponerad.
-= Such a small girl. So far out. Perfect balance!
-> En så liten flicka. Så långt ut. Perfekt jämvikt!
-= Honk! Honk! HONK! Please stop squeezing my nose, I'm working.
-> Tut! Tut! TUUT! Sluta klämma på min näsa, jag arbetar.
-= Look at me go! Red, blue, blue, red, blue, blue…
-> Titta på mig! Röd, blå, blå, röd, blå, blå…
-= The two trapezes swing back and forth in perfect time. The flyers catch each other every single time.
-> De två trapetserna svänger fram och tillbaka i perfekt takt. Artisterna fångar varandra varenda gång.
-= Ork! Ork!
-> Ork! Ork!
-= A seal on a stool, balancing a ball on its nose. It's the only one in the circus who's ready for the show.
-> En säl på en pall, som balanserar en boll på nosen. Den är den enda på cirkusen som är redo för föreställningen.
-= The performers' curtain, heavy red velvet with gold fringes. Behind it, the horses are stamping and someone is warming up a trumpet.
-> Artisternas ridå, av tung röd sammet med guldfransar. Bakom den stampar hästarna och någon värmer upp en trumpet.
-= It opens with the winch on its right. But only when the show is ready.
-> Den öppnas med vinschen till höger. Men bara när föreställningen är redo.
-= The winch has done its job. The curtain is open.
-> Vinschen har gjort sitt jobb. Ridån är uppe.
-= Not yet! First the checklist: {n} of 4 acts are ready.
-> Inte än! Först checklistan: {n} av 4 nummer är klara.
-= I'm a circus star!
-> Jag är en cirkusstjärna!
-= I've got a gold coin for the tickets. It's a bit big, but they'll have change.
-> Jag har ett guldmynt till biljetterna. Det är lite stort, men de har säkert växel.
-= A circus! With a strongman! I wonder if he'd like to be lifted.
-> En cirkus! Med en stark man! Undrar om han vill bli lyft.
-= The ticket booth
-> Biljettluckan
-= Tickets: 3 crowns each
-> Biljetter: 3 kronor styck
-= Pippi buys {n} tickets, for herself, Tommy, Annika and you, and pays with a gold coin worth {paid} crowns. The ticket seller has gone to fetch more change, so you're in charge of the till.
-> Pippi köper {n} biljetter, till sig själv, Tommy, Annika och dig, och betalar med ett guldmynt värt {paid} kronor. Biljettförsäljaren har gått för att hämta mer växel, så du har hand om kassan.
-= How much change does Pippi get?
-> Hur mycket växel får Pippi tillbaka?
-= Add a {v}-crown coin
-> Lägg till ett mynt på {v} kronor
-= Take it back
-> Ta tillbaka
-= Give the change
-> Ge växel
-= No coins yet.
-> Inga mynt än.
-= 4 × 3 = 12 crowns for the tickets, and 20 − 12 = 8 crowns change. Four tickets for you!
-> 4 × 3 = 12 kronor för biljetterna, och 20 − 12 = 8 kronor tillbaka. Fyra biljetter till er!
-= Eight crowns change! That's enough for eight crowns' worth of sweets.
-> Åtta kronor tillbaka! Det räcker till godis för åtta kronor.
-= You take the tickets. Now show them to the ringmaster.
-> Du tar biljetterna. Visa dem nu för direktören.
-= 12 crowns is what the tickets cost. Pippi paid 20: how much is left over?
-> 12 kronor kostar biljetterna. Pippi betalade 20: hur mycket blir över?
-= That would be right for one ticket. But Pippi buys four.
-> Det stämmer för en biljett. Men Pippi köper fyra.
-= Too much! The circus would go bankrupt. First work out what four tickets cost.
-> För mycket! Då går cirkusen i konkurs. Räkna först ut vad fyra biljetter kostar.
-= Not enough. What do four tickets cost, and how much is left of 20?
-> För lite. Vad kostar fyra biljetter, och hur mycket blir kvar av 20?
-= Yellow light for the clown
-> Gult ljus till clownen
-= Sea-blue light for the seal: cyan, a mix of green and blue
-> Havsblått ljus till sälen: cyan, en blandning av grönt och blått
-= White light for the star of the show
-> Vitt ljus till föreställningens stjärna
-= darkness
-> mörker
-= red
-> rött
-= green
-> grönt
-= blue
-> blått
-= yellow
-> gult
-= cyan
-> cyan
-= magenta (pink-purple)
-> magenta (rosa-lila)
-= white
-> vitt
-= The lighting desk
-> Ljusbordet
-= Three spotlights: red, green and blue
-> Tre strålkastare: röd, grön och blå
-= Red
-> Röd
-= Green
-> Grön
-= Blue
-> Blå
-= Shine!
-> Lys!
-= Coloured LIGHT mixes differently from paint: the more colours you add, the brighter it gets.
-> Färgat LJUS blandas på ett annat sätt än målarfärg: ju fler färger du lägger till, desto ljusare blir det.
-= Round {n} of 3:
-> Omgång {n} av 3:
-= The ring is now:
-> Manegen är nu:
-= Pitch dark! Somewhere in the dark, the seal goes "Ork?" Switch some lights on.
-> Kolsvart! Någonstans i mörkret säger sälen "Ork?" Tänd några lampor.
-= Only red. Yellow light is red light plus another colour. Not blue!
-> Bara rött. Gult ljus är rött ljus plus en färg till. Inte blått!
-= Not white yet. White light is every colour of light together.
-> Inte vitt än. Vitt ljus är alla ljusets färger tillsammans.
-= That makes {got}. Which two colours of light together make {want}?
-> Det blir {got}. Vilka två färger av ljus blir {want} tillsammans?
-= Yellow! Red light and green light make yellow light. (With paint you would get brown!)
-> Gult! Rött ljus och grönt ljus blir gult ljus. (Med målarfärg blir det brunt!)
-= Cyan! Green and blue light make a bright sea-blue.
-> Cyan! Grönt och blått ljus blir ett klart havsblått.
-= White! Red, green and blue light together make white light. A screen makes every colour from just those three.
-> Vitt! Rött, grönt och blått ljus tillsammans blir vitt ljus. En skärm gör alla färger av bara de tre.
-= The lights are perfect! Tick it off!
-> Ljuset är perfekt! Bocka av!
-= Up on the checklist, a tick appears next to Spotlights.
-> På checklistan dyker en bock upp bredvid Strålkastare.
-= The teeterboard
-> Gungbrädan
-= The strongman: 90 kg, 1 metre from the middle
-> Starke mannen: 90 kg, 1 meter från mitten
-= Pippi at {m} m
-> Pippi på {m} m
-= Pippi weighs 30 kg. Where must she sit so the board balances? The strongman says: "Heavy and close, or light and far, it's all the same to a teeterboard."
-> Pippi väger 30 kg. Var ska hon sitta för att brädan ska väga jämnt? Starke mannen säger: "Tung och nära, eller lätt och långt ut, det är samma sak för en gungbräda."
-= Balanced! 90 kg × 1 m = 90, and 30 kg × 3 m = 90. A light person far out balances a heavy person close in.
-> Jämvikt! 90 kg × 1 m = 90, och 30 kg × 3 m = 90. En lätt person långt ut väger jämnt med en tung person nära mitten.
-= Such a small girl, so far out, and we balance perfectly! Teeterboard act: ready!
-> En så liten flicka, så långt ut, och vi väger precis jämnt! Gungbrädsnumret: klart!
-= Pippi's end goes down with a bump, and the strongman flies up into the air! 30 × 4 = 120 is more than 90 × 1 = 90.
-> Pippis ände går ner med en duns, och starke mannen flyger upp i luften! 30 × 4 = 120 är mer än 90 × 1 = 90.
-= The strongman's side stays down. 30 kg × {m} m = {r}, but 90 kg × 1 m = 90. Sit further out.
-> Starke mannens sida stannar nere. 30 kg × {m} m = {r}, men 90 kg × 1 m = 90. Sätt dig längre ut.
-= The clown's juggling
-> Clownens jonglering
-= He has forgotten how it goes on
-> Han har glömt hur det fortsätter
-= "I always juggle in a pattern," sniffs the clown, "but I've forgotten the end! Which balls come next?"
-> "Jag jonglerar alltid i ett mönster," snyftar clownen, "men jag har glömt slutet! Vilka bollar kommer sedan?"
-= Click an empty ball to change its colour.
-> Klicka på en tom boll för att byta färg.
-= Juggle!
-> Jonglera!
-= Ball {n}
-> Boll {n}
-= Red, blue, blue, again and again: the pattern repeats every three balls. Up they go!
-> Röd, blå, blå, om och om igen: mönstret upprepas var tredje boll. Upp med dem!
-= Red, blue, blue! Red, blue, blue! I remember! Honk honk!
-> Röd, blå, blå! Röd, blå, blå! Nu minns jag! Tut tut!
-= The clown juggles, and the balls fly round and round in the spotlight.
-> Clownen jonglerar, och bollarna flyger runt, runt i strålkastarljuset.
-= Yellow? There's no yellow anywhere in his pattern so far.
-> Gul? Det finns ingen gul någonstans i hans mönster än.
-= Choose a colour for every empty ball first.
-> Välj först en färg för varje tom boll.
-= The clown drops a ball on his foot. Look at the start: which group of colours keeps repeating?
-> Clownen tappar en boll på foten. Titta på början: vilken grupp av färger kommer tillbaka hela tiden?
-= The trapezes
-> Trapetserna
-= The Flying Svenssons must swing in time
-> De flygande Svenssons måste svänga i takt
-= Left rope (Sofia, 35 kg)
-> Vänstra repet (Sofia, 35 kg)
-= Right rope (Sven, 70 kg)
-> Högra repet (Sven, 70 kg)
-= Jump across!
-> Hoppa över!
-= To catch each other, the two trapezes must swing in exactly the same rhythm. Sven is twice as heavy as Sofia. Does that matter?
-> För att fånga varandra måste de två trapetserna svänga i exakt samma takt. Sven är dubbelt så tung som Sofia. Spelar det någon roll?
-= {L} m · one swing there and back: {T} s
-> {L} m · en sväng fram och tillbaka: {T} s
-= Same length, same rhythm: Sven catches Sofia! How fast a swing goes depends on the length of the rope, not on how heavy you are.
-> Lika långa, samma takt: Sven fångar Sofia! Hur fort en gunga svänger beror på repets längd, inte på hur tung man är.
-= The Flying Svenssons swing in perfect time and catch each other in mid-air. The audience isn't even in yet, and Pippi is already clapping.
-> De flygande Svenssons svänger i perfekt takt och fångar varandra i luften. Publiken har inte ens kommit in än, och Pippi klappar redan.
-= Bravo! Next time, I'll be the one in the middle.
-> Bravo! Nästa gång är det jag som är i mitten.
-= Swish… they miss each other, and land in the safety net. The ropes have different lengths, so they swing at different speeds. The weight doesn't matter.
-> Svisch… de missar varandra och landar i skyddsnätet. Repen är olika långa, så de svänger olika fort. Vikten spelar ingen roll.
-= The curtain winch
-> Ridåvinschen
-= Crank → gears → curtain drum
-> Vev → kugghjul → ridåtrumma
-= You turn the crank clockwise ↻. The curtain drum on the right must turn anticlockwise ↺ to open the curtain. How many gears go in between?
-> Du vevar medsols ↻. Ridåtrumman till höger måste snurra motsols ↺ för att dra upp ridån. Hur många kugghjul ska sitta emellan?
-= {n} in between
-> {n} emellan
-= Turn the crank!
-> Veva!
-= Two gears that touch always turn opposite ways.
-> Två kugghjul som rör vid varandra snurrar alltid åt motsatta håll.
-= crank ↻
-> vev ↻
-= drum
-> trumma
-= Crank ↻, then ↺, ↻, and the drum turns ↺: the curtain opens! With an even number of gears in between, the last gear turns the other way from the crank.
-> Vev ↻, sedan ↺, ↻, och trumman snurrar ↺: ridån går upp! Med ett jämnt antal kugghjul emellan snurrar det sista hjulet åt andra hållet än veven.
-= Crank ↻, middle gear ↺, drum ↻: the curtain winds up even tighter! Count the turns: each gear turns the other way from the one before.
-> Vev ↻, mittenhjulet ↺, trumman ↻: ridån dras åt ännu hårdare! Räkna varven: varje hjul snurrar åt andra hållet än det förra.
-= Crank ↻, ↺, ↻, ↺, and the drum ↻: tighter still! Three in between is one too many, or one too few.
-> Vev ↻, ↺, ↻, ↺, och trumman ↻: ännu hårdare! Tre emellan är ett för många, eller ett för få.
-= The circus has come to town! A big red-and-white tent in the meadow, music, sawdust, and the smell of candyfloss.
-> Cirkusen har kommit till stan! Ett stort rött och vitt tält på ängen, musik, sågspån och doften av sockervadd.
-= A circus! I've never been to a circus, so I'm sure I'll be very good at it.
-> En cirkus! Jag har aldrig varit på cirkus förut, så det klarar jag säkert alldeles utmärkt.
-= Pippi, you're supposed to WATCH the circus. Not be in it.
-> Pippi, man ska TITTA på cirkusen. Inte vara med i den.
-= Inside the big top, nothing is happening. The ringmaster is pacing up and down in front of the curtain, pulling at his moustache.
-> Inne i cirkustältet händer ingenting. Direktören går fram och tillbaka framför ridån och drar i sin mustasch.
-= Tickets, please! And then… oh dear. The show should have started ten minutes ago.
-> Biljetter, tack! Och sedan… åh nej. Föreställningen skulle ha börjat för tio minuter sedan.
-= First, tickets. The booth is by the entrance.
-> Först biljetter. Luckan är vid ingången.
-= The drum turns, and the red velvet curtain swings open. A drumroll! The spotlights meet in the middle of the ring.
-> Trumman snurrar, och den röda sammetsridån glider isär. Trumvirvel! Strålkastarna möts mitt i manegen.
-= Ladies and gentlemen! The greatest show on earth!
-> Mina damer och herrar! Den största föreställningen på jorden!
-= The trapezes swing, the clown juggles, the seal bounces its ball, and round the ring trots the circus horse… with Pippi standing on its back, on one leg.
-> Trapetserna svänger, clownen jonglerar, sälen studsar sin boll, och runt manegen travar cirkushästen… med Pippi stående på ryggen, på ett ben.
-= Who let her in there?!
-> Vem släppte in henne där?!
-= You did! With a ticket! And now I'd like to lift the strongman, please.
-> Det gjorde ni! Med en biljett! Och nu vill jag gärna lyfta starke mannen.
-= Nobody lifts me. Nobody has ever…
-> Ingen lyfter mig. Ingen har någonsin…
-= Pippi lifts the strongman over her head, carries him once round the ring, and puts him down very gently. The whole tent stands up and cheers.
-> Pippi lyfter starke mannen över huvudet, bär honom ett varv runt manegen och ställer ner honom alldeles försiktigt. Hela tältet reser sig och jublar.
-= Best circus ever.
-> Bästa cirkusen någonsin.
-= Pippi, you were supposed to WATCH.
-> Pippi, du skulle ju TITTA.
-= All done! Now the curtain can open: the winch is next to it.
-> Allt klart! Nu kan ridån gå upp: vinschen sitter bredvid.
+# ---------- menus, end screen, speakers ----------
+= Garden gate: on to Chapter {n}
+> Grinden: vidare till kapitel {n}
+= Garden gate
+> Grinden
+= Snowball fight · Chapter 4 complete
+> Snöbollskrig · kapitel 4 klart
+= Bull's-eye
+> Fullträff
+= Kling and Klang surrendered, and everybody had hot chocolate. Next: the circus comes to town, and the show can't begin…
+> Kling och Klang gav upp, och alla fick varm choklad. Härnäst: cirkusen kommer till stan, och föreställningen kan inte börja…
+= Continue to Chapter 6
+> Vidare till kapitel 6
+= Snowball fight
+> Snöbollskrig
+= Chapter 4: Snowball fight
+> Kapitel 4: Snöbollskrig
+= Chapter 4 · Snowball Fight
+> Kapitel 4 · Snöbollskrig
+= Made a snow angel
+> Gjorde en snöängel
+= The snowman's nose
+> Snögubbens näsa
+= Snowball on your own head
+> Snöboll i ditt eget huvud
+= Back in the snowy garden. Kling and Klang are still building their fort.
+> Tillbaka i den snöiga trädgården. Kling och Klang bygger fortfarande på sin fästning.
+= Take your time. Kling and Klang are digging their cap out of the snow. When you're ready, the garden gate leads on to Chapter {n}.
+> Ta den tid du behöver. Kling och Klang gräver fram mössan ur snön. När du är redo leder grinden vidare till kapitel {n}.
+= Villa Villekulla · winter
+> Villa Villekulla · vinter
+
+# ---------- the garden ----------
+= The garden of Villa Villekulla in the snow
+> Trädgården vid Villa Villekulla i snön
+= Fresh snow
+> Nysnö
+= Church clock
+> Kyrkklockan
+= Kitchen window
+> Köksfönstret
+= Thermometer
+> Termometer
+= Veranda steps
+> Verandatrappan
+= The old oak
+> Den gamla eken
+= Snowman
+> Snögubbe
+= Our fort
+> Vår fästning
+= Kling and Klang
+> Kling och Klang
+
+= Mittens
+> Vantar
+= Your own red mittens, a bit chewed by a monkey. Nobody makes snowballs with bare hands.
+> Dina egna röda vantar, lite tuggade av en apa. Ingen gör snöbollar med bara händer.
+= Bong… bong… bong. The church clock strikes three!
+> Bong… bong… bong. Kyrkklockan slår tre!
+= Three o'clock, children! Ready? Your team throws first!
+> Klockan tre, barn! Redo? Ert lag kastar först!
+= Everything is ready: the fort, the snowballs, the horse with the sledge, and a warm Annika. Throw at the policemen's fort!
+> Allt är klart: fästningen, snöbollarna, Lilla Gubben med kälken och en varm Annika. Kasta mot polisernas fästning!
+= The spunk's jam jar, on the kitchen windowsill, nice and warm. Pippi doesn't let it out in the snow.
+> Spunkens syltburk, varm och skön i köksfönstret. Pippi släpper inte ut den i snön.
+= You take it anyway, tucked inside your coat. A spunk knows things. Even about snow.
+> Du tar den ändå, väl instoppad i jackan. En spunk vet saker. Till och med om snö.
+= Fresh, deep snow, without a single footprint. You flop backwards into it and wave your arms and legs.
+> Djup nysnö, utan ett enda fotspår. Du dimper baklänges ner i den och viftar med armar och ben.
+= A perfect snow angel. Pippi says it's the best she's ever seen, apart from all of hers.
+> En perfekt snöängel. Pippi säger att det är den finaste hon har sett, förutom alla hennes egna.
+= Your snow angel is still there, looking up at the sky.
+> Din snöängel ligger kvar och tittar upp mot himlen.
+= The church clock in the town says three o'clock. Snowball time!
+> Kyrkklockan i stan visar tre. Dags för snöbollar!
+= The church clock in the town. The little hand is between the II and the III, and the big hand points straight down: half past two.
+> Kyrkklockan i stan. Den lilla visaren står mellan II och III, och den stora pekar rakt ner: halv tre.
+= At three o'clock, the snowball fight begins.
+> Klockan tre börjar snöbollskriget.
+= The garden gate. Outside, children are pulling sledges up the lane.
+> Grinden. Utanför drar barn sina kälkar uppför gatan.
+= Kling and Klang came in through it with their snow shovels. They mean business.
+> Kling och Klang kom in genom den med sina snöskyfflar. De menar allvar.
+= Villa Villekulla, with a thick white blanket of snow on the roof and smoke curling out of the chimney.
+> Villa Villekulla, med ett tjockt vitt täcke av snö på taket och rök som ringlar ur skorstenen.
+= It looks even more crooked in the snow. Pippi says the snow makes it lean the other way for a change.
+> Det ser ännu skevare ut i snön. Pippi säger att snön får huset att luta åt andra hållet för omväxlings skull.
+= Through the kitchen window: the stove is glowing, and a pan of milk is waiting for the hot chocolate.
+> Genom köksfönstret: spisen glöder, och en kastrull mjölk väntar på den varma chokladen.
+= Whoever loses the snowball fight has to make it. Pippi has already put out a lot of cups.
+> Den som förlorar snöbollskriget får koka den. Pippi har redan ställt fram en massa koppar.
+= The horse is harnessed to the sledge, which is piled high with snowballs. It looks very proud to be on your team.
+> Lilla Gubben är spänd för kälken, som är full av snöbollar. Han ser väldigt stolt ut över att vara med i ert lag.
+= The horse is harnessed to the sledge, waiting for something to pull.
+> Lilla Gubben är spänd för kälken och väntar på något att dra.
+= Crunch.
+> Krasch.
+= The horse is still chewing the snowman's nose, very happily.
+> Lilla Gubben tuggar fortfarande på snögubbens näsa, väldigt nöjd.
+= The horse is on the veranda in its winter blanket. Pippi wants it to pull the sledge with the snowballs.
+> Lilla Gubben står på verandan i sitt vintertäcke. Pippi vill att han ska dra kälken med snöbollarna.
+= But the veranda steps are one big sheet of ice. Every time it puts a hoof on them, it slides.
+> Men verandatrappan är en enda stor isbana. Varje gång han sätter en hov på den halkar han.
+= The veranda steps, salted and safe. Even Mr Nilsson walks down them now, instead of sliding.
+> Verandatrappan, saltad och säker. Till och med Herr Nilsson går nerför den nu, i stället för att åka.
+= The old oak, with snow on every branch and a dark hollow in its trunk.
+> Den gamla eken, med snö på varje gren och ett mörkt hål i stammen.
+= Sparrows are squabbling over the bird feeder. Somewhere, a monkey is hiding with your mittens.
+> Sparvar bråkar om fågelbordet. Någonstans gömmer sig en apa med dina vantar.
+= Mr Nilsson peeks out of the hollow in the oak, very pleased with himself. He has a snowball of his own.
+> Herr Nilsson tittar ut ur hålet i eken, väldigt nöjd med sig själv. Han har en egen snöboll.
+= The snowman has no nose any more. The horse says it wasn't him. The horse has orange lips.
+> Snögubben har ingen näsa längre. Lilla Gubben säger att det inte var han. Lilla Gubben har orange läppar.
+= Pippi's snowman, wearing her old top hat and a green scarf, with a carrot for a nose.
+> Pippis snögubbe, med hennes gamla hög hatt och en grön halsduk, och en morot till näsa.
+= There are hoofprints all round it. Somebody has been admiring that carrot.
+> Det finns hovspår runt omkring den. Någon har beundrat den där moroten.
+= You straighten the snowman's hat. Behind you, someone is breathing very loudly through its nose.
+> Du rättar till snögubbens hatt. Bakom dig andas någon väldigt högt genom näsan.
+= Crunch, crunch.
+> Krasch, krasch.
+= The horse has stretched its neck all the way from the veranda and eaten the snowman's nose. It looks delighted.
+> Lilla Gubben har sträckt ut halsen hela vägen från verandan och ätit upp snögubbens näsa. Han ser förtjust ut.
+= The tracks in the snow. The one with five long fingers led straight to the old oak, and Mr Nilsson.
+> Spåren i snön. Det med fem långa fingrar ledde raka vägen till den gamla eken, och till Herr Nilsson.
+= Your fort, a bit battered, but still standing. Snowball champions!
+> Er fästning, lite tilltufsad men fortfarande stående. Snöbollsmästare!
+= Your fort, strong and straight. Now get everything else ready before three o'clock.
+> Er fästning, stark och rak. Gör nu i ordning allt annat före klockan tre.
+= We beat the police!
+> Vi slog polisen!
+= Kindly. We beat the police kindly.
+> Snällt. Vi slog polisen snällt.
+= Ready for battle!
+> Redo för strid!
+= Lovely and warm now. Three layers and mittens. I could stay out all day.
+> Skönt och varmt nu. Tre lager och vantar. Jag kan vara ute hela dagen.
+= The police are very good losers. Next year I'll let them win. Maybe.
+> Poliserna är väldigt bra på att förlora. Nästa år låter jag dem vinna. Kanske.
+= It's three o'clock! Throw, throw, throw!
+> Klockan är tre! Kasta, kasta, kasta!
+= I've rolled one snowball. It's a bit big. I'm saving it for later. I've never had a snowball fight with the police, so I'm sure I'll win.
+> Jag har rullat en snöboll. Den blev lite stor. Jag sparar den till sen. Jag har aldrig haft snöbollskrig med polisen förut, så jag vinner säkert.
+= We surrender! The cap is a bit wet, but it'll dry.
+> Vi ger upp! Mössan är lite blöt, men den torkar.
+= Same time next year, children?
+> Samma tid nästa år, barn?
+= Our fort is ready, children! Is yours?
+> Vår fästning är klar, barn! Är er?
+= At three o'clock sharp. Losers make the hot chocolate. With whipped cream!
+> Klockan tre prick. Den som förlorar kokar chokladen. Med vispgrädde!
+
+# ---------- the tracks in the snow ----------
+= Tracks in the snow
+> Spår i snön
+= Which ones lead to your mittens?
+> Vilka leder till dina vantar?
+= Four trails of footprints
+> Fyra spår av fotavtryck
+= Trail {l}
+> Spår {l}
+= <b>Annika's nature book.</b> BIRD: three thin toes forward, one back. CAT: four round toes and no claw marks. HORSE: round hoofprints. The book has no monkeys in it. This is Sweden.
+> <b>Annikas naturbok.</b> FÅGEL: tre smala tår framåt, en bakåt. KATT: fyra runda tår och inga klomärken. HÄST: runda hovspår. Det finns inga apor i boken. Det här är Sverige.
+= Click the trail you think Mr Nilsson left.
+> Klicka på spåret som du tror att Herr Nilsson har gjort.
+= Five long fingers and a thumb, like a little hand. That's not in any Swedish nature book: it's Mr Nilsson! The trail leads to the old oak.
+> Fem långa fingrar och en tumme, som en liten hand. Det står inte i någon svensk naturbok: det är Herr Nilsson! Spåret leder till den gamla eken.
+= You follow the little handprints across the garden to the old oak. A straw hat pokes out of the hollow in the trunk.
+> Du följer de små handavtrycken över trädgården till den gamla eken. En stråhatt sticker upp ur hålet i stammen.
+= Mr Nilsson is wearing your mittens on his feet. He looks at you, sighs, and kicks them down into the snow.
+> Herr Nilsson har dina vantar på fötterna. Han tittar på dig, suckar och sparkar ner dem i snön.
+= Well found! Monkeys have hands on their feet too, so they leave handprints everywhere.
+> Bra hittat! Apor har händer på fötterna också, så de lämnar handavtryck överallt.
+= Three thin toes forward and one back: a bird. The sparrows have been hopping to the bird feeder.
+> Tre smala tår framåt och en bakåt: en fågel. Sparvarna har hoppat bort till fågelbordet.
+= Four round toes and no claw marks: a cat. Cats pull their claws in when they walk. It's the neighbour's cat, off along the fence.
+> Fyra runda tår och inga klomärken: en katt. Katter drar in klorna när de går. Det är grannens katt, på väg längs staketet.
+= Round hoofprints: the horse, from the veranda to the snowman. It was after the carrot, not your mittens.
+> Runda hovspår: Lilla Gubben, från verandan till snögubben. Han ville åt moroten, inte dina vantar.
+
+# ---------- the thermometers ----------
+= North wall, in the shade
+> Norra väggen, i skuggan
+= Under the old oak
+> Under den gamla eken
+= By the veranda, in the sun
+> Vid verandan, i solen
+= Kitchen windowsill, inside
+> Köksfönstret, inomhus
+= The thermometer by the veranda says -1 °C. Perfect snowball weather. You've made a whole pile.
+> Termometern vid verandan visar -1 °C. Perfekt snöbollsväder. Du har gjort en hel hög.
+= Four thermometers
+> Fyra termometrar
+= Where does the snow stick?
+> Var klibbar snön?
+= Annika says: snow sticks best when it's just below freezing (0 °C), a little bit damp. Very cold snow is dry like powder, and above 0 °C it melts into slush.
+> Annika säger: snön klibbar bäst när det är strax under noll (0 °C), lite blött. Väldigt kall snö är torr som puder, och över 0 °C smälter den till slask.
+= Read the thermometers. Where will you make the snowballs?
+> Läs av termometrarna. Var ska du göra snöbollarna?
+= -9 °C: nine degrees below freezing, the coldest of all. The snow is as dry as powdered sugar and falls apart in your hands.
+> -9 °C: nio grader kallt, kallast av alla. Snön är torr som florsocker och faller sönder i händerna.
+= -4 °C: four degrees below freezing. Warmer than the north wall, but the snow still crumbles.
+> -4 °C: fyra grader kallt. Varmare än vid norra väggen, men snön smular sig fortfarande.
+= +20 °C is Pippi's kitchen. Snowballs in there turn into puddles, and the floor is wet enough already.
+> +20 °C är Pippis kök. Snöbollar där inne blir till pölar, och golvet är blött nog redan.
+= -1 °C, just below freezing: perfect snowball snow! But your fingers are frozen stiff. Get your mittens back first.
+> -1 °C, strax under noll: perfekt snöbollssnö! Men dina fingrar är stelfrusna. Hämta tillbaka vantarna först.
+= -1 °C: only one degree below freezing. The snow is a little damp, so it sticks. Squish, pat, pat: perfect snowballs!
+> -1 °C: bara en grad kallt. Snön är lite blöt, så den klibbar. Krama, klappa, klappa: perfekta snöbollar!
+= You make a big pile of snowballs on the sunny side of the veranda. -1 is warmer than -4, and -4 is warmer than -9: below zero, the bigger the number, the colder it is.
+> Du gör en stor hög snöbollar på solsidan av verandan. -1 är varmare än -4, och -4 är varmare än -9: under noll är det kallare ju större siffran är.
+= Forty snowballs! I've made four hundred. Well, four. But they're big.
+> Fyrtio snöbollar! Jag har gjort fyrahundra. Ja, alltså fyra. Men de är stora.
+
+# ---------- the fort ----------
+= Building the fort
+> Bygga fästningen
+= Snow blocks, four rows high
+> Snöblock, fyra rader höga
+= Shift row {n}
+> Flytta rad {n}
+= Pippi tests it with a push
+> Pippi provar med en knuff
+= Click a row to shift it by half a block. Then let Pippi push the wall to see if it holds.
+> Klicka på en rad för att flytta den ett halvt block. Låt sedan Pippi knuffa på muren och se om den håller.
+= Pippi pushes with all her might, and the wall doesn't budge! Every joint has a whole block on top of it, so the push spreads out over many blocks. That's how bricks are laid in a house wall too.
+> Pippi knuffar av alla krafter, och muren rör sig inte! Över varje fog ligger ett helt block, så knuffen sprids ut över många block. Det är så man murar tegel i en husvägg också.
+= Your fort stands strong and straight, with little battlements on top.
+> Er fästning står stark och rak, med små tinnar högst upp.
+= Kling, look! They know how to build a wall.
+> Kling, titta! De kan bygga en mur.
+= Crack! The joints are all in one straight line, from the top to the bottom, and the wall splits along it and topples over. Shift every other row.
+> Krack! Fogarna ligger i en enda rak linje, uppifrån och ner, och muren spricker längs den och välter. Flytta varannan rad.
+= Crack! Where two rows have their joints in the same place, the wall still splits. Every joint needs a whole block on top of it.
+> Krack! Där två rader har fogarna på samma ställe spricker muren ändå. Över varje fog behövs ett helt block.
+
+# ---------- the icy steps ----------
+= The icy steps
+> Den hala trappan
+= The horse can't get down
+> Lilla Gubben kommer inte ner
+= The veranda steps are covered in smooth, hard ice, and the horse slides on every step. Pippi's kitchen has a kettle of warm water, a bag of sugar, a box of salt, and outside there's plenty of snow. What do you put on the steps?
+> Verandatrappan är täckt av slät, hård is, och Lilla Gubben halkar på varje steg. I Pippis kök finns en kittel varmt vatten, en påse socker och en ask salt, och ute finns det massor av snö. Vad lägger du på trappan?
+= Warm water from the kettle
+> Varmt vatten från kitteln
+= Sugar
+> Socker
+= Salt
+> Salt
+= More snow
+> Mer snö
+= It melts the ice… for one minute. Then it freezes again, smoother than ever. Now the steps are a slide! Mr Nilsson loves it.
+> Isen smälter… i en minut. Sedan fryser den igen, halare än någonsin. Nu är trappan en rutschkana! Herr Nilsson älskar det.
+= The horse licks the steps. Very happy horse, still very icy steps.
+> Lilla Gubben slickar på trappan. Väldigt glad häst, fortfarande väldigt hal trappa.
+= The snow just slides about on top of the ice, and the horse slides with it.
+> Snön bara glider omkring ovanpå isen, och Lilla Gubben glider med.
+= Salt! It mixes with the ice into salty water, and salty water stays runny even below 0 °C. The ice melts away. (Sand works too: it doesn't melt the ice, but it gives hooves something to grip.)
+> Salt! Det blandas med isen till saltvatten, och saltvatten förblir flytande även under 0 °C. Isen smälter bort. (Sand fungerar också: den smälter inte isen, men hovarna får något att greppa i.)
+= Clip, clop, clip, clop: the horse walks carefully down the steps into the garden. Pippi harnesses it to the sledge.
+> Klipp, klapp, klipp, klapp: Lilla Gubben går försiktigt nerför trappan ut i trädgården. Pippi spänner honom för kälken.
+= You load the snowballs onto the sledge, and the horse pulls them to your fort.
+> Ni lastar snöbollarna på kälken, och Lilla Gubben drar dem till er fästning.
+= Now it just needs something to pull.
+> Nu behöver han bara något att dra.
+
+# ---------- keeping Annika warm ----------
+= Annika is shivering. "I'm too cold to throw anything." Pippi opens her wardrobe. What keeps Annika warmest?
+> Annika huttrar. "Jag fryser för mycket för att kasta något." Pippi öppnar sin garderob. Vad håller Annika varmast?
+= One thick cotton jumper
+> En tjock bomullströja
+= Three thin layers: a vest, a woolly jumper and a coat
+> Tre tunna lager: en undertröja, en ylletröja och en jacka
+= Pippi's summer dress, put on twice
+> Pippis sommarklänning, påtagen två gånger
+= Now her hands. Annika's fingers are like icicles. What keeps hands warmest?
+> Nu händerna. Annikas fingrar är som istappar. Vad håller händerna varmast?
+= Gloves, with a finger for every finger
+> Fingervantar, med ett finger för varje finger
+= Pippi's socks (one has a hole)
+> Pippis strumpor (den ena har ett hål)
+= Keeping Annika warm
+> Hålla Annika varm
+= Pippi's wardrobe
+> Pippis garderob
+= And her hands?
+> Och händerna?
+= Layers! Warm air gets trapped between the layers and keeps the cold out, like a sparrow fluffing up its feathers.
+> Lager! Varm luft stängs inne mellan lagren och håller kylan ute, som när en sparv burrar upp fjädrarna.
+= Mittens! In a mitten your fingers are together, so they keep each other warm. In a glove every finger is out in the cold on its own.
+> Vantar! I en vante sitter fingrarna ihop, så de håller varandra varma. I en fingervante är varje finger ensamt ute i kylan.
+= I'm as warm as a pancake! Three layers, a hat and mittens. Now I can throw.
+> Jag är varm som en pannkaka! Tre lager, mössa och vantar. Nu kan jag kasta.
+= Annika is our secret weapon. Nobody expects her to aim so well.
+> Annika är vårt hemliga vapen. Ingen tror att hon siktar så bra.
+= One thick jumper is warm, but it's only one layer. Several thin layers trap more warm air between them.
+> En tjock tröja är varm, men det är bara ett lager. Flera tunna lager stänger in mer varm luft mellan sig.
+= Annika says a summer dress is a summer dress, however many times you put it on.
+> Annika säger att en sommarklänning är en sommarklänning, hur många gånger man än tar på sig den.
+= Gloves keep every finger on its own, out in the cold. Brrr.
+> I fingervantar är varje finger ensamt, ute i kylan. Brrr.
+= Socks on your hands are a bit like mittens, Pippi! But this one has a hole, and the snow gets in.
+> Strumpor på händerna är nästan som vantar, Pippi! Men den här har ett hål, och snön kommer in.
+
+# ---------- the throw ----------
+= Snowball fight!
+> Snöbollskrig!
+= Aim for Klang's cap
+> Sikta på Klangs mössa
+= Straight up
+> Rakt upp
+= Throw!
+> Kasta!
+= You always throw just as hard. Only the angle changes. At which angle does the snowball fly furthest?
+> Du kastar alltid lika hårt. Bara vinkeln ändras. Vid vilken vinkel flyger snöbollen längst?
+= Whoosh… over their wall… SPLAT! Klang's cap flies off! Thrown just as hard, about 45°, halfway between flat and straight up, goes furthest.
+> Svisch… över deras mur… PLASK! Klangs mössa flyger av! Med lika hårt kast går ungefär 45°, mitt emellan platt och rakt upp, längst.
+= Too flat: the snowball skims along and plops into the snow halfway there.
+> För platt: snöbollen sveper fram lågt och plumsar ner i snön halvvägs dit.
+= Splat, right against the front of their wall! Close. And here's a funny thing: 60° lands in exactly the same spot.
+> Plask, rakt mot framsidan av deras mur! Nära. Och här är något lustigt: 60° landar på precis samma ställe.
+= Up high… and splat against the front of their wall! Close. And here's a funny thing: 30° lands in exactly the same spot.
+> Högt upp… och plask mot framsidan av deras mur! Nära. Och här är något lustigt: 30° landar på precis samma ställe.
+= Way up into the sky… and down in the middle of the garden. Too steep.
+> Högt upp i himlen… och ner mitt i trädgården. För brant.
+= Straight up… and straight down. On your own head. Kling and Klang laugh so much they nearly fall over.
+> Rakt upp… och rakt ner. I ditt eget huvud. Kling och Klang skrattar så att de nästan ramlar omkull.
+
+# ---------- intro and end ----------
+= Winter at Villa Villekulla. The garden is deep in snow, the windows glow, and smoke curls out of the chimney.
+> Vinter i Villa Villekulla. Trädgården ligger djupt i snö, fönstren lyser och röken ringlar ur skorstenen.
+= Snow! Heaps and heaps of it! What shall we do first?
+> Snö! Massor och massor av snö! Vad ska vi göra först?
+= Two policemen come stamping up the garden path with snow shovels: Kling and Klang. Nobody is in trouble. They're grinning.
+> Två poliser kommer stampande uppför trädgårdsgången med snöskyfflar: Kling och Klang. Ingen har gjort något dumt. De flinar.
+= Good afternoon, children! We are the snowball champions of the whole police station.
+> God middag, barn! Vi är snöbollsmästare på hela polisstationen.
+= And nobody has ever beaten us. So we challenge you! At three o'clock, when the church clock strikes. Losers make the hot chocolate.
+> Och ingen har någonsin slagit oss. Så vi utmanar er! Klockan tre, när kyrkklockan slår. Den som förlorar kokar varm choklad.
+= I've never had a snowball fight with the police, so I'm sure I'll win!
+> Jag har aldrig haft snöbollskrig med polisen förut, så jag vinner säkert!
+= Kling and Klang start building a fort on the far side of the garden. The church clock says half past two.
+> Kling och Klang börjar bygga en fästning på andra sidan trädgården. Kyrkklockan är halv tre.
+= Half an hour to get ready. And Mr Nilsson has just run off with my mittens!
+> En halvtimme att göra sig redo. Och Herr Nilsson har just sprungit iväg med mina vantar!
+= Your snowball sails up in a perfect curve, over their wall… and knocks Klang's cap clean off his head.
+> Din snöboll seglar upp i en perfekt båge, över deras mur… och slår av Klang mössan.
+= Bull's-eye! Kling, they got me!
+> Fullträff! Kling, de träffade mig!
+= Hold on, Klang, I'll…
+> Vänta, Klang, jag ska…
+= Then Pippi rolls her enormous snowball across the garden. It's as big as a pantry. Their fort disappears underneath it.
+> Då rullar Pippi sin jättestora snöboll över trädgården. Den är stor som ett skafferi. Deras fästning försvinner under den.
+= We surrender! Has anybody got a white flag?
+> Vi ger upp! Har någon en vit flagga?
+= Have my handkerchief. It's nearly white. Well, it was.
+> Ta min näsduk. Den är nästan vit. Ja, det var den i alla fall.
+= Everybody troops into the warm kitchen. The policemen make the hot chocolate, with extra whipped cream, and Mr Nilsson gets the first cup.
+> Alla går in i det varma köket. Poliserna kokar varm choklad, med extra vispgrädde, och Herr Nilsson får första koppen.
+= We beat the snowball champions of the whole police station!
+> Vi slog snöbollsmästarna på hela polisstationen!
+= Same time next year?
+> Samma tid nästa år?
+
+# ---------- hints ----------
+= Mr Nilsson has run off with your mittens. Monkeys leave very odd footprints: look at the tracks in the snow.
+> Herr Nilsson har sprungit iväg med dina vantar. Apor lämnar väldigt konstiga fotspår: titta på spåren i snön.
+= Click the tracks and pick trail B: five long fingers and a thumb, like a little hand. It leads to the old oak.
+> Klicka på spåren och välj spår B: fem långa fingrar och en tumme, som en liten hand. Det leder till den gamla eken.
+= Snowballs only stick when the snow is a little damp. The thermometer by the kitchen window shows four places in the garden.
+> Snöbollar klibbar bara när snön är lite blöt. Termometern vid köksfönstret visar fyra ställen i trädgården.
+= Pick the sunny veranda at −1 °C: just below freezing. (You need your mittens on.)
+> Välj den soliga verandan med −1 °C: strax under noll. (Du behöver ha vantarna på dig.)
+= Your fort is still a heap of snow blocks. A wall falls apart where the joints line up from top to bottom.
+> Er fästning är fortfarande en hög snöblock. En mur faller sönder där fogarna ligger i rad uppifrån och ner.
+= Click our fort and shift every other row by half a block, like bricks in a house wall. Then let Pippi push.
+> Klicka på vår fästning och flytta varannan rad ett halvt block, som tegel i en husvägg. Låt sedan Pippi knuffa.
+= The horse should pull the sledge with the snowballs, but it slides on the icy veranda steps. What melts ice even below 0 °C?
+> Lilla Gubben ska dra kälken med snöbollarna, men han halkar på den isiga verandatrappan. Vad smälter is även under 0 °C?
+= Click the veranda steps and choose salt.
+> Klicka på verandatrappan och välj salt.
+= Annika is shivering by the fence. What keeps you warmest: one thick thing, or several thin ones?
+> Annika huttrar vid staketet. Vad håller dig varmast: en tjock sak, eller flera tunna?
+= Click Tommy and Annika: three thin layers, then mittens (fingers together keep each other warm).
+> Klicka på Tommy och Annika: tre tunna lager, sedan vantar (fingrar som sitter ihop håller varandra varma).
+= Three o'clock! You always throw just as hard. Which angle makes a snowball fly furthest?
+> Klockan tre! Du kastar alltid lika hårt. Vid vilken vinkel flyger en snöboll längst?
+= Click Kling and Klang (or our fort) and throw at 45°, halfway between flat and straight up.
+> Klicka på Kling och Klang (eller vår fästning) och kasta i 45°, mitt emellan platt och rakt upp.
+
+# ---------- the mittens (js/items.js) ----------
+= You've made enough snowballs. Any more and the horse won't be able to pull the sledge.
+> Du har gjort tillräckligt med snöbollar. Fler och Lilla Gubben orkar inte dra kälken.
+= Thank you, but those are yours. Pippi says she has spare ones somewhere. Somewhere in that wardrobe.
+> Tack, men de är dina. Pippi säger att hon har extravantar någonstans. Någonstans i den där garderoben.
+= Mr Nilsson eyes your mittens greedily. You put them safely back in your pocket.
+> Herr Nilsson tittar girigt på dina vantar. Du stoppar tillbaka dem i fickan.
+= Warm, woolly mittens. Perfect for making snowballs, if the snow is the right kind.
+> Varma yllevantar. Perfekta för att göra snöbollar, om snön är av rätt sort.
