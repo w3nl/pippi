@@ -39,7 +39,7 @@ test('Chapter 4: win the snowball fight against Kling and Klang', async ({ page 
   await page.locator('.wt-spot[data-k="sun"]').click();
   await expect(page.locator('#wt-hfb')).toHaveClass(/good/);
   await waitModalClosed(page);
-  await expect(page.locator('#wt-balls')).toBeVisible();
+  await expect(page.locator('#wt-sledgeballs')).toBeVisible();
 
   // 3. the fort: joints must not line up
   await hs(page, 'fort4');
@@ -108,12 +108,16 @@ test('every hotspot in the garden can be clicked: nothing lies on top of it', as
   await seed(page, { ch: 4, scene: 'winter', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4']);
   await page.locator('#btn-cont').click();
   await skip(page);
-  const covered = await page.evaluate(() => [...document.querySelectorAll('#sc-winter .hit')]
+  const covered = () => page.evaluate(() => [...document.querySelectorAll('#sc-winter .hit')]
     .filter(h => getComputedStyle(h).display !== 'none')
     .filter(h => { const r = h.getBoundingClientRect(), top = document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2);
       return !top || top.dataset.hs !== h.dataset.hs; })
     .map(h => h.dataset.hs));
-  expect(covered).toEqual([]);
+  expect(await covered()).toEqual([]);
+  // at three o'clock everybody is behind our fort
+  await page.evaluate(() => { Object.assign(S.f, { tracks: true, balls: true, fort: true, steps: true, warm: true }); applyVisuals(); });
+  await expect(page.locator('#sc-winter')).toHaveClass(/wt-ready/);
+  expect(await covered()).toEqual([]);
 });
 
 test('finishing Chapter 3 leads to Chapter 4', async ({ page }) => {

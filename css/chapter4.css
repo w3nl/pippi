@@ -28,9 +28,9 @@
 @keyframes wtPeek{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 @keyframes wtPlait{0%,100%{transform:rotate(0)}50%{transform:rotate(-10deg)}}
 @keyframes wtWave{0%,100%{transform:skewY(0)}50%{transform:skewY(-10deg)}}
-@keyframes wtFlyA{0%{transform:translate(500px,780px)}50%{transform:translate(900px,520px)}100%{transform:translate(1300px,700px)}}
-@keyframes wtFlyB{0%{transform:translate(1300px,640px)}50%{transform:translate(950px,440px)}100%{transform:translate(560px,700px)}}
-@keyframes wtFlyC{0%{transform:translate(700px,760px)}50%{transform:translate(1050px,480px)}100%{transform:translate(1440px,660px)}}
+@keyframes wtFlyA{0%{transform:translate(560px,700px)}50%{transform:translate(920px,470px)}100%{transform:translate(1300px,690px)}}
+@keyframes wtFlyB{0%{transform:translate(1300px,640px)}50%{transform:translate(900px,430px)}100%{transform:translate(520px,720px)}}
+@keyframes wtFlyC{0%{transform:translate(470px,710px)}50%{transform:translate(1050px,460px)}100%{transform:translate(1440px,660px)}}
 
 .wt-flake{animation:wtFall 10s linear infinite}
 .wt-puff{transform-box:fill-box;transform-origin:50% 50%;animation:wtPuff 4s ease-out infinite}
@@ -50,3 +50,39 @@
 .wt-fly.a{animation:wtFlyA 1.6s ease-in-out infinite}
 .wt-fly.b{animation:wtFlyB 1.9s ease-in-out infinite;animation-delay:-.6s}
 .wt-fly.c{animation:wtFlyC 2.2s ease-in-out infinite;animation-delay:-1.2s}
+
+/* ---------- where everybody is (a class on the scene for each stage) ---------- */
+/* the sledge waits in front of the veranda until the steps are safe; then it stands behind our fort */
+#wt-team{transform:translate(70px,-105px)}
+#sc-winter.wt-steps #wt-team{transform:none}
+/* at three o'clock the children hide behind our fort; once the fight is won they pop up and throw */
+#sc-winter.wt-ready #wt-ta{transform:translate(-167px,50px)}
+#sc-winter.wt-ready #wt-pippi{transform:translate(-178px,30px)}
+/* Pippi's giant snowball ends up on top of the policemen's fort */
+#wt-bigball{transform-box:fill-box;transform-origin:50% 50%}
+#sc-winter.wt-won #wt-bigball{transform:translate(440px,-20px)}
+
+/* ---------- the moves ---------- */
+/* the horse walks along the veranda and down the salted steps (after the close-up has closed),
+   turns round, walks to the sledge, and pulls it behind our fort */
+@keyframes wtDown{0%{transform:none}40%{transform:translate(190px,0)}55%{transform:translate(225px,11px)}65%{transform:translate(255px,30px)}
+  75%{transform:translate(285px,50px)}85%{transform:translate(315px,72px)}97%{transform:translate(343px,91px);opacity:1}100%{transform:translate(345px,93px);opacity:0}}
+@keyframes wtTurn{0%{transform:translate(387px,0);opacity:0}10%{opacity:1}25%{transform:translate(290px,-4px)}50%{transform:translate(194px,0)}75%{transform:translate(97px,-4px)}100%{transform:none;opacity:1}}
+@keyframes wtPull{0%{transform:translate(70px,-105px)}25%{transform:translate(52px,-76px)}50%{transform:translate(35px,-55px)}75%{transform:translate(17px,-24px)}100%{transform:none}}
+#sc-winter.wt-walk #wt-vhorse{display:inline!important}
+#sc-winter.wt-walk #wt-vwalk{animation:wtDown 2.4s linear 2.2s both}
+#sc-winter.wt-walk #wt-ghorse{animation:wtTurn 1.8s linear 4.6s both}
+#sc-winter.wt-walk #wt-team{animation:wtPull 2.2s ease-in-out 6.4s both}
+/* the children run to the fort, with a hop in every step */
+@keyframes wtRunTA{0%{transform:none}20%{transform:translate(-33px,-6px)}40%{transform:translate(-67px,18px)}60%{transform:translate(-100px,10px)}80%{transform:translate(-134px,38px)}100%{transform:translate(-167px,50px)}}
+@keyframes wtRunP{0%{transform:none}20%{transform:translate(-36px,-8px)}40%{transform:translate(-71px,8px)}60%{transform:translate(-107px,0)}80%{transform:translate(-142px,20px)}100%{transform:translate(-178px,30px)}}
+#sc-winter.wt-run #wt-ta{animation:wtRunTA 1.8s ease-in-out both}
+#sc-winter.wt-run #wt-pippi{animation:wtRunP 1.6s ease-in-out both}
+/* the fight: up, throw, duck */
+@keyframes wtPopTA{0%,100%{transform:translate(-167px,50px)}45%,55%{transform:translate(-167px,22px)}}
+@keyframes wtPopP{0%,100%{transform:translate(-178px,30px)}45%,55%{transform:translate(-178px,-4px)}}
+#sc-winter.wt-won #wt-ta{animation:wtPopTA 1.6s ease-in-out infinite}
+#sc-winter.wt-won #wt-pippi{animation:wtPopP 1.3s ease-in-out infinite;animation-delay:-.5s}
+/* Pippi rolls her giant snowball across the garden and over their fort */
+@keyframes wtRoll{0%{transform:none}70%{transform:translate(380px,-10px) rotate(300deg)}85%{transform:translate(425px,-34px) rotate(350deg)}100%{transform:translate(440px,-20px) rotate(360deg)}}
+#sc-winter.wt-roll #wt-bigball{animation:wtRoll 2.6s ease-in 2.4s both}

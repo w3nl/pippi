@@ -54,7 +54,7 @@ function buildWinter(){
   $('#wt-lights').innerHTML = li;
   $('#wt-tracks').innerHTML = trail4('monkey', 1170, 890, 960, 760, 706, 650, 14) + trail4('bird', 900, 880, 960, 830, 1040, 790, 7)
     + trail4('cat', 1190, 870, 1150, 720, 1110, 560, 11) + trail4('horse', 650, 650, 800, 720, 920, 704, 8, 1.1);
-  $('#wt-fortwall').innerHTML = wall4(160, 760, 330, 3, 50, 28);
+  $('#wt-fortwall').innerHTML = wall4(150, 760, 490, 3, 50, 28);
   $('#wt-pfort').innerHTML = wall4(1190, 716, 370, 3, 50, 28);
 }
 function applyWinter(){
@@ -62,7 +62,6 @@ function applyWinter(){
   const sc = $('#sc-winter'); if(!sc) return;
   show('#wt-spunk', !S.f.spunkTaken); show('#hit-spunk4', !S.f.spunkTaken);
   show('#wt-nilsson', !!S.f.tracks);
-  show('#wt-balls', !!S.f.balls && !S.f.steps);
   show('#wt-fortheap', !S.f.fort); show('#wt-fortwall', !!S.f.fort);
   show('#wt-ice', !S.f.steps);
   show('#wt-vhorse', !S.f.steps); show('#hit-horse4v', !S.f.steps);
@@ -70,14 +69,29 @@ function applyWinter(){
   show('#wt-annwarm', !!S.f.warm); $('#wt-annika').classList.toggle('wt-shiver', !S.f.warm);
   show('#wt-carrot', !S.f.carrot);
   show('#wt-cap', !S.f.out4); show('#wt-capfly', !!S.f.out4); show('#wt-flag', !!S.f.out4); show('#wt-fight', !!S.f.out4);
-  // the church clock: half past two, then three o'clock once everything is ready
+  // where everybody is: the sledge in front of the veranda or behind our fort, the children out in the garden or behind the fort
   const three = ready4() || S.f.out4;
+  sc.classList.toggle('wt-steps', !!S.f.steps);
+  sc.classList.toggle('wt-ready', !!three);
+  sc.classList.toggle('wt-won', !!S.f.out4);
+  const box = (id, x, y, w, h) => { const r = $(id); r.setAttribute('x', x); r.setAttribute('y', y); r.setAttribute('width', w); r.setAttribute('height', h); };
+  if(three){ box('#hit-ta4', 425, 690, 115, 50); box('#hit-pippi4', 545, 688, 95, 52); }
+  else { box('#hit-ta4', 594, 636, 112, 126); box('#hit-pippi4', 730, 660, 170, 160); }
+  // the church clock: half past two, then three o'clock once everything is ready
   $('#wt-hour').setAttribute('transform', `rotate(${three ? 90 : 75} 1020 292)`);
   $('#wt-min').setAttribute('transform', `rotate(${three ? 0 : 180} 1020 292)`);
+}
+/* A one-off move in the garden (the horse comes down, the children run to the fort, the big snowball rolls):
+   a class on the scene for as long as it takes. With motion off, everybody is simply in the new place. */
+function move4(cls, ms){
+  if(reducedMotion()) return;
+  const sc = $('#sc-winter'); sc.classList.add(cls);
+  setTimeout(() => sc.classList.remove(cls), ms);
 }
 /* After each job: once all four are done, the church clock strikes three. */
 function done4(lines){
   if(!ready4()) return say(lines);
+  move4('wt-run', 2000);
   say([...lines, ['sys', "Bong… bong… bong. The church clock strikes three!"], ['kling', "Three o'clock, children! Ready? Your team throws first!"], "Everything is ready: the fort, the snowballs, the horse with the sledge, and a warm Annika. Throw at the policemen's fort!"]);
 }
 
@@ -258,7 +272,7 @@ function openSteps4(){
           snow: 'The snow just slides about on top of the ice, and the horse slides with it.' }[k]);
         return;
       }
-      S.f.steps = true; save(); applyVisuals(); chord([523,659,784,1046]);
+      S.f.steps = true; save(); applyVisuals(); move4('wt-walk', 9000); chord([523,659,784,1046]);
       fb.className = 'feedback good'; fb.textContent = tx('Salt! It mixes with the ice into salty water, and salty water stays runny even below 0 °C. The ice melts away. (Sand works too: it doesn\'t melt the ice, but it gives hooves something to grip.)');
       setTimeout(() => { closeModal(); done4(["Clip, clop, clip, clop: the horse walks carefully down the steps into the garden. Pippi harnesses it to the sledge.", S.f.balls ? "You load the snowballs onto the sledge, and the horse pulls them to your fort." : "Now it just needs something to pull."]); }, 2200);
     });
@@ -327,7 +341,7 @@ function openThrow4(){
     $('#wt-throw').onclick = () => {
       const [d, land] = arc(st.a); scene(d, land); beep(700, .08, 'sine');
       if(st.a === 45){
-        S.f.out4 = true; save(); chord([523,659,784,1046,1318,1568]);
+        S.f.out4 = true; save(); move4('wt-roll', 6000); applyVisuals(); chord([523,659,784,1046,1318,1568]);
         fb.className = 'feedback good'; fb.textContent = tx('Whoosh… over their wall… SPLAT! Klang\'s cap flies off! Thrown just as hard, about 45°, halfway between flat and straight up, goes furthest.');
         setTimeout(() => { closeModal(); applyVisuals(); win4(); }, 2200);
         return;
