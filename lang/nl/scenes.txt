@@ -165,3 +165,21 @@
 > Visnet
 = The hold
 > Het ruim
+
+# ---------- scenes/island.svg ----------
+= Captain Longstocking's island
+> Het eiland van kapitein Langkous
+= The lagoon
+> De lagune
+= Turtle Islet
+> Het Schildpadeilandje
+= The X
+> De X
+= Torches
+> Fakkels
+= The coconut palm
+> De kokospalm
+= The king's hut
+> De hut van de koning
+= TURTLES
+> SCHILDPADDEN

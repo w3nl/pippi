@@ -1,0 +1,389 @@
+# Swedish translation: Chapter 7, the South Sea island (js/chapter7.js).
+# Kapten Långstrump calls Pippi "Pippilotta". The horse is Lilla Gubben. Ebb och högvatten; Sköldpaddsholmen; pluttifikation.
+
+= Treasure map
+> Skattkarta
+= Captain Longstocking's map of Turtle Islet, drawn on the back of a menu. It says: 12 of MY paces.
+> Kapten Långstrumps karta över Sköldpaddsholmen, ritad på baksidan av en matsedel. Där står det: 12 av MINA steg.
+= A spade
+> En spade
+= The king's own spade, for digging up surprises.
+> Kungens egen spade, för att gräva upp överraskningar.
+= The spunk's jam jar, next to the sundial. Pippi has put it in the shade, so the spunk doesn't get sunburnt.
+> Spunkens syltburk, bredvid soluret. Pippi har ställt den i skuggan så att spunken inte blir solbränd.
+= You take it. A spunk knows things. Even about islands.
+> Du tar den. En spunk vet saker. Till och med om öar.
+= What a day, Pippilotta! Treasure, thunder and turtles. Tomorrow we'll do it all again, backwards.
+> Vilken dag, Pippilotta! Skatt, åska och sköldpaddor. I morgon gör vi alltihop en gång till, baklänges.
+= Zzz… whuh? Pippilotta! Welcome to my island! I'm the king here, you know. That's why I wear my crown on my hat.
+> Zzz… va? Pippilotta! Välkommen till min ö! Jag är kung här, ska du veta. Därför har jag kronan på hatten.
+= I've buried a surprise for you on Turtle Islet, out in the lagoon. Here's my map. Follow MY paces exactly!
+> Jag har grävt ner en överraskning åt dig på Sköldpaddsholmen, ute i lagunen. Här är min karta. Följ MINA steg noga!
+= A treasure! Hurray! Can we go now?
+> En skatt! Hurra! Får vi gå nu?
+= Only at low tide, when the sandbar comes out of the water. Look at the sundial to see what time it is, and the tide post to see when the water goes down. And now… zzz…
+> Bara vid ebb, när sandbanken kommer upp ur vattnet. Titta på soluret för att se vad klockan är, och på tidvattenpålen för att se när vattnet sjunker. Och nu… zzz…
+= Zzz… the tide… the sundial… zzz…
+> Zzz… tidvattnet… soluret… zzz…
+= The king is fast asleep in his hammock. He snores like the Hoppetossa's foghorn.
+> Kungen sover djupt i sin hängmatta. Han snarkar som Hoppetossas mistlur.
+= Low tide! Off you go. Twelve of MY paces from the turtle rock, mind. My paces are one metre long, exactly. I measured them once.
+> Ebb! Iväg med er. Tolv av MINA steg från sköldpaddsklippan, kom ihåg. Mina steg är exakt en meter långa. Jag har mätt dem en gång.
+= Did you find it? Did you? Don't tell me! Yes, tell me!
+> Hittade ni den? Gjorde ni? Säg inget! Jo, säg det!
+= Night is falling, and the feast is ready. But first, look at the turtle nest: tonight's the night!
+> Det skymmer, och festen är klar. Men titta först på sköldpaddsboet: i natt är det dags!
+= The sundial says it's the afternoon. The shadow has swung right round to the other side.
+> Solurets skugga säger att det är eftermiddag. Den har svängt runt till andra sidan.
+= The sundial says 9 o'clock in the morning. The stick's shadow points away from the sun.
+> Solurets skugga visar klockan 9 på morgonen. Pinnens skugga pekar bort från solen.
+= The water is way down the striped post now. Low tide! The sandbar to Turtle Islet is dry.
+> Vattnet står långt ner på den randiga pålen nu. Ebb! Sandbanken till Sköldpaddsholmen är torr.
+= The tide post: a striped pole in the lagoon. Right now the water is right up at the top stripe.
+> Tidvattenpålen: en randig påle i lagunen. Just nu når vattnet ända upp till den översta randen.
+= To know when the water goes down, we first need to know what time it is now.
+> För att veta när vattnet sjunker måste vi först veta vad klockan är nu.
+= The lagoon at low tide: rock pools full of starfish and crabs, and a sandy path out to Turtle Islet.
+> Lagunen vid ebb: klippgölar fulla av sjöstjärnor och krabbor, och en sandig stig ut till Sköldpaddsholmen.
+= The lagoon, as clear as glass. Little striped fish dart about. Turtle Islet is out in the middle.
+> Lagunen, klar som glas. Små randiga fiskar kilar omkring. Sköldpaddsholmen ligger mitt ute i den.
+= Turtle Islet: one palm tree, and a rock shaped like a turtle.
+> Sköldpaddsholmen: en palm och en klippa som ser ut som en sköldpadda.
+= The sandbar that leads there is under water. You would have to swim, and the horse can't.
+> Sandbanken dit ligger under vattnet. Man skulle få simma, och det kan inte Lilla Gubben.
+= Turtle Islet, at low tide. To find the surprise, you need the captain's map.
+> Sköldpaddsholmen, vid ebb. För att hitta överraskningen behöver du kaptenens karta.
+= There's the X in the sand, exactly 12 metres from the turtle rock.
+> Där är krysset i sanden, exakt 12 meter från sköldpaddsklippan.
+= Now you need something to dig with.
+> Nu behöver du något att gräva med.
+= The hole where the treasure chest was. A crab has moved in already.
+> Hålet där skattkistan låg. En krabba har redan flyttat in.
+= The X. Dig here! But not with your hands: the sand is full of crabs' toes.
+> Krysset. Gräv här! Men inte med händerna: sanden är full av krabbtår.
+= A spade, leaning against the king's hut. You take it. Kings don't dig their own holes.
+> En spade som står lutad mot kungens hydda. Du tar den. Kungar gräver inte sina egna hål.
+= The king's hut. The feast is in full swing behind it: you can smell grilled fish and coconut cake.
+> Kungens hydda. Bakom den är festen i full gång: det luktar grillad fisk och kokostårta.
+= Everybody is squashed into the king's hut while the rain drums on the roof. The horse too.
+> Alla sitter hopträngda i kungens hydda medan regnet trummar på taket. Lilla Gubben också.
+= The king's hut, made of bamboo with a roof of palm leaves. Inside: a hammock, a chest of sea charts, and a very big chair.
+> Kungens hydda, byggd av bambu med tak av palmblad. Därinne: en hängmatta, en kista med sjökort och en väldigt stor stol.
+= Captain Longstocking says it is a palace. Pippi says it is a very good palace.
+> Kapten Långstrump säger att det är ett palats. Pippi säger att det är ett mycket bra palats.
+= The first stars come out over the island. The Moon is rising over the sea and making a silver path on the water.
+> De första stjärnorna tänds över ön. Månen stiger upp över havet och gör en silverstig på vattnet.
+= The sun has moved across the sky since this morning. It's afternoon now.
+> Solen har vandrat över himlen sedan i morse. Nu är det eftermiddag.
+= A hot blue sky. The sun is still low in the east: it's morning.
+> En het blå himmel. Solen står fortfarande lågt i öster: det är morgon.
+= The Hoppetossa, at anchor in the lagoon. She looks very pleased to be resting.
+> Hoppetossa, för ankar i lagunen. Hon ser mycket nöjd ut att få vila.
+= Her sails are rolled up, and her anchor chain goes straight down into the clear water. You can see the anchor on the sand at the bottom.
+> Seglen är ihoprullade, och ankarkättingen går rakt ner i det klara vattnet. Man kan se ankaret på sandbotten.
+= The nest is empty. Every baby turtle made it to the sea!
+> Boet är tomt. Varenda sköldpaddsunge kom fram till havet!
+= A sea turtle's nest, with a little fence of shells around it. The mother turtle laid her eggs here, deep in the warm sand.
+> Ett havssköldpaddsbo med ett litet staket av snäckor runt omkring. Sköldpaddsmamman lade sina ägg här, djupt ner i den varma sanden.
+= They'll hatch tonight, Dad says. Baby turtles always come out in the dark.
+> De kläcks i natt, säger pappa. Sköldpaddsungar kommer alltid fram när det är mörkt.
+= The torches have been put out on this side. The moon is bright enough.
+> Facklorna på den här sidan är släckta. Månen lyser tillräckligt.
+= Torches for tonight's feast. They'll be lit when it gets dark.
+> Facklor till kvällens fest. De tänds när det blir mörkt.
+= You shake the palm tree. BONK! A coconut lands right on your head.
+> Du skakar palmen. BONK! En kokosnöt landar mitt på ditt huvud.
+= Mr Nilsson thinks that's the funniest thing he has ever seen.
+> Herr Nilsson tycker att det är det roligaste han någonsin har sett.
+= A tall coconut palm. Mr Nilsson is halfway up, hugging a coconut. Better not shake it too hard.
+> En hög kokospalm. Herr Nilsson sitter halvvägs upp och kramar en kokosnöt. Bäst att inte skaka för hårt.
+= Pluttification! Pluttification! Squawk!
+> Pluttifikation! Pluttifikation! Kraa!
+= I taught him that. He's much better at it than Miss.
+> Det har jag lärt honom. Han är mycket bättre på det än fröken.
+= Treasure! Treasure! Squawk!
+> Skatt! Skatt! Kraa!
+= Squawk! Twelve paces! Twelve paces!
+> Kraa! Tolv steg! Tolv steg!
+= The king's parrot. It repeats everything it hears. Mostly the captain.
+> Kungens papegoja. Den härmar allt den hör. Mest kaptenen.
+= Mr Nilsson is up the palm tree with a coconut. He has finally found a country where the fruit grows at monkey height.
+> Herr Nilsson sitter uppe i palmen med en kokosnöt. Äntligen har han hittat ett land där frukten växer i aphöjd.
+= The horse is wearing a garland of flowers and looks very relaxed. It has never been on holiday before.
+> Lilla Gubben har en blomsterkrans och ser mycket avslappnad ut. Han har aldrig varit på semester förut.
+= He's going to learn to surf. Tomorrow.
+> Han ska lära sig surfa. I morgon.
+= Turtles, treasure and a thunderstorm. Nobody at school is going to believe us.
+> Sköldpaddor, en skatt och ett åskväder. Ingen i skolan kommer att tro oss.
+= We'll bring them a coconut.
+> Vi tar med oss en kokosnöt till dem.
+= Thunder! Tommy, I don't like it.
+> Åska! Tommy, jag tycker inte om det.
+= Count the seconds, Annika. Then we'll know how far away it is.
+> Räkna sekunderna, Annika. Då vet vi hur långt bort det är.
+= We're building a sandcastle. It has a moat, a tower, and a room for the horse.
+> Vi bygger ett sandslott. Det har en vallgrav, ett torn och ett rum för Lilla Gubben.
+= Pippi, can you stop standing on your hands for a minute? You're kicking sand in the moat.
+> Pippi, kan du sluta stå på händerna en liten stund? Du sparkar sand i vallgraven.
+= Goodbye, little turtles! Write to us!
+> Hej då, små sköldpaddor! Skriv till oss!
+= Eighteen kilos! Exactly the right amount. Dad knows me so well.
+> Arton kilo! Precis lagom. Pappa känner mig så väl.
+= On this island everybody walks on their hands on Tuesdays. Or they should.
+> På den här ön går alla på händerna på tisdagar. Eller så borde de göra det.
+= The sundial
+> Soluret
+= A stick, a stone, and the sun
+> En pinne, en sten och solen
+= It is shortest
+> Den är som kortast
+= It is longest
+> Den är som längst
+= It disappears completely
+> Den försvinner helt
+= It points at the sun
+> Den pekar mot solen
+= morning ← → afternoon
+> morgon ← → eftermiddag
+= Mr Nilsson borrowed the shadow-stick, so the sundial has no shadow. Before you put the stick back: the sun is up there.
+> Herr Nilsson har lånat skuggpinnen, så soluret har ingen skugga. Innan du sätter tillbaka pinnen: solen står där uppe.
+= Which hour mark will the stick's shadow point to?
+> Vilket klockslag kommer pinnens skugga att peka på?
+= Click it.
+> Klicka på det.
+= And at 12 o'clock, when the sun is at its highest in the sky, what happens to the shadow?
+> Och klockan 12, när solen står som högst på himlen, vad händer då med skuggan?
+= You put the stick back, and its shadow falls on the 9. A shadow always points away from the sun. It's 9 o'clock in the morning!
+> Du sätter tillbaka pinnen, och skuggan faller på 9:an. En skugga pekar alltid bort från solen. Klockan är 9 på morgonen!
+= That mark is on the same side as the sun! A shadow never points towards the sun: it points away from it.
+> Det klockslaget är på samma sida som solen! En skugga pekar aldrig mot solen: den pekar bort från den.
+= Close, but the shadow points exactly the opposite way from the sun. Draw a line from the sun, through the stick, and keep going.
+> Nästan, men skuggan pekar precis åt motsatt håll från solen. Dra en linje från solen, genom pinnen, och fortsätt.
+= Shortest! When the sun is high, the shadow is short; in the morning and evening, when the sun is low, shadows are long. So: 9 o'clock now, and a short shadow at lunchtime.
+> Kortast! När solen står högt är skuggan kort; på morgonen och kvällen, när solen står lågt, är skuggorna långa. Alltså: klockan är 9 nu, och vid lunch blir skuggan kort.
+= Nine o'clock! On this island that's breakfast time, so I've had three breakfasts already.
+> Klockan nio! På den här ön är det frukostdags, så jag har redan ätit tre frukostar.
+= Now the tide post. When will the water go down?
+> Nu tidvattenpålen. När sjunker vattnet?
+= Longest is when the sun is low, in the morning and evening. At noon it is as high as it gets.
+> Längst är den när solen står lågt, på morgonen och kvällen. Mitt på dagen står solen så högt den kan.
+= Only if the sun is exactly overhead, and even then the stick has a tiny shadow under it. Not quite.
+> Bara om solen står precis rakt ovanför, och även då har pinnen en pytteliten skugga under sig. Inte riktigt.
+= A shadow never points at the sun. Never ever. Not even on a South Sea island.
+> En skugga pekar aldrig mot solen. Aldrig någonsin. Inte ens på en ö i Söderhavet.
+= The tide post
+> Tidvattenpålen
+= High tide now: the water is at the top stripe
+> Högvatten nu: vattnet når den översta randen
+= The captain painted a sign on the post: "The sea goes OUT for about 6 hours, then comes back IN for about 6 hours. And then it does it all again."
+> Kaptenen har målat en skylt på pålen: "Havet drar sig UT i ungefär 6 timmar, och kommer sedan TILLBAKA i ungefär 6 timmar. Och sedan gör det om alltihop igen."
+= It's 9 o'clock in the morning, and the water is as high as it goes.
+> Klockan är 9 på morgonen, och vattnet står så högt det kan.
+= When will it be at its lowest, so you can walk to Turtle Islet?
+> När står det som lägst, så att man kan gå till Sköldpaddsholmen?
+= 12 o'clock
+> Klockan 12
+= 3 o'clock
+> Klockan 3
+= 6 o'clock
+> Klockan 6
+= 9 o'clock tonight
+> Klockan 9 i kväll
+= That's only 3 hours: the water will be halfway down the post. Not low enough.
+> Det är bara 3 timmar: då står vattnet halvvägs ner på pålen. Inte lågt nog.
+= 6 o'clock is 9 hours later. By then the sea is already coming back in.
+> Klockan 6 är 9 timmar senare. Då är havet redan på väg tillbaka.
+= 9 o'clock tonight is 12 hours later: 6 hours out, 6 hours back in. High tide again!
+> Klockan 9 i kväll är 12 timmar senare: 6 timmar ut, 6 timmar tillbaka. Högvatten igen!
+= But what makes the sea go in and out, twice a day?
+> Men vad får havet att gå ut och in, två gånger om dagen?
+= The wind blows it
+> Vinden blåser på det
+= The Moon pulls on it
+> Månen drar i det
+= The fish drink it and spit it out
+> Fiskarna dricker upp det och spottar ut det
+= The wind makes waves, but it can't move a whole ocean in and out twice a day, every day, even when it's calm.
+> Vinden gör vågor, men den kan inte flytta ett helt hav in och ut två gånger om dagen, varenda dag, till och med när det är lugnt.
+= Pippi likes that idea a lot. But no: there aren't THAT many thirsty fish.
+> Pippi tycker mycket om den idén. Men nej: det finns inte SÅ många törstiga fiskar.
+= 3 o'clock! 9 o'clock plus 6 hours: 10, 11, 12, 1, 2, 3.
+> Klockan 3! Klockan 9 plus 6 timmar: 10, 11, 12, 1, 2, 3.
+= The Moon! Its pull lifts the sea into a big bulge, and the Earth turns underneath it. That makes two high tides and two low tides every day.
+> Månen! Den drar upp havet i en stor bula, och jorden snurrar runt under den. Det ger två högvatten och två lågvatten varje dag.
+= Six hours is a long time. Everybody has a swim, then a picnic, then a nap in the shade.
+> Sex timmar är länge. Alla badar, sedan har de picknick, och sedan tar de en tupplur i skuggan.
+= At 3 o'clock, the water has slipped all the way down the tide post. A sandy path has come up out of the lagoon, all the way to Turtle Islet, with rock pools full of starfish along the way.
+> Klockan 3 har vattnet sjunkit ända ner på tidvattenpålen. En sandig stig har kommit upp ur lagunen, ända bort till Sköldpaddsholmen, med klippgölar fulla av sjöstjärnor längs vägen.
+= Low tide! Treasure time!
+> Ebb! Skattdags!
+= The captain's map
+> Kaptenens karta
+= "From the turtle rock: 12 of MY paces towards the palm. Dig at the X."
+> "Från sköldpaddsklippan: 12 av MINA steg mot palmen. Gräv vid krysset."
+= The captain is far too comfortable in his hammock to walk to the islet himself. His paces are exactly 1 metre long. Who walks, and how many paces?
+> Kaptenen ligger alldeles för skönt i sin hängmatta för att gå till holmen själv. Hans steg är exakt 1 meter långa. Vem går, och hur många steg?
+= {who}: {cm} cm a pace
+> {who}: {cm} cm per steg
+= Paces:
+> Steg:
+= Dig here!
+> Gräv här!
+= {n} paces of {cm} cm is {m} metres: exactly 12 of the captain's paces! Everybody's pace is a different length. That's why people agreed on the metre: a metre is the same for everybody.
+> {n} steg på {cm} cm blir {m} meter: precis 12 av kaptenens steg! Allas steg är olika långa. Därför bestämde människor sig för metern: en meter är lika lång för alla.
+= The horse clip-clops out along the sandbar, six big steps, and stops. Right under its hoof: a red X, drawn in the sand.
+> Lilla Gubben klapprar ut längs sandbanken, sex stora steg, och stannar. Precis under hans hov: ett rött kryss, ritat i sanden.
+= {who} paces out across Turtle Islet, counting out loud. And right at the end: a red X, drawn in the sand!
+> {who} stegar ut över Sköldpaddsholmen och räknar högt. Och precis vid slutet: ett rött kryss, ritat i sanden!
+= Treasure! Treasure!
+> Skatt! Skatt!
+= 12 paces, just like the map says! But {who}'s paces are only {cm} cm, and the captain's are a whole metre. That's only {m} metres.
+> 12 steg, precis som det står på kartan! Men {who} tar bara {cm} cm långa steg, och kaptenens är en hel meter. Det blir bara {m} meter.
+= {who} took {n} paces of {cm} cm: that's {m} metres. The X is 12 of the captain's 1-metre paces from the rock: 12 metres.
+> {who} tog {n} steg på {cm} cm: det blir {m} meter. Krysset ligger 12 av kaptenens metersteg från klippan: 12 meter.
+= The Sun
+> Solen
+= A crab
+> En krabba
+= A coconut
+> En kokosnöt
+= An octopus
+> En bläckfisk
+= Seaweed
+> Sjögräs
+= The treasure chest
+> Skattkistan
+= A lock with four picture slots
+> Ett lås med fyra bildfack
+= The captain has carved a riddle on the lid:
+> Kaptenen har skurit in en gåta i locket:
+= "From the one who feeds everybody, to the one who eats the most."
+> "Från den som ger alla mat, till den som äter mest."
+= Put four of the pictures in the slots, in the right order.
+> Sätt fyra av bilderna i facken, i rätt ordning.
+= Take them out
+> Ta ur dem
+= Open the lock
+> Öppna låset
+= The lock has four slots. Fill them all.
+> Låset har fyra fack. Fyll alla.
+= Click! The Sun feeds the seaweed (plants make their food from sunlight), the crab eats the seaweed, and the octopus eats the crab. Every food chain starts with the Sun.
+> Klick! Solen ger sjögräset mat (växter gör sin mat av solljus), krabban äter sjögräset, och bläckfisken äter krabban. Varje näringskedja börjar med solen.
+= The lid creaks open. Inside: a mountain of sweets, a little golden crown, and a letter.
+> Locket öppnas med ett knarr. Därinne: ett berg av godis, en liten guldkrona och ett brev.
+= Sweets! It says on the bag: 18 KILOS. Dad, you remembered!
+> Godis! Det står på påsen: 18 KILO. Pappa, du kom ihåg det!
+= The letter says: "For Pippilotta, princess of the island, and her friends. Share them with the horse."
+> Det står i brevet: "Till Pippilotta, öns prinsessa, och hennes vänner. Dela med Lilla Gubben."
+= Then a cold wind blows across the lagoon. The palm trees bend. The sky over the sea has gone very dark.
+> Då blåser en kall vind över lagunen. Palmerna böjer sig. Himlen över havet har blivit alldeles mörk.
+= A tropical shower! Quick, everybody: how far away is it? Watch for the lightning!
+> En tropisk skur! Fort, allihop: hur långt bort är den? Håll utkik efter blixten!
+= Who feeds everybody? Every food chain starts with the Sun: plants use its light to make their food.
+> Vem ger alla mat? Varje näringskedja börjar med solen: växterna använder dess ljus för att göra sin mat.
+= A coconut? Nobody in this chain eats coconuts. Only Mr Nilsson, and he isn't in the sea.
+> En kokosnöt? Ingen i den här kedjan äter kokosnötter. Bara Herr Nilsson, och han är inte i havet.
+= Who eats whom? The crab nibbles the seaweed, and the octopus catches the crab.
+> Vem äter vem? Krabban knaprar på sjögräset, och bläckfisken fångar krabban.
+= The tropical shower
+> Den tropiska skuren
+= Count the seconds between the flash and the bang
+> Räkna sekunderna mellan blixten och smällen
+= You see lightning straight away: light is very fast. The sound of the thunder is much slower: it takes about 3 seconds to travel 1 kilometre.
+> Blixten ser man direkt: ljus är väldigt snabbt. Ljudet från åskan är mycket långsammare: det tar ungefär 3 sekunder att färdas 1 kilometer.
+= Watch for lightning
+> Håll utkik efter blixten
+= How far away is the storm?
+> Hur långt bort är ovädret?
+= Only 3 seconds this time: the storm is 1 km away. Is it coming closer, or going away?
+> Bara 3 sekunder den här gången: ovädret är 1 km bort. Kommer det närmare, eller drar det bort?
+= Closer: everybody into the hut!
+> Närmare: alla in i hyddan!
+= Going away: keep building the sandcastle
+> Det drar bort: vi bygger vidare på sandslottet
+= SPLOOSH. The rain comes down like a waterfall, and you are wet right through. 9 seconds, then 3 seconds: the storm is getting closer!
+> PLASK. Regnet vräker ner som ett vattenfall, och du blir genomblöt. 9 sekunder, sedan 3 sekunder: ovädret kommer närmare!
+= 1 km would be 3 seconds. You counted 9.
+> 1 km skulle vara 3 sekunder. Du räknade till 9.
+= That's 9 × 3. But it's the other way round: every 3 seconds is 1 km, so how many threes are there in 9?
+> Det är 9 × 3. Men det är tvärtom: var tredje sekund är 1 km, så hur många treor finns det i 9?
+= 9 km would take 27 seconds to hear. Sound is slow, but not THAT slow.
+> 9 km skulle ta 27 sekunder att höra. Ljud är långsamt, men inte SÅ långsamt.
+= 3 km! 9 seconds ÷ 3 = 3 kilometres. Watch again…
+> 3 km! 9 sekunder ÷ 3 = 3 kilometer. Titta igen…
+= Closer! 9 seconds, then 3 seconds: 3 km, then 1 km. Into the hut, everybody, and the sweets too!
+> Närmare! 9 sekunder, sedan 3 sekunder: 3 km, sedan 1 km. In i hyddan allihop, och godiset också!
+= Everybody squeezes into the king's hut: the captain, Pippi, Tommy, Annika, Mr Nilsson, the parrot, 18 kilos of sweets and, somehow, the horse.
+> Alla tränger in sig i kungens hydda: kaptenen, Pippi, Tommy, Annika, Herr Nilsson, papegojan, 18 kilo godis och, på något sätt, Lilla Gubben.
+= The rain drums on the roof for exactly twenty minutes. Then it stops, as suddenly as it started.
+> Regnet trummar på taket i exakt tjugo minuter. Sedan slutar det, lika plötsligt som det började.
+= When you come out, the sun is going down. The sky is orange and pink, and the first stars are out.
+> När ni kommer ut går solen ner. Himlen är orange och rosa, och de första stjärnorna har tänts.
+= The turtle nest! Tonight's the night. Somebody light the feast torches!
+> Sköldpaddsboet! I natt är det dags. Någon får tända festfacklorna!
+= BOOM!
+> BOM!
+= The torch by the nest
+> Facklan vid boet
+= The torch on the dunes
+> Facklan på dynerna
+= The lantern in the hut window
+> Lyktan i hyddans fönster
+= The feast torches behind the hut
+> Festfacklorna bakom hyddan
+= The turtle nest
+> Sköldpaddsboet
+= The baby turtles are hatching!
+> Sköldpaddsungarna kläcks!
+= Baby turtles crawl towards the brightest light they can see. On a dark beach, that's the sea, shining under the moon. But tonight there are torches for the feast…
+> Sköldpaddsungar kryper mot det starkaste ljus de kan se. På en mörk strand är det havet, som glänser i månskenet. Men i kväll brinner det facklor för festen…
+= Let them go!
+> Låt dem gå!
+= the sea, in the moonlight
+> havet, i månskenet
+= {l}: on
+> {l}: tänd
+= {l}: off
+> {l}: släckt
+= Oh no! The baby turtles crawl the wrong way, towards {l}. Annika scoops them up and puts them back in the nest. They follow the brightest light they can see.
+> Å nej! Sköldpaddsungarna kryper åt fel håll, mot {l}. Annika plockar upp dem och lägger tillbaka dem i boet. De följer det starkaste ljus de kan se.
+= The turtles would be fine, but now the feast is pitch dark and Pippi has sat on the fish. The torches behind the hut can stay on: the hut hides them from the nest.
+> Sköldpaddorna klarar sig, men nu är festen kolsvart och Pippi har satt sig på fisken. Facklorna bakom hyddan kan få brinna: hyddan döljer dem för boet.
+= The beach goes dark, and the sea shines under the moon. Out pop the baby turtles, and off they scurry, straight down the beach to the water!
+> Stranden blir mörk, och havet glänser i månskenet. Fram tittar sköldpaddsungarna, och iväg kilar de, rakt nerför stranden till vattnet!
+= Captain Longstocking's island. White sand, palm trees, a turquoise lagoon, and the Hoppetossa resting at anchor.
+> Kapten Långstrumps ö. Vit sand, palmer, en turkos lagun, och Hoppetossa som vilar för ankar.
+= Dad's island! It's even better than he said. And he said it was the best island in the world.
+> Pappas ö! Den är ännu bättre än han sa. Och han sa att det var den bästa ön i hela världen.
+= Where is your father, Pippi?
+> Var är din pappa, Pippi?
+= A snore comes from a hammock between the palm trees. In it lies the king of the island, fast asleep, with his crown on top of his captain's hat.
+> En snarkning hörs från en hängmatta mellan palmerna. Där ligger öns kung och sover djupt, med kronan ovanpå kaptensmössan.
+= He looks very comfortable.
+> Han ser väldigt bekväm ut.
+= Kings need a lot of sleep. It's hard work, being a king. Let's wake him up!
+> Kungar behöver mycket sömn. Det är hårt arbete att vara kung. Vi väcker honom!
+= The captain is in the hammock by the hut.
+> Kaptenen ligger i hängmattan vid hyddan.
+= One after another, the little turtles pop out of the sand and scurry down the beach, towards the shining sea. Not one of them goes the wrong way.
+> En efter en tittar de små sköldpaddorna upp ur sanden och kilar nerför stranden, mot det glänsande havet. Inte en enda går åt fel håll.
+= Twenty-three, twenty-four… twenty-five! All of them!
+> Tjugotre, tjugofyra… tjugofem! Allihop!
+= The waves carry them out into the lagoon, where the moon is making a silver path on the water.
+> Vågorna bär ut dem i lagunen, där månen gör en silverstig på vattnet.
+= Pippilotta, you'd make a very good queen. But I think you're an even better Pippi.
+> Pippilotta, du skulle bli en mycket bra drottning. Men jag tror att du är en ännu bättre Pippi.
+= Tomorrow we'll sail home to Villa Villekulla. The horse misses his veranda. But tonight: the feast!
+> I morgon seglar vi hem till Villa Villekulla. Lilla Gubben längtar efter sin veranda. Men i kväll: fest!
+= Pluttification! Squawk!
+> Pluttifikation! Kraa!
+= And behind the hut, by the light of the feast torches, the whole island eats grilled fish, coconut cake and, of course, eighteen kilos of sweets.
+> Och bakom hyddan, i skenet från festfacklorna, äter hela ön grillad fisk, kokostårta och, förstås, arton kilo godis.
+= hut
+> hydda
+= nest
+> bo
+= feast
+> fest
+= 1 km
+> 1 km

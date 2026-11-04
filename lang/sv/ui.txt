@@ -325,8 +325,6 @@
 > Land i sikte · kapitel 6 klart
 = Land ho
 > Land i sikte
-= The Hoppetossa has reached Captain Longstocking's island. Next: life on a South Sea island. Chapter 7 is still being written.
-> Hoppetossa har kommit fram till kapten Långstrumps ö. Härnäst: livet på en ö i Söderhavet. Kapitel 7 håller fortfarande på att skrivas.
 = On board the Hoppetossa
 > Ombord på Hoppetossa
 = Chapter 6: On board the Hoppetossa
@@ -343,8 +341,6 @@
 > Tillbaka ombord på Hoppetossa. Kaptenen nynnar vid ratten, och Herr Nilsson letar efter saker att kasta.
 = Back at the harbour. The horse is still waiting on the quay.
 > Tillbaka i hamnen. Lilla Gubben väntar fortfarande på kajen.
-= Take your time. The Hoppetossa is anchored in the lagoon, the palm trees are swaying, and Pippi is already up a coconut tree.
-> Ta den tid du behöver. Hoppetossa ligger förankrad i lagunen, palmerna vajar, och Pippi sitter redan uppe i en kokospalm.
 = Captain Longstocking
 > Kapten Långstrump
 = The Hoppetossa
@@ -369,3 +365,63 @@
 > Strålkastarna har fel färger, gungbrädan väger inte jämnt, clownen har glömt hur man jonglerar, och trapetsartisterna kan inte fånga varandra. Min checklista sitter på tältstången.
 = I've never fixed a circus, so I'm sure I can!
 > Jag har aldrig lagat en cirkus förut, så det klarar jag säkert!
+
+# ---------- Chapter 7: menus, end screen, speakers, item uses ----------
+= The island: on to Chapter {n}
+> Ön: vidare till kapitel {n}
+= The island
+> Ön
+= The Hoppetossa has reached Captain Longstocking's island. Next: a whole day on the island, with a buried surprise for Pippi…
+> Hoppetossa har kommit fram till kapten Långstrumps ö. Nästa gång: en hel dag på ön, med en nedgrävd överraskning till Pippi…
+= Continue to Chapter 7
+> Vidare till kapitel 7
+= Goodnight, turtles · Chapter 7 complete
+> God natt, sköldpaddor · kapitel 7 klart
+= Hooray
+> Hurra
+= Treasure, thunder and turtles: what a day on Captain Longstocking's island. Next: home again to Villa Villekulla… Chapter 8 is still being written.
+> Skatt, åska och sköldpaddor: vilken dag på kapten Långstrumps ö. Nästa gång: hem igen till Villa Villekulla… Kapitel 8 skrivs fortfarande.
+= The South Sea island
+> Ön i Söderhavet
+= Chapter 7: The South Sea island
+> Kapitel 7: Ön i Söderhavet
+= Chapter 7 · The South Sea Island
+> Kapitel 7 · Ön i Söderhavet
+= Bonked by a coconut
+> Bonk, en kokosnöt
+= Soaked to the skin
+> Genomblöt
+= Taught the parrot a word
+> Lärde papegojan ett ord
+= Back on the island. It's getting dark, and the turtle nest is waiting.
+> Tillbaka på ön. Det börjar skymma, och sköldpaddsboet väntar.
+= Back on the island. It's low tide, and Turtle Islet is waiting.
+> Tillbaka på ön. Det är ebb, och Sköldpaddsholmen väntar.
+= Back on the island. The king is still snoring in his hammock.
+> Tillbaka på ön. Kungen snarkar fortfarande i sin hängmatta.
+= Take your time. The Hoppetossa is anchored in the lagoon, the palm trees are swaying, and Pippi is already up a coconut tree. When you're ready, go ashore: click the island to go on to Chapter {n}.
+> Ta god tid på dig. Hoppetossa ligger för ankar i lagunen, palmerna vajar, och Pippi sitter redan uppe i en kokospalm. När du är redo går du i land: klicka på ön för att gå vidare till kapitel {n}.
+= Take your time. The feast goes on behind the hut, the moon shines on the lagoon, and somewhere out there, twenty-five little turtles are swimming.
+> Ta god tid på dig. Festen fortsätter bakom hyddan, månen lyser på lagunen, och någonstans där ute simmar tjugofem små sköldpaddor.
+= The parrot
+> Papegojan
+= Turtle Islet is still cut off by the water. Wait for low tide.
+> Sköldpaddsholmen är fortfarande avskuren av vattnet. Vänta på ebb.
+= Zzz… my map? You keep it, sailor. Twelve of MY paces… zzz…
+> Zzz… min karta? Behåll du den, sjöman. Tolv av MINA steg… zzz…
+= Mr Nilsson wants to eat the map. You hold it up high.
+> Herr Nilsson vill äta upp kartan. Du håller den högt upp.
+= The map shows Turtle Islet, out in the lagoon. That's where the X is.
+> Kartan visar Sköldpaddsholmen, ute i lagunen. Det är där krysset finns.
+= You dig, and dig, and dig. Pippi helps, with her hands, very fast. Sand flies everywhere.
+> Du gräver, och gräver, och gräver. Pippi hjälper till, med händerna, jättefort. Sanden yr åt alla håll.
+= CLONK! The spade hits wood. A treasure chest, with a strange lock on its lid!
+> KLONK! Spaden slår i trä. En skattkista, med ett konstigt lås på locket!
+= Where to dig? The map says: 12 of the captain's paces from the turtle rock.
+> Var ska man gräva? Kartan säger: 12 av kaptenens steg från sköldpaddsklippan.
+= Turtle Islet is still cut off by the water.
+> Sköldpaddsholmen är fortfarande avskuren av vattnet.
+= Dig me up later, sailor. Zzz.
+> Gräv upp mig sen, sjöman. Zzz.
+= You dig a little hole. Nothing in it but sand and an offended crab. The X is somewhere else.
+> Du gräver en liten grop. Där finns bara sand och en förolämpad krabba. Krysset är någon annanstans.

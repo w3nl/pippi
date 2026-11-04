@@ -165,3 +165,21 @@
 > Fiskenät
 = The hold
 > Lastrummet
+
+# ---------- scenes/island.svg ----------
+= Captain Longstocking's island
+> Kapten Långstrumps ö
+= The lagoon
+> Lagunen
+= Turtle Islet
+> Sköldpaddsholmen
+= The X
+> Krysset
+= Torches
+> Facklor
+= The coconut palm
+> Kokospalmen
+= The king's hut
+> Kungens hydda
+= TURTLES
+> SKÖLDPADDOR

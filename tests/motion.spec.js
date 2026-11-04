@@ -67,6 +67,29 @@ test('"Motion off" stops everything, in every room', async ({ page }) => {
   expect(await moving(page)).toBe(0);
   // the dolphins only exist while things move
   await expect(page.locator('#hp-seafar .hp-dolphin').first()).toHaveAttribute('transform', 'translate(-300 600)');
+  // and the island: in the shower, and with the turtles at night (the bird, the dolphin and the lightning only exist while moving)
+  for (const f of [{ chest: true }, { chest: true, storm: true, out7: true }]) {
+    await page.evaluate(f => { S.ch = 7; S.scene = 'island'; S.f = f; applyVisuals(); }, f);
+    expect(await moving(page)).toBe(0);
+  }
+  expect(await page.locator('#si-flash').evaluate(e => getComputedStyle(e).opacity)).toBe('0');
+  expect(await page.locator('#sc-island .si-dolphin').evaluate(e => getComputedStyle(e).opacity)).toBe('0');
+});
+
+test('the island moves: palms sway, the captain snores in his hammock, the rain falls, the turtles scurry', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await seed(page, { ch: 7, scene: 'island', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6', '-ch7']);
+  await page.locator('#btn-cont').click();
+  await skip(page);
+  expect(await anim(page, '#sc-island .palm')).toBe('siPalm');
+  expect(await anim(page, '#si-captain .sway')).toBe('siHammock');
+  expect(await anim(page, '#si-ship')).toBe('siBob');
+  await page.evaluate(() => { S.f.chest = true; applyVisuals(); });
+  expect(await anim(page, '#sc-island .palm')).toBe('siPalmStorm');
+  expect(await anim(page, '#si-rain .drops')).toBe('siRain');
+  await page.evaluate(() => { S.f.storm = true; S.f.out7 = true; applyVisuals(); });
+  expect(await anim(page, '#sc-island .si-baby')).toBe('siBaby');
+  expect(await moving(page)).toBeGreaterThan(25);
 });
 
 test('the Hoppetossa moves: she bobs at the quay, then rocks at sea with full sails, fish and dolphins', async ({ page }) => {

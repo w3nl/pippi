@@ -30,8 +30,9 @@ Stuck? Press **Hint** (first a nudge, then the answer), or pick up the spunk fro
 4. **Snowball fight** (the garden of Villa Villekulla in the snow): the policemen Kling and Klang challenge you to a friendly snowball fight at three o'clock. Reading animal tracks, temperatures below zero, building a wall that holds, salt on ice, staying warm in layers, and the best angle for a throw, with falling snow and snowballs flying.
 5. **Pippi goes to the circus** (the big top): the show can't begin until the ringmaster's checklist is done. Money and change, mixing coloured light, levers, patterns, pendulums and gears, with a horse trotting round the ring, swinging trapezes and confetti.
 6. **On board the Hoppetossa** (a cut-away sailing ship): Captain Longstocking sails Pippi, Tommy, Annika and you to his island. Hoist the horse aboard, set a course, drop the sails, cross the Equator by night and spot the island at dawn. Pulleys, compass points, floating and sinking, fresh water from the sea, the North Star and the round Earth, with fish, dolphins and swaying palm trees.
+7. **The South Sea island** (Captain Longstocking's island): a whole day on the island, with a surprise buried on Turtle Islet. A sundial, the tide and the Moon, paces and metres, a food chain, counting the seconds between lightning and thunder, and baby turtles finding the sea, with a lagoon that empties at low tide, a tropical shower and a moonlit night.
 
-One more chapter is planned (the South Sea island). See [AGENTS.md](AGENTS.md).
+More chapters are planned (home again to Villa Villekulla). See [AGENTS.md](AGENTS.md).
 
 ## Install it as an app
 

@@ -1,7 +1,7 @@
 // Service worker for Villa Villekulla: makes the game installable and playable offline.
 // Bump CACHE when you change the game, so phones pick up the new version, and keep GAME_VERSION in js/boot.js
 // the same number (tests/pwa.spec.js checks). The page shows that number and offers a reload when a newer one arrives.
-const CACHE = 'pippi-villa-v9';
+const CACHE = 'pippi-villa-v10';
 const CORE = [
   './',
   './index.html',
@@ -17,6 +17,7 @@ const CORE = [
   './css/chapter4.css',
   './css/chapter5.css',
   './css/chapter6.css',
+  './css/chapter7.css',
   './css/phone.css',
   './css/animations.css',
   './js/boot.js',
@@ -28,6 +29,7 @@ const CORE = [
   './js/chapter4.js',
   './js/chapter5.js',
   './js/chapter6.js',
+  './js/chapter7.js',
   './js/items.js',
   './js/hints.js',
   './js/ambience.js',
@@ -40,6 +42,7 @@ const CORE = [
   './lang/nl/ch4.txt',
   './lang/nl/ch5.txt',
   './lang/nl/ch6.txt',
+  './lang/nl/ch7.txt',
   './lang/nl/hints.txt',
   './lang/nl/scenes.txt',
   './lang/sv/ui.txt',
@@ -49,6 +52,7 @@ const CORE = [
   './lang/sv/ch4.txt',
   './lang/sv/ch5.txt',
   './lang/sv/ch6.txt',
+  './lang/sv/ch7.txt',
   './lang/sv/hints.txt',
   './lang/sv/scenes.txt',
   './scenes/kitchen.svg',
@@ -57,6 +61,7 @@ const CORE = [
   './scenes/winter.svg',
   './scenes/circus.svg',
   './scenes/ship.svg',
+  './scenes/island.svg',
   './portraits/you.svg',
   './portraits/pippi.svg',
   './portraits/nilsson.svg',

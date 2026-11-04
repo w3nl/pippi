@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="scene" id="sc-island" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-label="Captain Longstocking's island">
+  <defs>
+    <linearGradient id="siSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3fa0dc"/><stop offset=".8" stop-color="#bfe8f7"/><stop offset="1" stop-color="#eafaff"/></linearGradient>
+    <linearGradient id="siDusk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b1f4a"/><stop offset=".55" stop-color="#6a3a7a"/><stop offset=".85" stop-color="#e9845a"/><stop offset="1" stop-color="#f6c06a"/></linearGradient>
+    <linearGradient id="siStorm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a4656"/><stop offset="1" stop-color="#7d8a98"/></linearGradient>
+    <linearGradient id="siSea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f8fc0"/><stop offset="1" stop-color="#2fc2c8"/></linearGradient>
+    <linearGradient id="siLagoon" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3cd0d0" stop-opacity=".92"/><stop offset="1" stop-color="#8fe8dc" stop-opacity=".88"/></linearGradient>
+    <linearGradient id="siSand" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6e2a8"/><stop offset="1" stop-color="#e2c27a"/></linearGradient>
+    <radialGradient id="siSun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fffbe0"/><stop offset=".55" stop-color="#ffe27a"/><stop offset="1" stop-color="#ffe27a" stop-opacity="0"/></radialGradient>
+    <radialGradient id="siGlow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffcf6a" stop-opacity=".75"/><stop offset="1" stop-color="#ffcf6a" stop-opacity="0"/></radialGradient>
+    <clipPath id="siSkyClip"><rect width="1600" height="332"/></clipPath>
+  </defs>
+
+  <!-- the sky: day, a tropical shower, then dusk and moonlight -->
+  <rect width="1600" height="900" fill="url(#siSky)"/>
+  <g id="si-sun"><circle cx="1240" cy="96" r="110" fill="url(#siSun)"/><g class="rays" stroke="#fff1b0" stroke-width="6" stroke-linecap="round" opacity=".7"><path d="M1240 -8 v28 M1240 172 v28 M1136 96 h-28 M1344 96 h28 M1166 22 l-20 -20 M1314 170 l20 20 M1314 22 l20 -20 M1166 170 l-20 20"/></g><circle cx="1240" cy="96" r="46" fill="#ffe27a"/></g>
+  <g clip-path="url(#siSkyClip)">
+    <g class="si-cloud a" fill="#fff" opacity=".9"><ellipse cx="300" cy="90" rx="80" ry="24"/><ellipse cx="270" cy="76" rx="40" ry="26"/><ellipse cx="326" cy="72" rx="46" ry="30"/></g>
+    <g class="si-cloud b" fill="#fff" opacity=".8"><ellipse cx="860" cy="150" rx="64" ry="18"/><ellipse cx="836" cy="140" rx="32" ry="20"/></g>
+    <!-- a frigate bird gliding (only while things move) -->
+    <g class="si-bird" stroke="#22303e" stroke-width="4" fill="none" stroke-linecap="round"><path class="wings" d="M0 0 q14 -12 28 0 q14 -12 28 0"/></g>
+  </g>
+  <!-- the tropical shower: dark sky, rain and lightning -->
+  <g id="si-stormsky"><rect width="1600" height="900" fill="url(#siStorm)" opacity=".85"/>
+    <g fill="#5a6676"><ellipse cx="380" cy="110" rx="220" ry="60"/><ellipse cx="760" cy="80" rx="260" ry="70"/><ellipse cx="1180" cy="120" rx="260" ry="66"/><ellipse cx="560" cy="150" rx="200" ry="44"/></g>
+    <path class="si-bolt" d="M1320 40 l-40 90 h30 l-34 90 l80 -116 h-34 l30 -64z" fill="#fff6b0"/></g>
+  <!-- dusk: the sunset, the moon and the first stars -->
+  <g id="si-dusksky"><rect width="1600" height="900" fill="url(#siDusk)"/>
+    <g class="si-stars" fill="#fffbe0"><circle class="tw" cx="120" cy="60" r="2"/><circle class="tw b" cx="260" cy="130" r="1.6"/><circle class="tw" cx="420" cy="40" r="2.2"/><circle class="tw c" cx="640" cy="90" r="1.6"/><circle class="tw b" cx="780" cy="30" r="2"/><circle class="tw" cx="960" cy="70" r="1.8"/><circle class="tw c" cx="1080" cy="140" r="1.6"/><circle class="tw b" cx="1400" cy="50" r="2"/><circle class="tw" cx="1520" cy="120" r="1.6"/><circle class="tw c" cx="560" cy="170" r="1.4"/></g>
+    <circle cx="1180" cy="120" r="44" fill="#fdf6d8"/><circle cx="1166" cy="110" r="8" fill="#e9e0c0"/><circle cx="1194" cy="134" r="6" fill="#e9e0c0"/></g>
+
+  <!-- the open sea, the reef and the Hoppetossa at anchor -->
+  <rect y="330" width="1600" height="300" fill="url(#siSea)"/>
+  <g id="si-moonpath" fill="#fdf6d8" opacity=".55"><rect x="1150" y="340" width="60" height="4" rx="2"/><rect x="1130" y="356" width="100" height="4" rx="2"/><rect x="1110" y="374" width="140" height="5" rx="2"/><rect x="1090" y="394" width="180" height="5" rx="2"/></g>
+  <path d="M0 404 q60 -10 120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0" stroke="#e8f8ff" stroke-width="5" fill="none" opacity=".8"/>
+  <g id="si-ship" class="si-ship">
+    <path d="M70 360 H360 Q350 400 320 418 H110 Q80 400 70 360z" fill="#7a4022"/>
+    <path d="M74 372 H356" stroke="#f2c94c" stroke-width="5"/>
+    <text x="215" y="404" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="14" font-weight="700" fill="#f2c94c" translate="no">HOPPETOSSA</text>
+    <g fill="#6b4423"><rect x="140" y="200" width="7" height="162"/><rect x="214" y="170" width="8" height="192"/><rect x="290" y="210" width="7" height="152"/></g>
+    <g fill="#fffaf0" stroke="#c9b48a"><rect x="122" y="226" width="44" height="12" rx="5"/><rect x="194" y="200" width="48" height="12" rx="5"/><rect x="194" y="250" width="48" height="12" rx="5"/><rect x="272" y="236" width="44" height="12" rx="5"/></g>
+    <path class="flagw" d="M222 172 l34 8 l-34 8z" fill="#2f5f9a"/><path d="M222 176 h34" stroke="#f2c94c" stroke-width="3"/>
+    <path d="M360 368 L416 344" stroke="#6b4423" stroke-width="6"/>
+    <path d="M110 418 v40 M104 458 h12" stroke="#5a5a5a" stroke-width="3"/>
+  </g>
+  <!-- a dolphin in the lagoon mouth (only while things move) -->
+  <g class="si-dolphin"><path d="M0 0 q24 -20 56 -10 q10 4 18 2 q-5 6 -16 6 q-24 2 -40 12 l-3 10 l-6 -10 q-5 -2 -9 -10z" fill="#5a7a9a"/><path d="M32 -11 l5 -11 l7 10z" fill="#5a7a9a"/></g>
+
+  <!-- the lagoon: the sandbar to Turtle Islet and the rock pools only show at low tide -->
+  <path d="M0 470 Q400 440 800 452 T1600 470 V900 H0z" fill="#7fdcd7"/>
+  <g id="si-sandbar">
+    <path d="M620 470 Q700 520 690 560 Q690 600 760 640 L860 640 Q800 600 800 560 Q806 516 760 470z" fill="#efd79a"/>
+    <g id="si-pools"><ellipse cx="560" cy="560" rx="54" ry="16" fill="#6fd0d0" stroke="#d9be7a" stroke-width="5"/><ellipse cx="900" cy="540" rx="40" ry="12" fill="#6fd0d0" stroke="#d9be7a" stroke-width="5"/>
+      <path d="M548 556 l4 -6 l4 6 l7 -2 l-4 6 l4 6 l-6 -2 l-4 6 l-4 -6 l-6 2 l4 -6 l-4 -6z" fill="#e8571f"/>
+      <g class="si-crab b"><ellipse cx="906" cy="538" rx="7" ry="5" fill="#d62828"/><path d="M898 536 l-5 -4 M914 536 l5 -4" stroke="#d62828" stroke-width="3"/></g></g>
+  </g>
+  <!-- Turtle Islet: a hump of sand, one palm, and a rock shaped like a turtle -->
+  <g id="si-islet">
+    <ellipse cx="720" cy="462" rx="150" ry="34" fill="#efd79a"/>
+    <path d="M610 458 q20 -40 70 -44 q30 -2 46 16 q10 -22 40 -16 q22 6 26 26z" fill="#8a8f96"/>
+    <path d="M626 446 q28 -26 70 -24 q20 2 24 18z" fill="#6f7680"/><circle cx="772" cy="430" r="12" fill="#8a8f96"/><circle cx="776" cy="427" r="2" fill="#111"/>
+    <g class="palm a"><path d="M820 454 q-8 -50 8 -100" stroke="#8a5a2b" stroke-width="8" fill="none"/><g fill="#3f8a4a"><path d="M828 354 q-40 -12 -64 14 q30 -10 64 -14z"/><path d="M828 354 q36 -18 66 8 q-34 -8 -66 -8z"/><path d="M828 354 q-12 -34 -46 -40 q28 16 46 40z"/><path d="M828 354 q16 -34 50 -34 q-30 12 -50 34z"/></g></g>
+    <g id="si-x"><path d="M690 456 l20 12 M710 456 l-20 12" stroke="#c4302b" stroke-width="5" stroke-linecap="round"/></g>
+    <g id="si-hole"><ellipse cx="700" cy="464" rx="26" ry="8" fill="#a8864a"/><rect x="684" y="452" width="34" height="16" rx="3" fill="#7a4a1f" stroke="#c9952a" stroke-width="2"/><rect x="684" y="452" width="34" height="5" fill="#c9952a"/></g>
+  </g>
+  <!-- the high water: covers the sandbar until the tide goes out -->
+  <g id="si-highwater"><path d="M0 476 Q400 470 700 492 T1600 478 V680 H0z" fill="#7fdcd7"/>
+    <path class="si-ripple" d="M360 540 q30 -8 60 0 t60 0 M900 600 q30 -8 60 0 t60 0 M520 620 q30 -8 60 0" stroke="#fff" stroke-width="3" fill="none" opacity=".6"/></g>
+  <!-- the tide post: a striped pole in the water -->
+  <g id="si-tidepost"><rect x="452" y="440" width="12" height="190" fill="#fffaf0"/><g fill="#c4302b"><rect x="452" y="460" width="12" height="20"/><rect x="452" y="500" width="12" height="20"/><rect x="452" y="540" width="12" height="20"/><rect x="452" y="580" width="12" height="20"/></g><path d="M440 440 h36" stroke="#6b4423" stroke-width="6"/></g>
+
+  <!-- the beach -->
+  <path d="M0 640 Q300 600 700 640 T1600 600 V900 H0z" fill="url(#siSand)"/>
+  <path class="si-foam" d="M0 642 Q300 602 700 642 T1600 602" stroke="#fff" stroke-width="7" fill="none" opacity=".85"/>
+  <g fill="#d9b86a" opacity=".6"><circle cx="300" cy="780" r="3"/><circle cx="640" cy="820" r="2.5"/><circle cx="980" cy="860" r="3"/><circle cx="1220" cy="800" r="2.5"/><circle cx="820" cy="720" r="2"/></g>
+  <g fill="#fff3e0" stroke="#e2b38c" stroke-width="2"><path d="M560 860 q10 -14 20 0z"/><path d="M1120 870 q8 -12 16 0z"/></g>
+
+  <!-- the turtle nest in the dunes, with its little fence of shells -->
+  <g id="si-nest"><ellipse cx="200" cy="770" rx="70" ry="22" fill="#d9b86a"/><g fill="#fff3e0"><circle cx="134" cy="770" r="5"/><circle cx="150" cy="756" r="5"/><circle cx="176" cy="750" r="5"/><circle cx="204" cy="748" r="5"/><circle cx="232" cy="750" r="5"/><circle cx="256" cy="758" r="5"/><circle cx="268" cy="772" r="5"/></g>
+    <rect x="250" y="700" width="5" height="52" fill="#8a5a2b"/><rect x="204" y="690" width="100" height="26" rx="3" fill="#f3efe3" stroke="#8a5a2b" stroke-width="2"/><text x="254" y="707" text-anchor="middle" font-size="11" font-weight="700" fill="#3f8a4a" font-family="sans-serif">TURTLES</text>
+    <g id="si-eggs" fill="#fffaf0"><ellipse cx="190" cy="770" rx="7" ry="6"/><ellipse cx="206" cy="772" rx="7" ry="6"/><ellipse cx="198" cy="764" rx="7" ry="6"/></g></g>
+  <!-- the baby turtles scurrying to the sea at the very end -->
+  <g id="si-hatch"><g class="si-baby a"><ellipse rx="9" ry="7" fill="#3f6a3a"/><circle cx="-10" r="4" fill="#5a8a4a"/></g><g class="si-baby b"><ellipse rx="9" ry="7" fill="#3f6a3a"/><circle cx="-10" r="4" fill="#5a8a4a"/></g><g class="si-baby c"><ellipse rx="9" ry="7" fill="#3f6a3a"/><circle cx="-10" r="4" fill="#5a8a4a"/></g><g class="si-baby d"><ellipse rx="9" ry="7" fill="#3f6a3a"/><circle cx="-10" r="4" fill="#5a8a4a"/></g>
+    <g fill="#3f6a3a"><ellipse cx="170" cy="700" rx="9" ry="7"/><ellipse cx="140" cy="660" rx="9" ry="7"/><ellipse cx="200" cy="676" rx="9" ry="7"/></g></g>
+
+  <!-- palms on the right, a hammock between them, and the king's hut -->
+  <g class="palm b"><path d="M1060 640 q-30 -170 20 -330" stroke="#8a5a2b" stroke-width="16" fill="none"/><g stroke="#6b4423" stroke-width="3" opacity=".6"><path d="M1046 600 h22 M1040 540 h22 M1040 480 h22 M1046 420 h22 M1056 360 h22"/></g>
+    <g fill="#2f7a3a"><path d="M1080 310 q-90 -20 -150 40 q70 -30 150 -40z"/><path d="M1080 310 q80 -40 150 20 q-80 -20 -150 -20z"/><path d="M1080 310 q-30 -80 -110 -90 q70 30 110 90z"/><path d="M1080 310 q40 -80 120 -76 q-74 26 -120 76z"/><path d="M1080 310 q-10 50 -70 100 q40 -60 70 -100z"/></g>
+    <g id="si-coconuts" fill="#6b4423"><circle cx="1072" cy="322" r="11"/><circle cx="1090" cy="326" r="11"/><circle cx="1080" cy="338" r="10"/></g></g>
+  <!-- the parrot, on the palm -->
+  <g id="si-parrot"><g class="perch">
+    <path d="M1004 300 q7 -26 22 -28 q14 2 12 18 q-2 26 -20 40 q-14 -6 -14 -30z" fill="#e2483d"/>
+    <path d="M1010 318 q-4 30 -14 46 l10 -2 q10 -16 14 -40z" fill="#2f5f9a"/><path d="M1016 326 q-2 34 -6 48 l8 -4 q4 -18 4 -42z" fill="#f2c94c"/>
+    <path d="M1034 282 q12 2 12 12 q-6 -2 -12 4z" fill="#f3efe3"/><path d="M1044 290 q8 4 4 12 q-4 -4 -8 -6z" fill="#2a2a2a"/>
+    <circle cx="1030" cy="286" r="3" fill="#111"/><circle cx="1030.8" cy="285.2" r="1" fill="#fff"/>
+    <path class="wing" d="M1010 300 q-16 10 -12 34 q12 -8 18 -26z" fill="#3f8a4a"/></g></g>
+  <!-- the hut, with a lantern in the window -->
+  <g id="si-hut">
+    <rect x="1380" y="500" width="220" height="200" fill="#c99a5a"/>
+    <g stroke="#9a6a32" stroke-width="3"><path d="M1400 500 v200 M1430 500 v200 M1460 500 v200 M1490 500 v200 M1520 500 v200 M1550 500 v200 M1580 500 v200"/></g>
+    <path d="M1350 510 L1490 400 L1630 510z" fill="#6b8a3a"/><path d="M1360 504 l130 -96 M1380 510 l110 -84 M1600 510 l-110 -84" stroke="#4e6a2a" stroke-width="3"/>
+    <rect x="1420" y="560" width="70" height="140" fill="#5a3a1a"/>
+    <rect x="1512" y="550" width="60" height="50" fill="#2a1a0c" stroke="#8a5a2b" stroke-width="4"/><g id="si-lantern"><circle cx="1542" cy="575" r="30" fill="url(#siGlow)"/><rect x="1534" y="562" width="16" height="22" rx="3" fill="#ffcf6a"/></g>
+    <g id="si-shovel"><path d="M1370 560 L1354 700" stroke="#8a5a2b" stroke-width="6" stroke-linecap="round"/><path d="M1344 690 q-8 26 8 36 q16 -4 14 -32z" fill="#9aa0a7" stroke="#5a6068" stroke-width="2"/></g>
+  </g>
+  <!-- Captain Longstocking in his hammock, his crown on top of his captain's hat -->
+  <g id="si-captain"><g class="sway">
+    <path d="M1066 520 Q1220 610 1380 540" stroke="#d9c79a" stroke-width="5" fill="none"/>
+    <path d="M1080 524 Q1220 640 1370 548 Q1220 600 1080 524z" fill="#e8571f" opacity=".85"/>
+    <path d="M1160 572 q60 18 150 -10 q-10 -24 -40 -30 q-60 -6 -110 20z" fill="#1f3f6a"/>
+    <path d="M1300 548 l34 -12 M1300 560 l36 -6" stroke="#1a1a1a" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="1146" cy="548" r="26" fill="#e2b38c"/>
+    <path d="M1124 556 q4 34 26 34 q22 -4 22 -30 q-10 10 -24 10 q-14 0 -24 -14z" fill="#c4502b"/>
+    <path d="M1132 556 q14 -6 28 0" stroke="#c4502b" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M1136 546 q4 3 8 0 M1152 546 q4 3 8 0" stroke="#1a120c" stroke-width="2.5" fill="none"/>
+    <path d="M1110 534 Q1146 494 1184 534 Q1146 526 1110 534z" fill="#1a1a1a" stroke="#f2c94c" stroke-width="2.5"/>
+    <path d="M1130 512 l7 -14 l8 10 l7 -14 l7 14 l8 -10 l4 16z" fill="#f2c94c"/>
+    <g class="zz" font-family="Fredoka, sans-serif" font-weight="700" fill="#1f3f6a"><text x="1190" y="500" font-size="20">z</text><text x="1206" y="480" font-size="16">z</text></g>
+  </g></g>
+
+  <!-- the sundial, on a stone, with the spunk's jar next to it -->
+  <g id="si-sundial"><path d="M880 740 h100 l-12 -70 h-76z" fill="#b9b2a7" stroke="#8a8378" stroke-width="3"/><ellipse cx="930" cy="668" rx="62" ry="16" fill="#d8d2c7" stroke="#8a8378" stroke-width="3"/>
+    <g stroke="#6a6458" stroke-width="2"><path d="M886 668 h8 M966 668 h8 M930 654 v7 M900 660 l5 3 M960 660 l-5 3"/></g>
+    <path d="M930 668 L930 632 L946 668z" fill="#6a6458"/><path id="si-gnomshadow" d="M930 668 L884 676 L930 672z" fill="#000" opacity=".25"/></g>
+  <g id="si-spunk"><rect x="992" y="704" width="28" height="30" rx="5" fill="#cfe9f7" opacity=".8" stroke="#8ab0c4" stroke-width="2"/><rect x="990" y="700" width="32" height="6" rx="2" fill="#c4302b"/><g class="crawl"><ellipse cx="1006" cy="722" rx="6" ry="4" fill="#3f8a4a"/></g></g>
+
+  <!-- the horse, with a garland of flowers, under a sunshade -->
+  <g id="si-horse">
+    <path class="htail" d="M556 690 q20 6 16 44" stroke="#d9c79a" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <g stroke="#f6f1e7" stroke-width="12" stroke-linecap="round"><path d="M452 712 v52 M474 716 v50 M528 716 v50 M548 710 v54"/></g>
+    <g fill="#3a2a1a"><rect x="445" y="760" width="14" height="8" rx="2"/><rect x="467" y="762" width="14" height="8" rx="2"/><rect x="521" y="762" width="14" height="8" rx="2"/><rect x="541" y="760" width="14" height="8" rx="2"/></g>
+    <ellipse cx="500" cy="694" rx="62" ry="30" fill="#f6f1e7"/>
+    <g class="hhead"><path d="M456 678 q-20 -26 -28 -60 l26 -8 q8 30 28 52z" fill="#f6f1e7"/><path d="M454 676 q-22 -28 -28 -62" stroke="#d9c79a" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M432 610 q-14 -4 -26 6 q-12 12 -6 24 q7 8 18 6 q16 -2 22 -14 q4 -16 -8 -22z" fill="#f6f1e7"/><path d="M436 608 l2 -14 l8 12z" fill="#f6f1e7"/><circle cx="428" cy="620" r="3" fill="#1a1a1a"/>
+      <g fill="#e2808a"><circle cx="440" cy="660" r="6"/><circle cx="452" cy="672" r="6"/><circle cx="466" cy="680" r="6"/></g><g fill="#f2c94c"><circle cx="446" cy="666" r="5"/><circle cx="460" cy="676" r="5"/></g></g>
+    <g fill="#1a1a1a"><circle cx="486" cy="686" r="9"/><circle cx="528" cy="702" r="11"/><circle cx="512" cy="676" r="6"/></g>
+  </g>
+
+  <!-- Pippi, doing a handstand on the beach -->
+  <g id="si-pippi"><g class="handst">
+    <path d="M760 760 v-40 M790 760 v-40" stroke="#f3c9a4" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="775" cy="748" r="20" fill="#f3c9a4"/>
+    <path d="M755 752 q2 20 20 20 q18 0 20 -20 q-8 10 -20 10 q-12 0 -20 -10z" fill="#e8571f"/>
+    <path class="plait l" d="M758 760 l-22 14" stroke="#e8571f" stroke-width="7" stroke-linecap="round"/><path class="plait r" d="M792 760 l22 14" stroke="#e8571f" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="769" cy="746" r="2.4" fill="#111"/><circle cx="781" cy="746" r="2.4" fill="#111"/><path d="M768 738 q7 -6 14 0" stroke="#9a3a2a" stroke-width="2.4" fill="none"/>
+    <path d="M752 724 l8 -70 h30 l8 70z" fill="#3f8a4a"/>
+    <path d="M764 654 v-46 M786 654 v-46" stroke="#f3c9a4" stroke-width="9"/><path d="M764 630 h0 M786 630 h0" stroke="#6b4423" stroke-width="10"/>
+    <path d="M756 606 h16 M778 606 h16" stroke="#1a1a1a" stroke-width="10" stroke-linecap="round"/>
+  </g></g>
+  <!-- Tommy and Annika, with a bucket and spade -->
+  <g id="si-kids">
+    <g><path d="M1106 800 v-40 M1124 800 v-40" stroke="#2f3a6a" stroke-width="10"/><rect x="1098" y="704" width="34" height="60" rx="8" fill="#2f5f9a"/><rect x="1109" y="688" width="12" height="18" fill="#f3c9a4"/><circle cx="1115" cy="672" r="21" fill="#f3c9a4"/><path d="M1094 668 q2 -24 21 -24 q21 0 23 20 q-12 -10 -44 4z" fill="#e2c46a"/><circle cx="1122" cy="672" r="2.4" fill="#111"/><path d="M1118 684 q7 4 12 0" stroke="#9a3a2a" stroke-width="2" fill="none"/></g>
+    <g><path d="M1162 800 v-40 M1178 800 v-40" stroke="#f3c9a4" stroke-width="8"/><path d="M1150 764 l12 -60 h20 l12 60z" fill="#e2808a"/><rect x="1164" y="688" width="12" height="18" fill="#f3c9a4"/><circle cx="1170" cy="672" r="20" fill="#f3c9a4"/><path d="M1150 668 q0 -22 20 -22 q20 0 20 22 q-6 -8 -20 -8 q-14 0 -20 8z" fill="#c9a04a"/><path d="M1146 654 q24 -18 48 0z" fill="#f2c94c"/><circle cx="1176" cy="672" r="2.4" fill="#111"/><path d="M1172 684 q5 3 10 0" stroke="#9a3a2a" stroke-width="2" fill="none"/></g>
+    <path d="M1196 790 l7 -24 h22 l7 24z" fill="#e2483d"/><path d="M1200 766 q13 -12 26 0" stroke="#5a5a5a" stroke-width="2" fill="none"/>
+  </g>
+  <!-- Mr Nilsson, up the palm with a coconut -->
+  <g id="si-nilsson"><g class="climb">
+    <ellipse cx="1046" cy="430" rx="12" ry="16" fill="#2f5f9a"/><circle cx="1046" cy="408" r="12" fill="#8a5a3a"/><ellipse cx="1046" cy="412" rx="7" ry="5" fill="#e6c49a"/>
+    <circle cx="1042" cy="406" r="1.8" fill="#111"/><circle cx="1050" cy="406" r="1.8" fill="#111"/><path d="M1036 398 h20 l-3 -6 h-14z" fill="#e9d48a"/>
+    <path d="M1056 420 l12 -6 M1036 424 l-6 10" stroke="#8a5a3a" stroke-width="5" stroke-linecap="round"/><circle cx="1072" cy="412" r="9" fill="#6b4423"/>
+    <path d="M1040 444 q-12 14 -2 28" stroke="#8a5a3a" stroke-width="4" fill="none"/></g></g>
+  <!-- the crabs on the beach -->
+  <g class="si-crab a"><ellipse cx="640" cy="700" rx="10" ry="7" fill="#e2483d"/><path d="M630 698 l-7 -5 M650 698 l7 -5 M632 704 l-6 4 M648 704 l7 4" stroke="#e2483d" stroke-width="3"/><circle cx="636" cy="694" r="1.6" fill="#111"/><circle cx="644" cy="694" r="1.6" fill="#111"/></g>
+
+  <!-- the feast torches: lit at dusk -->
+  <g id="si-torches">
+    <g><rect x="346" y="660" width="6" height="90" fill="#6b4423"/><circle cx="349" cy="660" r="40" fill="url(#siGlow)"/><path class="flame" d="M341 662 q8 -26 8 -30 q8 12 8 30z" fill="#ffb03a"/></g>
+    <g><rect x="76" y="620" width="6" height="90" fill="#6b4423"/><circle cx="79" cy="620" r="40" fill="url(#siGlow)"/><path class="flame b" d="M71 622 q8 -26 8 -30 q8 12 8 30z" fill="#ffb03a"/></g>
+    <g><rect x="1210" y="620" width="6" height="90" fill="#6b4423"/><circle cx="1213" cy="620" r="40" fill="url(#siGlow)"/><path class="flame" d="M1205 622 q8 -26 8 -30 q8 12 8 30z" fill="#ffb03a"/></g>
+  </g>
+
+  <!-- the rain, in front of everything (only during the shower) -->
+  <g id="si-rain" stroke="#dfe9f3" stroke-width="2" opacity=".7"><g class="drops"><path d="M40 0 l-12 40 M140 60 l-12 40 M260 20 l-12 40 M380 90 l-12 40 M500 10 l-12 40 M620 70 l-12 40 M740 30 l-12 40 M860 100 l-12 40 M980 0 l-12 40 M1100 60 l-12 40 M1220 20 l-12 40 M1340 80 l-12 40 M1460 10 l-12 40 M1580 70 l-12 40 M80 200 l-12 40 M320 240 l-12 40 M560 200 l-12 40 M800 260 l-12 40 M1040 210 l-12 40 M1280 250 l-12 40 M1520 220 l-12 40 M200 400 l-12 40 M440 440 l-12 40 M680 400 l-12 40 M920 460 l-12 40 M1160 410 l-12 40 M1400 450 l-12 40 M120 620 l-12 40 M360 660 l-12 40 M600 620 l-12 40 M840 680 l-12 40 M1080 630 l-12 40 M1320 670 l-12 40 M1560 640 l-12 40"/></g></g>
+  <rect id="si-flash" width="1600" height="900" fill="#fff"/>
+  <!-- night falls over everything at dusk -->
+  <rect id="si-tint" width="1600" height="900" fill="#1b1f4a" opacity=".32"/>
+
+  <!-- the hotspots -->
+  <g class="hits">
+    <rect class="hit" fill="transparent" data-hs="sky7" data-label="The sky" x="0" y="0" width="1600" height="160"/>
+    <rect class="hit" fill="transparent" data-hs="ship7" data-label="The Hoppetossa" x="60" y="160" width="370" height="270"/>
+    <rect class="hit" fill="transparent" data-hs="lagoon7" data-label="The lagoon" x="0" y="430" width="440" height="170"/>
+    <rect class="hit" fill="transparent" data-hs="tidepost" data-label="The tide post" x="430" y="430" width="56" height="200"/>
+    <rect class="hit" fill="transparent" data-hs="islet7" data-label="Turtle Islet" x="560" y="340" width="360" height="300"/>
+    <rect class="hit" fill="transparent" data-hs="dig7" data-label="The X" x="672" y="440" width="64" height="40" id="hit-dig7"/>
+    <rect class="hit" fill="transparent" data-hs="nest7" data-label="The turtle nest" x="110" y="680" width="200" height="120"/>
+    <rect class="hit" fill="transparent" data-hs="torches7" data-label="Torches" x="40" y="580" width="80" height="140"/>
+    <rect class="hit" fill="transparent" data-hs="horse7" data-label="The horse" x="400" y="590" width="190" height="190"/>
+    <rect class="hit" fill="transparent" data-hs="pippi7" data-label="Pippi" x="730" y="596" width="90" height="190"/>
+    <rect class="hit" fill="transparent" data-hs="sundial" data-label="The sundial" x="866" y="620" width="122" height="130"/>
+    <rect class="hit" fill="transparent" data-hs="spunk7" data-label="Jam jar" x="986" y="694" width="42" height="44" id="hit-spunk7"/>
+    <rect class="hit" fill="transparent" data-hs="kids7" data-label="Tommy and Annika" x="1090" y="640" width="150" height="170"/>
+    <rect class="hit" fill="transparent" data-hs="palm7" data-label="The coconut palm" x="1040" y="300" width="70" height="320"/>
+    <rect class="hit" fill="transparent" data-hs="parrot7" data-label="The parrot" x="990" y="268" width="62" height="100"/>
+    <rect class="hit" fill="transparent" data-hs="nilsson7" data-label="Mr Nilsson" x="1026" y="390" width="56" height="90"/>
+    <rect class="hit" fill="transparent" data-hs="captain7" data-label="Captain Longstocking" x="1100" y="490" width="250" height="110"/>
+    <rect class="hit" fill="transparent" data-hs="hut7" data-label="The king's hut" x="1390" y="420" width="210" height="280"/>
+    <rect class="hit" fill="transparent" data-hs="shovel7" data-label="A spade" x="1336" y="560" width="44" height="170" id="hit-shovel7"/>
+  </g>
+</svg>

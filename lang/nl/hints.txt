@@ -167,3 +167,37 @@
 > Vanuit het kraaiennest zie je het eiland, vanaf het dek niet. Denk aan de vorm van de aarde.
 = Choose: the Earth is round, so from higher up you can see further over the bend of the sea.
 > Kies: de aarde is rond, dus van hoger kun je verder over de bocht van de zee heen kijken.
+
+# ---------- Chapter 7 ----------
+= The captain is asleep in his hammock. Wake him up: he has something for Pippi.
+> De kapitein slaapt in zijn hangmat. Maak hem wakker: hij heeft iets voor Pippi.
+= Click Captain Longstocking in the hammock. He gives you his treasure map.
+> Klik op kapitein Langkous in de hangmat. Hij geeft je zijn schatkaart.
+= Before you can walk to Turtle Islet, you need to know what time it is. There are no clocks on the island, but there is a sundial.
+> Voordat je naar het Schildpadeilandje kunt lopen, moet je weten hoe laat het is. Er zijn geen klokken op het eiland, maar wel een zonnewijzer.
+= Click the sundial. The shadow points away from the sun: click the 9. At 12 o'clock the shadow is shortest.
+> Klik op de zonnewijzer. De schaduw wijst van de zon af: klik op de 9. Om 12 uur is de schaduw het kortst.
+= It's 9 o'clock and the water is at the top of the tide post. The sign says: about 6 hours out, then 6 hours back in.
+> Het is 9 uur en het water staat bovenaan de getijdenpaal. Op het bordje staat: ongeveer 6 uur weg, dan 6 uur terug.
+= Click the tide post: 9 + 6 hours = 3 o'clock. And it's the Moon that pulls the sea in and out.
+> Klik op de getijdenpaal: 9 + 6 uur = 3 uur. En het is de maan die de zee heen en weer trekt.
+= Low tide! Take the captain's map to Turtle Islet. His paces are 1 metre long; other people's are shorter.
+> Eb! Neem de kaart van de kapitein mee naar het Schildpadeilandje. Zijn passen zijn 1 meter lang; die van anderen zijn korter.
+= Select the map and click Turtle Islet. 12 metres is 24 of Pippi's paces (50 cm), 30 of Tommy's (40 cm), 40 of Annika's (30 cm) or 6 of the horse's (2 m).
+> Kies de kaart en klik op het Schildpadeilandje. 12 meter is 24 passen van Pippi (50 cm), 30 van Tommy (40 cm), 40 van Annika (30 cm) of 6 van het paard (2 m).
+= There's the X! You need something to dig with. Kings don't dig their own holes, but they do own a spade.
+> Daar is de X! Je hebt iets nodig om mee te graven. Koningen graven hun eigen gaten niet, maar ze hebben wel een schep.
+= Take the spade leaning on the king's hut, select it and click the X on Turtle Islet.
+> Pak de schep die tegen de hut van de koning staat, kies hem en klik op de X op het Schildpadeilandje.
+= The chest's lock wants a chain: from the one who feeds everybody to the one who eats the most.
+> Het slot van de kist wil een ketting: van degene die iedereen voedt tot degene die het meest eet.
+= Click the chest and put in: the Sun, seaweed, a crab, an octopus. (Not the coconut.)
+> Klik op de kist en zet erin: de zon, zeewier, een krab, een octopus. (Niet de kokosnoot.)
+= A tropical shower! Light arrives at once, but thunder travels about 1 km every 3 seconds.
+> Een tropische bui! Licht is er meteen, maar donder legt maar ongeveer 1 km per 3 seconden af.
+= Click the sky (or the captain) and watch: 9 seconds = 3 km. Then 3 seconds = 1 km: it's coming closer, so everybody into the hut.
+> Klik op de lucht (of de kapitein) en let op: 9 seconden = 3 km. Dan 3 seconden = 1 km: het komt dichterbij, dus iedereen de hut in.
+= The turtles are hatching! Baby turtles crawl towards the brightest light. On a dark beach that should be the sea.
+> De schildpadjes komen uit! Ze kruipen naar het felste licht. Op een donker strand hoort dat de zee te zijn.
+= Click the turtle nest. Switch off the torch by the nest, the torch on the dunes and the lantern in the hut window; leave the feast torches behind the hut on. Then let them go!
+> Klik op het schildpaddennest. Doe de fakkel bij het nest, de fakkel op de duinen en de lantaarn voor het raam van de hut uit; laat de feestfakkels achter de hut aan. Laat ze dan gaan!

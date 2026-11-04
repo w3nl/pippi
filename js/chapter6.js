@@ -50,7 +50,7 @@ function applyShip(){
   show('#hp-night', night); show('#hp-stars', night); show('#hp-moon', night); show('#hp-dark', night); show('#hp-glow', night);
   show('#hp-dusk', dawn); show('#hp-dawnsun', dawn);
   show('#hp-harbour', !S.f.course); show('#hit-quay6', !S.f.course); show('#hp-seafar', !!S.f.course);
-  show('#hp-isletip', dawn); show('#hp-isle', !!S.f.out6);
+  show('#hp-isletip', dawn); show('#hp-isle', !!S.f.out6); show('#hit-isle6', !!S.f.out6);
   show('#hp-qhorse', !S.f.aboard); show('#hit-horse6q', !S.f.aboard);
   show('#hp-dhorse', !!S.f.aboard); show('#hit-horse6d', !!S.f.aboard);
   show('#hp-ropelong', !S.f.aboard); show('#hp-ropeshort', !!S.f.aboard);
@@ -120,6 +120,7 @@ Object.assign(H, {
       return say(['pippi', "I'm King Neptune, the king of the sea! Everybody who crosses the Equator for the first time gets a bucket of water over their head. Ready?"]); }
     say(['pippi', S.f.out6 ? "Daddy's island! I'm going to be a princess. A thing-searching princess." : S.f.course ? "I'm the figurehead! Look, no hands!" : "I've never sailed to the South Seas, so I'm sure I'll be very good at it."]);
   },
+  isle6(){ if(S.f.out6) startCh7(); },   // ashore: on to Chapter 7
   log6(){ openLog6(); },
   case6(){
     if(S.f.sextTaken) return say("The instrument box. Empty, apart from a pair of dividers and a very old biscuit.");

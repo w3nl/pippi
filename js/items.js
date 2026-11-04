@@ -113,5 +113,20 @@ function useItem(item, hs){
     if(hs==='pippi6') return say(['pippi', "I can see you! Your freckle is enormous. Well, my freckles are, anyway."]);
     return say("Through the spyglass, everything nearby is a blur. It's for things far away.");
   }
+  if(item==='map'){
+    if(hs==='islet7') return S.f.tide ? openPaces7() : say("Turtle Islet is still cut off by the water. Wait for low tide.");
+    if(hs==='captain7') return say([['captain', "Zzz… my map? You keep it, sailor. Twelve of MY paces… zzz…"]]);
+    if(hs==='nilsson7') return say([['nilsson', "Eek!"], "Mr Nilsson wants to eat the map. You hold it up high."]);
+    return say("The map shows Turtle Islet, out in the lagoon. That's where the X is.");
+  }
+  if(item==='spade'){
+    if((hs==='dig7' || hs==='islet7') && S.f.paces && !S.f.dug){
+      take('spade'); S.f.dug = true; save(); applyVisuals(); beep(180,.15,'square',.03);
+      return say(["You dig, and dig, and dig. Pippi helps, with her hands, very fast. Sand flies everywhere.", "CLONK! The spade hits wood. A treasure chest, with a strange lock on its lid!"]);
+    }
+    if(hs==='islet7' || hs==='dig7') return say(S.f.tide ? "Where to dig? The map says: 12 of the captain's paces from the turtle rock." : "Turtle Islet is still cut off by the water.");
+    if(hs==='captain7') return say([['captain', "Dig me up later, sailor. Zzz."]]);
+    return say("You dig a little hole. Nothing in it but sand and an offended crab. The X is somewhere else.");
+  }
   say("That doesn't do anything useful.");
 }

@@ -152,6 +152,21 @@ test('Chapter 6 in Dutch and Swedish: the captain, the compass points and the ch
   }
 });
 
+test('Chapter 7 in Dutch and Swedish: the island, the parrot and the chapter title', async ({ page }) => {
+  for (const [lang, chap, parrot, nest] of [['nl', 'Hoofdstuk 7 · Het eiland in de Stille Zuidzee', 'De papegaai', 'Het schildpaddennest'], ['sv', 'Kapitel 7 · Ön i Söderhavet', 'Papegojan', 'Sköldpaddsboet']]) {
+    await seed(page, { ch: 7, scene: 'island', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6', '-ch7']);
+    await page.evaluate(([KEY, lang]) => localStorage.setItem(KEY + '-lang', lang), [KEY, lang]);
+    await page.reload();
+    await page.locator('#btn-cont').click();
+    await skip(page);
+    await expect(page.locator('#chap')).toHaveText(chap);
+    await expect(page.locator('#sc-island [data-hs="nest7"]')).toHaveAttribute('data-label', nest);
+    await hs(page, 'parrot7');
+    await expect(page.locator('#d-who')).toHaveText(parrot);
+    await skip(page);
+  }
+});
+
 test('every Dutch and Swedish translation still matches the English text', () => {
   // Fails when English text changed without updating lang/nl (a stale key), or one text has two translations.
   const tool = path.join(__dirname, '..', 'tools', 'i18n-check.js');

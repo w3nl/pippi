@@ -41,7 +41,7 @@ function stage2(){
   if(!S.f.swapped) return 'b_scale';
   return 'b_wake';
 }
-function stage_(){ return S.ch===6 ? stage6() : S.ch===5 ? stage5() : S.ch===4 ? stage4() : S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
+function stage_(){ return S.ch===7 ? stage7() : S.ch===6 ? stage6() : S.ch===5 ? stage5() : S.ch===4 ? stage4() : S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
 Object.assign(HINTS, {
   s_drawer: ["The chalk box is empty. Miss keeps the chalk in her desk drawer, and she has written herself a note about its code.", "The plaque over the door says MDCCCXCIV: 1000 + 500 + 300 + 90 + 4 = 1894. Set the desk's padlock to 1 8 9 4."],
   s_nines: ["Task 1: Pippi's nines on the blackboard have three mistakes. The poster next to the board shows the nines trick.", "Use the chalk on the blackboard and mark 9 × 5, 9 × 8 and 9 × 10 (they should be 45, 72 and 90). Then click Done marking."],
@@ -104,4 +104,25 @@ function stage6(){
   if(!S.f.water) return 'h_water';
   if(!S.f.equator) return S.inv.includes('sextant') ? 'h_equator' : 'h_sextant';
   return S.inv.includes('spyglass') ? 'h_landho' : 'h_glass';
+}
+
+Object.assign(HINTS, {
+  i_map: ["The captain is asleep in his hammock. Wake him up: he has something for Pippi.", "Click Captain Longstocking in the hammock. He gives you his treasure map."],
+  i_sundial: ["Before you can walk to Turtle Islet, you need to know what time it is. There are no clocks on the island, but there is a sundial.", "Click the sundial. The shadow points away from the sun: click the 9. At 12 o'clock the shadow is shortest."],
+  i_tide: ["It's 9 o'clock and the water is at the top of the tide post. The sign says: about 6 hours out, then 6 hours back in.", "Click the tide post: 9 + 6 hours = 3 o'clock. And it's the Moon that pulls the sea in and out."],
+  i_paces: ["Low tide! Take the captain's map to Turtle Islet. His paces are 1 metre long; other people's are shorter.", "Select the map and click Turtle Islet. 12 metres is 24 of Pippi's paces (50 cm), 30 of Tommy's (40 cm), 40 of Annika's (30 cm) or 6 of the horse's (2 m)."],
+  i_spade: ["There's the X! You need something to dig with. Kings don't dig their own holes, but they do own a spade.", "Take the spade leaning on the king's hut, select it and click the X on Turtle Islet."],
+  i_chest: ["The chest's lock wants a chain: from the one who feeds everybody to the one who eats the most.", "Click the chest and put in: the Sun, seaweed, a crab, an octopus. (Not the coconut.)"],
+  i_storm: ["A tropical shower! Light arrives at once, but thunder travels about 1 km every 3 seconds.", "Click the sky (or the captain) and watch: 9 seconds = 3 km. Then 3 seconds = 1 km: it's coming closer, so everybody into the hut."],
+  i_turtles: ["The turtles are hatching! Baby turtles crawl towards the brightest light. On a dark beach that should be the sea.", "Click the turtle nest. Switch off the torch by the nest, the torch on the dunes and the lantern in the hut window; leave the feast torches behind the hut on. Then let them go!"]
+});
+function stage7(){
+  if(!S.f.mapTaken) return 'i_map';
+  if(!S.f.sundial) return 'i_sundial';
+  if(!S.f.tide) return 'i_tide';
+  if(!S.f.paces) return 'i_paces';
+  if(!S.f.dug) return 'i_spade';
+  if(!S.f.chest) return 'i_chest';
+  if(!S.f.storm) return 'i_storm';
+  return 'i_turtles';
 }
