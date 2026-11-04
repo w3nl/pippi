@@ -362,7 +362,8 @@
 
     <!-- Tommy and Annika, from behind -->
     <g id="sl-ta">
-        <path d="M466 760 q0-70 44-80 q44 10 44 80z" fill="#2f5f9a" />
+        <rect x="502" y="660" width="16" height="24" rx="4" fill="#f3c9a4" />
+        <path d="M466 760 q0-76 44-86 q44 10 44 86z" fill="#2f5f9a" />
         <circle cx="481" cy="646" r="6" fill="#f3c9a4" />
         <circle cx="539" cy="646" r="6" fill="#f3c9a4" />
         <circle cx="510" cy="640" r="30" fill="#7a4a22" />
@@ -375,10 +376,10 @@
 
     <!-- Pippi, from behind like the others, facing the blackboard: red plaits sticking straight out -->
     <g id="sl-pippi">
-        <path d="M820 760 q0-72 50-82 q50 10 50 82z" fill="#3f8a4a" />
+        <!-- her neck (short: only a little shows above the collar) and ears -->
+        <rect x="862" y="656" width="16" height="16" rx="4" fill="#f3c9a4" />
+        <path d="M820 760 q0-76 50-88 q50 12 50 88z" fill="#3f8a4a" />
         <path d="M840 700 l30 18 l30 -18" fill="none" stroke="#f2c94c" stroke-width="5" />
-        <!-- her neck and ears -->
-        <rect x="862" y="656" width="16" height="22" rx="4" fill="#f3c9a4" />
         <ellipse cx="841" cy="640" rx="5" ry="7" fill="#f3c9a4" />
         <ellipse cx="899" cy="640" rx="5" ry="7" fill="#f3c9a4" />
         <!-- the plaits grow out of her head, a bit thicker at the root, tied with blue ribbons -->
