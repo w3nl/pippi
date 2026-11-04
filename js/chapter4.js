@@ -14,6 +14,7 @@ function applyCircus(){
   show('#ct-finale', !!S.f.out4);
   show('#ct-curtain', !S.f.out4);
   show('#ct-curtain-open', !!S.f.out4);
+  show('#ct-confetti', !!S.f.out4);
   TASKS4.forEach((key, i) => show('#ct-tick' + i, !!S.f[key]));
   for(let i = 0; i < 5; i++){
     const star = $('#ct-star' + i);

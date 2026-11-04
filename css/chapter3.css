@@ -62,13 +62,11 @@
 .s3-dot.red{background:#e2483d} .s3-dot.yellow{background:#f2c94c} .s3-dot.sun{background:#ffd25a;box-shadow:0 0 6px #ffd25a}
 
 /* ---------- the classroom comes alive (all stopped by the Motion setting: see css/animations.css) ---------- */
-@keyframes chase{0%,100%{transform:translateX(0)}50%{transform:translateX(-26px)}}
+@keyframes peek{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 @keyframes plait{0%,100%{transform:rotate(0)}50%{transform:rotate(-6deg)}}
 @keyframes slsec{to{transform:rotate(360deg)}}
 #sl-horse.nod{transform-box:fill-box;transform-origin:70% 100%;animation:nod 4s ease-in-out infinite}
-#sl-chase{animation:chase 3.2s ease-in-out infinite}
-#sl-chase .arm{transform-box:fill-box;transform-origin:100% 100%;animation:wave .5s ease-in-out infinite}
-#sl-chase .arm.b{transform-origin:0% 100%;animation-delay:-.25s}
+#sl-teacher{animation:peek 3s ease-in-out infinite}
 #sl-nilsson{animation:bob 2.4s ease-in-out infinite}
 #sl-pippi .plait{transform-box:fill-box;transform-origin:100% 100%;animation:plait 2.8s ease-in-out infinite}
 #sl-pippi .plait.b{transform-origin:0% 100%;animation-direction:reverse}

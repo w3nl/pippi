@@ -29,7 +29,7 @@ function applySchool(){
   for(let i = 0; i < 5; i++){ const st = $('#sl-star' + i); if(st) st.setAttribute('fill', i < n ? '#f2c94c' : 'none'); }
   [[5, 4], [8, 7], [10, 9]].forEach(([m, i]) => { const t = $('#sl-n' + m); if(t) t.textContent = `9×${m}=${S.f.nines ? 9 * m : NINES3[i]}`; });
   show('#sl-hol', !!S.f.out3);
-  show('#sl-chase', !S.f.out3);
+  show('#sl-teacher', !S.f.out3);
 }
 
 /* Annika sticks a gold star on Pippi's chart after every task. */
@@ -44,7 +44,7 @@ Object.assign(H, {
   spunk3(){ S.f.spunkTaken = true; give('spunk'); applyVisuals(); say(["The spunk, in its jam jar on Pippi's desk. Pippi has brought it to school. \"It wants to learn things,\" she says.", "You take it. A spunk knows things, even at school. Especially at school."]); },
   window3(){
     if(S.f.out3) return say("The horse is lying in the sun in the schoolyard, full of geraniums. It's on holiday too.");
-    say(["Out in the schoolyard, Pippi's horse is eating Miss's flowerbed, one geranium at a time.", "Miss is running round and round after it, waving her arms. The horse thinks it's a game. It's winning."]);
+    say(["Out in the schoolyard, Pippi's horse is eating Miss's flowerbed, one geranium at a time.", "Miss chased it round and round for a while. The horse thought it was a game, and won. Now she's watching you all through the little window in the door instead."]);
   },
   board(){ openBoard(); },
   tables(){ openTables(); },
@@ -55,9 +55,13 @@ Object.assign(H, {
     say([tx("Pippi's gold-star chart: {n} of 5 stars.", { n }), n >= 5 ? "All five! Now for the bell." : "Annika sticks on a star for every task on the blackboard that's done."]);
   },
   plaque(){ say(["A brass plaque over the door: BUILT IN MDCCCXCIV.", "Roman numerals. Grown-ups like them for things that are meant to look important. The chart next to the clock says what each letter is worth."]); },
+  teacher3(){
+    if(S.f.out3) return say("Miss has come back in. She's handing out certificates and humming.");
+    say([['teacher', stars3() >= 5 ? "Five gold stars? Then what are you waiting for? The bell is on my desk!" : "No help through the window! Well… one little tip: the blackboard says what to do. Five tasks, five gold stars, then the bell."]]);
+  },
   door3(){
     if(S.f.out3) return startCh4();
-    say(["The classroom door. Miss went out through it to catch the horse.", "You could go out too. But Pippi wants her holidays properly: with gold stars, and the bell."]);
+    say(["The classroom door. Miss is right outside, peering in through its little window.", "You could go out too. But Pippi wants her holidays properly: with gold stars, and the bell."]);
   },
   tdesk(){ openDrawer3(); },
   register(){ openRegister(); },
@@ -362,7 +366,7 @@ function intro3(){
        ["teacher", "Holidays are for children who have done their work, Pippi. There are five tasks on the blackboard. Do them all, and when I ring the bell at twelve, you'll get your holidays too."],
        ["pippi", "Five tasks! I've never done a task before, so I'm sure I can. And my friend here will help me."],
        ["sys", "Outside, a loud munching noise. Pippi's horse is eating the flowerbed in the schoolyard."],
-       ["teacher", "My geraniums! Annika, you're in charge of the gold stars. I'll be back in a moment!"],
+       ["teacher", "My geraniums! Annika, you're in charge of the gold stars. I'll keep an eye on you through the window in the door!"],
        ["you", "Five tasks before twelve. But the chalk box is empty. Miss must keep the chalk somewhere."]],
     () => { S.f.introDone = true; save(); });
 }

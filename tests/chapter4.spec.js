@@ -56,6 +56,7 @@ test('Chapter 4: Pippi joins the circus', async ({ page }) => {
   await page.locator('#btn-stay').click();
   await skip(page);
   await expect(page.locator('#ct-finale')).toBeVisible();
+  await expect(page.locator('#ct-confetti')).toBeVisible();
 });
 
 test('Chapter 4 hints follow the unsolved act', async ({ page }) => {

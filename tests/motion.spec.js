@@ -50,30 +50,36 @@ test('"Motion off" stops everything, in every room', async ({ page }) => {
   expect(await moving(page)).toBe(0);
   // and the classroom
   await page.evaluate(() => { S.ch = 3; S.scene = 'school'; S.f = {}; applyVisuals(); });
-  await expect(page.locator('#sl-chase')).toBeVisible();
+  await expect(page.locator('#sl-teacher')).toBeVisible();
   expect(await moving(page)).toBe(0);
   await page.evaluate(() => { S.ch = 4; S.scene = 'circus'; S.f = {}; applyVisuals(); });
   expect(await moving(page)).toBe(0);
 });
 
-test('the classroom moves: the horse munches, Miss chases it, the clock ticks', async ({ page }) => {
+test('the classroom moves: the horse munches, Miss bobs at the door window, the clock ticks', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   await seed(page, { ch: 3, scene: 'school', f: { introDone: true } }, ['-ch2', '-ch3']);
   await page.locator('#btn-cont').click();
   await skip(page);
   expect(await anim(page, '#sl-horse')).toBe('nod');
-  expect(await anim(page, '#sl-chase')).toBe('chase');
+  expect(await anim(page, '#sl-teacher')).toBe('peek');
   expect(await anim(page, '.sl-sec')).toBe('slsec');
   expect(await moving(page)).toBeGreaterThan(8);
 });
 
-test('the circus lights twinkle', async ({ page }) => {
+test('the circus lights, beams and trapeze artists move', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   await seed(page, { ch: 4, scene: 'circus', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4']);
   await page.locator('#btn-cont').click();
   await skip(page);
-  expect(await anim(page, '.ct-lights')).toBe('ctTwinkle');
-  expect(await moving(page)).toBeGreaterThan(0);
+  expect(await anim(page, '.ct-lights circle')).toBe('ctTwinkle');
+  expect(await anim(page, '.ct-theatre-beam.beam-a')).toBe('ctBeamRed');
+  expect(await anim(page, '.ct-trapeze.swing-a')).toBe('ctSwing');
+  expect(await anim(page, '.ct-juggle-ball')).toBe('ctToss');
+  expect(await moving(page)).toBeGreaterThan(8);
+  await page.evaluate(() => { S.f.out4 = true; applyVisuals(); });
+  await expect(page.locator('#ct-confetti')).toBeVisible();
+  expect(await anim(page, '.ct-confetto')).toBe('ctConfetti');
 });
 
 test('a new item pops into your pockets', async ({ page }) => {

@@ -147,3 +147,5 @@
 > Biljetter, tack!
 = Step inside
 > Välkommen in
+= Miss, at the window in the door
+> Fröken, i fönstret i dörren
