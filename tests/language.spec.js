@@ -106,7 +106,7 @@ test('Chapter 3: Pippi\'s own word for multiplying, in every language', async ({
 });
 
 test('Chapter 4 in Dutch and Swedish: Kling and Klang, the garden gate and the chapter title', async ({ page }) => {
-  for (const [lang, chap, gate, who] of [['nl', 'Hoofdstuk 4 · Sneeuwballengevecht', 'Tuinhek', 'Klang'], ['sv', 'Kapitel 4 · Snöbollskrig', 'Grinden', 'Klang']]) {
+  for (const [lang, chap, gate, line] of [['nl', 'Hoofdstuk 4 · Sneeuwballengevecht', 'Tuinhek', 'Ons fort is klaar'], ['sv', 'Kapitel 4 · Snöbollskrig', 'Grinden', 'Vår fästning är klar']]) {
     await seed(page, { ch: 4, scene: 'winter', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4']);
     await page.evaluate(([KEY, lang]) => localStorage.setItem(KEY + '-lang', lang), [KEY, lang]);
     await page.reload();
@@ -115,8 +115,8 @@ test('Chapter 4 in Dutch and Swedish: Kling and Klang, the garden gate and the c
     await expect(page.locator('#chap')).toHaveText(chap);
     await expect(page.locator('#sc-winter [data-hs="gate4"]')).toHaveAttribute('data-label', gate);
     await hs(page, 'police4');
-    await page.locator('#dialog').click();
-    await expect(page.locator('#d-who')).toHaveText(who);
+    await expect(page.locator('#d-who')).toHaveText('Kling');
+    await expect(page.locator('#d-txt')).toContainText(line);
     await skip(page);
   }
 });

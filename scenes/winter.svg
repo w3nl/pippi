@@ -295,7 +295,8 @@
             <path d="M372 724 h110 q14 0 16 -14" stroke="#6b4423" stroke-width="4" fill="none" />
             <rect x="380" y="700" width="96" height="16" rx="3" fill="#c4302b" />
             <path d="M392 716 v8 M464 716 v8" stroke="#6b4423" stroke-width="4" />
-            <g id="wt-sledgeballs" style="display:none" fill="#fff" stroke="#c9d8e8" stroke-width="2">
+            <g id="wt-sledgeballs" style="display:none" fill="#fff" stroke="#c9d8e8"
+                stroke-width="2">
                 <circle cx="400" cy="694" r="9" />
                 <circle cx="420" cy="694" r="9" />
                 <circle cx="440" cy="694" r="9" />
@@ -431,7 +432,8 @@
     <!-- Pippi's enormous snowball; at the end it rolls right over the policemen's fort -->
     <g id="wt-bigball">
         <circle cx="840" cy="760" r="58" fill="#fff" stroke="#d9e4ef" stroke-width="4" />
-        <path d="M812 742 q10 -8 22 -4 M850 784 q12 2 18 -8" stroke="#d9e4ef" stroke-width="3" fill="none" stroke-linecap="round" />
+        <path d="M812 742 q10 -8 22 -4 M850 784 q12 2 18 -8" stroke="#d9e4ef" stroke-width="3"
+            fill="none" stroke-linecap="round" />
     </g>
 
     <!-- the snowball fight, at last (only while things move) -->

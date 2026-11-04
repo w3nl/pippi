@@ -184,7 +184,8 @@
     <!-- the harbour: the town on its hill, Villa Villekulla among the houses, the quay with the
     horse waiting -->
     <g id="hp-harbour">
-        <path d="M0 548 L0 392 Q90 356 180 380 Q230 394 260 548 Z" fill="#eef3f8" stroke="#c9d8e8" stroke-width="2" />
+        <path d="M0 548 L0 392 Q90 356 180 380 Q230 394 260 548 Z" fill="#eef3f8" stroke="#c9d8e8"
+            stroke-width="2" />
         <g>
             <rect x="12" y="374" width="34" height="28" fill="#e9d9c0" />
             <path d="M8 376 l21 -16 l21 16z" fill="#b5342a" />
@@ -628,7 +629,9 @@
     </g>
     <rect width="1600" height="900" fill="url(#hpVign)" pointer-events="none" />
     <!-- snow falling on the harbour; out at sea it stays behind -->
-    <clipPath id="hpSnowClip"><rect width="1600" height="548" /></clipPath>
+    <clipPath id="hpSnowClip">
+        <rect width="1600" height="548" />
+    </clipPath>
     <g id="hp-snow" fill="#fff" pointer-events="none" clip-path="url(#hpSnowClip)"></g>
 
     <!-- hotspots -->

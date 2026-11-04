@@ -29,7 +29,9 @@
             <stop offset=".6" stop-color="#000" stop-opacity="0" />
             <stop offset="1" stop-color="#000" stop-opacity=".45" />
         </radialGradient>
-        <clipPath id="slDoorWin"><rect x="1414" y="224" width="102" height="106" /></clipPath>
+        <clipPath id="slDoorWin">
+            <rect x="1414" y="224" width="102" height="106" />
+        </clipPath>
     </defs>
 
     <!-- wall, ceiling, wood panelling, floor -->
@@ -86,20 +88,28 @@
             <!-- the horse, white with black spots, munching -->
             <g id="sl-horse" class="nod">
                 <!-- tail -->
-                <path d="M238 358 q16 4 12 30" stroke="#d9c79a" stroke-width="5" fill="none" stroke-linecap="round" />
+                <path d="M238 358 q16 4 12 30" stroke="#d9c79a" stroke-width="5" fill="none"
+                    stroke-linecap="round" />
                 <!-- legs -->
                 <g stroke="#f6f1e6" stroke-width="7" stroke-linecap="round">
                     <path d="M178 380 v28 M192 382 v27 M218 382 v27 M232 378 v28" />
                 </g>
-                <g fill="#3a2a1a"><rect x="174" y="405" width="8" height="5" rx="1" /><rect x="188" y="406" width="8" height="5" rx="1" /><rect x="214" y="406" width="8" height="5" rx="1" /><rect x="228" y="405" width="8" height="5" rx="1" /></g>
+                <g fill="#3a2a1a">
+                    <rect x="174" y="405" width="8" height="5" rx="1" />
+                    <rect x="188" y="406" width="8" height="5" rx="1" />
+                    <rect x="214" y="406" width="8" height="5" rx="1" />
+                    <rect x="228" y="405" width="8" height="5" rx="1" />
+                </g>
                 <!-- body -->
                 <ellipse cx="206" cy="364" rx="36" ry="19" fill="#f6f1e6" />
                 <!-- neck, sloping down to the flowers -->
                 <path d="M182 352 q-22 6 -34 26 l14 8 q10 -14 28 -18z" fill="#f6f1e6" />
                 <!-- mane along the top of the neck -->
-                <path d="M184 350 q-22 4 -36 26" stroke="#d9c79a" stroke-width="5" fill="none" stroke-linecap="round" />
+                <path d="M184 350 q-22 4 -36 26" stroke="#d9c79a" stroke-width="5" fill="none"
+                    stroke-linecap="round" />
                 <!-- head: long, pointing down, munching a geranium -->
-                <path d="M146 376 q-8 4 -10 14 q-2 10 6 12 q10 2 16 -6 q6 -10 2 -18 q-6 -6 -14 -2z" fill="#f6f1e6" />
+                <path d="M146 376 q-8 4 -10 14 q-2 10 6 12 q10 2 16 -6 q6 -10 2 -18 q-6 -6 -14 -2z"
+                    fill="#f6f1e6" />
                 <path d="M150 374 l-2 -9 l8 6z" fill="#f6f1e6" />
                 <circle cx="152" cy="382" r="2" fill="#1a1a1a" />
                 <circle cx="141" cy="397" r="1.6" fill="#8a7a6a" />
@@ -111,7 +121,8 @@
                     <circle cx="168" cy="368" r="3" />
                 </g>
             </g>
-            <path id="sl-whitecap" style="display:none" d="M178 350 q28 -14 56 0 q-28 -5 -56 0z" fill="#fff" />
+            <path id="sl-whitecap" style="display:none" d="M178 350 q28 -14 56 0 q-28 -5 -56 0z"
+                fill="#fff" />
             <g id="sl-snow" fill="#fff" style="display:none"></g>
         </g>
         <rect x="164" y="122" width="10" height="296" fill="#e9e1cc" />
@@ -272,10 +283,17 @@
                 <path d="M1455 312 l10 8 l10 -8" fill="#fffaf0" />
                 <circle cx="1465" cy="246" r="11" fill="#6b4423" />
                 <ellipse cx="1465" cy="282" rx="22" ry="25" fill="#f3c9a4" />
-                <path d="M1442 280 q-2 -28 23 -29 q25 1 23 29 q-6 -15 -23 -17 q-17 2 -23 17z" fill="#6b4423" />
-                <g fill="none" stroke="#2b2118" stroke-width="2"><circle cx="1456" cy="283" r="6" /><circle cx="1474" cy="283" r="6" /><path d="M1462 283 h6" /></g>
-                <circle cx="1456" cy="283" r="2.2" fill="#1a120c" /><circle cx="1474" cy="283" r="2.2" fill="#1a120c" />
-                <path d="M1458 297 q7 4 14 0" stroke="#9a3a2a" stroke-width="2.4" fill="none" stroke-linecap="round" />
+                <path d="M1442 280 q-2 -28 23 -29 q25 1 23 29 q-6 -15 -23 -17 q-17 2 -23 17z"
+                    fill="#6b4423" />
+                <g fill="none" stroke="#2b2118" stroke-width="2">
+                    <circle cx="1456" cy="283" r="6" />
+                    <circle cx="1474" cy="283" r="6" />
+                    <path d="M1462 283 h6" />
+                </g>
+                <circle cx="1456" cy="283" r="2.2" fill="#1a120c" />
+                <circle cx="1474" cy="283" r="2.2" fill="#1a120c" />
+                <path d="M1458 297 q7 4 14 0" stroke="#9a3a2a" stroke-width="2.4" fill="none"
+                    stroke-linecap="round" />
             </g>
         </g>
         <rect x="1412" y="360" width="106" height="120" rx="3" fill="none" stroke="#5a3a1a"
@@ -393,19 +411,23 @@
         <ellipse cx="899" cy="640" rx="5" ry="7" fill="#f3c9a4" />
         <!-- the plaits grow out of her head, a bit thicker at the root, tied with blue ribbons -->
         <g class="plait">
-            <path d="M852 630 q-28 -2 -56 -8" stroke="#e8571f" stroke-width="11" stroke-linecap="round" fill="none" />
+            <path d="M852 630 q-28 -2 -56 -8" stroke="#e8571f" stroke-width="11"
+                stroke-linecap="round" fill="none" />
             <path d="M812 619 l5 10 M822 621 l5 10 M832 623 l5 10" stroke="#c4441a" stroke-width="2" />
             <path d="M798 614 v16" stroke="#1f4d8c" stroke-width="5" stroke-linecap="round" />
         </g>
         <g class="plait b">
-            <path d="M888 630 q28 -2 56 -8" stroke="#e8571f" stroke-width="11" stroke-linecap="round" fill="none" />
-            <path d="M908 623 l-5 10 M918 621 l-5 10 M928 619 l-5 10" stroke="#c4441a" stroke-width="2" />
+            <path d="M888 630 q28 -2 56 -8" stroke="#e8571f" stroke-width="11"
+                stroke-linecap="round" fill="none" />
+            <path d="M908 623 l-5 10 M918 621 l-5 10 M928 619 l-5 10" stroke="#c4441a"
+                stroke-width="2" />
             <path d="M942 614 v16" stroke="#1f4d8c" stroke-width="5" stroke-linecap="round" />
         </g>
         <!-- the back of her head: red hair, parted down the middle -->
         <circle cx="870" cy="634" r="29" fill="#e8571f" />
         <path d="M870 606 v40" stroke="#c4441a" stroke-width="2.5" stroke-linecap="round" />
-        <path d="M858 612 q-10 10 -12 24 M882 612 q10 10 12 24" stroke="#f07a3c" stroke-width="2" fill="none" stroke-linecap="round" />
+        <path d="M858 612 q-10 10 -12 24 M882 612 q10 10 12 24" stroke="#f07a3c" stroke-width="2"
+            fill="none" stroke-linecap="round" />
     </g>
 
     <!-- the pupils' desks -->
@@ -483,7 +505,8 @@
             y="134" width="158" height="50" />
         <rect class="hit" fill="transparent" data-hs="door3" data-label="Classroom door" x="1380"
             y="190" width="170" height="470" />
-        <rect class="hit" fill="transparent" data-hs="teacher3" data-label="Miss, at the window in the door" x="1412"
+        <rect class="hit" fill="transparent" data-hs="teacher3"
+            data-label="Miss, at the window in the door" x="1412"
             y="222" width="106" height="110" />
         <rect class="hit" fill="transparent" data-hs="tdesk" data-label="Miss's desk" x="1008"
             y="488" width="324" height="150" />
