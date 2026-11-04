@@ -35,3 +35,37 @@
 > Du har socker, och Lilla Gubben står precis utanför dörren. Men hur ger man en häst något gott utan att det blir farligt?
 = Select the sugar cubes, click the horse in the door's window, and choose the flat, open hand.
 > Välj sockerbitarna, klicka på hästen i dörrens fönster och välj den platta, öppna handen.
+
+# ---------- Chapter 2 ----------
+= It's dark. The torch on the bedside table is empty. Something else on the table runs on batteries.
+> Det är mörkt. Ficklampan på nattduksbordet är tom. Något annat på bordet går på batterier.
+= Click the alarm clock to take its batteries, then click the torch.
+> Klicka på väckarklockan för att ta batterierna, och klicka sedan på ficklampan.
+= Put the batteries in the torch the right way round. Look at the + and − on each one.
+> Sätt i batterierna åt rätt håll. Titta på + och − på varje batteri.
+= Both batteries must point the same way, with + towards the bulb on the right. Then switch on.
+> Båda batterierna ska peka åt samma håll, med + mot lampan till höger. Tänd sedan.
+= The burglars are picking the lock of the veranda door! A shadow on its curtain could scare them, if it's big enough. Mr Nilsson can help.
+> Tjuvarna dyrkar upp låset på verandadörren! En skugga på gardinen kan skrämma dem, om den är tillräckligt stor. Herr Nilsson kan hjälpa till.
+= Use the torch on the veranda door. Slide Mr Nilsson close to the torch (40 cm or less) so his shadow is huge, then make him wave.
+> Använd ficklampan på verandadörren. Flytta Herr Nilsson nära ficklampan (40 cm eller mindre) så att hans skugga blir jättestor, och låt honom sedan vifta.
+= You need help. Annika's spy card above the bed says their house is due north. Look out of the window and find the North Star.
+> Du behöver hjälp. På Annikas spionkort ovanför sängen står det att deras hus ligger rakt norrut. Titta ut genom fönstret och hitta Polstjärnan.
+= Follow the two stars at the end of the saucepan (the Big Dipper) upwards, about five times as far: the North Star is the lone star at the top. Not the bright one: that's a planet.
+> Följ de två stjärnorna längst ut i kastrullen (Karlavagnen) uppåt, ungefär fem gånger så långt: Polstjärnan är den ensamma stjärnan högst upp. Inte den starka: det är en planet.
+= Tommy and Annika's window is right under the North Star. Signal them with your torch in Morse code. Annika's card has the code.
+> Tommys och Annikas fönster är precis under Polstjärnan. Signalera till dem med ficklampan på morse. Koden står på Annikas kort.
+= Use the torch on the window. SOS is short short short, long long long, short short short.
+> Använd ficklampan på fönstret. SOS är kort kort kort, lång lång lång, kort kort kort.
+= Tommy is flashing back. Each group of flashes is one letter: look them up on Annika's spy card.
+> Tommy blinkar tillbaka. Varje grupp av blinkar är en bokstav: slå upp dem på Annikas spionkort.
+= The letters spell TICKLE.
+> Bokstäverna bildar KITTLA.
+= The burglars will be back at midnight for the gold. What if the suitcase felt just as heavy, but held something else?
+> Vid midnatt kommer tjuvarna tillbaka efter guldet. Tänk om kappsäcken var lika tung, men innehöll något annat?
+= Open Pippi's scale. Put stones on the right pan until they weigh exactly 9 kg, for example 6 + 3, then swap them for the gold.
+> Öppna Pippis våg. Lägg stenar i den högra vågskålen tills de väger exakt 9 kg, till exempel 6 + 3, och byt dem sedan mot guldet.
+= Tommy said: TICKLE. But Pippi sleeps the other way round, and you need something soft and tickly.
+> Tommy sa: KITTLA. Men Pippi sover åt andra hållet, och du behöver något mjukt och kittligt.
+= Take the feather from Pippi's hat, select it, and use it on her feet on the pillow.
+> Ta fjädern från Pippis hatt, välj den och använd den på hennes fötter på kudden.

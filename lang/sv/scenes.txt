@@ -25,8 +25,6 @@
 > Byrå
 = Front door
 > Ytterdörr
-= Front door (open)
-> Ytterdörr (öppen)
 = Note
 > Lapp
 = Exercise book
@@ -39,3 +37,35 @@
 > ELD
 = FLAGS A–Z
 > FLAGGOR A–Z
+
+# ---------- scenes/bedroom.svg ----------
+= Pippi's bedroom at night
+> Pippis sovrum på natten
+= Annika's spy card
+> Annikas spionkort
+= Pillow end of the bed
+> Kudd-änden av sängen
+= Pippi, fast asleep
+> Pippi, djupt sovande
+= Suitcase under the bed
+> Kappsäck under sängen
+= Alarm clock
+> Väckarklocka
+= Torch
+> Ficklampa
+= Mr Nilsson, asleep
+> Herr Nilsson, sovande
+= Pippi's scale
+> Pippis våg
+= Dresser
+> Byrå
+= Basket of stones
+> Korg med stenar
+= Pippi's hat
+> Pippis hatt
+= Wardrobe
+> Klädskåp
+= Veranda door
+> Verandadörr
+= Veranda door (someone is at the lock!)
+> Verandadörr (någon håller på med låset!)

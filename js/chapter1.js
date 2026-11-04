@@ -84,7 +84,6 @@ function applyKitchen(){
   show('#vk-horse', !S.f.out1);
   show('#vk-chestlock', !S.f.chest);
   $('#vk-doorled').setAttribute('fill', S.f.unlocked ? '#9fdc6e' : '#e2483d');
-  document.querySelectorAll('#sc-kitchen [data-hs="door"]').forEach(h => { h.dataset.label = S.f.out1 ? 'Front door (open)' : 'Front door'; h.setAttribute('aria-label', h.dataset.label); });
 }
 
 /* ---------- hotspot handlers ---------- */
@@ -120,7 +119,7 @@ const H = {
     say([['nilsson', "Eek eek eek!"], "You say please, pretty please, and pretty please with sugar on top. Mr Nilsson pats your head kindly and keeps the key.", "He keeps pointing at the stove. He wants something to eat."]);
   },
   door(){
-    if(S.f.out1) return say("The front door is wide open. The evening air smells of grass and sweets.");
+    if(S.f.out1) return startCh2();
     if(!S.f.unlocked) return say(["The front door of Villa Villekulla. Locked, and the keyhole is empty.", "Mr Nilsson has the key, up on the bureau."]);
     say(["The door is unlocked, but it only opens a crack.", "Pippi's horse is standing on the veranda, leaning right against it. It looks very comfortable. It won't budge."]);
   },

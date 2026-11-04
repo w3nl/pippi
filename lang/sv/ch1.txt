@@ -76,8 +76,6 @@
 > Du säger snälla, snälla snälla, och snälla med socker på. Herr Nilsson klappar dig vänligt på huvudet och behåller nyckeln.
 = He keeps pointing at the stove. He wants something to eat.
 > Han fortsätter att peka på spisen. Han vill ha något att äta.
-= The front door is wide open. The evening air smells of grass and sweets.
-> Ytterdörren står vidöppen. Kvällsluften luktar gräs och godis.
 = The front door of Villa Villekulla. Locked, and the keyhole is empty.
 > Ytterdörren till Villa Villekulla. Låst, och nyckelhålet är tomt.
 = Mr Nilsson has the key, up on the bureau.

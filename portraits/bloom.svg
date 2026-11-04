@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><title>Bloom</title>
+  <rect width="120" height="120" rx="14" fill="#2a2440"/>
+  <path d="M20 120 q4-30 40-32 q36 2 40 32z" fill="#4a4036"/>
+  <path d="M30 100 l60 0" stroke="#f3efe3" stroke-width="8"/><path d="M30 110 l60 0" stroke="#f3efe3" stroke-width="8"/>
+  <ellipse cx="60" cy="58" rx="20" ry="26" fill="#ecc6a2"/>
+  <path d="M40 46 q20-24 40 0 q-4-30-20-30 q-16 0-20 30z" fill="#6b5a3a"/>
+  <circle cx="52" cy="58" r="5" fill="#fff"/><circle cx="68" cy="58" r="5" fill="#fff"/>
+  <circle cx="52" cy="59" r="2.4" fill="#1a1a1a"/><circle cx="68" cy="59" r="2.4" fill="#1a1a1a"/>
+  <path d="M46 48 q6-4 10 0 M64 48 q6-4 10 0" stroke="#4a3a2a" stroke-width="2.4" fill="none"/>
+  <ellipse cx="60" cy="76" rx="5" ry="4" fill="#7a3a2a"/>
+</svg>

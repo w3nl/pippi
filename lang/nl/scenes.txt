@@ -25,8 +25,6 @@
 > Ladekastje
 = Front door
 > Voordeur
-= Front door (open)
-> Voordeur (open)
 = Note
 > Briefje
 = Exercise book
@@ -39,3 +37,35 @@
 > VUUR
 = FLAGS A–Z
 > VLAGGEN A–Z
+
+# ---------- scenes/bedroom.svg ----------
+= Pippi's bedroom at night
+> Pippi's slaapkamer 's nachts
+= Annika's spy card
+> Annika's spionnenkaart
+= Pillow end of the bed
+> Kussenkant van het bed
+= Pippi, fast asleep
+> Pippi, diep in slaap
+= Suitcase under the bed
+> Koffer onder het bed
+= Alarm clock
+> Wekker
+= Torch
+> Zaklamp
+= Mr Nilsson, asleep
+> Meneer Nilsson, in slaap
+= Pippi's scale
+> Pippi's weegschaal
+= Dresser
+> Ladekast
+= Basket of stones
+> Mand met stenen
+= Pippi's hat
+> Pippi's hoed
+= Wardrobe
+> Kleerkast
+= Veranda door
+> Verandadeur
+= Veranda door (someone is at the lock!)
+> Verandadeur (er zit iemand aan het slot!)

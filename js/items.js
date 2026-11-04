@@ -39,5 +39,28 @@ function useItem(item, hs){
     if(!S.f.unlocked) return say("The horse is outside, and the door is locked. You can't reach it through the glass.");
     return openHorse();
   }
+  if(item==='batteries'){
+    if(hs==='torch') return openTorch2();
+    return say("Batteries make things work. The torch on the bedside table is empty.");
+  }
+  if(item==='torch'){
+    if(hs==='vdoor' || hs==='nilsson2'){
+      if(!S.f.scared) return openShadow();
+      return say("The burglars have gone back to hide behind the old oak. No need for gorillas right now.");
+    }
+    if(hs==='sky'){
+      if(!S.f.north) return say(["You point the torch out of the window. Which of all those lights out there is Tommy and Annika's house?", "Annika's spy card says their house is due north. Find north first."]);
+      return openMorse();
+    }
+    if(hs==='pippi2' || hs==='feet') return say("You shine the torch on Pippi. She snores on, happily. Light doesn't wake her. Nothing does, apparently.");
+    if(hs==='card2') return openSpyCard();
+    return say("You shine the torch around. Lovely. Not scary at all, now.");
+  }
+  if(item==='feather'){
+    if(hs==='feet') return tickle('feet');
+    if(hs==='pippi2') return tickle('head');
+    if(hs==='nilsson2') return say([['nilsson', "Hihi-eek!"], "Mr Nilsson giggles in his sleep. Wrong sleepyhead."]);
+    return say("You tickle it. It isn't ticklish. Someone in this room is, though.");
+  }
   say("That doesn't do anything useful.");
 }

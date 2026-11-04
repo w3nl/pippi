@@ -65,8 +65,6 @@
 # ---------- js/app.js ----------
 = Door open · Chapter 1 complete
 > Dörren öppen · kapitel 1 klart
-= Next: that night, two burglars come creeping up to Villa Villekulla. They've heard about a certain suitcase full of gold… Chapter 2 is still being written.
-> Härnäst: samma natt smyger två inbrottstjuvar fram till Villa Villekulla. De har hört talas om en viss kappsäck full med guld… Kapitel 2 håller fortfarande på att skrivas.
 = Locked in with Mr Nilsson
 > Inlåst med Herr Nilsson
 = Strongest in the world
@@ -115,8 +113,6 @@
 > Tillbaka i Pippis kök. Herr Nilsson slickar sirap från fingrarna.
 = Back in Pippi's kitchen. Mr Nilsson is still sitting on the bureau with the key.
 > Tillbaka i Pippis kök. Herr Nilsson sitter fortfarande på byrån med nyckeln.
-= Take your time. Pippi is handing out sweets in the garden, and the horse is eating the lawn.
-> Ta den tid du behöver. Pippi delar ut godis i trädgården, och Lilla Gubben äter upp gräsmattan.
 = Pippi says: why stand up straight when you can lie on your side? Turn your phone and see the whole kitchen.
 > Pippi säger: varför stå rak när man kan ligga på sidan? Vänd telefonen och se hela köket.
 = In Egypt, everybody holds their phone sideways. Pippi says so.
@@ -193,3 +189,67 @@
 > Läser upp repliker med rösterna på din enhet.
 = Voices on! I've never done voices before, so I'm sure I'm brilliant at it.
 > Röster på! Det har jag aldrig provat förut, så det klarar jag säkert alldeles utmärkt.
+
+# ---------- Chapter 2: menus, end screen, speakers, item uses ----------
+= Front door: on to Chapter {n}
+> Ytterdörr: vidare till kapitel {n}
+= Continue to Chapter {n}
+> Vidare till kapitel {n}
+= Continue to Chapter 2
+> Vidare till kapitel 2
+= Next: that night, two burglars come creeping up to Villa Villekulla. They've heard about a certain suitcase full of gold…
+> Härnäst: samma natt smyger två inbrottstjuvar fram till Villa Villekulla. De har hört talas om en viss kappsäck full med guld…
+= Burglars caught · Chapter 2 complete
+> Tjuvarna fast · kapitel 2 klart
+= Caught
+> Fast
+= Thunder-Karlsson and Bloom are off to the police station, and the gold is safe. Next: Pippi goes to school. Chapter 3 is still being written.
+> Dunder-Karlsson och Blom åker till polisstationen, och guldet är i säkerhet. Härnäst: Pippi börjar skolan. Kapitel 3 håller fortfarande på att skrivas.
+= Burglars in the night
+> Tjuvar om natten
+= Chapters
+> Kapitel
+= Chapter 1: Locked in with Mr Nilsson
+> Kapitel 1: Inlåst med Herr Nilsson
+= Chapter 2: Burglars in the night
+> Kapitel 2: Tjuvar om natten
+= Chapter 2 · Burglars in the Night
+> Kapitel 2 · Tjuvar om natten
+= Shook Pippi three times
+> Ruskade Pippi tre gånger
+= A shadow over 5 metres tall
+> En skugga över 5 meter hög
+= Wished upon a planet
+> Önskade sig något av en planet
+= Back in Pippi's bedroom. The lantern is still waiting behind the old oak.
+> Tillbaka i Pippis sovrum. Lyktan väntar fortfarande bakom den gamla eken.
+= Back in Pippi's bedroom. Pippi is still snoring like a ship's horn.
+> Tillbaka i Pippis sovrum. Pippi snarkar fortfarande som en mistlur.
+= Take your time. Pippi is handing out sweets in the garden. When you're ready, the front door leads on to Chapter {n}.
+> Ta den tid du behöver. Pippi delar ut godis i trädgården. När du är redo leder ytterdörren vidare till kapitel {n}.
+= Take your time. The burglars aren't going anywhere: they're on top of the wardrobe.
+> Ta den tid du behöver. Tjuvarna går ingenstans: de sitter uppe på klädskåpet.
+= Thunder-Karlsson
+> Dunder-Karlsson
+= Bloom
+> Blom
+= Villa Villekulla · night
+> Villa Villekulla · natt
+= Batteries make things work. The torch on the bedside table is empty.
+> Batterier får saker att fungera. Ficklampan på nattduksbordet är tom.
+= The burglars have gone back to hide behind the old oak. No need for gorillas right now.
+> Tjuvarna har gömt sig bakom den gamla eken igen. Inga gorillor behövs just nu.
+= You point the torch out of the window. Which of all those lights out there is Tommy and Annika's house?
+> Du riktar ficklampan ut genom fönstret. Vilket av alla ljusen där ute är Tommys och Annikas hus?
+= Annika's spy card says their house is due north. Find north first.
+> På Annikas spionkort står det att deras hus ligger rakt norrut. Hitta norr först.
+= You shine the torch on Pippi. She snores on, happily. Light doesn't wake her. Nothing does, apparently.
+> Du lyser på Pippi med ficklampan. Hon snarkar glatt vidare. Ljus väcker henne inte. Ingenting gör det, tydligen.
+= You shine the torch around. Lovely. Not scary at all, now.
+> Du lyser runt med ficklampan. Skönt. Inte alls läskigt längre.
+= Hihi-eek!
+> Hihi-iii!
+= Mr Nilsson giggles in his sleep. Wrong sleepyhead.
+> Herr Nilsson fnissar i sömnen. Fel sjusovare.
+= You tickle it. It isn't ticklish. Someone in this room is, though.
+> Du kittlar den. Den är inte kittlig. Men någon i det här rummet är det.

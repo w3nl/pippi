@@ -13,6 +13,7 @@ function ambKey(){
   const f = S.f;
   switch(S.scene){
     case 'kitchen': return 'kitchen' + (f.fire ? '+fire' : '');
+    case 'bedroom': return 'bedroom' + (f.out2 ? '' : '+snore');
   }
   return null;
 }
@@ -111,6 +112,13 @@ const SOUNDSCAPES = {
       bed(m, { freq: 180, gain: .025, wobble: .4, rate: .3 });
       every(80, 420, () => burst(m, .04 + Math.random() * .06, .01 + Math.random() * .025, 1800 + Math.random() * 2500, 'highpass'));
     }
+  },
+  // Chapter 2, Pippi's bedroom at night: crickets, an owl now and then, the wind, and Pippi snoring (until she wakes).
+  bedroom(m, mods){
+    bed(m, { freq: 260, gain: .015, wobble: .5, rate: .05 });
+    every(180, 420, () => blip(m, 4200 + Math.random() * 500, .03, .006, 'sine'));
+    every(12000, 22000, () => { blip(m, 420, .35, .02, 'sine', 380); later(500, () => blip(m, 400, .55, .02, 'sine', 360)); });
+    if(mods.includes('snore')) every(3600, 3600, () => { burst(m, 1.1, .03, 220, 'lowpass'); later(1500, () => burst(m, .7, .015, 600, 'bandpass')); });
   }
 };
 

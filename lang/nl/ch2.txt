@@ -1,0 +1,301 @@
+# Dutch translation: Chapter 2, burglars in the night (js/chapter2.js).
+# Tommy's Morse answer is a word puzzle: TICKLE / KIETEL / KITTLA (tickleWord() in js/chapter2.js).
+
+= TICKLE
+> KIETEL
+= Batteries
+> Batterijen
+= Two batteries from Pippi's alarm clock. Look: one end says +, the other −.
+> Twee batterijen uit Pippi's wekker. Kijk: aan de ene kant staat +, aan de andere −.
+= Switched on and shining. Point it at something: select it, then click.
+> Aan en stralend. Richt hem ergens op: kies hem en klik dan.
+= Feather
+> Veer
+= A long orange feather from Pippi's hat. Extremely tickly.
+> Een lange oranje veer van Pippi's hoed. Ontzettend kriebelig.
+= The spunk, in its jam jar, on the bedside table. It doesn't seem to sleep.
+> De spunk, in zijn jampotje, op het nachtkastje. Hij lijkt nooit te slapen.
+= You take it. A spunk knows things, even at night.
+> Je neemt hem mee. Een spunk weet dingen, ook 's nachts.
+= The alarm clock has stopped at twenty-five to twelve. You took its batteries. Pippi never looks at it anyway.
+> De wekker is blijven staan op vijf over half twaalf. Jij hebt de batterijen. Pippi kijkt er toch nooit op.
+= Pippi's alarm clock. The little hand is just before the 12 and the big hand on the 7: twenty-five to twelve.
+> Pippi's wekker. De kleine wijzer staat net voor de 12 en de grote op de 7: vijf over half twaalf.
+= The burglars said midnight. That's twenty-five minutes.
+> De inbrekers zeiden middernacht. Dat is over vijfentwintig minuten.
+= You open the back. Two batteries! You take them. The clock stops ticking. Time doesn't, unfortunately.
+> Je maakt de achterkant open. Twee batterijen! Je pakt ze. De wekker stopt met tikken. De tijd helaas niet.
+= The torch is in your pocket, switched on. Select it to point it at something.
+> De zaklamp zit in je zak, aan. Kies hem om hem ergens op te richten.
+= A torch. You click the switch. Nothing. You shake it. It rattles: it's empty.
+> Een zaklamp. Je klikt op het knopje. Niks. Je schudt ermee. Hij rammelt: hij is leeg.
+= Torches need batteries. Something else in this room runs on batteries too.
+> Zaklampen hebben batterijen nodig. Er is nog iets in deze kamer dat op batterijen werkt.
+= Tommy and Annika's window is dark again. They've gone to wake their dad.
+> Het raam van Tommy en Annika is weer donker. Ze zijn hun vader gaan wekken.
+= Tommy and Annika's window is still flashing at you. Use your torch on the window to read it again.
+> Het raam van Tommy en Annika seint nog steeds naar je. Gebruik je zaklamp op het raam om het nog eens te lezen.
+= The North Star, and right below it Tommy and Annika's upstairs window.
+> De Poolster, en recht daaronder het bovenraam van Tommy en Annika.
+= Select your torch and use it on the window to send them a signal.
+> Kies je zaklamp en gebruik hem op het raam om ze een sein te geven.
+= If only you had some light to signal with.
+> Had je maar licht om mee te seinen.
+= Zzz… eek… zzz.
+> Zzz… iek… zzz.
+= Mr Nilsson is back in his doll's bed, very proud of himself, and fast asleep again.
+> Meneer Nilsson ligt weer in zijn poppenbedje, heel trots op zichzelf, en slaapt alweer.
+= Mr Nilsson is asleep in his doll's bed, with his straw hat over his eyes. He's small. But his shadow doesn't have to be.
+> Meneer Nilsson slaapt in zijn poppenbedje, met zijn strohoedje over zijn ogen. Hij is klein. Maar zijn schaduw hoeft dat niet te zijn.
+= Pippi's dresser. The top drawer is full of odd socks. The bottom drawer is full of odd socks too, but odder.
+> Pippi's ladekast. De bovenste la zit vol losse sokken. De onderste ook, maar nog lozer.
+= Pippi's basket of stones, from her thing-searching. She has written a number on each one, in kilos: 1, 2, 3, 5 and 6.
+> Pippi's mand met stenen, van het dingen zoeken. Op elke steen heeft ze een getal geschreven, in kilo's: 1, 2, 3, 5 en 6.
+= "Perfectly good stones," says the label. "For weighing things."
+> "Prima stenen," staat op het etiket. "Om dingen mee te wegen."
+= Pippi's enormous hat, without its feather now. She'll hardly notice.
+> Pippi's enorme hoed, nu zonder veer. Ze zal het nauwelijks merken.
+= Pippi's enormous green hat, with a long orange feather.
+> Pippi's enorme groene hoed, met een lange oranje veer.
+= You pull out the feather. It's soft and very, very tickly.
+> Je trekt de veer eruit. Hij is zacht en heel, heel kriebelig.
+= Thunder-Karlsson and Bloom are sitting on top of the wardrobe, looking very sorry for themselves.
+> Donder-Karlsson en Blom zitten boven op de kleerkast en kijken heel zielig.
+= Pippi has made them a little sign: PLEASE DO NOT FEED THE BURGLARS.
+> Pippi heeft er een bordje bij gezet: DE INBREKERS NIET VOEREN.
+= A big wardrobe, much too heavy to move. Pippi could lift it with one finger. She's busy sleeping.
+> Een grote kleerkast, veel te zwaar om te verschuiven. Pippi zou hem met één vinger optillen. Ze is druk met slapen.
+= The suitcase, full of stones. The gold is safe under Pippi's feet. Let the burglars come.
+> De koffer, vol stenen. Het goud ligt veilig onder Pippi's voeten. Laat de inbrekers maar komen.
+= Pippi's suitcase full of gold coins. She took it to bed for safekeeping, then fell asleep on top of the problem.
+> Pippi's koffer vol gouden munten. Ze nam hem mee naar bed om hem veilig te bewaren, en viel toen in slaap.
+= The burglars want this. If they carried off a suitcase just as heavy, but full of something else, they wouldn't notice until much later.
+> Dit willen de inbrekers. Als ze een koffer meenamen die net zo zwaar is, maar vol met iets anders, zouden ze het pas veel later merken.
+= Burglars on the wardrobe and pancakes for breakfast. Best night ever!
+> Inbrekers op de kast en pannenkoeken als ontbijt. De beste nacht ooit!
+= You shake the lump under the blanket. "Pippi! Wake up! Burglars!"
+> Je schudt aan de bult onder de deken. "Pippi! Wakker worden! Inbrekers!"
+= Zzzzz… pancakes… zzz.
+> Zzzzz… pannenkoeken… zzz.
+= You shake harder. The lump rolls over and snores like a ship's horn.
+> Je schudt harder. De bult draait zich om en snurkt als een scheepshoorn.
+= Pippi sleeps the way she does everything else: completely.
+> Pippi slaapt zoals ze alles doet: helemaal.
+= You shake the lump with all your strength. Pippi doesn't notice. The bed does: it creaks.
+> Je schudt de bult met al je kracht. Pippi merkt het niet. Het bed wel: het kraakt.
+= Shaking won't work. Maybe Tommy and Annika know how to wake her.
+> Schudden helpt niet. Misschien weten Tommy en Annika hoe je haar wakker krijgt.
+= Pippi's feet, wide awake now and dancing under the blanket.
+> Pippi's voeten, nu klaarwakker en dansend onder de deken.
+= Two feet on the pillow, in one brown stocking and one black one.
+> Twee voeten op het kussen, in één bruine kous en één zwarte.
+= Pippi sleeps the other way round: feet on the pillow, head under the blanket at the far end. She says feet deserve a soft pillow too.
+> Pippi slaapt andersom: voeten op het kussen, hoofd onder de deken aan het voeteneind. Ze zegt dat voeten ook wel een zacht kussen verdienen.
+= The veranda door. Kling and Klang went out through it, with a burglar each.
+> De verandadeur. Kling en Klang gingen erdoor naar buiten, met elk een inbreker.
+= Someone is scratching at the lock!
+> Er krabt iemand aan het slot!
+= The veranda door. Through the curtain you can see a lantern bobbing about in the garden.
+> De verandadeur. Door het gordijntje zie je een lantaarn door de tuin dansen.
+= Somebody whispers outside: "…at midnight, Bloom, when everyone's asleep."
+> Buiten fluistert iemand: "…om middernacht, Blom, als iedereen slaapt."
+= The veranda door. The scratching has stopped. The burglars are hiding behind the old oak, waiting for midnight.
+> De verandadeur. Het gekrab is gestopt. De inbrekers verstoppen zich achter de oude eik en wachten op middernacht.
+= They'll be back. You need help, and you need a plan.
+> Ze komen terug. Je hebt hulp nodig, en een plan.
+= Battery {n}: turn it round
+> Batterij {n}: omdraaien
+= The torch
+> De zaklamp
+= Two batteries, one bulb, and a switch
+> Twee batterijen, één lampje en een knopje
+= Switch on
+> Aanzetten
+= Click a battery to turn it round. The bulb is on the right.
+> Klik op een batterij om hem om te draaien. Het lampje zit rechts.
+= Click. Nothing. The two batteries face each other, so they push against each other. In a torch, the + end of one battery touches the − end of the next.
+> Klik. Niks. De twee batterijen staan tegen elkaar in, dus ze werken elkaar tegen. In een zaklamp raakt de + van de ene batterij de − van de volgende.
+= Click. Nothing. They're in a line now, but the wrong way round: the + end has to point towards the bulb.
+> Klik. Niks. Ze liggen nu in één rij, maar verkeerd om: de + moet naar het lampje wijzen.
+= Light! Two batteries in a line, + to −, and + towards the bulb: the electricity can go all the way round.
+> Licht! Twee batterijen op een rij, + tegen −, en de + naar het lampje: de stroom kan helemaal rond.
+= Torchlight! The bedroom isn't so scary now.
+> Licht! De slaapkamer is nu een stuk minder eng.
+= Then you hear it: scritch, scratch. At the veranda door. Someone is poking at the lock!
+> Dan hoor je het: krts, krats. Bij de verandadeur. Er zit iemand aan het slot te peuteren!
+= Hurry up, Bloom! I want that gold before the clock strikes twelve.
+> Schiet op, Blom! Ik wil dat goud hebben voordat de klok twaalf slaat.
+= I'm hurrying, Karlsson! This lock is very… locky.
+> Ik schiet al op, Karlsson! Dit slot is erg… slotterig.
+= Mr Nilsson's shadow
+> De schaduw van meneer Nilsson
+= Torch · Mr Nilsson · curtain
+> Zaklamp · meneer Nilsson · gordijn
+= Mr Nilsson's distance from the torch
+> Afstand van meneer Nilsson tot de zaklamp
+= Shadow on the curtain
+> Schaduw op het gordijn
+= Make him wave his arms!
+> Laat hem met zijn armen zwaaien!
+= Mr Nilsson is 40 cm tall, and the curtain is 3 metres from the torch. Move him and watch his shadow.
+> Meneer Nilsson is 40 cm lang, en het gordijn hangt 3 meter van de zaklamp. Verschuif hem en kijk naar zijn schaduw.
+= Outside, Bloom giggles: "Look, Karlsson, a little monkey!" They aren't scared one bit. The shadow is too small: move Mr Nilsson closer to the light.
+> Buiten giechelt Blom: "Kijk, Karlsson, een klein aapje!" Ze zijn helemaal niet bang. De schaduw is te klein: zet meneer Nilsson dichter bij het licht.
+= "What's that, Karlsson?" "Just a big cat, Bloom." Nearly! The closer Mr Nilsson is to the torch, the bigger his shadow.
+> "Wat is dat, Karlsson?" "Gewoon een grote kat, Blom." Bijna! Hoe dichter meneer Nilsson bij de zaklamp is, hoe groter zijn schaduw.
+= A GIANT hairy shadow with a hat waves at the curtain. Outside, somebody shrieks!
+> Een REUZENGROTE harige schaduw met een hoed zwaait op het gordijn. Buiten gilt iemand!
+= K-K-Karlsson! There's a GORILLA in there!
+> K-K-Karlsson! Daar zit een GORILLA!
+= Back to the oak tree! We'll come back at midnight, when the gorilla's asleep.
+> Terug naar de eik! We komen om middernacht terug, als de gorilla slaapt.
+= Footsteps run off across the garden. Mr Nilsson climbs back into his doll's bed, very pleased with himself.
+> Voetstappen rennen weg door de tuin. Meneer Nilsson klimt terug in zijn poppenbedje, heel tevreden met zichzelf.
+= Close to the light, a small thing makes a huge shadow. But they'll be back at midnight. You need help. Annika's card on the wall might know how.
+> Dicht bij het licht maakt iets kleins een enorme schaduw. Maar om middernacht komen ze terug. Je hebt hulp nodig. Misschien weet Annika's kaart aan de muur hoe.
+= TOP SECRET · for Pippi, Tommy and Annika only
+> STRENG GEHEIM · alleen voor Pippi, Tommy en Annika
+= <b>Our house is due NORTH of Villa Villekulla.</b> At night, find the North Star: it is always in the north. Take the two stars at the end of the Big Dipper's pan (it looks like a saucepan), go up from the bottom one through the top one, and keep going about five times as far.
+> <b>Ons huis ligt precies ten NOORDEN van Villa Kakelbont.</b> 's Nachts zoek je de Poolster: die staat altijd in het noorden. Neem de twee sterren aan het eind van de pan van de Grote Beer (die lijkt op een steelpan), ga van de onderste door de bovenste omhoog, en ga ongeveer vijf keer zo ver door.
+= <b>Secret signal:</b> flash your torch at our window in Morse code. A dot is a short flash, a dash is a long one. SOS means HELP!
+> <b>Geheim sein:</b> sein met je zaklamp naar ons raam in morse. Een punt is een korte flits, een streep een lange. SOS betekent HELP!
+= A star
+> Een ster
+= The night sky
+> De sterrenhemel
+= Out of the bedroom window
+> Uit het slaapkamerraam
+= Stars over the garden
+> Sterren boven de tuin
+= Click the star you think is the North Star.
+> Klik op de ster waarvan jij denkt dat het de Poolster is.
+= The North Star! Straight below it, far across the meadow, a window glows: Tommy and Annika's house.
+> De Poolster! Recht eronder, ver over het weiland, brandt licht achter een raam: het huis van Tommy en Annika.
+= The North Star never moves: all night, the other stars turn around it. So it always shows you where north is.
+> De Poolster staat altijd stil: de hele nacht draaien de andere sterren eromheen. Daarom wijst hij altijd het noorden aan.
+= And due north is Tommy and Annika's house. Their upstairs light is on. Time for the secret signal.
+> En precies in het noorden ligt het huis van Tommy en Annika. Boven brandt licht. Tijd voor het geheime sein.
+= That's the brightest light in the sky, but it isn't a star: it's the planet Venus. The North Star is not especially bright.
+> Dat is het helderste lichtje aan de hemel, maar het is geen ster: het is de planeet Venus. De Poolster is helemaal niet zo helder.
+= Good: that's one of the two pointer stars at the end of the saucepan. Now follow the line they make, upwards.
+> Goed: dat is een van de twee wijzersterren aan het eind van de steelpan. Volg nu de lijn die ze maken, omhoog.
+= That's part of the Big Dipper, the saucepan. The two stars at the end of its pan point the way.
+> Dat hoort bij de Grote Beer, de steelpan. De twee sterren aan het eind van de pan wijzen de weg.
+= That W shape is Cassiopeia. Nice, but the pointer stars of the saucepan lead somewhere else.
+> Die W-vorm is Cassiopeia. Mooi, maar de wijzersterren van de steelpan leiden ergens anders heen.
+= Close! Those faint stars are the Little Dipper. The North Star is the last star of its handle.
+> Dichtbij! Die zwakke sterretjes zijn de Kleine Beer. De Poolster is de laatste ster van de steel.
+= Just an ordinary star. Follow the two pointer stars of the saucepan upwards, about five times as far.
+> Gewoon een ster. Volg de twee wijzersterren van de steelpan omhoog, ongeveer vijf keer zo ver.
+= Signalling with the torch
+> Seinen met de zaklamp
+= Tommy and Annika's window, due north
+> Het raam van Tommy en Annika, precies in het noorden
+= Short flash
+> Korte flits
+= Long flash
+> Lange flits
+= Next letter
+> Volgende letter
+= Clear
+> Wissen
+= Send
+> Seinen
+= Their window flashes back:
+> Hun raam seint terug:
+= Watch it again
+> Nog eens kijken
+= What does it say?
+> Wat staat er?
+= Check
+> Controleren
+= Annika's spy card has the Morse alphabet. Send the signal for HELP.
+> Op Annika's spionnenkaart staat het morsealfabet. Sein het teken voor HELP.
+= · · · − − − · · ·  SOS! A moment later, Tommy and Annika's window starts to flash back.
+> · · · − − − · · ·  SOS! Even later begint het raam van Tommy en Annika terug te seinen.
+= That's the other way round: long, short, long. HELP starts with three short flashes.
+> Dat is andersom: lang, kort, lang. HELP begint met drie korte flitsen.
+= You flash nothing. The night stays dark.
+> Je seint niks. De nacht blijft donker.
+= Tommy and Annika's window stays dark. They don't understand that one. The help signal is three letters: S, O, S.
+> Het raam van Tommy en Annika blijft donker. Dat begrijpen ze niet. Het hulpsein is drie letters: S, O, S.
+= "{word}"! Then their window goes dark: they have gone to wake their dad.
+> "{word}"! Dan wordt hun raam donker: ze zijn hun vader gaan wekken.
+= {word}? Tickle whom?
+> {word}? Wie dan?
+= Of course: Pippi! Shaking doesn't wake her. Tickling might.
+> Natuurlijk: Pippi! Van schudden wordt ze niet wakker. Van kietelen misschien wel.
+= Downstairs, the kitchen clock whirrs. Nearly midnight. Make sure the burglars don't get the gold, then wake Pippi.
+> Beneden zoemt de keukenklok. Bijna middernacht. Zorg dat de inbrekers het goud niet krijgen, en maak dan Pippi wakker.
+= Count the groups of flashes: each group is one letter. That makes {n} letters.
+> Tel de groepjes flitsen: elk groepje is één letter. Dat zijn {n} letters.
+= Not quite. Look up each group on Annika's card, one letter at a time.
+> Nog niet helemaal. Zoek elk groepje op in Annika's kaart, letter voor letter.
+= The scale stands level and empty. The gold is safe under Pippi's feet, and the suitcase is full of stones.
+> De weegschaal staat recht en leeg. Het goud ligt veilig onder Pippi's voeten, en de koffer zit vol stenen.
+= Gold on the left, stones on the right
+> Goud links, stenen rechts
+= gold
+> goud
+= stones
+> stenen
+= Swap: gold out, stones in
+> Ruilen: goud eruit, stenen erin
+= Click the stones to put them on the right pan, or take them off again.
+> Klik op de stenen om ze op de rechterschaal te leggen, of haal ze er weer af.
+= The stones are lighter: the gold side sinks. The burglars would notice the suitcase is too light. Add {n} kg more.
+> De stenen zijn lichter: de kant met het goud zakt. De inbrekers zouden merken dat de koffer te licht is. Er moet nog {n} kg bij.
+= Now the stones are heavier: the stone side sinks. Take {n} kg off.
+> Nu zijn de stenen zwaarder: de kant met de stenen zakt. Haal er {n} kg af.
+= Level! Same weight on both sides. You tip the gold out and fill the suitcase with the stones.
+> In evenwicht! Aan beide kanten hetzelfde gewicht. Je schudt het goud eruit en vult de koffer met de stenen.
+= A level scale means both sides weigh exactly the same. The suitcase is just as heavy as before. The burglars won't notice a thing.
+> Een weegschaal in evenwicht betekent dat beide kanten precies even zwaar zijn. De koffer is net zo zwaar als eerst. De inbrekers merken er niks van.
+= You hide the gold coins in the safest place in Sweden: under Pippi's feet, on the pillow.
+> Je verstopt de gouden munten op de veiligste plek van Zweden: onder Pippi's voeten, op het kussen.
+= You tickle the lump under the blanket. A sleepy voice: "Mmf. That's my nose. Go away, nose-tickler."
+> Je kietelt de bult onder de deken. Een slaperige stem: "Mmf. Dat is mijn neus. Ga weg, neuskietelaar."
+= That's her head end. Pippi sleeps the other way round, remember: her feet are on the pillow.
+> Dat is haar hoofdkant. Pippi slaapt andersom, weet je nog: haar voeten liggen op het kussen.
+= You tickle Pippi's feet. She giggles in her sleep and mumbles: "Not now. Wake me when the police come."
+> Je kietelt Pippi's voeten. Ze giechelt in haar slaap en mompelt: "Nu niet. Maak me wakker als de politie komt."
+= Then she snores on. Nobody has called the police yet. Maybe Tommy and Annika can help.
+> Dan snurkt ze verder. Niemand heeft de politie nog gebeld. Misschien kunnen Tommy en Annika helpen.
+= You lift the feather… and stop. If Pippi wakes now, she'll leap up and show the burglars where the gold is, just to be friendly.
+> Je tilt de veer op… en stopt. Als Pippi nu wakker wordt, springt ze op en laat ze de inbrekers zien waar het goud is, gewoon uit vriendelijkheid.
+= Better make sure the gold is safe first.
+> Zorg eerst maar dat het goud veilig is.
+= That night. You're sleeping over at Villa Villekulla. The moon is up, and Pippi is snoring like a ship's horn.
+> Die nacht. Je logeert in Villa Kakelbont. De maan staat aan de hemel, en Pippi snurkt als een scheepshoorn.
+= I can't sleep. And what's that light in the garden?
+> Ik kan niet slapen. En wat is dat lichtje in de tuin?
+= A lantern, bobbing between the trees. Two men are creeping towards the house: one big, one small.
+> Een lantaarn, dansend tussen de bomen. Twee mannen sluipen naar het huis: een grote en een kleine.
+= Psst, Bloom. Everyone says that girl has a whole suitcase full of gold.
+> Psst, Blom. Iedereen zegt dat dat meisje een hele koffer vol goud heeft.
+= Then let's go and get it, Karlsson. At midnight, when they're all fast asleep.
+> Dan gaan we die halen, Karlsson. Om middernacht, als ze allemaal diep slapen.
+= Burglars! It's pitch dark in here. First things first: some light.
+> Inbrekers! Het is hier aardedonker. Eerst maar eens wat licht.
+= You tickle Pippi's feet with the feather. The blanket shakes. Then it shakes a lot.
+> Je kietelt Pippi's voeten met de veer. De deken schudt. En dan schudt hij heel erg.
+= Hihihi! Stop it! Who's tickling me in the middle of the night? Oh, it's you! Is it Christmas?
+> Hihihi! Ophouden! Wie kietelt mij midden in de nacht? O, jij bent het! Is het Kerstmis?
+= Burglars, Pippi! They're coming for your gold!
+> Inbrekers, Pippi! Ze komen voor je goud!
+= Bong… bong… bong… The kitchen clock strikes twelve. The veranda door creaks. Thunder-Karlsson and Bloom tiptoe in and grab the suitcase.
+> Bong… bong… bong… De keukenklok slaat twaalf. De verandadeur kraakt. Donder-Karlsson en Blom sluipen op hun tenen naar binnen en grijpen de koffer.
+= Got it! Heavy as anything. Full of gold, Bloom!
+> Hebbes! Loodzwaar. Vol goud, Blom!
+= Karlsson… I peeked. It's full of stones.
+> Karlsson… ik heb even gekeken. Hij zit vol stenen.
+= Good evening! How lovely, visitors! Shall we dance?
+> Goedenavond! Wat gezellig, bezoek! Zullen we dansen?
+= Pippi dances the two burglars round and round the bedroom until they're dizzy, then lifts them up, one in each hand, and sits them on top of the wardrobe.
+> Pippi danst met de twee inbrekers de hele slaapkamer rond tot ze duizelig zijn, tilt ze dan op, in elke hand één, en zet ze boven op de kleerkast.
+= Blue lights in the lane. Tommy and Annika's dad has called the police, and the two policemen, Kling and Klang, come stomping in.
+> Blauwe lichten in het laantje. De vader van Tommy en Annika heeft de politie gebeld, en de twee agenten, Kling en Klang, komen binnenstampen.
+= You saw our signal! I knew the spy card would come in handy.
+> Je zag ons sein! Ik wist wel dat die spionnenkaart van pas zou komen.
+= Officers! I've found two wardrobe ornaments. You can have them. They're not very pretty.
+> Agenten! Ik heb twee kastversieringen gevonden. Jullie mogen ze hebben. Ze zijn niet zo mooi.

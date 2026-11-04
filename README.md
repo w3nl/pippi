@@ -4,7 +4,7 @@ A browser-based point-and-click escape room in Pippi Longstocking's kitchen. An 
 
 You came to play at Pippi's house. Pippi has gone to town to buy eighteen kilos of sweets, and Mr Nilsson, her monkey, has locked the front door and climbed onto the bureau with the key. Tommy and Annika are waiting at the gate. Get out!
 
-Every puzzle teaches something real, for children of about 8 to 12: reading mirror writing, sums, what a fire needs, doing steps in the right order, ships' signal flags, and how to give a horse a sugar cube.
+Every puzzle teaches something real, for children of about 8 to 12.
 
 ## Play
 
@@ -24,9 +24,10 @@ Stuck? Press **Hint** (first a nudge, then the answer), or pick up the spunk fro
 
 ## Chapters
 
-1. **Locked in with Mr Nilsson** (the kitchen of Villa Villekulla): 6 puzzles.
+1. **Locked in with Mr Nilsson** (the kitchen of Villa Villekulla): mirror writing, sums, what a fire needs, steps in the right order, signal flags, feeding a horse.
+2. **Burglars in the night** (Pippi's bedroom): two burglars are after Pippi's gold, and Pippi won't wake up. Batteries in a torch, shadows, the North Star, Morse code and a balance scale.
 
-More chapters are planned (the burglars, school, the circus, the *Hoppetossa*, the South Sea island). See [AGENTS.md](AGENTS.md).
+More chapters are planned (school, the circus, the *Hoppetossa*, the South Sea island). See [AGENTS.md](AGENTS.md).
 
 ## Install it as an app
 

@@ -17,7 +17,9 @@ const VOICE_STYLE = {
   horse:   { pitch: .3,   rate: .8,   slot: 4 },
   spunk:   { pitch: 2,    rate: 1,    slot: 1 },
   tommy:   { pitch: 1.2,  rate: 1.05, slot: 5 },
-  annika:  { pitch: 1.4,  rate: 1,    slot: 6 }
+  annika:  { pitch: 1.4,  rate: 1,    slot: 6 },
+  karlsson:{ pitch: .55,  rate: .9,   slot: 7 },   // big and gruff
+  bloom:   { pitch: 1.2,  rate: 1.25, slot: 8 }    // small and nervous
 };
 
 /* The device's voices for the current language: British English or Dutch, falling back to any English voice. */
