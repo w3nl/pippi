@@ -1,0 +1,37 @@
+# Swedish translation: the hints (js/hints.js).
+= Pippi's note on the table is written backwards. What in this kitchen shows everything the other way round?
+> Pippis lapp på bordet är skriven baklänges. Vad i det här köket visar allt åt andra hållet?
+= Take the note, select it in your pockets, and use it on the mirror.
+> Ta lappen, välj den i dina fickor och använd den på spegeln.
+= Pippi's note says the matches are in her secret drawer, and the code is the answers to her sums. Her exercise book is on the table, and Annika has left a sticky note in it.
+> På Pippis lapp står det att tändstickorna ligger i hennes hemliga låda, och att koden är svaren på hennes tal. Hennes skrivbok ligger på bordet, och Annika har satt en lapp i den.
+= 2 × 3 = 6, 9 − 4 = 5 and 8 ÷ 2 = 4. Turn the bureau's padlock to 6 5 4.
+> 2 × 3 = 6, 9 − 4 = 5 och 8 ÷ 2 = 4. Vrid byråns hänglås till 6 5 4.
+= The stove is cold. The enamel sign above it says the three things a fire needs.
+> Spisen är kall. Emaljskylten ovanför talar om de tre saker en eld behöver.
+= Open the stove: put the firewood in, open the air vent, then strike a match.
+> Öppna spisen: lägg i veden, öppna spjället och tänd sedan en tändsticka.
+= Pancakes need eggs. Where does Pippi keep her food?
+> Till pannkakor behövs ägg. Var har Pippi sin mat?
+= Open the pantry cupboard and take the eggs.
+> Öppna skafferiet och ta äggen.
+= The stove is hot and you have eggs. Make a pancake: each step can only happen after the steps it needs.
+> Spisen är varm och du har ägg. Gör en pannkaka: varje steg kan bara göras efter stegen det behöver.
+= Eggs into the bowl, milk and flour, whisk, butter in the pan, pour, flip. (Melting the butter can come earlier.)
+> Ägg i bunken, mjölk och mjöl, vispa, smör i pannan, häll i, vänd. (Smöret kan smältas tidigare.)
+= Pippi's note said Mr Nilsson will swap the key for one thing only.
+> På Pippis lapp stod det att Herr Nilsson bara byter nyckeln mot en enda sak.
+= Select the pancake in your pockets and click Mr Nilsson on the bureau.
+> Välj pannkakan i dina fickor och klicka på Herr Nilsson på byrån.
+= You have the front-door key.
+> Du har ytterdörrsnyckeln.
+= Select the key and use it on the front door.
+> Välj nyckeln och använd den på ytterdörren.
+= The horse is leaning on the door. Horses like sugar. The captain's sea chest has a letter lock, and the flags on the string over your head spell something.
+> Lilla Gubben lutar sig mot dörren. Hästar tycker om socker. Kaptenens sjömanskista har ett bokstavslås, och flaggorna på snöret ovanför ditt huvud bildar ett ord.
+= Use the flag chart by the mirror: the flags read S, P, U, N, K. Set the sea chest's lock to SPUNK.
+> Använd flaggtavlan vid spegeln: flaggorna betyder S, P, U, N, K. Ställ sjömanskistans lås på SPUNK.
+= You have sugar, and the horse is right outside the door. But how do you give a horse a treat safely?
+> Du har socker, och Lilla Gubben står precis utanför dörren. Men hur ger man en häst något gott utan att det blir farligt?
+= Select the sugar cubes, click the horse in the door's window, and choose the flat, open hand.
+> Välj sockerbitarna, klicka på hästen i dörrens fönster och välj den platta, öppna handen.

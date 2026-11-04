@@ -134,8 +134,8 @@
 > "minder beweging", dus alles staat stil
 = full motion
 > volledige beweging
-= The Dutch text could not be loaded. Are you offline? Try again when you are connected.
-> De Nederlandse tekst kon niet worden geladen. Ben je offline? Probeer het opnieuw als je verbinding hebt.
+= The text for that language could not be loaded. Are you offline? Try again when you are connected.
+> De tekst voor die taal kon niet worden geladen. Ben je offline? Probeer het opnieuw als je verbinding hebt.
 = Installed! Now Villa Villekulla lives on your device. Mr Nilsson has already moved in.
 > Geïnstalleerd! Nu woont Villa Kakelbont op je apparaat. Meneer Nilsson is er al ingetrokken.
 

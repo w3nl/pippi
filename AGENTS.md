@@ -6,11 +6,11 @@ Context for AI agents and new contributors. The README covers what the game is a
 
 ## What this is
 
-*Villa Villekulla* is a point-and-click escape room, an unofficial fan homage to Astrid Lindgren's *Pippi Longstocking* books (Dutch: *Pippi Langkous*, *Villa Kakelbont*). You're a kid visiting Pippi's house; Mr Nilsson has locked you in. Every puzzle teaches one real idea for children (mirror writing, sums, the fire triangle, doing steps in the right order, signal flags, feeding a horse safely) wrapped in a Pippi joke.
+*Villa Villekulla* is a point-and-click escape room, an unofficial fan homage to Astrid Lindgren's *Pippi Longstocking* books (Swedish original: *Pippi Långstrump*; Dutch: *Pippi Langkous*, *Villa Kakelbont*). You're a kid visiting Pippi's house; Mr Nilsson has locked you in. Every puzzle teaches one real idea for children (mirror writing, sums, the fire triangle, doing steps in the right order, signal flags, feeding a horse safely) wrapped in a Pippi joke.
 
 - 1 chapter so far (the kitchen), 6 puzzles. Plain HTML, CSS, JavaScript and SVG: **no build step, no framework, no runtime dependencies** (only Google Fonts).
 - Hosted as a static site (GitHub Pages), installable as a PWA, playable offline.
-- Two languages: **UK English** (in the code) and **Dutch** (`lang/nl/*.txt`).
+- Three languages: **UK English** (in the code), **Dutch** (`lang/nl/*.txt`) and **Swedish** (`lang/sv/*.txt`). The language button cycles EN → NL → SV.
 - **It must be served over http(s)** (`npm start`, http://127.0.0.1:4173); `file://` shows a "needs a web server" message.
 - `node_modules/` and `package.json` exist **only for the tests and the local server**.
 - Audience: children (about 8–12) and families. Keep words simple, puzzles fair, and nothing scary.
@@ -24,7 +24,7 @@ Context for AI agents and new contributors. The README covers what the game is a
 | `scenes/kitchen.svg` | The room (Chapter 1). Ids are prefixed `vk`/`vk-`; hotspot rects are last |
 | `js/boot.js` | Start-up: fetches the scenes, loads the scripts in order; holds `GAME_VERSION` |
 | `js/i18n.js` | Languages: `LANG`, `tx()`, `setLang()`, `onLangChange()`, the translating observer (copied from Hello, IT) |
-| `lang/nl/*.txt` | Dutch: `ui`, `ch1`, `hints`, `scenes` |
+| `lang/nl/*.txt`, `lang/sv/*.txt` | Dutch and Swedish: `ui`, `ch1`, `hints`, `scenes` (the same files in every language) |
 | `js/core.js` | Engine: state `S`, `save`/`load`, sound, `say()`, portraits (`faceFor`), `ITEMS`, inventory, `applyVisuals()`, hotspot input, `openModal()`, `nope()` |
 | `js/chapter1.js` | Chapter 1: signal flags (`FLAG_SHAPES`, `flagSVG()`), `buildKitchen()`, `applyKitchen()`, `H` (the hotspot table), every close-up, `intro1()`, `win1()` |
 | `js/items.js` | `useItem(item, hotspot)` |
@@ -35,7 +35,7 @@ Context for AI agents and new contributors. The README covers what the game is a
 | `portraits/*.svg` | `you`, `pippi`, `nilsson`, `horse`, `spunk`, `tommy`, `annika` (120×120) |
 | `sw.js`, `manifest.webmanifest`, `icons/` | The installable, offline app. `icon.svg` is the source; PNGs are rendered from it |
 | `tests/` | Playwright: `chapter1`, `progress`, `language`, `pwa`, `phone`; helpers in `helpers.js`; `serve.js` is the local server |
-| `tools/i18n-check.js` | Lists English text without Dutch, fails on stale keys and conflicts |
+| `tools/i18n-check.js` | For every language in `lang/`: lists English text without a translation, fails on stale keys and conflicts (`--lang=sv` for one) |
 | `.github/` | CI (`tests.yml`) and the idea → plan → PR agent workflows (see `docs/agent-workflow.md`) |
 
 ## How the code fits together
@@ -58,9 +58,12 @@ Context for AI agents and new contributors. The README covers what the game is a
 - `spunk` (free hint item, like the rubber duck in Hello, IT: use it on anything for the current stage's first hint, not counted), `note`, `matches`, `eggs`, `pancake`, `key`, `sugar`. Four pockets; the chapter never needs more than four at once.
 
 ### Languages
-- English in the code, Dutch in `lang/nl/*.txt` as `= English` / `> Nederlands` pairs (see the blueprint, section 4). Use `tx()` for text built from pieces.
+- English in the code, translations in `lang/<code>/*.txt` as `= English` / `> translation` pairs (see the blueprint, section 4). Use `tx()` for text built from pieces.
+- `js/i18n.js`: `LANGS` and `LANG_TAGS` list the languages; the browser language picks Dutch or Swedish on the first visit. `js/app.js`: `LANG_NEXT` (button order) and `LANG_HELLO` (the line shown after switching, written in the new language). `js/voice.js` speaks `LANG_TAGS[LANG]`.
+- **Adding a language:** a `lang/<code>/` folder with the same four files, entries in `LANGS`, `LANG_TAGS`, `LANG_NEXT`, `LANG_HELLO`, a `<span data-l>` in the language button, the files in `CORE` in `sw.js`, and a `PW_LANG` phone run in `tests.yml`.
+- Swedish names (Astrid Lindgren's originals): Pippi Långstrump, Villa Villekulla, Herr Nilsson, the horse **Lilla Gubben** (the Swedish text calls him by name), Tommy och Annika, kapten Efraim Långstrump, *sakletare* (thing-searcher), Dunder-Karlsson och Blom.
 - Dutch names: Pippi Langkous, Villa Kakelbont, meneer Nilsson, het paard, Tommy en Annika, kapitein Efraïm Langkous, "dingen zoeken" (thing-searching). "Spunk" stays "spunk".
-- Pippi's note is misspelt on purpose in both languages ("Dear gest" / "Liefe gast").
+- Pippi's note is misspelt on purpose in every language ("Dear gest" / "Liefe gast" / "Käre gässt").
 - The sea chest word **SPUNK** is the same in every language (the flags spell it), so it needs no Dutch version.
 - Run `node tools/i18n-check.js`: the remaining "missing" lines are code, names and the pieces of a `tx()` HTML template.
 
@@ -84,7 +87,7 @@ Everything in the blueprint's "Lessons learned" applies. In particular:
 - `[hidden]{display:none!important}` in `base.css` must stay.
 - CSS class names are global; search `css/` first (`.chart`, `.hand`, `.secret`, `.wheel`, `.pstep`… are taken).
 - Use `reducedMotion()` in JS; the CSS kill-switch is the last rule in `animations.css`. The flags sway (`.sway`) and the fire flickers (`.flame`).
-- Check new close-ups at 412×915 and 915×412 (`tests/phone.spec.js`), also with `PW_LANG=nl`.
+- Check new close-ups at 412×915 and 915×412 (`tests/phone.spec.js`), also with `PW_LANG=nl` and `PW_LANG=sv`.
 - **Bump `CACHE` in `sw.js` and `GAME_VERSION` in `js/boot.js` together** on every change, and list new files in `CORE`.
 - No `alert/confirm/prompt`. Buttons have `type="button"`.
 
@@ -92,14 +95,14 @@ Everything in the blueprint's "Lessons learned" applies. In particular:
 
 - **Humour first, teaching second.** Every wrong answer gets a joke *and* a nudge.
 - Keep the characters:
-  - **Pippi:** strongest girl in the world, cheerful, boastful, tells tall tales ("in Egypt everybody…"), wrong but confident maths, catchphrase "I've never done it before, so I'm sure I can" (NL: "Ik heb het nog nooit gedaan, dus ik denk dat ik het wel kan").
-  - **Mr Nilsson:** her monkey in blue trousers and a straw hat; says "Eek!" (NL "Iek!"); mischievous, loves pancakes.
+  - **Pippi:** strongest girl in the world, cheerful, boastful, tells tall tales ("in Egypt everybody…"), wrong but confident maths, catchphrase "I've never done it before, so I'm sure I can" (NL: "Ik heb het nog nooit gedaan, dus ik denk dat ik het wel kan"; SV: "Det har jag aldrig provat förut, så det klarar jag säkert").
+  - **Mr Nilsson:** her monkey in blue trousers and a straw hat; says "Eek!" (NL "Iek!", SV "Iii!"); mischievous, loves pancakes.
   - **The horse:** white with black spots, lives on the veranda, Pippi lifts it.
   - **Tommy and Annika:** the polite neighbour children; Annika is clever and a bit anxious.
   - **The spunk:** the free-hint beetle; it says "…".
 - Running jokes: two times three makes four, eighteen kilos of sweets, thing-searching, sleeping with feet on the pillow, the suitcase of gold (and the burglars who want it).
 - Don't copy text, songs or illustrations from the books or films; write our own and draw our own.
-- Every puzzle needs two hints in `HINTS`: a nudge, then the answer. Every English line needs a Dutch line.
+- Every puzzle needs two hints in `HINTS`: a nudge, then the answer. Every English line needs a Dutch and a Swedish line.
 
 ## Ideas for next chapters
 
@@ -114,6 +117,7 @@ npm install
 npx playwright install chromium   # first time only
 npm test                           # all tests, desktop + Pixel 7
 PW_LANG=nl npx playwright test tests/phone.spec.js
+PW_LANG=sv npx playwright test tests/phone.spec.js
 node tools/i18n-check.js
 npm start                          # http://127.0.0.1:4173
 ```

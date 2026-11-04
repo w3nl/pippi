@@ -23,7 +23,7 @@ const VOICE_STYLE = {
 /* The device's voices for the current language: British English or Dutch, falling back to any English voice. */
 function voicesFor(lang){
   const all = speechSynthesis.getVoices();
-  if(lang === 'nl') return all.filter(v => /^nl/i.test(v.lang));
+  if(lang !== 'en') return all.filter(v => new RegExp('^' + lang, 'i').test(v.lang));
   const gb = all.filter(v => /^en[-_]GB/i.test(v.lang));
   return gb.length ? gb : all.filter(v => /^en/i.test(v.lang));
 }
@@ -34,7 +34,7 @@ function speakLine(who, text){
   const clean = String(text).replace(/[♪▸▶✕★⇄✓]/g, ' ').replace(/…/g, '... ').replace(/\s+/g, ' ').trim();
   if(!/[A-Za-z0-9]/.test(clean)) return;   // the spunk's "…" stays silent
   const u = new SpeechSynthesisUtterance(clean), st = VOICE_STYLE[who] || VOICE_STYLE.sys, vs = voicesFor(LANG);
-  u.lang = LANG === 'nl' ? 'nl-NL' : 'en-GB';
+  u.lang = LANG_TAGS[LANG] || 'en-GB';
   if(vs.length) u.voice = vs[st.slot % vs.length];
   u.pitch = st.pitch; u.rate = st.rate; u.volume = .9;
   speechSynthesis.speak(u);

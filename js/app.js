@@ -109,15 +109,22 @@ matchMedia('(prefers-reduced-motion: reduce)').addEventListener?.('change', appl
 function showLang(){
   const b = $('#btn-lang');
   b.querySelectorAll('[data-l]').forEach(s => s.classList.toggle('on', s.dataset.l === LANG));
-  b.title = LANG === 'nl' ? 'Taal: Nederlands. Switch to English.' : 'Language: English. Speel in het Nederlands.';
+  b.title = { en: 'Language: English. Next: Nederlands.', nl: 'Taal: Nederlands. Nästa: svenska.', sv: 'Språk: svenska. Next: English.' }[LANG];
   b.setAttribute('aria-label', b.title);
 }
+/* The button cycles English → Dutch → Swedish → English. */
+const LANG_NEXT = { en: 'nl', nl: 'sv', sv: 'en' };
+const LANG_HELLO = {
+  en: 'English! Here Pippi is Pippi Longstocking, and her house is Villa Villekulla.',
+  nl: 'Nederlands! Pippi heet hier Pippi Langkous, en haar huis Villa Kakelbont.',
+  sv: 'Svenska! Här heter Pippi Pippi Långstrump, precis som i Astrid Lindgrens böcker.'
+};
 $('#btn-lang').onclick = async () => {
-  const to = LANG === 'nl' ? 'en' : 'nl';
-  if(!(await setLang(to))) return say([['sys', 'The Dutch text could not be loaded. Are you offline? Try again when you are connected.']]);
+  const to = LANG_NEXT[LANG] || 'en';
+  if(!(await setLang(to))) return say([['sys', 'The text for that language could not be loaded. Are you offline? Try again when you are connected.']]);
   beep(700,.04);
   if(!$('#title').hidden || !$('#win').hidden || !$('#dialog').hidden) return;
-  say([['sys', to === 'nl' ? 'Nederlands! Pippi heet hier Pippi Langkous, en haar huis Villa Kakelbont.' : 'English! Here Pippi is Pippi Longstocking, and her house is Villa Villekulla.']]);
+  say([['sys', LANG_HELLO[to]]]);
 };
 onLangChange(() => {
   closeModal(); showLang(); applyMotion(); renderInv(); applyVisuals(); refreshMenu();

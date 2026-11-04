@@ -1,4 +1,4 @@
-// Languages: UK English (the source text, written in the code) and Dutch (lang/nl/*.txt).
+// Languages: UK English (the source text, written in the code), Dutch (lang/nl/*.txt) and Swedish (lang/sv/*.txt).
 // Loaded first by js/boot.js. The English text stays in the code; this file swaps it for Dutch on the way to the screen:
 //  - tx(text, vars) translates a string in code (say() uses it for every line; use it for text built from pieces);
 //  - a MutationObserver translates every text node and every title / aria-label / data-label / placeholder / alt
@@ -6,11 +6,13 @@
 // The originals are remembered, so switching back to English restores them. See AGENTS.md, "Languages".
 
 const LANG_KEY = 'pippi-villa-v1-lang';
-const LANGS = { en: 'English', nl: 'Nederlands' };
+const LANGS = { en: 'English', nl: 'Nederlands', sv: 'Svenska' };
+const LANG_TAGS = { en: 'en-GB', nl: 'nl-NL', sv: 'sv-SE' };   // for <html lang> (short form) and the voices
 const LANG_FILES = ['ui', 'ch1', 'hints', 'scenes'];
 let LANG = (() => {
   try{ const v = localStorage.getItem(LANG_KEY); if(v && v in LANGS) return v; }catch(e){}
-  return /^nl\b/i.test(navigator.language || '') ? 'nl' : 'en';
+  const nav = navigator.language || '';
+  return /^nl\b/i.test(nav) ? 'nl' : /^sv\b/i.test(nav) ? 'sv' : 'en';
 })();
 const DICT = {};   // DICT.nl = { keys: Map(normalised English -> Dutch), patterns: [[RegExp, replacement]] }
 const normText = s => s.replace(/\s+/g, ' ').trim();
@@ -106,7 +108,7 @@ i18nObserver.observe(document.body, { childList: true, subtree: true, characterD
 /* ---------- switching ---------- */
 const langHooks = [];   // functions that redraw text built in code, called after a switch
 function onLangChange(fn){ langHooks.push(fn); }
-function applyLangAttr(){ document.documentElement.lang = LANG === 'nl' ? 'nl' : 'en-GB'; }
+function applyLangAttr(){ document.documentElement.lang = LANG === 'en' ? 'en-GB' : LANG; }
 async function setLang(l){
   if(!(l in LANGS)) return;
   try{ await loadLang(l); }catch(e){ return false; }

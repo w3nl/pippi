@@ -8,7 +8,7 @@ Every puzzle teaches something real, for children of about 8 to 12: reading mirr
 
 ## Play
 
-The game speaks **UK English** and **Dutch** (*Pippi Langkous* in *Villa Kakelbont*). Switch with the **EN · NL** button; it starts in Dutch when your browser is set to Dutch. Turn on **Voices** to hear the dialogue read aloud.
+The game speaks **UK English**, **Dutch** (*Pippi Langkous* in *Villa Kakelbont*) and **Swedish**, Pippi's own language (*Pippi Långstrump*, with Herr Nilsson and Lilla Gubben). Switch with the **EN · NL · SV** button; it starts in Dutch or Swedish when your browser is set to one of them. Turn on **Voices** to hear the dialogue read aloud.
 
 Play online once GitHub Pages is on (Settings → Pages → deploy from `main`).
 
@@ -48,7 +48,7 @@ npx playwright install chromium
 npm test
 ```
 
-The tests play the whole chapter in a real browser, and check saving, scores, the installable app and offline mode, phone layouts and the Dutch version. Node.js 26 (see `.nvmrc`).
+The tests play the whole chapter in a real browser, and check saving, scores, the installable app and offline mode, phone layouts, and the Dutch and Swedish versions. Node.js 26 (see `.nvmrc`).
 
 ## Licence
 

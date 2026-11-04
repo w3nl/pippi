@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-// Checks the Dutch translation (lang/nl/*.txt) against the game's English text.
+// Checks every translation (lang/<code>/*.txt: Dutch, Swedish…) against the game's English text.
+//   add --lang=sv to check one language only
 //   node tools/i18n-check.js            report untranslated text and stale keys
 //   node tools/i18n-check.js --missing  list only the untranslated text, file by file
 //   node tools/i18n-check.js --stale    list only keys that no longer match any English text, and keys translated
@@ -122,23 +123,30 @@ function collect() {
   return found;
 }
 
-/* ---------- report ---------- */
-const { keys, patterns, conflicts } = readLang(path.join(ROOT, 'lang', 'nl'));
+/* ---------- report, for every language in lang/ (or only the one given with --lang=xx) ---------- */
+const mode = process.argv.find(a => a === '--stale' || a === '--missing');
+const only = (process.argv.find(a => a.startsWith('--lang=')) || '').slice(7);
 const found = collect();
-const translated = t => keys.has(t) || patterns.some(p => p.re.test(t));
-const missing = [...found].filter(([t]) => !translated(t));
 // A key is stale when it matches no collected text, not even as a {placeholder} template.
 const templ = [...found.keys()].filter(t => t.includes('{…}')).map(t => new RegExp('^' + t.split('{…}').map(p => p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('.*') + '$'));
 const allText = [...found.keys()].join('\n');
-const stale = [...keys].filter(([k]) => !found.has(k) && !wholeStrings.has(k) && !templ.some(r => r.test(k)) && !allText.includes(k.replace(/\{\w+\}/g, '')));
-const mode = process.argv[2];
-if (mode !== '--stale') {
-  let last = '';
-  for (const [t, f] of missing) { if (f !== last) console.log(`\n# ${f}`); last = f; console.log(t); }
+let totalStale = 0, totalConflicts = 0;
+for (const lang of fs.readdirSync(path.join(ROOT, 'lang')).filter(l => !only || l === only).sort()) {
+  const { keys, patterns, conflicts } = readLang(path.join(ROOT, 'lang', lang));
+  const translated = t => keys.has(t) || patterns.some(p => p.re.test(t));
+  const missing = [...found].filter(([t]) => !translated(t));
+  const stale = [...keys].filter(([k]) => !found.has(k) && !wholeStrings.has(k) && !templ.some(r => r.test(k)) && !allText.includes(k.replace(/\{\w+\}/g, '')));
+  console.log(`\n========== lang/${lang} ==========`);
+  if (mode !== '--stale') {
+    let last = '';
+    for (const [t, f] of missing) { if (f !== last) console.log(`\n# ${f}`); last = f; console.log(t); }
+  }
+  if (mode !== '--missing') {
+    if (stale.length) { console.log('\nStale keys (no matching English text):'); stale.forEach(([k, w]) => console.log(`  ${lang}/${w.file}:${w.line}  ${k}`)); }
+    if (conflicts.length) { console.log('\nThe same English text translated in two different ways:'); conflicts.forEach(c => console.log('  ' + c)); }
+  }
+  console.log(`\nlang/${lang}: ${found.size} English texts, ${found.size - missing.length} translated, ${missing.length} not (some are code), ${stale.length} stale keys, ${conflicts.length} conflicts.`);
+  totalStale += stale.length; totalConflicts += conflicts.length;
 }
-if (mode !== '--missing') {
-  if (stale.length) { console.log('\nStale keys (no matching English text):'); stale.forEach(([k, w]) => console.log(`  ${w.file}:${w.line}  ${k}`)); }
-  if (conflicts.length) { console.log('\nThe same English text translated in two different ways:'); conflicts.forEach(c => console.log('  ' + c)); }
-}
-console.log(`\n${found.size} English texts, ${found.size - missing.length} translated, ${missing.length} not (some are code), ${stale.length} stale keys, ${conflicts.length} conflicts.`);
-process.exit(mode === '--stale' && (stale.length || conflicts.length) ? 1 : 0);
+console.log(`\nAll languages: ${totalStale} stale keys, ${totalConflicts} conflicts.`);
+process.exit(mode === '--stale' && (totalStale || totalConflicts) ? 1 : 0);

@@ -1,6 +1,6 @@
 // Start-up: inserts the room drawings (scenes/*.svg) into the stage, then loads the game scripts in order.
 // Scenes are fetched, so the game must be served over http(s): GitHub Pages, `npm start`, or any static server.
-const GAME_VERSION = 1;   // shown on the title screen; the same number as CACHE in sw.js
+const GAME_VERSION = 2;   // shown on the title screen; the same number as CACHE in sw.js
 (async () => {
   const scenes = ['kitchen'];
   const scripts = ['i18n', 'core', 'chapter1', 'items', 'hints', 'ambience', 'voice', 'app'];
@@ -16,7 +16,7 @@ const GAME_VERSION = 1;   // shown on the title screen; the same number as CACHE
         el.src = `js/${name}.js`; el.async = false; el.onload = resolve; el.onerror = () => reject(new Error(name));
         document.body.appendChild(el);
       });
-      if (name === 'i18n') await langReady;   // the Dutch text has to be there before the game draws anything
+      if (name === 'i18n') await langReady;   // the translated text has to be there before the game draws anything
     }
     title.classList.remove('loading');
   } catch (e) {

@@ -4,7 +4,7 @@ const { expect } = require('@playwright/test');
 const KEY = 'pippi-villa-v1';
 
 /** Start from a clean browser, optionally with a saved game and unlocked chapters (e.g. ['-ch2', '-ch3']).
-    PW_LANG=nl runs the layout tests in Dutch (the playthroughs check English text, so they need English). */
+    PW_LANG=nl (or sv) runs the layout tests in Dutch (or Swedish) (the playthroughs check English text, so they need English). */
 async function seed(page, state = null, unlocked = []) {
   await page.goto('/');
   await page.evaluate(([KEY, state, unlocked, lang]) => {

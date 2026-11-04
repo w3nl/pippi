@@ -35,6 +35,11 @@ jobs:
         env:
           PW_LANG: nl
 
+      - name: Check the phone layouts in Swedish
+        run: npx playwright test tests/phone.spec.js --reporter=list
+        env:
+          PW_LANG: sv
+
       - name: Upload the test report
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v7

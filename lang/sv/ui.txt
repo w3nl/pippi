@@ -1,0 +1,195 @@
+# Swedish translation: the page, menus, buttons, scores and settings (index.html, js/app.js, js/core.js, js/voice.js).
+# Names as in Astrid Lindgren's original: Pippi Långstrump, Villa Villekulla, Herr Nilsson, Lilla Gubben (the horse),
+# Tommy och Annika, kapten Efraim Långstrump.
+
+# ---------- index.html ----------
+= Villa Villekulla
+> Villa Villekulla
+= Chapter 1 · Locked In with Mr Nilsson
+> Kapitel 1 · Inlåst med Herr Nilsson
+= Time in Villa Villekulla
+> Tid i Villa Villekulla
+= Hint
+> Ledtråd
+= Hold Space to reveal hotspots
+> Håll ner mellanslag för att se allt du kan klicka på
+= Reveal
+> Visa
+= Install
+> Installera
+= Menu
+> Meny
+= Why not hold it sideways?
+> Varför inte hålla den på tvären?
+= No thanks, I'll swipe
+> Nej tack, jag sveper
+= Villa Villekulla · a small town in Sweden · four o'clock
+> Villa Villekulla · en liten stad i Sverige · klockan fyra
+= You came to play at Pippi's house. Pippi has gone to town for sweets, and Mr Nilsson, her monkey, has locked the front door and run off with the key. Tommy and Annika are waiting outside. Get out!
+> Du har kommit för att leka hos Pippi. Pippi har gått till stan för att köpa godis, och Herr Nilsson, hennes apa, har låst ytterdörren och sprungit iväg med nyckeln. Tommy och Annika väntar utanför. Ta dig ut!
+= Click around the kitchen, read everything, and use the things you find. Stuck? Ask for a hint, or ask the spunk. Nobody knows what a spunk is, but it's very wise.
+> Klicka runt i köket, läs allt och använd sakerna du hittar. Kör du fast? Be om en ledtråd, eller fråga spunken. Ingen vet vad en spunk är, men den är väldigt klok.
+= New game
+> Nytt spel
+= Continue
+> Fortsätt
+= Scores
+> Resultat
+= Unofficial fan game, inspired by Astrid Lindgren's Pippi Longstocking
+> Inofficiellt fanspel, inspirerat av Astrid Lindgrens Pippi Långstrump
+= Licence (GPL-3.0)
+> Licens (GPL-3.0)
+= You're out
+> Du är ute
+= Time
+> Tid
+= Hints
+> Ledtrådar
+= Rank
+> Rang
+= Look around
+> Titta runt
+= Play again
+> Spela igen
+= ← swipe to look around →
+> ← svep för att titta runt →
+= Pockets
+> Fickor
+= A new version of the game is ready.
+> Det finns en ny version av spelet.
+= Reload
+> Ladda om
+= Close ✕
+> Stäng ✕
+
+# ---------- js/app.js ----------
+= Door open · Chapter 1 complete
+> Dörren öppen · kapitel 1 klart
+= Next: that night, two burglars come creeping up to Villa Villekulla. They've heard about a certain suitcase full of gold… Chapter 2 is still being written.
+> Härnäst: samma natt smyger två inbrottstjuvar fram till Villa Villekulla. De har hört talas om en viss kappsäck full med guld… Kapitel 2 håller fortfarande på att skrivas.
+= Locked in with Mr Nilsson
+> Inlåst med Herr Nilsson
+= Strongest in the world
+> Världens starkaste
+= Thing-finder
+> Sakletare
+= Pirate in training
+> Sjörövare under utbildning
+= Mr Nilsson
+> Herr Nilsson
+= Not finished yet
+> Inte klart än
+= Your best result per chapter. A new game keeps them.
+> Ditt bästa resultat per kapitel. De sparas även när du börjar ett nytt spel.
+= No chapter finished yet. Escape and your result appears here.
+> Inget kapitel klart än. Ta dig ut, så syns ditt resultat här.
+= Achievements ({n} of {m})
+> Prestationer ({n} av {m})
+= Chapter
+> Kapitel
+= Best time
+> Bästa tid
+= Fewest hints
+> Minst ledtrådar
+= Big hint: {hint}
+> Stor ledtråd: {hint}
+= Hint: {hint}
+> Ledtråd: {hint}
+= Sound on
+> Ljud på
+= Sound off
+> Ljud av
+= Asked the spunk
+> Frågade spunken
+= Egg on your head
+> Ägg på huvudet
+= Pancake on the ceiling
+> Pannkaka i taket
+= Tried to lift the horse
+> Försökte lyfta Lilla Gubben
+= Opened every little drawer
+> Öppnade alla småfacken
+= Said please three times
+> Sa snälla tre gånger
+= Back in Pippi's kitchen. Mr Nilsson is licking syrup off his fingers.
+> Tillbaka i Pippis kök. Herr Nilsson slickar sirap från fingrarna.
+= Back in Pippi's kitchen. Mr Nilsson is still sitting on the bureau with the key.
+> Tillbaka i Pippis kök. Herr Nilsson sitter fortfarande på byrån med nyckeln.
+= Take your time. Pippi is handing out sweets in the garden, and the horse is eating the lawn.
+> Ta den tid du behöver. Pippi delar ut godis i trädgården, och Lilla Gubben äter upp gräsmattan.
+= Pippi says: why stand up straight when you can lie on your side? Turn your phone and see the whole kitchen.
+> Pippi säger: varför stå rak när man kan ligga på sidan? Vänd telefonen och se hela köket.
+= In Egypt, everybody holds their phone sideways. Pippi says so.
+> I Egypten håller alla sina telefoner på tvären. Det säger Pippi.
+= Pippi sleeps with her feet on the pillow. You could at least turn your phone.
+> Pippi sover med fötterna på kudden. Då kan du åtminstone vända på telefonen.
+= Mr Nilsson holds phones upside down. Sideways is a good compromise.
+> Herr Nilsson håller telefoner upp och ner. På tvären är en bra kompromiss.
+= Motion on: flags flutter and fires flicker, even if your device asks for less motion.
+> Rörelse på: flaggor fladdrar och eld fladdrar, även om din enhet vill ha mindre rörelse.
+= Motion off: everything stands still. Even Mr Nilsson. Well, almost.
+> Rörelse av: allt står stilla. Till och med Herr Nilsson. Nästan, i alla fall.
+= Motion auto: following your device's setting, which is {now}.
+> Rörelse auto: följer inställningen på din enhet, som är {now}.
+= "reduce motion", so things stand still
+> "minska rörelse", så allt står stilla
+= full motion
+> full rörelse
+= The text for that language could not be loaded. Are you offline? Try again when you are connected.
+> Texten för det språket kunde inte laddas. Är du offline? Försök igen när du har uppkoppling.
+= Installed! Now Villa Villekulla lives on your device. Mr Nilsson has already moved in.
+> Installerat! Nu bor Villa Villekulla på din enhet. Herr Nilsson har redan flyttat in.
+
+# ---------- js/core.js ----------
+= Motion auto
+> Rörelse auto
+= Motion on
+> Rörelse på
+= Motion off
+> Rörelse av
+= Auto follows your device's "reduce motion" setting (now: {now}). Click to change.
+> Auto följer inställningen "minska rörelse" på din enhet (nu: {now}). Klicka för att ändra.
+= reduced, so things stand still
+> minskad, så allt står stilla
+= Everything moves, whatever your device prefers. Click to change.
+> Allt rör sig, vad din enhet än vill. Klicka för att ändra.
+= Nothing moves. Click to change.
+> Ingenting rör sig. Klicka för att ändra.
+= You
+> Du
+= Pippi
+> Pippi
+= The horse
+> Lilla Gubben
+= The spunk
+> Spunken
+= tap ▸
+> tryck ▸
+= tap ✕
+> tryck ✕
+= click ▸
+> klicka ▸
+= click ✕
+> klicka ✕
+= Empty pocket
+> Tom ficka
+= {name}: {desc} Click a spot to use it, or the item again to put it away.
+> {name}: {desc} Klicka någonstans för att använda den, eller på saken igen för att stoppa undan den.
+= Select an item, then tap where you want to use it.
+> Välj en sak och tryck sedan där du vill använda den.
+= Select an item, then click where you want to use it.
+> Välj en sak och klicka sedan där du vill använda den.
+= Use {item} on {spot}
+> Använd {item} på {spot}
+= Nothing interesting. Which is unusual, in this house.
+> Inget intressant. Vilket är ovanligt i det här huset.
+
+# ---------- js/voice.js ----------
+= Voices on
+> Röster på
+= Voices off
+> Röster av
+= Reads the dialogue aloud with the voices on your device.
+> Läser upp repliker med rösterna på din enhet.
+= Voices on! I've never done voices before, so I'm sure I'm brilliant at it.
+> Röster på! Det har jag aldrig provat förut, så det klarar jag säkert alldeles utmärkt.
