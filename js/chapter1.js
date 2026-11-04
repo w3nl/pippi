@@ -78,7 +78,7 @@ function applyKitchen(){
   const has = id => S.inv.includes(id), show = (sel, on) => { const el = $(sel); if(el) el.style.display = on ? '' : 'none'; };
   show('#vk-spunk', !S.f.spunkTaken); show('#hit-spunk', !S.f.spunkTaken);
   show('#vk-note', !has('note')); show('#hit-note', !has('note'));
-  show('#vk-fire', !!S.f.fire);
+  show('#vk-fire', !!S.f.fire); show('#vk-steam', !!S.f.fire);
   show('#vk-nkey', !S.f.key);
   show('#vk-lock', !S.f.matches);
   show('#vk-horse', !S.f.out1);

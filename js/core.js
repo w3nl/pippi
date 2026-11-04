@@ -6,6 +6,7 @@ const $ = s => document.querySelector(s);
 const fresh = () => ({ v:1, ch:1, scene:'kitchen', f:{}, inv:[], hl:{}, hints:0, t:0, ach:{}, started:false });
 let S = fresh();
 let sel = null;
+let justGiven = null;   // the item that just went into your pockets: its slot pops (css/base.css .slot.pop)
 /* Motion: 'auto' follows the device's "reduce motion" setting; 'on' and 'off' override it. Saved per device. */
 let motionPref = (() => { try{ return localStorage.getItem(KEY + '-motion') || 'auto'; }catch(e){ return 'auto'; } })();
 const deviceReducesMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -103,6 +104,7 @@ function renderInv(){
     const id = S.inv[i];
     const b = document.createElement('button');
     b.type = 'button'; b.className = 'slot' + (id ? ' filled' : '') + (id && sel===id ? ' sel' : '');
+    if(id && id===justGiven){ b.classList.add('pop'); justGiven = null; }
     if(id){ b.innerHTML = ITEMS[id].svg; b.title = ITEMS[id].name; b.setAttribute('aria-label', ITEMS[id].name);   // translated on the page by i18n.js
       b.onclick = () => { sel = sel===id ? null : id; beep(880,.04); renderInv(); };
     } else { b.disabled = true; b.setAttribute('aria-label','Empty pocket'); }
@@ -111,7 +113,7 @@ function renderInv(){
   $('#tray-hint').textContent = sel ? tx('{name}: {desc} Click a spot to use it, or the item again to put it away.', { name: tx(ITEMS[sel].name), desc: tx(ITEMS[sel].desc) }) : (matchMedia('(hover: none)').matches ? 'Select an item, then tap where you want to use it.' : 'Select an item, then click where you want to use it.');
   document.querySelectorAll('.hit').forEach(h => h.classList.toggle('item-cursor', !!sel));
 }
-function give(id){ if(!S.inv.includes(id)) S.inv.push(id); chord([523,659,784]); renderInv(); save(); }
+function give(id){ if(!S.inv.includes(id)) S.inv.push(id); justGiven = id; chord([523,659,784]); renderInv(); save(); }
 function take(id){ S.inv = S.inv.filter(x=>x!==id); if(sel===id) sel=null; renderInv(); save(); }
 
 /* ---------- scene visuals ---------- */

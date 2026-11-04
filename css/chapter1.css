@@ -96,3 +96,30 @@
 /* the scene: flags sway on their string */
 @keyframes sway{0%,100%{transform:rotate(-1.5deg)}50%{transform:rotate(1.5deg)}}
 #vk-flags .sway{transform-box:fill-box;transform-origin:50% 0;animation:sway 4s ease-in-out infinite}
+
+/* ---------- the kitchen comes alive (all stopped by the Motion setting: see css/animations.css) ---------- */
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes tail{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(8deg)}}
+@keyframes nod{0%,70%,100%{transform:rotate(0)}78%{transform:rotate(-4deg)}86%{transform:rotate(2deg)}}
+@keyframes cloud{from{transform:translateX(-60px)}to{transform:translateX(260px)}}
+@keyframes flap{0%,100%{transform:scaleY(1)}50%{transform:scaleY(-.6)}}
+@keyframes wave{0%,100%{transform:rotate(-25deg)}50%{transform:rotate(25deg)}}
+@keyframes breeze{0%,100%{transform:skewX(0)}50%{transform:skewX(2deg)}}
+@keyframes crawl{0%,100%{transform:translateX(-6px)}50%{transform:translateX(6px)}}
+@keyframes steam{0%{transform:translateY(0) scale(.6);opacity:0}30%{opacity:.5}100%{transform:translateY(-60px) scale(1.6);opacity:0}}
+#vk-nilsson.bob{animation:bob 2.2s ease-in-out infinite}
+#vk-nilsson .tail{transform-box:fill-box;transform-origin:0% 100%;animation:tail 1.6s ease-in-out infinite}
+#vk-horse.nod{transform-box:fill-box;transform-origin:30% 100%;animation:nod 6s ease-in-out infinite}
+.cloud{animation:cloud 40s linear infinite}
+.cloud.slow{animation-duration:65s;animation-delay:-30s}
+/* the bird flies past once every 22 seconds: 4 seconds of flight, then a long pause off-screen */
+.bird{animation:birdpass 22s linear infinite}
+@keyframes birdpass{0%{transform:translate(0,0)}18%{transform:translate(300px,-40px)}18.01%,100%{transform:translate(400px,-40px)}}
+.bird path{transform-box:fill-box;transform-origin:50% 50%;animation:flap .35s ease-in-out infinite}
+#vk-ta .wave{transform-box:fill-box;transform-origin:100% 100%;animation:wave .7s ease-in-out infinite}
+#vk-ta .wave.b{transform-origin:0% 100%;animation-duration:.6s;animation-delay:-.3s}
+.breeze{transform-box:fill-box;transform-origin:50% 0;animation:breeze 5s ease-in-out infinite}
+.breeze.b{animation-delay:-2.5s}
+.crawl{transform-box:fill-box;animation:crawl 4s ease-in-out infinite}
+.steam{transform-box:fill-box;transform-origin:50% 50%;animation:steam 2.4s ease-out infinite}
+.steam.b{animation-delay:-.8s} .steam.c{animation-delay:-1.6s}
