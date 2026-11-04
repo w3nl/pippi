@@ -71,3 +71,9 @@
 #sl-pippi .plait{transform-box:fill-box;transform-origin:100% 100%;animation:plait 2.8s ease-in-out infinite}
 #sl-pippi .plait.b{transform-origin:0% 100%;animation-direction:reverse}
 .sl-sec{transform-box:view-box;transform-origin:1240px 118px;animation:slsec 60s steps(60,end) infinite}
+/* after the bell: the holidays fly by, and the first snow falls on the schoolyard */
+@keyframes slFall{from{transform:translateY(-320px)}to{transform:translateY(320px)}}
+@keyframes slWhiten{from{opacity:0}to{opacity:1}}
+.sl-flake{animation:slFall 6s linear infinite}
+#sc-school.sl-firstsnow #sl-white,#sc-school.sl-firstsnow #sl-whitecap{animation:slWhiten 9s ease-in both}
+#sc-school.sl-firstsnow #sl-snow{animation:slWhiten 2s ease-in both}

@@ -1,350 +1,391 @@
-// Chapter 4: Pippi goes to the circus. The show can't begin until the ringmaster's checklist is done.
+// Chapter 4: winter at Villa Villekulla. Kling and Klang challenge the children to a snowball fight at three o'clock.
 // Loaded in order by js/boot.js; all game files share the same global scope.
 
 const UNLOCK4 = KEY + '-ch4';
 function unlocked4(){ try{ if(localStorage.getItem(UNLOCK4) === '1') return true; }catch(e){} return S.ch >= 4 || (S.ch === 3 && !!S.f.out3); }
 function setUnlocked4(){ try{ localStorage.setItem(UNLOCK4, '1'); }catch(e){} }
 
-/* The ringmaster's checklist: four acts to fix before the curtain may open. */
-const TASKS4 = ['lights', 'teeter', 'juggle', 'trapeze'];
-const TASK4_LABEL = { lights: 'Spotlights', teeter: 'Teeterboard', juggle: 'Clown', trapeze: 'Trapezes' };
-const tasks4Done = () => TASKS4.filter(k => S.f[k]).length;
+/* Everything that has to be ready before the church clock strikes three. */
+const READY4 = ['balls', 'fort', 'steps', 'warm'];
+const ready4 = () => READY4.every(k => S.f[k]);
 
 /* ---------- Chapter 4 items ---------- */
 Object.assign(ITEMS, {
-  tickets: { name:'Circus tickets', desc:'Four tickets: for Pippi, Tommy, Annika and you. Mr Nilsson goes in free, as hand luggage.',
-    svg:'<svg viewBox="0 0 44 44"><rect x="6" y="12" width="30" height="18" rx="2" fill="#f2c94c" transform="rotate(-8 21 21)"/><rect x="10" y="16" width="30" height="18" rx="2" fill="#c4302b"/><path d="M18 16 v18" stroke="#fffaf0" stroke-width="1.5" stroke-dasharray="2 2"/><text x="29" y="29" text-anchor="middle" font-size="9" font-weight="700" fill="#fffaf0" font-family="sans-serif">★</text></svg>' }
+  mittens: { name:'Mittens', desc:'Your own red mittens, a bit chewed by a monkey. Nobody makes snowballs with bare hands.',
+    svg:'<svg viewBox="0 0 44 44"><g fill="#d22d2d"><path d="M6 20 q0-12 10-12 q10 0 10 12 v14 h-20z"/><path d="M4 22 q-2-6 3-7 l3 6z"/><path d="M20 22 q0-12 10-12 q10 0 10 12 v14 h-20z"/><path d="M40 24 q4-6 -1-8 l-3 6z"/></g><g fill="#fffaf0"><rect x="6" y="32" width="20" height="5"/><rect x="20" y="34" width="20" height="5"/></g></svg>' }
 });
 
-/* ---------- drawing the big top ---------- */
-function buildCircus(){
-  // stripes rising to the top of the tent
-  let st = '';
-  for(let i = 0; i < 16; i++){ const x0 = i * 110 - 60, x1 = x0 + 110; st += `<path d="M800 0 L${x0} 560 L${x1} 560z" fill="${i % 2 ? '#f3e6c4' : '#b52222'}" opacity=".92"/>`; }
-  $('#cc-stripes').innerHTML = st;
-  // bunting
-  let bu = '';
-  for(let i = 0; i < 24; i++){ const x = 40 + i * 64, y = 96 + Math.sin(i / 23 * Math.PI) * 30; bu += `<path class="pennant" style="animation-delay:-${(i * .23).toFixed(2)}s" d="M${x} ${y} l32 0 l-16 26z" fill="${['#f2c94c','#2f5f9a','#3f8a4a','#e8571f'][i % 4]}"/>`; }
-  $('#cc-bunting').innerHTML = `<path d="M40 96 Q800 160 1580 96" stroke="#fffaf0" stroke-width="2" fill="none"/>` + bu;
-  // the light bulbs round the sign
-  let bl = '', k = 0;
-  for(let x = 622; x <= 978; x += 22){ bl += `<circle class="bulb" style="animation-delay:-${(k++ % 6) * .15}s" cx="${x}" cy="178" r="4.5" fill="#fff4b0"/><circle class="bulb" style="animation-delay:-${(k++ % 6) * .15}s" cx="${x}" cy="236" r="4.5" fill="#fff4b0"/>`; }
-  $('#cc-bulbs').innerHTML = bl;
-  // confetti for the finale
-  let cf = '';
-  for(let i = 0; i < 60; i++){ const x = (i * 97) % 1600, c = ['#f2c94c','#e8571f','#2f5f9a','#3f8a4a','#fffaf0','#c4302b'][i % 6];
-    cf += `<rect class="confetto" style="animation-delay:-${((i * 0.37) % 4).toFixed(2)}s;animation-duration:${(3 + (i % 5) * .5).toFixed(1)}s" x="${x}" y="-20" width="10" height="16" fill="${c}"/>`; }
-  $('#cc-confetti').innerHTML = cf;
+/* ---------- drawing the snowy garden ---------- */
+const rnd4 = (i, n) => { const x = Math.sin(i * 12.9898 + 4.1) * 43758.5453; return (x - Math.floor(x)) * n; };
+/* Footprints, drawn pointing up; tracks4() places them along a curve. */
+const PRINT4 = {
+  bird: '<path d="M0 6 V-6 M0 -2 L-5 -8 M0 -2 L5 -8" stroke="#8a9ab0" stroke-width="2" fill="none" stroke-linecap="round"/>',
+  cat: '<ellipse cx="0" cy="2" rx="4" ry="3.5" fill="#8a9ab0"/><g fill="#8a9ab0"><circle cx="-5" cy="-4" r="1.6"/><circle cx="-2" cy="-6.5" r="1.6"/><circle cx="2" cy="-6.5" r="1.6"/><circle cx="5" cy="-4" r="1.6"/></g>',
+  horse: '<path d="M-7 7 Q-9 -8 0 -9 Q9 -8 7 7" stroke="#8a9ab0" stroke-width="4" fill="none"/>',
+  monkey: '<ellipse cx="0" cy="2" rx="4" ry="5" fill="#8a9ab0"/><path d="M-3 -2 v-7 M-1 -3 v-8 M1 -3 v-8 M3 -2 v-7 M-4 2 l-6 -2" stroke="#8a9ab0" stroke-width="1.8" stroke-linecap="round"/>'
+};
+function trail4(kind, x0, y0, cx, cy, x1, y1, n, scale = 1){
+  let s = '';
+  for(let i = 0; i < n; i++){
+    const t = (i + .5) / n, u = 1 - t;
+    const x = u * u * x0 + 2 * u * t * cx + t * t * x1, y = u * u * y0 + 2 * u * t * cy + t * t * y1;
+    const dx = 2 * u * (cx - x0) + 2 * t * (x1 - cx), dy = 2 * u * (cy - y0) + 2 * t * (y1 - cy);
+    const a = Math.atan2(dy, dx) * 180 / Math.PI + 90, side = i % 2 ? 5 : -5, k = scale * (.7 + .5 * t);
+    s += `<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${a.toFixed(1)}) translate(${side} 0) scale(${k.toFixed(2)})">${PRINT4[kind]}</g>`;
+  }
+  return s;
 }
-function applyCircus(){
+/* A snow-block wall in running bond: every other row is shifted by half a block. */
+function wall4(x0, y0, w, rows, bw, bh){
+  let s = '';
+  for(let r = 0; r < rows; r++){
+    const off = r % 2 ? -bw / 2 : 0, y = y0 + r * bh;
+    for(let x = x0 + off; x < x0 + w; x += bw){ const a = Math.max(x, x0), b = Math.min(x + bw, x0 + w); s += `<rect x="${a}" y="${y}" width="${b - a}" height="${bh}" rx="3" fill="#fff" stroke="#c9d8e8" stroke-width="2"/>`; }
+  }
+  for(let x = x0; x < x0 + w; x += bw * 2) s += `<rect x="${x}" y="${y0 - bh * .7}" width="${bw * .9}" height="${bh * .7}" rx="3" fill="#fff" stroke="#c9d8e8" stroke-width="2"/>`;
+  return s;
+}
+function buildWinter(){
+  let fl = '';
+  for(let i = 0; i < 70; i++) fl += `<circle class="wt-flake" style="animation-delay:-${rnd4(i + 3, 12).toFixed(2)}s;animation-duration:${(8 + rnd4(i + 7, 6)).toFixed(1)}s" cx="${rnd4(i, 1600).toFixed(0)}" cy="${rnd4(i + 11, 900).toFixed(0)}" r="${(1.4 + rnd4(i + 5, 2.4)).toFixed(1)}"/>`;
+  $('#wt-snow').innerHTML = fl;
+  let li = '';
+  for(let i = 0; i < 15; i++) li += `<circle class="wt-light" style="animation-delay:-${(i % 3) * .5}s" cx="${258 + i * 21}" cy="${432 + (i % 2) * 4}" r="4" fill="${['#e2483d', '#f2c94c', '#3f8a4a', '#5aa0e0'][i % 4]}"/>`;
+  $('#wt-lights').innerHTML = li;
+  $('#wt-tracks').innerHTML = trail4('monkey', 1170, 890, 960, 760, 706, 650, 14) + trail4('bird', 900, 880, 960, 830, 1040, 790, 7)
+    + trail4('cat', 1190, 870, 1150, 720, 1110, 560, 11) + trail4('horse', 650, 650, 800, 720, 920, 704, 8, 1.1);
+  $('#wt-fortwall').innerHTML = wall4(150, 760, 490, 3, 50, 28);
+  $('#wt-pfort').innerHTML = wall4(1190, 716, 370, 3, 50, 28);
+}
+function applyWinter(){
   const show = (sel, on) => { const el = $(sel); if(el) el.style.display = on ? '' : 'none'; };
-  show('#cc-spunk', !S.f.spunkTaken); show('#hit-spunk4', !S.f.spunkTaken);
-  const sc = $('#sc-circus'); if(!sc) return;
-  sc.classList.toggle('lit', !!S.f.lights);          // the three beams turn white and meet in the ring
-  sc.classList.toggle('synced', !!S.f.trapeze);      // the trapezes swing in time
-  sc.classList.toggle('showtime', !!S.f.out4);       // the curtain opens, confetti, Pippi rides the horse
-  show('#cc-balls-floor', !S.f.juggle); show('#cc-balls-air', !!S.f.juggle);
-  show('#cc-frown', !S.f.juggle); show('#cc-smile', !!S.f.juggle);
-  show('#cc-confetti', !!S.f.out4); show('#cc-rider', !!S.f.out4); show('#cc-pippi', !S.f.out4);
-  $('#cc-board').setAttribute('transform', S.f.teeter ? '' : 'rotate(-7 1180 758)');
-  ['#cc-beam0', '#cc-beam1', '#cc-beam2'].forEach((b, i) => $(b).setAttribute('fill', S.f.lights ? 'url(#ccBeamW)' : ['url(#ccBeamR)', 'url(#ccBeamG)', 'url(#ccBeamB)'][i]));
-  $('#cc-ticks').innerHTML = TASKS4.map((k, i) => `<text x="222" y="${300 + i * 22}">${S.f[k] ? '✓' : '·'} ${tx(TASK4_LABEL[k])}</text>`).join('');
+  const sc = $('#sc-winter'); if(!sc) return;
+  show('#wt-spunk', !S.f.spunkTaken); show('#hit-spunk4', !S.f.spunkTaken);
+  show('#wt-nilsson', !!S.f.tracks);
+  show('#wt-fortheap', !S.f.fort); show('#wt-fortwall', !!S.f.fort);
+  show('#wt-ice', !S.f.steps);
+  show('#wt-vhorse', !S.f.steps); show('#hit-horse4v', !S.f.steps);
+  show('#wt-ghorse', !!S.f.steps); show('#hit-horse4g', !!S.f.steps); show('#wt-sledgeballs', !!S.f.balls);
+  show('#wt-annwarm', !!S.f.warm); $('#wt-annika').classList.toggle('wt-shiver', !S.f.warm);
+  show('#wt-carrot', !S.f.carrot);
+  show('#wt-cap', !S.f.out4); show('#wt-capfly', !!S.f.out4); show('#wt-flag', !!S.f.out4); show('#wt-fight', !!S.f.out4);
+  // where everybody is: the sledge in front of the veranda or behind our fort, the children out in the garden or behind the fort
+  const three = ready4() || S.f.out4;
+  sc.classList.toggle('wt-steps', !!S.f.steps);
+  sc.classList.toggle('wt-ready', !!three);
+  sc.classList.toggle('wt-won', !!S.f.out4);
+  const box = (id, x, y, w, h) => { const r = $(id); r.setAttribute('x', x); r.setAttribute('y', y); r.setAttribute('width', w); r.setAttribute('height', h); };
+  if(three){ box('#hit-ta4', 425, 690, 115, 50); box('#hit-pippi4', 545, 688, 95, 52); }
+  else { box('#hit-ta4', 594, 636, 112, 126); box('#hit-pippi4', 730, 660, 170, 160); }
+  // the church clock: half past two, then three o'clock once everything is ready
+  $('#wt-hour').setAttribute('transform', `rotate(${three ? 90 : 75} 1020 292)`);
+  $('#wt-min').setAttribute('transform', `rotate(${three ? 0 : 180} 1020 292)`);
+}
+/* A one-off move in the garden (the horse comes down, the children run to the fort, the big snowball rolls):
+   a class on the scene for as long as it takes. With motion off, everybody is simply in the new place. */
+function move4(cls, ms){
+  if(reducedMotion()) return;
+  const sc = $('#sc-winter'); sc.classList.add(cls);
+  setTimeout(() => sc.classList.remove(cls), ms);
+}
+/* After each job: once all four are done, the church clock strikes three. */
+function done4(lines){
+  if(!ready4()) return say(lines);
+  move4('wt-run', 2000);
+  say([...lines, ['sys', "Bong… bong… bong. The church clock strikes three!"], ['kling', "Three o'clock, children! Ready? Your team throws first!"], "Everything is ready: the fort, the snowballs, the horse with the sledge, and a warm Annika. Throw at the policemen's fort!"]);
 }
 
 /* ---------- hotspot handlers ---------- */
-const notInside4 = () => !S.f.inside && (say([['ringmaster', "Tickets, please! Nobody comes near my ring without a ticket. Not even strong little girls."]]), true);
 Object.assign(H, {
-  spunk4(){ S.f.spunkTaken = true; give('spunk'); applyVisuals(); say(["The spunk's jam jar, on the counter of the ticket booth. Pippi brought it to the circus.", "\"It has never seen a circus,\" she says. You take it. A spunk knows things. Even about circuses."]); },
-  booth(){
-    if(S.f.tickets) return say("The ticket booth. The ticket seller is counting Pippi's gold coin for the fourth time. It's real.");
-    openTickets();
+  spunk4(){ S.f.spunkTaken = true; give('spunk'); applyVisuals(); say(["The spunk's jam jar, on the kitchen windowsill, nice and warm. Pippi doesn't let it out in the snow.", "You take it anyway, tucked inside your coat. A spunk knows things. Even about snow."]); },
+  snow4(){
+    if(!S.f.angel){ S.f.angel = true; S.ach.snowangel = true; save(); return say(["Fresh, deep snow, without a single footprint. You flop backwards into it and wave your arms and legs.", "A perfect snow angel. Pippi says it's the best she's ever seen, apart from all of hers."]); }
+    say("Your snow angel is still there, looking up at the sky.");
   },
-  list4(){ say([tx("The ringmaster's checklist, BEFORE THE SHOW: spotlights, teeterboard, clown, trapezes. {n} of 4 done.", { n: tasks4Done() }), tasks4Done() >= 4 ? "All done! Now the curtain can open: the winch is next to it." : "When all four are ticked off, the curtain can open."]); },
-  ringmaster(){
-    if(S.f.out4) return say([['ringmaster', "Ladies and gentlemen! The strongest girl in the world!"]]);
-    if(!S.f.inside) return say([['ringmaster', "Tickets, please! The show starts in a moment. Well… it should."]]);
-    if(tasks4Done() >= 4) return say([['ringmaster', "Everything's ready! Open the curtain with the winch, and the show can begin!"]]);
-    say([['ringmaster', "Oh, it's a disaster! The spotlights are all the wrong colours, the teeterboard won't balance, the clown has forgotten his juggling, and the trapeze artists can't catch each other."], ['ringmaster', "My checklist is on the tent pole. If only somebody could help…"], ['pippi', "I've never helped a circus, so I'm sure I can!"]]);
-  },
-  lamps(){ if(notInside4()) return; if(S.f.lights) return say("The three spotlights shine white together, right in the middle of the ring. Perfect for a star."); openLights(); },
-  teeter(){ if(notInside4()) return; if(S.f.teeter) return say(["The teeterboard, perfectly balanced. The strongman is very impressed.", ['strongman', "Such a small girl. So far out. Perfect balance!"]]); openTeeter(); },
-  clown(){
-    if(notInside4()) return;
-    S.f.honks = (S.f.honks || 0) + 1; save();
-    if(S.f.honks >= 3){ S.ach.honk = true; save(); }
-    if(S.f.juggle) return say([['clown', S.f.honks >= 3 ? "Honk! Honk! HONK! Please stop squeezing my nose, I'm working." : "Look at me go! Red, blue, blue, red, blue, blue…"]]);
-    openJuggle();
-  },
-  trapeze(){ if(notInside4()) return; if(S.f.trapeze) return say("The two trapezes swing back and forth in perfect time. The flyers catch each other every single time."); openTrapeze(); },
-  seal(){ say([['seal', "Ork! Ork!"], "A seal on a stool, balancing a ball on its nose. It's the only one in the circus who's ready for the show."]); },
-  curtain(){
+  church4(){ say(ready4() || S.f.out4 ? "The church clock in the town says three o'clock. Snowball time!" : ["The church clock in the town. The little hand is between the II and the III, and the big hand points straight down: half past two.", "At three o'clock, the snowball fight begins."]); },
+  gate4(){
     if(S.f.out4) return startCh5();
-    say(["The performers' curtain, heavy red velvet with gold fringes. Behind it, the horses are stamping and someone is warming up a trumpet.", "It opens with the winch on its right. But only when the show is ready."]);
+    say(["The garden gate. Outside, children are pulling sledges up the lane.", "Kling and Klang came in through it with their snow shovels. They mean business."]);
   },
-  winch(){
-    if(notInside4()) return;
-    if(S.f.out4) return say("The winch has done its job. The curtain is open.");
-    if(tasks4Done() < 4) return say([['ringmaster', tx("Not yet! First the checklist: {n} of 4 acts are ready.", { n: tasks4Done() })]]);
-    openGears();
+  house4(){ say(["Villa Villekulla, with a thick white blanket of snow on the roof and smoke curling out of the chimney.", "It looks even more crooked in the snow. Pippi says the snow makes it lean the other way for a change."]); },
+  window4(){ say(["Through the kitchen window: the stove is glowing, and a pan of milk is waiting for the hot chocolate.", "Whoever loses the snowball fight has to make it. Pippi has already put out a lot of cups."]); },
+  thermo4(){ openThermo4(); },
+  horse4(){
+    if(S.f.steps) return say([["horse", "Pfrrrr!"], S.f.balls ? "The horse is harnessed to the sledge, which is piled high with snowballs. It looks very proud to be on your team." : "The horse is harnessed to the sledge, waiting for something to pull."]);
+    if(S.f.carrot) return say([['horse', "Crunch."], "The horse is still chewing the snowman's nose, very happily."]);
+    say([['horse', "Pfrrrr!"], "The horse is on the veranda in its winter blanket. Pippi wants it to pull the sledge with the snowballs.", "But the veranda steps are one big sheet of ice. Every time it puts a hoof on them, it slides."]);
   },
-  pippi4(){ say(['pippi', S.f.out4 ? "I'm a circus star!" : !S.f.inside ? "I've got a gold coin for the tickets. It's a bit big, but they'll have change." : "A circus! With a strongman! I wonder if he'd like to be lifted."]); }
+  steps4(){ if(S.f.steps) return say("The veranda steps, salted and safe. Even Mr Nilsson walks down them now, instead of sliding."); openSteps4(); },
+  oak4(){
+    if(!S.f.tracks) return say(["The old oak, with snow on every branch and a dark hollow in its trunk.", "Sparrows are squabbling over the bird feeder. Somewhere, a monkey is hiding with your mittens."]);
+    say([['nilsson', "Eek!"], "Mr Nilsson peeks out of the hollow in the oak, very pleased with himself. He has a snowball of his own."]);
+  },
+  snowman4(){
+    if(S.f.carrot) return say("The snowman has no nose any more. The horse says it wasn't him. The horse has orange lips.");
+    S.f.snowTaps = (S.f.snowTaps || 0) + 1; save();
+    if(S.f.snowTaps === 1) return say(["Pippi's snowman, wearing her old top hat and a green scarf, with a carrot for a nose.", "There are hoofprints all round it. Somebody has been admiring that carrot."]);
+    if(S.f.snowTaps === 2) return say("You straighten the snowman's hat. Behind you, someone is breathing very loudly through its nose.");
+    S.f.carrot = true; S.ach.carrot = true; save(); applyVisuals();
+    say([['horse', "Crunch, crunch."], "The horse has stretched its neck all the way from the veranda and eaten the snowman's nose. It looks delighted."]);
+  },
+  tracks4(){ if(S.f.tracks) return say("The tracks in the snow. The one with five long fingers led straight to the old oak, and Mr Nilsson."); openTracks4(); },
+  fort4(){
+    if(S.f.out4) return say("Your fort, a bit battered, but still standing. Snowball champions!");
+    if(S.f.fort && ready4()) return openThrow4();
+    if(S.f.fort) return say("Your fort, strong and straight. Now get everything else ready before three o'clock.");
+    openFort4();
+  },
+  ta4(){
+    if(S.f.out4) return say([['tommy', "We beat the police!"], ['annika', "Kindly. We beat the police kindly."]]);
+    if(!S.f.warm) return openWarm4();
+    say([['tommy', "Ready for battle!"], ['annika', "Lovely and warm now. Three layers and mittens. I could stay out all day."]]);
+  },
+  pippi4(){
+    if(S.f.out4) return say(['pippi', "The police are very good losers. Next year I'll let them win. Maybe."]);
+    say(['pippi', ready4() ? "It's three o'clock! Throw, throw, throw!" : "I've rolled one snowball. It's a bit big. I'm saving it for later. I've never had a snowball fight with the police, so I'm sure I'll win."]);
+  },
+  police4(){
+    if(S.f.out4) return say([['klang', "We surrender! The cap is a bit wet, but it'll dry."], ['kling', "Same time next year, children?"]]);
+    if(ready4()) return openThrow4();
+    say([['kling', "Our fort is ready, children! Is yours?"], ['klang', "At three o'clock sharp. Losers make the hot chocolate. With whipped cream!"]]);
+  }
 });
 
-/* ---------- puzzle: the tickets (money: 4 × 3 = 12, and 20 − 12 = 8 change) ---------- */
-const TICKET_PRICE = 3, TICKETS_N = 4, COIN_PAID = 20;
-function openTickets(){
-  const ch = S.chg || (S.chg = []);
-  openModal('The ticket booth', 'Tickets: 3 crowns each', `
-    <div class="booth4">
-      <p>${tx('Pippi buys {n} tickets, for herself, Tommy, Annika and you, and pays with a gold coin worth {paid} crowns. The ticket seller has gone to fetch more change, so you\'re in charge of the till.', { n: TICKETS_N, paid: COIN_PAID })}</p>
-      <p><b>${tx('How much change does Pippi get?')}</b></p>
-      <div class="till">${[5, 2, 1].map(v => `<button type="button" class="coin c${v}" data-v="${v}" aria-label="${tx('Add a {v}-crown coin', { v })}">${v}</button>`).join('')}</div>
-      <div class="change" id="change"></div>
-      <div class="row-btns"><button type="button" class="btn ghost" id="chg-clear">${tx('Take it back')}</button><button type="button" class="btn" id="chg-give">${tx('Give the change')}</button></div>
-      <div class="feedback" id="chg-fb"></div>
-    </div>`, () => {
-    const fb = $('#chg-fb');
-    const draw = () => { $('#change').innerHTML = ch.length ? ch.map(v => `<span class="coin c${v}">${v}</span>`).join('') + ` <b>= ${ch.reduce((a, b) => a + b, 0)}</b>` : `<i>${tx('No coins yet.')}</i>`; };
-    draw();
-    document.querySelectorAll('.till .coin').forEach(b => b.onclick = () => { if(ch.length < 12){ ch.push(+b.dataset.v); save(); draw(); beep(900 + +b.dataset.v * 40, .05); } });
-    $('#chg-clear').onclick = () => { ch.length = 0; save(); draw(); };
-    $('#chg-give').onclick = () => {
-      const sum = ch.reduce((a, b) => a + b, 0), want = COIN_PAID - TICKET_PRICE * TICKETS_N;
-      if(sum === want){
-        S.f.tickets = true; ch.length = 0; save(); give('tickets'); applyVisuals(); chord([523,659,784,1046]);
-        fb.className = 'feedback good'; fb.textContent = tx('4 × 3 = 12 crowns for the tickets, and 20 − 12 = 8 crowns change. Four tickets for you!');
-        setTimeout(() => { closeModal(); say([['pippi', "Eight crowns change! That's enough for eight crowns' worth of sweets."], "You take the tickets. Now show them to the ringmaster."]); }, 1700);
-        return;
-      }
-      nope(); fb.className = 'feedback bad';
-      fb.textContent = tx(sum === 12 ? "12 crowns is what the tickets cost. Pippi paid 20: how much is left over?" : sum === 17 ? "That would be right for one ticket. But Pippi buys four." : sum > want ? 'Too much! The circus would go bankrupt. First work out what four tickets cost.' : 'Not enough. What do four tickets cost, and how much is left of 20?');
-    };
-  });
-}
-
-/* ---------- puzzle: the spotlights (mixing coloured light) ---------- */
-const LIGHT_ROUNDS = [
-  { want: 'yellow', mix: [1, 1, 0], ask: 'Yellow light for the clown' },
-  { want: 'cyan', mix: [0, 1, 1], ask: "Sea-blue light for the seal: cyan, a mix of green and blue" },
-  { want: 'white', mix: [1, 1, 1], ask: 'White light for the star of the show' }
-];
-const LIGHT_NAME = { '000': 'darkness', '100': 'red', '010': 'green', '001': 'blue', '110': 'yellow', '011': 'cyan', '101': 'magenta (pink-purple)', '111': 'white' };
-const LIGHT_CSS = { '000': '#111', '100': '#ff3b3b', '010': '#3bff5a', '001': '#3b6bff', '110': '#ffee3b', '011': '#3bf0ff', '101': '#ff3bf0', '111': '#ffffff' };
-function openLights(){
-  const st = S.lgt || (S.lgt = { r: 0, on: [0, 0, 0] });
-  openModal('The lighting desk', 'Three spotlights: red, green and blue', `
-    <div class="lightdesk">
-      <svg class="mix-svg" viewBox="0 0 240 200" aria-hidden="true"><rect width="240" height="200" fill="#000"/><g style="mix-blend-mode:screen"><circle id="mx0" cx="96" cy="80" r="60" fill="#ff0000"/><circle id="mx1" cx="144" cy="80" r="60" fill="#00ff00" style="mix-blend-mode:screen"/><circle id="mx2" cx="120" cy="124" r="60" fill="#0000ff" style="mix-blend-mode:screen"/></g></svg>
-      <div class="ld-ctl">
-        <div class="ld-ask" id="ld-ask"></div>
-        <div class="ld-switches">${['Red', 'Green', 'Blue'].map((n, i) => `<button type="button" class="tog ld${i}" data-i="${i}">${tx(n)}</button>`).join('')}</div>
-        <div class="ld-now" id="ld-now"></div>
-        <button type="button" class="btn" id="ld-go">${tx('Shine!')}</button>
-      </div>
-    </div>
-    <div class="feedback" id="ld-fb">${tx('Coloured LIGHT mixes differently from paint: the more colours you add, the brighter it gets.')}</div>`, () => {
-    const fb = $('#ld-fb');
-    const key = () => st.on.join('');
-    const draw = () => {
-      st.on.forEach((v, i) => { $('#mx' + i).style.display = v ? '' : 'none'; document.querySelector('.ld' + i).classList.toggle('on', !!v); });
-      $('#ld-ask').innerHTML = `<b>${tx('Round {n} of 3:', { n: st.r + 1 })}</b> ${tx(LIGHT_ROUNDS[st.r].ask)}`;
-      $('#ld-now').innerHTML = `${tx('The ring is now:')} <span class="swatch" style="background:${LIGHT_CSS[key()]}"></span> ${tx(LIGHT_NAME[key()])}`;
-    };
-    draw();
-    document.querySelectorAll('.ld-switches .tog').forEach(b => b.onclick = () => { const i = +b.dataset.i; st.on[i] = st.on[i] ? 0 : 1; save(); beep(400 + i * 200, .05); draw(); });
-    $('#ld-go').onclick = () => {
-      const round = LIGHT_ROUNDS[st.r];
-      if(key() === '000'){ S.ach.lightsout = true; save(); nope(); fb.className = 'feedback bad'; fb.textContent = tx('Pitch dark! Somewhere in the dark, the seal goes "Ork?" Switch some lights on.'); return; }
-      if(key() !== round.mix.join('')){ nope(); fb.className = 'feedback bad';
-        fb.textContent = tx(round.want === 'yellow' && key() === '100' ? 'Only red. Yellow light is red light plus another colour. Not blue!' : round.want === 'white' ? 'Not white yet. White light is every colour of light together.' : 'That makes {got}. Which two colours of light together make {want}?', { got: tx(LIGHT_NAME[key()]), want: tx(round.want) }); return; }
-      chord([523, 659, 784]);
-      if(st.r < 2){ st.r++; save(); fb.className = 'feedback good'; fb.textContent = tx(round.want === 'yellow' ? 'Yellow! Red light and green light make yellow light. (With paint you would get brown!)' : 'Cyan! Green and blue light make a bright sea-blue.'); draw(); return; }
-      S.f.lights = true; save(); applyVisuals();
-      fb.className = 'feedback good'; fb.textContent = tx('White! Red, green and blue light together make white light. A screen makes every colour from just those three.');
-      setTimeout(() => { closeModal(); say([['ringmaster', "The lights are perfect! Tick it off!"], "Up on the checklist, a tick appears next to Spotlights."]); }, 1800);
-    };
-  });
-}
-
-/* ---------- puzzle: the teeterboard (a lever: weight × distance on each side) ---------- */
-const STRONG_KG = 90, STRONG_M = 1, PIPPI_KG = 30;
-function openTeeter(){
-  const st = S.tee || (S.tee = { m: 1 });
-  openModal('The teeterboard', 'The strongman: 90 kg, 1 metre from the middle', `
-    <svg class="teeter-svg" viewBox="0 0 520 220" aria-hidden="true">
-      <rect width="520" height="220" fill="#d9a861"/>
-      <path d="M260 170 l-22 40 h44z" fill="#8a5a2b"/>
-      <g id="tt-board" class="tt-board"><rect x="20" y="162" width="480" height="10" rx="4" fill="#c98a4b" stroke="#7a4a1f" stroke-width="2"/>
-        ${[1,2,3,4].map(m => `<g><text x="${260 - m * 55}" y="190" text-anchor="middle" font-size="11" fill="#5a3a1a">${m} m</text><text x="${260 + m * 55}" y="190" text-anchor="middle" font-size="11" fill="#5a3a1a">${m} m</text></g>`).join('')}
-        <g transform="translate(${260 - STRONG_M * 55},0)"><rect x="-18" y="110" width="36" height="52" rx="12" fill="#1a1a1a"/><circle cy="98" r="14" fill="#e2b38c"/><text y="140" text-anchor="middle" font-size="12" fill="#fffaf0">90</text></g>
-        <g id="tt-pippi"><rect x="-10" y="128" width="20" height="34" rx="6" fill="#3f8a4a"/><circle cy="118" r="10" fill="#f3c9a4"/><path d="M-10 116 l-12 -4 M10 116 l12 -4" stroke="#e8571f" stroke-width="5" stroke-linecap="round"/><text y="152" text-anchor="middle" font-size="10" fill="#fffaf0">30</text></g>
-      </g>
+/* ---------- puzzle: the tracks in the snow (reading animal tracks) ---------- */
+function openTracks4(){
+  const pr = (kind, x, y, a, k = 1.6) => `<g transform="translate(${x} ${y}) rotate(${a}) scale(${k})">${PRINT4[kind]}</g>`;
+  const row = (kind, y) => [0, 1, 2, 3, 4].map(i => pr(kind, 130 + i * 52, y + (i % 2 ? 8 : -8), 90)).join('');
+  const trails = [['A', 'cat'], ['B', 'monkey'], ['C', 'bird'], ['D', 'horse']];
+  openModal('Tracks in the snow', 'Which ones lead to your mittens?', `
+    <svg class="wt-tracksvg" viewBox="0 0 440 250" role="group" aria-label="${tx('Four trails of footprints')}">
+      <rect width="440" height="250" rx="8" fill="#f4f8fc"/>
+      ${trails.map(([l, k], i) => `<g class="wt-trail" data-k="${k}" tabindex="0" role="button" aria-label="${tx('Trail {l}', { l })}"><rect x="10" y="${12 + i * 58}" width="420" height="52" rx="8" fill="transparent"/><text x="40" y="${44 + i * 58}" font-size="22" font-weight="700" fill="#1f3f6a" font-family="Fredoka, sans-serif">${l}</text>${row(k, 38 + i * 58)}</g>`).join('')}
     </svg>
-    <div class="row-btns">${[1,2,3,4].map(m => `<button type="button" class="btn ghost seat" data-m="${m}">${tx('Pippi at {m} m', { m })}</button>`).join('')}</div>
-    <div class="feedback" id="tt-fb">${tx('Pippi weighs 30 kg. Where must she sit so the board balances? The strongman says: "Heavy and close, or light and far, it\'s all the same to a teeterboard."')}</div>`, () => {
-    const fb = $('#tt-fb');
-    const draw = () => {
-      const left = STRONG_KG * STRONG_M, right = PIPPI_KG * st.m, ang = Math.max(-12, Math.min(12, (right - left) / 6));
-      $('#tt-board').setAttribute('transform', `rotate(${ang.toFixed(1)} 260 167)`);
-      $('#tt-pippi').setAttribute('transform', `translate(${260 + st.m * 55},0)`);
-      document.querySelectorAll('.seat').forEach(b => b.classList.toggle('on', +b.dataset.m === st.m));
-    };
-    draw();
-    document.querySelectorAll('.seat').forEach(b => b.onclick = () => {
-      st.m = +b.dataset.m; save(); draw(); beep(300 + st.m * 80, .06);
-      const left = STRONG_KG * STRONG_M, right = PIPPI_KG * st.m;
-      if(right === left){
-        S.f.teeter = true; save(); applyVisuals(); chord([523,659,784,1046]);
-        fb.className = 'feedback good'; fb.textContent = tx('Balanced! 90 kg × 1 m = 90, and 30 kg × 3 m = 90. A light person far out balances a heavy person close in.');
-        setTimeout(() => { closeModal(); say([['strongman', "Such a small girl, so far out, and we balance perfectly! Teeterboard act: ready!"]]); }, 1800);
-        return;
-      }
-      fb.className = 'feedback bad';
-      if(right > left){ S.ach.flyer = true; save(); nope(); fb.textContent = tx('Pippi\'s end goes down with a bump, and the strongman flies up into the air! 30 × 4 = 120 is more than 90 × 1 = 90.'); return; }
-      fb.textContent = tx('The strongman\'s side stays down. 30 kg × {m} m = {r}, but 90 kg × 1 m = 90. Sit further out.', { m: st.m, r: right });
+    <div class="wt-book">${tx('<b>Annika\'s nature book.</b> BIRD: three thin toes forward, one back. CAT: four round toes and no claw marks. HORSE: round hoofprints. The book has no monkeys in it. This is Sweden.')}</div>
+    <div class="feedback" id="wt-tfb">${tx('Click the trail you think Mr Nilsson left.')}</div>`, body => {
+    body.querySelectorAll('.wt-trail').forEach(g => {
+      const pick = () => {
+        const k = g.dataset.k, fb = $('#wt-tfb');
+        if(k === 'monkey'){
+          S.f.tracks = true; save(); give('mittens'); applyVisuals(); chord([523,659,784,1046]);
+          fb.className = 'feedback good'; fb.textContent = tx('Five long fingers and a thumb, like a little hand. That\'s not in any Swedish nature book: it\'s Mr Nilsson! The trail leads to the old oak.');
+          setTimeout(() => { closeModal(); say(["You follow the little handprints across the garden to the old oak. A straw hat pokes out of the hollow in the trunk.", ['nilsson', "Eek!"], "Mr Nilsson is wearing your mittens on his feet. He looks at you, sighs, and kicks them down into the snow.", ['pippi', "Well found! Monkeys have hands on their feet too, so they leave handprints everywhere."]]); }, 1900);
+          return;
+        }
+        nope(); fb.className = 'feedback bad';
+        fb.textContent = tx({ bird: 'Three thin toes forward and one back: a bird. The sparrows have been hopping to the bird feeder.',
+          cat: 'Four round toes and no claw marks: a cat. Cats pull their claws in when they walk. It\'s the neighbour\'s cat, off along the fence.',
+          horse: 'Round hoofprints: the horse, from the veranda to the snowman. It was after the carrot, not your mittens.' }[k]);
+      };
+      g.addEventListener('click', pick);
+      g.addEventListener('keydown', e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); pick(); } });
     });
   });
 }
 
-/* ---------- puzzle: the clown's juggling (a repeating pattern) ---------- */
-const JUGGLE_PATTERN = ['R', 'B', 'B', 'R', 'B', 'B', 'R', 'B', 'B', 'R'];
-const JUGGLE_GIVEN = 7;   // the clown remembers the first seven
-const JCOL = { R: '#e2483d', B: '#2f5f9a', Y: '#f2c94c' };
-function openJuggle(){
-  const st = S.jug || (S.jug = ['', '', '']);
-  openModal("The clown's juggling", 'He has forgotten how it goes on', `
-    <p class="flag-p">${tx('"I always juggle in a pattern," sniffs the clown, "but I\'ve forgotten the end! Which balls come next?"')}</p>
-    <div class="jrow" id="jrow"></div>
-    <p class="hint-s">${tx('Click an empty ball to change its colour.')}</p>
-    <div class="row-btns"><button type="button" class="btn" id="jug-go">${tx('Juggle!')}</button></div>
-    <div class="feedback" id="jug-fb"></div>`, () => {
-    const fb = $('#jug-fb'), cyc = ['', 'R', 'B', 'Y'];
-    const draw = () => {
-      $('#jrow').innerHTML = JUGGLE_PATTERN.map((c, i) => i < JUGGLE_GIVEN ? `<span class="jb" style="background:${JCOL[c]}"></span>`
-        : `<button type="button" class="jb pick" data-i="${i - JUGGLE_GIVEN}" style="background:${st[i - JUGGLE_GIVEN] ? JCOL[st[i - JUGGLE_GIVEN]] : 'transparent'}" aria-label="${tx('Ball {n}', { n: i + 1 })}">${st[i - JUGGLE_GIVEN] ? '' : '?'}</button>`).join('');
-      document.querySelectorAll('.jb.pick').forEach(b => b.onclick = () => { const i = +b.dataset.i; st[i] = cyc[(cyc.indexOf(st[i]) + 1) % cyc.length]; save(); beep(600, .03); draw(); });
+/* ---------- puzzle: snow that sticks (reading temperatures below zero) ---------- */
+const THERMO4 = [
+  { k: 'north', label: 'North wall, in the shade', t: -9 },
+  { k: 'oak', label: 'Under the old oak', t: -4 },
+  { k: 'sun', label: 'By the veranda, in the sun', t: -1 },
+  { k: 'kitchen', label: 'Kitchen windowsill, inside', t: 20 }
+];
+function openThermo4(){
+  if(S.f.balls) return say("The thermometer by the veranda says -1 °C. Perfect snowball weather. You've made a whole pile.");
+  const y = t => 190 - (t + 10) * 5;
+  let s = '<rect width="440" height="230" rx="8" fill="#f4f8fc"/>';
+  for(let t = -10; t <= 20; t += 5) s += `<path d="M30 ${y(t)} H420" stroke="${t === 0 ? '#5aa0e0' : '#d9e4ef'}" stroke-width="${t === 0 ? 2 : 1}"/><text x="24" y="${y(t) + 4}" text-anchor="end" font-size="11" fill="#5a6a80" font-family="IBM Plex Mono, monospace">${t > 0 ? '+' + t : t}</text>`;
+  THERMO4.forEach((th, i) => { const x = 80 + i * 96;
+    s += `<rect x="${x - 7}" y="${y(20) - 6}" width="14" height="${y(-10) - y(20) + 12}" rx="7" fill="#fffaf0" stroke="#9aa0a6" stroke-width="2"/><rect x="${x - 3}" y="${y(th.t)}" width="6" height="${y(-10) - y(th.t) + 8}" fill="#d22d2d"/><circle cx="${x}" cy="${y(-10) + 14}" r="9" fill="#d22d2d"/>`; });
+  openModal('Four thermometers', 'Where does the snow stick?', `
+    <svg class="wt-thermosvg" viewBox="0 0 440 230" aria-hidden="true">${s}</svg>
+    <div class="wt-spots">${THERMO4.map(th => `<button type="button" class="btn ghost wt-spot" data-k="${th.k}">${tx(th.label)}</button>`).join('')}</div>
+    <div class="wt-book">${tx('Annika says: snow sticks best when it\'s just below freezing (0 °C), a little bit damp. Very cold snow is dry like powder, and above 0 °C it melts into slush.')}</div>
+    <div class="feedback" id="wt-hfb">${tx('Read the thermometers. Where will you make the snowballs?')}</div>`, () => {
+    document.querySelectorAll('.wt-spot').forEach(b => b.onclick = () => {
+      const k = b.dataset.k, fb = $('#wt-hfb');
+      if(k !== 'sun'){
+        nope(); fb.className = 'feedback bad';
+        fb.textContent = tx({ north: '-9 °C: nine degrees below freezing, the coldest of all. The snow is as dry as powdered sugar and falls apart in your hands.',
+          oak: '-4 °C: four degrees below freezing. Warmer than the north wall, but the snow still crumbles.',
+          kitchen: '+20 °C is Pippi\'s kitchen. Snowballs in there turn into puddles, and the floor is wet enough already.' }[k]);
+        return;
+      }
+      if(!S.inv.includes('mittens')){ nope(); fb.className = 'feedback bad'; fb.textContent = tx('-1 °C, just below freezing: perfect snowball snow! But your fingers are frozen stiff. Get your mittens back first.'); return; }
+      S.f.balls = true; save(); applyVisuals(); chord([523,659,784,1046]);
+      fb.className = 'feedback good'; fb.textContent = tx('-1 °C: only one degree below freezing. The snow is a little damp, so it sticks. Squish, pat, pat: perfect snowballs!');
+      setTimeout(() => { closeModal(); done4(["You make a big pile of snowballs on the sunny side of the veranda. -1 is warmer than -4, and -4 is warmer than -9: below zero, the bigger the number, the colder it is.", ['pippi', "Forty snowballs! I've made four hundred. Well, four. But they're big."]]); }, 1800);
+    });
+  });
+}
+
+/* ---------- puzzle: the fort (blocks laid like bricks: every joint has a whole block on top) ---------- */
+const FORT4_ROWS = 4, FORT4_BW = 60, FORT4_BH = 30, FORT4_W = 300;
+function openFort4(){
+  const off = S.frt || (S.frt = [0, 0, 0, 0]);
+  openModal('Building the fort', 'Snow blocks, four rows high', `
+    <svg class="wt-fortsvg" viewBox="0 0 380 190" aria-hidden="true" id="wt-fortsvg"></svg>
+    <div class="row-btns wt-rowbtns">${off.map((_, r) => `<button type="button" class="btn ghost wt-shift" data-r="${r}">${tx('Shift row {n}', { n: FORT4_ROWS - r })}</button>`).join('')}</div>
+    <div class="row-btns"><button type="button" class="btn" id="wt-push">${tx('Pippi tests it with a push')}</button></div>
+    <div class="feedback" id="wt-ffb">${tx('Click a row to shift it by half a block. Then let Pippi push the wall to see if it holds.')}</div>`, () => {
+    const fb = $('#wt-ffb');
+    const draw = (crack) => {
+      let s = '<rect width="380" height="190" fill="#dfe9f3"/><rect y="170" width="380" height="20" fill="#fff"/>';
+      off.forEach((o, r) => { const y = 170 - (FORT4_ROWS - r) * FORT4_BH;
+        for(let x = 40 - (o ? FORT4_BW / 2 : 0); x < 40 + FORT4_W; x += FORT4_BW){ const a = Math.max(x, 40), b = Math.min(x + FORT4_BW, 40 + FORT4_W);
+          s += `<rect x="${a}" y="${y}" width="${b - a}" height="${FORT4_BH}" rx="3" fill="#fff" stroke="#9fb4cc" stroke-width="2"/>`; } });
+      if(crack) s += `<path d="${crack}" stroke="#d22d2d" stroke-width="4" fill="none" stroke-dasharray="6 4"/>`;
+      $('#wt-fortsvg').innerHTML = s;
     };
     draw();
-    $('#jug-go').onclick = () => {
-      const want = JUGGLE_PATTERN.slice(JUGGLE_GIVEN);
-      if(st.join('') === want.join('')){
-        S.f.juggle = true; save(); applyVisuals(); chord([523,659,784,1046]);
-        fb.className = 'feedback good'; fb.textContent = tx('Red, blue, blue, again and again: the pattern repeats every three balls. Up they go!');
-        setTimeout(() => { closeModal(); say([['clown', "Red, blue, blue! Red, blue, blue! I remember! Honk honk!"], "The clown juggles, and the balls fly round and round in the spotlight."]); }, 1700);
+    document.querySelectorAll('.wt-shift').forEach(b => b.onclick = () => { const r = +b.dataset.r; off[r] = off[r] ? 0 : 1; save(); beep(500 + r * 60, .04); fb.className = 'feedback'; fb.textContent = ''; draw(); });
+    $('#wt-push').onclick = () => {
+      const same = [];
+      for(let r = 0; r < FORT4_ROWS - 1; r++) if(off[r] === off[r + 1]) same.push(r);
+      if(!same.length){
+        S.f.fort = true; save(); applyVisuals(); chord([523,659,784,1046]); draw();
+        fb.className = 'feedback good'; fb.textContent = tx('Pippi pushes with all her might, and the wall doesn\'t budge! Every joint has a whole block on top of it, so the push spreads out over many blocks. That\'s how bricks are laid in a house wall too.');
+        setTimeout(() => { closeModal(); done4(["Your fort stands strong and straight, with little battlements on top.", ['klang', "Kling, look! They know how to build a wall."]]); }, 2200);
         return;
       }
       nope(); fb.className = 'feedback bad';
-      fb.textContent = tx(st.includes('Y') ? 'Yellow? There\'s no yellow anywhere in his pattern so far.' : st.some(c => !c) ? 'Choose a colour for every empty ball first.' : 'The clown drops a ball on his foot. Look at the start: which group of colours keeps repeating?');
+      const r = same[0], y0 = 170 - (FORT4_ROWS - r) * FORT4_BH, x = 40 + FORT4_BW * 2 - (off[r] ? FORT4_BW / 2 : 0);
+      draw(`M${x} ${y0} V${y0 + FORT4_BH * 2}`);
+      fb.textContent = tx(same.length === FORT4_ROWS - 1 ? 'Crack! The joints are all in one straight line, from the top to the bottom, and the wall splits along it and topples over. Shift every other row.'
+        : 'Crack! Where two rows have their joints in the same place, the wall still splits. Every joint needs a whole block on top of it.');
     };
   });
 }
 
-/* ---------- puzzle: the trapezes (a pendulum's rhythm depends on its length, not its weight) ---------- */
-const swingTime = L => 2 * Math.PI * Math.sqrt(L / 9.8);
-function openTrapeze(){
-  const st = S.trp || (S.trp = { a: 4, b: 2 });
-  openModal('The trapezes', 'The Flying Svenssons must swing in time', `
-    <svg class="trap-svg" viewBox="0 0 400 230" aria-hidden="true">
-      <rect width="400" height="230" fill="#1f2a5c"/>
-      <g id="tp-a" class="tp"><line id="tpa-r" x1="110" y1="0" x2="110" y2="160" stroke="#d9c79a" stroke-width="3"/><g id="tpa-p"><circle cx="110" cy="170" r="10" fill="#f3c9a4"/><rect x="100" y="178" width="20" height="26" rx="5" fill="#e8571f"/></g></g>
-      <g id="tp-b" class="tp"><line id="tpb-r" x1="290" y1="0" x2="290" y2="160" stroke="#d9c79a" stroke-width="3"/><g id="tpb-p"><circle cx="290" cy="170" r="12" fill="#e2b38c"/><rect x="278" y="180" width="24" height="30" rx="6" fill="#2f5f9a"/></g></g>
-    </svg>
-    <div class="trap-ctl">
-      <label>${tx('Left rope (Sofia, 35 kg)')}: <b id="tpa-v"></b><input type="range" id="tpa" min="2" max="6" step="1" value="${st.a}"></label>
-      <label>${tx('Right rope (Sven, 70 kg)')}: <b id="tpb-v"></b><input type="range" id="tpb" min="2" max="6" step="1" value="${st.b}"></label>
-    </div>
-    <div class="row-btns"><button type="button" class="btn" id="tp-go">${tx('Jump across!')}</button></div>
-    <div class="feedback" id="tp-fb">${tx('To catch each other, the two trapezes must swing in exactly the same rhythm. Sven is twice as heavy as Sofia. Does that matter?')}</div>`, () => {
-    const fb = $('#tp-fb');
-    const draw = () => {
-      [['a', 110], ['b', 290]].forEach(([k, x]) => {
-        const L = st[k], len = 40 + L * 22, T = swingTime(L);
-        $(`#tp${k}-r`).setAttribute('y2', len); $(`#tp${k}-p`).setAttribute('transform', `translate(0,${len - 160})`);
-        const g = $('#tp-' + k); g.style.animationDuration = T.toFixed(2) + 's'; g.style.transformOrigin = `${x}px 0px`;
-        $(`#tp${k}-v`).textContent = tx('{L} m · one swing there and back: {T} s', { L, T: T.toFixed(1) });
-      });
-    };
-    draw();
-    $('#tpa').oninput = e => { st.a = +e.target.value; save(); draw(); };
-    $('#tpb').oninput = e => { st.b = +e.target.value; save(); draw(); };
-    $('#tp-go').onclick = () => {
-      if(st.a === st.b){
-        S.f.trapeze = true; save(); applyVisuals(); chord([523,659,784,1046]);
-        fb.className = 'feedback good'; fb.textContent = tx('Same length, same rhythm: Sven catches Sofia! How fast a swing goes depends on the length of the rope, not on how heavy you are.');
-        setTimeout(() => { closeModal(); say(["The Flying Svenssons swing in perfect time and catch each other in mid-air. The audience isn't even in yet, and Pippi is already clapping.", ['pippi', "Bravo! Next time, I'll be the one in the middle."]]); }, 1900);
+/* ---------- puzzle: the icy steps (salt melts ice, even below 0 °C) ---------- */
+function openSteps4(){
+  openModal('The icy steps', 'The horse can\'t get down', `
+    <p class="flag-p">${tx('The veranda steps are covered in smooth, hard ice, and the horse slides on every step. Pippi\'s kitchen has a kettle of warm water, a bag of sugar, a box of salt, and outside there\'s plenty of snow. What do you put on the steps?')}</p>
+    <div class="hands">${[['water', 'Warm water from the kettle'], ['sugar', 'Sugar'], ['salt', 'Salt'], ['snow', 'More snow']].map(([k, l]) => `<button type="button" class="hand" data-i="${k}">${tx(l)}</button>`).join('')}</div>
+    <div class="feedback" id="wt-sfb"></div>`, () => {
+    document.querySelectorAll('.hand[data-i]').forEach(b => b.onclick = () => {
+      const k = b.dataset.i, fb = $('#wt-sfb');
+      if(k !== 'salt'){
+        nope(); fb.className = 'feedback bad';
+        fb.textContent = tx({ water: 'It melts the ice… for one minute. Then it freezes again, smoother than ever. Now the steps are a slide! Mr Nilsson loves it.',
+          sugar: 'The horse licks the steps. Very happy horse, still very icy steps.',
+          snow: 'The snow just slides about on top of the ice, and the horse slides with it.' }[k]);
         return;
       }
-      nope(); fb.className = 'feedback bad';
-      fb.textContent = tx('Swish… they miss each other, and land in the safety net. The ropes have different lengths, so they swing at different speeds. The weight doesn\'t matter.');
-    };
+      S.f.steps = true; save(); applyVisuals(); move4('wt-walk', 9000); chord([523,659,784,1046]);
+      fb.className = 'feedback good'; fb.textContent = tx('Salt! It mixes with the ice into salty water, and salty water stays runny even below 0 °C. The ice melts away. (Sand works too: it doesn\'t melt the ice, but it gives hooves something to grip.)');
+      setTimeout(() => { closeModal(); done4(["Clip, clop, clip, clop: the horse walks carefully down the steps into the garden. Pippi harnesses it to the sledge.", S.f.balls ? "You load the snowballs onto the sledge, and the horse pulls them to your fort." : "Now it just needs something to pull."]); }, 2200);
+    });
   });
 }
 
-/* ---------- puzzle: the curtain winch (gears next to each other turn opposite ways) ---------- */
-function openGears(){
-  const st = S.gr || (S.gr = { n: 1 });
-  openModal('The curtain winch', 'Crank → gears → curtain drum', `
-    <svg class="gear-svg" viewBox="0 0 460 170" aria-hidden="true" id="gear-svg"></svg>
-    <p class="flag-p">${tx('You turn the crank clockwise ↻. The curtain drum on the right must turn anticlockwise ↺ to open the curtain. How many gears go in between?')}</p>
-    <div class="row-btns">${[1, 2, 3].map(n => `<button type="button" class="btn ghost gcount" data-n="${n}">${tx('{n} in between', { n })}</button>`).join('')}</div>
-    <div class="row-btns"><button type="button" class="btn" id="gear-go">${tx('Turn the crank!')}</button></div>
-    <div class="feedback" id="gear-fb">${tx('Two gears that touch always turn opposite ways.')}</div>`, () => {
-    const fb = $('#gear-fb');
-    const gear = (cx, cy, r, cls, label, odd) => {
-      let teeth = ''; for(let i = 0; i < 10; i++){ const a = i * 36 + (odd ? 18 : 0); teeth += `<rect x="${cx - 5}" y="${cy - r - 8}" width="10" height="12" rx="2" fill="#c9952a" transform="rotate(${a} ${cx} ${cy})"/>`; }
-      return `<g class="gear ${cls}" style="transform-origin:${cx}px ${cy}px">${teeth}<circle cx="${cx}" cy="${cy}" r="${r}" fill="#c9952a"/><circle cx="${cx}" cy="${cy}" r="${r * .35}" fill="#7a5a1a"/><path d="M${cx} ${cy - r + 4} v${r - 8}" stroke="#7a5a1a" stroke-width="4"/></g>` + (label ? `<text x="${cx}" y="${cy + r + 26}" text-anchor="middle" font-size="12" fill="#f3efe3">${label}</text>` : '');
-    };
-    const draw = (spin) => {
-      // the gears touch: each one sits exactly one gear-width further along, and the row is centred
-      const n = st.n, total = n + 2, r = 30, step = 2 * r + 10, x0 = 230 - (total - 1) * step / 2;
-      let g = '';
-      for(let i = 0; i < total; i++){ const cls = spin ? (i % 2 ? 'ccw' : 'cw') : ''; g += gear(x0 + i * step, 70, r, cls, i === 0 ? tx('crank ↻') : i === total - 1 ? tx('drum') : '', i % 2); }
-      $('#gear-svg').innerHTML = `<rect width="460" height="170" fill="#2a1a0c"/>` + g;
-      document.querySelectorAll('.gcount').forEach(b => b.classList.toggle('on', +b.dataset.n === n));
-    };
-    draw(false);
-    document.querySelectorAll('.gcount').forEach(b => b.onclick = () => { st.n = +b.dataset.n; save(); draw(false); fb.className = 'feedback'; fb.textContent = tx('Two gears that touch always turn opposite ways.'); });
-    $('#gear-go').onclick = () => {
-      draw(true); beep(200, .3, 'sawtooth', .03);
-      const drumCW = (st.n + 2) % 2 === 1;   // gear 0 (the crank) turns clockwise; every next gear turns the other way
-      if(!drumCW){
-        S.f.out4 = true; save();
-        fb.className = 'feedback good'; fb.textContent = tx('Crank ↻, then ↺, ↻, and the drum turns ↺: the curtain opens! With an even number of gears in between, the last gear turns the other way from the crank.');
-        setTimeout(() => { closeModal(); applyVisuals(); chord([523,659,784,1046,1318,1568]); win4(); }, 2400);
+/* ---------- puzzle: keeping Annika warm (trapped air keeps you warm) ---------- */
+function openWarm4(){
+  const round = S.wrm || 0;
+  const q = round === 0
+    ? ['Annika is shivering. "I\'m too cold to throw anything." Pippi opens her wardrobe. What keeps Annika warmest?', [['one', 'One thick cotton jumper'], ['layers', 'Three thin layers: a vest, a woolly jumper and a coat'], ['dress', 'Pippi\'s summer dress, put on twice']]]
+    : ['Now her hands. Annika\'s fingers are like icicles. What keeps hands warmest?', [['gloves', 'Gloves, with a finger for every finger'], ['mittens', 'Mittens'], ['socks', 'Pippi\'s socks (one has a hole)']]];
+  openModal('Keeping Annika warm', round === 0 ? 'Pippi\'s wardrobe' : 'And her hands?', `
+    <p class="flag-p">${tx(q[0])}</p>
+    <div class="hands">${q[1].map(([k, l]) => `<button type="button" class="hand" data-w="${k}">${tx(l)}</button>`).join('')}</div>
+    <div class="feedback" id="wt-wfb"></div>`, () => {
+    document.querySelectorAll('.hand[data-w]').forEach(b => b.onclick = () => {
+      const k = b.dataset.w, fb = $('#wt-wfb');
+      if(round === 0 && k === 'layers'){
+        S.wrm = 1; save(); chord([523,659,784]);
+        fb.className = 'feedback good'; fb.textContent = tx('Layers! Warm air gets trapped between the layers and keeps the cold out, like a sparrow fluffing up its feathers.');
+        setTimeout(() => { if(!$('#modal').hidden) openWarm4(); }, 1700);
+        return;
+      }
+      if(round === 1 && k === 'mittens'){
+        S.f.warm = true; save(); applyVisuals(); chord([523,659,784,1046]);
+        fb.className = 'feedback good'; fb.textContent = tx('Mittens! In a mitten your fingers are together, so they keep each other warm. In a glove every finger is out in the cold on its own.');
+        setTimeout(() => { closeModal(); done4([['annika', "I'm as warm as a pancake! Three layers, a hat and mittens. Now I can throw."], ['tommy', "Annika is our secret weapon. Nobody expects her to aim so well."]]); }, 2000);
         return;
       }
       nope(); fb.className = 'feedback bad';
-      fb.textContent = tx(st.n === 1 ? 'Crank ↻, middle gear ↺, drum ↻: the curtain winds up even tighter! Count the turns: each gear turns the other way from the one before.' : 'Crank ↻, ↺, ↻, ↺, and the drum ↻: tighter still! Three in between is one too many, or one too few.');
+      fb.textContent = tx({ one: 'One thick jumper is warm, but it\'s only one layer. Several thin layers trap more warm air between them.',
+        dress: 'Annika says a summer dress is a summer dress, however many times you put it on.',
+        gloves: 'Gloves keep every finger on its own, out in the cold. Brrr.',
+        socks: 'Socks on your hands are a bit like mittens, Pippi! But this one has a hole, and the snow gets in.' }[k]);
+    });
+  });
+}
+
+/* ---------- puzzle: the throw (about 45° goes furthest) ---------- */
+const THROW4 = { x0: 70, y0: 150, far: 330 };
+function openThrow4(){
+  const st = S.ang || (S.ang = { a: 30 });
+  openModal('Snowball fight!', 'Aim for Klang\'s cap', `
+    <svg class="wt-throwsvg" viewBox="0 0 480 220" aria-hidden="true" id="wt-throwsvg"></svg>
+    <div class="row-btns">${[15, 30, 45, 60, 75, 90].map(a => `<button type="button" class="btn ghost wt-ang" data-a="${a}">${a === 90 ? tx('Straight up') : a + '°'}</button>`).join('')}</div>
+    <div class="row-btns"><button type="button" class="btn" id="wt-throw">${tx('Throw!')}</button></div>
+    <div class="feedback" id="wt-afb">${tx('You always throw just as hard. Only the angle changes. At which angle does the snowball fly furthest?')}</div>`, () => {
+    const fb = $('#wt-afb');
+    const scene = (path, land) => {
+      let s = '<rect width="480" height="220" fill="#dfe9f3"/><rect y="190" width="480" height="30" fill="#fff"/>';
+      s += '<rect x="30" y="160" width="60" height="30" fill="#fff" stroke="#9fb4cc" stroke-width="2"/><rect x="360" y="140" width="50" height="50" fill="#fff" stroke="#9fb4cc" stroke-width="2"/>';
+      s += '<circle cx="400" cy="132" r="10" fill="#f3c9a4"/><path d="M388 126 h24 v-6 q-12 -8 -24 0z" fill="#1f2f5a"/><circle cx="70" cy="146" r="8" fill="#f3c9a4"/>';
+      if(path) s += `<path class="wt-arc" d="${path}" fill="none" stroke="#5aa0e0" stroke-width="3" stroke-dasharray="6 5"/><circle cx="${land[0]}" cy="${land[1]}" r="7" fill="#fff" stroke="#5aa0e0" stroke-width="2"/>`;
+      $('#wt-throwsvg').innerHTML = s;
+      document.querySelectorAll('.wt-ang').forEach(b => b.classList.toggle('on', +b.dataset.a === st.a));
+    };
+    const arc = a => {
+      const r = THROW4.far * Math.sin(2 * a * Math.PI / 180), h = a === 90 ? 140 : r * Math.tan(a * Math.PI / 180) / 4;
+      let d = '';
+      for(let i = 0; i <= 30; i++){ const t = i / 30, x = THROW4.x0 + r * t, y = Math.max(6, THROW4.y0 - 4 * h * t * (1 - t)); d += `${i ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)} `; }
+      return [d, [THROW4.x0 + r, THROW4.y0]];
+    };
+    scene();
+    document.querySelectorAll('.wt-ang').forEach(b => b.onclick = () => { st.a = +b.dataset.a; save(); beep(400 + st.a * 4, .04); scene(); });
+    $('#wt-throw').onclick = () => {
+      const [d, land] = arc(st.a); scene(d, land); beep(700, .08, 'sine');
+      if(st.a === 45){
+        S.f.out4 = true; save(); move4('wt-roll', 6000); applyVisuals(); chord([523,659,784,1046,1318,1568]);
+        fb.className = 'feedback good'; fb.textContent = tx('Whoosh… over their wall… SPLAT! Klang\'s cap flies off! Thrown just as hard, about 45°, halfway between flat and straight up, goes furthest.');
+        setTimeout(() => { closeModal(); applyVisuals(); win4(); }, 2200);
+        return;
+      }
+      nope(); fb.className = 'feedback bad';
+      if(st.a === 90){ S.ach.ownhead = true; save(); }
+      fb.textContent = tx({ 15: 'Too flat: the snowball skims along and plops into the snow halfway there.',
+        30: 'Splat, right against the front of their wall! Close. And here\'s a funny thing: 60° lands in exactly the same spot.',
+        60: 'Up high… and splat against the front of their wall! Close. And here\'s a funny thing: 30° lands in exactly the same spot.',
+        75: 'Way up into the sky… and down in the middle of the garden. Too steep.',
+        90: 'Straight up… and straight down. On your own head. Kling and Klang laugh so much they nearly fall over.' }[st.a]);
     };
   });
 }
 
 /* ---------- intro, start and win ---------- */
 function intro4(){
-  say([["sys", "The circus has come to town! A big red-and-white tent in the meadow, music, sawdust, and the smell of candyfloss."],
-       ["pippi", "A circus! I've never been to a circus, so I'm sure I'll be very good at it."],
-       ["annika", "Pippi, you're supposed to WATCH the circus. Not be in it."],
-       ["sys", "Inside the big top, nothing is happening. The ringmaster is pacing up and down in front of the curtain, pulling at his moustache."],
-       ["ringmaster", "Tickets, please! And then… oh dear. The show should have started ten minutes ago."],
-       ["you", "First, tickets. The booth is by the entrance."]],
+  say([["sys", "Winter at Villa Villekulla. The garden is deep in snow, the windows glow, and smoke curls out of the chimney."],
+       ["pippi", "Snow! Heaps and heaps of it! What shall we do first?"],
+       ["sys", "Two policemen come stamping up the garden path with snow shovels: Kling and Klang. Nobody is in trouble. They're grinning."],
+       ["kling", "Good afternoon, children! We are the snowball champions of the whole police station."],
+       ["klang", "And nobody has ever beaten us. So we challenge you! At three o'clock, when the church clock strikes. Losers make the hot chocolate."],
+       ["pippi", "I've never had a snowball fight with the police, so I'm sure I'll win!"],
+       ["sys", "Kling and Klang start building a fort on the far side of the garden. The church clock says half past two."],
+       ["nilsson", "Eek!"],
+       ["you", "Half an hour to get ready. And Mr Nilsson has just run off with my mittens!"]],
     () => { S.f.introDone = true; save(); });
 }
 function startCh4(){
   setUnlocked4();
-  S = Object.assign(fresh(), { ach: S.ach || {}, ch: 4, scene: 'circus' });
+  S = Object.assign(fresh(), { ach: S.ach || {}, ch: 4, scene: 'winter' });
   S.started = true; sel = null;
   $('#title').hidden = true; $('#win').hidden = true;
   renderInv(); applyVisuals(); $('#timer').textContent = '00:00'; save(); intro4();
 }
 function win4(){
-  say([["sys", "The drum turns, and the red velvet curtain swings open. A drumroll! The spotlights meet in the middle of the ring."],
-       ["ringmaster", "Ladies and gentlemen! The greatest show on earth!"],
-       ["sys", "The trapezes swing, the clown juggles, the seal bounces its ball, and round the ring trots the circus horse… with Pippi standing on its back, on one leg."],
-       ["ringmaster", "Who let her in there?!"],
-       ["pippi", "You did! With a ticket! And now I'd like to lift the strongman, please."],
-       ["strongman", "Nobody lifts me. Nobody has ever…"],
-       ["sys", "Pippi lifts the strongman over her head, carries him once round the ring, and puts him down very gently. The whole tent stands up and cheers."],
-       ["tommy", "Best circus ever."],
-       ["annika", "Pippi, you were supposed to WATCH."]],
+  say([["sys", "Your snowball sails up in a perfect curve, over their wall… and knocks Klang's cap clean off his head."],
+       ["klang", "Bull's-eye! Kling, they got me!"],
+       ["kling", "Hold on, Klang, I'll…"],
+       ["sys", "Then Pippi rolls her enormous snowball across the garden. It's as big as a pantry. Their fort disappears underneath it."],
+       ["kling", "We surrender! Has anybody got a white flag?"],
+       ["pippi", "Have my handkerchief. It's nearly white. Well, it was."],
+       ["sys", "Everybody troops into the warm kitchen. The policemen make the hot chocolate, with extra whipped cream, and Mr Nilsson gets the first cup."],
+       ["annika", "We beat the snowball champions of the whole police station!"],
+       ["klang", "Same time next year?"]],
     () => showWin());
 }

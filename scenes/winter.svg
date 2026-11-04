@@ -1,0 +1,489 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="scene" id="sc-winter" viewBox="0 0 1600 900"
+    preserveAspectRatio="xMidYMid slice" aria-label="The garden of Villa Villekulla in the snow">
+    <defs>
+        <linearGradient id="wtSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#8fb4d9" />
+            <stop offset=".7" stop-color="#e9dbe6" />
+            <stop offset="1" stop-color="#f6e6d6" />
+        </linearGradient>
+        <linearGradient id="wtSnow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f4f8fc" />
+            <stop offset="1" stop-color="#dfe9f3" />
+        </linearGradient>
+        <radialGradient id="wtSunG" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stop-color="#fff4c8" stop-opacity=".9" />
+            <stop offset="1" stop-color="#fff4c8" stop-opacity="0" />
+        </radialGradient>
+        <radialGradient id="wtWinG" cx=".5" cy=".5" r=".6">
+            <stop offset="0" stop-color="#ffe7a8" />
+            <stop offset="1" stop-color="#ffb14a" />
+        </radialGradient>
+        <radialGradient id="wtVign" cx=".5" cy=".45" r=".8">
+            <stop offset=".6" stop-color="#000" stop-opacity="0" />
+            <stop offset="1" stop-color="#1a2440" stop-opacity=".35" />
+        </radialGradient>
+        <g id="wtHorseShape">
+            <path d="M18 34 Q4 46 8 66" stroke="#1a1a1a" stroke-width="5" fill="none"
+                stroke-linecap="round" />
+            <g fill="#f6f1e6">
+                <rect x="28" y="50" width="8" height="38" rx="3" />
+                <rect x="42" y="50" width="8" height="38" rx="3" />
+                <rect x="76" y="50" width="8" height="38" rx="3" />
+                <rect x="90" y="50" width="8" height="38" rx="3" />
+            </g>
+            <ellipse cx="62" cy="40" rx="44" ry="20" fill="#f6f1e6" />
+            <path d="M30 24 h64 v30 q-32 8 -64 0z" fill="#c4302b" />
+            <path d="M30 30 h64 M30 46 h64" stroke="#f2c94c" stroke-width="3" />
+            <path d="M94 36 Q106 20 110 6" stroke="#f6f1e6" stroke-width="18" fill="none"
+                stroke-linecap="round" />
+            <ellipse cx="120" cy="10" rx="15" ry="8.5" fill="#f6f1e6" transform="rotate(22 120 10)" />
+            <path d="M106 -2 l4 -10 l5 10z" fill="#f6f1e6" />
+            <g fill="#1a1a1a">
+                <circle cx="74" cy="60" r="5" />
+                <circle cx="96" cy="26" r="4" />
+                <circle cx="118" cy="7" r="1.8" />
+                <circle cx="130" cy="15" r="1.4" />
+            </g>
+            <g fill="#1a1a1a">
+                <rect x="28" y="84" width="8" height="5" />
+                <rect x="42" y="84" width="8" height="5" />
+                <rect x="76" y="84" width="8" height="5" />
+                <rect x="90" y="84" width="8" height="5" />
+            </g>
+        </g>
+    </defs>
+
+    <!-- a winter afternoon: low sun, snowy hills, the town and its church clock -->
+    <rect width="1600" height="500" fill="url(#wtSky)" />
+    <circle cx="1220" cy="300" r="120" fill="url(#wtSunG)" />
+    <circle cx="1220" cy="300" r="34" fill="#fff4c8" />
+    <path d="M0 440 Q300 370 600 420 Q900 360 1200 410 Q1400 380 1600 400 V520 H0 Z" fill="#e6eef6" />
+    <g id="wt-town">
+        <g fill="#d9cdb8">
+            <rect x="880" y="404" width="40" height="34" />
+            <rect x="930" y="396" width="36" height="42" />
+            <rect x="1068" y="400" width="40" height="38" />
+            <rect x="1116" y="408" width="34" height="30" />
+        </g>
+        <g fill="#fff">
+            <path
+                d="M874 406 l26 -18 l26 18z M926 398 l22 -16 l22 16z M1064 402 l24 -18 l24 18z M1112 410 l21 -14 l21 14z" />
+        </g>
+        <g fill="#ffd27a">
+            <rect x="892" y="416" width="8" height="8" />
+            <rect x="942" y="412" width="8" height="8" />
+            <rect x="1080" y="414" width="8" height="8" />
+        </g>
+        <rect x="990" y="230" width="60" height="212" fill="#e9e1d6" />
+        <path d="M984 232 L1020 146 L1056 232 Z" fill="#7a8aa6" />
+        <path d="M1006 180 L1020 146 L1034 180 Z" fill="#fff" />
+        <path d="M1020 146 v-20 M1012 132 h16" stroke="#c9952a" stroke-width="3" />
+        <circle cx="1020" cy="292" r="21" fill="#fffaf0" stroke="#5a5f66" stroke-width="3" />
+        <g stroke="#2b2118" stroke-width="3" stroke-linecap="round">
+            <path id="wt-hour" d="M1020 292 V279" />
+            <path id="wt-min" d="M1020 292 V274" />
+        </g>
+        <rect x="1008" y="380" width="24" height="62" rx="12" fill="#5a3a1e" />
+    </g>
+    <g id="wt-pines">
+        <g transform="translate(560 430)">
+            <path d="M0 0 L-28 0 L0 -70 L28 0 Z" fill="#2f5a3a" />
+            <path d="M0 -70 L-12 -42 L12 -42 Z M-20 -14 L20 -14 L0 -40 Z" fill="#fff" opacity=".9" />
+        </g>
+        <g transform="translate(616 446) scale(.8)">
+            <path d="M0 0 L-28 0 L0 -70 L28 0 Z" fill="#2f5a3a" />
+            <path d="M0 -70 L-12 -42 L12 -42 Z M-20 -14 L20 -14 L0 -40 Z" fill="#fff" opacity=".9" />
+        </g>
+        <g transform="translate(1260 424)">
+            <path d="M0 0 L-28 0 L0 -70 L28 0 Z" fill="#2f5a3a" />
+            <path d="M0 -70 L-12 -42 L12 -42 Z M-20 -14 L20 -14 L0 -40 Z" fill="#fff" opacity=".9" />
+        </g>
+        <g transform="translate(1320 440) scale(.8)">
+            <path d="M0 0 L-28 0 L0 -70 L28 0 Z" fill="#2f5a3a" />
+            <path d="M0 -70 L-12 -42 L12 -42 Z M-20 -14 L20 -14 L0 -40 Z" fill="#fff" opacity=".9" />
+        </g>
+        <g transform="translate(1560 430)">
+            <path d="M0 0 L-28 0 L0 -70 L28 0 Z" fill="#2f5a3a" />
+            <path d="M0 -70 L-12 -42 L12 -42 Z M-20 -14 L20 -14 L0 -40 Z" fill="#fff" opacity=".9" />
+        </g>
+    </g>
+
+    <!-- the snowy garden -->
+    <rect y="470" width="1600" height="430" fill="url(#wtSnow)" />
+    <g fill="#c9d8e8" opacity=".55">
+        <ellipse cx="300" cy="900" rx="420" ry="60" />
+        <ellipse cx="1300" cy="880" rx="360" ry="50" />
+        <ellipse cx="900" cy="640" rx="140" ry="16" />
+    </g>
+    <!-- the garden fence and gate, far right -->
+    <g id="wt-fence">
+        <path d="M1080 500 H1600 M1080 530 H1600" stroke="#8a6a4a" stroke-width="6" />
+        <g fill="#a5845a">
+            <rect x="1086" y="480" width="10" height="70" />
+            <rect x="1136" y="480" width="10" height="70" />
+            <rect x="1186" y="480" width="10" height="70" />
+            <rect x="1236" y="480" width="10" height="70" />
+            <rect x="1286" y="480" width="10" height="70" />
+            <rect x="1336" y="480" width="10" height="70" />
+            <rect x="1386" y="480" width="10" height="70" />
+            <rect x="1436" y="480" width="10" height="70" />
+            <rect x="1546" y="480" width="10" height="70" />
+            <rect x="1596" y="480" width="10" height="70" />
+        </g>
+        <g fill="#fff">
+            <rect x="1084" y="474" width="14" height="8" rx="4" />
+            <rect x="1134" y="474" width="14" height="8" rx="4" />
+            <rect x="1184" y="474" width="14" height="8" rx="4" />
+            <rect x="1234" y="474" width="14" height="8" rx="4" />
+            <rect x="1284" y="474" width="14" height="8" rx="4" />
+            <rect x="1334" y="474" width="14" height="8" rx="4" />
+            <rect x="1384" y="474" width="14" height="8" rx="4" />
+            <rect x="1434" y="474" width="14" height="8" rx="4" />
+            <rect x="1544" y="474" width="14" height="8" rx="4" />
+        </g>
+        <g id="wt-gate">
+            <rect x="1462" y="486" width="76" height="62" fill="none" stroke="#6b4423"
+                stroke-width="6" />
+            <path d="M1462 548 L1538 486" stroke="#6b4423" stroke-width="5" />
+        </g>
+    </g>
+
+    <!-- Villa Villekulla, a little crooked, with snow on the roof -->
+    <g id="wt-house" transform="rotate(-2 220 400)">
+        <rect x="30" y="250" width="360" height="310" fill="#f2c94c" stroke="#c9a03a"
+            stroke-width="3" />
+        <rect x="290" y="128" width="34" height="80" fill="#8a3a1a" />
+        <rect x="284" y="122" width="46" height="12" rx="5" fill="#fff" />
+        <path d="M10 262 L210 120 L410 262 Z" fill="#e8571f" />
+        <path d="M6 266 L210 116 L414 266 L396 266 L210 136 L24 266 Z" fill="#fff" />
+        <path d="M60 236 q40 -20 70 -40 M260 156 q50 30 100 72" stroke="#fff" stroke-width="12"
+            stroke-linecap="round" fill="none" />
+        <rect x="70" y="320" width="122" height="100" fill="url(#wtWinG)" stroke="#fffaf0"
+            stroke-width="7" />
+        <path d="M131 320 V420 M70 370 H192" stroke="#fffaf0" stroke-width="5" />
+        <rect x="66" y="416" width="130" height="10" fill="#fff" />
+        <g id="wt-spunk">
+            <rect x="150" y="394" width="22" height="22" rx="4" fill="#cfe6e0" opacity=".7" />
+            <rect x="148" y="390" width="26" height="6" rx="2" fill="#e8571f" />
+            <ellipse class="crawl" cx="161" cy="408" rx="5" ry="3.5" fill="#2f8a3a" />
+        </g>
+        <rect x="232" y="286" width="60" height="56" fill="url(#wtWinG)" stroke="#fffaf0"
+            stroke-width="5" />
+        <g id="wt-thermo">
+            <rect x="206" y="330" width="14" height="86" rx="7" fill="#fffaf0" stroke="#9aa0a6"
+                stroke-width="2" />
+            <circle cx="213" cy="418" r="9" fill="#d22d2d" />
+            <rect x="210" y="388" width="6" height="30" fill="#d22d2d" />
+        </g>
+        <!-- the veranda, with fairy lights and its icy steps -->
+        <rect x="250" y="422" width="316" height="16" fill="#8a5028" />
+        <rect x="246" y="414" width="324" height="10" rx="5" fill="#fff" />
+        <g fill="#8a5028">
+            <rect x="258" y="438" width="10" height="122" />
+            <rect x="404" y="438" width="10" height="122" />
+            <rect x="552" y="438" width="10" height="122" />
+        </g>
+        <rect x="466" y="452" width="50" height="104" fill="#3f8a4a" stroke="#265a2e"
+            stroke-width="4" />
+        <circle cx="508" cy="506" r="4" fill="#f2c94c" />
+        <g id="wt-lights"></g>
+        <rect x="250" y="556" width="316" height="12" fill="#a5743f" />
+        <g fill="#a5743f">
+            <rect x="566" y="568" width="58" height="24" />
+            <rect x="586" y="592" width="58" height="24" />
+            <rect x="606" y="616" width="58" height="24" />
+        </g>
+        <g id="wt-ice" fill="#bfe4f8" opacity=".85">
+            <path d="M562 566 h66 v6 h-66z M582 590 h66 v6 h-66z M602 614 h66 v6 h-66z" />
+            <path d="M572 568 l10 -2 M596 592 l12 -2 M618 616 l10 -2" stroke="#fff" stroke-width="2" />
+        </g>
+        <g id="wt-vwalk">
+            <g id="wt-vhorse" class="wt-nod" transform="translate(284 468)">
+                <use href="#wtHorseShape" />
+            </g>
+        </g>
+    </g>
+    <g id="wt-smoke" fill="#eef0f2" opacity=".75">
+        <circle class="wt-puff" cx="304" cy="100" r="14" />
+        <circle class="wt-puff b" cx="316" cy="74" r="18" />
+        <circle class="wt-puff c" cx="300" cy="44" r="22" />
+    </g>
+
+    <!-- the old oak, with a hollow, a bird feeder, and (later) Mr Nilsson -->
+    <g id="wt-oak">
+        <path d="M646 650 Q652 520 662 420 L700 420 Q706 520 714 650 Z" fill="#5a3a1e" />
+        <g stroke="#5a3a1e" stroke-width="14" stroke-linecap="round" fill="none">
+            <path d="M672 430 Q600 360 540 330" />
+            <path d="M688 430 Q760 360 840 340" />
+            <path d="M680 420 Q680 330 690 250" />
+            <path d="M640 380 Q600 300 610 240" />
+            <path d="M720 380 Q790 310 800 250" />
+        </g>
+        <g stroke="#fff" stroke-width="7" stroke-linecap="round" fill="none">
+            <path d="M664 422 Q598 352 540 322" />
+            <path d="M692 420 Q762 352 840 332" />
+            <path d="M676 412 Q676 328 686 246" />
+            <path d="M634 372 Q596 296 606 236" />
+            <path d="M724 372 Q792 302 800 244" />
+        </g>
+        <ellipse cx="680" cy="520" rx="16" ry="24" fill="#2a1a0c" />
+        <g id="wt-nilsson" class="wt-peek" style="display:none">
+            <circle cx="680" cy="512" r="11" fill="#6b4423" />
+            <ellipse cx="682" cy="516" rx="7" ry="5.5" fill="#e6c49a" />
+            <g fill="#1a120c">
+                <circle cx="679" cy="514" r="1.5" />
+                <circle cx="685" cy="514" r="1.5" />
+            </g>
+            <ellipse cx="680" cy="501" rx="15" ry="3.5" fill="#e9d48a" />
+        </g>
+        <path d="M800 340 V440" stroke="#5a3a1e" stroke-width="2" />
+        <g>
+            <path d="M778 444 h44 l-4 30 h-36z" fill="#a5743f" />
+            <path d="M772 446 l28 -16 l28 16z" fill="#fff" />
+            <rect x="784" y="474" width="32" height="4" fill="#5a3a1e" />
+        </g>
+        <g id="wt-birds">
+            <g class="wt-hop">
+                <ellipse cx="770" cy="494" rx="9" ry="7" fill="#8a5a3a" />
+                <circle cx="776" cy="488" r="5" fill="#8a5a3a" />
+                <path d="M781 488 l5 1 l-5 2z" fill="#f2c94c" />
+                <ellipse cx="770" cy="497" rx="5" ry="3" fill="#d22d2d" />
+            </g>
+            <g class="wt-hop b">
+                <ellipse cx="832" cy="496" rx="8" ry="6" fill="#7a6a5a" />
+                <circle cx="826" cy="490" r="4.5" fill="#7a6a5a" />
+                <path d="M821 490 l-5 1 l5 2z" fill="#f2c94c" />
+            </g>
+        </g>
+    </g>
+
+    <!-- the snowman, with a carrot nose -->
+    <g id="wt-snowman">
+        <circle cx="950" cy="662" r="42" fill="#fff" stroke="#d9e4ef" stroke-width="3" />
+        <circle cx="950" cy="602" r="30" fill="#fff" stroke="#d9e4ef" stroke-width="3" />
+        <circle cx="950" cy="556" r="21" fill="#fff" stroke="#d9e4ef" stroke-width="3" />
+        <g fill="#2a2a2a">
+            <circle cx="943" cy="552" r="2.5" />
+            <circle cx="956" cy="552" r="2.5" />
+            <circle cx="950" cy="596" r="3" />
+            <circle cx="950" cy="612" r="3" />
+        </g>
+        <path id="wt-carrot" d="M950 558 L978 562 L950 564 Z" fill="#ff8a3d" />
+        <path d="M936 530 h28 v-18 h-28z M930 532 h40" fill="#1a1a1a" stroke="#1a1a1a"
+            stroke-width="3" />
+        <path d="M922 600 L888 572 M978 600 L1012 578" stroke="#6b4423" stroke-width="4"
+            stroke-linecap="round" />
+        <g class="wt-scarf">
+            <path d="M932 576 q18 8 36 0 v8 q-18 8 -36 0z" fill="#3f8a4a" />
+            <path d="M960 582 l8 28 l-10 -2z" fill="#3f8a4a" />
+        </g>
+    </g>
+
+    <!-- tracks in the snow: a bird, a cat, the horse, and someone with hands for feet -->
+    <g id="wt-tracks" opacity=".7"></g>
+
+    <!-- the sledge waits in front of the veranda and gets the snowballs; once the steps are safe,
+         the horse comes down and pulls it behind our fort (drawn here at the fort; css moves it) -->
+    <g id="wt-team">
+        <g id="wt-ghorse" style="display:none">
+            <g class="wt-nod" transform="translate(306 650) scale(-1 1)">
+                <use href="#wtHorseShape" />
+            </g>
+            <path d="M284 690 L314 716" stroke="#6b4423" stroke-width="3" />
+        </g>
+        <g transform="translate(-62 20)">
+            <path d="M372 724 h110 q14 0 16 -14" stroke="#6b4423" stroke-width="4" fill="none" />
+            <rect x="380" y="700" width="96" height="16" rx="3" fill="#c4302b" />
+            <path d="M392 716 v8 M464 716 v8" stroke="#6b4423" stroke-width="4" />
+            <g id="wt-sledgeballs" style="display:none" fill="#fff" stroke="#c9d8e8"
+                stroke-width="2">
+                <circle cx="400" cy="694" r="9" />
+                <circle cx="420" cy="694" r="9" />
+                <circle cx="440" cy="694" r="9" />
+                <circle cx="460" cy="694" r="9" />
+                <circle cx="410" cy="680" r="9" />
+                <circle cx="430" cy="680" r="9" />
+                <circle cx="450" cy="680" r="9" />
+                <circle cx="420" cy="666" r="9" />
+                <circle cx="440" cy="666" r="9" />
+            </g>
+        </g>
+    </g>
+
+    <!-- Tommy and Annika (Annika shivers until she's warm) -->
+    <g id="wt-ta">
+        <g fill="#1f3f6a">
+            <rect x="606" y="728" width="9" height="30" />
+            <rect x="619" y="728" width="9" height="30" />
+        </g>
+        <rect x="600" y="684" width="34" height="50" rx="10" fill="#2f5f9a" />
+        <path d="M600 694 h34" stroke="#f2c94c" stroke-width="5" />
+        <circle cx="617" cy="668" r="15" fill="#f3c9a4" />
+        <path d="M602 664 q2 -18 15 -18 q13 0 15 18z" fill="#c4302b" />
+        <circle cx="617" cy="644" r="5" fill="#fff" />
+        <g id="wt-annika" class="wt-shiver">
+            <g fill="#f3c9a4">
+                <rect x="668" y="730" width="8" height="28" />
+                <rect x="680" y="730" width="8" height="28" />
+            </g>
+            <path d="M656 734 L678 684 L700 734 Z" fill="#f2a7b8" />
+            <circle cx="678" cy="670" r="14" fill="#f3c9a4" />
+            <path d="M664 672 q-2 -20 14 -20 q16 0 14 20 q-4 -10 -14 -10 q-10 0 -14 10z"
+                fill="#e9c46a" />
+            <g id="wt-annwarm" style="display:none">
+                <path d="M656 734 L678 684 L700 734 Z" fill="#7a3a8a" />
+                <path d="M664 662 q14 -22 28 0z" fill="#3f8a4a" />
+                <circle cx="678" cy="646" r="5" fill="#f2c94c" />
+                <path d="M664 690 q14 8 28 0 v7 q-14 8 -28 0z" fill="#e2483d" />
+            </g>
+            <g fill="#1a120c">
+                <circle cx="673" cy="671" r="1.6" />
+                <circle cx="683" cy="671" r="1.6" />
+            </g>
+        </g>
+    </g>
+
+    <!-- Pippi, with an enormous snowball -->
+    <g id="wt-pippi">
+        <g fill="#1a1a1a">
+            <rect x="746" y="748" width="9" height="40" />
+            <rect x="760" y="748" width="9" height="40" />
+        </g>
+        <g>
+            <rect x="738" y="786" width="26" height="10" rx="4" fill="#1a1a1a" />
+            <rect x="756" y="786" width="26" height="10" rx="4" fill="#1a1a1a" />
+        </g>
+        <path d="M736 752 Q738 704 758 698 Q778 704 780 752 Z" fill="#3f8a4a" />
+        <path d="M776 716 L798 732" stroke="#3f8a4a" stroke-width="9" stroke-linecap="round" />
+        <circle cx="800" cy="734" r="6" fill="#c4302b" />
+        <circle cx="758" cy="684" r="14" fill="#f3c9a4" />
+        <path d="M744 680 q2 -16 14 -16 q12 0 14 16 q-6 -6 -14 -6 q-8 0 -14 6z" fill="#e8571f" />
+        <g class="wt-plait">
+            <path d="M746 684 L724 674" stroke="#e8571f" stroke-width="6" stroke-linecap="round" />
+        </g>
+        <g class="wt-plait b">
+            <path d="M770 684 L792 674" stroke="#e8571f" stroke-width="6" stroke-linecap="round" />
+        </g>
+        <g fill="#1a120c">
+            <circle cx="754" cy="685" r="1.6" />
+            <circle cx="762" cy="685" r="1.6" />
+        </g>
+    </g>
+
+    <!-- our fort: a heap of snow blocks, then a proper wall -->
+    <g id="wt-fortheap" fill="#fff" stroke="#c9d8e8" stroke-width="2">
+        <rect x="170" y="770" width="60" height="30" rx="4" transform="rotate(-12 200 785)" />
+        <rect x="240" y="790" width="60" height="30" rx="4" transform="rotate(8 270 805)" />
+        <rect x="300" y="760" width="60" height="30" rx="4" transform="rotate(20 330 775)" />
+        <rect x="360" y="796" width="60" height="30" rx="4" transform="rotate(-6 390 811)" />
+        <rect x="420" y="776" width="60" height="30" rx="4" transform="rotate(30 450 791)" />
+        <rect x="210" y="820" width="60" height="30" rx="4" />
+        <rect x="500" y="800" width="60" height="30" rx="4" transform="rotate(-16 530 815)" />
+        <rect x="560" y="780" width="60" height="30" rx="4" transform="rotate(10 590 795)" />
+    </g>
+    <g id="wt-fortwall" style="display:none"></g>
+
+    <!-- Kling and Klang, behind their fort across the garden -->
+    <g id="wt-police">
+        <g class="wt-stamp">
+            <rect x="1282" y="650" width="40" height="80" rx="10" fill="#1f2f5a" />
+            <g fill="#f2c94c">
+                <circle cx="1302" cy="666" r="2.5" />
+                <circle cx="1302" cy="680" r="2.5" />
+            </g>
+            <circle cx="1302" cy="630" r="17" fill="#f3c9a4" />
+            <circle cx="1302" cy="636" r="4" fill="#e88a7a" />
+            <path d="M1292 642 q10 4 20 0" stroke="#5a3a1a" stroke-width="3" fill="none" />
+            <path d="M1284 622 h36 v-10 q-18 -12 -36 0z" fill="#1f2f5a" />
+            <rect x="1282" y="620" width="40" height="5" fill="#111a33" />
+            <circle cx="1302" cy="614" r="3" fill="#f2c94c" />
+            <path d="M1286 652 q16 8 32 0" stroke="#c4302b" stroke-width="7" fill="none" />
+            <path d="M1322 670 L1346 650" stroke="#1f2f5a" stroke-width="10" stroke-linecap="round" />
+            <circle cx="1350" cy="646" r="9" fill="#fff" stroke="#c9d8e8" stroke-width="2" />
+        </g>
+        <g class="wt-stamp b">
+            <ellipse cx="1440" cy="700" rx="34" ry="36" fill="#1f2f5a" />
+            <g fill="#f2c94c">
+                <circle cx="1440" cy="686" r="2.5" />
+                <circle cx="1440" cy="700" r="2.5" />
+            </g>
+            <circle cx="1440" cy="652" r="19" fill="#f3c9a4" />
+            <circle cx="1440" cy="658" r="4.5" fill="#e88a7a" />
+            <path d="M1428 664 q12 6 24 0" stroke="#5a3a1a" stroke-width="3" fill="none" />
+            <g id="wt-cap">
+                <path d="M1420 642 h40 v-10 q-20 -14 -40 0z" fill="#1f2f5a" />
+                <rect x="1418" y="640" width="44" height="5" fill="#111a33" />
+                <circle cx="1440" cy="634" r="3" fill="#f2c94c" />
+            </g>
+            <path d="M1422 674 q18 8 36 0" stroke="#3f8a4a" stroke-width="7" fill="none" />
+        </g>
+        <g id="wt-pfort"></g>
+        <g id="wt-capfly" style="display:none" transform="rotate(-30 1480 580)">
+            <path d="M1460 590 h40 v-10 q-20 -14 -40 0z" fill="#1f2f5a" />
+            <circle cx="1480" cy="582" r="3" fill="#f2c94c" />
+        </g>
+        <g id="wt-flag" style="display:none">
+            <path d="M1370 700 V610" stroke="#6b4423" stroke-width="4" />
+            <path class="wt-wave" d="M1372 612 q20 -6 34 4 q-14 10 -34 16z" fill="#fffaf0"
+                stroke="#d9cdb0" />
+        </g>
+    </g>
+
+    <!-- Pippi's enormous snowball; at the end it rolls right over the policemen's fort -->
+    <g id="wt-bigball">
+        <circle cx="840" cy="760" r="58" fill="#fff" stroke="#d9e4ef" stroke-width="4" />
+        <path d="M812 742 q10 -8 22 -4 M850 784 q12 2 18 -8" stroke="#d9e4ef" stroke-width="3"
+            fill="none" stroke-linecap="round" />
+    </g>
+
+    <!-- the snowball fight, at last (only while things move) -->
+    <g id="wt-fight" style="display:none" fill="#fff" stroke="#c9d8e8" stroke-width="2">
+        <circle class="wt-fly a" cx="0" cy="0" r="9" transform="translate(-100 -100)" />
+        <circle class="wt-fly b" cx="0" cy="0" r="9" transform="translate(-100 -100)" />
+        <circle class="wt-fly c" cx="0" cy="0" r="9" transform="translate(-100 -100)" />
+    </g>
+
+    <!-- falling snow -->
+    <g id="wt-snow" fill="#fff" pointer-events="none"></g>
+    <rect width="1600" height="900" fill="url(#wtVign)" pointer-events="none" />
+
+    <!-- hotspots -->
+    <g>
+        <rect class="hit" fill="transparent" data-hs="snow4" data-label="Fresh snow" x="0" y="560"
+            width="160" height="340" />
+        <rect class="hit" fill="transparent" data-hs="church4" data-label="Church clock" x="980"
+            y="140" width="80" height="210" />
+        <rect class="hit" fill="transparent" data-hs="gate4" data-label="Garden gate" x="1456"
+            y="476" width="90" height="80" />
+        <rect class="hit" fill="transparent" data-hs="house4" data-label="Villa Villekulla" x="20"
+            y="120" width="400" height="190" />
+        <rect class="hit" fill="transparent" data-hs="window4" data-label="Kitchen window" x="64"
+            y="314" width="132" height="76" />
+        <rect class="hit" fill="transparent" data-hs="spunk4" data-label="Jam jar" x="142" y="386"
+            width="40" height="40" id="hit-spunk4" />
+        <rect class="hit" fill="transparent" data-hs="thermo4" data-label="Thermometer" x="196"
+            y="320" width="34" height="112" />
+        <rect class="hit" fill="transparent" data-hs="horse4" data-label="The horse" x="276" y="450"
+            width="160" height="110" id="hit-horse4v" />
+        <rect class="hit" fill="transparent" data-hs="horse4" data-label="The horse" x="170" y="636"
+            width="240" height="102" id="hit-horse4g" />
+        <rect class="hit" fill="transparent" data-hs="oak4" data-label="The old oak" x="530" y="230"
+            width="320" height="310" />
+        <rect class="hit" fill="transparent" data-hs="oak4" data-label="The old oak" x="672" y="540"
+            width="48" height="110" />
+        <rect class="hit" fill="transparent" data-hs="steps4" data-label="Veranda steps" x="556"
+            y="546" width="114" height="88" />
+        <rect class="hit" fill="transparent" data-hs="snowman4" data-label="Snowman" x="900" y="508"
+            width="112" height="200" />
+        <rect class="hit" fill="transparent" data-hs="tracks4" data-label="Tracks in the snow"
+            x="880" y="720" width="300" height="180" />
+        <rect class="hit" fill="transparent" data-hs="fort4" data-label="Our fort" x="150" y="740"
+            width="490" height="120" />
+        <rect class="hit" fill="transparent" data-hs="ta4" data-label="Tommy and Annika" x="594"
+            y="636" width="112" height="126" id="hit-ta4" />
+        <rect class="hit" fill="transparent" data-hs="pippi4" data-label="Pippi" x="730" y="660"
+            width="170" height="160" id="hit-pippi4" />
+        <rect class="hit" fill="transparent" data-hs="police4" data-label="Kling and Klang" x="1180"
+            y="590" width="390" height="220" />
+    </g>
+</svg>

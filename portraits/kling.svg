@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+    <title>Kling</title>
+    <rect width="120" height="120" rx="14" fill="#9fc3e0" />
+    <path d="M24 120 q2-36 36-38 q34 2 36 38z" fill="#1f2f5a" />
+    <g fill="#f2c94c">
+        <circle cx="60" cy="100" r="3" />
+        <circle cx="60" cy="112" r="3" />
+    </g>
+    <path d="M40 86 q20 12 40 0" stroke="#c4302b" stroke-width="9" fill="none"
+        stroke-linecap="round" />
+    <ellipse cx="60" cy="58" rx="20" ry="27" fill="#f3c9a4" />
+    <circle cx="52" cy="58" r="3" fill="#1a120c" />
+    <circle cx="68" cy="58" r="3" fill="#1a120c" />
+    <circle cx="60" cy="68" r="5" fill="#e88a7a" />
+    <path d="M50 76 q10 6 20 0" stroke="#5a3a1a" stroke-width="3" fill="none" stroke-linecap="round" />
+    <path d="M36 42 h48 v-14 q-24 -16 -48 0z" fill="#1f2f5a" />
+    <rect x="33" y="40" width="54" height="7" fill="#111a33" />
+    <circle cx="60" cy="32" r="5" fill="#f2c94c" />
+</svg>

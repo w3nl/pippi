@@ -184,8 +184,8 @@
   <!-- hotspots -->
   <g>
     <rect class="hit" fill="transparent" data-hs="booth" data-label="Ticket booth" x="40" y="380" width="140" height="340"/>
-    <rect class="hit" fill="transparent" data-hs="spunk4" data-label="Jam jar" x="180" y="500" width="44" height="50" id="hit-spunk4"/>
-    <rect class="hit" fill="transparent" data-hs="list4" data-label="The ringmaster's checklist" x="204" y="244" width="112" height="144"/>
+    <rect class="hit" fill="transparent" data-hs="spunk5" data-label="Jam jar" x="180" y="500" width="44" height="50" id="hit-spunk5"/>
+    <rect class="hit" fill="transparent" data-hs="list5" data-label="The ringmaster's checklist" x="204" y="244" width="112" height="144"/>
     <rect class="hit" fill="transparent" data-hs="lamps" data-label="Spotlights" x="340" y="20" width="920" height="60"/>
     <rect class="hit" fill="transparent" data-hs="trapeze" data-label="Trapezes" x="490" y="80" width="620" height="140"/>
     <rect class="hit" fill="transparent" data-hs="seal" data-label="The seal" x="296" y="500" width="80" height="150"/>
@@ -194,6 +194,6 @@
     <rect class="hit" fill="transparent" data-hs="winch" data-label="Curtain winch" x="1010" y="466" width="62" height="78"/>
     <rect class="hit" fill="transparent" data-hs="ringmaster" data-label="The ringmaster" x="1090" y="380" width="110" height="262"/>
     <rect class="hit" fill="transparent" data-hs="teeter" data-label="Teeterboard" x="1000" y="640" width="370" height="160"/>
-    <rect class="hit" fill="transparent" data-hs="pippi4" data-label="Pippi" x="1380" y="590" width="120" height="240"/>
+    <rect class="hit" fill="transparent" data-hs="pippi5" data-label="Pippi" x="1380" y="590" width="120" height="240"/>
   </g>
 </svg>

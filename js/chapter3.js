@@ -30,6 +30,13 @@ function applySchool(){
   [[5, 4], [8, 7], [10, 9]].forEach(([m, i]) => { const t = $('#sl-n' + m); if(t) t.textContent = `9×${m}=${S.f.nines ? 9 * m : NINES3[i]}`; });
   show('#sl-hol', !!S.f.out3);
   show('#sl-teacher', !S.f.out3);
+  const snow = $('#sl-snow');
+  if(snow && !snow.firstChild){
+    let fl = '';
+    for(let i = 0; i < 26; i++) fl += `<circle class="sl-flake" style="animation-delay:-${(i * .61 % 6).toFixed(2)}s;animation-duration:${5 + i % 4}s" cx="${56 + (i * 97) % 228}" cy="${124 + (i * 151) % 292}" r="${1.4 + (i % 3) * .7}"/>`;
+    snow.innerHTML = fl;
+  }
+  ['#sl-snow', '#sl-white', '#sl-whitecap'].forEach(s => show(s, !!S.f.snow3));
 }
 
 /* Annika sticks a gold star on Pippi's chart after every task. */
@@ -43,6 +50,7 @@ function goldStar3(lines){
 Object.assign(H, {
   spunk3(){ S.f.spunkTaken = true; give('spunk'); applyVisuals(); say(["The spunk, in its jam jar on Pippi's desk. Pippi has brought it to school. \"It wants to learn things,\" she says.", "You take it. A spunk knows things, even at school. Especially at school."]); },
   window3(){
+    if(S.f.snow3) return say("The schoolyard is white with snow. The horse is trying to catch snowflakes on its tongue. It's on holiday too.");
     if(S.f.out3) return say("The horse is lying in the sun in the schoolyard, full of geraniums. It's on holiday too.");
     say(["Out in the schoolyard, Pippi's horse is eating Miss's flowerbed, one geranium at a time.", "Miss chased it round and round for a while. The horse thought it was a game, and won. Now she's watching you all through the little window in the door instead."]);
   },
@@ -385,5 +393,12 @@ function win3(){
        ["teacher", "Twenty minutes early, but you've earned it. Happy holidays, everyone!"],
        ["pippi", "Hooray! And here's the biggest piece of cake for you, Miss: a third. Not a quarter. A quarter is smaller. I learnt that today."],
        ["pippi", "School is lovely. I'll come back after the holidays. For the next holidays."]],
-    () => showWin());
+    () => {
+      S.f.snow3 = true; save();
+      const sc = $('#sc-school');
+      if(!reducedMotion()){ sc.classList.add('sl-firstsnow'); setTimeout(() => sc.classList.remove('sl-firstsnow'), 10000); }
+      applyVisuals();
+      say([["sys", "The holidays fly by: long sunny days, then falling leaves… and then one morning, the first snowflakes drift past the classroom window."],
+           ["pippi", "Snow! Heaps and heaps of it! Tommy, Annika, come on: it's snowball weather!"]], () => showWin());
+    });
 }

@@ -282,25 +282,25 @@
 = The little school
 > Den lilla skolan
 
-# ---------- Chapter 4: menus, end screen, speakers, item uses ----------
+# ---------- Chapter 5: menus, end screen, speakers, item uses ----------
 = Classroom door: on to Chapter {n}
 > Klassrumsdörren: vidare till kapitel {n}
-= Pippi has her holidays, and Miss has the biggest piece of cake. Next: the circus comes to town, and the show can't begin…
-> Pippi har lov, och fröken har den största tårtbiten. Härnäst: cirkusen kommer till stan, och föreställningen kan inte börja…
+= Pippi has her holidays, and Miss has the biggest piece of cake. Next: winter comes to Villa Villekulla, and two policemen have a challenge…
+> Pippi har lov, och fröken har den största tårtbiten. Härnäst: vintern kommer till Villa Villekulla, och två poliser har en utmaning…
 = Continue to Chapter 4
 > Vidare till kapitel 4
-= Showtime · Chapter 4 complete
-> Föreställning! · kapitel 4 klart
+= Showtime · Chapter 5 complete
+> Föreställning! · kapitel 5 klart
 = Bravo
 > Bravo
 = Pippi lifted the strongman, and the circus wants her to stay. Next: a ship sails into the harbour, and her captain has a red beard…
 > Pippi lyfte starke mannen, och cirkusen vill att hon stannar. Härnäst: ett skepp seglar in i hamnen, och kaptenen har rött skägg…
 = Pippi goes to the circus
 > Pippi på cirkus
-= Chapter 4: Pippi goes to the circus
-> Kapitel 4: Pippi på cirkus
-= Chapter 4 · Pippi Goes to the Circus
-> Kapitel 4 · Pippi på cirkus
+= Chapter 5: Pippi goes to the circus
+> Kapitel 5: Pippi på cirkus
+= Chapter 5 · Pippi Goes to the Circus
+> Kapitel 5 · Pippi på cirkus
 = Honked the clown's nose
 > Tutade på clownens näsa
 = Lights out!
@@ -316,23 +316,23 @@
 = Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming. When you're ready, the curtain leads on to Chapter {n}.
 > Ta den tid du behöver. Föreställningen fortsätter: hästen travar fortfarande runt i manegen, och konfettin bara fortsätter att falla. När du är redo leder ridån vidare till kapitel {n}.
 
-# ---------- Chapter 5: menus, end screen, speakers ----------
+# ---------- Chapter 6: menus, end screen, speakers ----------
 = Curtain: on to Chapter {n}
 > Ridå: vidare till kapitel {n}
 = Continue to Chapter 5
 > Vidare till kapitel 5
-= Land ho · Chapter 5 complete
-> Land i sikte · kapitel 5 klart
+= Land ho · Chapter 6 complete
+> Land i sikte · kapitel 6 klart
 = Land ho
 > Land i sikte
-= The Hoppetossa has reached Captain Longstocking's island. Next: life on a South Sea island. Chapter 6 is still being written.
-> Hoppetossa har kommit fram till kapten Långstrumps ö. Härnäst: livet på en ö i Söderhavet. Kapitel 6 håller fortfarande på att skrivas.
+= The Hoppetossa has reached Captain Longstocking's island. Next: life on a South Sea island. Chapter 7 is still being written.
+> Hoppetossa har kommit fram till kapten Långstrumps ö. Härnäst: livet på en ö i Söderhavet. Kapitel 7 håller fortfarande på att skrivas.
 = On board the Hoppetossa
 > Ombord på Hoppetossa
-= Chapter 5: On board the Hoppetossa
-> Kapitel 5: Ombord på Hoppetossa
-= Chapter 5 · On Board the Hoppetossa
-> Kapitel 5 · Ombord på Hoppetossa
+= Chapter 6: On board the Hoppetossa
+> Kapitel 6: Ombord på Hoppetossa
+= Chapter 6 · On Board the Hoppetossa
+> Kapitel 6 · Ombord på Hoppetossa
 = Tasted the sea
 > Smakade på havet
 = A horse, very close up

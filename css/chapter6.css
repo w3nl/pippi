@@ -1,0 +1,92 @@
+/* Chapter 6: on board the Hoppetossa. Close-ups: the cargo hoist (pulleys), the wheel and the chart (compass points),
+   Mr Nilsson's things overboard (floating), fresh water from the sea (evaporation), the sextant (the Equator) and
+   the crow's nest (the Earth is round). Every moving part stops with the Motion setting (css/animations.css). */
+.dialog.who-captain .who{color:#7fc8ff} .dialog.who-captain{border-left-color:#7fc8ff}
+
+/* close-ups */
+.hp-tackle,.hp-compass,.hp-chart,.hp-still,.hp-night,.hp-curve{width:100%;height:auto;display:block;margin:0 auto;border-radius:6px}
+.hp-tackle{max-width:360px} .hp-compass{max-width:240px} .hp-chart{max-width:480px} .hp-still{max-width:420px} .hp-night,.hp-curve{max-width:520px}
+.hp-ropes.on,.hp-from.on{background:var(--amber);color:#24120a}
+.hp-heading{text-align:center;font-family:var(--f-mono);font-size:15px;margin-top:8px} .hp-heading b{color:var(--amber);text-transform:uppercase}
+.hp-floats{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
+.hp-fl{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px;border-radius:8px;border:2px solid var(--line);background:#2a3550;color:var(--paper);font-size:13px}
+.hp-fl svg{width:100%;height:auto;display:block}
+.hp-fl .hp-fs{font-family:var(--f-mono);font-size:13px;color:var(--muted)}
+.hp-fl.f{border-color:#7fc8ff} .hp-fl.f .hp-fs{color:#7fc8ff}
+.hp-fl.s{border-color:#c9952a} .hp-fl.s .hp-fs{color:#f3d27a}
+.hp-parts{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:6px;margin-top:10px}
+.hp-log{background:#f3e6c4;color:#3e200c;border-radius:4px;padding:12px 16px;font-family:var(--f-hand);font-size:clamp(18px,3vw,22px);line-height:1.2}
+.hp-log p{margin:0 0 8px}
+.hp-log .hp-rule{font-family:var(--f-display);font-size:14px;border-top:2px dashed #c4302b;padding-top:8px;margin:4px 0 0}
+@keyframes hpDrip{0%{transform:translateY(0);opacity:1}80%{transform:translateY(30px);opacity:1}100%{transform:translateY(34px);opacity:0}}
+.hp-dripdot{animation:hpDrip 1.2s ease-in infinite}
+
+/* ---------- the Hoppetossa comes alive ---------- */
+@keyframes hpBob{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+@keyframes hpRock{0%,100%{transform:rotate(-.7deg) translateY(0)}50%{transform:rotate(.7deg) translateY(5px)}}
+@keyframes hpWaves{from{transform:translateX(0)}to{transform:translateX(-200px)}}
+@keyframes hpCloud{from{transform:translateX(-500px)}to{transform:translateX(1700px)}}
+@keyframes hpGull{0%{transform:translate(0,0)}50%{transform:translate(140px,-20px)}100%{transform:translate(0,0)}}
+@keyframes hpFlag{0%,100%{transform:skewY(0) scaleX(1)}50%{transform:skewY(-7deg) scaleX(.88)}}
+@keyframes hpFull{0%,100%{transform:scaleX(1)}50%{transform:scaleX(1.03)}}
+@keyframes hpUnfurl{from{transform:scaleY(.05)}to{transform:scaleY(1)}}
+@keyframes hpLeave{from{transform:translateX(0);opacity:1}to{transform:translateX(-700px);opacity:0}}
+@keyframes hpSwing{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
+@keyframes hpNod{0%,70%,100%{transform:rotate(0)}80%{transform:rotate(-4deg)}90%{transform:rotate(2deg)}}
+@keyframes hpPlait{0%,100%{transform:rotate(0)}50%{transform:rotate(-10deg)}}
+@keyframes hpFish{0%,100%{transform:translateX(0)}50%{transform:translateX(60px)}}
+@keyframes hpJelly{0%,100%{transform:translateY(0) scaleY(1)}50%{transform:translateY(-14px) scaleY(.9)}}
+@keyframes hpPalm{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes hpRipple{0%{transform:scale(.4);opacity:.9}100%{transform:scale(1.6);opacity:0}}
+@keyframes hpSpout{0%,70%,100%{opacity:0}78%,90%{opacity:1}}
+@keyframes hpDolphin{0%{transform:translate(-200px,620px) rotate(0)}10%{transform:translate(180px,560px) rotate(-20deg)}18%{transform:translate(420px,630px) rotate(30deg)}18.01%,100%{transform:translate(-300px,700px)}}
+@keyframes hpDrop{0%{transform:translate(0,0);opacity:0}20%{opacity:1}100%{transform:translate(30px,-40px);opacity:0}}
+@keyframes hpTw{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes hpWheel{0%,100%{transform:rotate(-12deg)}50%{transform:rotate(12deg)}}
+
+#hp-ship{transform-box:view-box;transform-origin:800px 620px;animation:hpBob 4s ease-in-out infinite}
+#sc-ship.sailing #hp-ship{animation:hpRock 5s ease-in-out infinite}
+.hp-waves{animation:hpWaves 6s linear infinite}
+.hp-waves.front{animation-duration:4s}
+#sc-ship.sailing .hp-waves{animation-duration:3s}
+#sc-ship.sailing .hp-waves.front{animation-duration:2s}
+.hp-cloud{animation:hpCloud 70s linear infinite}
+.hp-cloud.slow{animation-duration:110s;animation-delay:-50s}
+.hp-gull{transform-box:fill-box;animation:hpGull 9s ease-in-out infinite}
+.hp-gull.b{animation-duration:12s;animation-delay:-4s}
+.hp-flag{transform-box:fill-box;transform-origin:0 50%;animation:hpFlag 1.2s ease-in-out infinite}
+#hp-sails .hp-sail{transform-box:fill-box;transform-origin:50% 0;animation:hpFull 3s ease-in-out infinite}
+#hp-sails .hp-sail.b{animation-delay:-1.5s}
+#sc-ship.castoff #hp-sails{display:inline!important}
+#sc-ship.castoff #hp-furl{display:none!important}
+#sc-ship.castoff #hp-sails .hp-sail{animation:hpUnfurl 1.2s ease-out both}
+#sc-ship.castoff #hp-harbour{animation:hpLeave 3s ease-in both}
+#hp-lamp{transform-box:view-box;transform-origin:330px 338px;animation:hpSwing 3s ease-in-out infinite}
+#hp-nilsson{transform-box:view-box;transform-origin:1264px 198px;animation:hpSwing 2.2s ease-in-out infinite}
+.hp-nod{animation:none}
+.hp-nod use{transform-box:fill-box;transform-origin:30% 100%;animation:hpNod 5s ease-in-out infinite}
+#hp-pippi .plait{transform-box:fill-box;transform-origin:100% 50%;animation:hpPlait 1.4s ease-in-out infinite}
+#hp-pippi .plait.b{transform-origin:0 50%;animation-direction:reverse}
+#sc-ship:not(.sailing) #hp-wheel{animation:none}
+#sc-ship.sailing #hp-wheel{transform-box:fill-box;transform-origin:50% 50%;animation:hpWheel 6s ease-in-out infinite}
+.hp-fish{transform-box:fill-box;animation:hpFish 7s ease-in-out infinite}
+.hp-fish.b{animation-duration:9s;animation-delay:-3s}
+.hp-fish.c{animation-duration:11s;animation-direction:reverse}
+.hp-jelly{transform-box:fill-box;animation:hpJelly 4s ease-in-out infinite}
+.hp-palm{transform-box:fill-box;transform-origin:50% 100%;animation:hpPalm 3s ease-in-out infinite}
+.hp-palm.b{animation-delay:-1.5s}
+.hp-ripple{transform-box:fill-box;transform-origin:50% 50%;animation:hpRipple 2s ease-out infinite}
+.hp-ripple.b{animation-delay:-1s}
+.hp-spout{animation:hpSpout 9s linear infinite}
+.hp-dolphin{animation:hpDolphin 14s linear infinite}
+.hp-dolphin.b{animation-delay:-1.2s}
+.hp-drop{transform-box:fill-box;animation:hpDrop 1.4s ease-out infinite}
+.hp-drop.b{animation-delay:-.5s} .hp-drop.c{animation-delay:-.9s}
+#sc-ship .hp-tw{animation:hpTw 3s ease-in-out infinite}
+/* snow in the harbour; it fades behind the ship as she casts off for the sun */
+@keyframes hpSnow{from{transform:translateY(-900px)}to{transform:translateY(900px)}}
+@keyframes hpSnowGo{from{opacity:1}to{opacity:0}}
+@keyframes hpSkyGo{from{opacity:.6}to{opacity:0}}
+.hp-flake{animation:hpSnow 9s linear infinite}
+#sc-ship.castoff #hp-snow{display:inline!important;animation:hpSnowGo 3s ease-in both}
+#sc-ship.castoff #hp-wintersky{display:inline!important;animation:hpSkyGo 3s ease-in both}

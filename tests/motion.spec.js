@@ -52,12 +52,17 @@ test('"Motion off" stops everything, in every room', async ({ page }) => {
   await page.evaluate(() => { S.ch = 3; S.scene = 'school'; S.f = {}; applyVisuals(); });
   await expect(page.locator('#sl-teacher')).toBeVisible();
   expect(await moving(page)).toBe(0);
+  // and the snowy garden, even during the snowball fight
+  await page.evaluate(() => { S.ch = 4; S.scene = 'winter'; S.f = { out4: true }; applyVisuals(); });
+  await expect(page.locator('#wt-fight')).toBeVisible();
+  expect(await moving(page)).toBe(0);
+  await expect(page.locator('#wt-fight .wt-fly').first()).toHaveAttribute('transform', 'translate(-100 -100)');
   // and the big top, even during the show
-  await page.evaluate(() => { S.ch = 4; S.scene = 'circus'; S.f = { juggle: true, out4: true }; applyVisuals(); });
+  await page.evaluate(() => { S.ch = 5; S.scene = 'circus'; S.f = { juggle: true, out5: true }; applyVisuals(); });
   await expect(page.locator('#cc-confetti')).toBeVisible();
   expect(await moving(page)).toBe(0);
   // and the Hoppetossa, at sea and at the island
-  await page.evaluate(() => { S.ch = 5; S.scene = 'ship'; S.f = { aboard: true, course: true, out5: true, equator: true, water: true }; applyVisuals(); });
+  await page.evaluate(() => { S.ch = 6; S.scene = 'ship'; S.f = { aboard: true, course: true, out6: true, equator: true, water: true }; applyVisuals(); });
   await expect(page.locator('#hp-isle')).toBeVisible();
   expect(await moving(page)).toBe(0);
   // the dolphins only exist while things move
@@ -66,7 +71,7 @@ test('"Motion off" stops everything, in every room', async ({ page }) => {
 
 test('the Hoppetossa moves: she bobs at the quay, then rocks at sea with full sails, fish and dolphins', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' });
-  await seed(page, { ch: 5, scene: 'ship', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5']);
+  await seed(page, { ch: 6, scene: 'ship', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6']);
   await page.locator('#btn-cont').click();
   await skip(page);
   expect(await anim(page, '#hp-ship')).toBe('hpBob');
@@ -82,7 +87,7 @@ test('the Hoppetossa moves: she bobs at the quay, then rocks at sea with full sa
 
 test('the big top moves: the horse trots, the spotlights sweep, the trapezes swing, and the show adds confetti', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' });
-  await seed(page, { ch: 4, scene: 'circus', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4']);
+  await seed(page, { ch: 5, scene: 'circus', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5']);
   await page.locator('#btn-cont').click();
   await skip(page);
   expect(await anim(page, '#cc-horse')).toBe('ccTrot');
@@ -94,9 +99,24 @@ test('the big top moves: the horse trots, the spotlights sweep, the trapezes swi
   await page.evaluate(() => { S.f.trapeze = true; S.f.juggle = true; applyVisuals(); });
   expect(new Set(await dur()).size).toBe(1);
   expect(await anim(page, '#cc-balls-air .jball')).toBe('ccJugA');
-  await page.evaluate(() => { S.f.out4 = true; applyVisuals(); });
+  await page.evaluate(() => { S.f.out5 = true; applyVisuals(); });
   expect(await anim(page, '#cc-confetti .confetto')).toBe('ccConfetti');
   expect(await moving(page)).toBeGreaterThan(40);
+});
+
+test('the snowy garden moves: snow falls, smoke rises, Annika shivers, the policemen stamp, and snowballs fly', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await seed(page, { ch: 4, scene: 'winter', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4']);
+  await page.locator('#btn-cont').click();
+  await skip(page);
+  expect(await anim(page, '.wt-flake')).toBe('wtFall');
+  expect(await anim(page, '.wt-puff')).toBe('wtPuff');
+  expect(await anim(page, '#wt-annika')).toBe('wtShiver');
+  expect(await anim(page, '.wt-stamp')).toBe('wtStamp');
+  await page.evaluate(() => { S.f.warm = true; S.f.out4 = true; applyVisuals(); });
+  expect(await anim(page, '#wt-annika')).toBe('none');
+  expect(await anim(page, '.wt-fly')).toBe('wtFlyA');
+  expect(await moving(page)).toBeGreaterThan(70);
 });
 
 test('the classroom moves: the horse munches, Miss bobs at the door window, the clock ticks', async ({ page }) => {

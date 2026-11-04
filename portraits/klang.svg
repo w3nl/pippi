@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+    <title>Klang</title>
+    <rect width="120" height="120" rx="14" fill="#c9b0d8" />
+    <path d="M10 120 q4-40 50-42 q46 2 50 42z" fill="#1f2f5a" />
+    <g fill="#f2c94c">
+        <circle cx="60" cy="100" r="3" />
+        <circle cx="60" cy="112" r="3" />
+    </g>
+    <path d="M34 88 q26 12 52 0" stroke="#3f8a4a" stroke-width="9" fill="none"
+        stroke-linecap="round" />
+    <circle cx="60" cy="60" r="28" fill="#f3c9a4" />
+    <circle cx="44" cy="68" r="6" fill="#f2a7b8" opacity=".7" />
+    <circle cx="76" cy="68" r="6" fill="#f2a7b8" opacity=".7" />
+    <circle cx="51" cy="58" r="3" fill="#1a120c" />
+    <circle cx="69" cy="58" r="3" fill="#1a120c" />
+    <circle cx="60" cy="67" r="5" fill="#e88a7a" />
+    <path d="M46 76 q14 10 28 0" stroke="#5a3a1a" stroke-width="3" fill="none"
+        stroke-linecap="round" />
+    <path d="M30 42 h60 v-14 q-30 -18 -60 0z" fill="#1f2f5a" />
+    <rect x="27" y="40" width="66" height="7" fill="#111a33" />
+    <circle cx="60" cy="32" r="5" fill="#f2c94c" />
+</svg>

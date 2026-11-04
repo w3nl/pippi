@@ -1,273 +1,403 @@
-# Dutch translation: Chapter 4, Pippi goes to the circus (js/chapter4.js).
-# Money is in crowns (kronen).
+# Dutch translation: Chapter 4, snowball fight (js/chapter4.js, its hints, item uses, scene labels and menus).
+# The policemen are Kling en Klang. Mittens = wanten. Half past two = half drie.
 
-= Spotlights
-> Spotlights
-= Teeterboard
-> Wipplank
-= Clown
-> Clown
-= Trapezes
-> Trapezes
-= Circus tickets
-> Circuskaartjes
-= Four tickets: for Pippi, Tommy, Annika and you. Mr Nilsson goes in free, as hand luggage.
-> Vier kaartjes: voor Pippi, Tommy, Annika en jou. Meneer Nilsson mag gratis mee, als handbagage.
-= Tickets, please! Nobody comes near my ring without a ticket. Not even strong little girls.
-> Kaartjes, alsjeblieft! Niemand komt bij mijn piste zonder kaartje. Ook geen sterke meisjes.
-= The spunk's jam jar, on the counter of the ticket booth. Pippi brought it to the circus.
-> Het jampotje van de spunk, op de toonbank van het kaartjeshokje. Pippi heeft hem meegenomen naar het circus.
-= "It has never seen a circus," she says. You take it. A spunk knows things. Even about circuses.
-> "Hij heeft nog nooit een circus gezien," zegt ze. Je neemt hem mee. Een spunk weet dingen. Zelfs over circussen.
-= The ticket booth. The ticket seller is counting Pippi's gold coin for the fourth time. It's real.
-> Het kaartjeshokje. De kaartjesverkoper telt Pippi's gouden munt voor de vierde keer. Hij is echt.
-= The ringmaster's checklist, BEFORE THE SHOW: spotlights, teeterboard, clown, trapezes. {n} of 4 done.
-> Het lijstje van de directeur, VOOR DE VOORSTELLING: spotlights, wipplank, clown, trapezes. {n} van de 4 klaar.
-= When all four are ticked off, the curtain can open.
-> Als alle vier zijn afgevinkt, mag het gordijn open.
-= Ladies and gentlemen! The strongest girl in the world!
-> Dames en heren! Het sterkste meisje van de wereld!
-= Tickets, please! The show starts in a moment. Well… it should.
-> Kaartjes, alsjeblieft! De voorstelling begint zo. Nou ja… dat zou moeten.
-= Everything's ready! Open the curtain with the winch, and the show can begin!
-> Alles is klaar! Doe het gordijn open met de lier, dan kan de voorstelling beginnen!
-= Oh, it's a disaster! The spotlights are all the wrong colours, the teeterboard won't balance, the clown has forgotten his juggling, and the trapeze artists can't catch each other.
-> O, het is een ramp! De spotlights hebben de verkeerde kleuren, de wipplank blijft niet in evenwicht, de clown is vergeten hoe hij moet jongleren, en de trapezeartiesten kunnen elkaar niet vangen.
-= My checklist is on the tent pole. If only somebody could help…
-> Mijn lijstje hangt aan de tentpaal. Kon iemand maar helpen…
-= I've never helped a circus, so I'm sure I can!
-> Ik heb nog nooit een circus geholpen, dus ik denk dat ik het wel kan!
-= The three spotlights shine white together, right in the middle of the ring. Perfect for a star.
-> De drie spotlights schijnen samen wit, precies in het midden van de piste. Perfect voor een ster.
-= The teeterboard, perfectly balanced. The strongman is very impressed.
-> De wipplank, perfect in evenwicht. De sterke man is erg onder de indruk.
-= Such a small girl. So far out. Perfect balance!
-> Zo'n klein meisje. Zo ver naar buiten. Perfect evenwicht!
-= Honk! Honk! HONK! Please stop squeezing my nose, I'm working.
-> Toet! Toet! TOET! Wil je ophouden met in mijn neus knijpen, ik ben aan het werk.
-= Look at me go! Red, blue, blue, red, blue, blue…
-> Kijk mij eens! Rood, blauw, blauw, rood, blauw, blauw…
-= The two trapezes swing back and forth in perfect time. The flyers catch each other every single time.
-> De twee trapezes schommelen precies tegelijk heen en weer. De artiesten vangen elkaar elke keer.
-= Ork! Ork!
-> Ork! Ork!
-= A seal on a stool, balancing a ball on its nose. It's the only one in the circus who's ready for the show.
-> Een zeehond op een krukje, met een bal op zijn neus. Hij is de enige in het circus die klaar is voor de voorstelling.
-= The performers' curtain, heavy red velvet with gold fringes. Behind it, the horses are stamping and someone is warming up a trumpet.
-> Het gordijn van de artiesten, van zwaar rood fluweel met gouden franjes. Erachter stampen de paarden en blaast iemand zich warm op een trompet.
-= It opens with the winch on its right. But only when the show is ready.
-> Hij gaat open met de lier ernaast, rechts. Maar alleen als de voorstelling klaar is.
-= The winch has done its job. The curtain is open.
-> De lier heeft zijn werk gedaan. Het gordijn is open.
-= Not yet! First the checklist: {n} of 4 acts are ready.
-> Nog niet! Eerst het lijstje: {n} van de 4 nummers zijn klaar.
-= I'm a circus star!
-> Ik ben een circusster!
-= I've got a gold coin for the tickets. It's a bit big, but they'll have change.
-> Ik heb een gouden munt voor de kaartjes. Hij is een beetje groot, maar ze hebben vast wisselgeld.
-= A circus! With a strongman! I wonder if he'd like to be lifted.
-> Een circus! Met een sterke man! Zou hij opgetild willen worden?
-= The ticket booth
-> Het kaartjeshokje
-= Tickets: 3 crowns each
-> Kaartjes: 3 kronen per stuk
-= Pippi buys {n} tickets, for herself, Tommy, Annika and you, and pays with a gold coin worth {paid} crowns. The ticket seller has gone to fetch more change, so you're in charge of the till.
-> Pippi koopt {n} kaartjes, voor zichzelf, Tommy, Annika en jou, en betaalt met een gouden munt van {paid} kronen. De kaartjesverkoper is wisselgeld halen, dus jij past op de kassa.
-= How much change does Pippi get?
-> Hoeveel wisselgeld krijgt Pippi terug?
-= Add a {v}-crown coin
-> Een munt van {v} kronen erbij
-= Take it back
-> Terugpakken
-= Give the change
-> Wisselgeld geven
-= No coins yet.
-> Nog geen munten.
-= 4 × 3 = 12 crowns for the tickets, and 20 − 12 = 8 crowns change. Four tickets for you!
-> 4 × 3 = 12 kronen voor de kaartjes, en 20 − 12 = 8 kronen wisselgeld. Vier kaartjes voor jullie!
-= Eight crowns change! That's enough for eight crowns' worth of sweets.
-> Acht kronen wisselgeld! Daar kun je voor acht kronen snoep van kopen.
-= You take the tickets. Now show them to the ringmaster.
-> Je pakt de kaartjes. Laat ze nu aan de directeur zien.
-= 12 crowns is what the tickets cost. Pippi paid 20: how much is left over?
-> 12 kronen kosten de kaartjes. Pippi betaalde 20: hoeveel blijft er over?
-= That would be right for one ticket. But Pippi buys four.
-> Dat klopt voor één kaartje. Maar Pippi koopt er vier.
-= Too much! The circus would go bankrupt. First work out what four tickets cost.
-> Te veel! Dan gaat het circus failliet. Reken eerst uit wat vier kaartjes kosten.
-= Not enough. What do four tickets cost, and how much is left of 20?
-> Te weinig. Wat kosten vier kaartjes, en hoeveel blijft er over van 20?
-= Yellow light for the clown
-> Geel licht voor de clown
-= Sea-blue light for the seal: cyan, a mix of green and blue
-> Zeeblauw licht voor de zeehond: cyaan, een mengsel van groen en blauw
-= White light for the star of the show
-> Wit licht voor de ster van de voorstelling
-= darkness
-> donker
-= red
-> rood
-= green
-> groen
-= blue
-> blauw
-= yellow
-> geel
-= cyan
-> cyaan
-= magenta (pink-purple)
-> magenta (roze-paars)
-= white
-> wit
-= The lighting desk
-> De lichttafel
-= Three spotlights: red, green and blue
-> Drie spotlights: rood, groen en blauw
-= Red
-> Rood
-= Green
-> Groen
-= Blue
-> Blauw
-= Shine!
-> Schijnen!
-= Coloured LIGHT mixes differently from paint: the more colours you add, the brighter it gets.
-> Gekleurd LICHT mengt anders dan verf: hoe meer kleuren je erbij doet, hoe lichter het wordt.
-= Round {n} of 3:
-> Ronde {n} van 3:
-= The ring is now:
-> De piste is nu:
-= Pitch dark! Somewhere in the dark, the seal goes "Ork?" Switch some lights on.
-> Pikdonker! Ergens in het donker zegt de zeehond "Ork?" Doe wat lampen aan.
-= Only red. Yellow light is red light plus another colour. Not blue!
-> Alleen rood. Geel licht is rood licht plus nog een kleur. Niet blauw!
-= Not white yet. White light is every colour of light together.
-> Nog niet wit. Wit licht is alle kleuren licht samen.
-= That makes {got}. Which two colours of light together make {want}?
-> Dat wordt {got}. Welke twee kleuren licht samen maken {want}?
-= Yellow! Red light and green light make yellow light. (With paint you would get brown!)
-> Geel! Rood licht en groen licht maken geel licht. (Met verf krijg je bruin!)
-= Cyan! Green and blue light make a bright sea-blue.
-> Cyaan! Groen en blauw licht maken een helder zeeblauw.
-= White! Red, green and blue light together make white light. A screen makes every colour from just those three.
-> Wit! Rood, groen en blauw licht samen maken wit licht. Een beeldscherm maakt elke kleur van alleen die drie.
-= The lights are perfect! Tick it off!
-> De lampen zijn perfect! Afvinken!
-= Up on the checklist, a tick appears next to Spotlights.
-> Op het lijstje verschijnt een vinkje bij Spotlights.
-= The teeterboard
-> De wipplank
-= The strongman: 90 kg, 1 metre from the middle
-> De sterke man: 90 kg, 1 meter van het midden
-= Pippi at {m} m
-> Pippi op {m} m
-= Pippi weighs 30 kg. Where must she sit so the board balances? The strongman says: "Heavy and close, or light and far, it's all the same to a teeterboard."
-> Pippi weegt 30 kg. Waar moet ze zitten zodat de plank in evenwicht is? De sterke man zegt: "Zwaar en dichtbij, of licht en ver weg, voor een wipplank is dat allemaal hetzelfde."
-= Balanced! 90 kg × 1 m = 90, and 30 kg × 3 m = 90. A light person far out balances a heavy person close in.
-> In evenwicht! 90 kg × 1 m = 90, en 30 kg × 3 m = 90. Een licht iemand ver weg houdt een zwaar iemand dichtbij in evenwicht.
-= Such a small girl, so far out, and we balance perfectly! Teeterboard act: ready!
-> Zo'n klein meisje, zo ver weg, en we zijn precies in evenwicht! Het wipplanknummer: klaar!
-= Pippi's end goes down with a bump, and the strongman flies up into the air! 30 × 4 = 120 is more than 90 × 1 = 90.
-> Pippi's kant gaat met een klap naar beneden, en de sterke man vliegt de lucht in! 30 × 4 = 120 is meer dan 90 × 1 = 90.
-= The strongman's side stays down. 30 kg × {m} m = {r}, but 90 kg × 1 m = 90. Sit further out.
-> De kant van de sterke man blijft beneden. 30 kg × {m} m = {r}, maar 90 kg × 1 m = 90. Ga verder naar buiten zitten.
-= The clown's juggling
-> Het jongleren van de clown
-= He has forgotten how it goes on
-> Hij is vergeten hoe het verder gaat
-= "I always juggle in a pattern," sniffs the clown, "but I've forgotten the end! Which balls come next?"
-> "Ik jongleer altijd in een patroon," snuift de clown, "maar ik ben het eind vergeten! Welke ballen komen er nu?"
-= Click an empty ball to change its colour.
-> Klik op een lege bal om de kleur te veranderen.
-= Juggle!
-> Jongleren!
-= Ball {n}
-> Bal {n}
-= Red, blue, blue, again and again: the pattern repeats every three balls. Up they go!
-> Rood, blauw, blauw, steeds weer: het patroon herhaalt zich om de drie ballen. Daar gaan ze!
-= Red, blue, blue! Red, blue, blue! I remember! Honk honk!
-> Rood, blauw, blauw! Rood, blauw, blauw! Ik weet het weer! Toet toet!
-= The clown juggles, and the balls fly round and round in the spotlight.
-> De clown jongleert, en de ballen vliegen rond en rond in het licht van de spotlight.
-= Yellow? There's no yellow anywhere in his pattern so far.
-> Geel? Er zit nog nergens geel in zijn patroon.
-= Choose a colour for every empty ball first.
-> Kies eerst een kleur voor elke lege bal.
-= The clown drops a ball on his foot. Look at the start: which group of colours keeps repeating?
-> De clown laat een bal op zijn voet vallen. Kijk naar het begin: welk groepje kleuren komt steeds terug?
-= The trapezes
-> De trapezes
-= The Flying Svenssons must swing in time
-> De Vliegende Svenssons moeten tegelijk schommelen
-= Left rope (Sofia, 35 kg)
-> Linker touw (Sofia, 35 kg)
-= Right rope (Sven, 70 kg)
-> Rechter touw (Sven, 70 kg)
-= Jump across!
-> Overspringen!
-= To catch each other, the two trapezes must swing in exactly the same rhythm. Sven is twice as heavy as Sofia. Does that matter?
-> Om elkaar te vangen, moeten de twee trapezes in precies hetzelfde ritme schommelen. Sven is twee keer zo zwaar als Sofia. Maakt dat uit?
-= {L} m · one swing there and back: {T} s
-> {L} m · één keer heen en terug: {T} s
-= Same length, same rhythm: Sven catches Sofia! How fast a swing goes depends on the length of the rope, not on how heavy you are.
-> Even lang, hetzelfde ritme: Sven vangt Sofia! Hoe snel een schommel gaat, hangt af van de lengte van het touw, niet van hoe zwaar je bent.
-= The Flying Svenssons swing in perfect time and catch each other in mid-air. The audience isn't even in yet, and Pippi is already clapping.
-> De Vliegende Svenssons schommelen precies tegelijk en vangen elkaar in de lucht. Het publiek zit er nog niet eens, en Pippi klapt al.
-= Bravo! Next time, I'll be the one in the middle.
-> Bravo! De volgende keer ben ik degene in het midden.
-= Swish… they miss each other, and land in the safety net. The ropes have different lengths, so they swing at different speeds. The weight doesn't matter.
-> Zwiep… ze missen elkaar, en landen in het vangnet. De touwen zijn niet even lang, dus ze schommelen niet even snel. Het gewicht maakt niet uit.
-= The curtain winch
-> De lier van het gordijn
-= Crank → gears → curtain drum
-> Slinger → tandwielen → trommel van het gordijn
-= You turn the crank clockwise ↻. The curtain drum on the right must turn anticlockwise ↺ to open the curtain. How many gears go in between?
-> Jij draait de slinger met de klok mee ↻. De trommel rechts moet tegen de klok in draaien ↺ om het gordijn open te doen. Hoeveel tandwielen moeten ertussen?
-= {n} in between
-> {n} ertussen
-= Turn the crank!
-> Draaien!
-= Two gears that touch always turn opposite ways.
-> Twee tandwielen die elkaar raken, draaien altijd de andere kant op.
-= crank ↻
-> slinger ↻
-= drum
-> trommel
-= Crank ↻, then ↺, ↻, and the drum turns ↺: the curtain opens! With an even number of gears in between, the last gear turns the other way from the crank.
-> Slinger ↻, dan ↺, ↻, en de trommel draait ↺: het gordijn gaat open! Met een even aantal tandwielen ertussen draait het laatste tandwiel de andere kant op dan de slinger.
-= Crank ↻, middle gear ↺, drum ↻: the curtain winds up even tighter! Count the turns: each gear turns the other way from the one before.
-> Slinger ↻, middelste tandwiel ↺, trommel ↻: het gordijn draait nog strakker dicht! Tel de draaiingen: elk tandwiel draait de andere kant op dan het vorige.
-= Crank ↻, ↺, ↻, ↺, and the drum ↻: tighter still! Three in between is one too many, or one too few.
-> Slinger ↻, ↺, ↻, ↺, en de trommel ↻: nog strakker! Drie ertussen is er één te veel, of één te weinig.
-= The circus has come to town! A big red-and-white tent in the meadow, music, sawdust, and the smell of candyfloss.
-> Het circus is in de stad! Een grote rood-witte tent in het weiland, muziek, zaagsel en de geur van suikerspin.
-= A circus! I've never been to a circus, so I'm sure I'll be very good at it.
-> Een circus! Ik ben nog nooit naar een circus geweest, dus ik denk dat ik het wel kan.
-= Pippi, you're supposed to WATCH the circus. Not be in it.
-> Pippi, je moet naar het circus KIJKEN. Niet erin meedoen.
-= Inside the big top, nothing is happening. The ringmaster is pacing up and down in front of the curtain, pulling at his moustache.
-> In de grote tent gebeurt helemaal niks. De directeur ijsbeert voor het gordijn heen en weer en trekt aan zijn snor.
-= Tickets, please! And then… oh dear. The show should have started ten minutes ago.
-> Kaartjes, alsjeblieft! En dan… o jee. De voorstelling had tien minuten geleden al moeten beginnen.
-= First, tickets. The booth is by the entrance.
-> Eerst kaartjes. Het hokje staat bij de ingang.
-= The drum turns, and the red velvet curtain swings open. A drumroll! The spotlights meet in the middle of the ring.
-> De trommel draait, en het rode fluwelen gordijn zwaait open. Tromgeroffel! De spotlights komen samen in het midden van de piste.
-= Ladies and gentlemen! The greatest show on earth!
-> Dames en heren! De grootste voorstelling op aarde!
-= The trapezes swing, the clown juggles, the seal bounces its ball, and round the ring trots the circus horse… with Pippi standing on its back, on one leg.
-> De trapezes zwaaien, de clown jongleert, de zeehond laat zijn bal stuiteren, en door de piste draaft het circuspaard… met Pippi op zijn rug, staand op één been.
-= Who let her in there?!
-> Wie heeft haar daar binnengelaten?!
-= You did! With a ticket! And now I'd like to lift the strongman, please.
-> U! Met een kaartje! En nu wil ik graag de sterke man optillen.
-= Nobody lifts me. Nobody has ever…
-> Niemand tilt mij op. Niemand heeft ooit…
-= Pippi lifts the strongman over her head, carries him once round the ring, and puts him down very gently. The whole tent stands up and cheers.
-> Pippi tilt de sterke man boven haar hoofd, draagt hem één keer rond de piste en zet hem heel voorzichtig neer. De hele tent staat op en juicht.
-= Best circus ever.
-> Het beste circus ooit.
-= Pippi, you were supposed to WATCH.
-> Pippi, je moest KIJKEN.
-= All done! Now the curtain can open: the winch is next to it.
-> Alles klaar! Nu mag het gordijn open: de lier zit ernaast.
+# ---------- menus, end screen, speakers ----------
+= Garden gate: on to Chapter {n}
+> Tuinhek: door naar hoofdstuk {n}
+= Garden gate
+> Tuinhek
+= Snowball fight · Chapter 4 complete
+> Sneeuwballengevecht · hoofdstuk 4 voltooid
+= Bull's-eye
+> Raak
+= Kling and Klang surrendered, and everybody had hot chocolate. Next: the circus comes to town, and the show can't begin…
+> Kling en Klang hebben zich overgegeven, en iedereen kreeg warme chocolademelk. Straks: het circus komt naar de stad, en de voorstelling kan niet beginnen…
+= Continue to Chapter 6
+> Door naar hoofdstuk 6
+= Snowball fight
+> Sneeuwballengevecht
+= Chapter 4: Snowball fight
+> Hoofdstuk 4: Sneeuwballengevecht
+= Chapter 4 · Snowball Fight
+> Hoofdstuk 4 · Sneeuwballengevecht
+= Made a snow angel
+> Een sneeuwengel gemaakt
+= The snowman's nose
+> De neus van de sneeuwpop
+= Snowball on your own head
+> Sneeuwbal op je eigen hoofd
+= Back in the snowy garden. Kling and Klang are still building their fort.
+> Terug in de besneeuwde tuin. Kling en Klang bouwen nog steeds aan hun fort.
+= Take your time. Kling and Klang are digging their cap out of the snow. When you're ready, the garden gate leads on to Chapter {n}.
+> Neem de tijd. Kling en Klang graven hun pet uit de sneeuw. Als je klaar bent, gaat het tuinhek verder naar hoofdstuk {n}.
+= Villa Villekulla · winter
+> Villa Kakelbont · winter
+
+# ---------- the garden ----------
+= The garden of Villa Villekulla in the snow
+> De tuin van Villa Kakelbont in de sneeuw
+= Fresh snow
+> Verse sneeuw
+= Church clock
+> Kerkklok
+= Kitchen window
+> Keukenraam
+= Thermometer
+> Thermometer
+= Veranda steps
+> Verandatrapje
+= The old oak
+> De oude eik
+= Snowman
+> Sneeuwpop
+= Our fort
+> Ons fort
+= Kling and Klang
+> Kling en Klang
+
+= Mittens
+> Wanten
+= Your own red mittens, a bit chewed by a monkey. Nobody makes snowballs with bare hands.
+> Je eigen rode wanten, een beetje aangekauwd door een aap. Niemand maakt sneeuwballen met blote handen.
+= Bong… bong… bong. The church clock strikes three!
+> Bong… bong… bong. De kerkklok slaat drie uur!
+= Three o'clock, children! Ready? Your team throws first!
+> Drie uur, kinderen! Klaar? Jullie team gooit eerst!
+= Everything is ready: the fort, the snowballs, the horse with the sledge, and a warm Annika. Throw at the policemen's fort!
+> Alles is klaar: het fort, de sneeuwballen, het paard met de slee, en een warme Annika. Gooi naar het fort van de agenten!
+= The spunk's jam jar, on the kitchen windowsill, nice and warm. Pippi doesn't let it out in the snow.
+> Het jampotje van de spunk, lekker warm op de vensterbank van de keuken. Pippi laat hem niet naar buiten in de sneeuw.
+= You take it anyway, tucked inside your coat. A spunk knows things. Even about snow.
+> Je neemt hem toch mee, veilig in je jas. Een spunk weet dingen. Zelfs over sneeuw.
+= Fresh, deep snow, without a single footprint. You flop backwards into it and wave your arms and legs.
+> Verse, diepe sneeuw, zonder één voetafdruk. Je laat je achterover vallen en zwaait met je armen en benen.
+= A perfect snow angel. Pippi says it's the best she's ever seen, apart from all of hers.
+> Een perfecte sneeuwengel. Pippi zegt dat het de mooiste is die ze ooit heeft gezien, behalve al die van haar.
+= Your snow angel is still there, looking up at the sky.
+> Je sneeuwengel ligt er nog, en kijkt omhoog naar de lucht.
+= The church clock in the town says three o'clock. Snowball time!
+> De kerkklok in het stadje wijst drie uur aan. Tijd voor sneeuwballen!
+= The church clock in the town. The little hand is between the II and the III, and the big hand points straight down: half past two.
+> De kerkklok in het stadje. De kleine wijzer staat tussen de II en de III, en de grote wijzer wijst recht naar beneden: half drie.
+= At three o'clock, the snowball fight begins.
+> Om drie uur begint het sneeuwballengevecht.
+= The garden gate. Outside, children are pulling sledges up the lane.
+> Het tuinhek. Buiten trekken kinderen hun sleetjes het laantje op.
+= Kling and Klang came in through it with their snow shovels. They mean business.
+> Kling en Klang kwamen erdoor met hun sneeuwschoppen. Ze menen het.
+= Villa Villekulla, with a thick white blanket of snow on the roof and smoke curling out of the chimney.
+> Villa Kakelbont, met een dikke witte deken sneeuw op het dak en rook die uit de schoorsteen kringelt.
+= It looks even more crooked in the snow. Pippi says the snow makes it lean the other way for a change.
+> In de sneeuw ziet het huis er nog schever uit. Pippi zegt dat de sneeuw het voor de verandering de andere kant op laat hangen.
+= Through the kitchen window: the stove is glowing, and a pan of milk is waiting for the hot chocolate.
+> Door het keukenraam: het fornuis gloeit, en een pan melk staat klaar voor de warme chocolademelk.
+= Whoever loses the snowball fight has to make it. Pippi has already put out a lot of cups.
+> Wie het sneeuwballengevecht verliest, moet die maken. Pippi heeft al heel veel kopjes klaargezet.
+= The horse is harnessed to the sledge, which is piled high with snowballs. It looks very proud to be on your team.
+> Het paard staat voor de slee, die hoog vol sneeuwballen ligt. Het kijkt heel trots dat het in jullie team zit.
+= The horse is harnessed to the sledge, waiting for something to pull.
+> Het paard staat voor de slee en wacht tot er iets te trekken valt.
+= Crunch.
+> Knars.
+= The horse is still chewing the snowman's nose, very happily.
+> Het paard kauwt nog steeds heel tevreden op de neus van de sneeuwpop.
+= The horse is on the veranda in its winter blanket. Pippi wants it to pull the sledge with the snowballs.
+> Het paard staat op de veranda in zijn winterdeken. Pippi wil dat het de slee met de sneeuwballen trekt.
+= But the veranda steps are one big sheet of ice. Every time it puts a hoof on them, it slides.
+> Maar het verandatrapje is één grote ijsplaat. Elke keer als het er een hoef op zet, glijdt het weg.
+= The veranda steps, salted and safe. Even Mr Nilsson walks down them now, instead of sliding.
+> Het verandatrapje, gestrooid en veilig. Zelfs meneer Nilsson loopt er nu af, in plaats van te glijden.
+= The old oak, with snow on every branch and a dark hollow in its trunk.
+> De oude eik, met sneeuw op elke tak en een donker gat in zijn stam.
+= Sparrows are squabbling over the bird feeder. Somewhere, a monkey is hiding with your mittens.
+> Mussen kibbelen om het voederhuisje. Ergens verstopt zich een aap met jouw wanten.
+= Mr Nilsson peeks out of the hollow in the oak, very pleased with himself. He has a snowball of his own.
+> Meneer Nilsson gluurt uit het gat in de eik, heel tevreden met zichzelf. Hij heeft zelf ook een sneeuwbal.
+= The snowman has no nose any more. The horse says it wasn't him. The horse has orange lips.
+> De sneeuwpop heeft geen neus meer. Het paard zegt dat hij het niet was. Het paard heeft oranje lippen.
+= Pippi's snowman, wearing her old top hat and a green scarf, with a carrot for a nose.
+> Pippi's sneeuwpop, met haar oude hoge hoed en een groene sjaal, en een wortel als neus.
+= There are hoofprints all round it. Somebody has been admiring that carrot.
+> Er staan overal hoefafdrukken omheen. Iemand heeft die wortel lang staan bewonderen.
+= You straighten the snowman's hat. Behind you, someone is breathing very loudly through its nose.
+> Je zet de hoed van de sneeuwpop recht. Achter je ademt iemand heel hard door zijn neus.
+= Crunch, crunch.
+> Knars, knars.
+= The horse has stretched its neck all the way from the veranda and eaten the snowman's nose. It looks delighted.
+> Het paard heeft zijn nek helemaal vanaf de veranda uitgerekt en de neus van de sneeuwpop opgegeten. Het kijkt dolblij.
+= The tracks in the snow. The one with five long fingers led straight to the old oak, and Mr Nilsson.
+> De sporen in de sneeuw. Het spoor met vijf lange vingers leidde recht naar de oude eik, en naar meneer Nilsson.
+= Your fort, a bit battered, but still standing. Snowball champions!
+> Jullie fort, een beetje gehavend, maar het staat nog. Sneeuwbalkampioenen!
+= Your fort, strong and straight. Now get everything else ready before three o'clock.
+> Jullie fort, sterk en recht. Maak nu de rest klaar voor drie uur.
+= We beat the police!
+> We hebben de politie verslagen!
+= Kindly. We beat the police kindly.
+> Vriendelijk. We hebben de politie vriendelijk verslagen.
+= Ready for battle!
+> Klaar voor de strijd!
+= Lovely and warm now. Three layers and mittens. I could stay out all day.
+> Lekker warm nu. Drie laagjes en wanten. Ik kan de hele dag buiten blijven.
+= The police are very good losers. Next year I'll let them win. Maybe.
+> De politie kan heel goed verliezen. Volgend jaar laat ik ze winnen. Misschien.
+= It's three o'clock! Throw, throw, throw!
+> Het is drie uur! Gooien, gooien, gooien!
+= I've rolled one snowball. It's a bit big. I'm saving it for later. I've never had a snowball fight with the police, so I'm sure I'll win.
+> Ik heb één sneeuwbal gerold. Hij is een beetje groot. Die bewaar ik voor straks. Ik heb nog nooit een sneeuwballengevecht met de politie gehouden, dus ik denk dat ik wel win.
+= We surrender! The cap is a bit wet, but it'll dry.
+> We geven ons over! De pet is een beetje nat, maar die droogt wel.
+= Same time next year, children?
+> Volgend jaar weer, kinderen?
+= Our fort is ready, children! Is yours?
+> Ons fort is klaar, kinderen! Dat van jullie ook?
+= At three o'clock sharp. Losers make the hot chocolate. With whipped cream!
+> Om precies drie uur. Wie verliest, maakt de chocolademelk. Met slagroom!
+
+# ---------- the tracks in the snow ----------
+= Tracks in the snow
+> Sporen in de sneeuw
+= Which ones lead to your mittens?
+> Welke leiden naar je wanten?
+= Four trails of footprints
+> Vier sporen van voetafdrukken
+= Trail {l}
+> Spoor {l}
+= <b>Annika's nature book.</b> BIRD: three thin toes forward, one back. CAT: four round toes and no claw marks. HORSE: round hoofprints. The book has no monkeys in it. This is Sweden.
+> <b>Annika's natuurboek.</b> VOGEL: drie dunne tenen naar voren, één naar achteren. KAT: vier ronde tenen en geen klauwsporen. PAARD: ronde hoefafdrukken. Er staan geen apen in het boek. Dit is Zweden.
+= Click the trail you think Mr Nilsson left.
+> Klik op het spoor dat volgens jou van meneer Nilsson is.
+= Five long fingers and a thumb, like a little hand. That's not in any Swedish nature book: it's Mr Nilsson! The trail leads to the old oak.
+> Vijf lange vingers en een duim, net een handje. Dat staat in geen enkel Zweeds natuurboek: het is meneer Nilsson! Het spoor leidt naar de oude eik.
+= You follow the little handprints across the garden to the old oak. A straw hat pokes out of the hollow in the trunk.
+> Je volgt de handafdrukjes door de tuin naar de oude eik. Er steekt een strohoed uit het gat in de stam.
+= Mr Nilsson is wearing your mittens on his feet. He looks at you, sighs, and kicks them down into the snow.
+> Meneer Nilsson draagt jouw wanten aan zijn voeten. Hij kijkt je aan, zucht, en schopt ze naar beneden in de sneeuw.
+= Well found! Monkeys have hands on their feet too, so they leave handprints everywhere.
+> Goed gevonden! Apen hebben ook handen aan hun voeten, dus ze laten overal handafdrukken achter.
+= Three thin toes forward and one back: a bird. The sparrows have been hopping to the bird feeder.
+> Drie dunne tenen naar voren en één naar achteren: een vogel. De mussen zijn naar het voederhuisje gehupt.
+= Four round toes and no claw marks: a cat. Cats pull their claws in when they walk. It's the neighbour's cat, off along the fence.
+> Vier ronde tenen en geen klauwsporen: een kat. Katten trekken hun nagels in als ze lopen. Het is de kat van de buren, langs het hek.
+= Round hoofprints: the horse, from the veranda to the snowman. It was after the carrot, not your mittens.
+> Ronde hoefafdrukken: het paard, van de veranda naar de sneeuwpop. Het was op de wortel uit, niet op je wanten.
+
+# ---------- the thermometers ----------
+= North wall, in the shade
+> Noordmuur, in de schaduw
+= Under the old oak
+> Onder de oude eik
+= By the veranda, in the sun
+> Bij de veranda, in de zon
+= Kitchen windowsill, inside
+> Vensterbank in de keuken, binnen
+= The thermometer by the veranda says -1 °C. Perfect snowball weather. You've made a whole pile.
+> De thermometer bij de veranda zegt -1 °C. Perfect sneeuwbalweer. Je hebt een hele berg gemaakt.
+= Four thermometers
+> Vier thermometers
+= Where does the snow stick?
+> Waar plakt de sneeuw?
+= Annika says: snow sticks best when it's just below freezing (0 °C), a little bit damp. Very cold snow is dry like powder, and above 0 °C it melts into slush.
+> Annika zegt: sneeuw plakt het best als het net onder het vriespunt is (0 °C), een klein beetje nat. Heel koude sneeuw is droog als poeder, en boven 0 °C smelt het tot prut.
+= Read the thermometers. Where will you make the snowballs?
+> Lees de thermometers af. Waar ga je de sneeuwballen maken?
+= -9 °C: nine degrees below freezing, the coldest of all. The snow is as dry as powdered sugar and falls apart in your hands.
+> -9 °C: negen graden onder nul, het koudst van allemaal. De sneeuw is zo droog als poedersuiker en valt uit elkaar in je handen.
+= -4 °C: four degrees below freezing. Warmer than the north wall, but the snow still crumbles.
+> -4 °C: vier graden onder nul. Warmer dan bij de noordmuur, maar de sneeuw brokkelt nog steeds.
+= +20 °C is Pippi's kitchen. Snowballs in there turn into puddles, and the floor is wet enough already.
+> +20 °C is Pippi's keuken. Sneeuwballen worden daar plassen, en de vloer is al nat genoeg.
+= -1 °C, just below freezing: perfect snowball snow! But your fingers are frozen stiff. Get your mittens back first.
+> -1 °C, net onder nul: perfecte sneeuwbalsneeuw! Maar je vingers zijn stijf bevroren. Haal eerst je wanten terug.
+= -1 °C: only one degree below freezing. The snow is a little damp, so it sticks. Squish, pat, pat: perfect snowballs!
+> -1 °C: maar één graad onder nul. De sneeuw is een beetje nat, dus hij plakt. Knijp, klop, klop: perfecte sneeuwballen!
+= You make a big pile of snowballs on the sunny side of the veranda. -1 is warmer than -4, and -4 is warmer than -9: below zero, the bigger the number, the colder it is.
+> Je maakt een grote berg sneeuwballen aan de zonkant van de veranda. -1 is warmer dan -4, en -4 is warmer dan -9: onder nul geldt, hoe groter het getal, hoe kouder het is.
+= Forty snowballs! I've made four hundred. Well, four. But they're big.
+> Veertig sneeuwballen! Ik heb er vierhonderd gemaakt. Nou ja, vier. Maar ze zijn groot.
+
+# ---------- the fort ----------
+= Building the fort
+> Het fort bouwen
+= Snow blocks, four rows high
+> Sneeuwblokken, vier rijen hoog
+= Shift row {n}
+> Schuif rij {n}
+= Pippi tests it with a push
+> Pippi test het met een duw
+= Click a row to shift it by half a block. Then let Pippi push the wall to see if it holds.
+> Klik op een rij om hem een half blok op te schuiven. Laat Pippi dan tegen de muur duwen om te zien of hij blijft staan.
+= Pippi pushes with all her might, and the wall doesn't budge! Every joint has a whole block on top of it, so the push spreads out over many blocks. That's how bricks are laid in a house wall too.
+> Pippi duwt uit alle macht, en de muur geeft niet mee! Op elke naad ligt een heel blok, dus de duw verspreidt zich over veel blokken. Zo worden de stenen in een huismuur ook gemetseld.
+= Your fort stands strong and straight, with little battlements on top.
+> Jullie fort staat sterk en recht, met kleine kantelen erop.
+= Kling, look! They know how to build a wall.
+> Kling, kijk! Zij weten hoe je een muur bouwt.
+= Crack! The joints are all in one straight line, from the top to the bottom, and the wall splits along it and topples over. Shift every other row.
+> Krak! De naden zitten allemaal op één rechte lijn, van boven naar beneden, en daar splijt de muur en valt om. Schuif om de andere rij op.
+= Crack! Where two rows have their joints in the same place, the wall still splits. Every joint needs a whole block on top of it.
+> Krak! Waar twee rijen hun naden op dezelfde plek hebben, splijt de muur nog steeds. Op elke naad moet een heel blok liggen.
+
+# ---------- the icy steps ----------
+= The icy steps
+> Het gladde trapje
+= The horse can't get down
+> Het paard kan niet naar beneden
+= The veranda steps are covered in smooth, hard ice, and the horse slides on every step. Pippi's kitchen has a kettle of warm water, a bag of sugar, a box of salt, and outside there's plenty of snow. What do you put on the steps?
+> Het verandatrapje zit onder het gladde, harde ijs, en het paard glijdt op elke tree. In Pippi's keuken staan een ketel warm water, een zak suiker en een doos zout, en buiten ligt sneeuw genoeg. Wat doe je op het trapje?
+= Warm water from the kettle
+> Warm water uit de ketel
+= Sugar
+> Suiker
+= Salt
+> Zout
+= More snow
+> Nog meer sneeuw
+= It melts the ice… for one minute. Then it freezes again, smoother than ever. Now the steps are a slide! Mr Nilsson loves it.
+> Het ijs smelt… één minuut lang. Dan bevriest het weer, gladder dan ooit. Nu is het trapje een glijbaan! Meneer Nilsson vindt het geweldig.
+= The horse licks the steps. Very happy horse, still very icy steps.
+> Het paard likt aan het trapje. Heel blij paard, nog steeds heel glad trapje.
+= The snow just slides about on top of the ice, and the horse slides with it.
+> De sneeuw glijdt gewoon over het ijs heen, en het paard glijdt mee.
+= Salt! It mixes with the ice into salty water, and salty water stays runny even below 0 °C. The ice melts away. (Sand works too: it doesn't melt the ice, but it gives hooves something to grip.)
+> Zout! Het mengt zich met het ijs tot zout water, en zout water blijft vloeibaar, zelfs onder 0 °C. Het ijs smelt weg. (Zand werkt ook: dat smelt het ijs niet, maar hoeven hebben er houvast aan.)
+= Clip, clop, clip, clop: the horse walks carefully down the steps into the garden. Pippi harnesses it to the sledge.
+> Klip, klop, klip, klop: het paard loopt voorzichtig het trapje af de tuin in. Pippi spant het voor de slee.
+= You load the snowballs onto the sledge, and the horse pulls them to your fort.
+> Jullie laden de sneeuwballen op de slee, en het paard trekt ze naar jullie fort.
+= Now it just needs something to pull.
+> Nu moet er alleen nog iets te trekken zijn.
+
+# ---------- keeping Annika warm ----------
+= Annika is shivering. "I'm too cold to throw anything." Pippi opens her wardrobe. What keeps Annika warmest?
+> Annika rilt. "Ik heb het te koud om iets te gooien." Pippi doet haar kleerkast open. Wat houdt Annika het warmst?
+= One thick cotton jumper
+> Eén dikke katoenen trui
+= Three thin layers: a vest, a woolly jumper and a coat
+> Drie dunne laagjes: een hemd, een wollen trui en een jas
+= Pippi's summer dress, put on twice
+> Pippi's zomerjurk, twee keer aangetrokken
+= Now her hands. Annika's fingers are like icicles. What keeps hands warmest?
+> Nu haar handen. Annika's vingers zijn net ijspegels. Wat houdt handen het warmst?
+= Gloves, with a finger for every finger
+> Handschoenen, met een vinger voor elke vinger
+= Pippi's socks (one has a hole)
+> Pippi's sokken (in één zit een gat)
+= Keeping Annika warm
+> Annika warm houden
+= Pippi's wardrobe
+> Pippi's kleerkast
+= And her hands?
+> En haar handen?
+= Layers! Warm air gets trapped between the layers and keeps the cold out, like a sparrow fluffing up its feathers.
+> Laagjes! Tussen de laagjes blijft warme lucht hangen, en die houdt de kou buiten, net als bij een mus die zijn veren opzet.
+= Mittens! In a mitten your fingers are together, so they keep each other warm. In a glove every finger is out in the cold on its own.
+> Wanten! In een want zitten je vingers bij elkaar, dus ze houden elkaar warm. In een handschoen staat elke vinger in zijn eentje in de kou.
+= I'm as warm as a pancake! Three layers, a hat and mittens. Now I can throw.
+> Ik ben zo warm als een pannenkoek! Drie laagjes, een muts en wanten. Nu kan ik gooien.
+= Annika is our secret weapon. Nobody expects her to aim so well.
+> Annika is ons geheime wapen. Niemand verwacht dat zij zo goed kan mikken.
+= One thick jumper is warm, but it's only one layer. Several thin layers trap more warm air between them.
+> Eén dikke trui is warm, maar het is maar één laag. Tussen een paar dunne laagjes blijft meer warme lucht hangen.
+= Annika says a summer dress is a summer dress, however many times you put it on.
+> Annika zegt dat een zomerjurk een zomerjurk is, hoe vaak je hem ook aantrekt.
+= Gloves keep every finger on its own, out in the cold. Brrr.
+> In handschoenen zit elke vinger alleen, in de kou. Brrr.
+= Socks on your hands are a bit like mittens, Pippi! But this one has a hole, and the snow gets in.
+> Sokken aan je handen zijn een beetje zoals wanten, Pippi! Maar in deze zit een gat, en de sneeuw komt erin.
+
+# ---------- the throw ----------
+= Snowball fight!
+> Sneeuwballengevecht!
+= Aim for Klang's cap
+> Mik op de pet van Klang
+= Straight up
+> Recht omhoog
+= Throw!
+> Gooi!
+= You always throw just as hard. Only the angle changes. At which angle does the snowball fly furthest?
+> Je gooit altijd even hard. Alleen de hoek verandert. Bij welke hoek vliegt de sneeuwbal het verst?
+= Whoosh… over their wall… SPLAT! Klang's cap flies off! Thrown just as hard, about 45°, halfway between flat and straight up, goes furthest.
+> Zoef… over hun muur… PLETS! De pet van Klang vliegt eraf! Even hard gegooid gaat ongeveer 45°, halverwege tussen plat en recht omhoog, het verst.
+= Too flat: the snowball skims along and plops into the snow halfway there.
+> Te plat: de sneeuwbal scheert laag over de grond en ploft halverwege in de sneeuw.
+= Splat, right against the front of their wall! Close. And here's a funny thing: 60° lands in exactly the same spot.
+> Plets, recht tegen de voorkant van hun muur! Bijna. En het grappige is: 60° komt op precies dezelfde plek neer.
+= Up high… and splat against the front of their wall! Close. And here's a funny thing: 30° lands in exactly the same spot.
+> Hoog de lucht in… en plets tegen de voorkant van hun muur! Bijna. En het grappige is: 30° komt op precies dezelfde plek neer.
+= Way up into the sky… and down in the middle of the garden. Too steep.
+> Heel hoog de lucht in… en midden in de tuin weer naar beneden. Te steil.
+= Straight up… and straight down. On your own head. Kling and Klang laugh so much they nearly fall over.
+> Recht omhoog… en recht naar beneden. Op je eigen hoofd. Kling en Klang lachen zo hard dat ze bijna omvallen.
+
+# ---------- intro and end ----------
+= Winter at Villa Villekulla. The garden is deep in snow, the windows glow, and smoke curls out of the chimney.
+> Winter in Villa Kakelbont. De tuin ligt diep onder de sneeuw, de ramen gloeien, en er kringelt rook uit de schoorsteen.
+= Snow! Heaps and heaps of it! What shall we do first?
+> Sneeuw! Bergen en bergen sneeuw! Wat zullen we eerst doen?
+= Two policemen come stamping up the garden path with snow shovels: Kling and Klang. Nobody is in trouble. They're grinning.
+> Twee agenten komen met sneeuwschoppen het tuinpad op stampen: Kling en Klang. Niemand zit in de problemen. Ze grijnzen.
+= Good afternoon, children! We are the snowball champions of the whole police station.
+> Goedemiddag, kinderen! Wij zijn de sneeuwbalkampioenen van het hele politiebureau.
+= And nobody has ever beaten us. So we challenge you! At three o'clock, when the church clock strikes. Losers make the hot chocolate.
+> En niemand heeft ons ooit verslagen. Dus wij dagen jullie uit! Om drie uur, als de kerkklok slaat. Wie verliest, maakt de chocolademelk.
+= I've never had a snowball fight with the police, so I'm sure I'll win!
+> Ik heb nog nooit een sneeuwballengevecht met de politie gehouden, dus ik denk dat ik wel win!
+= Kling and Klang start building a fort on the far side of the garden. The church clock says half past two.
+> Kling en Klang beginnen aan de andere kant van de tuin een fort te bouwen. De kerkklok wijst half drie aan.
+= Half an hour to get ready. And Mr Nilsson has just run off with my mittens!
+> Een half uur om alles klaar te maken. En meneer Nilsson is er net vandoor gegaan met mijn wanten!
+= Your snowball sails up in a perfect curve, over their wall… and knocks Klang's cap clean off his head.
+> Jouw sneeuwbal zeilt in een perfecte boog omhoog, over hun muur… en gooit de pet van Klang zo van zijn hoofd.
+= Bull's-eye! Kling, they got me!
+> Raak! Kling, ze hebben me!
+= Hold on, Klang, I'll…
+> Hou vol, Klang, ik zal…
+= Then Pippi rolls her enormous snowball across the garden. It's as big as a pantry. Their fort disappears underneath it.
+> Dan rolt Pippi haar enorme sneeuwbal door de tuin. Hij is zo groot als een voorraadkast. Hun fort verdwijnt eronder.
+= We surrender! Has anybody got a white flag?
+> We geven ons over! Heeft iemand een witte vlag?
+= Have my handkerchief. It's nearly white. Well, it was.
+> Neem mijn zakdoek maar. Die is bijna wit. Nou ja, dat was hij.
+= Everybody troops into the warm kitchen. The policemen make the hot chocolate, with extra whipped cream, and Mr Nilsson gets the first cup.
+> Iedereen gaat de warme keuken in. De agenten maken de chocolademelk, met extra slagroom, en meneer Nilsson krijgt het eerste kopje.
+= We beat the snowball champions of the whole police station!
+> We hebben de sneeuwbalkampioenen van het hele politiebureau verslagen!
+= Same time next year?
+> Volgend jaar weer?
+
+# ---------- hints ----------
+= Mr Nilsson has run off with your mittens. Monkeys leave very odd footprints: look at the tracks in the snow.
+> Meneer Nilsson is er vandoor met je wanten. Apen laten heel rare voetafdrukken achter: kijk naar de sporen in de sneeuw.
+= Click the tracks and pick trail B: five long fingers and a thumb, like a little hand. It leads to the old oak.
+> Klik op de sporen en kies spoor B: vijf lange vingers en een duim, net een handje. Het leidt naar de oude eik.
+= Snowballs only stick when the snow is a little damp. The thermometer by the kitchen window shows four places in the garden.
+> Sneeuwballen plakken alleen als de sneeuw een beetje nat is. De thermometer bij het keukenraam laat vier plekken in de tuin zien.
+= Pick the sunny veranda at −1 °C: just below freezing. (You need your mittens on.)
+> Kies de zonnige veranda bij −1 °C: net onder nul. (Je moet wel je wanten aanhebben.)
+= Your fort is still a heap of snow blocks. A wall falls apart where the joints line up from top to bottom.
+> Jullie fort is nog een hoop sneeuwblokken. Een muur valt uit elkaar waar de naden van boven tot beneden op één lijn liggen.
+= Click our fort and shift every other row by half a block, like bricks in a house wall. Then let Pippi push.
+> Klik op ons fort en schuif om de andere rij een half blok op, net als stenen in een huismuur. Laat Pippi dan duwen.
+= The horse should pull the sledge with the snowballs, but it slides on the icy veranda steps. What melts ice even below 0 °C?
+> Het paard moet de slee met de sneeuwballen trekken, maar het glijdt uit op het gladde verandatrapje. Wat laat ijs smelten, zelfs onder 0 °C?
+= Click the veranda steps and choose salt.
+> Klik op het verandatrapje en kies zout.
+= Annika is shivering by the fence. What keeps you warmest: one thick thing, or several thin ones?
+> Annika staat te rillen bij het hek. Wat houdt je het warmst: één dik ding, of een paar dunne?
+= Click Tommy and Annika: three thin layers, then mittens (fingers together keep each other warm).
+> Klik op Tommy en Annika: drie dunne laagjes, daarna wanten (vingers bij elkaar houden elkaar warm).
+= Three o'clock! You always throw just as hard. Which angle makes a snowball fly furthest?
+> Drie uur! Je gooit altijd even hard. Bij welke hoek vliegt een sneeuwbal het verst?
+= Click Kling and Klang (or our fort) and throw at 45°, halfway between flat and straight up.
+> Klik op Kling en Klang (of op ons fort) en gooi onder 45°, halverwege tussen plat en recht omhoog.
+
+# ---------- the mittens (js/items.js) ----------
+= You've made enough snowballs. Any more and the horse won't be able to pull the sledge.
+> Je hebt genoeg sneeuwballen gemaakt. Nog meer en het paard krijgt de slee niet meer vooruit.
+= Thank you, but those are yours. Pippi says she has spare ones somewhere. Somewhere in that wardrobe.
+> Dank je, maar die zijn van jou. Pippi zegt dat ze ergens nog reservewanten heeft. Ergens in die kleerkast.
+= Mr Nilsson eyes your mittens greedily. You put them safely back in your pocket.
+> Meneer Nilsson kijkt gretig naar je wanten. Je stopt ze veilig terug in je zak.
+= Warm, woolly mittens. Perfect for making snowballs, if the snow is the right kind.
+> Warme wollen wanten. Perfect om sneeuwballen te maken, als het de goede soort sneeuw is.

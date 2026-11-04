@@ -1,114 +1,88 @@
-/* Chapter 4: the big top. Close-ups: the ticket booth, the lighting desk, the teeterboard, the clown's juggling,
-   the trapezes and the curtain winch. Lots of moving parts, all stopped by the Motion setting (css/animations.css). */
-.dialog.who-ringmaster .who{color:#f2c94c} .dialog.who-ringmaster{border-left-color:#f2c94c}
-.dialog.who-clown .who,.dialog.who-seal .who{color:#ff8fa3} .dialog.who-clown,.dialog.who-seal{border-left-color:#ff8fa3}
-.dialog.who-strongman .who{color:#d9c79a} .dialog.who-strongman{border-left-color:#d9c79a}
+/* Chapter 4: winter at Villa Villekulla. Close-ups: the tracks in the snow, the thermometers, the snow fort,
+   the icy steps, keeping Annika warm, and the snowball throw. Every moving part stops with the Motion setting. */
+.dialog.who-kling .who,.dialog.who-klang .who{color:#9fc3ff} .dialog.who-kling,.dialog.who-klang{border-left-color:#9fc3ff}
 
-/* ---------- the big top comes alive ---------- */
-@keyframes ccSweepA{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(10deg)}}
-@keyframes ccSweepB{0%,100%{transform:rotate(12deg)}50%{transform:rotate(-12deg)}}
-@keyframes ccSwing{0%,100%{transform:rotate(-16deg)}50%{transform:rotate(16deg)}}
-@keyframes ccFlag{0%,100%{transform:skewY(0) scaleX(1)}50%{transform:skewY(-8deg) scaleX(.86)}}
-@keyframes ccPennant{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
-@keyframes ccBulb{0%,60%,100%{opacity:1}30%{opacity:.25}}
-@keyframes ccBall{0%,100%{transform:translateY(0)}50%{transform:translateY(-26px)}}
-@keyframes ccCane{0%,100%{transform:rotate(0)}50%{transform:rotate(-14deg)}}
-/* the horse trots round the LEFT, front part of the ring, so it never crosses the teeterboard on the right or the
-   clown at the back: along the front facing right, then back along the far side facing left, smaller */
-@keyframes ccTrot{
-  0%{transform:translate(-300px,34px) scale(1,1)}
-  25%{transform:translate(-115px,58px) scale(1,1)}
-  49.9%{transform:translate(70px,34px) scale(1,1)}
-  50%{transform:translate(70px,34px) scale(-.85,.85)}
-  75%{transform:translate(-115px,-12px) scale(-.8,.8)}
-  99.9%{transform:translate(-300px,34px) scale(-.85,.85)}
-  100%{transform:translate(-300px,34px) scale(1,1)}
-}
-/* a trot: each leg swings forward while its knee folds (the hoof lifts), then pushes back along the ground, straight */
-@keyframes ccLeg{0%{transform:rotate(22deg)}50%{transform:rotate(-26deg)}100%{transform:rotate(22deg)}}
-@keyframes ccKneeFore{0%{transform:rotate(0)}18%{transform:rotate(70deg)}40%{transform:rotate(10deg)}50%,100%{transform:rotate(0)}}
-@keyframes ccKneeHind{0%{transform:rotate(0)}18%{transform:rotate(-55deg)}40%{transform:rotate(-8deg)}50%,100%{transform:rotate(0)}}
-@keyframes ccHop{0%,50%,100%{transform:translateY(0)}25%,75%{transform:translateY(-3px)}}
-@keyframes ccTail{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(8deg)}}
-@keyframes ccJugA{0%{transform:translate(-30px,40px)}25%{transform:translate(-14px,-30px)}50%{transform:translate(30px,40px)}75%{transform:translate(14px,-10px)}100%{transform:translate(-30px,40px)}}
-@keyframes ccConfetti{0%{transform:translateY(0) rotate(0)}100%{transform:translateY(960px) rotate(720deg)}}
-@keyframes ccBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+/* close-ups */
+.wt-tracksvg,.wt-thermosvg,.wt-fortsvg,.wt-throwsvg{width:100%;height:auto;display:block;margin:0 auto;border-radius:6px}
+.wt-tracksvg{max-width:520px} .wt-thermosvg{max-width:520px} .wt-fortsvg{max-width:460px} .wt-throwsvg{max-width:560px}
+.wt-trail{cursor:pointer}
+.wt-trail:hover rect,.wt-trail:focus rect{fill:rgba(255,138,61,.15)}
+.wt-trail:focus{outline:none}
+.wt-book{background:#fffaf0;color:#1f2a44;border-radius:4px;padding:10px 14px;font-size:14px;margin-top:10px}
+.wt-spots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:8px}
+.wt-spots .btn{padding:8px 6px;font-size:11px;letter-spacing:.02em;text-transform:none;line-height:1.25}
+.wt-ang.on{background:var(--amber);color:#24120a}
+@keyframes wtDraw{from{stroke-dashoffset:600}to{stroke-dashoffset:0}}
+.wt-arc{animation:wtDraw .9s ease-out}
+@media (max-width:520px){.wt-spots{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
-#sc-circus .beam{transform-box:fill-box;transform-origin:50% 0}
-#sc-circus .beam.a{animation:ccSweepA 7s ease-in-out infinite}
-#sc-circus .beam.b{animation:ccSweepB 9s ease-in-out infinite}
-#sc-circus .beam.c{animation:ccSweepA 8s ease-in-out infinite reverse}
-/* once the lights are fixed, the three white beams meet in the middle of the ring */
-#sc-circus.lit .beam{animation:none}
-#sc-circus.lit .beam.a{transform:rotate(-28deg)}
-#sc-circus.lit .beam.c{transform:rotate(28deg)}
-#sc-circus .swing{transform-box:fill-box;transform-origin:50% 0;animation:ccSwing 2.2s ease-in-out infinite}
-#sc-circus .swing.r{animation-duration:1.6s}
-#sc-circus.synced .swing.r{animation-duration:2.2s;animation-direction:reverse}
-#sc-circus .flagw{transform-box:fill-box;transform-origin:0 50%;animation:ccFlag 1.4s ease-in-out infinite}
-#sc-circus .flagw.b{animation-delay:-.7s}
-#sc-circus .pennant{transform-box:fill-box;transform-origin:50% 0;animation:ccPennant 3s ease-in-out infinite}
-#sc-circus .bulb{animation:ccBulb .9s steps(1,end) infinite}
-#sc-circus .sealball{animation:ccBall 1s ease-in-out infinite}
-#sc-circus .cane{transform-box:fill-box;transform-origin:0 0;animation:ccCane 3s ease-in-out infinite}
-#cc-horse{transform-box:fill-box;transform-origin:50% 100%;animation:ccTrot 14s linear infinite}
-/* diagonal pairs move together: near fore with far hind (a), far fore with near hind (b), half a stride apart */
-#cc-horse .hleg,#cc-horse .shin{transform-box:view-box}
-#cc-horse .hleg{animation:ccLeg .6s linear infinite}
-#cc-horse .hleg.b{animation-delay:-.3s}
-#cc-horse .fore .shin{animation:ccKneeFore .6s linear infinite}
-#cc-horse .hind .shin{animation:ccKneeHind .6s linear infinite}
-#cc-horse .hleg.b .shin{animation-delay:-.3s}
-#cc-horse .hbody{animation:ccHop .6s ease-in-out infinite}
-#cc-horse .htail{transform-box:fill-box;transform-origin:100% 0;animation:ccTail 1.2s ease-in-out infinite}
-#cc-balls-air .jball{animation:ccJugA 1.2s linear infinite}
-#cc-balls-air .jball.b{animation-delay:-.4s} #cc-balls-air .jball.c{animation-delay:-.8s}
-#cc-pippi .bob{animation:ccBob 2s ease-in-out infinite}
-#cc-board{transition:transform .6s ease}
-/* showtime: the curtain opens and confetti rains */
-#cc-curl,#cc-curr{transition:transform 2.4s ease-in-out}
-#sc-circus.showtime #cc-curl{transform:translateX(-190px)}
-#sc-circus.showtime #cc-curr{transform:translateX(190px)}
-#sc-circus .confetto{animation:ccConfetti 4s linear infinite}
-#sc-circus.showtime #cc-horse{animation-duration:9s}
+/* ---------- the snowy garden comes alive ---------- */
+@keyframes wtFall{from{transform:translateY(-950px)}to{transform:translateY(950px)}}
+@keyframes wtPuff{0%{transform:translateY(0) scale(.6);opacity:0}30%{opacity:.8}100%{transform:translateY(-70px) scale(1.5);opacity:0}}
+@keyframes wtHop{0%,60%,100%{transform:translateY(0)}70%{transform:translateY(-8px)}80%{transform:translateY(0)}}
+@keyframes wtShiver{0%,100%{transform:translateX(0)}25%{transform:translateX(-1.5px)}75%{transform:translateX(1.5px)}}
+@keyframes wtStamp{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes wtScarf{0%,100%{transform:rotate(0)}50%{transform:rotate(-8deg)}}
+@keyframes wtLight{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes wtNod{0%,70%,100%{transform:rotate(0)}80%{transform:rotate(-4deg)}90%{transform:rotate(2deg)}}
+@keyframes wtPeek{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes wtPlait{0%,100%{transform:rotate(0)}50%{transform:rotate(-10deg)}}
+@keyframes wtWave{0%,100%{transform:skewY(0)}50%{transform:skewY(-10deg)}}
+@keyframes wtFlyA{0%{transform:translate(560px,700px)}50%{transform:translate(920px,470px)}100%{transform:translate(1300px,690px)}}
+@keyframes wtFlyB{0%{transform:translate(1300px,640px)}50%{transform:translate(900px,430px)}100%{transform:translate(520px,720px)}}
+@keyframes wtFlyC{0%{transform:translate(470px,710px)}50%{transform:translate(1050px,460px)}100%{transform:translate(1440px,660px)}}
 
-/* ---------- close-ups ---------- */
-.booth4 p{margin:0 0 8px}
-.till{display:flex;gap:12px;justify-content:center;margin:8px 0}
-.coin{width:56px;height:56px;border-radius:50%;border:3px solid #7a5a1a;background:radial-gradient(circle at 35% 30%,#fff3b0,#c9952a);color:#4e2a12;font-family:var(--f-mono);font-size:20px;font-weight:700;display:inline-grid;place-items:center;padding:0}
-.coin.c2{width:48px;height:48px;font-size:17px;background:radial-gradient(circle at 35% 30%,#f3f3f3,#9aa0a6);border-color:#5a6068}
-.coin.c1{width:40px;height:40px;font-size:15px;background:radial-gradient(circle at 35% 30%,#ffd9b0,#b5651d);border-color:#7a3a10}
-.change{min-height:64px;display:flex;gap:6px;align-items:center;justify-content:center;flex-wrap:wrap;background:#2a1a0c;border-radius:8px;padding:8px;font-family:var(--f-mono)}
-.change .coin{cursor:default}
+.wt-flake{animation:wtFall 10s linear infinite}
+.wt-puff{transform-box:fill-box;transform-origin:50% 50%;animation:wtPuff 4s ease-out infinite}
+.wt-puff.b{animation-delay:-1.3s} .wt-puff.c{animation-delay:-2.6s}
+.wt-hop{transform-box:fill-box;animation:wtHop 2.4s ease-in-out infinite}
+.wt-hop.b{animation-delay:-1.1s}
+.wt-shiver{animation:wtShiver .18s linear infinite}
+.wt-stamp{animation:wtStamp 1.6s ease-in-out infinite}
+.wt-stamp.b{animation-delay:-.8s}
+.wt-scarf{transform-box:fill-box;transform-origin:0 0;animation:wtScarf 3s ease-in-out infinite}
+.wt-light{animation:wtLight 1.5s ease-in-out infinite}
+.wt-nod use{transform-box:fill-box;transform-origin:30% 100%;animation:wtNod 5s ease-in-out infinite}
+.wt-peek{animation:wtPeek 2s ease-in-out infinite}
+#wt-pippi .wt-plait{transform-box:fill-box;transform-origin:100% 50%;animation:wtPlait 1.6s ease-in-out infinite}
+#wt-pippi .wt-plait.b{transform-origin:0 50%;animation-direction:reverse}
+.wt-wave{transform-box:fill-box;transform-origin:0 50%;animation:wtWave 1.2s ease-in-out infinite}
+.wt-fly.a{animation:wtFlyA 1.6s ease-in-out infinite}
+.wt-fly.b{animation:wtFlyB 1.9s ease-in-out infinite;animation-delay:-.6s}
+.wt-fly.c{animation:wtFlyC 2.2s ease-in-out infinite;animation-delay:-1.2s}
 
-.lightdesk{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:center}
-.mix-svg{width:220px;height:auto;border-radius:8px;flex:0 0 auto}
-.ld-ctl{display:flex;flex-direction:column;gap:8px;min-width:220px;flex:1 1 220px}
-.ld-switches{display:flex;gap:6px}
-.ld-switches .tog{flex:1;text-align:center}
-.ld-switches .ld0.on{border-color:#ff4a4a;color:#ff8a8a} .ld-switches .ld1.on{border-color:#4aff6a;color:#8aff9a} .ld-switches .ld2.on{border-color:#4a7aff;color:#9ab4ff}
-.ld-now{font-size:14px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
-.swatch{display:inline-block;width:22px;height:22px;border-radius:50%;border:2px solid var(--line)}
+/* ---------- where everybody is (a class on the scene for each stage) ---------- */
+/* the sledge waits in front of the veranda until the steps are safe; then it stands behind our fort */
+#wt-team{transform:translate(70px,-105px)}
+#sc-winter.wt-steps #wt-team{transform:none}
+/* at three o'clock the children hide behind our fort; once the fight is won they pop up and throw */
+#sc-winter.wt-ready #wt-ta{transform:translate(-167px,50px)}
+#sc-winter.wt-ready #wt-pippi{transform:translate(-178px,30px)}
+/* Pippi's giant snowball ends up on top of the policemen's fort */
+#wt-bigball{transform-box:fill-box;transform-origin:50% 50%}
+#sc-winter.wt-won #wt-bigball{transform:translate(440px,-20px)}
 
-.teeter-svg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;border-radius:6px}
-.tt-board{transition:transform .6s ease}
-.seat.on{background:var(--amber);color:#24120a}
-
-.jrow{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:10px 0}
-.jb{width:36px;height:36px;border-radius:50%;display:inline-grid;place-items:center;border:2px solid rgba(0,0,0,.3);box-shadow:inset -4px -4px 0 rgba(0,0,0,.18)}
-.jb.pick{border:2px dashed var(--amber);color:var(--amber);font-weight:700;padding:0}
-.hint-s{text-align:center;font-size:13px;color:var(--muted);margin:0}
-
-@keyframes ccPend{0%,100%{transform:rotate(-18deg)}50%{transform:rotate(18deg)}}
-.trap-svg{width:100%;max-width:440px;height:auto;display:block;margin:0 auto;border-radius:6px}
-.trap-svg .tp{transform-box:view-box;animation:ccPend 3s ease-in-out infinite}
-.trap-ctl{display:flex;flex-direction:column;gap:8px;margin-top:10px;font-size:14px}
-.trap-ctl input{width:100%;accent-color:var(--amber)}
-
-@keyframes ccSpinCW{to{transform:rotate(360deg)}}
-@keyframes ccSpinCCW{to{transform:rotate(-360deg)}}
-.gear-svg{width:100%;height:auto;display:block;border-radius:6px}
-.gear-svg .gear{transform-box:view-box}
-.gear-svg .gear.cw{animation:ccSpinCW 2s linear infinite}
-.gear-svg .gear.ccw{animation:ccSpinCCW 2s linear infinite}
-.gcount.on{background:var(--amber);color:#24120a}
+/* ---------- the moves ---------- */
+/* the horse walks along the veranda and down the salted steps (after the close-up has closed),
+   turns round, walks to the sledge, and pulls it behind our fort */
+@keyframes wtDown{0%{transform:none}40%{transform:translate(190px,0)}55%{transform:translate(225px,11px)}65%{transform:translate(255px,30px)}
+  75%{transform:translate(285px,50px)}85%{transform:translate(315px,72px)}97%{transform:translate(343px,91px);opacity:1}100%{transform:translate(345px,93px);opacity:0}}
+@keyframes wtTurn{0%{transform:translate(387px,0);opacity:0}10%{opacity:1}25%{transform:translate(290px,-4px)}50%{transform:translate(194px,0)}75%{transform:translate(97px,-4px)}100%{transform:none;opacity:1}}
+@keyframes wtPull{0%{transform:translate(70px,-105px)}25%{transform:translate(52px,-76px)}50%{transform:translate(35px,-55px)}75%{transform:translate(17px,-24px)}100%{transform:none}}
+#sc-winter.wt-walk #wt-vhorse{display:inline!important}
+#sc-winter.wt-walk #wt-vwalk{animation:wtDown 2.4s linear 2.2s both}
+#sc-winter.wt-walk #wt-ghorse{animation:wtTurn 1.8s linear 4.6s both}
+#sc-winter.wt-walk #wt-team{animation:wtPull 2.2s ease-in-out 6.4s both}
+/* the children run to the fort, with a hop in every step */
+@keyframes wtRunTA{0%{transform:none}20%{transform:translate(-33px,-6px)}40%{transform:translate(-67px,18px)}60%{transform:translate(-100px,10px)}80%{transform:translate(-134px,38px)}100%{transform:translate(-167px,50px)}}
+@keyframes wtRunP{0%{transform:none}20%{transform:translate(-36px,-8px)}40%{transform:translate(-71px,8px)}60%{transform:translate(-107px,0)}80%{transform:translate(-142px,20px)}100%{transform:translate(-178px,30px)}}
+#sc-winter.wt-run #wt-ta{animation:wtRunTA 1.8s ease-in-out both}
+#sc-winter.wt-run #wt-pippi{animation:wtRunP 1.6s ease-in-out both}
+/* the fight: up, throw, duck */
+@keyframes wtPopTA{0%,100%{transform:translate(-167px,50px)}45%,55%{transform:translate(-167px,22px)}}
+@keyframes wtPopP{0%,100%{transform:translate(-178px,30px)}45%,55%{transform:translate(-178px,-4px)}}
+#sc-winter.wt-won #wt-ta{animation:wtPopTA 1.6s ease-in-out infinite}
+#sc-winter.wt-won #wt-pippi{animation:wtPopP 1.3s ease-in-out infinite;animation-delay:-.5s}
+/* Pippi rolls her giant snowball across the garden and over their fort */
+@keyframes wtRoll{0%{transform:none}70%{transform:translate(380px,-10px) rotate(300deg)}85%{transform:translate(425px,-34px) rotate(350deg)}100%{transform:translate(440px,-20px) rotate(360deg)}}
+#sc-winter.wt-roll #wt-bigball{animation:wtRoll 2.6s ease-in 2.4s both}
