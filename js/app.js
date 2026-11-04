@@ -97,7 +97,7 @@ const ACH = [['spunk','Asked the spunk'],['egghead','Egg on your head'],['ceilin
   ['quarter','Four is more than three'],['freckles',"Counted Pippi's freckles"]];
 function startNew(){ S = Object.assign(fresh(), { ach: S.ach || {} }); S.started = true; sel = null; $('#title').hidden = true; $('#win').hidden = true; renderInv(); applyVisuals(); $('#timer').textContent = '00:00'; save(); intro1(); }
 function cont(){ $('#title').hidden = true; S.started = true; renderInv(); applyVisuals(); $('#timer').textContent = fmt(S.t);
-  say([["sys", S.scene==='school' ? "Back in the classroom. Miss is still chasing the horse round the schoolyard."
+  say([["sys", S.scene==='school' ? "Back in the classroom. Miss is still watching through the little window in the door."
     : S.scene==='bedroom' ? (S.f.scared ? "Back in Pippi's bedroom. The lantern is still waiting behind the old oak." : "Back in Pippi's bedroom. Pippi is still snoring like a ship's horn.")
     : S.f.key ? "Back in Pippi's kitchen. Mr Nilsson is licking syrup off his fingers." : "Back in Pippi's kitchen. Mr Nilsson is still sitting on the bureau with the key."]]); }
 $('#btn-new').onclick = startNew;

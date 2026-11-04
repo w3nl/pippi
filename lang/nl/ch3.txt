@@ -23,8 +23,8 @@
 > Het paard ligt in de zon op het schoolplein, vol geraniums. Het heeft ook vakantie.
 = Out in the schoolyard, Pippi's horse is eating Miss's flowerbed, one geranium at a time.
 > Buiten op het schoolplein eet Pippi's paard het bloemperkje van de juf op, één geranium tegelijk.
-= Miss is running round and round after it, waving her arms. The horse thinks it's a game. It's winning.
-> De juf rent er rondjes achteraan en zwaait met haar armen. Het paard denkt dat het een spelletje is. Het paard wint.
+= Miss chased it round and round for a while. The horse thought it was a game, and won. Now she's watching you all through the little window in the door instead.
+> De juf heeft er een tijdje rondjes achteraan gerend. Het paard dacht dat het een spelletje was, en won. Nu kijkt ze maar door het raampje in de deur naar jullie.
 = The school clock has Roman numerals: XII at the top, then III, VI and IX. The little hand is just before the XII and the big hand points at VIII: twenty to twelve.
 > De schoolklok heeft Romeinse cijfers: XII bovenaan, dan III, VI en IX. De kleine wijzer staat net voor de XII en de grote wijst naar VIII: twintig voor twaalf.
 = At twelve, Miss rings the bell and the summer holidays begin.
@@ -41,8 +41,8 @@
 > Romeinse cijfers. Grote mensen gebruiken die graag voor dingen die belangrijk moeten lijken. Op de kaart naast de klok staat wat elke letter waard is.
 = The classroom door. Out there: weeks and weeks of summer holidays.
 > De deur van de klas. Daarbuiten: weken en weken zomervakantie.
-= The classroom door. Miss went out through it to catch the horse.
-> De deur van de klas. De juf ging erdoor naar buiten om het paard te vangen.
+= The classroom door. Miss is right outside, peering in through its little window.
+> De deur van de klas. De juf staat er vlak achter en gluurt door het raampje naar binnen.
 = You could go out too. But Pippi wants her holidays properly: with gold stars, and the bell.
 > Jij zou ook naar buiten kunnen. Maar Pippi wil haar vakantie echt verdienen: met gouden sterren, en de bel.
 = Miss's hand bell. It's still humming, from all the excitement.
@@ -295,8 +295,8 @@
 > Vijf opdrachten! Ik heb nog nooit een opdracht gedaan, dus ik denk dat ik het wel kan. En mijn vriend hier helpt me.
 = Outside, a loud munching noise. Pippi's horse is eating the flowerbed in the schoolyard.
 > Buiten klinkt luid gesmak. Pippi's paard eet het bloemperkje op het schoolplein op.
-= My geraniums! Annika, you're in charge of the gold stars. I'll be back in a moment!
-> Mijn geraniums! Annika, jij bent de baas over de gouden sterren. Ik ben zo terug!
+= My geraniums! Annika, you're in charge of the gold stars. I'll keep an eye on you through the window in the door!
+> Mijn geraniums! Annika, jij bent de baas over de gouden sterren. Ik hou jullie in de gaten door het raampje in de deur!
 = Five tasks before twelve. But the chalk box is empty. Miss must keep the chalk somewhere.
 > Vijf opdrachten voor twaalf uur. Maar het krijtdoosje is leeg. De juf moet het krijt ergens bewaren.
 = Pippi grabs the hand bell and rings it. Very loudly. For a very long time. The windows rattle, and out in the schoolyard the horse stops chewing.
@@ -333,3 +333,11 @@
 > Grotere letters. Nog steeds Romeins.
 = Everything looks bigger. It doesn't look any cleverer.
 > Alles ziet er groter uit. Niet slimmer.
+
+# ---------- Miss at the window in the door ----------
+= No help through the window! Well… one little tip: the blackboard says what to do. Five tasks, five gold stars, then the bell.
+> Niet om hulp vragen door het raampje! Nou… één kleine tip: op het bord staat wat je moet doen. Vijf opdrachten, vijf gouden sterren, en dan de bel.
+= Five gold stars? Then what are you waiting for? The bell is on my desk!
+> Vijf gouden sterren? Waar wachten jullie dan nog op? De bel staat op mijn bureau!
+= Miss has come back in. She's handing out certificates and humming.
+> De juf is weer binnen. Ze deelt diploma's uit en neuriet.

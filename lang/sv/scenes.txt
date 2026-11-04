@@ -107,3 +107,5 @@
 > BYGGD ÅR
 = NATURE TABLE
 > NATURBORDET
+= Miss, at the window in the door
+> Fröken, i fönstret i dörren

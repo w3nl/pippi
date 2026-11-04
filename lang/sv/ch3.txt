@@ -23,8 +23,8 @@
 > Lilla Gubben ligger i solen på skolgården, full av pelargoner. Han har också lov.
 = Out in the schoolyard, Pippi's horse is eating Miss's flowerbed, one geranium at a time.
 > Ute på skolgården äter Lilla Gubben upp frökens rabatt, en pelargon i taget.
-= Miss is running round and round after it, waving her arms. The horse thinks it's a game. It's winning.
-> Fröken springer runt, runt efter honom och viftar med armarna. Lilla Gubben tror att det är en lek. Han vinner.
+= Miss chased it round and round for a while. The horse thought it was a game, and won. Now she's watching you all through the little window in the door instead.
+> Fröken sprang runt, runt efter honom en stund. Lilla Gubben trodde att det var en lek, och vann. Nu tittar hon på er genom det lilla fönstret i dörren i stället.
 = The school clock has Roman numerals: XII at the top, then III, VI and IX. The little hand is just before the XII and the big hand points at VIII: twenty to twelve.
 > Skolklockan har romerska siffror: XII högst upp, sedan III, VI och IX. Lilla visaren står strax före XII och stora visaren pekar på VIII: tjugo i tolv.
 = At twelve, Miss rings the bell and the summer holidays begin.
@@ -41,8 +41,8 @@
 > Romerska siffror. Vuxna gillar dem till saker som ska se viktiga ut. Tavlan bredvid klockan visar vad varje bokstav är värd.
 = The classroom door. Out there: weeks and weeks of summer holidays.
 > Klassrumsdörren. Där ute: veckor och veckor av sommarlov.
-= The classroom door. Miss went out through it to catch the horse.
-> Klassrumsdörren. Fröken gick ut genom den för att fånga Lilla Gubben.
+= The classroom door. Miss is right outside, peering in through its little window.
+> Klassrumsdörren. Fröken står precis utanför och kikar in genom det lilla fönstret.
 = You could go out too. But Pippi wants her holidays properly: with gold stars, and the bell.
 > Du kunde gå ut du också. Men Pippi vill ha sitt lov på riktigt: med guldstjärnor, och klockan.
 = Miss's hand bell. It's still humming, from all the excitement.
@@ -295,8 +295,8 @@
 > Fem uppgifter! Det har jag aldrig provat förut, så det klarar jag säkert. Och min kompis här hjälper mig.
 = Outside, a loud munching noise. Pippi's horse is eating the flowerbed in the schoolyard.
 > Utanför hörs ett högt mumsande. Lilla Gubben äter upp rabatten på skolgården.
-= My geraniums! Annika, you're in charge of the gold stars. I'll be back in a moment!
-> Mina pelargoner! Annika, du har hand om guldstjärnorna. Jag är strax tillbaka!
+= My geraniums! Annika, you're in charge of the gold stars. I'll keep an eye on you through the window in the door!
+> Mina pelargoner! Annika, du har hand om guldstjärnorna. Jag håller ett öga på er genom fönstret i dörren!
 = Five tasks before twelve. But the chalk box is empty. Miss must keep the chalk somewhere.
 > Fem uppgifter före tolv. Men kritasken är tom. Fröken måste ha kritan någonstans.
 = Pippi grabs the hand bell and rings it. Very loudly. For a very long time. The windows rattle, and out in the schoolyard the horse stops chewing.
@@ -333,3 +333,11 @@
 > Större bokstäver. Fortfarande romerska.
 = Everything looks bigger. It doesn't look any cleverer.
 > Allt ser större ut. Inte klokare.
+
+# ---------- Miss at the window in the door ----------
+= No help through the window! Well… one little tip: the blackboard says what to do. Five tasks, five gold stars, then the bell.
+> Ingen hjälp genom fönstret! Nåja… ett litet tips: på tavlan står det vad ni ska göra. Fem uppgifter, fem guldstjärnor, och sedan klockan.
+= Five gold stars? Then what are you waiting for? The bell is on my desk!
+> Fem guldstjärnor? Vad väntar ni på då? Klockan står på min kateder!
+= Miss has come back in. She's handing out certificates and humming.
+> Fröken har kommit in igen. Hon delar ut diplom och nynnar.

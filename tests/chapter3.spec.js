@@ -157,3 +157,16 @@ test('finishing Chapter 2 leads to Chapter 3', async ({ page }) => {
   await expect(page.locator('#chap')).toHaveText('Chapter 3 · Pippi Goes to School');
   await expect(page.locator('#btn-ch3')).toBeAttached();
 });
+
+test('Miss watches through the window in the door, and leaves it once the bell has rung', async ({ page }) => {
+  await seed(page, { ch: 3, scene: 'school', f: { introDone: true } }, ['-ch2', '-ch3']);
+  await page.locator('#btn-cont').click();
+  await skip(page);
+  await expect(page.locator('#sl-teacher')).toBeVisible();
+  await hs(page, 'teacher3');
+  await expect(page.locator('#d-who')).toHaveText('Miss');
+  await expect(page.locator('#d-txt')).toContainText('No help through the window', { timeout: 5_000 });
+  await skip(page);
+  await page.evaluate(() => { S.f.out3 = true; applyVisuals(); });
+  await expect(page.locator('#sl-teacher')).toBeHidden();
+});

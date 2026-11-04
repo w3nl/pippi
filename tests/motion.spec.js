@@ -50,17 +50,17 @@ test('"Motion off" stops everything, in every room', async ({ page }) => {
   expect(await moving(page)).toBe(0);
   // and the classroom
   await page.evaluate(() => { S.ch = 3; S.scene = 'school'; S.f = {}; applyVisuals(); });
-  await expect(page.locator('#sl-chase')).toBeVisible();
+  await expect(page.locator('#sl-teacher')).toBeVisible();
   expect(await moving(page)).toBe(0);
 });
 
-test('the classroom moves: the horse munches, Miss chases it, the clock ticks', async ({ page }) => {
+test('the classroom moves: the horse munches, Miss bobs at the door window, the clock ticks', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   await seed(page, { ch: 3, scene: 'school', f: { introDone: true } }, ['-ch2', '-ch3']);
   await page.locator('#btn-cont').click();
   await skip(page);
   expect(await anim(page, '#sl-horse')).toBe('nod');
-  expect(await anim(page, '#sl-chase')).toBe('chase');
+  expect(await anim(page, '#sl-teacher')).toBe('peek');
   expect(await anim(page, '.sl-sec')).toBe('slsec');
   expect(await moving(page)).toBeGreaterThan(8);
 });
