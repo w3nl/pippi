@@ -1,0 +1,41 @@
+# Dutch translation: hotspot labels and drawn text in scenes/kitchen.svg, plus labels set by code.
+= The kitchen of Villa Villekulla
+> De keuken van Villa Kakelbont
+= Flags on a string
+> Vlaggetjes aan een touw
+= Stove
+> Fornuis
+= Enamel sign
+> Emaillen bordje
+= Wood basket
+> Houtmand
+= Pantry cupboard
+> Voorraadkast
+= Window
+> Raam
+= Jam jar
+> Jampotje
+= Mirror
+> Spiegel
+= Flag chart
+> Vlaggenkaart
+= Suitcase
+> Koffer
+= Bureau
+> Ladekastje
+= Front door
+> Voordeur
+= Front door (open)
+> Voordeur (open)
+= Note
+> Briefje
+= Exercise book
+> Schrift
+= Mixing bowl
+> Beslagkom
+= Sea chest
+> Scheepskist
+= FIRE
+> VUUR
+= FLAGS A–Z
+> VLAGGEN A–Z

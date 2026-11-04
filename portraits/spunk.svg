@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><title>The spunk</title>
+  <rect width="120" height="120" rx="14" fill="#2b1d13"/>
+  <circle cx="60" cy="62" r="46" fill="#9fdc6e" opacity=".12"/>
+  <path d="M40 62 h-18 M80 62 h18 M42 78 l-14 12 M78 78 l14 12 M44 48 l-14-10 M76 48 l14-10" stroke="#1d5a25" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="60" cy="68" rx="24" ry="28" fill="#2f8a3a"/>
+  <path d="M60 42 v54" stroke="#1d5a25" stroke-width="3"/>
+  <circle cx="60" cy="38" r="13" fill="#1d5a25"/>
+  <circle cx="55" cy="36" r="3" fill="#fff"/><circle cx="65" cy="36" r="3" fill="#fff"/>
+  <circle cx="55" cy="36" r="1.4" fill="#111"/><circle cx="65" cy="36" r="1.4" fill="#111"/>
+  <path d="M54 26 q-6-10-12-10 M66 26 q6-10 12-10" stroke="#1d5a25" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

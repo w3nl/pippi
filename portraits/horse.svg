@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><title>The horse</title>
+  <rect width="120" height="120" rx="14" fill="#5a8a4a"/>
+  <path d="M30 120 q-4-50 20-74 l2-22 l12 16 q30 4 40 40 q6 24 0 40z" fill="#f5f2ea"/>
+  <path d="M50 30 q-14 4-18 30" stroke="#d9c79a" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <g fill="#1a1a1a"><circle cx="58" cy="84" r="7"/><circle cx="80" cy="62" r="5"/><circle cx="46" cy="104" r="6"/><circle cx="90" cy="96" r="4"/></g>
+  <circle cx="70" cy="54" r="4" fill="#1a1a1a"/>
+  <ellipse cx="98" cy="88" rx="10" ry="14" fill="#e6d6c6"/>
+  <circle cx="96" cy="84" r="2" fill="#6a5a4a"/><circle cx="101" cy="92" r="2" fill="#6a5a4a"/>
+</svg>

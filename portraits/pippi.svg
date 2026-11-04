@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><title>Pippi</title>
+  <rect width="120" height="120" rx="14" fill="#2b4d7a"/>
+  <circle cx="60" cy="56" r="50" fill="#ff8a3d" opacity=".12"/>
+  <path d="M18 120 q4-30 42-32 q38 2 42 32z" fill="#3f8a4a"/>
+  <path d="M40 92 l20 12 l20-12" fill="none" stroke="#f2c94c" stroke-width="5"/>
+  <path d="M38 50 L6 34 M82 50 L114 34" stroke="#e8571f" stroke-width="10" stroke-linecap="round"/>
+  <path d="M8 26 l-4 18 M112 26 l4 18" stroke="#1f4d8c" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="60" cy="58" rx="25" ry="28" fill="#f3c9a4"/>
+  <path d="M34 50 q2-28 26-28 q24 0 26 28 q-10-14-26-14 q-16 0-26 14z" fill="#e8571f"/>
+  <circle cx="50" cy="56" r="3.4" fill="#1a120c"/><circle cx="70" cy="56" r="3.4" fill="#1a120c"/>
+  <g fill="#c96a3a"><circle cx="44" cy="66" r="1.3"/><circle cx="48" cy="69" r="1.3"/><circle cx="42" cy="70" r="1.3"/><circle cx="76" cy="66" r="1.3"/><circle cx="72" cy="69" r="1.3"/><circle cx="78" cy="70" r="1.3"/></g>
+  <circle cx="60" cy="64" r="4" fill="#e3a07e"/>
+  <path d="M46 74 q14 14 28 0z" fill="#fff" stroke="#9a3a2a" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>

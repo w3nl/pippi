@@ -1,0 +1,194 @@
+# Dutch translation: the page, menus, buttons, scores and settings (index.html, js/app.js, js/core.js, js/voice.js).
+# Names: Pippi Langkous, Villa Kakelbont, meneer Nilsson, Tommy en Annika, kapitein Efraïm Langkous.
+
+# ---------- index.html ----------
+= Villa Villekulla
+> Villa Kakelbont
+= Chapter 1 · Locked In with Mr Nilsson
+> Hoofdstuk 1 · Opgesloten met meneer Nilsson
+= Time in Villa Villekulla
+> Tijd in Villa Kakelbont
+= Hint
+> Hint
+= Hold Space to reveal hotspots
+> Houd de spatiebalk ingedrukt om alles te zien wat je kunt aanklikken
+= Reveal
+> Toon
+= Install
+> Installeren
+= Menu
+> Menu
+= Why not hold it sideways?
+> Waarom niet op z'n kant?
+= No thanks, I'll swipe
+> Nee hoor, ik veeg wel
+= Villa Villekulla · a small town in Sweden · four o'clock
+> Villa Kakelbont · een klein stadje in Zweden · vier uur
+= You came to play at Pippi's house. Pippi has gone to town for sweets, and Mr Nilsson, her monkey, has locked the front door and run off with the key. Tommy and Annika are waiting outside. Get out!
+> Je bent bij Pippi komen spelen. Pippi is snoep kopen in de stad, en meneer Nilsson, haar aapje, heeft de voordeur op slot gedaan en is er met de sleutel vandoor. Tommy en Annika wachten buiten. Zorg dat je eruit komt!
+= Click around the kitchen, read everything, and use the things you find. Stuck? Ask for a hint, or ask the spunk. Nobody knows what a spunk is, but it's very wise.
+> Klik rond in de keuken, lees alles en gebruik wat je vindt. Kom je niet verder? Vraag een hint, of vraag het aan de spunk. Niemand weet wat een spunk is, maar hij is heel wijs.
+= New game
+> Nieuw spel
+= Continue
+> Verder spelen
+= Scores
+> Scores
+= Unofficial fan game, inspired by Astrid Lindgren's Pippi Longstocking
+> Onofficieel fanspel, geïnspireerd op Pippi Langkous van Astrid Lindgren
+= Licence (GPL-3.0)
+> Licentie (GPL-3.0)
+= You're out
+> Je bent eruit
+= Time
+> Tijd
+= Hints
+> Hints
+= Rank
+> Rang
+= Look around
+> Rondkijken
+= Play again
+> Opnieuw spelen
+= ← swipe to look around →
+> ← veeg om rond te kijken →
+= Pockets
+> Zakken
+= A new version of the game is ready.
+> Er is een nieuwe versie van het spel.
+= Reload
+> Herladen
+= Close ✕
+> Sluiten ✕
+
+# ---------- js/app.js ----------
+= Door open · Chapter 1 complete
+> Deur open · hoofdstuk 1 voltooid
+= Next: that night, two burglars come creeping up to Villa Villekulla. They've heard about a certain suitcase full of gold… Chapter 2 is still being written.
+> Straks: die nacht sluipen er twee inbrekers naar Villa Kakelbont. Ze hebben gehoord van een zekere koffer vol goud… Aan hoofdstuk 2 wordt nog geschreven.
+= Locked in with Mr Nilsson
+> Opgesloten met meneer Nilsson
+= Strongest in the world
+> Sterkste van de wereld
+= Thing-finder
+> Dingenzoeker
+= Pirate in training
+> Piraat in opleiding
+= Mr Nilsson
+> Meneer Nilsson
+= Not finished yet
+> Nog niet uitgespeeld
+= Your best result per chapter. A new game keeps them.
+> Je beste resultaat per hoofdstuk. Een nieuw spel bewaart ze.
+= No chapter finished yet. Escape and your result appears here.
+> Nog geen hoofdstuk uitgespeeld. Ontsnap, en je resultaat komt hier te staan.
+= Achievements ({n} of {m})
+> Prestaties ({n} van {m})
+= Chapter
+> Hoofdstuk
+= Best time
+> Beste tijd
+= Fewest hints
+> Minste hints
+= Big hint: {hint}
+> Grote hint: {hint}
+= Hint: {hint}
+> Hint: {hint}
+= Sound on
+> Geluid aan
+= Sound off
+> Geluid uit
+= Asked the spunk
+> De spunk gevraagd
+= Egg on your head
+> Ei op je hoofd
+= Pancake on the ceiling
+> Pannenkoek aan het plafond
+= Tried to lift the horse
+> Het paard proberen op te tillen
+= Opened every little drawer
+> Elk laatje opengedaan
+= Said please three times
+> Drie keer alsjeblieft gezegd
+= Back in Pippi's kitchen. Mr Nilsson is licking syrup off his fingers.
+> Terug in Pippi's keuken. Meneer Nilsson likt de stroop van zijn vingers.
+= Back in Pippi's kitchen. Mr Nilsson is still sitting on the bureau with the key.
+> Terug in Pippi's keuken. Meneer Nilsson zit nog steeds met de sleutel op het ladekastje.
+= Take your time. Pippi is handing out sweets in the garden, and the horse is eating the lawn.
+> Neem de tijd. Pippi deelt snoep uit in de tuin, en het paard eet het gazon op.
+= Pippi says: why stand up straight when you can lie on your side? Turn your phone and see the whole kitchen.
+> Pippi zegt: waarom rechtop staan als je ook op je zij kunt liggen? Draai je telefoon en zie de hele keuken.
+= In Egypt, everybody holds their phone sideways. Pippi says so.
+> In Egypte houdt iedereen zijn telefoon op z'n kant. Dat zegt Pippi.
+= Pippi sleeps with her feet on the pillow. You could at least turn your phone.
+> Pippi slaapt met haar voeten op het kussen. Dan kun jij op z'n minst je telefoon draaien.
+= Mr Nilsson holds phones upside down. Sideways is a good compromise.
+> Meneer Nilsson houdt telefoons ondersteboven. Op z'n kant is een mooi compromis.
+= Motion on: flags flutter and fires flicker, even if your device asks for less motion.
+> Beweging aan: vlaggen wapperen en vuur flakkert, ook als je apparaat om minder beweging vraagt.
+= Motion off: everything stands still. Even Mr Nilsson. Well, almost.
+> Beweging uit: alles staat stil. Zelfs meneer Nilsson. Nou ja, bijna.
+= Motion auto: following your device's setting, which is {now}.
+> Beweging auto: volgt de instelling van je apparaat, en die is {now}.
+= "reduce motion", so things stand still
+> "minder beweging", dus alles staat stil
+= full motion
+> volledige beweging
+= The text for that language could not be loaded. Are you offline? Try again when you are connected.
+> De tekst voor die taal kon niet worden geladen. Ben je offline? Probeer het opnieuw als je verbinding hebt.
+= Installed! Now Villa Villekulla lives on your device. Mr Nilsson has already moved in.
+> Geïnstalleerd! Nu woont Villa Kakelbont op je apparaat. Meneer Nilsson is er al ingetrokken.
+
+# ---------- js/core.js ----------
+= Motion auto
+> Beweging auto
+= Motion on
+> Beweging aan
+= Motion off
+> Beweging uit
+= Auto follows your device's "reduce motion" setting (now: {now}). Click to change.
+> Auto volgt de instelling "minder beweging" van je apparaat (nu: {now}). Klik om te wisselen.
+= reduced, so things stand still
+> minder, dus alles staat stil
+= Everything moves, whatever your device prefers. Click to change.
+> Alles beweegt, wat je apparaat ook wil. Klik om te wisselen.
+= Nothing moves. Click to change.
+> Niets beweegt. Klik om te wisselen.
+= You
+> Jij
+= Pippi
+> Pippi
+= The horse
+> Het paard
+= The spunk
+> De spunk
+= tap ▸
+> tik ▸
+= tap ✕
+> tik ✕
+= click ▸
+> klik ▸
+= click ✕
+> klik ✕
+= Empty pocket
+> Lege zak
+= {name}: {desc} Click a spot to use it, or the item again to put it away.
+> {name}: {desc} Klik ergens om het te gebruiken, of klik nog eens op het voorwerp om het weg te stoppen.
+= Select an item, then tap where you want to use it.
+> Kies een voorwerp en tik dan waar je het wilt gebruiken.
+= Select an item, then click where you want to use it.
+> Kies een voorwerp en klik dan waar je het wilt gebruiken.
+= Use {item} on {spot}
+> Gebruik {item} op {spot}
+= Nothing interesting. Which is unusual, in this house.
+> Niets bijzonders. Dat is vreemd, in dit huis.
+
+# ---------- js/voice.js ----------
+= Voices on
+> Stemmen aan
+= Voices off
+> Stemmen uit
+= Reads the dialogue aloud with the voices on your device.
+> Leest de gesprekken voor met de stemmen op je apparaat.
+= Voices on! I've never done voices before, so I'm sure I'm brilliant at it.
+> Stemmen aan! Ik heb het nog nooit gedaan, dus ik denk dat ik het wel kan.

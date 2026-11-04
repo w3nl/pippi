@@ -1,0 +1,466 @@
+# Swedish translation: Chapter 1, the kitchen of Villa Villekulla (js/chapter1.js, js/items.js, items in js/core.js).
+# Pippi's note is misspelt on purpose, in Swedish too. SPUNK stays SPUNK: Pippi made the word up in Swedish in the first place.
+
+# ---------- items ----------
+= Pippi invented the word "spunk" and then went looking for one. It turned out to be this little green beetle. Use it on anything for a free hint.
+> Pippi hittade på ordet "spunk" och gick sedan ut för att leta efter en. Det visade sig vara den här lilla gröna skalbaggen. Använd den på vad som helst för en gratis ledtråd.
+= Pippi's note
+> Pippis lapp
+= Written backwards. Pippi says that in Egypt everybody writes like this.
+> Skriven baklänges. Pippi säger att alla skriver så i Egypten.
+= Matches
+> Tändstickor
+= A box of matches from the secret drawer. Strike them on the box, not on the monkey.
+> En tändsticksask från den hemliga lådan. Stryk dem mot asken, inte mot apan.
+= Eggs
+> Ägg
+= Three eggs from the pantry. Handle with care. (Pippi never does.)
+> Tre ägg från skafferiet. Hanteras varsamt. (Det gör Pippi aldrig.)
+= Pancake
+> Pannkaka
+= A warm, golden pancake. Mr Nilsson would sell his own hat for one.
+> En varm, gyllene pannkaka. Herr Nilsson skulle sälja sin egen hatt för en sådan.
+= Front-door key
+> Ytterdörrsnyckel
+= A big old iron key, slightly sticky with monkey and pancake.
+> En stor gammal järnnyckel, lite kladdig av apa och pannkaka.
+= Sugar cubes
+> Sockerbitar
+= From the captain's sea chest. Horses love them.
+> Från kaptenens sjömanskista. Hästar älskar dem.
+
+# ---------- hotspots ----------
+= A jam jar with a tiny green beetle in it. The label, in Pippi's handwriting, says: SPUNK.
+> En syltburk med en pytteliten grön skalbagge i. På etiketten står det med Pippis handstil: SPUNK.
+= Pippi made up the word "spunk" and then went out to find out what a spunk is. This is apparently it.
+> Pippi hittade på ordet "spunk" och gick sedan ut för att ta reda på vad en spunk är. Det här är tydligen en.
+= You take it. If you're stuck, show the spunk something. A spunk knows things.
+> Du tar den. Om du kör fast kan du visa spunken något. En spunk vet saker.
+= You look in the mirror. Your reflection waves back, with the wrong hand.
+> Du tittar i spegeln. Din spegelbild vinkar tillbaka, med fel hand.
+= Mirrors turn everything the other way round: left becomes right, and writing runs backwards.
+> En spegel vänder på allt: vänster blir höger, och skrift går baklänges.
+= Pippi's suitcase, full to the brim with gold coins. Pippi is the richest girl in the whole town.
+> Pippis kappsäck, full till brädden med guldpengar. Pippi är den rikaste flickan i hela stan.
+= She keeps it on top of the bureau, where anyone could see it. A burglar, say. Let's not think about burglars right now.
+> Hon har den uppe på byrån, där vem som helst kan se den. En inbrottstjuv till exempel. Vi tänker inte på inbrottstjuvar just nu.
+= Pippi's wood basket, full of logs. She chops them herself, with one hand, while reading a book with the other.
+> Pippis vedkorg, full med vedträn. Hon hugger dem själv, med en hand, medan hon läser en bok med den andra.
+= A big mixing bowl and a whisk. Pippi makes her pancake batter at the stove, where it's warm.
+> En stor bunke och en visp. Pippi gör sin pannkakssmet vid spisen, där det är varmt.
+= There's a faint pancake smell. Mr Nilsson keeps sniffing in this direction.
+> Det luktar svagt av pannkaka. Herr Nilsson sniffar hela tiden åt det här hållet.
+= Through the window: the garden, the big old oak tree with a hollow trunk, and the gate.
+> Genom fönstret: trädgården, den stora gamla eken med den ihåliga stammen, och grinden.
+= Tommy and Annika are leaning on the gate, waving. Annika is pointing at her wristwatch.
+> Tommy och Annika står och hänger på grinden och vinkar. Annika pekar på sitt armbandsur.
+= Nom nom nom.
+> Mums mums mums.
+= Mr Nilsson is busy with his pancake. He has syrup on his hat.
+> Herr Nilsson är upptagen med sin pannkaka. Han har sirap på hatten.
+= Eek! Eek-eek!
+> Iii! Iii-iii!
+= Mr Nilsson, Pippi's monkey, in his little blue trousers and straw hat. He holds up the front-door key and grins.
+> Herr Nilsson, Pippis apa, i sina små blå byxor och sin halmhatt. Han håller upp ytterdörrsnyckeln och flinar.
+= When you reach for it, he puts it behind his back.
+> När du sträcker dig efter den gömmer han den bakom ryggen.
+= You ask very politely for the key.
+> Du ber mycket artigt om nyckeln.
+= Eek.
+> Iii.
+= He shakes his head. Then he rubs his tummy and points at the stove.
+> Han skakar på huvudet. Sedan gnuggar han sig på magen och pekar på spisen.
+= Eek eek eek!
+> Iii iii iii!
+= You say please, pretty please, and pretty please with sugar on top. Mr Nilsson pats your head kindly and keeps the key.
+> Du säger snälla, snälla snälla, och snälla med socker på. Herr Nilsson klappar dig vänligt på huvudet och behåller nyckeln.
+= He keeps pointing at the stove. He wants something to eat.
+> Han fortsätter att peka på spisen. Han vill ha något att äta.
+= The front door is wide open. The evening air smells of grass and sweets.
+> Ytterdörren står vidöppen. Kvällsluften luktar gräs och godis.
+= The front door of Villa Villekulla. Locked, and the keyhole is empty.
+> Ytterdörren till Villa Villekulla. Låst, och nyckelhålet är tomt.
+= Mr Nilsson has the key, up on the bureau.
+> Herr Nilsson har nyckeln, uppe på byrån.
+= The door is unlocked, but it only opens a crack.
+> Dörren är olåst, men den går bara upp en liten springa.
+= Pippi's horse is standing on the veranda, leaning right against it. It looks very comfortable. It won't budge.
+> Pippis häst, Lilla Gubben, står på verandan och lutar sig rakt mot dörren. Han ser väldigt bekväm ut. Han rör sig inte en millimeter.
+= The horse is grazing in the garden now, very pleased with itself.
+> Lilla Gubben betar i trädgården nu, mycket nöjd med sig själv.
+= Pfrrrr.
+> Pfrrrr.
+= Pippi's horse, white with black spots, looking in through the little window in the door. It lives on the veranda. Pippi says it's in the way in the kitchen.
+> Pippis häst Lilla Gubben, vit med svarta prickar, tittar in genom det lilla fönstret i dörren. Han bor på verandan. Pippi säger att han är i vägen i köket.
+= You squeeze a hand through the gap and try to lift the horse, the way Pippi does.
+> Du trycker in en hand genom springan och försöker lyfta hästen, så som Pippi gör.
+= The horse does not get lifted. You are strong, but not Pippi-strong.
+> Hästen blir inte lyft. Du är stark, men inte Pippi-stark.
+= Pfrrr?
+> Pfrrr?
+= Maybe you can make it want to move instead. What do horses like?
+> Kanske kan du få honom att vilja flytta på sig i stället. Vad tycker hästar om?
+= Neeeigh.
+> Gnäääägg.
+= It's leaning on the door. Horses move for a good reason. Something sweet, for example.
+> Han lutar sig mot dörren. Hästar flyttar på sig om det finns ett bra skäl. Något sött, till exempel.
+= It blinks at you through the window. Nice horse. Locked door.
+> Han blinkar åt dig genom fönstret. Snäll häst. Låst dörr.
+= Captain Longstocking's sea chest, open. Charts, a compass and a spyglass. You already took the sugar.
+> Kapten Långstrumps sjömanskista, öppen. Sjökort, en kompass och en kikare. Sockret har du redan tagit.
+
+# ---------- Pippi's note (misspelt on purpose) ----------
+= Dear gest!
+> Käre gässt!
+= Mr Nilsson has pinched the front-door key. He does that. He will swap it for a PANCAKE, and nothing else.
+> Herr Nilsson har snott nyckeln till ytterdörren. Det gör han ibland. Han byter den mot en PANNKAKA, och inget annat.
+= The eggs are in the pantry. The matches are in my secret drawer in the bureau. The code is the answers to my sums.
+> Äggen ligger i skafferiet. Tändstickorna ligger i min hemliga låda i byrån. Koden är svaren på mina tal.
+= (Annika says my answers are wrong. Annika is very clever.)
+> (Annika säger att mina svar är fel. Annika är jättesmart.)
+= Luv, Pippi
+> Hälsninger, Pippi
+= P.S. Don't lift the horse. That's my job.
+> P.S. Lyft inte hästen. Det är mitt jobb.
+= Pippi's note, in the mirror
+> Pippis lapp, i spegeln
+= Now it reads the right way round
+> Nu går det att läsa
+= Left on the kitchen table
+> Kvarlämnad på köksbordet
+= It's all backwards! Every letter faces the wrong way, and the lines run from right to left. Pippi says that in Egypt everybody writes like this.
+> Allt är baklänges! Varje bokstav är vänd åt fel håll, och raderna går från höger till vänster. Pippi säger att alla skriver så i Egypten.
+
+# ---------- the exercise book ----------
+= Pippi's exercise book
+> Pippis skrivbok
+= Sums · homework · VERY IMPORTANT
+> Räkning · läxa · JÄTTEVIKTIGT
+= (that's how the song goes!)
+> (det låter bättre så!)
+= Thursday
+> torsdag
+= a horse
+> en häst
+= Miss says: <b>×</b> means "lots of": 2 × 3 is two, three times. <b>÷</b> means "share out": 8 ÷ 2 is 8 sweets shared between 2 children.
+> Fröken säger: <b>×</b> betyder "gånger": 2 × 3 är två, tre gånger. <b>÷</b> (eller <b>/</b>) betyder "dela": 8 ÷ 2 är 8 karameller som delas mellan 2 barn.
+= Pippi! Your answers are WRONG. The code for your secret drawer is the RIGHT answers, from top to bottom. — Annika
+> Pippi! Dina svar är FEL. Koden till din hemliga låda är de RÄTTA svaren, uppifrån och ner. — Annika
+
+# ---------- the bureau ----------
+= A bird's egg. Not for pancakes.
+> Ett fågelägg. Inte till pannkakor.
+= A rusty tin can. Pippi found it thing-searching: "A perfectly good tin, for keeping things in!"
+> En rostig plåtburk. Pippi hittade den när hon var sakletare: "En alldeles utmärkt burk, att ha saker i!"
+= A seashell from the South Seas. Hold it to your ear and you can hear the waves.
+> Ett snäckskal från Söderhavet. Håll det mot örat så hör du vågorna.
+= Seven buttons. All different.
+> Sju knappar. Alla olika.
+= A letter from Pippi's father, Captain Efraim Longstocking: "Dear Pippi, I am now King of an island in the South Seas."
+> Ett brev från Pippis pappa, kapten Efraim Långstrump: "Kära Pippi, jag är nu kung på en ö i Söderhavet."
+= A false moustache. For emergencies.
+> En lösmustasch. För nödsituationer.
+= A map with a big red X on it.
+> En karta med ett stort rött kryss.
+= A paper bag of sweets. Empty. Of course.
+> En godispåse. Tom. Förstås.
+= A small bottle labelled: MEDICINE FOR EVERYTHING. It smells of lemonade.
+> En liten flaska med etiketten: MEDICIN MOT ALLT. Den luktar sockerdricka.
+= The bureau
+> Byrån
+= Lots of little drawers, and one with a padlock
+> Massor av små lådor, och en med hänglås
+= Little drawer {n}
+> Liten låda {n}
+= SECRET DRAWER · PRIVATE · KEEP OUT (this means you, Mr Nilsson)
+> HEMLIG LÅDA · PRIVAT · RÖR EJ (det gäller dig också, Herr Nilsson)
+= Open. Empty, apart from some crumbs. You already took the matches.
+> Öppen. Tom, förutom lite smulor. Tändstickorna har du redan tagit.
+= Wheel {n} up
+> Hjul {n} upp
+= Wheel {n} down
+> Hjul {n} ner
+= Open
+> Öppna
+= Click! The padlock springs open. Inside: a box of matches, and a lot of crumbs.
+> Klick! Hänglåset hoppar upp. Inuti: en tändsticksask och massor av smulor.
+= 6, 5, 4. Pippi's sums, done properly.
+> 6, 5, 4. Pippis tal, rätt räknade.
+= You take the matches. Now, the stove…
+> Du tar tändstickorna. Och nu, spisen…
+= Zero, zero, zero. Even Pippi wouldn't pick that.
+> Noll, noll, noll. Inte ens Pippi skulle välja det.
+= Those are Pippi's answers, and the padlock agrees with Annika: they're wrong.
+> Det är Pippis svar, och hänglåset håller med Annika: de är fel.
+= The padlock doesn't budge. Annika's sticky note said: the right answers, from top to bottom.
+> Hänglåset rubbas inte. På Annikas lapp stod det: de rätta svaren, uppifrån och ner.
+
+# ---------- the pantry ----------
+= The pantry cupboard
+> Skafferiet
+= Painted blue, with yellow flowers
+> Blåmålat, med gula blommor
+= FLOUR
+> MJÖL
+= MILK
+> MJÖLK
+= BUTTER
+> SMÖR
+= SUGAR
+> SOCKER
+= (empty) Ate it. —P.
+> (tom) Åt upp det. —P.
+= An empty egg basket.
+> En tom äggkorg.
+= Take the eggs
+> Ta äggen
+= PIPPI'S PANCAKES
+> PIPPIS PANNKAKOR
+= 3 eggs, milk, flour, butter, and a HOT stove.
+> 3 ägg, mjölk, mjöl, smör och en VARM spis.
+= Do it in the right order. Not like last time. (Ceiling.)
+> Gör det i rätt ordning. Inte som förra gången. (Taket.)
+= Flour, milk and butter stay here: there are more by the stove. Pippi keeps them handy.
+> Mjöl, mjölk och smör får stå kvar här: det finns mer vid spisen. Pippi har dem nära till hands.
+= You take three eggs, very carefully. Pippi would have juggled them.
+> Du tar tre ägg, väldigt försiktigt. Pippi hade jonglerat med dem.
+
+# ---------- the stove ----------
+= Enamel sign
+> Emaljskylt
+= Screwed to the wall above the stove
+> Fastskruvad på väggen ovanför spisen
+= something to burn
+> något som brinner
+= air
+> luft
+= heat
+> värme
+= A FIRE NEEDS THREE THINGS: something to burn, air, and heat. Take one away and it goes out. (That is also how you put a fire OUT.)
+> EN ELD BEHÖVER TRE SAKER: något som brinner, luft och värme. Ta bort en så slocknar den. (Det är också så man SLÄCKER en eld.)
+= — from the ship of Captain E. Longstocking
+> — från kapten E. Långstrumps skepp
+= The stove
+> Vedspisen
+= Cast iron, cold, and very hungry
+> Gjutjärn, kall och väldigt hungrig
+= Firewood: in
+> Ved: i
+= Firewood: none
+> Ved: ingen
+= Air vent: open
+> Spjäll: öppet
+= Air vent: closed
+> Spjäll: stängt
+= Strike a match
+> Tänd en tändsticka
+= The enamel sign above the stove says what a fire needs.
+> Emaljskylten ovanför spisen talar om vad en eld behöver.
+= You stack three logs from the basket in the firebox.
+> Du lägger in tre vedträn från korgen i eldstaden.
+= You take the logs out again.
+> Du tar ut vedträna igen.
+= You slide the little air vent open. You can feel a draught.
+> Du drar upp spjället. Det börjar dra.
+= You slide the air vent shut.
+> Du stänger spjället.
+= You have nothing to light it with. Pippi's note said where the matches are.
+> Du har inget att tända med. På Pippis lapp stod det var tändstickorna finns.
+= The match flares up… and burns out on its own. There's nothing to burn: a fire needs fuel.
+> Tändstickan flammar upp… och brinner ut av sig själv. Det finns inget som kan brinna: en eld behöver bränsle.
+= The wood catches, smoulders, puffs out a cloud of smoke and goes out. With the vent shut, the fire gets no air.
+> Veden tar fyr, pyr, puffar ut ett rökmoln och slocknar. Med spjället stängt får elden ingen luft.
+= Fuel, air and heat: the fire roars into life!
+> Bränsle, luft och värme: elden flammar upp!
+= Something to burn, air, and heat from the match. The fire crackles happily.
+> Något som brinner, luft och värme från tändstickan. Elden sprakar glatt.
+= The pan is heating up. Time for a pancake.
+> Stekpannan blir varm. Dags för en pannkaka.
+= The pan is heating up. Now you need eggs for the batter.
+> Stekpannan blir varm. Nu behöver du ägg till smeten.
+= The stove is still warm. You've had enough pancakes for one day. (Nobody has ever said that in this house before.)
+> Spisen är fortfarande varm. Du har ätit nog med pannkakor för i dag. (Det har ingen någonsin sagt i det här huset förut.)
+= The stove is still warm. Mr Nilsson is still waiting for his pancake.
+> Spisen är fortfarande varm. Herr Nilsson väntar fortfarande på sin pannkaka.
+= The stove is lovely and hot. The pan is ready, and so are the flour, milk and butter.
+> Spisen är skönt varm. Stekpannan står redo, och så gör mjölet, mjölken och smöret.
+= Pancakes need eggs, though. Pippi keeps those in the pantry.
+> Men till pannkakor behövs ägg. Dem har Pippi i skafferiet.
+
+# ---------- the pancakes ----------
+= Pippi's pancakes
+> Pippis pannkakor
+= Every step needs the steps before it
+> Varje steg behöver stegen före
+= Crack the eggs into the bowl
+> Knäck äggen i bunken
+= Add the milk and the flour
+> Häll i mjölken och mjölet
+= Whisk until smooth
+> Vispa tills det är slätt
+= Melt butter in the hot pan
+> Smält smör i den varma pannan
+= Pour the batter into the pan
+> Häll smeten i pannan
+= Flip it when the top bubbles
+> Vänd när det bubblar på ovansidan
+= Crack an egg on your head (Pippi's way)
+> Knäck ett ägg på huvudet (som Pippi)
+= Toss the pancake up to the ceiling
+> Kasta pannkakan upp i taket
+= You whisk an empty bowl. Very energetic, but there's nothing in it. Eggs first.
+> Du vispar i en tom bunke. Mycket energiskt, men det finns inget i den. Äggen först.
+= You whisk the eggs. Lovely, but it's not batter yet: the milk and flour aren't in.
+> Du vispar äggen. Fint, men det är ingen smet än: mjölken och mjölet är inte i.
+= There's no batter to pour yet. Everything has to be in the bowl and whisked first.
+> Det finns ingen smet att hälla än. Allt måste först i bunken och vispas.
+= Wait! Without butter in the pan, the pancake will stick like glue. Grease the pan first.
+> Vänta! Utan smör i pannan fastnar pannkakan som lim. Smörj pannan först.
+= You flip an empty pan. Very sporty. Still no pancake.
+> Du vänder en tom stekpanna. Mycket sportigt. Fortfarande ingen pannkaka.
+= There's no pancake to toss yet.
+> Det finns ingen pannkaka att kasta än.
+= The recipe in the pantry lists what goes in, but not the order. Think: what does each step need first?
+> Receptet i skafferiet säger vad som ska i, men inte i vilken ordning. Tänk efter: vad behöver varje steg först?
+= Splat. Egg runs down your face. Pippi does it this way too, and it never works for her either. Use the bowl.
+> Plask. Ägget rinner nerför ansiktet. Pippi gör också så, och det fungerar aldrig för henne heller. Använd bunken.
+= Not yet. Something else has to happen first.
+> Inte än. Något annat måste hända först.
+= Crack, crack, crack. Three eggs in the bowl, and no shell. Well, hardly any.
+> Krack, krack, krack. Tre ägg i bunken, och inga skal. Nästan inga, i alla fall.
+= In go the milk and the flour. Whoosh: a small cloud of flour.
+> I med mjölken och mjölet. Puff: ett litet mjölmoln.
+= You whisk until the batter is smooth and has no lumps.
+> Du vispar tills smeten är slät och utan klumpar.
+= The butter sizzles and slides around the hot pan.
+> Smöret fräser och glider runt i den varma pannan.
+= The batter spreads out into a perfect circle. Tiny bubbles appear on top.
+> Smeten flyter ut till en perfekt cirkel. Små bubblor dyker upp på ytan.
+= Flip! Golden brown underneath. Perfect.
+> Vänd! Gyllenbrun på undersidan. Perfekt.
+= Whoops, too high! The pancake sticks to the ceiling… wobbles… and drops back into the pan, upside down. Flipped!
+> Hoppsan, för högt! Pannkakan fastnar i taket… dallrar… och ramlar tillbaka ner i pannan, upp och ner. Vänd!
+= One golden pancake, made in the right order: each step only after the steps it needed.
+> En gyllene pannkaka, gjord i rätt ordning: varje steg först efter stegen det behövde.
+= Eek! EEK!
+> Iii! IIII!
+= Up on the bureau, Mr Nilsson is jumping up and down.
+> Uppe på byrån hoppar Herr Nilsson upp och ner.
+
+# ---------- flags and the sea chest ----------
+= Flags on a string
+> Flaggor på ett snöre
+= Hung across the ceiling by Pippi
+> Uppsatta tvärs under taket av Pippi
+= Five signal flags
+> Fem signalflaggor
+= Pippi's father, Captain Longstocking, gave her these flags. On ships, every flag stands for one letter, so a row of flags spells a word, even when the ships are too far apart to shout.
+> Pippi fick de här flaggorna av sin pappa, kapten Långstrump. På fartyg står varje flagga för en bokstav, så en rad flaggor bildar ett ord, även när fartygen är för långt ifrån varandra för att ropa.
+= Signal flags, A to Z
+> Signalflaggor, A till Z
+= From the ship of Captain E. Longstocking
+> Från kapten E. Långstrumps skepp
+= Ships send messages with these flags: one flag per letter. A, B and the others are the same all over the world, in every language.
+> Fartyg skickar meddelanden med de här flaggorna: en flagga per bokstav. A, B och de andra är likadana över hela världen, på alla språk.
+= The captain's sea chest
+> Kaptenens sjömanskista
+= A brass lock with five letter wheels
+> Ett mässingslås med fem bokstavshjul
+= Engraved on the lid: "A captain's secret is always flying over his head."
+> Ingraverat på locket: "En kaptens hemlighet fladdrar alltid över hans huvud."
+= S-P-U-N-K. The lock clicks and the lid creaks open.
+> S-P-U-N-K. Låset klickar och locket knarrar upp.
+= Inside: sea charts, a compass, a spyglass… and a paper bag of sugar cubes. "FOR THE HORSE", it says on the bag.
+> Inuti: sjökort, en kompass, en kikare… och en papperspåse med sockerbitar. "TILL LILLA GUBBEN", står det på påsen.
+= You take the sugar cubes.
+> Du tar sockerbitarna.
+= Good guess! But no. That's a name, not a secret.
+> Bra gissat! Men nej. Det är ett namn, inte en hemlighet.
+= Still locked. Look up! The flags over your head each stand for a letter, and the chart by the mirror says which.
+> Fortfarande låst. Titta upp! Flaggorna ovanför ditt huvud står för var sin bokstav, och tavlan vid spegeln visar vilken.
+= The lock stays shut.
+> Låset förblir stängt.
+
+# ---------- the horse ----------
+= It sniffs: sugar!
+> Han sniffar: socker!
+= How do you hold out a sugar cube to a horse?
+> Hur håller man fram en sockerbit till en häst?
+= Between my fingertips, like a sweet
+> Mellan fingertopparna, som en karamell
+= In my closed fist
+> I min knutna näve
+= On my flat, open hand
+> På min platta, öppna hand
+= Careful! A horse can't see what's right under its nose, and it might nibble your fingers by mistake.
+> Akta dig! En häst ser inte det som är precis under mulen, och kan råka nafsa dig i fingrarna.
+= The horse snuffles at your fist. It can smell the sugar, but it can't get at it.
+> Hästen nosar på din näve. Han känner lukten av sockret, men kommer inte åt det.
+= Soft lips tickle your palm, and the sugar is gone. Flat hand, thumb tucked in: that is how you feed a horse.
+> Mjuka läppar kittlar din handflata, och sockret är borta. Platt hand, tummen intill: så ger man en häst något gott.
+
+# ---------- intro and ending ----------
+= Villa Villekulla: a wonky old house at the edge of a small Swedish town. Four o'clock on a Saturday.
+> Villa Villekulla: ett gammalt skevt hus i utkanten av en liten svensk stad. Klockan fyra en lördag.
+= Hello! Welcome to Villa Villekulla! I'm off to town to buy sweets. Eighteen kilos should do.
+> Hej! Välkommen till Villa Villekulla! Jag går till stan och köper godis. Arton kilo borde räcka.
+= Make yourself at home. Mr Nilsson will keep you company. Tommy and Annika are coming by, and then we're all going thing-searching!
+> Känn dig som hemma. Herr Nilsson håller dig sällskap. Tommy och Annika kommer snart, och sen ska vi allihop gå ut och vara sakletare!
+= The front door bangs shut behind her. Then: click-clack. Mr Nilsson has turned the key, pulled it out of the lock, and scampered up onto the bureau with it.
+> Ytterdörren smäller igen bakom henne. Sedan: klick-klack. Herr Nilsson har vridit om nyckeln, dragit ut den ur låset och klättrat upp på byrån med den.
+= Mr Nilsson! Give that back! …He's hidden it behind his back. Pippi said something about a note on the table.
+> Herr Nilsson! Ge tillbaka den! …Han har gömt den bakom ryggen. Pippi sa något om en lapp på bordet.
+= The horse crunches its sugar, clip-clops down the veranda steps and starts eating the lawn. The door swings wide open.
+> Lilla Gubben knaprar i sig sockret, klampar nerför verandatrappan och börjar äta på gräsmattan. Dörren svänger upp på vid gavel.
+= There you are! We've been waiting for ages.
+> Där är du ju! Vi har väntat i evigheter.
+= Did Mr Nilsson lock you in? He does that to everybody. He locked our mum in the shed once.
+> Låste Herr Nilsson in dig? Det gör han med alla. En gång låste han in vår mamma i vedboden.
+= Hello! I'm back! I've never been locked in by a monkey, so I'm sure I'd be very good at it. And look: so were you!
+> Hej! Nu är jag tillbaka! Jag har aldrig blivit inlåst av en apa, så det klarar jag säkert alldeles utmärkt. Och titta: det gjorde du också!
+= Now, who wants a sweet? I've got eighteen kilos.
+> Nå, vem vill ha en karamell? Jag har arton kilo.
+
+# ---------- js/items.js ----------
+= The spunk has nothing to add. It looks pleased with you.
+> Spunken har inget att tillägga. Den ser nöjd ut med dig.
+= The spunk seems to be thinking: {hint}
+> Spunken verkar tänka: {hint}
+= You turn the note this way and that. It's still backwards.
+> Du vänder lappen hit och dit. Den är fortfarande baklänges.
+= What in this kitchen shows things the other way round?
+> Vad i det här köket visar saker åt andra hållet?
+= You hold the note up to the mirror. In the reflection, the writing turns the right way round!
+> Du håller upp lappen mot spegeln. I spegelbilden vänder sig skriften rätt!
+= EEK!
+> IIII!
+= Mr Nilsson snatches his tail out of the way. No matches near the monkey.
+> Herr Nilsson rycker undan svansen. Inga tändstickor nära apan.
+= Matches are for lighting a fire. And there's only one place in this kitchen where you should do that.
+> Tändstickor är till för att tända en eld. Och det ska man bara göra på ett ställe i det här köket.
+= Good thinking, but Pippi mixes the batter at the stove. Take the eggs there.
+> Bra tänkt, men Pippi rör ihop smeten vid spisen. Ta med äggen dit.
+= Eggs are for pancakes, and pancakes are made at the stove.
+> Ägg är till pannkakor, och pannkakor steks på spisen.
+= The horse sniffs the pancake, then looks at you as if to say: I'm a horse.
+> Hästen sniffar på pannkakan och tittar sedan på dig som om han ville säga: jag är en häst.
+= Somebody in this kitchen would swap anything for this pancake. Somebody small, with a straw hat.
+> Någon i det här köket skulle byta vad som helst mot den här pannkakan. Någon liten, med halmhatt.
+= Eek!
+> Iii!
+= Mr Nilsson grabs the pancake with both hands and drops the key into yours. A fair swap.
+> Herr Nilsson griper pannkakan med båda händerna och släpper nyckeln i din. Ett rättvist byte.
+= It's the front-door key. It belongs in the front door.
+> Det är ytterdörrsnyckeln. Den hör hemma i ytterdörren.
+= You turn the big key. Click-clack: unlocked!
+> Du vrider om den stora nyckeln. Klick-klack: olåst!
+= You push the door… and it opens just a crack. Something large and spotty is leaning against it from outside.
+> Du knuffar på dörren… och den går bara upp en springa. Något stort och prickigt lutar sig mot den utifrån.
+= Pippi's horse. Of course.
+> Pippis häst. Förstås.
+= Sugar cubes for the horse. It's just outside the front door.
+> Sockerbitar till Lilla Gubben. Han står precis utanför ytterdörren.
+= The horse is outside, and the door is locked. You can't reach it through the glass.
+> Hästen står ute, och dörren är låst. Du når honom inte genom glaset.
+= That doesn't do anything useful.
+> Det gör ingen nytta.

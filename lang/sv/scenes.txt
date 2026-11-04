@@ -1,0 +1,41 @@
+# Swedish translation: hotspot labels and drawn text in scenes/kitchen.svg, plus labels set by code.
+= The kitchen of Villa Villekulla
+> Köket i Villa Villekulla
+= Flags on a string
+> Flaggor på ett snöre
+= Stove
+> Vedspis
+= Enamel sign
+> Emaljskylt
+= Wood basket
+> Vedkorg
+= Pantry cupboard
+> Skafferi
+= Window
+> Fönster
+= Jam jar
+> Syltburk
+= Mirror
+> Spegel
+= Flag chart
+> Flaggtavla
+= Suitcase
+> Kappsäck
+= Bureau
+> Byrå
+= Front door
+> Ytterdörr
+= Front door (open)
+> Ytterdörr (öppen)
+= Note
+> Lapp
+= Exercise book
+> Skrivbok
+= Mixing bowl
+> Bunke
+= Sea chest
+> Sjömanskista
+= FIRE
+> ELD
+= FLAGS A–Z
+> FLAGGOR A–Z

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><title>Annika</title>
+  <rect width="120" height="120" rx="14" fill="#b5342a"/>
+  <path d="M16 120 q4-30 44-32 q40 2 44 32z" fill="#f2a7b8"/>
+  <path d="M30 70 q-8 24 6 34 M90 70 q8 24-6 34" stroke="#e9c46a" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <rect x="52" y="76" width="16" height="14" fill="#f3c9a4"/>
+  <ellipse cx="60" cy="56" rx="24" ry="27" fill="#f3c9a4"/>
+  <path d="M34 56 q-2-34 26-34 q28 0 26 34 q-6-18-26-20 q-20 2-26 20z" fill="#e9c46a"/>
+  <path d="M74 26 l14-8 v16z M74 26 l-2 0" fill="#e8571f"/><circle cx="74" cy="26" r="4" fill="#c4302b"/>
+  <circle cx="51" cy="57" r="3" fill="#1a120c"/><circle cx="69" cy="57" r="3" fill="#1a120c"/>
+  <path d="M52 71 q8 5 16 0" stroke="#7a3a2a" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,466 @@
+# Dutch translation: Chapter 1, the kitchen of Villa Kakelbont (js/chapter1.js, js/items.js, items in js/core.js).
+# Pippi's note is misspelt on purpose, in Dutch too. The sea chest's word SPUNK stays the same: Pippi invented it in every language.
+
+# ---------- items ----------
+= Pippi invented the word "spunk" and then went looking for one. It turned out to be this little green beetle. Use it on anything for a free hint.
+> Pippi heeft het woord "spunk" verzonnen en ging er toen een zoeken. Het bleek dit kleine groene kevertje te zijn. Gebruik hem ergens op voor een gratis hint.
+= Pippi's note
+> Pippi's briefje
+= Written backwards. Pippi says that in Egypt everybody writes like this.
+> Achterstevoren geschreven. Pippi zegt dat ze in Egypte allemaal zo schrijven.
+= Matches
+> Lucifers
+= A box of matches from the secret drawer. Strike them on the box, not on the monkey.
+> Een doosje lucifers uit de geheime la. Strijk ze af op het doosje, niet op de aap.
+= Eggs
+> Eieren
+= Three eggs from the pantry. Handle with care. (Pippi never does.)
+> Drie eieren uit de voorraadkast. Voorzichtig mee omgaan. (Pippi doet dat nooit.)
+= Pancake
+> Pannenkoek
+= A warm, golden pancake. Mr Nilsson would sell his own hat for one.
+> Een warme, goudbruine pannenkoek. Daar zou meneer Nilsson zijn eigen hoedje voor verkopen.
+= Front-door key
+> Voordeursleutel
+= A big old iron key, slightly sticky with monkey and pancake.
+> Een grote oude ijzeren sleutel, een beetje plakkerig van aap en pannenkoek.
+= Sugar cubes
+> Suikerklontjes
+= From the captain's sea chest. Horses love them.
+> Uit de scheepskist van de kapitein. Paarden zijn er dol op.
+
+# ---------- hotspots ----------
+= A jam jar with a tiny green beetle in it. The label, in Pippi's handwriting, says: SPUNK.
+> Een jampotje met een piepklein groen kevertje erin. Op het etiket staat in Pippi's handschrift: SPUNK.
+= Pippi made up the word "spunk" and then went out to find out what a spunk is. This is apparently it.
+> Pippi heeft het woord "spunk" verzonnen en is toen gaan uitzoeken wat een spunk is. Dit is er dus een.
+= You take it. If you're stuck, show the spunk something. A spunk knows things.
+> Je neemt hem mee. Kom je niet verder, laat de spunk dan iets zien. Een spunk weet dingen.
+= You look in the mirror. Your reflection waves back, with the wrong hand.
+> Je kijkt in de spiegel. Je spiegelbeeld zwaait terug, met de verkeerde hand.
+= Mirrors turn everything the other way round: left becomes right, and writing runs backwards.
+> Een spiegel draait alles om: links wordt rechts, en schrift loopt achterstevoren.
+= Pippi's suitcase, full to the brim with gold coins. Pippi is the richest girl in the whole town.
+> Pippi's koffer, tot de rand gevuld met gouden munten. Pippi is het rijkste meisje van het hele stadje.
+= She keeps it on top of the bureau, where anyone could see it. A burglar, say. Let's not think about burglars right now.
+> Ze bewaart hem gewoon boven op het ladekastje, waar iedereen hem kan zien. Een inbreker bijvoorbeeld. Laten we nu maar even niet aan inbrekers denken.
+= Pippi's wood basket, full of logs. She chops them herself, with one hand, while reading a book with the other.
+> Pippi's houtmand, vol blokken. Ze hakt ze zelf, met één hand, terwijl ze met de andere een boek leest.
+= A big mixing bowl and a whisk. Pippi makes her pancake batter at the stove, where it's warm.
+> Een grote beslagkom en een garde. Pippi maakt haar pannenkoekbeslag bij het fornuis, waar het warm is.
+= There's a faint pancake smell. Mr Nilsson keeps sniffing in this direction.
+> Er hangt een vage pannenkoekengeur. Meneer Nilsson snuffelt steeds deze kant op.
+= Through the window: the garden, the big old oak tree with a hollow trunk, and the gate.
+> Door het raam: de tuin, de grote oude eik met de holle stam, en het hek.
+= Tommy and Annika are leaning on the gate, waving. Annika is pointing at her wristwatch.
+> Tommy en Annika hangen over het hek en zwaaien. Annika wijst op haar horloge.
+= Nom nom nom.
+> Mjam mjam mjam.
+= Mr Nilsson is busy with his pancake. He has syrup on his hat.
+> Meneer Nilsson is druk met zijn pannenkoek. Hij heeft stroop op zijn hoedje.
+= Eek! Eek-eek!
+> Iek! Iek-iek!
+= Mr Nilsson, Pippi's monkey, in his little blue trousers and straw hat. He holds up the front-door key and grins.
+> Meneer Nilsson, Pippi's aapje, in zijn blauwe broekje en met zijn strohoedje. Hij houdt de voordeursleutel omhoog en grijnst.
+= When you reach for it, he puts it behind his back.
+> Als je ernaar grijpt, verstopt hij hem achter zijn rug.
+= You ask very politely for the key.
+> Je vraagt heel beleefd om de sleutel.
+= Eek.
+> Iek.
+= He shakes his head. Then he rubs his tummy and points at the stove.
+> Hij schudt zijn hoofd. Dan wrijft hij over zijn buik en wijst naar het fornuis.
+= Eek eek eek!
+> Iek iek iek!
+= You say please, pretty please, and pretty please with sugar on top. Mr Nilsson pats your head kindly and keeps the key.
+> Je zegt alsjeblieft, alsjeblieft-alsjeblieft, en alsjeblieft met suiker erop. Meneer Nilsson klopt je vriendelijk op je hoofd en houdt de sleutel.
+= He keeps pointing at the stove. He wants something to eat.
+> Hij blijft naar het fornuis wijzen. Hij wil iets te eten.
+= The front door is wide open. The evening air smells of grass and sweets.
+> De voordeur staat wagenwijd open. De avondlucht ruikt naar gras en snoep.
+= The front door of Villa Villekulla. Locked, and the keyhole is empty.
+> De voordeur van Villa Kakelbont. Op slot, en het sleutelgat is leeg.
+= Mr Nilsson has the key, up on the bureau.
+> Meneer Nilsson heeft de sleutel, boven op het ladekastje.
+= The door is unlocked, but it only opens a crack.
+> De deur is van het slot, maar hij gaat maar een klein stukje open.
+= Pippi's horse is standing on the veranda, leaning right against it. It looks very comfortable. It won't budge.
+> Pippi's paard staat op de veranda, pal tegen de deur aan geleund. Het staat er heel gezellig. Het gaat geen centimeter opzij.
+= The horse is grazing in the garden now, very pleased with itself.
+> Het paard graast nu in de tuin, heel tevreden met zichzelf.
+= Pfrrrr.
+> Pfrrrr.
+= Pippi's horse, white with black spots, looking in through the little window in the door. It lives on the veranda. Pippi says it's in the way in the kitchen.
+> Pippi's paard, wit met zwarte vlekken, kijkt naar binnen door het raampje in de deur. Het woont op de veranda. In de keuken staat het maar in de weg, zegt Pippi.
+= You squeeze a hand through the gap and try to lift the horse, the way Pippi does.
+> Je wurmt een hand door de kier en probeert het paard op te tillen, zoals Pippi dat doet.
+= The horse does not get lifted. You are strong, but not Pippi-strong.
+> Het paard wordt niet opgetild. Je bent sterk, maar niet Pippi-sterk.
+= Pfrrr?
+> Pfrrr?
+= Maybe you can make it want to move instead. What do horses like?
+> Misschien kun je zorgen dat het zelf opzij wil. Waar houden paarden van?
+= Neeeigh.
+> Hihihihi.
+= It's leaning on the door. Horses move for a good reason. Something sweet, for example.
+> Het leunt tegen de deur. Paarden gaan opzij voor een goede reden. Iets zoets, bijvoorbeeld.
+= It blinks at you through the window. Nice horse. Locked door.
+> Het knippert met zijn ogen door het raampje. Lief paard. Deur op slot.
+= Captain Longstocking's sea chest, open. Charts, a compass and a spyglass. You already took the sugar.
+> De scheepskist van kapitein Langkous, open. Zeekaarten, een kompas en een verrekijker. De suiker heb je al.
+
+# ---------- Pippi's note (misspelt on purpose) ----------
+= Dear gest!
+> Liefe gast!
+= Mr Nilsson has pinched the front-door key. He does that. He will swap it for a PANCAKE, and nothing else.
+> Meneer Nilsson heeft de voordeursleutel gepikt. Dat doet ie wel vaker. Hij ruilt hem voor een PANNENKOEK, en voor niks anders.
+= The eggs are in the pantry. The matches are in my secret drawer in the bureau. The code is the answers to my sums.
+> De eieren liggen in de voorraadkast. De lucifers liggen in mijn geheime la in het ladekastje. De code is de antwoorden van mijn sommen.
+= (Annika says my answers are wrong. Annika is very clever.)
+> (Annika zegt dat mijn antwoorden fout zijn. Annika is heel slim.)
+= Luv, Pippi
+> Groetjus, Pippi
+= P.S. Don't lift the horse. That's my job.
+> P.S. Niet het paard optillen. Dat is mijn werk.
+= Pippi's note, in the mirror
+> Pippi's briefje, in de spiegel
+= Now it reads the right way round
+> Nu kun je het gewoon lezen
+= Left on the kitchen table
+> Achtergelaten op de keukentafel
+= It's all backwards! Every letter faces the wrong way, and the lines run from right to left. Pippi says that in Egypt everybody writes like this.
+> Het staat allemaal achterstevoren! Elke letter staat verkeerd om, en de regels lopen van rechts naar links. Pippi zegt dat ze in Egypte allemaal zo schrijven.
+
+# ---------- the exercise book ----------
+= Pippi's exercise book
+> Pippi's schrift
+= Sums · homework · VERY IMPORTANT
+> Sommen · huiswerk · HEEL BELANGRIJK
+= (that's how the song goes!)
+> (zo gaat het liedje!)
+= Thursday
+> donderdag
+= a horse
+> een paard
+= Miss says: <b>×</b> means "lots of": 2 × 3 is two, three times. <b>÷</b> means "share out": 8 ÷ 2 is 8 sweets shared between 2 children.
+> De juf zegt: <b>×</b> betekent "keer": 2 × 3 is drie keer twee. <b>÷</b> (of <b>:</b>) betekent "verdelen": 8 ÷ 2 is 8 snoepjes verdeeld over 2 kinderen.
+= Pippi! Your answers are WRONG. The code for your secret drawer is the RIGHT answers, from top to bottom. — Annika
+> Pippi! Je antwoorden zijn FOUT. De code van je geheime la is de GOEDE antwoorden, van boven naar beneden. — Annika
+
+# ---------- the bureau ----------
+= A bird's egg. Not for pancakes.
+> Een vogeleitje. Niet voor pannenkoeken.
+= A rusty tin can. Pippi found it thing-searching: "A perfectly good tin, for keeping things in!"
+> Een roestig blikje. Pippi vond het tijdens het dingenzoeken: "Een prima blik, om dingen in te bewaren!"
+= A seashell from the South Seas. Hold it to your ear and you can hear the waves.
+> Een schelp uit de Zuidzee. Houd hem tegen je oor en je hoort de golven.
+= Seven buttons. All different.
+> Zeven knopen. Allemaal anders.
+= A letter from Pippi's father, Captain Efraim Longstocking: "Dear Pippi, I am now King of an island in the South Seas."
+> Een brief van Pippi's vader, kapitein Efraïm Langkous: "Lieve Pippi, ik ben nu koning van een eiland in de Zuidzee."
+= A false moustache. For emergencies.
+> Een nepsnor. Voor noodgevallen.
+= A map with a big red X on it.
+> Een kaart met een groot rood kruis erop.
+= A paper bag of sweets. Empty. Of course.
+> Een papieren zakje snoep. Leeg. Natuurlijk.
+= A small bottle labelled: MEDICINE FOR EVERYTHING. It smells of lemonade.
+> Een flesje met het etiket: MEDICIJN TEGEN ALLES. Het ruikt naar limonade.
+= The bureau
+> Het ladekastje
+= Lots of little drawers, and one with a padlock
+> Allemaal laatjes, en één met een hangslot
+= Little drawer {n}
+> Laatje {n}
+= SECRET DRAWER · PRIVATE · KEEP OUT (this means you, Mr Nilsson)
+> GEHEIME LA · PRIVÉ · NIET AANKOMEN (dat geldt ook voor jou, meneer Nilsson)
+= Open. Empty, apart from some crumbs. You already took the matches.
+> Open. Leeg, op wat kruimels na. De lucifers heb je al.
+= Wheel {n} up
+> Wieltje {n} omhoog
+= Wheel {n} down
+> Wieltje {n} omlaag
+= Open
+> Open
+= Click! The padlock springs open. Inside: a box of matches, and a lot of crumbs.
+> Klik! Het hangslot springt open. Erin: een doosje lucifers, en heel veel kruimels.
+= 6, 5, 4. Pippi's sums, done properly.
+> 6, 5, 4. Pippi's sommen, maar dan goed.
+= You take the matches. Now, the stove…
+> Je pakt de lucifers. En nu het fornuis…
+= Zero, zero, zero. Even Pippi wouldn't pick that.
+> Nul, nul, nul. Zelfs Pippi zou dat niet kiezen.
+= Those are Pippi's answers, and the padlock agrees with Annika: they're wrong.
+> Dat zijn Pippi's antwoorden, en het hangslot is het met Annika eens: ze zijn fout.
+= The padlock doesn't budge. Annika's sticky note said: the right answers, from top to bottom.
+> Het hangslot geeft niet mee. Op Annika's briefje stond: de goede antwoorden, van boven naar beneden.
+
+# ---------- the pantry ----------
+= The pantry cupboard
+> De voorraadkast
+= Painted blue, with yellow flowers
+> Blauw geverfd, met gele bloemen
+= FLOUR
+> BLOEM
+= MILK
+> MELK
+= BUTTER
+> BOTER
+= SUGAR
+> SUIKER
+= (empty) Ate it. —P.
+> (leeg) Opgegeten. —P.
+= An empty egg basket.
+> Een leeg eierenmandje.
+= Take the eggs
+> Pak de eieren
+= PIPPI'S PANCAKES
+> PIPPI'S PANNENKOEKEN
+= 3 eggs, milk, flour, butter, and a HOT stove.
+> 3 eieren, melk, bloem, boter, en een HEET fornuis.
+= Do it in the right order. Not like last time. (Ceiling.)
+> In de goede volgorde doen. Niet zoals de vorige keer. (Plafond.)
+= Flour, milk and butter stay here: there are more by the stove. Pippi keeps them handy.
+> Bloem, melk en boter laat je hier: bij het fornuis staat ook nog wat. Pippi heeft het graag bij de hand.
+= You take three eggs, very carefully. Pippi would have juggled them.
+> Je pakt heel voorzichtig drie eieren. Pippi had ermee gejongleerd.
+
+# ---------- the stove ----------
+= Enamel sign
+> Emaillen bordje
+= Screwed to the wall above the stove
+> Aan de muur boven het fornuis geschroefd
+= something to burn
+> iets om te branden
+= air
+> lucht
+= heat
+> warmte
+= A FIRE NEEDS THREE THINGS: something to burn, air, and heat. Take one away and it goes out. (That is also how you put a fire OUT.)
+> EEN VUUR HEEFT DRIE DINGEN NODIG: iets om te branden, lucht en warmte. Haal er één weg en het gaat uit. (Zo maak je een vuur ook UIT.)
+= — from the ship of Captain E. Longstocking
+> — van het schip van kapitein E. Langkous
+= The stove
+> Het fornuis
+= Cast iron, cold, and very hungry
+> Gietijzer, koud, en heel hongerig
+= Firewood: in
+> Brandhout: erin
+= Firewood: none
+> Brandhout: geen
+= Air vent: open
+> Luchtschuif: open
+= Air vent: closed
+> Luchtschuif: dicht
+= Strike a match
+> Strijk een lucifer af
+= The enamel sign above the stove says what a fire needs.
+> Op het emaillen bordje boven het fornuis staat wat een vuur nodig heeft.
+= You stack three logs from the basket in the firebox.
+> Je stapelt drie blokken uit de mand in de vuurkast.
+= You take the logs out again.
+> Je haalt de blokken er weer uit.
+= You slide the little air vent open. You can feel a draught.
+> Je schuift de luchtschuif open. Je voelt het tochten.
+= You slide the air vent shut.
+> Je schuift de luchtschuif dicht.
+= You have nothing to light it with. Pippi's note said where the matches are.
+> Je hebt niets om het aan te steken. Op Pippi's briefje stond waar de lucifers liggen.
+= The match flares up… and burns out on its own. There's nothing to burn: a fire needs fuel.
+> De lucifer vlamt op… en brandt in z'n eentje op. Er is niets om te branden: een vuur heeft brandstof nodig.
+= The wood catches, smoulders, puffs out a cloud of smoke and goes out. With the vent shut, the fire gets no air.
+> Het hout vat vlam, smeult, blaast een rookwolk uit en gaat uit. Met de luchtschuif dicht krijgt het vuur geen lucht.
+= Fuel, air and heat: the fire roars into life!
+> Brandstof, lucht en warmte: het vuur laait op!
+= Something to burn, air, and heat from the match. The fire crackles happily.
+> Iets om te branden, lucht, en warmte van de lucifer. Het vuur knettert vrolijk.
+= The pan is heating up. Time for a pancake.
+> De pan wordt warm. Tijd voor een pannenkoek.
+= The pan is heating up. Now you need eggs for the batter.
+> De pan wordt warm. Nu heb je eieren nodig voor het beslag.
+= The stove is still warm. You've had enough pancakes for one day. (Nobody has ever said that in this house before.)
+> Het fornuis is nog warm. Je hebt genoeg pannenkoeken gehad voor vandaag. (Dat heeft in dit huis nog nooit iemand gezegd.)
+= The stove is still warm. Mr Nilsson is still waiting for his pancake.
+> Het fornuis is nog warm. Meneer Nilsson wacht nog steeds op zijn pannenkoek.
+= The stove is lovely and hot. The pan is ready, and so are the flour, milk and butter.
+> Het fornuis is lekker heet. De pan staat klaar, en de bloem, melk en boter ook.
+= Pancakes need eggs, though. Pippi keeps those in the pantry.
+> Maar voor pannenkoeken heb je eieren nodig. Die bewaart Pippi in de voorraadkast.
+
+# ---------- the pancakes ----------
+= Pippi's pancakes
+> Pippi's pannenkoeken
+= Every step needs the steps before it
+> Elke stap heeft de stappen ervoor nodig
+= Crack the eggs into the bowl
+> Breek de eieren boven de kom
+= Add the milk and the flour
+> Doe de melk en de bloem erbij
+= Whisk until smooth
+> Klop het glad
+= Melt butter in the hot pan
+> Smelt boter in de hete pan
+= Pour the batter into the pan
+> Giet het beslag in de pan
+= Flip it when the top bubbles
+> Omdraaien als er belletjes op komen
+= Crack an egg on your head (Pippi's way)
+> Breek een ei op je hoofd (zoals Pippi)
+= Toss the pancake up to the ceiling
+> Gooi de pannenkoek op tot aan het plafond
+= You whisk an empty bowl. Very energetic, but there's nothing in it. Eggs first.
+> Je klopt een lege kom. Heel energiek, maar er zit niets in. Eerst de eieren.
+= You whisk the eggs. Lovely, but it's not batter yet: the milk and flour aren't in.
+> Je klopt de eieren. Mooi, maar het is nog geen beslag: de melk en de bloem zitten er nog niet in.
+= There's no batter to pour yet. Everything has to be in the bowl and whisked first.
+> Er is nog geen beslag om te gieten. Eerst moet alles in de kom, en dan glad geklopt.
+= Wait! Without butter in the pan, the pancake will stick like glue. Grease the pan first.
+> Wacht! Zonder boter in de pan plakt de pannenkoek vast als lijm. Eerst de pan invetten.
+= You flip an empty pan. Very sporty. Still no pancake.
+> Je draait een lege pan om. Heel sportief. Nog steeds geen pannenkoek.
+= There's no pancake to toss yet.
+> Er is nog geen pannenkoek om op te gooien.
+= The recipe in the pantry lists what goes in, but not the order. Think: what does each step need first?
+> Op het recept in de voorraadkast staat wat erin moet, maar niet in welke volgorde. Denk na: wat heeft elke stap eerst nodig?
+= Splat. Egg runs down your face. Pippi does it this way too, and it never works for her either. Use the bowl.
+> Pets. Het ei loopt over je gezicht. Pippi doet het ook zo, en bij haar lukt het ook nooit. Gebruik de kom.
+= Not yet. Something else has to happen first.
+> Nog niet. Er moet eerst iets anders gebeuren.
+= Crack, crack, crack. Three eggs in the bowl, and no shell. Well, hardly any.
+> Krak, krak, krak. Drie eieren in de kom, en geen schaal. Nou ja, bijna geen.
+= In go the milk and the flour. Whoosh: a small cloud of flour.
+> De melk en de bloem erbij. Poef: een wolkje bloem.
+= You whisk until the batter is smooth and has no lumps.
+> Je klopt tot het beslag glad is en er geen klontjes meer in zitten.
+= The butter sizzles and slides around the hot pan.
+> De boter sist en glijdt door de hete pan.
+= The batter spreads out into a perfect circle. Tiny bubbles appear on top.
+> Het beslag loopt uit tot een perfecte cirkel. Er komen kleine belletjes op.
+= Flip! Golden brown underneath. Perfect.
+> Hup, omgedraaid! Goudbruin aan de onderkant. Perfect.
+= Whoops, too high! The pancake sticks to the ceiling… wobbles… and drops back into the pan, upside down. Flipped!
+> Oeps, te hoog! De pannenkoek plakt aan het plafond… wiebelt… en valt terug in de pan, ondersteboven. Omgedraaid!
+= One golden pancake, made in the right order: each step only after the steps it needed.
+> Eén goudbruine pannenkoek, gemaakt in de goede volgorde: elke stap pas na de stappen die hij nodig had.
+= Eek! EEK!
+> Iek! IEK!
+= Up on the bureau, Mr Nilsson is jumping up and down.
+> Boven op het ladekastje springt meneer Nilsson op en neer.
+
+# ---------- flags and the sea chest ----------
+= Flags on a string
+> Vlaggetjes aan een touw
+= Hung across the ceiling by Pippi
+> Door Pippi onder het plafond gehangen
+= Five signal flags
+> Vijf seinvlaggen
+= Pippi's father, Captain Longstocking, gave her these flags. On ships, every flag stands for one letter, so a row of flags spells a word, even when the ships are too far apart to shout.
+> Pippi kreeg deze vlaggen van haar vader, kapitein Langkous. Op schepen staat elke vlag voor één letter, dus een rij vlaggen vormt een woord, ook als de schepen te ver uit elkaar liggen om te roepen.
+= Signal flags, A to Z
+> Seinvlaggen, A tot Z
+= From the ship of Captain E. Longstocking
+> Van het schip van kapitein E. Langkous
+= Ships send messages with these flags: one flag per letter. A, B and the others are the same all over the world, in every language.
+> Schepen sturen berichten met deze vlaggen: één vlag per letter. A, B en de rest zijn overal ter wereld hetzelfde, in elke taal.
+= The captain's sea chest
+> De scheepskist van de kapitein
+= A brass lock with five letter wheels
+> Een koperen slot met vijf letterwieltjes
+= Engraved on the lid: "A captain's secret is always flying over his head."
+> In het deksel gegraveerd: "Het geheim van een kapitein wappert altijd boven zijn hoofd."
+= S-P-U-N-K. The lock clicks and the lid creaks open.
+> S-P-U-N-K. Het slot klikt en het deksel gaat krakend open.
+= Inside: sea charts, a compass, a spyglass… and a paper bag of sugar cubes. "FOR THE HORSE", it says on the bag.
+> Erin: zeekaarten, een kompas, een verrekijker… en een papieren zakje suikerklontjes. "VOOR HET PAARD", staat erop.
+= You take the sugar cubes.
+> Je pakt de suikerklontjes.
+= Good guess! But no. That's a name, not a secret.
+> Goed geraden! Maar nee. Dat is een naam, geen geheim.
+= Still locked. Look up! The flags over your head each stand for a letter, and the chart by the mirror says which.
+> Nog steeds op slot. Kijk omhoog! De vlaggetjes boven je hoofd staan elk voor een letter, en op de kaart bij de spiegel staat welke.
+= The lock stays shut.
+> Het slot blijft dicht.
+
+# ---------- the horse ----------
+= It sniffs: sugar!
+> Het snuffelt: suiker!
+= How do you hold out a sugar cube to a horse?
+> Hoe geef je een paard een suikerklontje?
+= Between my fingertips, like a sweet
+> Tussen mijn vingertoppen, zoals een snoepje
+= In my closed fist
+> In mijn dichte vuist
+= On my flat, open hand
+> Op mijn platte, open hand
+= Careful! A horse can't see what's right under its nose, and it might nibble your fingers by mistake.
+> Pas op! Een paard ziet niet wat er vlak onder zijn neus is, en knabbelt misschien per ongeluk aan je vingers.
+= The horse snuffles at your fist. It can smell the sugar, but it can't get at it.
+> Het paard snuffelt aan je vuist. Het ruikt de suiker wel, maar kan er niet bij.
+= Soft lips tickle your palm, and the sugar is gone. Flat hand, thumb tucked in: that is how you feed a horse.
+> Zachte lippen kietelen je handpalm, en de suiker is weg. Platte hand, duim ertegenaan: zo geef je een paard iets lekkers.
+
+# ---------- intro and ending ----------
+= Villa Villekulla: a wonky old house at the edge of a small Swedish town. Four o'clock on a Saturday.
+> Villa Kakelbont: een scheef oud huis aan de rand van een klein Zweeds stadje. Zaterdag, vier uur.
+= Hello! Welcome to Villa Villekulla! I'm off to town to buy sweets. Eighteen kilos should do.
+> Hallo! Welkom in Villa Kakelbont! Ik ga naar de stad om snoep te kopen. Achttien kilo moet genoeg zijn.
+= Make yourself at home. Mr Nilsson will keep you company. Tommy and Annika are coming by, and then we're all going thing-searching!
+> Doe alsof je thuis bent. Meneer Nilsson houdt je gezelschap. Tommy en Annika komen zo, en dan gaan we met z'n allen dingen zoeken!
+= The front door bangs shut behind her. Then: click-clack. Mr Nilsson has turned the key, pulled it out of the lock, and scampered up onto the bureau with it.
+> De voordeur knalt achter haar dicht. Dan: klik-klak. Meneer Nilsson heeft de sleutel omgedraaid, uit het slot getrokken en is ermee op het ladekastje geklauterd.
+= Mr Nilsson! Give that back! …He's hidden it behind his back. Pippi said something about a note on the table.
+> Meneer Nilsson! Geef terug! …Hij heeft hem achter zijn rug verstopt. Pippi zei iets over een briefje op tafel.
+= The horse crunches its sugar, clip-clops down the veranda steps and starts eating the lawn. The door swings wide open.
+> Het paard knabbelt zijn suiker op, klost de verandatrap af en begint het gazon op te eten. De deur zwaait wagenwijd open.
+= There you are! We've been waiting for ages.
+> Daar ben je! We wachten al eeuwen.
+= Did Mr Nilsson lock you in? He does that to everybody. He locked our mum in the shed once.
+> Heeft meneer Nilsson je opgesloten? Dat doet hij bij iedereen. Hij heeft onze moeder een keer in het schuurtje opgesloten.
+= Hello! I'm back! I've never been locked in by a monkey, so I'm sure I'd be very good at it. And look: so were you!
+> Hallo! Ik ben terug! Ik ben nog nooit door een aap opgesloten, dus ik denk dat ik het wel kan. En kijk: jij ook!
+= Now, who wants a sweet? I've got eighteen kilos.
+> En, wie wil er een snoepje? Ik heb achttien kilo.
+
+# ---------- js/items.js ----------
+= The spunk has nothing to add. It looks pleased with you.
+> De spunk heeft niets toe te voegen. Hij kijkt tevreden naar je.
+= The spunk seems to be thinking: {hint}
+> De spunk lijkt te denken: {hint}
+= You turn the note this way and that. It's still backwards.
+> Je draait het briefje alle kanten op. Het blijft achterstevoren.
+= What in this kitchen shows things the other way round?
+> Wat in deze keuken laat alles andersom zien?
+= You hold the note up to the mirror. In the reflection, the writing turns the right way round!
+> Je houdt het briefje voor de spiegel. In het spiegelbeeld staat het schrift ineens goed om!
+= EEK!
+> IEK!
+= Mr Nilsson snatches his tail out of the way. No matches near the monkey.
+> Meneer Nilsson trekt snel zijn staart weg. Geen lucifers bij de aap.
+= Matches are for lighting a fire. And there's only one place in this kitchen where you should do that.
+> Lucifers zijn om vuur mee aan te steken. En dat doe je in deze keuken maar op één plek.
+= Good thinking, but Pippi mixes the batter at the stove. Take the eggs there.
+> Goed bedacht, maar Pippi maakt het beslag bij het fornuis. Breng de eieren daarheen.
+= Eggs are for pancakes, and pancakes are made at the stove.
+> Eieren zijn voor pannenkoeken, en pannenkoeken bak je op het fornuis.
+= The horse sniffs the pancake, then looks at you as if to say: I'm a horse.
+> Het paard snuffelt aan de pannenkoek en kijkt je dan aan alsof het wil zeggen: ik ben een paard.
+= Somebody in this kitchen would swap anything for this pancake. Somebody small, with a straw hat.
+> Iemand in deze keuken zou alles ruilen voor deze pannenkoek. Iemand kleins, met een strohoedje.
+= Eek!
+> Iek!
+= Mr Nilsson grabs the pancake with both hands and drops the key into yours. A fair swap.
+> Meneer Nilsson grijpt de pannenkoek met twee handen en laat de sleutel in de jouwe vallen. Eerlijk geruild.
+= It's the front-door key. It belongs in the front door.
+> Het is de voordeursleutel. Die hoort in de voordeur.
+= You turn the big key. Click-clack: unlocked!
+> Je draait de grote sleutel om. Klik-klak: open!
+= You push the door… and it opens just a crack. Something large and spotty is leaning against it from outside.
+> Je duwt tegen de deur… en hij gaat maar een kiertje open. Iets groots met vlekken leunt er van buiten tegenaan.
+= Pippi's horse. Of course.
+> Pippi's paard. Natuurlijk.
+= Sugar cubes for the horse. It's just outside the front door.
+> Suikerklontjes voor het paard. Dat staat vlak voor de voordeur.
+= The horse is outside, and the door is locked. You can't reach it through the glass.
+> Het paard staat buiten, en de deur is op slot. Door het glas kun je er niet bij.
+= That doesn't do anything useful.
+> Dat heeft geen zin.

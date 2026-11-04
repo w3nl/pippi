@@ -1,0 +1,19 @@
+{
+  "name": "Villa Villekulla: Locked In with Mr Nilsson",
+  "short_name": "Villekulla",
+  "description": "A point-and-click escape room in Pippi Longstocking's kitchen. An unofficial fan game.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1c120b",
+  "theme_color": "#1c120b",
+  "categories": ["games", "education", "kids"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
