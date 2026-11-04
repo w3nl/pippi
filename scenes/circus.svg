@@ -112,17 +112,36 @@
     </g>
   </g>
 
-  <!-- the circus horse, trotting round and round the ring (Pippi stands on its back at the end) -->
-  <g id="cc-horsewrap"><g id="cc-horse">
-    <ellipse cx="800" cy="736" rx="46" ry="22" fill="#fffaf0"/>
-    <path d="M840 728 q20 -30 34 -26 q10 4 4 14 l-10 6 q-8 4 -14 18z" fill="#fffaf0"/>
-    <path d="M846 712 q-6 -18 4 -26 q4 10 2 22" fill="#c4302b"/>
-    <circle cx="866" cy="710" r="2.4" fill="#111"/>
-    <path d="M756 726 q-24 4 -20 30" stroke="#e9dcc0" stroke-width="6" fill="none" stroke-linecap="round"/>
-    <g class="legs" stroke="#fffaf0" stroke-width="7" stroke-linecap="round"><path class="leg a" d="M772 752 v28"/><path class="leg b" d="M790 754 v28"/><path class="leg a" d="M816 754 v28"/><path class="leg b" d="M832 752 v28"/></g>
-    <rect x="780" y="712" width="40" height="10" rx="3" fill="#2f5f9a"/>
-    <!-- Pippi, standing on the horse's back, at the end -->
-    <g id="cc-rider" style="display:none"><path d="M790 712 l4 -40 h16 l4 40z" fill="#3f8a4a"/><circle cx="802" cy="660" r="12" fill="#f3c9a4"/><path d="M790 656 l-16 -8 M814 656 l16 -8" stroke="#e8571f" stroke-width="6" stroke-linecap="round"/><path d="M792 680 l-20 -16 M812 680 l20 -16" stroke="#f3c9a4" stroke-width="5" stroke-linecap="round"/></g>
+  <!-- the circus horse, in the same style as the horse in Chapter 3 (white with black spots, a sandy mane),
+       trotting round and round the ring: diagonal pairs of legs move together, each knee folds as the leg swings forward.
+       Pippi stands on its back at the end. -->
+  <g id="cc-horsewrap" transform="translate(0 -14)"><g id="cc-horse">
+    <g class="hbody">
+      <!-- the far legs, a shade darker, behind the body -->
+      <g class="hleg fore far b" style="transform-origin:828px 744px"><path d="M828 744 v27" stroke="#e2dccb" stroke-width="9" stroke-linecap="round"/><g class="shin" style="transform-origin:828px 771px"><path d="M828 771 v25" stroke="#e2dccb" stroke-width="7" stroke-linecap="round"/><rect x="823" y="794" width="10" height="6" rx="2" fill="#3a2a1a"/></g></g><g class="hleg hind far a" style="transform-origin:774px 744px"><path d="M774 744 v27" stroke="#e2dccb" stroke-width="9" stroke-linecap="round"/><g class="shin" style="transform-origin:774px 771px"><path d="M774 771 v25" stroke="#e2dccb" stroke-width="7" stroke-linecap="round"/><rect x="769" y="794" width="10" height="6" rx="2" fill="#3a2a1a"/></g></g>
+      <!-- tail -->
+      <path class="htail" d="M754 724 q-22 6 -18 40" stroke="#d9c79a" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <!-- body -->
+      <ellipse cx="800" cy="730" rx="50" ry="22" fill="#f6f1e6"/>
+      <!-- neck, up to the head -->
+      <path d="M826 724 q8 -34 30 -52 l16 12 q-14 18 -16 46z" fill="#f6f1e6"/>
+      <!-- mane along the top of the neck -->
+      <path d="M826 716 q8 -30 28 -46" stroke="#d9c79a" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <!-- head: long, pointing forward and a little down -->
+      <path d="M852 668 q14 -10 30 0 q14 10 12 22 q-2 8 -12 6 q-14 -4 -26 -12z" fill="#f6f1e6"/>
+      <path d="M858 664 l-2 -12 l10 8z" fill="#f6f1e6"/>
+      <circle cx="870" cy="674" r="2.4" fill="#1a1a1a"/>
+      <circle cx="890" cy="690" r="1.8" fill="#8a7a6a"/>
+      <!-- circus plume and saddle cloth -->
+      <path d="M858 662 q-4 -24 8 -32 q2 14 -2 30" fill="#c4302b"/>
+      <path d="M782 710 h40 l-4 26 h-32z" fill="#2f5f9a"/><path d="M782 710 h40" stroke="#f2c94c" stroke-width="3"/>
+      <!-- spots -->
+      <g fill="#1a1a1a"><circle cx="770" cy="722" r="6"/><circle cx="806" cy="742" r="5"/><circle cx="836" cy="736" r="4"/><circle cx="762" cy="740" r="3.5"/><circle cx="844" cy="700" r="3.5"/></g>
+      <!-- the near legs, in front of the body -->
+      <g class="hleg fore near a" style="transform-origin:822px 746px"><path d="M822 746 v27" stroke="#f6f1e6" stroke-width="9" stroke-linecap="round"/><g class="shin" style="transform-origin:822px 773px"><path d="M822 773 v25" stroke="#f6f1e6" stroke-width="7" stroke-linecap="round"/><rect x="817" y="796" width="10" height="6" rx="2" fill="#3a2a1a"/></g></g><g class="hleg hind near b" style="transform-origin:780px 746px"><path d="M780 746 v27" stroke="#f6f1e6" stroke-width="9" stroke-linecap="round"/><g class="shin" style="transform-origin:780px 773px"><path d="M780 773 v25" stroke="#f6f1e6" stroke-width="7" stroke-linecap="round"/><rect x="775" y="796" width="10" height="6" rx="2" fill="#3a2a1a"/></g></g>
+      <!-- Pippi, standing on the horse's back, at the end -->
+      <g id="cc-rider" style="display:none"><path d="M792 708 l4 -40 h16 l4 40z" fill="#3f8a4a"/><circle cx="804" cy="656" r="12" fill="#f3c9a4"/><path d="M792 652 l-16 -8 M816 652 l16 -8" stroke="#e8571f" stroke-width="6" stroke-linecap="round"/><path d="M794 676 l-20 -16 M814 676 l20 -16" stroke="#f3c9a4" stroke-width="5" stroke-linecap="round"/></g>
+    </g>
   </g></g>
 
   <!-- the ticket booth, at the front -->

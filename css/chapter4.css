@@ -23,7 +23,12 @@
   99.9%{transform:translate(-430px,-30px) scale(-.85,.85)}
   100%{transform:translate(-430px,-30px) scale(1,1)}
 }
-@keyframes ccStride{0%,100%{transform:rotate(14deg)}50%{transform:rotate(-14deg)}}
+/* a trot: each leg swings forward while its knee folds (the hoof lifts), then pushes back along the ground, straight */
+@keyframes ccLeg{0%{transform:rotate(22deg)}50%{transform:rotate(-26deg)}100%{transform:rotate(22deg)}}
+@keyframes ccKneeFore{0%{transform:rotate(0)}18%{transform:rotate(70deg)}40%{transform:rotate(10deg)}50%,100%{transform:rotate(0)}}
+@keyframes ccKneeHind{0%{transform:rotate(0)}18%{transform:rotate(-55deg)}40%{transform:rotate(-8deg)}50%,100%{transform:rotate(0)}}
+@keyframes ccHop{0%,50%,100%{transform:translateY(0)}25%,75%{transform:translateY(-3px)}}
+@keyframes ccTail{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(8deg)}}
 @keyframes ccJugA{0%{transform:translate(-30px,40px)}25%{transform:translate(-14px,-30px)}50%{transform:translate(30px,40px)}75%{transform:translate(14px,-10px)}100%{transform:translate(-30px,40px)}}
 @keyframes ccConfetti{0%{transform:translateY(0) rotate(0)}100%{transform:translateY(960px) rotate(720deg)}}
 @keyframes ccBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
@@ -46,8 +51,15 @@
 #sc-circus .sealball{animation:ccBall 1s ease-in-out infinite}
 #sc-circus .cane{transform-box:fill-box;transform-origin:0 0;animation:ccCane 3s ease-in-out infinite}
 #cc-horse{transform-box:fill-box;transform-origin:50% 100%;animation:ccTrot 14s linear infinite}
-#cc-horse .leg{transform-box:fill-box;transform-origin:50% 0;animation:ccStride .45s ease-in-out infinite}
-#cc-horse .leg.b{animation-direction:reverse}
+/* diagonal pairs move together: near fore with far hind (a), far fore with near hind (b), half a stride apart */
+#cc-horse .hleg,#cc-horse .shin{transform-box:view-box}
+#cc-horse .hleg{animation:ccLeg .6s linear infinite}
+#cc-horse .hleg.b{animation-delay:-.3s}
+#cc-horse .fore .shin{animation:ccKneeFore .6s linear infinite}
+#cc-horse .hind .shin{animation:ccKneeHind .6s linear infinite}
+#cc-horse .hleg.b .shin{animation-delay:-.3s}
+#cc-horse .hbody{animation:ccHop .6s ease-in-out infinite}
+#cc-horse .htail{transform-box:fill-box;transform-origin:100% 0;animation:ccTail 1.2s ease-in-out infinite}
 #cc-balls-air .jball{animation:ccJugA 1.2s linear infinite}
 #cc-balls-air .jball.b{animation-delay:-.4s} #cc-balls-air .jball.c{animation-delay:-.8s}
 #cc-pippi .bob{animation:ccBob 2s ease-in-out infinite}
