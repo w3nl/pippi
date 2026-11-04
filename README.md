@@ -27,8 +27,9 @@ Stuck? Press **Hint** (first a nudge, then the answer), or pick up the spunk fro
 1. **Locked in with Mr Nilsson** (the kitchen of Villa Villekulla): mirror writing, sums, what a fire needs, steps in the right order, signal flags, feeding a horse.
 2. **Burglars in the night** (Pippi's bedroom): two burglars are after Pippi's gold, and Pippi won't wake up. Batteries in a torch, shadows, the North Star, Morse code and a balance scale.
 3. **Pippi goes to school** (the classroom): Pippi has heard that schoolchildren get holidays, and she wants some too. Roman numerals, the nines times table, ABC order, insects, fractions and why the seasons happen.
+4. **Pippi goes to the circus** (the big top): the show can't begin until the ringmaster's checklist is done. Money and change, mixing coloured light, levers, patterns, pendulums and gears, with a horse trotting round the ring, swinging trapezes and confetti.
 
-More chapters are planned (the circus, the *Hoppetossa*, the South Sea island). See [AGENTS.md](AGENTS.md).
+More chapters are planned (the *Hoppetossa*, the South Sea island). See [AGENTS.md](AGENTS.md).
 
 ## Install it as an app
 

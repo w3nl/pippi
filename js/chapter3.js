@@ -60,7 +60,7 @@ Object.assign(H, {
     say([['teacher', stars3() >= 5 ? "Five gold stars? Then what are you waiting for? The bell is on my desk!" : "No help through the window! Well… one little tip: the blackboard says what to do. Five tasks, five gold stars, then the bell."]]);
   },
   door3(){
-    if(S.f.out3) return say("The classroom door. Out there: weeks and weeks of summer holidays.");
+    if(S.f.out3) return startCh4();
     say(["The classroom door. Miss is right outside, peering in through its little window.", "You could go out too. But Pippi wants her holidays properly: with gold stars, and the bell."]);
   },
   tdesk(){ openDrawer3(); },

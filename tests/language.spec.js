@@ -105,6 +105,22 @@ test('Chapter 3: Pippi\'s own word for multiplying, in every language', async ({
   }
 });
 
+test('Chapter 4 in Dutch and Swedish: the ringmaster, the ticket booth and the chapter title', async ({ page }) => {
+  for (const [lang, who, chap, booth] of [['nl', 'De directeur', 'Hoofdstuk 4 · Pippi gaat naar het circus', 'Kaartjeshokje'], ['sv', 'Direktören', 'Kapitel 4 · Pippi på cirkus', 'Biljettlucka']]) {
+    await seed(page, { ch: 4, scene: 'circus', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4']);
+    await page.evaluate(([KEY, lang]) => localStorage.setItem(KEY + '-lang', lang), [KEY, lang]);
+    await page.reload();
+    await expect(page.locator('html')).toHaveAttribute('lang', lang);
+    await page.locator('#btn-cont').click();
+    await skip(page);
+    await expect(page.locator('#chap')).toHaveText(chap);
+    await expect(page.locator('#sc-circus [data-hs="booth"]')).toHaveAttribute('data-label', booth);
+    await hs(page, 'ringmaster');
+    await expect(page.locator('#d-who')).toHaveText(who);
+    await skip(page);
+  }
+});
+
 test('every Dutch and Swedish translation still matches the English text', () => {
   // Fails when English text changed without updating lang/nl (a stale key), or one text has two translations.
   const tool = path.join(__dirname, '..', 'tools', 'i18n-check.js');

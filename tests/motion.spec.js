@@ -52,6 +52,29 @@ test('"Motion off" stops everything, in every room', async ({ page }) => {
   await page.evaluate(() => { S.ch = 3; S.scene = 'school'; S.f = {}; applyVisuals(); });
   await expect(page.locator('#sl-teacher')).toBeVisible();
   expect(await moving(page)).toBe(0);
+  // and the big top, even during the show
+  await page.evaluate(() => { S.ch = 4; S.scene = 'circus'; S.f = { juggle: true, out4: true }; applyVisuals(); });
+  await expect(page.locator('#cc-confetti')).toBeVisible();
+  expect(await moving(page)).toBe(0);
+});
+
+test('the big top moves: the horse trots, the spotlights sweep, the trapezes swing, and the show adds confetti', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await seed(page, { ch: 4, scene: 'circus', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4']);
+  await page.locator('#btn-cont').click();
+  await skip(page);
+  expect(await anim(page, '#cc-horse')).toBe('ccTrot');
+  expect(await anim(page, '#sc-circus .beam.a')).toBe('ccSweepA');
+  expect(await anim(page, '#sc-circus .swing.l')).toBe('ccSwing');
+  // out of time until the trapeze puzzle is solved
+  const dur = () => page.evaluate(() => [...document.querySelectorAll('#sc-circus .swing')].map(e => getComputedStyle(e).animationDuration));
+  expect(new Set(await dur()).size).toBe(2);
+  await page.evaluate(() => { S.f.trapeze = true; S.f.juggle = true; applyVisuals(); });
+  expect(new Set(await dur()).size).toBe(1);
+  expect(await anim(page, '#cc-balls-air .jball')).toBe('ccJugA');
+  await page.evaluate(() => { S.f.out4 = true; applyVisuals(); });
+  expect(await anim(page, '#cc-confetti .confetto')).toBe('ccConfetti');
+  expect(await moving(page)).toBeGreaterThan(40);
 });
 
 test('the classroom moves: the horse munches, Miss bobs at the door window, the clock ticks', async ({ page }) => {

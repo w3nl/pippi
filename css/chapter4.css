@@ -1,0 +1,101 @@
+/* Chapter 4: the big top. Close-ups: the ticket booth, the lighting desk, the teeterboard, the clown's juggling,
+   the trapezes and the curtain winch. Lots of moving parts, all stopped by the Motion setting (css/animations.css). */
+.dialog.who-ringmaster .who{color:#f2c94c} .dialog.who-ringmaster{border-left-color:#f2c94c}
+.dialog.who-clown .who,.dialog.who-seal .who{color:#ff8fa3} .dialog.who-clown,.dialog.who-seal{border-left-color:#ff8fa3}
+.dialog.who-strongman .who{color:#d9c79a} .dialog.who-strongman{border-left-color:#d9c79a}
+
+/* ---------- the big top comes alive ---------- */
+@keyframes ccSweepA{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(10deg)}}
+@keyframes ccSweepB{0%,100%{transform:rotate(12deg)}50%{transform:rotate(-12deg)}}
+@keyframes ccSwing{0%,100%{transform:rotate(-16deg)}50%{transform:rotate(16deg)}}
+@keyframes ccFlag{0%,100%{transform:skewY(0) scaleX(1)}50%{transform:skewY(-8deg) scaleX(.86)}}
+@keyframes ccPennant{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+@keyframes ccBulb{0%,60%,100%{opacity:1}30%{opacity:.25}}
+@keyframes ccBall{0%,100%{transform:translateY(0)}50%{transform:translateY(-26px)}}
+@keyframes ccCane{0%,100%{transform:rotate(0)}50%{transform:rotate(-14deg)}}
+/* the horse trots round the ring: along the front facing right, then back along the far side facing left, smaller */
+@keyframes ccTrot{
+  0%{transform:translate(-430px,-30px) scale(1,1)}
+  25%{transform:translate(0px,10px) scale(1,1)}
+  49.9%{transform:translate(430px,-30px) scale(1,1)}
+  50%{transform:translate(430px,-30px) scale(-.85,.85)}
+  75%{transform:translate(0px,-95px) scale(-.8,.8)}
+  99.9%{transform:translate(-430px,-30px) scale(-.85,.85)}
+  100%{transform:translate(-430px,-30px) scale(1,1)}
+}
+@keyframes ccStride{0%,100%{transform:rotate(14deg)}50%{transform:rotate(-14deg)}}
+@keyframes ccJugA{0%{transform:translate(-30px,40px)}25%{transform:translate(-14px,-30px)}50%{transform:translate(30px,40px)}75%{transform:translate(14px,-10px)}100%{transform:translate(-30px,40px)}}
+@keyframes ccConfetti{0%{transform:translateY(0) rotate(0)}100%{transform:translateY(960px) rotate(720deg)}}
+@keyframes ccBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+
+#sc-circus .beam{transform-box:fill-box;transform-origin:50% 0}
+#sc-circus .beam.a{animation:ccSweepA 7s ease-in-out infinite}
+#sc-circus .beam.b{animation:ccSweepB 9s ease-in-out infinite}
+#sc-circus .beam.c{animation:ccSweepA 8s ease-in-out infinite reverse}
+/* once the lights are fixed, the three white beams meet in the middle of the ring */
+#sc-circus.lit .beam{animation:none}
+#sc-circus.lit .beam.a{transform:rotate(-28deg)}
+#sc-circus.lit .beam.c{transform:rotate(28deg)}
+#sc-circus .swing{transform-box:fill-box;transform-origin:50% 0;animation:ccSwing 2.2s ease-in-out infinite}
+#sc-circus .swing.r{animation-duration:1.6s}
+#sc-circus.synced .swing.r{animation-duration:2.2s;animation-direction:reverse}
+#sc-circus .flagw{transform-box:fill-box;transform-origin:0 50%;animation:ccFlag 1.4s ease-in-out infinite}
+#sc-circus .flagw.b{animation-delay:-.7s}
+#sc-circus .pennant{transform-box:fill-box;transform-origin:50% 0;animation:ccPennant 3s ease-in-out infinite}
+#sc-circus .bulb{animation:ccBulb .9s steps(1,end) infinite}
+#sc-circus .sealball{animation:ccBall 1s ease-in-out infinite}
+#sc-circus .cane{transform-box:fill-box;transform-origin:0 0;animation:ccCane 3s ease-in-out infinite}
+#cc-horse{transform-box:fill-box;transform-origin:50% 100%;animation:ccTrot 14s linear infinite}
+#cc-horse .leg{transform-box:fill-box;transform-origin:50% 0;animation:ccStride .45s ease-in-out infinite}
+#cc-horse .leg.b{animation-direction:reverse}
+#cc-balls-air .jball{animation:ccJugA 1.2s linear infinite}
+#cc-balls-air .jball.b{animation-delay:-.4s} #cc-balls-air .jball.c{animation-delay:-.8s}
+#cc-pippi .bob{animation:ccBob 2s ease-in-out infinite}
+#cc-board{transition:transform .6s ease}
+/* showtime: the curtain opens and confetti rains */
+#cc-curl,#cc-curr{transition:transform 2.4s ease-in-out}
+#sc-circus.showtime #cc-curl{transform:translateX(-190px)}
+#sc-circus.showtime #cc-curr{transform:translateX(190px)}
+#sc-circus .confetto{animation:ccConfetti 4s linear infinite}
+#sc-circus.showtime #cc-horse{animation-duration:9s}
+
+/* ---------- close-ups ---------- */
+.booth4 p{margin:0 0 8px}
+.till{display:flex;gap:12px;justify-content:center;margin:8px 0}
+.coin{width:56px;height:56px;border-radius:50%;border:3px solid #7a5a1a;background:radial-gradient(circle at 35% 30%,#fff3b0,#c9952a);color:#4e2a12;font-family:var(--f-mono);font-size:20px;font-weight:700;display:inline-grid;place-items:center;padding:0}
+.coin.c2{width:48px;height:48px;font-size:17px;background:radial-gradient(circle at 35% 30%,#f3f3f3,#9aa0a6);border-color:#5a6068}
+.coin.c1{width:40px;height:40px;font-size:15px;background:radial-gradient(circle at 35% 30%,#ffd9b0,#b5651d);border-color:#7a3a10}
+.change{min-height:64px;display:flex;gap:6px;align-items:center;justify-content:center;flex-wrap:wrap;background:#2a1a0c;border-radius:8px;padding:8px;font-family:var(--f-mono)}
+.change .coin{cursor:default}
+
+.lightdesk{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:center}
+.mix-svg{width:220px;height:auto;border-radius:8px;flex:0 0 auto}
+.ld-ctl{display:flex;flex-direction:column;gap:8px;min-width:220px;flex:1 1 220px}
+.ld-switches{display:flex;gap:6px}
+.ld-switches .tog{flex:1;text-align:center}
+.ld-switches .ld0.on{border-color:#ff4a4a;color:#ff8a8a} .ld-switches .ld1.on{border-color:#4aff6a;color:#8aff9a} .ld-switches .ld2.on{border-color:#4a7aff;color:#9ab4ff}
+.ld-now{font-size:14px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.swatch{display:inline-block;width:22px;height:22px;border-radius:50%;border:2px solid var(--line)}
+
+.teeter-svg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;border-radius:6px}
+.tt-board{transition:transform .6s ease}
+.seat.on{background:var(--amber);color:#24120a}
+
+.jrow{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:10px 0}
+.jb{width:36px;height:36px;border-radius:50%;display:inline-grid;place-items:center;border:2px solid rgba(0,0,0,.3);box-shadow:inset -4px -4px 0 rgba(0,0,0,.18)}
+.jb.pick{border:2px dashed var(--amber);color:var(--amber);font-weight:700;padding:0}
+.hint-s{text-align:center;font-size:13px;color:var(--muted);margin:0}
+
+@keyframes ccPend{0%,100%{transform:rotate(-18deg)}50%{transform:rotate(18deg)}}
+.trap-svg{width:100%;max-width:440px;height:auto;display:block;margin:0 auto;border-radius:6px}
+.trap-svg .tp{transform-box:view-box;animation:ccPend 3s ease-in-out infinite}
+.trap-ctl{display:flex;flex-direction:column;gap:8px;margin-top:10px;font-size:14px}
+.trap-ctl input{width:100%;accent-color:var(--amber)}
+
+@keyframes ccSpinCW{to{transform:rotate(360deg)}}
+@keyframes ccSpinCCW{to{transform:rotate(-360deg)}}
+.gear-svg{width:100%;height:auto;display:block;border-radius:6px}
+.gear-svg .gear{transform-box:view-box}
+.gear-svg .gear.cw{animation:ccSpinCW 2s linear infinite}
+.gear-svg .gear.ccw{animation:ccSpinCCW 2s linear infinite}
+.gcount.on{background:var(--amber);color:#24120a}

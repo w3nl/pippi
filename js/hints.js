@@ -41,7 +41,7 @@ function stage2(){
   if(!S.f.swapped) return 'b_scale';
   return 'b_wake';
 }
-function stage_(){ return S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
+function stage_(){ return S.ch===4 ? stage4() : S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
 Object.assign(HINTS, {
   s_drawer: ["The chalk box is empty. Miss keeps the chalk in her desk drawer, and she has written herself a note about its code.", "The plaque over the door says MDCCCXCIV: 1000 + 500 + 300 + 90 + 4 = 1894. Set the desk's padlock to 1 8 9 4."],
   s_nines: ["Task 1: Pippi's nines on the blackboard have three mistakes. The poster next to the board shows the nines trick.", "Use the chalk on the blackboard and mark 9 × 5, 9 × 8 and 9 × 10 (they should be 45, 72 and 90). Then click Done marking."],
@@ -55,4 +55,20 @@ function stage3(){
   if(!S.f.drawer) return 's_drawer';
   for(const k of TASKS3) if(!S.f[k]) return { nines:'s_nines', abc:'s_abc', bugs:'s_bugs', cake:'s_cake', seasons:'s_seasons' }[k];
   return 's_bell';
+}
+
+Object.assign(HINTS, {
+  c_tickets: ["Nobody gets in without a ticket. The ticket booth is by the entrance, and the sign says what a ticket costs.", "Four tickets at 3 crowns is 12 crowns. Pippi pays 20, so give 8 crowns change (for example 5 + 2 + 1)."],
+  c_show: ["You have the tickets. Who wants to see them?", "Select the tickets and click the ringmaster."],
+  c_lights: ["The spotlights need the right colours. Coloured light mixes differently from paint.", "Yellow = red + green. Cyan = green + blue. White = red + green + blue."],
+  c_teeter: ["The teeterboard balances when weight × distance is the same on both sides. The strongman: 90 kg at 1 metre.", "Pippi weighs 30 kg: put her at 3 metres, because 30 × 3 = 90 × 1."],
+  c_juggle: ["The clown juggles in a repeating pattern. Look at the first balls: which group repeats?", "Red, blue, blue keeps repeating. The last three are blue, blue, red."],
+  c_trapeze: ["The trapezes must swing in the same rhythm. Does a heavier flyer swing slower?", "No: only the length of the rope matters. Give both ropes the same length."],
+  c_gears: ["Everything on the checklist is done. The curtain winch on the right of the curtain opens it. Gears that touch turn opposite ways.", "Put 2 gears in between: crank ↻, gear ↺, gear ↻, drum ↺. Then turn the crank."]
+});
+function stage4(){
+  if(!S.f.tickets) return 'c_tickets';
+  if(!S.f.inside) return 'c_show';
+  for(const k of TASKS4) if(!S.f[k]) return { lights: 'c_lights', teeter: 'c_teeter', juggle: 'c_juggle', trapeze: 'c_trapeze' }[k];
+  return 'c_gears';
 }

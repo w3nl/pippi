@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><title>The strongman</title>
+  <rect width="120" height="120" rx="14" fill="#7a1414"/>
+  <path d="M4 120 q4-40 56-42 q52 2 56 42z" fill="#1a1a1a"/>
+  <path d="M14 100 h92" stroke="#fffaf0" stroke-width="8" stroke-dasharray="10 8"/>
+  <rect x="50" y="70" width="20" height="14" fill="#e2b38c"/>
+  <ellipse cx="60" cy="52" rx="26" ry="27" fill="#e2b38c"/>
+  <path d="M34 46 q2 -24 26 -24 q24 0 26 24 q-6 -10 -26 -10 q-20 0 -26 10z" fill="#1a1a1a"/>
+  <circle cx="50" cy="50" r="3" fill="#111"/><circle cx="70" cy="50" r="3" fill="#111"/>
+  <path d="M40 62 q20 16 40 0" stroke="#1a1a1a" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M50 70 q10 6 20 0" stroke="#9a3a2a" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

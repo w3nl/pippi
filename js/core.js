@@ -45,7 +45,7 @@ function beep(freq=660, dur=.08, type='triangle', vol=.06){
 const chord = (arr, gap=90) => arr.forEach((f,i)=>setTimeout(()=>beep(f,.14,'triangle',.06), i*gap));
 
 /* ---------- dialogue ---------- */
-const WHO = { you:'You', sys:'Villa Villekulla', pippi:'Pippi', nilsson:'Mr Nilsson', horse:'The horse', spunk:'The spunk', tommy:'Tommy', annika:'Annika', karlsson:'Thunder-Karlsson', bloom:'Bloom', teacher:'Miss' };
+const WHO = { you:'You', sys:'Villa Villekulla', pippi:'Pippi', nilsson:'Mr Nilsson', horse:'The horse', spunk:'The spunk', tommy:'Tommy', annika:'Annika', karlsson:'Thunder-Karlsson', bloom:'Bloom', teacher:'Miss', ringmaster:'The ringmaster', clown:'The clown', strongman:'The strongman', seal:'The seal' };
 let queue = [], typing = null, full = '', onDone = null, curLine = null;
 function say(lines, done){
   queue = (Array.isArray(lines) ? lines : [lines]).map(l => typeof l === 'string' ? ['you', l] : l);
@@ -54,7 +54,7 @@ function say(lines, done){
 }
 /* Portraits next to the dialogue (portraits/*.svg). The narrator ('sys') has none. */
 function faceFor(who){
-  const file = { you:'you', pippi:'pippi', nilsson:'nilsson', horse:'horse', spunk:'spunk', tommy:'tommy', annika:'annika', karlsson:'karlsson', bloom:'bloom', teacher:'teacher' }[who];
+  const file = { you:'you', pippi:'pippi', nilsson:'nilsson', horse:'horse', spunk:'spunk', tommy:'tommy', annika:'annika', karlsson:'karlsson', bloom:'bloom', teacher:'teacher', ringmaster:'ringmaster', clown:'clown', strongman:'strongman' }[who];
   return file ? `portraits/${file}.svg` : null;
 }
 function next(){
@@ -68,7 +68,7 @@ function next(){
   if(face){ box.classList.add('has-face'); fe.hidden = false;
     if(fe.getAttribute('src') !== face){ fe.src = face; fe.classList.remove('face-in'); void fe.offsetWidth; fe.classList.add('face-in'); } }
   else fe.hidden = true;
-  $('#d-who').textContent = (who==='sys' && S.ch===2) ? 'Villa Villekulla · night' : (who==='sys' && S.ch===3) ? 'The little school' : (WHO[who] || who);
+  $('#d-who').textContent = (who==='sys' && S.ch===2) ? 'Villa Villekulla · night' : (who==='sys' && S.ch===3) ? 'The little school' : (who==='sys' && S.ch===4) ? 'The big top' : (WHO[who] || who);
   $('#d-more').textContent = matchMedia('(hover: none)').matches ? (queue.length ? 'tap ▸' : 'tap ✕') : (queue.length ? 'click ▸' : 'click ✕');
   full = tx(text); let i = 0;
   const el = $('#d-txt'); el.textContent = '';
@@ -121,8 +121,9 @@ function applyVisuals(){
   $('#sc-kitchen').classList.toggle('on', S.scene==='kitchen');
   $('#sc-bedroom').classList.toggle('on', S.scene==='bedroom');
   $('#sc-school').classList.toggle('on', S.scene==='school');
-  $('#chap').textContent = S.ch===3 ? 'Chapter 3 · Pippi Goes to School' : S.ch===2 ? 'Chapter 2 · Burglars in the Night' : 'Chapter 1 · Locked In with Mr Nilsson';
-  applyKitchen(); applyBedroom(); applySchool(); exitLabels();
+  $('#sc-circus').classList.toggle('on', S.scene==='circus');
+  $('#chap').textContent = S.ch===4 ? 'Chapter 4 · Pippi Goes to the Circus' : S.ch===3 ? 'Chapter 3 · Pippi Goes to School' : S.ch===2 ? 'Chapter 2 · Burglars in the Night' : 'Chapter 1 · Locked In with Mr Nilsson';
+  applyKitchen(); applyBedroom(); applySchool(); applyCircus(); exitLabels();
   $('#hint-count').textContent = S.hints;
 }
 function go(scene){

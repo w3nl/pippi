@@ -263,8 +263,6 @@
 > Skolan slut · kapitel 3 klart
 = Holidays
 > Lov
-= Pippi has her holidays, and Miss has the biggest piece of cake. Next: the circus comes to town. Chapter 4 is still being written.
-> Pippi har fått sitt lov, och fröken har fått den största tårtbiten. Härnäst: cirkusen kommer till stan. Kapitel 4 håller fortfarande på att skrivas.
 = Pippi goes to school
 > Pippi börjar skolan
 = Chapter 3: Pippi goes to school
@@ -283,3 +281,57 @@
 > Fröken
 = The little school
 > Den lilla skolan
+
+# ---------- Chapter 4: menus, end screen, speakers, item uses ----------
+= Classroom door: on to Chapter {n}
+> Klassrumsdörren: vidare till kapitel {n}
+= Pippi has her holidays, and Miss has the biggest piece of cake. Next: the circus comes to town, and the show can't begin…
+> Pippi har lov, och fröken har den största tårtbiten. Härnäst: cirkusen kommer till stan, och föreställningen kan inte börja…
+= Continue to Chapter 4
+> Vidare till kapitel 4
+= Showtime · Chapter 4 complete
+> Föreställning! · kapitel 4 klart
+= Bravo
+> Bravo
+= Pippi lifted the strongman, and the circus wants her to stay. Next: a ship sails into the harbour… Chapter 5 is still being written.
+> Pippi lyfte starke mannen, och cirkusen vill att hon stannar. Härnäst: ett skepp seglar in i hamnen… Kapitel 5 håller fortfarande på att skrivas.
+= Pippi goes to the circus
+> Pippi på cirkus
+= Chapter 4: Pippi goes to the circus
+> Kapitel 4: Pippi på cirkus
+= Chapter 4 · Pippi Goes to the Circus
+> Kapitel 4 · Pippi på cirkus
+= Honked the clown's nose
+> Tutade på clownens näsa
+= Lights out!
+> Släck!
+= The flying strongman
+> Den flygande starke mannen
+= Back in the big top. The ringmaster is still pulling at his moustache.
+> Tillbaka i cirkustältet. Direktören drar fortfarande i sin mustasch.
+= Back at the circus. The ringmaster is still waiting for tickets.
+> Tillbaka på cirkusen. Direktören väntar fortfarande på biljetter.
+= Take your time. School's out, and the classroom is all yours. Mr Nilsson is finishing the cake. When you're ready, the classroom door leads on to Chapter {n}.
+> Ta den tid du behöver. Skolan är slut, och klassrummet är ditt. Herr Nilsson äter upp tårtan. När du är redo leder klassrumsdörren vidare till kapitel {n}.
+= Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming.
+> Ta den tid du behöver. Föreställningen fortsätter: hästen travar fortfarande runt i manegen, och konfettin bara fortsätter att falla.
+= The ringmaster
+> Direktören
+= The clown
+> Clownen
+= The strongman
+> Starke mannen
+= The seal
+> Sälen
+= The big top
+> Cirkustältet
+= Circus tickets are for showing to the ringmaster.
+> Cirkusbiljetter ska man visa för direktören.
+= Four tickets, very good. Welcome to the circus!
+> Fyra biljetter, utmärkt. Välkomna till cirkusen!
+= But oh dear, oh dear. The show can't begin! Everything is going wrong.
+> Men åh nej, åh nej. Föreställningen kan inte börja! Allting går fel.
+= The spotlights are all the wrong colours, the teeterboard won't balance, the clown has forgotten his juggling, and the trapeze artists can't catch each other. My checklist is on the tent pole.
+> Strålkastarna har fel färger, gungbrädan väger inte jämnt, clownen har glömt hur man jonglerar, och trapetsartisterna kan inte fånga varandra. Min checklista sitter på tältstången.
+= I've never fixed a circus, so I'm sure I can!
+> Jag har aldrig lagat en cirkus förut, så det klarar jag säkert!
