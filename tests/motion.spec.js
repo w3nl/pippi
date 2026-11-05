@@ -162,3 +162,30 @@ test('a new item pops into your pockets', async ({ page }) => {
   await expect(page.locator('.slot.pop')).toHaveAttribute('title', 'Eggs');
   expect(await anim(page, '.slot.pop')).toBe('slotpop');
 });
+
+test('things come and go smoothly: the horse trots off, the island grows; with Motion off they switch at once', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await seed(page, { f: { introDone: true, key: true, unlocked: true } });
+  await page.locator('#btn-cont').click();
+  await skip(page);
+  await page.evaluate(() => { S.f.out1 = true; applyVisuals(); });
+  await expect(page.locator('#vk-horse')).toHaveClass(/vk-horse-off/);
+  await expect(page.locator('#vk-horse')).toBeVisible();          // still on its way out
+  await expect(page.locator('#vk-horse')).toBeHidden({ timeout: 5_000 });
+  // a change made behind a close-up waits until it closes
+  await page.evaluate(() => { S.f.out1 = false; openModal('Test', '', '<p>…</p>'); applyVisuals(); });
+  await expect(page.locator('#vk-horse')).toBeHidden();
+  await page.evaluate(() => closeModal());
+  await expect(page.locator('#vk-horse')).toBeVisible();
+  // the island at land ho
+  await seed(page, { ch: 6, scene: 'ship', f: { introDone: true, aboard: true, course: true, floats: true, water: true, equator: true } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6']);
+  await page.locator('#btn-cont').click();
+  await skip(page);
+  await page.evaluate(() => { S.f.out6 = true; applyVisuals(); });
+  await expect(page.locator('#hp-isle')).toHaveClass(/hp-isle-in/);
+  // Motion off: no fades, things just switch
+  await page.locator('#btn-motion').click(); await page.locator('#btn-motion').click();
+  await expect(page.locator('#btn-motion')).toHaveText('Motion off');
+  await page.evaluate(() => { S.f.out6 = false; applyVisuals(); });
+  await expect(page.locator('#hp-isle')).toBeHidden();
+});

@@ -110,6 +110,9 @@
 #vk-nilsson.bob{animation:bob 2.2s ease-in-out infinite}
 #vk-nilsson .tail{transform-box:fill-box;transform-origin:0% 100%;animation:tail 1.6s ease-in-out infinite}
 #vk-horse.nod{transform-box:fill-box;transform-origin:30% 100%;animation:nod 6s ease-in-out infinite}
+/* once it has had its sugar, the horse tosses its head and trots off out of the door's window (vis() in core.js) */
+@keyframes vkHorseOff{0%{transform:none}18%{transform:translateY(-10px) rotate(-8deg)}34%{transform:translateY(-3px) rotate(5deg)}100%{transform:translate(180px,26px) rotate(6deg)}}
+#vk-horse.vk-horse-off{transform-box:view-box;transform-origin:1416px 324px;animation:vkHorseOff 2.2s ease-in-out both}
 .cloud{animation:cloud 40s linear infinite}
 .cloud.slow{animation-duration:65s;animation-delay:-30s}
 /* the bird flies past once every 22 seconds: 4 seconds of flight, then a long pause off-screen */

@@ -90,3 +90,10 @@
 .hp-flake{animation:hpSnow 9s linear infinite}
 #sc-ship.castoff #hp-snow{display:inline!important;animation:hpSnowGo 3s ease-in both}
 #sc-ship.castoff #hp-wintersky{display:inline!important;animation:hpSkyGo 3s ease-in both}
+
+/* Land ho: the island grows up out of the little dark tip on the horizon as the Hoppetossa sails in
+   (data-in on #hp-isle and #hp-isletip; vis() in core.js) */
+@keyframes hpIsleIn{0%{transform:scale(.12,.05);opacity:0}12%{opacity:1}100%{transform:none;opacity:1}}
+@keyframes hpTipIn{0%{transform:translateY(12px);opacity:0}100%{transform:none;opacity:1}}
+#hp-isle.hp-isle-in{transform-box:view-box;transform-origin:1537px 548px;animation:hpIsleIn 5s cubic-bezier(.45,.05,.35,1) both}
+#hp-isletip.hp-tip-in{transform-box:fill-box;transform-origin:50% 100%;animation:hpTipIn 2.6s ease-out both}

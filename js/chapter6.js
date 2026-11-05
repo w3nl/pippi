@@ -40,7 +40,7 @@ function buildShip(){
 }
 /* The time of day follows the voyage: day until the water is made, night until the Equator, then dawn and the island. */
 function applyShip(){
-  const show = (sel, on) => { const el = $(sel); if(el) el.style.display = on ? '' : 'none'; };
+  const show = vis;   // smooth when you can see it happen (core.js)
   const sc = $('#sc-ship'); if(!sc) return;
   const night = !!S.f.water && !S.f.equator, dawn = !!S.f.equator && !S.f.out6, day = !night && !dawn;
   sc.classList.toggle('sailing', !!S.f.course);

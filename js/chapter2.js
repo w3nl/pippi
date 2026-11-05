@@ -25,7 +25,7 @@ Object.assign(ITEMS, {
 
 /* ---------- drawing the bedroom ---------- */
 function applyBedroom(){
-  const show = (sel, on) => { const el = $(sel); if(el) el.style.display = on ? '' : 'none'; };
+  const show = vis;   // smooth when you can see it happen (core.js)
   show('#br-spunk', !S.f.spunkTaken); show('#hit-spunk2', !S.f.spunkTaken);
   show('#br-torch', !S.f.torchOn);
   show('#br-beam', !!S.f.torchOn);

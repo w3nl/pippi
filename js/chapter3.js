@@ -21,7 +21,7 @@ Object.assign(ITEMS, {
 const NINES3 = [9, 18, 27, 36, 54, 54, 63, 27, 81, 100];   // Pippi's pluttification: 9 × 5, 9 × 8 and 9 × 10 are wrong
 const NINES3_WRONG = [4, 7, 9];
 function applySchool(){
-  const show = (sel, on) => { const el = $(sel); if(el) el.style.display = on ? '' : 'none'; };
+  const show = vis;   // smooth when you can see it happen (core.js)
   show('#sl-spunk', !S.f.spunkTaken); show('#hit-spunk3', !S.f.spunkTaken);
   show('#sl-lock', !S.f.drawer);
   TASKS3.forEach((k, i) => show('#sl-tick' + i, !!S.f[k]));

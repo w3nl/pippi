@@ -116,8 +116,48 @@ function renderInv(){
 function give(id){ if(!S.inv.includes(id)) S.inv.push(id); justGiven = id; chord([523,659,784]); renderInv(); save(); }
 function take(id){ S.inv = S.inv.filter(x=>x!==id); if(sel===id) sel=null; renderInv(); save(); }
 
+/* ---------- smooth showing and hiding ---------- */
+/* vis(selector, on) shows or hides a part of a room. When the player can watch it happen, it fades in or out
+   (or plays the element's own data-in / data-out animation, e.g. the horse trotting off); otherwise it switches
+   at once: on the first draw, when the room changes, on the title screen, with Motion off, and for hotspots.
+   Changes made while a close-up is open wait, and play when it closes (visFlush, from closeModal). */
+let visQuiet = true;
+const visPending = new Map();
+function visSet(el, on, animate){
+  el._vis = on;
+  clearTimeout(el._visT); el.classList.remove('vis-in', 'vis-out', 'vis-slow-in', 'vis-slow-out');
+  if(el.dataset.in) el.classList.remove(el.dataset.in);
+  if(el.dataset.out) el.classList.remove(el.dataset.out);
+  if(!animate){ el.style.display = on ? '' : 'none'; return; }
+  if(on) el.style.display = '';
+  const own = getComputedStyle(el).animationName !== 'none';   // an element that already moves just switches
+  const cls = on ? (el.dataset.in || (own ? '' : 'vis-in')) : (el.dataset.out || (own ? '' : 'vis-out'));
+  if(!cls){ if(!on) el.style.display = 'none'; return; }
+  void el.getBoundingClientRect();   // restart the animation if it was already running
+  el.classList.add(cls);
+  const done = () => { el.classList.remove(cls); if(!on) el.style.display = 'none'; };
+  const ms = (parseFloat(getComputedStyle(el).animationDuration) || 1) * 1000 + (parseFloat(getComputedStyle(el).animationDelay) || 0) * 1000;
+  el._visT = setTimeout(done, ms + 60);
+}
+function vis(sel, on){
+  const el = typeof sel === 'string' ? $(sel) : sel; if(!el) return;
+  on = !!on;
+  const quiet = visQuiet || el._vis === undefined || reducedMotion() || el.classList.contains('hit') || !el.closest('.scene.on') || !$('#title').hidden;
+  if(quiet){ visPending.delete(el); if(on !== el._vis || el._vis === undefined) visSet(el, on, false); return; }
+  if(!$('#modal').hidden){ if(on === el._vis) visPending.delete(el); else visPending.set(el, on); return; }
+  visPending.delete(el);
+  if(on !== el._vis) visSet(el, on, true);
+}
+function visFlush(){
+  const all = [...visPending]; visPending.clear();
+  all.forEach(([el, on]) => { if(on !== el._vis) visSet(el, on, !reducedMotion() && !!el.closest('.scene.on')); });
+}
+
 /* ---------- scene visuals ---------- */
 function applyVisuals(){
+  // a room you're only just walking into (or a new game) is drawn at once; changes you can watch are smooth
+  const fresh = applyVisuals.scene !== S.scene || applyVisuals.state !== S; applyVisuals.scene = S.scene; applyVisuals.state = S;
+  visQuiet = fresh || !$('#title').hidden;
   $('#sc-kitchen').classList.toggle('on', S.scene==='kitchen');
   $('#sc-bedroom').classList.toggle('on', S.scene==='bedroom');
   $('#sc-school').classList.toggle('on', S.scene==='school');
@@ -169,7 +209,7 @@ function openModal(title, sub, html, onOpen, onClose){
   modalClose = onClose || null;
   onOpen && onOpen($('#m-body'));
 }
-function closeModal(){ if($('#modal').hidden) return; $('#modal').hidden = true; $('#m-body').innerHTML=''; const c = modalClose; modalClose=null; c && c(); }
+function closeModal(){ if($('#modal').hidden) return; $('#modal').hidden = true; $('#m-body').innerHTML=''; const c = modalClose; modalClose=null; c && c(); visFlush(); }
 $('#m-close').onclick = closeModal;
 $('#modal').addEventListener('click', e => { if(e.target.id==='modal') closeModal(); });
 
