@@ -17,11 +17,11 @@
    clown at the back: along the front facing right, then back along the far side facing left, smaller */
 @keyframes ccTrot{
   0%{transform:translate(-300px,34px) scale(1,1)}
-  25%{transform:translate(-115px,58px) scale(1,1)}
-  49.9%{transform:translate(70px,34px) scale(1,1)}
-  50%{transform:translate(70px,34px) scale(-.85,.85)}
-  75%{transform:translate(-115px,-12px) scale(-.8,.8)}
-  99.9%{transform:translate(-300px,34px) scale(-.85,.85)}
+  23%{transform:translate(-115px,58px) scale(1,1)}
+  46%{transform:translate(66px,34px) scale(1,1)}
+  50%{transform:translate(74px,30px) scale(-.85,.85)}
+  73%{transform:translate(-115px,-12px) scale(-.8,.8)}
+  96%{transform:translate(-304px,30px) scale(-.85,.85)}
   100%{transform:translate(-300px,34px) scale(1,1)}
 }
 /* a trot: each leg swings forward while its knee folds (the hoof lifts), then pushes back along the ground, straight */
@@ -51,7 +51,10 @@
 #sc-circus .bulb{animation:ccBulb .9s steps(1,end) infinite}
 #sc-circus .sealball{animation:ccBall 1s ease-in-out infinite}
 #sc-circus .cane{transform-box:fill-box;transform-origin:0 0;animation:ccCane 3s ease-in-out infinite}
-#cc-horse{transform-box:fill-box;transform-origin:50% 100%;animation:ccTrot 14s linear infinite}
+/* the turning point is fixed at the horse's hooves (815, 800): measured from its outline (fill-box) it wobbled in
+   Firefox, because the swinging legs keep changing that outline. At each end of the ring it turns round in a short
+   about-face (scaleX passes through 0) instead of flipping in one frame. */
+#cc-horse{transform-box:view-box;transform-origin:815px 800px;animation:ccTrot 14s linear infinite}
 /* diagonal pairs move together: near fore with far hind (a), far fore with near hind (b), half a stride apart */
 #cc-horse .hleg,#cc-horse .shin{transform-box:view-box}
 #cc-horse .hleg{animation:ccLeg .6s linear infinite}
