@@ -63,6 +63,14 @@ function applyShip(){
   show('#hp-sext', !S.f.sextTaken);
   show('#hp-glass', !S.f.glassTaken); show('#hit-glass6', !S.f.glassTaken);
 }
+/* The horse is hoisted aboard: up from the quay, the boom swings round, down onto the deck, and it walks to its place
+   (css: .hoisting in chapter6.css). With Motion off it is simply on deck. */
+function hoist6(){
+  if(reducedMotion()) return;
+  const sc = $('#sc-ship');
+  sc.classList.remove('hoisting'); void sc.getBoundingClientRect(); sc.classList.add('hoisting');
+  setTimeout(() => sc.classList.remove('hoisting'), 6200);
+}
 /* Casting off: the sails drop, and the quay slides away behind the ship. */
 function castOff6(){
   const sc = $('#sc-ship');
@@ -184,7 +192,7 @@ function openHoist(){
       if(each <= PULL_KG){
         S.f.aboard = true; save(); applyVisuals(); chord([523,659,784,1046]);
         fb.className = 'feedback good'; fb.textContent = tx('Four ropes share the 400 kg: 100 kg each. Up goes the horse! You had to pull four metres of rope for every metre it rose, but you could do it.');
-        setTimeout(() => { closeModal(); say(["The horse rises gently into the air, swings over the rail, and lands on deck with four clonks.", ['horse', "Neeeigh!"], ['captain', "Well hoisted, sailor! Now: a course for my island. My chart is in the cabin."]]); }, 1900);
+        setTimeout(() => { closeModal(); hoist6(); say(["The horse rises gently into the air, swings over the rail, and lands on deck with four clonks.", ['horse', "Neeeigh!"], ['captain', "Well hoisted, sailor! Now: a course for my island. My chart is in the cabin."]]); }, 1900);
         return;
       }
       nope(); fb.className = 'feedback bad';

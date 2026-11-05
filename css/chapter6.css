@@ -97,3 +97,29 @@
 @keyframes hpTipIn{0%{transform:translateY(12px);opacity:0}100%{transform:none;opacity:1}}
 #hp-isle.hp-isle-in{transform-box:view-box;transform-origin:1537px 548px;animation:hpIsleIn 5s cubic-bezier(.45,.05,.35,1) both}
 #hp-isletip.hp-tip-in{transform-box:fill-box;transform-origin:50% 100%;animation:hpTipIn 2.6s ease-out both}
+
+/* ---------- the horse is hoisted aboard (class "hoisting" on #sc-ship for a few seconds; hoist6() in chapter6.js) ----------
+   Up from the quay in a sling, just over the rail, the boom swings round, the horse is set down on the raised back
+   deck, walks along it and steps down to its place on the main deck, with its legs moving. Skipped with Motion off: then the horse is simply on deck. */
+#sc-ship.hoisting #hp-qhorse,#sc-ship.hoisting #hp-dhorse,#sc-ship.hoisting #hp-ropelong,#sc-ship.hoisting #hp-ropeshort{display:none!important}
+#sc-ship.hoisting #hp-lift{display:inline!important}
+@keyframes hpLift{0%{transform:none}30%{transform:translate(0,-206px)}58%{transform:translate(222px,-206px)}64%{transform:translate(222px,-196px)}86%{transform:translate(370px,-196px)}93%{transform:translate(415px,-170px)}100%{transform:translate(450px,-116px)}}
+@keyframes hpLiftRope{0%{transform:none;opacity:1}30%{transform:scaleY(.03)}58%{transform:translateX(222px) scaleY(.03);opacity:1}64%,100%{transform:translateX(222px) scaleY(.03);opacity:0}}
+@keyframes hpSling{0%,62%{opacity:1}68%,100%{opacity:0}}
+@keyframes hpBoom{0%,30%{transform:none}58%,66%{transform:scaleX(-1)}88%,100%{transform:none}}
+#hp-lifthorse,#hp-liftrope,#hp-boom{transform-box:view-box}
+#hp-liftrope{transform-origin:104px 240px}
+#hp-boom{transform-origin:215px 202px}
+#sc-ship.hoisting #hp-lifthorse{animation:hpLift 6s ease-in-out both}
+#sc-ship.hoisting #hp-liftrope{animation:hpLiftRope 6s ease-in-out both}
+#sc-ship.hoisting #hp-sling{animation:hpSling 6s linear both}
+#sc-ship.hoisting #hp-boom{animation:hpBoom 6s ease-in-out both}
+/* its legs walk along the deck (the last part of the hoist). The legs are in the shared <use> drawing, so the
+   animation is passed down as inherited custom properties, like the winter horse's (chapter4.css). */
+@keyframes hpLegA{0%,100%{transform:rotate(0)}25%{transform:rotate(22deg)}75%{transform:rotate(-22deg)}}
+@keyframes hpLegB{0%,100%{transform:rotate(0)}25%{transform:rotate(-22deg)}75%{transform:rotate(22deg)}}
+.hp-leg{transform-box:fill-box;transform-origin:50% 0;animation-duration:.52s;animation-timing-function:ease-in-out;animation-fill-mode:both;
+  animation-delay:var(--hp-leg-at,0s);animation-iteration-count:var(--hp-steps,1)}
+.hp-leg.a{animation-name:var(--hp-leg-a,none)}
+.hp-leg.b{animation-name:var(--hp-leg-b,none)}
+#sc-ship.hoisting #hp-lifthorse{--hp-leg-a:hpLegA;--hp-leg-b:hpLegB;--hp-leg-at:3.84s;--hp-steps:4}
