@@ -13,7 +13,7 @@
 
   <!-- the sky: day, a tropical shower, then dusk and moonlight -->
   <rect width="1600" height="900" fill="url(#siSky)"/>
-  <g id="si-sun"><circle cx="1240" cy="96" r="110" fill="url(#siSun)"/><g class="rays" stroke="#fff1b0" stroke-width="6" stroke-linecap="round" opacity=".7"><path d="M1240 -8 v28 M1240 172 v28 M1136 96 h-28 M1344 96 h28 M1166 22 l-20 -20 M1314 170 l20 20 M1314 22 l20 -20 M1166 170 l-20 20"/></g><circle cx="1240" cy="96" r="46" fill="#ffe27a"/></g>
+  <g id="si-sun" data-in="vis-slow-in" data-out="vis-slow-out"><circle cx="1240" cy="96" r="110" fill="url(#siSun)"/><g class="rays" stroke="#fff1b0" stroke-width="6" stroke-linecap="round" opacity=".7"><path d="M1240 -8 v28 M1240 172 v28 M1136 96 h-28 M1344 96 h28 M1166 22 l-20 -20 M1314 170 l20 20 M1314 22 l20 -20 M1166 170 l-20 20"/></g><circle cx="1240" cy="96" r="46" fill="#ffe27a"/></g>
   <g clip-path="url(#siSkyClip)">
     <g class="si-cloud a" fill="#fff" opacity=".9"><ellipse cx="300" cy="90" rx="80" ry="24"/><ellipse cx="270" cy="76" rx="40" ry="26"/><ellipse cx="326" cy="72" rx="46" ry="30"/></g>
     <g class="si-cloud b" fill="#fff" opacity=".8"><ellipse cx="860" cy="150" rx="64" ry="18"/><ellipse cx="836" cy="140" rx="32" ry="20"/></g>
@@ -21,17 +21,17 @@
     <g class="si-bird" stroke="#22303e" stroke-width="4" fill="none" stroke-linecap="round"><path class="wings" d="M0 0 q14 -12 28 0 q14 -12 28 0"/></g>
   </g>
   <!-- the tropical shower: dark sky, rain and lightning -->
-  <g id="si-stormsky"><rect width="1600" height="900" fill="url(#siStorm)" opacity=".85"/>
+  <g id="si-stormsky" data-in="vis-slow-in" data-out="vis-slow-out"><rect width="1600" height="900" fill="url(#siStorm)" opacity=".85"/>
     <g fill="#5a6676"><ellipse cx="380" cy="110" rx="220" ry="60"/><ellipse cx="760" cy="80" rx="260" ry="70"/><ellipse cx="1180" cy="120" rx="260" ry="66"/><ellipse cx="560" cy="150" rx="200" ry="44"/></g>
     <path class="si-bolt" d="M1320 40 l-40 90 h30 l-34 90 l80 -116 h-34 l30 -64z" fill="#fff6b0"/></g>
   <!-- dusk: the sunset, the moon and the first stars -->
-  <g id="si-dusksky"><rect width="1600" height="900" fill="url(#siDusk)"/>
+  <g id="si-dusksky" data-in="vis-slow-in" data-out="vis-slow-out"><rect width="1600" height="900" fill="url(#siDusk)"/>
     <g class="si-stars" fill="#fffbe0"><circle class="tw" cx="120" cy="60" r="2"/><circle class="tw b" cx="260" cy="130" r="1.6"/><circle class="tw" cx="420" cy="40" r="2.2"/><circle class="tw c" cx="640" cy="90" r="1.6"/><circle class="tw b" cx="780" cy="30" r="2"/><circle class="tw" cx="960" cy="70" r="1.8"/><circle class="tw c" cx="1080" cy="140" r="1.6"/><circle class="tw b" cx="1400" cy="50" r="2"/><circle class="tw" cx="1520" cy="120" r="1.6"/><circle class="tw c" cx="560" cy="170" r="1.4"/></g>
     <circle cx="1180" cy="120" r="44" fill="#fdf6d8"/><circle cx="1166" cy="110" r="8" fill="#e9e0c0"/><circle cx="1194" cy="134" r="6" fill="#e9e0c0"/></g>
 
   <!-- the open sea, the reef and the Hoppetossa at anchor -->
   <rect y="330" width="1600" height="300" fill="url(#siSea)"/>
-  <g id="si-moonpath" fill="#fdf6d8" opacity=".55"><rect x="1150" y="340" width="60" height="4" rx="2"/><rect x="1130" y="356" width="100" height="4" rx="2"/><rect x="1110" y="374" width="140" height="5" rx="2"/><rect x="1090" y="394" width="180" height="5" rx="2"/></g>
+  <g id="si-moonpath" data-in="vis-slow-in" data-out="vis-slow-out" fill="#fdf6d8" opacity=".55"><rect x="1150" y="340" width="60" height="4" rx="2"/><rect x="1130" y="356" width="100" height="4" rx="2"/><rect x="1110" y="374" width="140" height="5" rx="2"/><rect x="1090" y="394" width="180" height="5" rx="2"/></g>
   <path d="M0 404 q60 -10 120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0" stroke="#e8f8ff" stroke-width="5" fill="none" opacity=".8"/>
   <g id="si-ship" class="si-ship">
     <path d="M70 360 H360 Q350 400 320 418 H110 Q80 400 70 360z" fill="#7a4022"/>
@@ -170,10 +170,10 @@
   </g>
 
   <!-- the rain, in front of everything (only during the shower) -->
-  <g id="si-rain" stroke="#dfe9f3" stroke-width="2" opacity=".7"><g class="drops"><path d="M40 0 l-12 40 M140 60 l-12 40 M260 20 l-12 40 M380 90 l-12 40 M500 10 l-12 40 M620 70 l-12 40 M740 30 l-12 40 M860 100 l-12 40 M980 0 l-12 40 M1100 60 l-12 40 M1220 20 l-12 40 M1340 80 l-12 40 M1460 10 l-12 40 M1580 70 l-12 40 M80 200 l-12 40 M320 240 l-12 40 M560 200 l-12 40 M800 260 l-12 40 M1040 210 l-12 40 M1280 250 l-12 40 M1520 220 l-12 40 M200 400 l-12 40 M440 440 l-12 40 M680 400 l-12 40 M920 460 l-12 40 M1160 410 l-12 40 M1400 450 l-12 40 M120 620 l-12 40 M360 660 l-12 40 M600 620 l-12 40 M840 680 l-12 40 M1080 630 l-12 40 M1320 670 l-12 40 M1560 640 l-12 40"/></g></g>
+  <g id="si-rain" data-in="vis-slow-in" data-out="vis-slow-out" stroke="#dfe9f3" stroke-width="2" opacity=".7"><g class="drops"><path d="M40 0 l-12 40 M140 60 l-12 40 M260 20 l-12 40 M380 90 l-12 40 M500 10 l-12 40 M620 70 l-12 40 M740 30 l-12 40 M860 100 l-12 40 M980 0 l-12 40 M1100 60 l-12 40 M1220 20 l-12 40 M1340 80 l-12 40 M1460 10 l-12 40 M1580 70 l-12 40 M80 200 l-12 40 M320 240 l-12 40 M560 200 l-12 40 M800 260 l-12 40 M1040 210 l-12 40 M1280 250 l-12 40 M1520 220 l-12 40 M200 400 l-12 40 M440 440 l-12 40 M680 400 l-12 40 M920 460 l-12 40 M1160 410 l-12 40 M1400 450 l-12 40 M120 620 l-12 40 M360 660 l-12 40 M600 620 l-12 40 M840 680 l-12 40 M1080 630 l-12 40 M1320 670 l-12 40 M1560 640 l-12 40"/></g></g>
   <rect id="si-flash" width="1600" height="900" fill="#fff"/>
   <!-- night falls over everything at dusk -->
-  <rect id="si-tint" width="1600" height="900" fill="#1b1f4a" opacity=".32"/>
+  <rect id="si-tint" data-in="vis-slow-in" data-out="vis-slow-out" width="1600" height="900" fill="#1b1f4a" opacity=".32"/>
 
   <!-- the hotspots -->
   <g class="hits">

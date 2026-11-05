@@ -21,7 +21,7 @@ const dusk7 = () => !!S.f.storm;
 
 /* ---------- the island ---------- */
 function applyIsland(){
-  const show = (sel, on) => { const el = $(sel); if(el) el.style.display = on ? '' : 'none'; };
+  const show = vis;   // smooth when you can see it happen (core.js)
   const sc = $('#sc-island'); if(!sc) return;
   sc.classList.toggle('lowtide', lowtide7());
   sc.classList.toggle('storm', storm7());

@@ -68,20 +68,20 @@
     </defs>
 
     <!-- the sky: day, night or dawn (applyShip picks one) -->
-    <rect id="hp-day" width="1600" height="560" fill="url(#hpSkyDay)" />
+    <rect id="hp-day" data-in="vis-slow-in" data-out="vis-slow-out" width="1600" height="560" fill="url(#hpSkyDay)" />
     <!-- a grey winter sky over the harbour; the sunny sky is out at sea -->
     <rect id="hp-wintersky" width="1600" height="560" fill="#c9d3de" opacity=".6" />
-    <rect id="hp-dusk" width="1600" height="560" fill="url(#hpSkyDawn)" style="display:none" />
-    <rect id="hp-night" width="1600" height="560" fill="url(#hpSkyNight)" style="display:none" />
-    <g id="hp-stars" style="display:none"></g>
-    <g id="hp-moon" style="display:none">
+    <rect id="hp-dusk" data-in="vis-slow-in" data-out="vis-slow-out" width="1600" height="560" fill="url(#hpSkyDawn)" style="display:none" />
+    <rect id="hp-night" data-in="vis-slow-in" data-out="vis-slow-out" width="1600" height="560" fill="url(#hpSkyNight)" style="display:none" />
+    <g id="hp-stars" data-in="vis-slow-in" data-out="vis-slow-out" style="display:none"></g>
+    <g id="hp-moon" data-in="vis-slow-in" data-out="vis-slow-out" style="display:none">
         <circle cx="210" cy="96" r="30" fill="#fff6d6" />
         <circle cx="222" cy="88" r="26" fill="#0a1236" />
     </g>
-    <circle id="hp-sun" cx="1360" cy="110" r="42" fill="#fff4b0" />
-    <circle id="hp-dawnsun" cx="960" cy="150" r="44" fill="#ffd25a" opacity=".9"
+    <circle id="hp-sun" data-in="vis-slow-in" data-out="vis-slow-out" cx="1360" cy="110" r="42" fill="#fff4b0" />
+    <circle id="hp-dawnsun" data-in="vis-slow-in" data-out="vis-slow-out" cx="960" cy="150" r="44" fill="#ffd25a" opacity=".9"
         style="display:none" />
-    <g id="hp-clouds" fill="#fff" opacity=".9">
+    <g id="hp-clouds" data-in="vis-slow-in" data-out="vis-slow-out" fill="#fff" opacity=".9">
         <g class="hp-cloud">
             <ellipse cx="420" cy="90" rx="60" ry="18" />
             <ellipse cx="450" cy="78" rx="34" ry="18" />
@@ -97,9 +97,9 @@
     <g id="hp-waves" class="hp-waves" fill="none" stroke="#e9f4ff" stroke-width="2" opacity=".5"></g>
 
     <!-- far away: the island (just its peak at dawn, then all of it, rising behind the bow) -->
-    <path id="hp-isletip" d="M1508 545 L1532 527 L1544 530 L1566 545 Z" fill="#26304a"
+    <path id="hp-isletip" data-in="hp-tip-in" data-out="vis-slow-out" d="M1508 545 L1532 527 L1544 530 L1566 545 Z" fill="#26304a"
         style="display:none" />
-    <g id="hp-isle" style="display:none">
+    <g id="hp-isle" data-in="hp-isle-in" style="display:none">
         <path
             d="M1180 548 Q1260 480 1330 440 Q1420 400 1480 340 Q1520 312 1540 314 Q1570 320 1600 350 V548 Z"
             fill="#2f8a3a" />
@@ -621,9 +621,9 @@
     </g>
 
     <!-- night falls over everything but the lanterns -->
-    <rect id="hp-dark" width="1600" height="900" fill="#05081a" opacity=".4" pointer-events="none"
+    <rect id="hp-dark" data-in="vis-slow-in" data-out="vis-slow-out" width="1600" height="900" fill="#05081a" opacity=".4" pointer-events="none"
         style="display:none" />
-    <g id="hp-glow" pointer-events="none" style="display:none">
+    <g id="hp-glow" data-in="vis-slow-in" data-out="vis-slow-out" pointer-events="none" style="display:none">
         <circle cx="196" cy="310" r="60" fill="url(#hpLanternG)" />
         <circle cx="330" cy="386" r="46" fill="url(#hpLanternG)" />
     </g>
