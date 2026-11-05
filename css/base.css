@@ -153,3 +153,11 @@ button.chip:hover{border-color:var(--amber);color:var(--amber)}
 .slot.pop{animation:slotpop .45s ease-out}
 @keyframes titlein{0%{transform:translateY(20px) scale(.9);opacity:0}70%{transform:translateY(-4px) scale(1.03);opacity:1}100%{transform:none}}
 #win:not([hidden]) h2{animation:titlein .6s ease-out}
+/* Smooth showing and hiding (vis() in core.js): things fade in and out of a room instead of popping.
+   Big changes of light (day, night, a storm) use the slow fade; a few elements have their own data-in/data-out. */
+@keyframes visIn{from{opacity:0}to{opacity:1}}
+@keyframes visOut{from{opacity:1}to{opacity:0}}
+.vis-in{animation:visIn .8s ease-out both}
+.vis-out{animation:visOut .7s ease-in both}
+.vis-slow-in{animation:visIn 2.4s ease-in-out both}
+.vis-slow-out{animation:visOut 2.4s ease-in-out both}

@@ -37,7 +37,7 @@ function buildCircus(){
   $('#cc-confetti').innerHTML = cf;
 }
 function applyCircus(){
-  const show = (sel, on) => { const el = $(sel); if(el) el.style.display = on ? '' : 'none'; };
+  const show = vis;   // smooth when you can see it happen (core.js)
   show('#cc-spunk', !S.f.spunkTaken); show('#hit-spunk5', !S.f.spunkTaken);
   const sc = $('#sc-circus'); if(!sc) return;
   sc.classList.toggle('lit', !!S.f.lights);          // the three beams turn white and meet in the ring

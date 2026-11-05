@@ -58,7 +58,7 @@ function buildWinter(){
   $('#wt-pfort').innerHTML = wall4(1190, 716, 370, 3, 50, 28);
 }
 function applyWinter(){
-  const show = (sel, on) => { const el = $(sel); if(el) el.style.display = on ? '' : 'none'; };
+  const show = vis;   // smooth when you can see it happen (core.js)
   const sc = $('#sc-winter'); if(!sc) return;
   show('#wt-spunk', !S.f.spunkTaken); show('#hit-spunk4', !S.f.spunkTaken);
   show('#wt-nilsson', !!S.f.tracks);

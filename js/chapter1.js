@@ -75,7 +75,7 @@ function buildKitchen(){
   $('#vk-drawers').innerHTML = d;
 }
 function applyKitchen(){
-  const has = id => S.inv.includes(id), show = (sel, on) => { const el = $(sel); if(el) el.style.display = on ? '' : 'none'; };
+  const has = id => S.inv.includes(id), show = vis;   // smooth when you can see it happen (core.js)
   show('#vk-spunk', !S.f.spunkTaken); show('#hit-spunk', !S.f.spunkTaken);
   show('#vk-note', !has('note')); show('#hit-note', !has('note'));
   show('#vk-fire', !!S.f.fire); show('#vk-steam', !!S.f.fire);
