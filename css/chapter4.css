@@ -73,6 +73,18 @@
 #sc-winter.wt-walk #wt-vwalk{animation:wtDown 2.4s linear 2.2s both}
 #sc-winter.wt-walk #wt-ghorse{animation:wtTurn 1.8s linear 4.6s both}
 #sc-winter.wt-walk #wt-team{animation:wtPull 2.2s ease-in-out 6.4s both}
+/* its legs walk while it moves: each leg swings from the hip, diagonal pairs half a step apart. The legs live in the
+   shared drawing (#wtHorseShape, shown with <use>), which page selectors can't reach, so the two horses pass the
+   animation down as inherited custom properties: its name (none when standing still), when to start, and how
+   many steps (on the veranda and down the steps; then back to the sledge and pulling it). */
+@keyframes wtLegA{0%,100%{transform:rotate(0)}25%{transform:rotate(22deg)}75%{transform:rotate(-22deg)}}
+@keyframes wtLegB{0%,100%{transform:rotate(0)}25%{transform:rotate(-22deg)}75%{transform:rotate(22deg)}}
+.wt-leg{transform-box:fill-box;transform-origin:50% 0;animation-duration:.6s;animation-timing-function:ease-in-out;animation-fill-mode:both;
+  animation-delay:var(--wt-leg-at,0s);animation-iteration-count:var(--wt-steps,1)}
+.wt-leg.a{animation-name:var(--wt-leg-a,none)}
+.wt-leg.b{animation-name:var(--wt-leg-b,none)}
+#sc-winter.wt-walk #wt-vhorse{--wt-leg-a:wtLegA;--wt-leg-b:wtLegB;--wt-leg-at:2.2s;--wt-steps:4}
+#sc-winter.wt-walk #wt-ghorse{--wt-leg-a:wtLegA;--wt-leg-b:wtLegB;--wt-leg-at:4.6s;--wt-steps:7}
 /* the children run to the fort, with a hop in every step */
 @keyframes wtRunTA{0%{transform:none}20%{transform:translate(-33px,-6px)}40%{transform:translate(-67px,18px)}60%{transform:translate(-100px,10px)}80%{transform:translate(-134px,38px)}100%{transform:translate(-167px,50px)}}
 @keyframes wtRunP{0%{transform:none}20%{transform:translate(-36px,-8px)}40%{transform:translate(-71px,8px)}60%{transform:translate(-107px,0)}80%{transform:translate(-142px,20px)}100%{transform:translate(-178px,30px)}}
