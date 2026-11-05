@@ -39,12 +39,11 @@
         <g id="hpHorseShape">
             <path d="M18 34 Q4 46 8 66" stroke="#1a1a1a" stroke-width="5" fill="none"
                 stroke-linecap="round" />
-            <g fill="#f6f1e6">
-                <rect x="28" y="50" width="8" height="38" rx="3" />
-                <rect x="42" y="50" width="8" height="38" rx="3" />
-                <rect x="76" y="50" width="8" height="38" rx="3" />
-                <rect x="90" y="50" width="8" height="38" rx="3" />
-            </g>
+            <!-- the legs, each with its hoof, swing from the hip while the horse walks (css: .hp-leg, chapter6.css) -->
+            <g class="hp-leg a"><rect x="28" y="50" width="8" height="38" rx="3" fill="#f6f1e6" /><rect x="28" y="84" width="8" height="5" fill="#1a1a1a" /></g>
+            <g class="hp-leg b"><rect x="42" y="50" width="8" height="38" rx="3" fill="#f6f1e6" /><rect x="42" y="84" width="8" height="5" fill="#1a1a1a" /></g>
+            <g class="hp-leg b"><rect x="76" y="50" width="8" height="38" rx="3" fill="#f6f1e6" /><rect x="76" y="84" width="8" height="5" fill="#1a1a1a" /></g>
+            <g class="hp-leg a"><rect x="90" y="50" width="8" height="38" rx="3" fill="#f6f1e6" /><rect x="90" y="84" width="8" height="5" fill="#1a1a1a" /></g>
             <ellipse cx="62" cy="40" rx="44" ry="20" fill="#f6f1e6" />
             <path d="M94 36 Q106 20 110 6" stroke="#f6f1e6" stroke-width="18" fill="none"
                 stroke-linecap="round" />
@@ -57,12 +56,6 @@
                 <circle cx="96" cy="26" r="4" />
                 <circle cx="118" cy="7" r="1.8" />
                 <circle cx="130" cy="15" r="1.4" />
-            </g>
-            <g fill="#1a1a1a">
-                <rect x="28" y="84" width="8" height="5" />
-                <rect x="42" y="84" width="8" height="5" />
-                <rect x="76" y="84" width="8" height="5" />
-                <rect x="90" y="84" width="8" height="5" />
             </g>
         </g>
     </defs>
@@ -423,8 +416,10 @@
 
         <!-- the stern: the hoist, the spyglass on its hook, the compass, the wheel and the captain -->
         <rect x="210" y="196" width="10" height="130" fill="#6b3a1a" />
-        <path d="M215 202 L102 226" stroke="#6b3a1a" stroke-width="8" stroke-linecap="round" />
-        <circle cx="104" cy="232" r="9" fill="#9aa0a6" stroke="#5a5f66" stroke-width="2" />
+        <g id="hp-boom">
+            <path d="M215 202 L102 226" stroke="#6b3a1a" stroke-width="8" stroke-linecap="round" />
+            <circle cx="104" cy="232" r="9" fill="#9aa0a6" stroke="#5a5f66" stroke-width="2" />
+        </g>
         <g id="hp-ropelong" stroke="#c9a46a" stroke-width="3" fill="none">
             <path d="M104 240 V458" />
             <ellipse cx="100" cy="478" rx="34" ry="22" />
@@ -432,6 +427,15 @@
         <g id="hp-ropeshort" stroke="#c9a46a" stroke-width="3" fill="none" style="display:none">
             <path d="M104 240 V286" />
             <path d="M104 286 q-8 10 0 16 q6 4 8 -4" stroke="#9aa0a6" />
+        </g>
+        <!-- the horse on its way aboard, only while it's hoisted (class "hoisting" on #sc-ship, hoist6() in
+             chapter6.js): up from the quay in a sling, the boom swings round, down onto the deck, and it walks to its place -->
+        <g id="hp-lift" style="display:none">
+            <rect id="hp-liftrope" x="102.5" y="240" width="3" height="186" fill="#c9a46a" />
+            <g id="hp-lifthorse">
+                <g transform="translate(38 432)"><use href="#hpHorseShape" /></g>
+                <path id="hp-sling" d="M104 426 L64 466 M104 426 L138 466 M62 466 q40 34 78 0" stroke="#c9a46a" stroke-width="3" fill="none" />
+            </g>
         </g>
         <g id="hp-glass">
             <path d="M302 252 h4" stroke="#2a2a2a" stroke-width="3" />
