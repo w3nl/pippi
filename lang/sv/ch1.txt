@@ -91,9 +91,9 @@
 = Pippi's horse, white with black spots, looking in through the little window in the door. It lives on the veranda. Pippi says it's in the way in the kitchen.
 > Pippis häst Lilla Gubben, vit med svarta prickar, tittar in genom det lilla fönstret i dörren. Han bor på verandan. Pippi säger att han är i vägen i köket.
 = You squeeze a hand through the gap and try to lift the horse, the way Pippi does.
-> Du trycker in en hand genom springan och försöker lyfta hästen, så som Pippi gör.
+> Du trycker in en hand genom springan och försöker lyfta Lilla Gubben, så som Pippi gör.
 = The horse does not get lifted. You are strong, but not Pippi-strong.
-> Hästen blir inte lyft. Du är stark, men inte Pippi-stark.
+> Lilla Gubben blir inte lyft. Du är stark, men inte Pippi-stark.
 = Pfrrr?
 > Pfrrr?
 = Maybe you can make it want to move instead. What do horses like?
@@ -119,7 +119,7 @@
 = Luv, Pippi
 > Hälsninger, Pippi
 = P.S. Don't lift the horse. That's my job.
-> P.S. Lyft inte hästen. Det är mitt jobb.
+> P.S. Lyft inte Lilla Gubben. Det är mitt jobb.
 = Pippi's note, in the mirror
 > Pippis lapp, i spegeln
 = Now it reads the right way round
@@ -393,7 +393,7 @@
 = Careful! A horse can't see what's right under its nose, and it might nibble your fingers by mistake.
 > Akta dig! En häst ser inte det som är precis under mulen, och kan råka nafsa dig i fingrarna.
 = The horse snuffles at your fist. It can smell the sugar, but it can't get at it.
-> Hästen nosar på din näve. Han känner lukten av sockret, men kommer inte åt det.
+> Lilla Gubben nosar på din näve. Han känner lukten av sockret, men kommer inte åt det.
 = Soft lips tickle your palm, and the sugar is gone. Flat hand, thumb tucked in: that is how you feed a horse.
 > Mjuka läppar kittlar din handflata, och sockret är borta. Platt hand, tummen intill: så ger man en häst något gott.
 
@@ -441,7 +441,7 @@
 = Eggs are for pancakes, and pancakes are made at the stove.
 > Ägg är till pannkakor, och pannkakor steks på spisen.
 = The horse sniffs the pancake, then looks at you as if to say: I'm a horse.
-> Hästen sniffar på pannkakan och tittar sedan på dig som om han ville säga: jag är en häst.
+> Lilla Gubben sniffar på pannkakan och tittar sedan på dig som om han ville säga: jag är en häst.
 = Somebody in this kitchen would swap anything for this pancake. Somebody small, with a straw hat.
 > Någon i det här köket skulle byta vad som helst mot den här pannkakan. Någon liten, med halmhatt.
 = Eek!
@@ -459,6 +459,6 @@
 = Sugar cubes for the horse. It's just outside the front door.
 > Sockerbitar till Lilla Gubben. Han står precis utanför ytterdörren.
 = The horse is outside, and the door is locked. You can't reach it through the glass.
-> Hästen står ute, och dörren är låst. Du når honom inte genom glaset.
+> Lilla Gubben står ute, och dörren är låst. Du når honom inte genom glaset.
 = That doesn't do anything useful.
 > Det gör ingen nytta.

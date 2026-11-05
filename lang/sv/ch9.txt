@@ -1,0 +1,531 @@
+# Swedish translation: Chapter 9, the voyage home (js/chapter9.js, scenes/voyage.svg, hints, ui).
+# Kapten Långstrump calls Pippi "Pippilotta". Babord/styrbord; råbandsknop; Måsskär och Säludden. The horse is Lilla Gubben.
+
+= The voyage home
+> Hemresan
+= Chapter 9: The voyage home
+> Kapitel 9: Hemresan
+= Chapter 9 · The Voyage Home
+> Kapitel 9 · Hemresan
+= The Hoppetossa · homeward
+> Hoppetossa · på väg hem
+= Continue to Chapter 10
+> Fortsätt till kapitel 10
+= Safe in harbour · Chapter 9 complete
+> Tryggt i hamn · kapitel 9 klart
+= Home port
+> Hemmahamn
+= Through the storm, past the lighthouses and between the buoys: the Hoppetossa is home. Next: Villa Villekulla in spring, where somebody can't wait to see its veranda…
+> Genom stormen, förbi fyrarna och mellan bojarna: Hoppetossa är hemma. Nästa gång: Villa Villekulla på våren, där någon längtar efter sin veranda…
+= Take your time. The Hoppetossa is resting against the quay, and the whole town is waving. When you're ready, step onto the quay to go on to Chapter {n}.
+> Ta det lugnt. Hoppetossa ligger vid kajen, och hela staden vinkar. När du är redo kliver du upp på kajen och fortsätter till kapitel {n}.
+= The quay: on to Chapter {n}
+> Kajen: vidare till kapitel {n}
+= Back in the harbour. The whole town is still waiting on the quay.
+> Tillbaka i hamnen. Hela staden står fortfarande och väntar på kajen.
+= Back on board. The harbour at home is right ahead.
+> Tillbaka ombord. Hamnen hemma ligger rakt fram.
+= Back on board the Hoppetossa, sailing north towards home.
+> Tillbaka ombord på Hoppetossa, på väg norrut mot hemmet.
+= A seasick horse
+> En sjösjuk häst
+= Ahoy, Sweden!
+> Ohoj, Sverige!
+
+# items
+= A message in a bottle
+> Flaskpost
+= Pippi's letter to Miss, rolled up in an empty lemonade bottle with a cork in it. For throwing into the sea.
+> Pippis brev till fröken, hoprullat i en tom saftflaska med kork i. Att kasta i havet.
+= The Book of Lighthouses
+> Fyrboken
+= Captain Longstocking's book. Every lighthouse on the coast has its own pattern of flashes, so sailors can tell them apart at night.
+> Kapten Långstrumps bok. Varje fyr längs kusten blinkar på sitt eget sätt, så att sjömän kan skilja dem åt på natten.
+= A message in a bottle is for throwing into the sea. The right bit of sea.
+> Flaskpost ska kastas i havet. I rätt bit av havet.
+= Mr Nilsson wants to pull the cork out. You hold the bottle up high.
+> Herr Nilsson vill dra ur korken. Du håller flaskan högt upp.
+= My Book of Lighthouses! Every light on the coast is in there. Find ours, sailor.
+> Min fyrbok! Varenda fyr längs kusten står i den. Leta upp vår, matros.
+= The Book of Lighthouses is for telling lighthouses apart at night.
+> Med fyrboken skiljer man fyrarna åt på natten.
+
+# the scene
+= The coast
+> Kusten
+= The lighthouses
+> Fyrarna
+= The quay
+> Kajen
+= The buoys
+> Bojarna
+= Ice
+> Is
+= The sails
+> Seglen
+= Swallows
+> Svalor
+= The wheel
+> Ratten
+
+# hotspots
+= The spunk's jam jar, wedged between two coils of rope on the stern deck. The spunk is a good sailor.
+> Spunkens syltburk, inkilad mellan två tågrullar på akterdäck. Spunken är en bra sjöman.
+= You take it. It doesn't seem to mind the waves.
+> Du tar den. Den verkar inte bry sig om vågorna.
+= Black clouds, a howling wind, and rain coming sideways. The Hoppetossa is leaning over a long way.
+> Svarta moln, tjutande vind och regn som kommer från sidan. Hoppetossa lutar långt över.
+= Can't we make the ship lean less?
+> Kan vi inte få skeppet att luta mindre?
+= A clear night. Along the coast, three lighthouses are flashing, each in its own way.
+> En klar natt. Längs kusten blinkar tre fyrar, var och en på sitt sätt.
+= One of them is ours, sailor. My book of lighthouses will tell you which. It's in my sea chest.
+> En av dem är vår, matros. Min fyrbok säger vilken. Den ligger i min sjömanskista.
+= A bright spring morning. Gulls are circling over the quay, hoping somebody has brought fish.
+> En strålande vårmorgon. Måsar cirklar över kajen och hoppas att någon har tagit med fisk.
+= Dawn. The sky turns pink, then gold, over the little town on the hill.
+> Gryning. Himlen blir rosa och sedan guldig över den lilla staden på kullen.
+= A big blue sky. The trade wind fills the sails and pushes the Hoppetossa north, towards home.
+> En stor blå himmel. Passadvinden fyller seglen och knuffar Hoppetossa norrut, mot hemmet.
+= The open sea, blue as far as you can see. Somewhere far to the north is Sweden.
+> Öppna havet, blått så långt ögat når. Någonstans långt norrut ligger Sverige.
+= Grey waves, as high as a house. Spray flies over the deck. Mr Nilsson holds on with his hands, his feet AND his tail.
+> Grå vågor, höga som hus. Skummet yr över däck. Herr Nilsson håller sig fast med händerna, fötterna OCH svansen.
+= The water in the harbour is calm and cold. Little bits of ice bump gently against the hull.
+> Vattnet i hamnen är lugnt och kallt. Små isbitar stöter försiktigt mot skrovet.
+= Waves, waves and more waves. A flying fish skips past the bow.
+> Vågor, vågor och ännu fler vågor. En flygfisk studsar förbi fören.
+= Captain Longstocking's island, getting smaller behind the ship. On the beach, the islanders are waving palm leaves.
+> Kapten Långstrumps ö, som blir mindre och mindre bakom skeppet. På stranden vinkar öborna med palmblad.
+= Goodbye, island! Goodbye, parrot! I'll come back when I'm queen.
+> Hej då, ön! Hej då, papegojan! Jag kommer tillbaka när jag är drottning.
+= The island is just a green dot on the horizon now.
+> Ön är bara en grön prick vid horisonten nu.
+= A long, sandy coast far away, with a little white town. Hundreds of birds are flying over it, all heading north.
+> En lång sandkust långt borta, med en liten vit stad. Hundratals fåglar flyger över den, alla norrut.
+= Everybody's going north. Like us!
+> Alla ska norrut. Precis som vi!
+= Three lighthouses along the dark coast, each flashing in its own way. The captain says one of them is at the mouth of our harbour.
+> Tre fyrar längs den mörka kusten, som blinkar var och en på sitt sätt. Kaptenen säger att en av dem står vid inloppet till vår hamn.
+= Look it up in my book of lighthouses, sailor. It's in my sea chest on deck.
+> Slå upp det i min fyrbok, matros. Den ligger i min sjömanskista på däck.
+= The captain's sea chest. Inside: a spare hat, a whole cheese, and a blue book with a lighthouse on the cover: The Book of Lighthouses.
+> Kaptenens sjömanskista. I den: en extra hatt, en hel ost och en blå bok med en fyr på omslaget: Fyrboken.
+= You take the book. The cheese stays where it is. It smells very strongly of cheese.
+> Du tar boken. Osten får ligga kvar. Den luktar väldigt mycket ost.
+= The captain's sea chest. A spare hat and a very smelly cheese. Nothing else you need.
+> Kaptenens sjömanskista. En extra hatt och en väldigt illaluktande ost. Inget mer som du behöver.
+= AHOY, SWEDEN! WE'RE HOOOME!
+> OHOJ, SVERIGE! VI ÄR HEEEMMA!
+= Pippi shouts so loud that the church bell rings all by itself, and every gull in the harbour takes off at once.
+> Pippi ropar så högt att kyrkklockan ringer av sig själv och varenda mås i hamnen lyfter på en gång.
+= Your little town, on its hill: red houses, the white church, and right at the top, a yellow house that is a little crooked.
+> Er lilla stad på kullen: röda hus, den vita kyrkan och högst upp ett gult hus som är lite snett.
+= Villa Villekulla! I can see the veranda from here.
+> Villa Villekulla! Jag ser verandan härifrån.
+= The quay, with its iron bollards. First you have to get the Hoppetossa safely through the buoys.
+> Kajen, med sina pollare av järn. Först måste du få Hoppetossa säkert mellan bojarna.
+= The last bits of ice, floating near the shore. It's spring, but the harbour only thawed a few weeks ago.
+> De sista isbitarna, som flyter nära stranden. Det är vår, men hamnen tinade för bara några veckor sedan.
+= The ice comes from the river, sailor. Sea water is salty, so it has to get colder before it freezes: about two degrees below zero. The river freezes first, and the sea last.
+> Isen kommer från ån, matros. Havsvatten är salt, så det måste bli kallare innan det fryser: ungefär två minusgrader. Ån fryser först och havet sist.
+= The sails are set and waiting. But first the captain wants a word about what to pack.
+> Seglen är satta och väntar. Men först vill kaptenen prata om vad ni ska packa.
+= The sails are rolled up neatly on their yards. The Hoppetossa is having a rest.
+> Seglen är prydligt ihoprullade på rårna. Hoppetossa vilar sig.
+= The sails are full of wind. The Hoppetossa is flying along.
+> Seglen är fulla av vind. Hoppetossa flyger fram.
+= The wheel creaks as the captain steers. North, always north.
+> Ratten knarrar när kaptenen styr. Norrut, alltid norrut.
+= Steady as she goes! If you've got anything to say to anybody at home, sailor, this is a good place to post it.
+> Stadigt så! Om du har något att säga till någon där hemma, matros, så är det här ett bra ställe att posta det.
+= Post it? There isn't a post box for a thousand miles.
+> Posta? Det finns ingen brevlåda på tusen mil.
+= We have company, sailor. Look up at the yard.
+> Vi har fått sällskap, matros. Titta upp på rån.
+= Find our lighthouse in the book, sailor, and I'll steer for it.
+> Leta upp vår fyr i boken, matros, så styr jag mot den.
+= One of those lighthouses is ours. My book of lighthouses is in my sea chest.
+> En av de där fyrarna är vår. Min fyrbok ligger i min sjömanskista.
+= Home port, Pippilotta! I'll stay a few days, and then the Hoppetossa sails back to my island.
+> Hemmahamn, Pippilotta! Jag stannar några dagar, och sedan seglar Hoppetossa tillbaka till min ö.
+= A few days is long enough for a very big party.
+> Några dagar räcker till ett väldigt stort kalas.
+= Red buoys and green buoys. Get them on the right side, sailor, or we'll be stuck on the rocks.
+> Röda bojar och gröna bojar. Håll dem på rätt sida, matros, annars går vi på grund.
+= The horse is standing very still, with its legs wide apart. It has turned a little bit green.
+> Lilla Gubben står alldeles stilla med benen brett isär. Han har blivit lite grön i ansiktet.
+= Pfrrr…
+> Pfrrr…
+= Poor horse. When we're home, you can have your veranda all to yourself for a week.
+> Stackars Lilla Gubben. När vi kommer hem får du ha verandan alldeles för dig själv i en vecka.
+= The horse is looking at the quay, then at Pippi, then at the quay again.
+> Lilla Gubben tittar på kajen, sedan på Pippi och sedan på kajen igen.
+= Yes, yes, we're home. I'll carry you.
+> Ja, ja, vi är hemma. Jag bär dig.
+= The horse is standing on deck, sniffing the wind. It can smell home.
+> Lilla Gubben står på däck och vädrar i vinden. Han känner lukten av hemma.
+= Pfrrr!
+> Pfrrr!
+= It feels strange to go home. We've been away so long!
+> Det känns konstigt att åka hem. Vi har varit borta så länge!
+= Do you think it's still winter at home?
+> Tror du att det fortfarande är vinter hemma?
+= I'm not scared. I'm just holding on to Tommy very tightly.
+> Jag är inte rädd. Jag håller bara i Tommy väldigt hårt.
+= Ow.
+> Aj.
+= In the dark, all the lighthouses look the same. But they flash differently. Count them!
+> I mörkret ser alla fyrar likadana ut. Men de blinkar olika. Räkna!
+= Look, there's Miss! And Kling and Klang!
+> Titta, där är fröken! Och Kling och Klang!
+= And the luggage cart, for Pippi's sea chest.
+> Och bagagekärran, för Pippis sjömanskista.
+= I've stopped feeling seasick. Mostly.
+> Jag är inte sjösjuk längre. Nästan inte.
+= Mr Nilsson is hanging on to the yard with everything he's got. His hat has blown away. No: there it is, on the horse.
+> Herr Nilsson håller sig fast i rån med allt han har. Hatten har blåst bort. Nej: där är den, på Lilla Gubben.
+= Mr Nilsson is hanging from the yard by his tail, watching the world go by.
+> Herr Nilsson hänger i svansen från rån och tittar på världen som far förbi.
+= I've written a letter to Miss! "Dear Miss, I'm coming home soon. Please keep some holidays for me. Love, Pippi."
+> Jag har skrivit ett brev till fröken! "Käre fröken, jag kommer snart hem. Spara lite lov åt mig. Hälsningar Pippi."
+= Pippi rolls the letter up, pushes it into an empty lemonade bottle and corks it.
+> Pippi rullar ihop brevet, trycker ner det i en tom saftflaska och sätter i korken.
+= Now the sea can post it. You throw it, you've got the best aim.
+> Nu kan havet posta det. Du får kasta, du siktar bäst.
+= Whee! It's like a swing, only wetter!
+> Hurra! Det är som en gunga, fast blötare!
+= Home! I can't wait. I've never come home before. Well, I have, but never from this far away.
+> Hem! Jag kan inte vänta. Jag har aldrig kommit hem förut. Jo, det har jag, men aldrig från så långt bort.
+= On the island it's always summer. At home it's anything but. I like both.
+> På ön är det alltid sommar. Hemma är det allt annat än det. Jag tycker om båda.
+
+# the seasons
+= What to pack?
+> Vad ska man packa?
+= The captain's calendar says: April
+> Det står april i kaptenens almanacka
+= far south
+> långt söderut
+= the Sun
+> solen
+= When we sailed away, it was winter at home. Now it's April.
+> När vi seglade iväg var det vinter hemma. Nu är det april.
+= What season is it at Villa Villekulla?
+> Vilken årstid är det i Villa Villekulla?
+= Still winter
+> Fortfarande vinter
+= Spring
+> Vår
+= Summer
+> Sommar
+= Autumn
+> Höst
+= In April? The snow has had months to melt. The days at home are getting longer and longer.
+> I april? Snön har haft flera månader på sig att smälta. Dagarna hemma blir längre och längre.
+= Not yet: summer at home starts in June. In April it's only just warming up.
+> Inte än: hemma börjar sommaren i juni. I april har det just börjat bli varmare.
+= Autumn comes after summer. You've skipped a few months!
+> Hösten kommer efter sommaren. Du har hoppat över några månader!
+= And far down south, below the Equator, what season is it there in April?
+> Och långt söderut, söder om ekvatorn: vilken årstid är det där i april?
+= Spring too, everywhere
+> Vår där också, överallt
+= Autumn: the south has the opposite season
+> Höst: söder om ekvatorn är årstiderna omvända
+= The south has no seasons
+> Söderut finns det inga årstider
+= Look at the picture: when the north leans towards the Sun, the south leans away. They can't both have spring.
+> Titta på bilden: när norr lutar mot solen lutar söder bort från den. De kan inte båda ha vår.
+= It does! Far south it gets cold in June and hot at Christmas.
+> Jo, visst! Långt söderut blir det kallt i juni och varmt på julen.
+= Spring! The north is starting to lean towards the Sun again: longer days, and the snow melts.
+> Vår! Norr börjar luta mot solen igen: längre dagar, och snön smälter.
+= Autumn! The Earth leans the same way all year, so the north and the south take turns leaning towards the Sun. When it's spring at home, it's autumn far south.
+> Höst! Jorden lutar åt samma håll hela året, så norr och söder turas om att luta mot solen. När det är vår hemma är det höst långt söderut.
+= Spring at home! Then I'll pack my mittens AND my sunhat.
+> Vår hemma! Då packar jag vantarna OCH solhatten.
+= Anchor up! Set the sails! Course: north, to Villa Villekulla!
+> Lätta ankar! Sätt segel! Kurs: norr, mot Villa Villekulla!
+= The sails fill, and the island slides away behind the Hoppetossa. Soon there's nothing but sea all around.
+> Seglen fylls, och ön glider bort bakom Hoppetossa. Snart finns det bara hav runt omkring.
+= How long will it take?
+> Hur lång tid tar det?
+= Weeks, sailor. Plenty of time to write some letters.
+> Flera veckor, matros. Gott om tid att skriva några brev.
+
+# the message in a bottle
+= The captain's chart of the ocean currents
+> Kaptenens sjökort över havsströmmarna
+= America
+> Amerika
+= Africa
+> Afrika
+= the Hoppetossa
+> Hoppetossa
+= From there, the current goes round and round in a big circle. Your bottle would still be going round when you're a grandmother.
+> Där går strömmen runt, runt i en stor cirkel. Din flaska skulle fortfarande snurra runt när du är farmor.
+= That current flows west, all the way to America. Miss would never get it.
+> Den strömmen går västerut, ända till Amerika. Fröken skulle aldrig få det.
+= That current flows south, along the coast of Africa. Wrong way!
+> Den strömmen går söderut, längs Afrikas kust. Fel håll!
+= The blue arrows are currents: the sea is always flowing that way.
+> De blå pilarna är strömmar: dit flyter havet hela tiden.
+= Where should you throw the bottle, so the sea carries it to Sweden?
+> Var ska du kasta flaskan, så att havet bär den till Sverige?
+= Click a number.
+> Klicka på en siffra.
+= So what carries a bottle across the sea?
+> Så vad är det som bär en flaska över havet?
+= Ocean currents: huge rivers of water that flow through the sea
+> Havsströmmar: jättestora floder av vatten som flyter genom havet
+= The fish pass it along
+> Fiskarna skickar den vidare
+= It swims, if you shake it first
+> Den simmar, om man skakar den först
+= Number 4! From there, the current flows north-east, all the way up to Sweden.
+> Nummer 4! Därifrån flyter strömmen mot nordost, ända upp till Sverige.
+= Fish are far too busy. And they can't read the address.
+> Fiskarna har alldeles för mycket att göra. Och de kan inte läsa adressen.
+= Bottles can't swim. Not even Pippi's bottles.
+> Flaskor kan inte simma. Inte ens Pippis flaskor.
+= Ocean currents! The sea is never still: big currents flow through it like rivers, driven by the wind and the warm and cold water. A bottle can drift thousands of kilometres.
+> Havsströmmar! Havet står aldrig stilla: stora strömmar flyter genom det som floder, drivna av vinden och av varmt och kallt vatten. En flaska kan driva tusentals kilometer.
+= The Hoppetossa sails to the spot, and you throw the bottle as far as you can. Plop! It bobs away on the current.
+> Hoppetossa seglar till platsen, och du kastar flaskan så långt du kan. Plopp! Den guppar iväg med strömmen.
+= Miss will get it before we're home. Probably. Unless a whale reads it first.
+> Fröken får det innan vi är hemma. Förmodligen. Om inte en val läser det först.
+= But the sky behind the ship is turning dark grey. The wind starts to howl, and the waves grow bigger and bigger.
+> Men himlen bakom skeppet blir mörkgrå. Vinden börjar tjuta, och vågorna blir större och större.
+= A storm! All hands on deck!
+> Storm! Alle man på däck!
+
+# the storm
+= The storm
+> Stormen
+= The Hoppetossa is leaning over a long way
+> Hoppetossa lutar långt över
+= the wind →
+> vinden →
+= Two ends of a reef point, ready to tie
+> Två ändar av en revsejsing, redo att knytas
+= The wind is howling, and the ship leans over further and further.
+> Vinden tjuter, och skeppet lutar längre och längre över.
+= What do you do with the sails?
+> Vad gör du med seglen?
+= Put up even more sail, to get out of the storm faster
+> Sätter ännu mer segel, för att komma ur stormen fortare
+= Make the sails smaller: take in a reef
+> Gör seglen mindre: revar
+= Pippi holds the mast straight
+> Pippi håller masten rak
+= More sail catches more wind: the ship leans over even further, and Annika slides across the deck into the horse.
+> Mer segel fångar mer vind: skeppet lutar ännu mer, och Annika glider över däcket rakt in i Lilla Gubben.
+= Pippi grabs the mast and pulls. The ship stays up for exactly one wave. Even Pippi can't hold back a storm.
+> Pippi tar tag i masten och drar. Skeppet står rakt i precis en våg. Inte ens Pippi kan hålla emot en storm.
+= Roll up the bottom of each sail and tie it down with the little ropes, the reef points.
+> Rulla upp nederkanten på varje segel och knyt fast den med de små linorna, revsejsingarna.
+= How do you tie a reef knot?
+> Hur knyter man en råbandsknop?
+= Right over left, then right over left again
+> Höger över vänster, och sedan höger över vänster igen
+= Right over left, then left over right
+> Höger över vänster, och sedan vänster över höger
+= Lots of knots on top of each other, just in case
+> Massor av knutar på varandra, för säkerhets skull
+= That's a granny knot. In a storm it slips, or it jams so tight that nobody can undo it again.
+> Det är en kärringknut. I en storm glider den upp, eller så drar den ihop sig så hårt att ingen kan få upp den igen.
+= A big tangle! When the storm is over, a sailor would need a knife to get it undone. Two neat crossings are enough.
+> En stor trassel! När stormen är över skulle en sjöman behöva en kniv för att få upp den. Två prydliga korsningar räcker.
+= Less sail, less push from the wind, so the ship stands up straighter. Now tie the sails down.
+> Mindre segel, mindre tryck från vinden, så skeppet står rakare. Knyt nu fast seglen.
+= A reef knot! It lies flat and holds tight, and when the storm is over you can undo it with one pull.
+> En råbandsknop! Den ligger platt och håller hårt, och när stormen är över får du upp den med ett enda ryck.
+= With smaller sails, the Hoppetossa stands up straighter and rides the waves like a duck.
+> Med mindre segel står Hoppetossa rakare och guppar över vågorna som en anka.
+= By morning the storm has blown itself out. The sea is calm, the sails are set again, and far away there's a long, sandy coast.
+> På morgonen har stormen bedarrat. Havet är lugnt, seglen är satta igen, och långt borta syns en lång sandkust.
+= Look! Little birds, landing on the yard!
+> Titta! Små fåglar som landar på rån!
+
+# the swallows
+= Five tired swallows, resting on the yard
+> Fem trötta svalor som vilar på rån
+= A forked tail, a red throat and a white tummy. They flew over the sea all night.
+> En kluven stjärt, en röd strupe och en vit mage. De har flugit över havet hela natten.
+= Where are the swallows flying?
+> Vart flyger svalorna?
+= North, to spend the summer in Sweden
+> Norrut, för att tillbringa sommaren i Sverige
+= South, to Africa for the winter
+> Söderut, till Afrika över vintern
+= Nowhere: they're stowaways, sailing to the South Seas
+> Ingenstans: de är fripassagerare på väg till Söderhavet
+= In April? They spent the whole winter in Africa. Now they're on their way back.
+> I april? De har varit i Afrika hela vintern. Nu är de på väg tillbaka.
+= They're only resting their wings. In a minute they'll fly on, faster than the Hoppetossa.
+> De vilar bara vingarna. Snart flyger de vidare, fortare än Hoppetossa.
+= Why do they fly such a long way?
+> Varför flyger de så långt?
+= Because it gets too hot in Africa
+> För att det blir för varmt i Afrika
+= In the northern summer there are lots of insects to eat, and long days to feed their chicks
+> På sommaren i norr finns det massor av insekter att äta, och långa dagar att mata ungarna
+= To see Pippi
+> För att träffa Pippi
+= Heat isn't the problem: swallows love warm weather. It's all about food.
+> Värmen är inte problemet: svalor älskar varmt väder. Det handlar om mat.
+= Pippi would like that to be true. But they'd fly north even without her.
+> Det skulle Pippi gärna vilja. Men de skulle flyga norrut även utan henne.
+= North! Every spring, swallows fly thousands of kilometres from Africa to Europe, and every autumn they fly back.
+> Norrut! Varje vår flyger svalorna tusentals kilometer från Afrika till Europa, och varje höst flyger de tillbaka.
+= Insects! In the northern summer the air is full of flies and midges, and the days are long. In the winter there are none, so the swallows fly south.
+> Insekter! På sommaren i norr är luften full av flugor och knott, och dagarna är långa. På vintern finns det inga, så då flyger svalorna söderut.
+= The swallows shake their feathers, twitter, and fly off north, much faster than the Hoppetossa.
+> Svalorna skakar på fjädrarna, kvittrar och flyger iväg norrut, mycket fortare än Hoppetossa.
+= Maybe they'll build a nest under the roof of Villa Villekulla!
+> Kanske bygger de ett bo under taket på Villa Villekulla!
+= Days go by. Then one evening the sun sets, and lights start to flash along a dark coast.
+> Dagarna går. En kväll går solen ner, och ljus börjar blinka längs en mörk kust.
+= Lighthouses, sailor! One of them marks the way into our harbour.
+> Fyrar, matros! En av dem visar vägen in till vår hamn.
+
+# the lighthouses
+= Each square is one second. Yellow: the light flashes
+> Varje ruta är en sekund. Gul: fyren blinkar
+= The book says:
+> I boken står det:
+= Our harbour: two flashes, then dark, every 10 seconds.
+> Vår hamn: två blinkar, sedan mörkt, var tionde sekund.
+= Gull Rock: one flash every 5 seconds. Seal Point: two flashes every 6 seconds.
+> Måsskär: en blink var femte sekund. Säludden: två blinkar var sjätte sekund.
+= You watch the three lighthouses for 30 seconds.
+> Du tittar på de tre fyrarna i 30 sekunder.
+= Which one is ours?
+> Vilken är vår?
+= Click A, B or C.
+> Klicka på A, B eller C.
+= Why does every lighthouse flash differently?
+> Varför blinkar varje fyr olika?
+= So that sailors know which lighthouse it is, even in the dark
+> Så att sjömän vet vilken fyr det är, även i mörkret
+= To save oil
+> För att spara olja
+= Lighthouse keepers like to dance
+> Fyrvaktare tycker om att dansa
+= A dark lighthouse saves oil, but then nobody would see it. That's not why.
+> En släckt fyr sparar olja, men då ser ingen den. Det är inte därför.
+= They might. But the flashing is for the sailors.
+> Kanske det. Men blinkandet är för sjömännen.
+= Exactly. Every lighthouse has its own pattern, written down in the sailors' books. Count the flashes and the dark, and you know where you are.
+> Precis. Varje fyr har sitt eget mönster, som står i sjömännens böcker. Räkna blinkarna och mörkret, så vet du var du är.
+= Lighthouse C it is! Steer for the two flashes, sailor.
+> Fyr C alltså! Styr mot de två blinkarna, matros.
+= All night the Hoppetossa sails towards the flashing light. And when the sun comes up, there it is: the little harbour, the little town on its hill, and right at the top, a yellow house.
+> Hela natten seglar Hoppetossa mot det blinkande ljuset. Och när solen går upp ligger den där: den lilla hamnen, den lilla staden på kullen, och högst upp ett gult hus.
+= VILLA VILLEKULLA!
+> VILLA VILLEKULLA!
+= Careful now. Into the harbour between the buoys, and not on the rocks.
+> Försiktigt nu. In i hamnen mellan bojarna, och inte upp på klipporna.
+= Two flashes, yes. But count the dark: they come every 6 seconds. That's Seal Point.
+> Två blinkar, ja. Men räkna mörkret: de kommer var sjätte sekund. Det är Säludden.
+= One flash every 5 seconds: that's Gull Rock. Ours flashes twice.
+> En blink var femte sekund: det är Måsskär. Vår blinkar två gånger.
+= C! Two flashes, then dark, and again after 10 seconds. That's our harbour.
+> C! Två blinkar, sedan mörkt, och igen efter 10 sekunder. Det är vår hamn.
+
+# the buoys
+= Into the harbour
+> In i hamnen
+= Red and green buoys mark the safe way in
+> Röda och gröna bojar visar den säkra vägen in
+= the quay
+> kajen
+= ↑ coming in from the sea
+> ↑ in från havet
+= Sailing INTO the harbour, which side do you keep the red buoys on?
+> När du seglar IN i hamnen, på vilken sida har du de röda bojarna?
+= On your left (port), like the red lamp on the left side of a ship
+> Till vänster (babord), precis som den röda lyktan på skeppets vänstra sida
+= On your right (starboard)
+> Till höger (styrbord)
+= Either side, as long as you're quick
+> Vilken sida som helst, bara man är snabb
+= Which way in is safe?
+> Vilken väg in är säker?
+= Route {k}
+> Väg {k}
+= Then you'd be outside the channel, on the rocks. Think of a ship's lamps: red on the left.
+> Då hamnar du utanför farleden, uppe på klipporna. Tänk på skeppets lyktor: rött till vänster.
+= Quick or slow, the rocks don't care. The buoys show where the deep water is.
+> Snabb eller långsam, det bryr sig inte klipporna om. Bojarna visar var vattnet är djupt.
+= Red on the left, green on the right, coming in from the sea. Between them, the water is deep enough.
+> Rött till vänster, grönt till höger när man kommer in från havet. Mellan dem är vattnet djupt nog.
+= Route A goes to the right of the green buoys: straight onto the rocks!
+> Väg A går till höger om de gröna bojarna: rakt upp på klipporna!
+= Route C goes to the left of the red buoys: straight onto the rocks!
+> Väg C går till vänster om de röda bojarna: rakt upp på klipporna!
+= Route B: every red buoy on your left, every green buoy on your right. Safely in!
+> Väg B: varje röd boj till vänster, varje grön boj till höger. Säkert inne!
+
+# intro and end
+= The morning after the feast. The Hoppetossa is ready to sail, and the whole island has come down to the beach to wave goodbye.
+> Morgonen efter festen. Hoppetossa är redo att segla, och hela ön har kommit ner till stranden för att vinka adjö.
+= Pippilotta! I'll sail you home to Villa Villekulla. But first: have you packed the right clothes?
+> Pippilotta! Jag seglar hem dig till Villa Villekulla. Men först: har du packat rätt kläder?
+= I've packed my sunhat, my bucket and spade, and eighteen kilos of coconuts.
+> Jag har packat solhatten, hinken och spaden och arton kilo kokosnötter.
+= But it was winter when we left home. Will it still be winter?
+> Men det var vinter när vi åkte hemifrån. Är det fortfarande vinter där?
+= Ask my calendar, sailor. It's by the wheel.
+> Fråga min almanacka, matros. Den hänger vid ratten.
+= What season will it be at home? Let's ask the captain.
+> Vilken årstid är det hemma? Vi frågar kaptenen.
+= Red buoy on the left, green buoy on the right. The Hoppetossa glides into the harbour and comes to rest against the quay, as gently as a sleeping cat.
+> Röd boj till vänster, grön boj till höger. Hoppetossa glider in i hamnen och lägger sig mot kajen, lika mjukt som en sovande katt.
+= The whole town is there. Miss is waving her umbrella, and Kling and Klang are standing to attention.
+> Hela staden är där. Fröken vinkar med sitt paraply, och Kling och Klang står i givakt.
+= Pippi! I got your letter! It came in a bottle, washed up on the beach last Tuesday.
+> Pippi! Jag fick ditt brev! Det kom i en flaska som flöt i land på stranden i tisdags.
+= Then the sea is faster than the post!
+> Då är havet snabbare än posten!
+= Welcome home, Miss Longstocking. A reminder: horses must be carried, not ridden, along the quay.
+> Välkommen hem, fröken Långstrump. En påminnelse: hästar ska bäras, inte ridas, längs kajen.
+= Pippi lifts the horse over her head and carries it down the gangway. It won't put a hoof on the wet stones.
+> Pippi lyfter Lilla Gubben över huvudet och bär honom nerför landgången. Han vill inte sätta en hov på de våta stenarna.
+= Home to Villa Villekulla! The horse wants its veranda.
+> Hem till Villa Villekulla! Lilla Gubben vill till sin veranda.
+
+# hints
+= The captain wants to know if you've packed the right clothes. It was winter at home when you left, and now it's April.
+> Kaptenen vill veta om ni har packat rätt kläder. Det var vinter hemma när ni åkte, och nu är det april.
+= Click the captain (or the wheel). At home in April it's spring. Far south, below the Equator, it's autumn: the north and the south have opposite seasons.
+> Klicka på kaptenen (eller ratten). Hemma i april är det vår. Långt söderut, söder om ekvatorn, är det höst: norr och söder har omvända årstider.
+= Pippi has been writing something. Maybe she has a letter to post. In the middle of the sea.
+> Pippi har suttit och skrivit något. Kanske har hon ett brev att posta. Mitt ute på havet.
+= Click Pippi for her message in a bottle.
+> Klicka på Pippi för att få hennes flaskpost.
+= Pippi's letter is in a bottle. The sea can deliver it, if you throw it into the right current.
+> Pippis brev ligger i en flaska. Havet kan leverera det, om du kastar det i rätt ström.
+= Use the bottle on the sea and pick number 4: that current flows north-east, to Sweden. Ocean currents are like rivers in the sea.
+> Använd flaskan på havet och välj nummer 4: den strömmen går mot nordost, till Sverige. Havsströmmar är som floder i havet.
+= A storm! The wind pushes on the sails, and the ship leans over a long way. What could make it lean less?
+> Storm! Vinden trycker på seglen, och skeppet lutar långt över. Vad kan få det att luta mindre?
+= Click the sails (or the captain). Take in a reef: smaller sails. Then tie a reef knot: right over left, then left over right.
+> Klicka på seglen (eller kaptenen). Reva: mindre segel. Knyt sedan en råbandsknop: höger över vänster, och sedan vänster över höger.
+= Little birds have landed on the yard to rest. Where could they be going?
+> Små fåglar har landat på rån för att vila. Vart kan de vara på väg?
+= Click the swallows. They're flying north to Sweden for the summer, because the northern summer is full of insects to eat.
+> Klicka på svalorna. De flyger norrut till Sverige över sommaren, för på sommaren i norr finns det massor av insekter att äta.
+= Three lighthouses, all flashing differently. The captain has a book that says which is which.
+> Tre fyrar som alla blinkar olika. Kaptenen har en bok som säger vilken som är vilken.
+= Take the Book of Lighthouses from the captain's sea chest on deck.
+> Ta fyrboken ur kaptenens sjömanskista på däck.
+= Our harbour's lighthouse flashes twice, then stays dark, every 10 seconds. Count the yellow squares and the dark ones.
+> Fyren vid vår hamn blinkar två gånger och är sedan mörk, var tionde sekund. Räkna de gula rutorna och de mörka.
+= Use the book on the lighthouses (or click them). Pick C: two flashes every 10 seconds.
+> Använd boken på fyrarna (eller klicka på dem). Välj C: två blinkar var tionde sekund.
+= Red and green buoys mark the safe way into the harbour. Ships have a red lamp on their left side, and a green one on their right.
+> Röda och gröna bojar visar den säkra vägen in i hamnen. Skepp har en röd lykta på vänster sida och en grön på höger.
+= Click the buoys (or the wheel). Coming in from the sea, keep the red buoys on your left: route B.
+> Klicka på bojarna (eller ratten). När du kommer in från havet har du de röda bojarna till vänster: väg B.

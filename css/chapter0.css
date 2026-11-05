@@ -1,0 +1,73 @@
+/* Chapter 0: moving day at Villa Villekulla. Clouds drift, Pippi's plaits swing, the horse nods, the spunk crawls,
+   the water gushes from the pump, and once the clock is set its pendulum swings.
+   Close-ups: the gate, the pump, the veranda, the mirror, the boxes and the clock.
+   Everything stops with the Motion setting (css/animations.css). */
+
+@keyframes mvDrift{0%{transform:translateX(0)}100%{transform:translateX(-160px)}}
+@keyframes mvPlait{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}}
+@keyframes mvNod{0%,100%{transform:translateY(0)}50%{transform:translateY(2px)}}
+@keyframes mvCrawl{0%,100%{transform:translateX(-4px)}50%{transform:translateX(4px)}}
+@keyframes mvGush{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.85)}}
+@keyframes mvPend{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}}
+
+#sc-move .mv-cloud{animation:mvDrift 50s ease-in-out infinite alternate}
+#sc-move .mv-cloud.b{animation-duration:64s;animation-direction:alternate-reverse}
+#sc-move .mv-plait{transform-box:fill-box;transform-origin:100% 50%;animation:mvPlait 1.4s ease-in-out infinite}
+#sc-move .mv-plait.b{transform-origin:0 50%;animation-delay:-.7s}
+#sc-move .mv-nod{animation:mvNod 3s ease-in-out infinite}
+#sc-move .mv-crawl{animation:mvCrawl 4s ease-in-out infinite}
+#sc-move #mv-gush{transform-box:fill-box;transform-origin:50% 0;animation:mvGush .4s ease-in-out infinite}
+#sc-move.mv-ticking .mv-pend{transform-box:view-box;transform-origin:1432px 520px;animation:mvPend 2s ease-in-out infinite}
+
+/* the garden comes alive: birds, chimney smoke, the oak in the breeze, butterflies, a bee, a squirrel, a spider */
+@keyframes mvFly{0%{transform:translate(0,0)}50%{transform:translate(950px,-30px)}100%{transform:translate(1900px,10px)}}
+@keyframes mvFlap{0%,100%{transform:scaleY(1)}50%{transform:scaleY(-.5)}}
+@keyframes mvSmoke{0%{transform:translate(0,0) scale(.8);opacity:.9}100%{transform:translate(12px,-34px) scale(1.5);opacity:0}}
+@keyframes mvSpin{to{transform:rotate(360deg)}}
+@keyframes mvSway{0%,100%{transform:rotate(-1deg)}50%{transform:rotate(1deg)}}
+@keyframes mvBend{0%,100%{transform:skewX(-4deg)}50%{transform:skewX(4deg)}}
+@keyframes mvWander{0%,100%{transform:translate(0,0)}25%{transform:translate(34px,-18px)}50%{transform:translate(70px,2px)}75%{transform:translate(30px,16px)}}
+@keyframes mvWings{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.25)}}
+@keyframes mvBuzz{0%,100%{transform:translate(0,0)}20%{transform:translate(14px,-8px)}40%{transform:translate(26px,4px)}60%{transform:translate(10px,10px)}80%{transform:translate(-8px,-4px)}}
+@keyframes mvPeep{0%,40%,100%{opacity:0;transform:translateY(6px)}50%,85%{opacity:1;transform:translateY(0)}}
+@keyframes mvPeck{0%,70%,100%{transform:rotate(0)}78%{transform:rotate(12deg)}86%{transform:rotate(0)}92%{transform:rotate(12deg)}}
+@keyframes mvSpider{0%,100%{transform:translateY(0)}50%{transform:translateY(-34px)}}
+@keyframes mvThread{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.55)}}
+@keyframes mvDust{0%,100%{transform:translate(0,0);opacity:.2}50%{transform:translate(-20px,-30px);opacity:.7}}
+@keyframes mvFlutter{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.7) skewY(6deg)}}
+@keyframes mvGlint{0%,100%{opacity:.2}50%{opacity:1}}
+
+#sc-move .mv-cloud.c{animation-duration:80s}
+#sc-move .mv-cloud.d{animation-duration:58s;animation-direction:alternate-reverse}
+#sc-move .mv-birds{animation:mvFly 30s linear infinite}
+#sc-move .mv-birds.b{animation-duration:42s;animation-delay:-16s}
+#sc-move .mv-wing{transform-box:fill-box;transform-origin:50% 100%;animation:mvFlap .5s ease-in-out infinite}
+#sc-move .mv-wing.b{animation-delay:-.25s}
+#sc-move .mv-smoke circle{transform-box:fill-box;transform-origin:50% 50%;animation:mvSmoke 4s ease-out infinite}
+#sc-move .mv-smoke .b{animation-delay:-1.3s}
+#sc-move .mv-smoke .c{animation-delay:-2.6s}
+#sc-move .mv-rays{transform-box:view-box;transform-origin:1460px 110px;animation:mvSpin 60s linear infinite}
+#sc-move .mv-pennant{transform-box:fill-box;transform-origin:0 50%;animation:mvFlutter 1.2s ease-in-out infinite}
+#sc-move .mv-sway{transform-box:view-box;transform-origin:362px 360px;animation:mvSway 6s ease-in-out infinite}
+#sc-move .mv-grass{transform-box:fill-box;transform-origin:50% 100%;animation:mvBend 4s ease-in-out infinite}
+#sc-move .mv-wander{animation:mvWander 10s ease-in-out infinite}
+#sc-move .mv-wander.b{animation-duration:13s;animation-direction:reverse}
+#sc-move .mv-bfly{animation:mvWings .3s ease-in-out infinite}
+#sc-move .mv-bfly.b{animation-duration:.36s}
+#sc-move .mv-buzz{animation:mvBuzz 3s ease-in-out infinite}
+#sc-move .mv-peep{animation:mvPeep 9s ease-in-out infinite}
+#sc-move .mv-peck{transform-box:fill-box;transform-origin:20% 100%;animation:mvPeck 5s ease-in-out infinite}
+#sc-move .mv-spider{animation:mvSpider 8s ease-in-out infinite}
+#sc-move .mv-thread{transform-box:view-box;transform-origin:1490px 280px;animation:mvThread 8s ease-in-out infinite}
+#sc-move .mv-dust{animation:mvDust 12s ease-in-out infinite}
+#sc-move .mv-glint{animation:mvGlint 3s ease-in-out infinite}
+
+/* ---------- close-ups ---------- */
+.light0-svg,.clock0-svg{width:100%;max-width:340px;height:auto;display:block;margin:6px auto 0;border-radius:8px}
+.clock0-set{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:center;margin:8px 0}
+.clock0-set span{font-size:.9em;margin-left:6px}
+.clock0-set .btn.ghost{min-width:2.4em}
+.boxes0{display:flex;flex-direction:column;align-items:center;gap:3px;margin:6px 0 10px}
+.box0{background:#c09060;color:#24120a;border:2px solid #6b4423;border-radius:4px;padding:3px 10px;font-size:.9em}
+.box0 span{opacity:.7;margin-left:6px}
+.box0.empty{background:transparent;color:inherit;border-style:dashed;opacity:.6}

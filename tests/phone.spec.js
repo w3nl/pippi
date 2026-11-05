@@ -8,7 +8,8 @@ test('portrait: rotate banner, swipeable room, tappable hotspots', async ({ page
   await expect(page.locator('#rotate')).toBeVisible();
   await expect(page.locator('#rot-line')).not.toBeEmpty();
   expect(await noSideScroll(page)).toBe(true);
-  await page.locator('#btn-new').tap();
+  await expect(page.locator('#title')).not.toHaveClass(/loading/);
+  await page.evaluate(() => startNew());
   await skip(page);
   await expect(page.locator('.swipe')).toBeVisible();
   await page.locator('#pan').evaluate(e => e.scrollLeft = 120);
@@ -71,11 +72,11 @@ test('every close-up fits on a phone without sideways scrolling', async ({ page 
     await page.locator('#m-close').tap();
     expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
   }
-  // Chapter 6: the Hoppetossa's close-ups
-  await seed(page, { ch: 6, scene: 'ship', f: { introDone: true, aboard: true, course: true }, inv: ['net', 'sextant', 'spyglass'] }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6']);
+  // Chapter 7: the Hoppetossa's close-ups
+  await seed(page, { ch: 7, scene: 'ship', f: { introDone: true, aboard: true, course: true }, inv: ['net', 'sextant', 'spyglass'] }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6', '-ch7']);
   await page.locator('#btn-cont').tap();
   await skip(page);
-  for (const open of ['openHoist()', 'S.pul = { n: 3 }; openHoist()', 'openWheel()', 'openChart6()', 'openFloat()', 'openStill()', 'openLog6()', 'openSextant6()', 'S.eqr = 1; openSextant6()', 'openLandHo()']) {
+  for (const open of ['openHoist()', 'S.pul = { n: 3 }; openHoist()', 'openWheel()', 'openChart7()', 'openFloat()', 'openStill()', 'openLog7()', 'openSextant7()', 'S.eqr = 1; openSextant7()', 'openLandHo()']) {
     await page.evaluate(open);
     await page.waitForTimeout(150);
     const ok = await page.locator('.panel').evaluate(e => e.scrollWidth <= e.clientWidth + 1);
@@ -83,11 +84,47 @@ test('every close-up fits on a phone without sideways scrolling', async ({ page 
     await page.locator('#m-close').tap();
     expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
   }
-  // Chapter 7: the island's close-ups
-  await seed(page, { ch: 7, scene: 'island', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6', '-ch7']);
+  // Chapter 8: the island's close-ups
+  await seed(page, { ch: 8, scene: 'island', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6', '-ch7', '-ch8']);
   await page.locator('#btn-cont').tap();
   await skip(page);
-  for (const open of ['openSundial7()', 'S.sdl = { r: 1, pick: 9 }; openSundial7()', 'openTide7()', 'openPaces7()', 'openChest7()', 'openThunder7()', 'S.thn = { r: 1, seen: true }; openThunder7()', 'openTurtles7()']) {
+  for (const open of ['openSundial8()', 'S.sdl = { r: 1, pick: 9 }; openSundial8()', 'openTide8()', 'openPaces8()', 'openChest8()', 'openThunder8()', 'S.thn = { r: 1, seen: true }; openThunder8()', 'openTurtles8()']) {
+    await page.evaluate(open);
+    await page.waitForTimeout(150);
+    const ok = await page.locator('.panel').evaluate(e => e.scrollWidth <= e.clientWidth + 1);
+    expect(ok, `${open} is wider than the screen`).toBe(true);
+    await page.locator('#m-close').tap();
+    expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
+  }
+  // Chapter 0: moving day's close-ups
+  await seed(page, { ch: 0, scene: 'move', f: { introDone: true } });
+  await page.locator('#btn-cont').tap();
+  await skip(page);
+  for (const open of ['openGate0()', 'S.gt0 = { r: 1 }; openGate0()', 'openPump0()', 'openVeranda0()', 'openLight0()', 'S.lgt0 = { r: 1, pick: 1 }; openLight0()', 'openBoxes0()', 'S.bx0 = { r: 0, stack: [0, 1, 2] }; openBoxes0()', 'openClock0()']) {
+    await page.evaluate(open);
+    await page.waitForTimeout(150);
+    const ok = await page.locator('.panel').evaluate(e => e.scrollWidth <= e.clientWidth + 1);
+    expect(ok, `${open} is wider than the screen`).toBe(true);
+    await page.locator('#m-close').tap();
+    expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
+  }
+  // Chapter 9: the voyage home's close-ups
+  await seed(page, { ch: 9, scene: 'voyage', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6', '-ch7', '-ch8', '-ch9']);
+  await page.locator('#btn-cont').tap();
+  await skip(page);
+  for (const open of ['openSeason9()', 'S.ssn = { r: 1 }; openSeason9()', 'openBottle9()', 'S.btl = { r: 1 }; openBottle9()', 'openStorm9()', 'S.stm = { r: 1 }; openStorm9()', 'openSwallows9()', 'S.swl = { r: 1 }; openSwallows9()', 'openLights9()', 'S.lts = { r: 1 }; openLights9()', 'openBuoys9()', 'S.byo = { r: 1 }; openBuoys9()']) {
+    await page.evaluate(open);
+    await page.waitForTimeout(150);
+    const ok = await page.locator('.panel').evaluate(e => e.scrollWidth <= e.clientWidth + 1);
+    expect(ok, `${open} is wider than the screen`).toBe(true);
+    await page.locator('#m-close').tap();
+    expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
+  }
+  // Chapter 10: Villa Villekulla's close-ups
+  await seed(page, { ch: 10, scene: 'home', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6', '-ch7', '-ch8', '-ch9', '-ch10']);
+  await page.locator('#btn-cont').tap();
+  await skip(page);
+  for (const open of ['openRings10()', 'S.rng = { r: 1, n: 9 }; openRings10()', 'openRoll10()', 'S.rol = { r: 1, pick: 3 }; openRoll10()', 'openMagnet10()', 'openLarder10()', 'openRainbow10()', 'S.rbw = { r: 1 }; openRainbow10()', 'openHog10()', 'S.hog = { r: 1 }; openHog10()']) {
     await page.evaluate(open);
     await page.waitForTimeout(150);
     const ok = await page.locator('.panel').evaluate(e => e.scrollWidth <= e.clientWidth + 1);
@@ -112,6 +149,18 @@ test('every close-up fits on a phone without sideways scrolling', async ({ page 
   await page.locator('#btn-cont').tap();
   await skip(page);
   for (const open of ['openTickets()', 'openLights()', 'openTeeter()', 'openJuggle()', 'openTrapeze()', 'openGears()', 'S.gr = { n: 3 }; openGears()']) {
+    await page.evaluate(open);
+    await page.waitForTimeout(150);
+    const ok = await page.locator('.panel').evaluate(e => e.scrollWidth <= e.clientWidth + 1);
+    expect(ok, `${open} is wider than the screen`).toBe(true);
+    await page.locator('#m-close').tap();
+    expect(await noSideScroll(page), `${open} made the page scroll sideways`).toBe(true);
+  }
+  // Chapter 6: the balloon's close-ups
+  await seed(page, { ch: 6, scene: 'balloon', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6']);
+  await page.locator('#btn-cont').tap();
+  await skip(page);
+  for (const open of ['openLift6()', 'S.lft = { r: 1 }; openLift6()', 'openWinds6()', 'S.wnd = { r: 1, h: 1 }; openWinds6()', 'openMap6()', 'S.map6 = { r: 1 }; openMap6()', 'openChute6()', 'S.cht = { r: 1 }; openChute6()', 'openCloud6()', 'S.cld = { r: 1 }; openCloud6()', 'openVane6()', 'S.vane = { r: 1, i: 6 }; openVane6()']) {
     await page.evaluate(open);
     await page.waitForTimeout(150);
     const ok = await page.locator('.panel').evaluate(e => e.scrollWidth <= e.clientWidth + 1);

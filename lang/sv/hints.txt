@@ -34,7 +34,7 @@
 = You have sugar, and the horse is right outside the door. But how do you give a horse a treat safely?
 > Du har socker, och Lilla Gubben står precis utanför dörren. Men hur ger man en häst något gott utan att det blir farligt?
 = Select the sugar cubes, click the horse in the door's window, and choose the flat, open hand.
-> Välj sockerbitarna, klicka på hästen i dörrens fönster och välj den platta, öppna handen.
+> Välj sockerbitarna, klicka på Lilla Gubben i dörrens fönster och välj den platta, öppna handen.
 
 # ---------- Chapter 2 ----------
 = It's dark. The torch on the bedside table is empty. Something else on the table runs on batteries.
@@ -201,3 +201,33 @@
 > Sköldpaddorna kläcks! Ungarna kryper mot det starkaste ljuset. På en mörk strand borde det vara havet.
 = Click the turtle nest. Switch off the torch by the nest, the torch on the dunes and the lantern in the hut window; leave the feast torches behind the hut on. Then let them go!
 > Klicka på sköldpaddsboet. Släck facklan vid boet, facklan på dynerna och lyktan i hyddans fönster; låt festfacklorna bakom hyddan brinna. Låt dem sedan gå!
+
+# ---------- Chapter 8 ----------
+= A branch of the old oak is lying across the path. Before Pippi breaks it up, look at its broken end: a tree grows one ring every year.
+> En gren från den gamla eken ligger tvärs över gången. Titta på den avbrutna änden innan Pippi bryter sönder den: ett träd får en ny ring varje år.
+= Click the fallen branch. Count the dark lines: 9 rings, so 9 years. The newest ring is the outside one, just under the bark.
+> Klicka på den nerblåsta grenen. Räkna de mörka linjerna: 9 ringar, alltså 9 år. Den nyaste ringen är den yttersta, precis under barken.
+= The sea chest is far too heavy to carry or drag. But Pippi has just made a pile of nice round logs…
+> Sjömanskistan är alldeles för tung att bära eller släpa. Men Pippi har just gjort en hög med fina runda kubbar…
+= Click the sea chest and put the round logs under it: rolling rubs much less than sliding.
+> Klicka på sjömanskistan och lägg de runda kubbarna under den: att rulla skaver mycket mindre än att glida.
+= The front door is locked, and Mr Nilsson dropped the key in the rain barrel. The sea chest has a present from the captain in it.
+> Ytterdörren är låst, och Herr Nilsson har tappat nyckeln i regntunnan. I sjömanskistan finns en present från kaptenen.
+= Open the sea chest for the magnet, then use it on the rain barrel. Tick the key, the nail and the bottle top: iron and steel. Not gold, glass or rubber.
+> Öppna sjömanskistan och ta magneten, och använd den sedan på regntunnan. Kryssa för nyckeln, spiken och kapsylen: järn och stål. Inte guld, glas eller gummi.
+= You've got the front-door key.
+> Du har nyckeln till ytterdörren.
+= Select the key and use it on the front door.
+> Välj nyckeln och använd den på ytterdörren.
+= The things from Pippi's larder are on the garden table. But you've been away for five months: what is still good to eat?
+> Sakerna från Pippis skafferi står på trädgårdsbordet. Men ni har varit borta i fem månader: vad går fortfarande att äta?
+= Click the garden table. Tick the crispbread, the honey, the raisins and the jam: dry or very sweet food keeps. Not the bread, the milk, the cucumber or the old pancake.
+> Klicka på trädgårdsbordet. Kryssa för knäckebrödet, honungen, russinen och sylten: torr eller väldigt söt mat håller. Inte brödet, mjölken, gurkan eller den gamla pannkakan.
+= Sun and rain at the same time: a rainbow! A rainbow is always on the other side of the sky from the sun.
+> Sol och regn på samma gång: en regnbåge! En regnbåge syns alltid på andra sidan himlen från solen.
+= Click the sky (or Pippi). The sun is in the west, so look east. A rainbow is sunlight, split into its colours by the raindrops.
+> Klicka på himlen (eller på Pippi). Solen står i väster, så titta mot öster. En regnbåge är solljus som regndropparna delar upp i färger.
+= Something is snuffling in the horse's straw on the veranda.
+> Något nosar i Lilla Gubbens halm på verandan.
+= Click the horse's straw. The hedgehog was hibernating. Give it water and cat food. Never milk!
+> Klicka på Lilla Gubbens halm. Igelkotten har legat i ide. Ge den vatten och kattmat. Aldrig mjölk!

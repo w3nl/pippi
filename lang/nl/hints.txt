@@ -28,13 +28,13 @@
 = Select the key and use it on the front door.
 > Kies de sleutel en gebruik hem op de voordeur.
 = The horse is leaning on the door. Horses like sugar. The captain's sea chest has a letter lock, and the flags on the string over your head spell something.
-> Het paard leunt tegen de deur. Paarden houden van suiker. De scheepskist van de kapitein heeft een letterslot, en de vlaggetjes aan het touw boven je hoofd vormen een woord.
+> Witje leunt tegen de deur. Paarden houden van suiker. De scheepskist van de kapitein heeft een letterslot, en de vlaggetjes aan het touw boven je hoofd vormen een woord.
 = Use the flag chart by the mirror: the flags read S, P, U, N, K. Set the sea chest's lock to SPUNK.
 > Gebruik de vlaggenkaart bij de spiegel: de vlaggen zijn S, P, U, N, K. Zet het slot van de scheepskist op SPUNK.
 = You have sugar, and the horse is right outside the door. But how do you give a horse a treat safely?
-> Je hebt suiker, en het paard staat vlak voor de deur. Maar hoe geef je een paard veilig iets lekkers?
+> Je hebt suiker, en Witje staat vlak voor de deur. Maar hoe geef je een paard veilig iets lekkers?
 = Select the sugar cubes, click the horse in the door's window, and choose the flat, open hand.
-> Kies de suikerklontjes, klik op het paard in het raampje van de deur en kies de platte, open hand.
+> Kies de suikerklontjes, klik op Witje in het raampje van de deur en kies de platte, open hand.
 
 # ---------- Chapter 2 ----------
 = It's dark. The torch on the bedside table is empty. Something else on the table runs on batteries.
@@ -132,7 +132,7 @@
 
 # ---------- Chapter 5 ----------
 = Pippi won't sail without her horse. The cargo hoist on the stern has pulleys: the more ropes hold the horse up, the less each one has to carry.
-> Pippi vaart niet zonder haar paard. De laadtakel op het achterdek heeft katrollen: hoe meer touwen het paard dragen, hoe minder elk touw hoeft te houden.
+> Pippi vaart niet zonder haar paard. De laadtakel op het achterdek heeft katrollen: hoe meer touwen Witje dragen, hoe minder elk touw hoeft te houden.
 = Click the hoist and choose 4 ropes: 400 kg ÷ 4 = 100 kg each, just what the three of you can pull. Then heave.
 > Klik op de takel en kies 4 touwen: 400 kg ÷ 4 = 100 kg per touw, precies wat jullie met z'n drieën kunnen trekken. Hijs dan.
 = The captain wants a course for his island. His chart in the cabin shows which way to go, and the compass by the wheel shows which way the ship points.
@@ -148,7 +148,7 @@
 = The log, the apple and the cork float. The key, the coin and the marble sink.
 > Het blok hout, de appel en de kurk drijven. De sleutel, de munt en de knikker zinken.
 = The horse drank all the drinking water, and sea water is far too salty. The hot sun can turn sea water into fresh water.
-> Het paard heeft al het drinkwater opgedronken, en zeewater is veel te zout. De hete zon kan van zeewater zoet water maken.
+> Witje heeft al het drinkwater opgedronken, en zeewater is veel te zout. De hete zon kan van zeewater zoet water maken.
 = Click the water barrel and choose: a bowl of sea water, an empty cup, a glass lid, a pebble above the cup, in the hot sun.
 > Klik op het watervat en kies: een kom zeewater, een leeg bekertje, een glazen deksel, een steentje boven het bekertje, in de hete zon.
 = It's night. Where are we? The captain measures the stars with his sextant: it's in the instrument box in his cabin.
@@ -184,7 +184,7 @@
 = Low tide! Take the captain's map to Turtle Islet. His paces are 1 metre long; other people's are shorter.
 > Eb! Neem de kaart van de kapitein mee naar het Schildpadeilandje. Zijn passen zijn 1 meter lang; die van anderen zijn korter.
 = Select the map and click Turtle Islet. 12 metres is 24 of Pippi's paces (50 cm), 30 of Tommy's (40 cm), 40 of Annika's (30 cm) or 6 of the horse's (2 m).
-> Kies de kaart en klik op het Schildpadeilandje. 12 meter is 24 passen van Pippi (50 cm), 30 van Tommy (40 cm), 40 van Annika (30 cm) of 6 van het paard (2 m).
+> Kies de kaart en klik op het Schildpadeilandje. 12 meter is 24 passen van Pippi (50 cm), 30 van Tommy (40 cm), 40 van Annika (30 cm) of 6 van Witje (2 m).
 = There's the X! You need something to dig with. Kings don't dig their own holes, but they do own a spade.
 > Daar is de X! Je hebt iets nodig om mee te graven. Koningen graven hun eigen gaten niet, maar ze hebben wel een schep.
 = Take the spade leaning on the king's hut, select it and click the X on Turtle Islet.
@@ -201,3 +201,33 @@
 > De schildpadjes komen uit! Ze kruipen naar het felste licht. Op een donker strand hoort dat de zee te zijn.
 = Click the turtle nest. Switch off the torch by the nest, the torch on the dunes and the lantern in the hut window; leave the feast torches behind the hut on. Then let them go!
 > Klik op het schildpaddennest. Doe de fakkel bij het nest, de fakkel op de duinen en de lantaarn voor het raam van de hut uit; laat de feestfakkels achter de hut aan. Laat ze dan gaan!
+
+# ---------- Chapter 8 ----------
+= A branch of the old oak is lying across the path. Before Pippi breaks it up, look at its broken end: a tree grows one ring every year.
+> Er ligt een tak van de oude eik dwars over het pad. Kijk naar het afgebroken eind voordat Pippi hem in stukken breekt: een boom groeit elk jaar één ring.
+= Click the fallen branch. Count the dark lines: 9 rings, so 9 years. The newest ring is the outside one, just under the bark.
+> Klik op de afgebroken tak. Tel de donkere lijnen: 9 ringen, dus 9 jaar. De nieuwste ring is de buitenste, vlak onder de schors.
+= The sea chest is far too heavy to carry or drag. But Pippi has just made a pile of nice round logs…
+> De zeemanskist is veel te zwaar om te dragen of te slepen. Maar Pippi heeft net een stapel mooie ronde blokken gemaakt…
+= Click the sea chest and put the round logs under it: rolling rubs much less than sliding.
+> Klik op de zeemanskist en leg de ronde blokken eronder: rollen schuurt veel minder dan schuiven.
+= The front door is locked, and Mr Nilsson dropped the key in the rain barrel. The sea chest has a present from the captain in it.
+> De voordeur zit op slot, en meneer Nilsson heeft de sleutel in de regenton laten vallen. In de zeemanskist zit een cadeau van de kapitein.
+= Open the sea chest for the magnet, then use it on the rain barrel. Tick the key, the nail and the bottle top: iron and steel. Not gold, glass or rubber.
+> Maak de zeemanskist open voor de magneet, en gebruik hem dan op de regenton. Kruis de sleutel, de spijker en de kroonkurk aan: ijzer en staal. Geen goud, glas of rubber.
+= You've got the front-door key.
+> Je hebt de sleutel van de voordeur.
+= Select the key and use it on the front door.
+> Kies de sleutel en gebruik hem op de voordeur.
+= The things from Pippi's larder are on the garden table. But you've been away for five months: what is still good to eat?
+> De spullen uit Pippi's voorraadkast staan op de tuintafel. Maar jullie zijn vijf maanden weg geweest: wat kun je nog eten?
+= Click the garden table. Tick the crispbread, the honey, the raisins and the jam: dry or very sweet food keeps. Not the bread, the milk, the cucumber or the old pancake.
+> Klik op de tuintafel. Kruis het knäckebröd, de honing, de rozijnen en de jam aan: droog of heel zoet eten blijft goed. Niet het brood, de melk, de komkommer of de oude pannenkoek.
+= Sun and rain at the same time: a rainbow! A rainbow is always on the other side of the sky from the sun.
+> Zon en regen tegelijk: een regenboog! Een regenboog staat altijd aan de andere kant van de lucht dan de zon.
+= Click the sky (or Pippi). The sun is in the west, so look east. A rainbow is sunlight, split into its colours by the raindrops.
+> Klik op de lucht (of op Pippi). De zon staat in het westen, dus kijk naar het oosten. Een regenboog is zonlicht, door de regendruppels in zijn kleuren gesplitst.
+= Something is snuffling in the horse's straw on the veranda.
+> Er snuffelt iets in het stro van Witje op de veranda.
+= Click the horse's straw. The hedgehog was hibernating. Give it water and cat food. Never milk!
+> Klik op het stro van Witje. De egel hield een winterslaap. Geef hem water en kattenvoer. Nooit melk!

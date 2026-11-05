@@ -321,7 +321,7 @@ function openGears(){
 
 /* ---------- intro, start and win ---------- */
 function intro5(){
-  say([["sys", "The circus has come to town! A big red-and-white tent in the meadow, music, sawdust, and the smell of candyfloss."],
+  say([["sys", "The circus has come to town! A big red-and-white tent in the snowy meadow, music, sawdust, and the smell of candyfloss."],
        ["pippi", "A circus! I've never been to a circus, so I'm sure I'll be very good at it."],
        ["annika", "Pippi, you're supposed to WATCH the circus. Not be in it."],
        ["sys", "Inside the big top, nothing is happening. The ringmaster is pacing up and down in front of the curtain, pulling at his moustache."],

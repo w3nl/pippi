@@ -10,7 +10,7 @@ async function seed(page, state = null, unlocked = []) {
   await page.evaluate(([KEY, state, unlocked, lang]) => {
     localStorage.clear();
     localStorage.setItem(KEY + '-norotate', '1');
-    localStorage.setItem(KEY + '-ord', '2');
+    localStorage.setItem(KEY + '-ord', '4');
     if (lang) localStorage.setItem(KEY + '-lang', lang);
     unlocked.forEach(k => localStorage.setItem(KEY + k, '1'));
     if (state) localStorage.setItem(KEY, JSON.stringify({ v: 1, inv: [], hl: {}, hints: 0, t: 0, ach: {}, started: true, f: {}, ...state }));

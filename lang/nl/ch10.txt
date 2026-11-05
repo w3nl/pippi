@@ -1,0 +1,449 @@
+# Dutch translation: Chapter 9, home again (js/chapter9.js).
+# Villa Kakelbont in de lente. Het paard, meneer Nilsson, de juf, Kling en Klang, kapitein Langkous ("Pippilotta").
+# De egel, de regenton, de hoefijzermagneet, jaarringen, wrijving, de regenboog, winterslaap.
+
+= A horseshoe magnet
+> Een hoefijzermagneet
+= The captain's goodbye present, on a long string. The label says: For finding things.
+> Het afscheidscadeau van de kapitein, aan een lang touw. Op het kaartje staat: Om dingen mee te vinden.
+= The key of Villa Villekulla, fished out of the rain barrel. Still dripping.
+> De sleutel van Villa Kakelbont, opgevist uit de regenton. Hij druipt nog.
+= A letter from Miss: "Dear Pippi, welcome home! School starts again on Monday. I have saved you a desk by the window, next to the geraniums."
+> Een brief van de juf: "Lieve Pippi, welkom thuis! Maandag begint de school weer. Ik heb een tafeltje voor je vrijgehouden bij het raam, naast de geraniums."
+= Monday? Then I'll start my holidays on Tuesday.
+> Maandag? Dan begint mijn vakantie op dinsdag.
+= A card from Kling and Klang: "A friendly reminder: horses may not be carried along the pavement. Not even by very strong girls."
+> Een kaartje van Kling en Klang: "Vriendelijk verzoek: paarden mogen niet over de stoep gedragen worden. Ook niet door heel sterke meisjes."
+= Then I'll carry it along the road.
+> Dan draag ik hem wel over de weg.
+= A postcard from the circus: "Dear Miss Longstocking, the strongman has still not recovered. Please come and lift him again soon. He misses it."
+> Een ansichtkaart van het circus: "Beste juffrouw Langkous, de sterke man is nog steeds niet bijgekomen. Komt u hem alstublieft gauw weer optillen? Hij mist het."
+= The spunk's jam jar, riding home on the luggage cart. The spunk has had a long voyage.
+> Het jampotje van de spunk, dat mee naar huis rijdt op de bagagekar. De spunk heeft een lange reis achter de rug.
+= You take it. It looks pleased to be home. As far as anyone can tell with a spunk.
+> Je neemt hem mee. Hij lijkt blij dat hij thuis is. Voor zover je dat kunt zien aan een spunk.
+= At the end of every rainbow there's a pot of gold. Somebody else can have this one: I've got a whole suitcase.
+> Aan het eind van elke regenboog staat een pot met goud. Die mag iemand anders hebben: ik heb al een hele koffer.
+= The rainbow ends somewhere behind Villa Villekulla. Mr Nilsson has gone to look anyway.
+> De regenboog eindigt ergens achter Villa Kakelbont. Meneer Nilsson is toch maar even gaan kijken.
+= A pale blue spring sky. Two swallows swoop round the roof: they've just come home from Africa, the way you've just come home from the South Seas.
+> Een lichtblauwe lentelucht. Twee zwaluwen scheren om het dak: ze zijn net terug uit Afrika, zoals jij net terug bent uit de Stille Zuidzee.
+= Villa Villekulla, with lanterns on the veranda and smoke from the chimney: Pippi is making pancakes. Home.
+> Villa Kakelbont, met lampionnen op de veranda en rook uit de schoorsteen: Pippi bakt pannenkoeken. Thuis.
+= Villa Villekulla, a little crooked, exactly as you left it. Except that the swallows have built a nest under the roof.
+> Villa Kakelbont, een beetje scheef, precies zoals je het achterliet. Alleen hebben de zwaluwen een nest onder het dak gebouwd.
+= They can stay. Everybody can stay. Except burglars.
+> Die mogen blijven. Iedereen mag blijven. Behalve inbrekers.
+= The kitchen. Tommy and Annika have opened every window to let the spring in. It smells much better already.
+> De keuken. Tommy en Annika hebben alle ramen opengezet om de lente binnen te laten. Het ruikt al veel beter.
+= You rub a clean spot on the dusty kitchen window and peek in. The stove, the bureau, the mirror… and a very old pancake on the table.
+> Je wrijft een schoon plekje op het stoffige keukenraam en gluurt naar binnen. Het fornuis, het bureau, de spiegel… en een heel oude pannenkoek op tafel.
+= The front door is wide open, and the party spills in and out.
+> De voordeur staat wijd open, en het feest loopt in en uit.
+= The front door, wide open. Inside it smells of dust, old pancakes and home.
+> De voordeur, wijd open. Binnen ruikt het naar stof, oude pannenkoeken en thuis.
+= The front door is still locked. You have the key in your pocket.
+> De voordeur zit nog op slot. Je hebt de sleutel in je zak.
+= The front door is locked.
+> De voordeur zit op slot.
+= The front door is locked. Locked! At Villa Villekulla!
+> De voordeur zit op slot. Op slot! Bij Villa Kakelbont!
+= I locked it before we sailed, because of burglars. Then I gave the key to Mr Nilsson to look after. He's very good at looking after things.
+> Ik heb hem op slot gedaan voordat we wegvoeren, vanwege inbrekers. Toen heb ik de sleutel aan meneer Nilsson gegeven om op te passen. Hij is heel goed in oppassen.
+= Eek…
+> Iek…
+= Mr Nilsson looks at the rain barrel. Then he looks at his feet.
+> Meneer Nilsson kijkt naar de regenton. Dan kijkt hij naar zijn voeten.
+= The rain barrel. Nothing left in it now but rainwater, old leaves, a gold coin, a marble and a rubber ball.
+> De regenton. Er zit nu alleen nog regenwater in, oude bladeren, een gouden munt, een knikker en een rubberen bal.
+= The rain barrel, full to the brim with a whole winter's rain and melted snow. It's dark and full of old leaves: you can't see the bottom.
+> De regenton, tot de rand toe vol met de regen en gesmolten sneeuw van een hele winter. Hij is donker en vol oude bladeren: je kunt de bodem niet zien.
+= Mr Nilsson points into the barrel, then pretends to drop something: plop. The key is down there. And it's far too deep and cold to reach in.
+> Meneer Nilsson wijst in de ton en doet net alsof hij iets laat vallen: plons. De sleutel ligt daar beneden. En het is veel te diep en te koud om erin te graaien.
+= Mr Nilsson sits on the rim of the rain barrel, looking very guilty. Every now and then he peers into the water.
+> Meneer Nilsson zit op de rand van de regenton en kijkt heel schuldig. Af en toe tuurt hij in het water.
+= Mr Nilsson is polishing his bottle top. He's very glad to have it back.
+> Meneer Nilsson poetst zijn kroonkurk. Hij is heel blij dat hij hem terug heeft.
+= Eek eek!
+> Iek iek!
+= Mr Nilsson has raisins in both cheeks and one in each hand.
+> Meneer Nilsson heeft rozijnen in allebei zijn wangen en in elke hand nog een.
+= Under the lilac, the hedgehog is eating its supper. It makes a lot of noise for something so small.
+> Onder de sering eet de egel zijn avondeten. Hij maakt veel lawaai voor zoiets kleins.
+= A lilac bush, in full flower. It smells wonderful, and a yellow butterfly can't decide which flower it likes best.
+> Een seringenstruik, in volle bloei. Hij ruikt heerlijk, en een geel vlindertje kan niet kiezen welke bloem het het lekkerst vindt.
+= Lanterns hang in the branches of the old oak, glowing like big fireflies.
+> In de takken van de oude eik hangen lampionnen, die gloeien als grote vuurvliegjes.
+= The old oak, full of fresh green leaves. One of its big branches broke off in the winter storms: it's lying right across the garden path.
+> De oude eik, vol frisse groene blaadjes. Een van zijn dikke takken is in de winterstormen afgebroken: hij ligt dwars over het tuinpad.
+= The old oak. There's a hollow in it, just the right size for hiding things in.
+> De oude eik. Er zit een holte in, precies groot genoeg om dingen in te verstoppen.
+= This oak is at least a hundred years old. I counted. Well, I counted to nine and then I guessed.
+> Deze eik is minstens honderd jaar oud. Ik heb het geteld. Nou ja, ik heb tot negen geteld en de rest geraden.
+= A neat pile of round logs. Pippi broke the branch into pieces with her bare hands. One hand, actually: the other one is holding the horse.
+> Een keurig stapeltje ronde blokken. Pippi heeft de tak met haar blote handen in stukken gebroken. Met één hand eigenlijk: met de andere houdt ze Witje vast.
+= Pippi's sea chest, full of things from the island, on the luggage cart by the gate. It weighs as much as a grown-up.
+> Pippi's zeemanskist, vol spullen van het eiland, op de bagagekar bij het hek. Hij is zo zwaar als een grote mens.
+= We can't get it past that branch anyway. And Pippi's hands are full of horse.
+> We krijgen hem toch niet langs die tak. En Pippi's handen zitten vol paard.
+= You open the lid. Coconuts, shells, a grass skirt for the horse, eighteen kilos of sweets… and a big red horseshoe magnet on a long string.
+> Je doet het deksel open. Kokosnoten, schelpen, een rokje van gras voor Witje, achttien kilo snoep… en een grote rode hoefijzermagneet aan een lang touw.
+= The label says: "For Pippilotta. For finding things. Love, Dad."
+> Op het kaartje staat: "Voor Pippilotta. Om dingen mee te vinden. Liefs, papa."
+= Dad always knows what I need. Even when I don't.
+> Papa weet altijd wat ik nodig heb. Zelfs als ik het zelf niet weet.
+= The sea chest, open at the foot of the veranda. Mr Nilsson has been through it twice already.
+> De zeemanskist, open bij de veranda. Meneer Nilsson heeft hem al twee keer doorzocht.
+= The garden gate, still creaking. Beyond it: the little town, the church, and the harbour, where the Hoppetossa is waiting for the captain.
+> Het tuinhek, dat nog steeds piept. Daarachter: het stadje, de kerk, en de haven, waar de Hoppetossa op de kapitein wacht.
+= Tommy and Annika's house, next door. Their mother has hung a big WELCOME HOME sign in the window.
+> Het huis van Tommy en Annika, hiernaast. Hun moeder heeft een groot bord met WELKOM THUIS voor het raam gehangen.
+= We'll go home in a minute. First the party!
+> Zo meteen gaan we naar huis. Eerst het feest!
+= The party table: crispbread, honey, raisins and strawberry jam. Mr Nilsson is guarding the raisins. From the inside.
+> De feesttafel: knäckebröd, honing, rozijnen en aardbeienjam. Meneer Nilsson bewaakt de rozijnen. Van binnenuit.
+= The garden table, covered in last year's leaves. Perfect for a party, once there's food on it. And the food is in the larder, behind the locked front door.
+> De tuintafel, vol bladeren van vorig jaar. Perfect voor een feest, als er eten op staat. En het eten staat in de voorraadkast, achter de voordeur die op slot zit.
+= The horse's own straw, on the veranda. The winter wind has blown a big heap of dry leaves on top of it.
+> Het eigen stro van Witje, op de veranda. De winterwind heeft er een grote hoop droge bladeren op geblazen.
+= The horse is back on its veranda, in its own straw. It hasn't stopped smiling.
+> Witje staat weer op zijn veranda, in zijn eigen stro. Hij is nog niet opgehouden met glimlachen.
+= Pfrrrr.
+> Pfrrrr.
+= The horse stares at its veranda. It wants to go home, but something on its straw is snuffling.
+> Witje staart naar zijn veranda. Hij wil naar huis, maar er snuffelt iets op zijn stro.
+= Pfrrr?
+> Pfrrr?
+= The horse looks down at you from high above Pippi's head. It is not putting a hoof in that wet grass. It wants its veranda.
+> Witje kijkt op je neer van hoog boven Pippi's hoofd. Hij zet geen hoef in dat natte gras. Hij wil naar zijn veranda.
+= Welcome home, everybody! Especially me.
+> Welkom thuis, iedereen! Vooral ik.
+= The horse wants to go on its veranda. But there's something on its straw. Something prickly.
+> Witje wil op zijn veranda. Maar er ligt iets op zijn stro. Iets prikkerigs.
+= A welcome-home party! I've never had one, so I'm sure it'll be the best one ever.
+> Een welkom-thuisfeest! Ik heb er nog nooit een gehad, dus het wordt vast het allerbeste ooit.
+= Home! I'd put the horse down, but it says the grass is too wet. It's very particular about its hooves.
+> Thuis! Ik zou Witje wel neerzetten, maar hij zegt dat het gras te nat is. Hij is heel precies met zijn hoeven.
+= What a day. And school starts on Monday.
+> Wat een dag. En maandag begint de school.
+= Don't tell Pippi.
+> Niet tegen Pippi zeggen.
+= The sun's out, and it's still raining! Pippi says she's ordered a rainbow.
+> De zon schijnt, en het regent nog steeds! Pippi zegt dat ze een regenboog heeft besteld.
+= Where will it be, though?
+> Maar waar komt die dan?
+= That branch was knocked down by the winter storms. Look, you can see rings where it broke.
+> Die tak is door de winterstormen afgebroken. Kijk, je kunt ringen zien waar hij is afgebroken.
+= Pippi could break it up in no time. If she put the horse down.
+> Pippi breekt hem zo in stukken. Als ze Witje even neerzet.
+= The sea chest is too heavy for us to carry. But those logs are nice and round…
+> De zeemanskist is te zwaar voor ons om te dragen. Maar die blokken zijn mooi rond…
+= Pippi, where's the front-door key?
+> Pippi, waar is de sleutel van de voordeur?
+= Mr Nilsson knows. Mr Nilsson knows everything.
+> Meneer Nilsson weet het. Meneer Nilsson weet alles.
+= Let's get the party ready!
+> Laten we het feest klaarmaken!
+= Only with things that haven't gone off. We've been away for months.
+> Alleen met dingen die nog niet bedorven zijn. We zijn maanden weg geweest.
+
+= The fallen branch
+> De afgebroken tak
+= The broken end, close up
+> Het afgebroken eind, van dichtbij
+= Pippi is about to snap the branch into logs. "Wait!" says Annika. "Look at the end where it broke off: rings! A tree grows a new ring every year."
+> Pippi wil de tak net in blokken breken. "Wacht!" zegt Annika. "Kijk naar het eind waar hij is afgebroken: ringen! Een boom krijgt elk jaar een nieuwe ring."
+= How old was the branch? Count the rings.
+> Hoe oud was de tak? Tel de ringen.
+= One fewer
+> Eén minder
+= One more
+> Eén meer
+= That's it
+> Dat is het
+= And which ring grew last summer, just before the storm? Click it.
+> En welke ring is vorige zomer gegroeid, vlak voor de storm? Klik erop.
+= Nine rings: the branch was nine years old. One ring for every year.
+> Negen ringen: de tak was negen jaar oud. Eén ring voor elk jaar.
+= You counted the light rings and the dark lines. Each year makes a light ring (spring and summer, when the tree grows fast) and a dark line (when it slows down in autumn). Count just the dark lines.
+> Je hebt de lichte ringen én de donkere lijnen geteld. Elk jaar maakt een lichte ring (lente en zomer, als de boom snel groeit) en een donkere lijn (als hij in de herfst langzamer gaat). Tel alleen de donkere lijnen.
+= There are more than that. Start at the dot in the middle and count every dark line out to the bark.
+> Het zijn er meer. Begin bij het stipje in het midden en tel elke donkere lijn tot aan de schors.
+= Fewer than that. Count only the dark lines, from the dot in the middle out to the bark.
+> Minder dan dat. Tel alleen de donkere lijnen, van het stipje in het midden tot aan de schors.
+= The outside one, just under the bark! A tree grows outwards: every year it adds a new ring on the outside. The ring in the middle is from when the branch was a tiny twig.
+> De buitenste, vlak onder de schors! Een boom groeit naar buiten: elk jaar komt er aan de buitenkant een nieuwe ring bij. De ring in het midden is van toen de tak nog een piepklein twijgje was.
+= Nine! Just like me. We're twins, this branch and I.
+> Negen! Net als ik. We zijn een tweeling, deze tak en ik.
+= Pippi snaps the branch into round logs with one hand, the way other people break a biscuit. The horse, in her other hand, doesn't even wobble.
+> Pippi breekt de tak met één hand in ronde blokken, zoals andere mensen een koekje breken. Witje, in haar andere hand, wiebelt niet eens.
+= Round logs… Annika, are you thinking what I'm thinking?
+> Ronde blokken… Annika, denk jij wat ik denk?
+= The sea chest!
+> De zeemanskist!
+= That's the very first ring, from when the branch was a tiny twig. Every year the tree adds a new ring on the outside.
+> Dat is de allereerste ring, van toen de tak nog een piepklein twijgje was. Elk jaar komt er aan de buitenkant een nieuwe ring bij.
+= Not that one. The newest ring is the one nearest the bark.
+> Die niet. De nieuwste ring zit het dichtst bij de schors.
+
+= Carry it
+> Dragen
+= Lift 80 kilos? You can't even get it off the cart. Carrying means holding up all of its weight.
+> 80 kilo optillen? Je krijgt hem niet eens van de kar af. Dragen betekent dat je het hele gewicht moet ophouden.
+= Drag it across the grass
+> Over het gras slepen
+= You pull and pull. The chest digs into the soft grass and hardly moves: it takes as much pulling as 50 kilos. Far too much.
+> Je trekt en trekt. De kist graaft zich in het zachte gras en komt nauwelijks vooruit: je moet trekken alsof het 50 kilo is. Veel te veel.
+= Push it along the gravel path
+> Over het grindpad duwen
+= Scraaape. The chest squeaks and scratches over the gravel. Still as much pulling as 40 kilos: twice what the three of you can manage.
+> Krrrraaas. De kist piept en schuurt over het grind. Nog steeds trekken alsof het 40 kilo is: twee keer zoveel als jullie drieën aankunnen.
+= Put the round logs under it
+> De ronde blokken eronder leggen
+= From the cart to the veranda
+> Van de kar naar de veranda
+= The sea chest weighs 80 kilos. Pippi's hands are full of horse, so it's up to you, Tommy and Annika. Together you can pull as hard as 20 kilos. Try it: the meter shows how hard you'd have to pull.
+> De zeemanskist weegt 80 kilo. Pippi's handen zitten vol paard, dus het komt aan op jou, Tommy en Annika. Samen kunnen jullie zo hard trekken als 20 kilo. Probeer het maar: de meter laat zien hoe hard je zou moeten trekken.
+= you three
+> jullie drieën
+= how hard you have to pull
+> hoe hard je moet trekken
+= When something slides, it rubs against the ground. Rolling hardly rubs at all.
+> Als iets schuift, schuurt het langs de grond. Rollen schuurt bijna helemaal niet.
+= The logs make the chest lighter.
+> De blokken maken de kist lichter.
+= Logs like rolling.
+> Blokken rollen graag.
+= Only 5 kilos! But why is rolling so much easier than dragging?
+> Maar 5 kilo! Maar waarom is rollen zoveel makkelijker dan slepen?
+= The chest still weighs 80 kilos. It's the rubbing that changes, not the weight.
+> De kist weegt nog steeds 80 kilo. Het schuren verandert, niet het gewicht.
+= Pippi agrees. But try rolling a square log…
+> Pippi is het ermee eens. Maar probeer maar eens een vierkant blok te rollen…
+= Exactly! That rubbing is called friction. Rollers, wheels and even the little balls inside a bicycle wheel are all ways of rolling instead of sliding.
+> Precies! Dat schuren heet wrijving. Rollers, wielen en zelfs de kogeltjes in een fietswiel zijn allemaal manieren om te rollen in plaats van te schuiven.
+= Roll, roll, roll. Every time a log pops out at the back, Tommy runs round and puts it in at the front again.
+> Rollen, rollen, rollen. Elke keer als er achteraan een blok uit floept, rent Tommy om en legt hem er vooraan weer onder.
+= That's how they built the pyramids in Egypt. I helped. Well, I would have.
+> Zo hebben ze in Egypte de piramides gebouwd. Ik heb geholpen. Nou ja, dat zou ik gedaan hebben.
+= The chest rumbles along the path and stops at the foot of the veranda.
+> De kist rommelt over het pad en stopt bij de veranda.
+= The chest rolls along on the logs, as easy as anything.
+> De kist rolt over de blokken, zo makkelijk als wat.
+
+= The key (iron)
+> De sleutel (ijzer)
+= A gold coin
+> Een gouden munt
+= A nail (iron)
+> Een spijker (ijzer)
+= A glass marble
+> Een glazen knikker
+= A bottle top (steel)
+> Een kroonkurk (staal)
+= A rubber ball
+> Een rubberen bal
+= The rain barrel
+> De regenton
+= A magnet on a string
+> Een magneet aan een touw
+= Mr Nilsson tells you, with his hands, that he dropped six things in the barrel over the winter. Before you lower the magnet:
+> Meneer Nilsson vertelt je, met zijn handen, dat hij deze winter zes dingen in de ton heeft laten vallen. Voordat je de magneet laat zakken:
+= which things will it pull up?
+> welke dingen haalt hij naar boven?
+= Tick them.
+> Kruis ze aan.
+= Lower the magnet
+> Laat de magneet zakken
+= Up comes the magnet with the key, the nail and the bottle top stuck to it. The gold coin, the marble and the ball stay at the bottom. Magnets pull things made of iron and steel, and hardly anything else.
+> Daar komt de magneet boven, met de sleutel, de spijker en de kroonkurk eraan vast. De gouden munt, de knikker en de bal blijven op de bodem. Magneten trekken aan dingen van ijzer en staal, en bijna niets anders.
+= Mr Nilsson snatches the bottle top. He has been looking for it all winter.
+> Meneer Nilsson grist de kroonkurk weg. Hij heeft er de hele winter naar gezocht.
+= He can keep the gold coin in the barrel. It's his savings.
+> De gouden munt mag hij in de ton houden. Dat is zijn spaargeld.
+= And you have the front-door key!
+> En jij hebt de sleutel van de voordeur!
+= Tick the things you think will stick to the magnet.
+> Kruis de dingen aan waarvan je denkt dat ze aan de magneet blijven plakken.
+= Gold isn't magnetic! Otherwise Pippi's suitcase of gold would stick to the stove. A magnet pulls iron and steel.
+> Goud is niet magnetisch! Anders zou Pippi's koffer met goud aan het fornuis vastplakken. Een magneet trekt aan ijzer en staal.
+= Glass and rubber aren't magnetic at all. A magnet only pulls things made of iron or steel.
+> Glas en rubber zijn helemaal niet magnetisch. Een magneet trekt alleen aan dingen van ijzer of staal.
+= You've missed something. Look for everything made of iron or steel.
+> Je bent iets vergeten. Zoek alles wat van ijzer of staal is.
+
+= Crispbread
+> Knäckebröd
+= A loaf of bread
+> Een brood
+= The bread is blue and green with mould. Mould loves soft, damp bread.
+> Het brood is blauw en groen van de schimmel. Schimmel houdt van zacht, vochtig brood.
+= A jar of honey
+> Een pot honing
+= A bottle of milk
+> Een fles melk
+= The milk has gone sour and lumpy. Tiny living things called bacteria grew in it.
+> De melk is zuur en klonterig geworden. Er zijn piepkleine levende dingetjes in gegroeid: bacteriën.
+= Raisins
+> Rozijnen
+= A cucumber
+> Een komkommer
+= The cucumber has turned to slime. Fresh fruit and vegetables are full of water, so they go off quickly.
+> De komkommer is slijm geworden. Vers fruit en verse groente zitten vol water, dus ze bederven snel.
+= Strawberry jam (never opened)
+> Aardbeienjam (nooit opengemaakt)
+= An old pancake
+> Een oude pannenkoek
+= The pancake has grown a green fur coat. Mr Nilsson is very offended that nobody ate it in time.
+> De pannenkoek heeft een groene bontjas gekregen. Meneer Nilsson is erg beledigd dat niemand hem op tijd heeft opgegeten.
+= Everything is out on the garden table
+> Alles staat buiten op de tuintafel
+= Pippi's larder
+> Pippi's voorraadkast
+= You've been away for five months, and nobody was here to eat anything.
+> Jullie zijn vijf maanden weg geweest, en er was niemand om iets op te eten.
+= What is still good enough for the party?
+> Wat is er nog goed genoeg voor het feest?
+= Tick it.
+> Kruis het aan.
+= Onto the party table!
+> Op de feesttafel!
+= There are more good things than that. Dry things and very sweet things keep for a long time.
+> Er zijn meer goede dingen. Droge dingen en heel zoete dingen blijven lang goed.
+= Tick the things that are still good to eat.
+> Kruis de dingen aan die je nog kunt eten.
+= Crispbread and raisins are dry, and honey and jam are full of sugar. Mould and bacteria need water to grow, so dry or very sweet food keeps for months. That's why sailors take dried food on long voyages.
+> Knäckebröd en rozijnen zijn droog, en honing en jam zitten vol suiker. Schimmels en bacteriën hebben water nodig om te groeien, dus droog of heel zoet eten blijft maanden goed. Daarom nemen zeelui gedroogd eten mee op lange reizen.
+= Crispbread, honey, raisins and jam go on the party table. The rest goes on the compost heap, and the old pancake gets a little funeral.
+> Knäckebröd, honing, rozijnen en jam gaan op de feesttafel. De rest gaat op de composthoop, en de oude pannenkoek krijgt een kleine begrafenis.
+= Then a grey cloud slides over the garden, and it starts to pour.
+> Dan schuift er een grijze wolk over de tuin, en het begint te gieten.
+= An April shower! Everybody onto the veranda!
+> Een aprilbui! Iedereen de veranda op!
+= But the sun is already peeping out again, low in the west, while the rain is still coming down.
+> Maar de zon piept alweer tevoorschijn, laag in het westen, terwijl het nog steeds regent.
+= I've ordered a rainbow for the party. Where will it be? Somebody tell everybody where to look!
+> Ik heb een regenboog besteld voor het feest. Waar komt hij? Zeg iemand tegen iedereen waar ze moeten kijken!
+
+= Sun and rain
+> Zon en regen
+= Where will the rainbow be?
+> Waar komt de regenboog?
+= It's evening, and the sun is low in the west. It's still raining all over the garden. Everybody is on the veranda, waiting for Pippi's rainbow.
+> Het is avond, en de zon staat laag in het westen. Het regent nog steeds in de hele tuin. Iedereen staat op de veranda te wachten op Pippi's regenboog.
+= you
+> jij
+= the evening sun
+> de avondzon
+= Which way should everybody look to see the rainbow?
+> Welke kant moet iedereen op kijken om de regenboog te zien?
+= Look {dir}
+> Kijk richting {dir}
+= And what is a rainbow made of?
+> En waar is een regenboog van gemaakt?
+= Sunlight, split into its colours by the raindrops
+> Zonlicht, door de regendruppels in zijn kleuren gesplitst
+= Coloured raindrops
+> Gekleurde regendruppels
+= Paint, washed out of the sky by the rain
+> Verf, door de regen uit de lucht gespoeld
+= That's looking straight into the sun! Never look at the sun. And a rainbow is never on the sun's side of the sky.
+> Dan kijk je recht in de zon! Kijk nooit in de zon. En een regenboog staat nooit aan de kant van de zon.
+= Not quite. The sunlight has to shine into the raindrops and bounce back to you. Turn your back on the sun.
+> Niet helemaal. Het zonlicht moet in de regendruppels schijnen en naar jou terugkaatsen. Ga met je rug naar de zon staan.
+= The raindrops are as clear as glass. It's the sunlight that is full of colours: the drops split it up.
+> De regendruppels zijn zo helder als glas. Het is het zonlicht dat vol kleuren zit: de druppels splitsen het op.
+= The sky isn't painted. Not even in Egypt.
+> De lucht is niet geverfd. Zelfs niet in Egypte.
+= East! A rainbow is always opposite the sun: the sun behind you, the rain in front of you.
+> Oost! Een regenboog staat altijd tegenover de zon: de zon achter je, de regen voor je.
+= Sunlight looks white, but it is all the colours mixed together. Each raindrop splits it up, like a tiny prism: red, orange, yellow, green, blue, indigo and violet.
+> Zonlicht lijkt wit, maar het is alle kleuren door elkaar. Elke regendruppel splitst het op, als een piepklein prisma: rood, oranje, geel, groen, blauw, indigo en violet.
+= Everybody turns round to face the east. And there it is: a rainbow, right over the roof of Villa Villekulla.
+> Iedereen draait zich om naar het oosten. En daar is hij: een regenboog, precies boven het dak van Villa Kakelbont.
+= Exactly where I ordered it.
+> Precies waar ik hem besteld had.
+= The rain stops. The whole garden sparkles in the evening sun.
+> De regen houdt op. De hele tuin schittert in de avondzon.
+= Then, from the veranda, comes a loud snuffling sound. The heap of leaves on the horse's straw is moving!
+> Dan klinkt er vanaf de veranda een luid gesnuffel. De hoop bladeren op het stro van Witje beweegt!
+= Pfrrr?!
+> Pfrrr?!
+
+= A hedgehog!
+> Een egel!
+= In the horse's straw
+> In het stro van Witje
+= Under the leaves, curled up in the horse's straw, a hedgehog is waking up. It's thin and very sleepy.
+> Onder de bladeren, opgerold in het stro van Witje, wordt een egel wakker. Hij is mager en heel slaperig.
+= Why has it been asleep under the leaves all winter?
+> Waarom heeft hij de hele winter onder de bladeren geslapen?
+= It was hibernating: in winter there are no beetles or worms to eat, so it sleeps and lives on its fat
+> Hij hield een winterslaap: in de winter zijn er geen kevers of wormen te eten, dus slaapt hij en leeft hij van zijn vet
+= It was hiding from Mr Nilsson
+> Hij verstopte zich voor meneer Nilsson
+= It was keeping the straw warm for the horse
+> Hij hield het stro warm voor Witje
+= Mr Nilsson was in the South Seas! Hedgehogs sleep all winter even when there are no monkeys about.
+> Meneer Nilsson was in de Stille Zuidzee! Egels slapen de hele winter, ook als er geen apen in de buurt zijn.
+= Very kind of it, but no. It came for the warm, dry heap of leaves, not for the horse.
+> Heel aardig van hem, maar nee. Hij kwam voor de warme, droge hoop bladeren, niet voor Witje.
+= It has slept for months. What should you give a hungry, thirsty hedgehog?
+> Hij heeft maanden geslapen. Wat geef je een egel met honger en dorst?
+= A saucer of milk
+> Een schoteltje melk
+= Some bread
+> Wat brood
+= A shallow dish of water and some cat food
+> Een ondiep bakje water en wat kattenvoer
+= Pippi's sweets
+> Pippi's snoep
+= No milk! Hedgehogs can't digest it: it gives them a terrible tummy ache. Lots of people don't know that.
+> Geen melk! Egels kunnen het niet verteren: ze krijgen er vreselijke buikpijn van. Veel mensen weten dat niet.
+= Bread fills up its tummy, but there's nothing in it that a hedgehog needs.
+> Brood vult zijn buikje, maar er zit niets in wat een egel nodig heeft.
+= Pippi offers eighteen kilos. The hedgehog needs zero kilos: sweets are very bad for hedgehogs.
+> Pippi biedt achttien kilo aan. De egel heeft nul kilo nodig: snoep is heel slecht voor egels.
+= Hibernating! Its heart beat very slowly, it hardly breathed, and it lived on the fat it ate in the autumn. Now it's spring, and it has woken up very, very hungry.
+> Winterslaap! Zijn hart klopte heel langzaam, hij ademde bijna niet, en hij leefde van het vet dat hij in de herfst had gegeten. Nu is het lente, en hij is wakker geworden met heel, heel veel honger.
+= Water and meaty food, like cat food: hedgehogs eat beetles, worms and snails. And never milk!
+> Water en vleesachtig eten, zoals kattenvoer: egels eten kevers, wormen en slakken. En nooit melk!
+
+= Villa Villekulla, in spring. The snow has gone, the grass is up to your knees, and the old oak is full of new leaves.
+> Villa Kakelbont, in de lente. De sneeuw is weg, het gras komt tot je knieën, en de oude eik zit vol nieuwe blaadjes.
+= Home! Villa Villekulla, I'm back! Did you miss me?
+> Thuis! Villa Kakelbont, ik ben er weer! Heb je me gemist?
+= Pippi is carrying the horse high over her head. It won't put a hoof in the wet grass: it wants its own veranda.
+> Pippi draagt Witje hoog boven haar hoofd. Hij wil geen hoef in het natte gras zetten: het wil naar zijn eigen veranda.
+= Oh no. A big branch has come off the old oak in the winter storms. It's lying right across the path.
+> O nee. In de winterstormen is er een grote tak van de oude eik afgebroken. Hij ligt dwars over het pad.
+= And how do we get the sea chest off the cart? It weighs as much as a grown-up.
+> En hoe krijgen we de zeemanskist van de kar? Hij is zo zwaar als een grote mens.
+= Tonight we'll have a welcome-home party, for the whole town! I've never had a welcome-home party, so I'm sure it'll be the best one ever.
+> Vanavond geven we een welkom-thuisfeest, voor het hele stadje! Ik heb nog nooit een welkom-thuisfeest gehad, dus het wordt vast het allerbeste ooit.
+= First things first: that branch on the path.
+> Eerst het belangrijkste: die tak op het pad.
+= The hedgehog eats every last crumb, drinks the whole dish, and trundles off to live under the lilac bush.
+> De egel eet elk kruimeltje op, drinkt het hele bakje leeg en scharrelt weg om onder de seringenstruik te gaan wonen.
+= And now, at last…
+> En nu, eindelijk…
+= Pippi lifts the horse high over her head one last time, and sets it down gently on its own veranda, in its own straw.
+> Pippi tilt Witje nog één keer hoog boven haar hoofd en zet hem voorzichtig neer op zijn eigen veranda, in zijn eigen stro.
+= Pfrrrrrr!
+> Pfrrrrrr!
+= The horse looks round at its veranda, the garden, the old oak and the rainbow, and gives a long, happy sigh. It's home.
+> Witje kijkt rond naar zijn veranda, de tuin, de oude eik en de regenboog, en slaakt een lange, blije zucht. Hij is thuis.
+= That evening the whole town comes to the welcome-home party: Miss, Kling and Klang, and half the circus. Lanterns glow in the old oak, and Pippi makes pancakes for everybody.
+> Die avond komt het hele stadje naar het welkom-thuisfeest: de juf, Kling en Klang, en half het circus. In de oude eik gloeien lampionnen, en Pippi bakt pannenkoeken voor iedereen.
+= Welcome home, Miss Longstocking. We have brought a cake.
+> Welkom thuis, juffrouw Langkous. We hebben een taart meegebracht.
+= We ate a bit of it on the way.
+> Onderweg hebben we er een stukje van opgegeten.
+= Pippilotta! The Hoppetossa sails again at dawn. Unless… you'd rather stay here?
+> Pippilotta! De Hoppetossa vaart morgenvroeg weer uit. Tenzij… je liever hier blijft?
+= I'll stay, Dad. Villa Villekulla is my home. But come back soon!
+> Ik blijf, papa. Villa Kakelbont is mijn thuis. Maar kom gauw weer terug!
+= And school starts on Monday.
+> En maandag begint de school.
+= Then on Monday I'll start my holidays from school. I've never done that before, so I'm sure I can!
+> Dan begin ik maandag aan mijn vakantie van school. Ik heb het nog nooit gedaan, dus ik denk dat ik het wel kan!

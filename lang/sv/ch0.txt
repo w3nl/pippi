@@ -1,0 +1,543 @@
+# Swedish translation: Chapter 0, Pippi moves in (js/chapter0.js, scenes/move.svg), and the title screen per chapter.
+# The horse is Lilla Gubben.
+
+= Pippi moves in
+> Pippi flyttar in i Villa Villekulla
+= Chapter 0: Pippi moves in
+> Kapitel 0: Pippi flyttar in i Villa Villekulla
+= Chapter 0 · Pippi Moves In
+> Kapitel 0 · Pippi flyttar in i Villa Villekulla
+= Villa Villekulla · moving day
+> Villa Villekulla · flyttdag
+= Moving day at Villa Villekulla
+> Flyttdag i Villa Villekulla
+= Moved in · Chapter 0 complete
+> Inflyttad · kapitel 0 klart
+= Home sweet home
+> Hem ljuva hem
+= Pippi lives at Villa Villekulla now, with a horse on the veranda and a monkey on the clock. Next: four o'clock on a Saturday, and Mr Nilsson has a trick up his sleeve…
+> Nu bor Pippi i Villa Villekulla, med en häst på verandan och en apa på klockan. Nästa gång: klockan fyra en lördag, och Herr Nilsson har ett hyss på gång…
+= Continue to Chapter 1
+> Fortsätt till kapitel 1
+= Take your time. The clock is ticking, the horse is dozing on its veranda, and Tommy and Annika are exploring the house. When you're ready, the front door leads on to Chapter {n}.
+> Ta det lugnt. Klockan tickar, Lilla Gubben slumrar på sin veranda, och Tommy och Annika utforskar huset. När du är redo leder ytterdörren vidare till kapitel {n}.
+= Back at Villa Villekulla. The horse is on its veranda, and there's still work to do inside.
+> Tillbaka i Villa Villekulla. Lilla Gubben står på sin veranda, och inomhus finns det fortfarande saker att göra.
+= Back on moving day. The cart is still waiting in the road.
+> Tillbaka på flyttdagen. Kärran står fortfarande och väntar på vägen.
+= Found the very first spunk
+> Hittade den allra första spunken
+
+# the title screen, for the chapter behind it
+= Villa Villekulla · a small town in Sweden · moving day
+> Villa Villekulla · en liten stad i Sverige · flyttdag
+= A girl with red plaits has come to town, with a horse, a monkey and a suitcase full of gold. Her name is Pippi, and the old house at the end of the road is hers. But nobody has lived in it for years…
+> En flicka med röda flätor har kommit till stan, med en häst, en apa och en resväska full med guld. Hon heter Pippi, och det gamla huset i slutet av vägen är hennes. Men ingen har bott där på många år…
+= Villa Villekulla · the same night · nearly midnight
+> Villa Villekulla · samma natt · nästan midnatt
+= Pippi is fast asleep with her feet on the pillow, and two burglars are creeping up to the house. They've heard about a certain suitcase full of gold…
+> Pippi sover djupt med fötterna på kudden, och två inbrottstjuvar smyger fram mot huset. De har hört talas om en viss resväska full med guld…
+= The little school · the last morning before the holidays
+> Den lilla skolan · sista morgonen före lovet
+= Pippi has come to school for the very first time. She has heard that schoolchildren get holidays, and she wants some too.
+> Pippi har kommit till skolan för allra första gången. Hon har hört att skolbarn får lov, och det vill hon också ha.
+= Villa Villekulla · winter · half past two
+> Villa Villekulla · vinter · halv tre
+= Kling and Klang have challenged you to a snowball fight at three o'clock. And Mr Nilsson has run off with your mittens.
+> Kling och Klang har utmanat er till snöbollskrig klockan tre. Och Herr Nilsson har sprungit iväg med dina vantar.
+= The big top · the circus has come to town
+> Cirkustältet · cirkusen har kommit till stan
+= The show should have started ten minutes ago, but nothing is ready. The ringmaster is pulling at his moustache.
+> Föreställningen skulle ha börjat för tio minuter sedan, men ingenting är klart. Direktören drar i sin mustasch.
+= Villa Villekulla · a frosty winter morning
+> Villa Villekulla · en frostig vintermorgon
+= The ringmaster has given Pippi the circus balloon, and the golden weathercock has been stolen from the church tower.
+> Direktören har gett Pippi cirkusballongen, och den gyllene vindflöjeln har blivit stulen från kyrktornet.
+= The harbour · winter in Sweden
+> Hamnen · vinter i Sverige
+= Captain Longstocking has sailed in to take Pippi to his island in the South Seas. But first the horse has to come aboard.
+> Kapten Långstrump har seglat in för att ta med Pippi till sin ö i Söderhavet. Men först måste Lilla Gubben komma ombord.
+= Captain Longstocking's island · the South Seas
+> Kapten Långstrumps ö · Söderhavet
+= A whole day on the island, from breakfast to moonlight, with a surprise buried on Turtle Islet.
+> En hel dag på ön, från frukost till månsken, med en överraskning nergrävd på Sköldpaddsholmen.
+= The Hoppetossa · homeward · April
+> Hoppetossa · på väg hem · april
+= The long voyage home from the South Seas, through a storm and a night full of lighthouses.
+> Den långa resan hem från Söderhavet, genom en storm och en natt full av fyrar.
+= Home at last! But the garden is overgrown, the door is locked, and the horse won't put a hoof in the wet grass.
+> Äntligen hemma! Men trädgården är igenvuxen, dörren är låst, och Lilla Gubben vill inte sätta en hov i det blöta gräset.
+
+# items
+= An oil can
+> En oljekanna
+= A little can of oil with a long spout. Pippi oils the horse's saddle with it. And her boots. And sometimes her hair.
+> En liten oljekanna med lång pip. Pippi oljar Lilla Gubbens sadel med den. Och sina stövlar. Och ibland sitt hår.
+= Pippi's hand mirror
+> Pippis handspegel
+= A round hand mirror. Pippi uses it to count her freckles. She always gets a different number.
+> En rund handspegel. Pippi räknar sina fräknar i den. Hon får alltid olika antal.
+= Oil in the drinking water? The horse would not thank you.
+> Olja i dricksvattnet? Det skulle Lilla Gubben inte tacka dig för.
+= Mr Nilsson holds out his tail to be oiled. You decide not to.
+> Herr Nilsson sträcker fram svansen för att bli oljad. Du bestämmer dig för att låta bli.
+= Oil is for things that squeak, stick or won't move.
+> Olja är till saker som gnisslar, kärvar eller inte vill röra sig.
+= The gate already swings like a dream.
+> Grinden går redan som en dröm.
+= First get onto the veranda. Then you can shine the sun in through the front door.
+> Gå upp på verandan först. Sedan kan du lysa in solen genom ytterdörren.
+= Forty-two freckles. No, forty-three. Mr Nilsson, keep still, you're in the way.
+> Fyrtiotvå fräknar. Nej, fyrtiotre. Herr Nilsson, sitt still, du är i vägen.
+= The horse looks into the mirror, and the horse in the mirror looks back.
+> Lilla Gubben tittar in i spegeln, och Lilla Gubben i spegeln tittar tillbaka.
+= The mirror catches the sun and throws a bright spot around. Where is it dark?
+> Spegeln fångar solen och kastar en ljus fläck omkring sig. Var är det mörkt?
+
+# the scene
+= Somebody behind the hedge
+> Någon bakom häcken
+= The house next door
+> Grannhuset
+= The old oak
+> Den gamla eken
+= Inside the house
+> Inne i huset
+= The window
+> Fönstret
+= The moving boxes
+> Flyttlådorna
+= The grandfather clock
+> Golvuret
+= The front door
+> Ytterdörren
+= The veranda
+> Verandan
+= The old pump
+> Den gamla pumpen
+= The garden gate
+> Grinden
+= The moving cart
+> Flyttkärran
+= BOOKS
+> BÖCKER
+= PANS
+> KASTRULLER
+= MAX
+> MAX
+= 500 kg
+> 500 kg
+= VILLA VILLEKULLA
+> VILLA VILLEKULLA
+
+# hotspots
+= A little yellow Saab 96 is parked down the road, round and shiny like a lemon drop.
+> En liten gul Saab 96 står parkerad längre bort på vägen, rund och blank som en citronkaramell.
+= When I'm grown up, I'll buy one of those. For the horse to sit in.
+> När jag blir stor ska jag köpa en sån. Som Lilla Gubben kan sitta i.
+= Look! A little green beetle, in an old jam jar. I've just made up a new word: SPUNK. And this must be one!
+> Titta! En liten grön skalbagge, i en gammal syltburk. Jag har just hittat på ett nytt ord: SPUNK. Och det här måste vara en!
+= (from behind the hedge) What IS a spunk?
+> (bakom häcken) Vad ÄR en spunk?
+= Nobody knows. That's what makes it so clever.
+> Det vet ingen. Det är därför den är så klok.
+= You take the jar. The very first spunk looks at you wisely. It will help you, if you get stuck.
+> Du tar burken. Den allra första spunken tittar klokt på dig. Den hjälper dig om du kör fast.
+= A blue summer sky over the little town. A perfect day for moving house.
+> En blå sommarhimmel över den lilla staden. En perfekt dag att flytta.
+= The little town: red houses, a church with a clock, and the road that leads to Villa Villekulla.
+> Den lilla staden: röda hus, en kyrka med en klocka, och vägen som leder till Villa Villekulla.
+= The church clock says a quarter past ten.
+> Kyrkklockan är kvart över tio.
+= A neat white house with a blue roof and a tidy garden. Everything there is straight. Everything here is crooked.
+> Ett prydligt vitt hus med blått tak och en välskött trädgård. Där är allting rakt. Här är allting snett.
+= An enormous old oak at the bottom of the garden, with a hollow in its trunk.
+> En jättestor gammal ek längst ner i trädgården, med ett hål i stammen.
+= A hollow tree! Perfect for hiding lemonade in. Or letters. Or a monkey.
+> Ett ihåligt träd! Perfekt att gömma saft i. Eller brev. Eller en apa.
+= Two heads pop up over the hedge: a boy and a girl. When they see you looking, they duck down again. Then the girl peeks out once more.
+> Två huvuden dyker upp över häcken: en pojke och en flicka. När de ser att du tittar dyker de ner igen. Sedan kikar flickan fram en gång till.
+= Tommy, she's got a HORSE. And a MONKEY.
+> Tommy, hon har en HÄST. Och en APA.
+= Shh, Annika! They'll hear us.
+> Sch, Annika! De hör oss.
+= Villa Villekulla. The roof is missing a few tiles, the paint is peeling, and the whole house leans a little to one side.
+> Villa Villekulla. Det fattas några takpannor, färgen flagnar, och hela huset lutar lite åt ena sidan.
+= Isn't it beautiful? Daddy bought it years ago, for when he's too old to sail. But I'm going to live in it now.
+> Är det inte vackert? Pappa köpte det för många år sedan, till när han blir för gammal för att segla. Men nu ska jag bo här.
+= You can see right into the house, but you'll have to get in through the front door, on the veranda.
+> Du kan se rakt in i huset, men du måste gå in genom ytterdörren, på verandan.
+= It's pitch dark in there. The shutters are nailed shut, and the sun can't get in.
+> Det är kolsvart där inne. Fönsterluckorna är fastspikade, och solen kommer inte in.
+= If only I could catch some sunshine and throw it in there. My hand mirror is somewhere on the cart.
+> Om jag bara kunde fånga lite solsken och kasta in det. Min handspegel ligger någonstans på kärran.
+= Villa Villekulla, all lit up and ticking. It already feels like home.
+> Villa Villekulla, alldeles ljust och tickande. Det känns redan som hemma.
+= A window, with its shutters nailed shut from the outside. Hardly a crack of light gets in.
+> Ett fönster, med luckorna fastspikade utifrån. Knappt en strimma ljus kommer in.
+= Through the window, far away, you can see the church tower. Its clock says a quarter past ten.
+> Genom fönstret ser du kyrktornet långt borta. Klockan är kvart över tio.
+= Something big and lumpy in the dark. You bump your knee on it. Ow.
+> Något stort och knöligt i mörkret. Du slår knät i det. Aj.
+= A neat stack: the suitcase of gold at the bottom, the eggs on top. Nothing squashed, nothing wobbling.
+> En prydlig trave: guldväskan längst ner, äggen överst. Ingenting mosat, ingenting vinglar.
+= Something tall in the corner goes… nothing. Not even a tick.
+> Något högt i hörnet säger… ingenting. Inte ens tick.
+= The grandfather clock is behind a heap of moving boxes. Stack the boxes first.
+> Golvuret står bakom en hög med flyttlådor. Trava lådorna först.
+= Tick, tock. The grandfather clock is going again, right on time.
+> Tick, tack. Golvuret går igen, precis rätt.
+= The front door, up on the veranda. The veranda creaks dangerously. Better check how much it can carry.
+> Ytterdörren, uppe på verandan. Verandan knarrar farligt. Kolla först hur mycket den tål.
+= The front door is open, but inside it's as dark as a cupboard.
+> Ytterdörren är öppen, men där inne är det mörkt som i en garderob.
+= My hand mirror! It's on the cart. With a mirror you can throw sunshine around.
+> Min handspegel! Den ligger på kärran. Med en spegel kan man kasta solsken omkring sig.
+= The front door stands wide open, letting the summer in.
+> Ytterdörren står vidöppen och släpper in sommaren.
+= The veranda, on the other side of the fence. You have to get through the gate first.
+> Verandan, på andra sidan staketet. Du måste ta dig genom grinden först.
+= A creaky old veranda with a sign: MAX 500 kg.
+> En knarrig gammal veranda med en skylt: MAX 500 kg.
+= The horse can live here! But first it needs a drink. It's thirsty after the long walk.
+> Här kan Lilla Gubben bo! Men först måste han få dricka. Han är törstig efter den långa promenaden.
+= The horse's new home. It has already chewed the railing a bit.
+> Lilla Gubbens nya hem. Han har redan tuggat lite på räcket.
+= An old iron pump, on the other side of the fence. The gate is in the way.
+> En gammal järnpump, på andra sidan staketet. Grinden är i vägen.
+= The pump squeaks, and clear cold water splashes into the trough.
+> Pumpen gnisslar, och klart kallt vatten plaskar ner i baljan.
+= The gate swings open and shut without a squeak. Mr Nilsson is riding on it, back and forth.
+> Grinden svänger upp och igen utan ett gnissel. Herr Nilsson åker på den, fram och tillbaka.
+= The garden gate is rusted solid. You push. Pippi pushes. It doesn't move.
+> Grinden har rostat fast. Du knuffar. Pippi knuffar. Den rör sig inte.
+= I could lift it off, but then it would be a hole, not a gate. Something on the cart might help.
+> Jag kan lyfta bort den, men då blir det ett hål och inte en grind. Kanske hjälper något på kärran.
+= The moving cart: a sea chest, a suitcase full of gold, boxes of books and pans, a hat box, a box of eggs, and an oil can on top.
+> Flyttkärran: en sjömanskista, en resväska full med guld, lådor med böcker och kastruller, en hattask, en låda ägg, och överst en oljekanna.
+= You take the oil can.
+> Du tar oljekannan.
+= Right at the bottom of the hat box: Pippi's round hand mirror.
+> Längst ner i hattasken: Pippis runda handspegel.
+= You take it. It catches the sun and makes a little bright spot on Mr Nilsson's nose.
+> Du tar den. Den fångar solen och gör en liten ljus fläck på Herr Nilssons näsa.
+= Everything on the cart has gone into the house. Only a few straws are left.
+> Allt från kärran har burits in i huset. Det ligger bara några halmstrån kvar.
+= The moving cart, piled high. Pippi pulled it all the way from the harbour. The horse just walked alongside.
+> Flyttkärran, högt lastad. Pippi har dragit den hela vägen från hamnen. Lilla Gubben gick bara bredvid.
+= Mr Nilsson has climbed onto the grandfather clock. It's the highest place in the house, so it's his.
+> Herr Nilsson har klättrat upp på golvuret. Det är det högsta stället i huset, så det är hans.
+= Mr Nilsson, in his blue trousers and straw hat, is sitting on top of the moving boxes like a king on his throne.
+> Herr Nilsson, i sina blå byxor och sin halmhatt, sitter högst upp på flyttlådorna som en kung på sin tron.
+= Pippi's horse, white with black spots. It's looking at the long grass behind the fence.
+> Lilla Gubben, vit med svarta prickar. Han tittar på det långa gräset bakom staketet.
+= The horse is sniffing at the old pump. It's thirsty.
+> Lilla Gubben nosar på den gamla pumpen. Han är törstig.
+= The horse has its own veranda now. It looks very pleased with itself.
+> Lilla Gubben har en egen veranda nu. Han ser mycket nöjd ut.
+= Horses usually live in stables. But this one lives on a veranda. It's more fun.
+> Hästar brukar bo i stall. Men den här bor på en veranda. Det är roligare.
+= Villa Villekulla! My very own house. Well, Daddy's, but he's at sea. I've never lived on my own, so I'm sure I'll be very good at it.
+> Villa Villekulla! Mitt alldeles egna hus. Nåja, pappas, men han är ute på havet. Jag har aldrig bott ensam förut, så det klarar jag säkert.
+= Look at all this grass! The horse will never be hungry again.
+> Titta på allt gräs! Lilla Gubben blir aldrig hungrig igen.
+= Now it's a proper home. All it needs is a few friends.
+> Nu är det ett riktigt hem. Det behövs bara några vänner.
+= A house needs light, a tidy hall and a clock that ticks. Then it's a home.
+> Ett hus behöver ljus, en städad hall och en klocka som tickar. Då blir det ett hem.
+
+# the gate
+= Its hinges are brown and crusty with rust
+> Gångjärnen är bruna och skrovliga av rost
+= The gate squeals, shudders, and stays shut. The hinges are covered in rust.
+> Grinden gnisslar, skakar och förblir stängd. Gångjärnen är täckta av rost.
+= What will help the gate open?
+> Vad hjälper för att få upp grinden?
+= A bucket of water
+> En hink vatten
+= A few drops of oil
+> Några droppar olja
+= A spoonful of sugar
+> En sked socker
+= Pippi kicks it
+> Pippi sparkar på den
+= Water is what made it rusty in the first place! Now it's wet AND stuck.
+> Det var ju vattnet som fick den att rosta! Nu är den blöt OCH fast.
+= Now the gate is stuck AND sticky. Mr Nilsson licks it.
+> Nu sitter grinden fast OCH är kladdig. Herr Nilsson slickar på den.
+= Pippi kicks it. The whole fence wobbles, a nail flies into the next garden, and the gate stays exactly where it was.
+> Pippi sparkar på den. Hela staketet gungar, en spik flyger in i grannens trädgård, och grinden står kvar precis där den stod.
+= And what is rust?
+> Och vad är rost?
+= Iron that has been eaten away by water and air
+> Järn som har frätts sönder av vatten och luft
+= Brown paint
+> Brun färg
+= Very old dust
+> Jättegammalt damm
+= Nobody painted it. The brown came all by itself, from the rain.
+> Ingen har målat den. Det bruna kom av sig självt, från regnet.
+= Dust you can blow off. Rust is part of the iron itself.
+> Damm kan man blåsa bort. Rost sitter i själva järnet.
+= Drip, drip, drip. The oil creeps into the hinges. Creeeak… the gate moves a little.
+> Dropp, dropp, dropp. Oljan kryper in i gångjärnen. Knaaarr… grinden rör sig lite.
+= Rust is what iron turns into when water and air get at it for a long time. Oil keeps the water away, and helps the metal slide.
+> Rost är vad järn blir när vatten och luft kommer åt det länge. Olja håller vattnet borta och får metallen att glida.
+= The gate swings open without a squeak. Pippi, the horse and you march into the garden.
+> Grinden svänger upp utan ett gnissel. Pippi, Lilla Gubben och du marscherar in i trädgården.
+= Hello, garden! Hello, grass! Hello, old oak!
+> Hej, trädgården! Hej, gräset! Hej, gamla eken!
+= The horse stops at the old pump and sniffs it. It's thirsty after the long walk from the harbour.
+> Lilla Gubben stannar vid den gamla pumpen och nosar på den. Han är törstig efter den långa promenaden från hamnen.
+
+# the pump
+= Wheeze, wheeze: only air comes out
+> Pip, pip: det kommer bara luft
+= The pipe goes deep down into the well. There is water down there: you can hear it.
+> Röret går djupt ner i brunnen. Det finns vatten där nere: du kan höra det.
+= You pump and pump, but only air comes out. What do you do?
+> Du pumpar och pumpar, men det kommer bara luft. Vad gör du?
+= Pump faster
+> Pumpar fortare
+= Pour a little water into the top first
+> Häller i lite vatten upptill först
+= Shout down the pipe
+> Ropar ner i röret
+= Faster wheezing is still wheezing. The pump's leather seal has dried out: the air slips past it.
+> Fortare pipande är fortfarande pipande. Pumpens läderpackning har torkat: luften slinker förbi.
+= HELLO, WATER? The well answers: hello, water… That's just the echo.
+> HALLÅ, VATTEN? Brunnen svarar: hallå, vatten… Det är bara ekot.
+= Why does the water come up the pipe?
+> Varför kommer vattnet upp genom röret?
+= The air presses down on the water in the well and pushes it up the pipe
+> Luften trycker på vattnet i brunnen och pressar upp det genom röret
+= The water wants to see the sun
+> Vattnet vill se solen
+= There is a little fish in the pipe that swims up
+> Det sitter en liten fisk i röret som simmar uppåt
+= Water doesn't want anything. Something pushes it.
+> Vatten vill ingenting. Något trycker på det.
+= No fish. Pippi checked, with one eye down the spout.
+> Ingen fisk. Pippi har kollat, med ena ögat ner i pipen.
+= Pippi pours in her lemonade. The dry leather swells up and seals the pipe. Pump, pump… SPLOSH!
+> Pippi häller i sin saft. Det torra lädret sväller och tätar röret. Pump, pump… PLASK!
+= Pumping takes the air out of the pipe. Then the air outside, pressing down on the water in the well, pushes the water up. It's the same when you drink through a straw.
+> När man pumpar tar man bort luften ur röret. Då trycker luften utanför ner på vattnet i brunnen och pressar upp vattnet. Precis som när man dricker genom ett sugrör.
+= Cold, clear water gushes into the trough. The horse drinks and drinks and drinks.
+> Kallt, klart vatten forsar ner i baljan. Lilla Gubben dricker och dricker och dricker.
+= There. Now it needs somewhere to live. Not in the kitchen: it doesn't fit through the door. The veranda!
+> Så. Nu behöver han någonstans att bo. Inte i köket: han får inte plats genom dörren. Verandan!
+
+# the veranda
+= The old veranda
+> Den gamla verandan
+= A sign on the post says: MAX 500 kg
+> En skylt på stolpen: MAX 500 kg
+= The floorboards creak. If too much weight stands on them, they will crack.
+> Golvbräderna knarrar. Om det står för mycket vikt på dem går de sönder.
+= How heavy is a horse?
+> Hur tung är en häst?
+= About 40 kg, like a big dog
+> Ungefär 40 kg, som en stor hund
+= About 400 kg
+> Ungefär 400 kg
+= About 4000 kg, like an elephant
+> Ungefär 4000 kg, som en elefant
+= 40 kg is a big dog, or Tommy with his school bag. A horse is a LOT bigger.
+> 40 kg är en stor hund, eller Tommy med skolväskan. En häst är MYCKET större.
+= 4000 kg is an elephant! This is a horse. Pippi could lift it anyway, but the veranda couldn't hold it.
+> 4000 kg är en elefant! Det här är en häst. Pippi skulle kunna lyfta den ändå, men verandan skulle inte hålla.
+= About 400 kg: as heavy as thirteen Tommys! And 400 is less than 500, so the veranda can carry it.
+> Ungefär 400 kg: lika tungt som tretton Tommy! Och 400 är mindre än 500, så verandan håller.
+= Pippi weighs 30 kg. Can she sit on the horse on the veranda?
+> Pippi väger 30 kg. Kan hon sitta på Lilla Gubben på verandan?
+= Yes: 400 + 30 = 430 kg, less than 500
+> Ja: 400 + 30 = 430 kg, mindre än 500
+= No: that makes 700 kg
+> Nej: det blir 700 kg
+= Only if Mr Nilsson gets off first
+> Bara om Herr Nilsson kliver av först
+= 400 + 30 isn't 700. Add them up again.
+> 400 + 30 är inte 700. Räkna ihop igen.
+= Mr Nilsson weighs about as much as a bag of potatoes. 430 kg is fine, with or without him.
+> Herr Nilsson väger ungefär lika mycket som en påse potatis. 430 kg går bra, med eller utan honom.
+= 430 kg: still less than 500. The veranda creaks, but it holds.
+> 430 kg: fortfarande mindre än 500. Verandan knarrar, men den håller.
+= Pippi lifts the horse over her head, carries it up the steps and puts it down on the veranda. Then she climbs on its back, just to check.
+> Pippi lyfter Lilla Gubben över huvudet, bär upp honom för trappan och ställer ner honom på verandan. Sedan klättrar hon upp på hans rygg, bara för att kolla.
+= There! From now on, this is the horse's home.
+> Så! Från och med nu bor Lilla Gubben här.
+= Pippi opens the front door with the big old key from Daddy's letter. Inside it's pitch dark: the shutters are nailed shut.
+> Pippi låser upp ytterdörren med den stora gamla nyckeln från pappas brev. Där inne är det kolsvart: fönsterluckorna är fastspikade.
+= I can't see a thing. We need some sunshine in there.
+> Jag ser ingenting. Vi behöver lite solsken där inne.
+
+# the mirror
+= Sunshine in a mirror
+> Solsken i en spegel
+= The sun shines on the veranda. The hall is dark
+> Solen skiner på verandan. Hallen är mörk
+= the dark hall
+> den mörka hallen
+= How should Pippi hold the mirror, so the sunbeam goes straight into the dark hall?
+> Hur ska Pippi hålla spegeln, så att solstrålen går rakt in i den mörka hallen?
+= A: flat, like a tray
+> A: platt, som en bricka
+= B: tipped a little
+> B: lite snett
+= C: facing the sun
+> C: mot solen
+= The sunbeam bounces off the flat mirror and shoots up into the sky. A bird blinks.
+> Solstrålen studsar mot den platta spegeln och skjuter upp i himlen. En fågel blinkar.
+= The sunbeam bounces straight back where it came from: right into Pippi's eyes. She sneezes.
+> Solstrålen studsar rakt tillbaka dit den kom ifrån: rakt in i Pippis ögon. Hon nyser.
+= B! The sunbeam bounces off the mirror and shoots straight into the hall.
+> B! Solstrålen studsar mot spegeln och skjuter rakt in i hallen.
+= How does a mirror move light?
+> Hur flyttar en spegel ljus?
+= Light bounces off it like a ball off a wall: it leaves at the same angle it came in
+> Ljuset studsar mot den som en boll mot en vägg: det far iväg i samma vinkel som det kom
+= The mirror makes its own light
+> Spegeln gör sitt eget ljus
+= The mirror swallows the light and spits it out
+> Spegeln sväljer ljuset och spottar ut det
+= In the dark the mirror is just as dark as everything else. It only sends on light that falls on it.
+> I mörkret är spegeln lika mörk som allt annat. Den skickar bara vidare ljus som faller på den.
+= It doesn't swallow anything. The light just bounces off, very fast.
+> Den sväljer ingenting. Ljuset studsar bara, väldigt fort.
+= Exactly: light bounces off a mirror at the same angle it comes in. Tip the mirror, and the light goes somewhere else.
+> Precis: ljuset studsar mot en spegel i samma vinkel som det kommer in. Luta spegeln, så går ljuset någon annanstans.
+= A bright beam of sunshine shoots across the hall. Cobwebs! Dust! A heap of moving boxes, and a tall grandfather clock in the corner.
+> En stark solstråle skjuter genom hallen. Spindelnät! Damm! En hög med flyttlådor, och ett högt golvur i hörnet.
+= Pippi pulls the nails out of the shutters with her fingers and flings them open. Sunlight pours in everywhere.
+> Pippi drar ut spikarna ur fönsterluckorna med fingrarna och slår upp dem. Solljuset strömmar in överallt.
+= Now let's get the boxes sorted. They're all in a heap.
+> Nu ska vi ordna lådorna. De ligger i en enda hög.
+
+# the boxes
+= Stack them up, from the bottom to the top
+> Trava dem, nerifrån och upp
+= (the floor)
+> (golvet)
+= Which goes next?
+> Vilken ska härnäst?
+= Start at the bottom.
+> Börja längst ner.
+= The suitcase of gold
+> Guldväskan
+= The box of books
+> Lådan med böcker
+= The box of pans
+> Lådan med kastruller
+= Pippi's hat box
+> Pippis hattask
+= The box of eggs
+> Lådan med ägg
+= The eggs, down there? Everything else lands on top of them. Omelette!
+> Äggen, där nere? Då hamnar allt annat ovanpå dem. Omelett!
+= Then something heavier would have to go on top of it. Squash! Put the heaviest thing left at the bottom.
+> Då måste något tyngre hamna ovanpå. Mos! Lägg det tyngsta som är kvar längst ner.
+= A perfect stack: from 50 kg at the bottom to 1 kg on top.
+> En perfekt trave: från 50 kg längst ner till 1 kg överst.
+= Why do the heavy things go at the bottom?
+> Varför ska de tunga sakerna ligga längst ner?
+= So the stack stays steady, and nothing gets squashed
+> Så att traven står stadigt och ingenting blir mosat
+= Because heavy things are shy
+> För att tunga saker är blyga
+= It doesn't matter at all
+> Det spelar ingen roll alls
+= Suitcases aren't shy. Pippi's certainly isn't.
+> Resväskor är inte blyga. Pippis är det i alla fall inte.
+= Try it the other way round, and the stack topples over. With eggs.
+> Gör det tvärtom, så välter traven. Med ägg.
+= Heavy at the bottom keeps the stack steady: it is hard to tip over. And light things on top don't squash anything.
+> Tungt längst ner gör traven stadig: den är svår att välta. Och lätta saker överst mosar ingenting.
+= Now you can get to the grandfather clock. Its hands both point straight up: it stopped at twelve o'clock, years ago.
+> Nu kommer du åt golvuret. Båda visarna pekar rakt upp: det stannade klockan tolv för många år sedan.
+= A house needs a ticking clock. Let's wind it up and set it right. The church clock will tell us the time.
+> Ett hus behöver en klocka som tickar. Vi drar upp den och ställer den rätt. Kyrkklockan visar vad klockan är.
+
+# the clock
+= Set it to the same time as the church clock
+> Ställ den på samma tid som kyrkklockan
+= Big hand
+> Stora visaren
+= Little hand
+> Lilla visaren
+= Set the clock
+> Ställ klockan
+= the church clock
+> kyrkklockan
+= the grandfather clock
+> golvuret
+= The big hand is on the 9: that's a quarter TO. On the church clock it's on the 3: a quarter past.
+> Stora visaren står på 9: det är kvart I. På kyrkklockan står den på 3: kvart över.
+= Look at the big hand on the church clock: it points at the 3. Each number is 5 minutes, so that's 15 minutes: a quarter past.
+> Titta på stora visaren på kyrkklockan: den pekar på 3. Varje siffra är 5 minuter, så det är 15 minuter: kvart över.
+= The big hand is right, but the little hand shows the hour. On the church clock it is just past the 10.
+> Stora visaren stämmer, men lilla visaren visar timmen. På kyrkklockan står den strax efter 10.
+= The big hand is right! Now the little hand: on the church clock it points just past the 10.
+> Stora visaren stämmer! Nu lilla visaren: på kyrkklockan pekar den strax efter 10.
+= A quarter past ten! The big hand counts the minutes, the little hand the hours. Pippi winds the clock up, and it starts to tick.
+> Kvart över tio! Stora visaren räknar minuterna, lilla visaren timmarna. Pippi drar upp klockan, och den börjar ticka.
+
+# intro and end
+= A little town in Sweden, on a summer morning. Down the road comes a girl with red plaits, pulling a cart piled high with boxes. A horse walks beside her, and a monkey rides on top.
+> En liten stad i Sverige, en sommarmorgon. Längs vägen kommer en flicka med röda flätor och drar en kärra högt lastad med lådor. En häst går bredvid henne, och en apa åker överst.
+= Here it is: Villa Villekulla! Daddy's house. And now it's mine, until he comes back from the sea.
+> Här är det: Villa Villekulla! Pappas hus. Och nu är det mitt, tills han kommer hem från havet.
+= Behind the hedge next door, two heads pop up and disappear again. Then a paper aeroplane sails over the hedge.
+> Bakom grannens häck dyker två huvuden upp och försvinner igen. Sedan seglar ett pappersflygplan över häcken.
+= On its wing, in neat writing: "WHO ARE YOU? From Tommy and Annika, next door."
+> På vingen, med prydlig handstil: "VEM ÄR DU? Från Tommy och Annika, grannarna."
+= I'm Pippi! I'll write back as soon as I've moved in. Moving in can't take long. I've never done it before, so I'm sure I'll be very good at it.
+> Jag är Pippi! Jag skriver tillbaka så fort jag har flyttat in. Att flytta in kan inte ta lång tid. Det har jag aldrig provat förut, så det klarar jag säkert.
+= The garden gate looks rusty. Maybe something on the cart can help.
+> Grinden ser rostig ut. Kanske kan något på kärran hjälpa.
+= BONG… BONG… The grandfather clock strikes, loud and deep, and the whole house seems to wake up.
+> BONG… BONG… Golvuret slår, högt och djupt, och hela huset verkar vakna.
+= Pippi folds a paper aeroplane and throws it over the hedge. On it: "COME OVER! Pippi."
+> Pippi viker ett pappersflygplan och kastar det över häcken. På det står: "KOM HIT! Pippi."
+= A minute later there's a knock at the open door. A polite boy and a polite girl, in very clean clothes.
+> En minut senare knackar det på den öppna dörren. En snäll pojke och en snäll flicka, i mycket rena kläder.
+= Hello. I'm Tommy, and this is my sister Annika. We live next door.
+> Hej. Jag heter Tommy, och det här är min syster Annika. Vi bor bredvid.
+= Is it true that you live here all by yourself? With a horse on the veranda?
+> Är det sant att du bor här alldeles ensam? Med en häst på verandan?
+= All by myself! Well, with Mr Nilsson, and the horse, and now you. Come back on Saturday at four, and we'll go thing-searching!
+> Alldeles ensam! Nåja, med Herr Nilsson och Lilla Gubben, och nu med er. Kom tillbaka på lördag klockan fyra, så blir vi sakletare!
+
+# hints
+= The garden gate is rusted shut. Pippi's moving cart is full of useful things.
+> Grinden har rostat fast. Pippis flyttkärra är full av bra saker.
+= Click the moving cart and take the oil can.
+> Klicka på flyttkärran och ta oljekannan.
+= The gate's hinges are rusty. What makes rusty metal move again?
+> Grindens gångjärn är rostiga. Vad får rostig metall att röra sig igen?
+= Use the oil can on the gate: a few drops of oil. Rust is iron eaten away by water and air.
+> Använd oljekannan på grinden: några droppar olja. Rost är järn som frätts av vatten och luft.
+= The horse is thirsty, but the old pump only wheezes. Its leather seal has dried out.
+> Lilla Gubben är törstig, men den gamla pumpen bara piper. Läderpackningen har torkat.
+= Click the pump: pour a little water in first. The air pressing on the water in the well pushes it up, like drinking through a straw.
+> Klicka på pumpen: häll i lite vatten först. Luften som trycker på vattnet i brunnen pressar upp det, som när man dricker genom ett sugrör.
+= The horse needs a home. The veranda can carry 500 kg. How heavy is a horse?
+> Lilla Gubben behöver ett hem. Verandan tål 500 kg. Hur tung är en häst?
+= Click the veranda (or the horse): about 400 kg. With Pippi on top, 400 + 30 = 430 kg, still less than 500.
+> Klicka på verandan (eller Lilla Gubben): ungefär 400 kg. Med Pippi på ryggen blir det 400 + 30 = 430 kg, fortfarande mindre än 500.
+= The house is pitch dark inside. You could throw some sunshine in, with something shiny from the cart.
+> Huset är kolsvart inuti. Du kan kasta in lite solsken med något blankt från kärran.
+= Click the moving cart again for Pippi's hand mirror.
+> Klicka på flyttkärran igen för Pippis handspegel.
+= Pippi's mirror can bounce the sunbeam into the dark hall. Light bounces off a mirror at the same angle it comes in.
+> Med Pippis spegel kan solstrålen studsa in i den mörka hallen. Ljuset studsar mot en spegel i samma vinkel som det kommer in.
+= Use the mirror on the front door (or the dark hall). Pick B, tipped a little, so the beam goes straight in.
+> Använd spegeln på ytterdörren (eller den mörka hallen). Välj B, lite snett, så går strålen rakt in.
+= The moving boxes are in a heap in front of the clock. Stack them up so nothing topples or gets squashed.
+> Flyttlådorna ligger i en hög framför klockan. Trava dem så att ingenting välter eller blir mosat.
+= Click the boxes. Heaviest at the bottom: the gold, the books, the pans, the hat box, and the eggs on top.
+> Klicka på lådorna. Tyngst längst ner: guldet, böckerna, kastrullerna, hattasken och äggen överst.
+= The grandfather clock stopped years ago. Through the window, the church clock shows the real time.
+> Golvuret stannade för många år sedan. Genom fönstret visar kyrkklockan vad klockan egentligen är.
+= Click the clock. The big hand on the 3 (15 minutes), the little hand just past the 10: a quarter past ten.
+> Klicka på klockan. Stora visaren på 3 (15 minuter), lilla visaren strax efter 10: kvart över tio.

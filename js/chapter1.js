@@ -87,7 +87,10 @@ function applyKitchen(){
 }
 
 /* ---------- hotspot handlers ---------- */
+/* A little Saab 96 is hidden in a few rooms. Spotting one is an achievement. */
+function spotSaab(lines){ S.ach.saab = true; save(); say(lines); }
 const H = {
+  saab1(){ spotSaab(["A little green toy car under the table: a Saab 96, with tiny round headlights and a very round roof.", ['pippi', "That's my car. I drive it on Sundays. It goes ring-ding-ding-ding!"]]); },
   spunk(){ S.f.spunkTaken = true; give('spunk'); applyVisuals();
     say(["A jam jar with a tiny green beetle in it. The label, in Pippi's handwriting, says: SPUNK.",
          "Pippi made up the word \"spunk\" and then went out to find out what a spunk is. This is apparently it.",

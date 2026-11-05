@@ -2,8 +2,8 @@ const { test, expect } = require('@playwright/test');
 const { seed, hs, skip, useSlot, closeModal, waitModalClosed, expectWin } = require('./helpers');
 
 test('Chapter 1: get out of Villa Villekulla', async ({ page }) => {
-  await seed(page);
-  await page.locator('#btn-new').click();
+  await seed(page, null, ['-ch1']);
+  await page.locator('#btn-ch1').click();
   await expect(page.locator('#d-who')).toHaveText('Villa Villekulla');
   await skip(page);
   await expect(page.locator('#chap')).toHaveText('Chapter 1 · Locked In with Mr Nilsson');

@@ -41,7 +41,7 @@ function stage2(){
   if(!S.f.swapped) return 'b_scale';
   return 'b_wake';
 }
-function stage_(){ return S.ch===7 ? stage7() : S.ch===6 ? stage6() : S.ch===5 ? stage5() : S.ch===4 ? stage4() : S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
+function stage_(){ return S.ch===0 ? stage0() : S.ch===10 ? stage10() : S.ch===9 ? stage9() : S.ch===8 ? stage8() : S.ch===7 ? stage7() : S.ch===6 ? stage6() : S.ch===5 ? stage5() : S.ch===4 ? stage4() : S.ch===3 ? stage3() : S.ch===2 ? stage2() : stage1(); }
 Object.assign(HINTS, {
   s_drawer: ["The chalk box is empty. Miss keeps the chalk in her desk drawer, and she has written herself a note about its code.", "The plaque over the door says MDCCCXCIV: 1000 + 500 + 300 + 90 + 4 = 1894. Set the desk's padlock to 1 8 9 4."],
   s_nines: ["Task 1: Pippi's nines on the blackboard have three mistakes. The poster next to the board shows the nines trick.", "Use the chalk on the blackboard and mark 9 × 5, 9 × 8 and 9 × 10 (they should be 45, 72 and 90). Then click Done marking."],
@@ -87,6 +87,22 @@ function stage5(){
   return 'c_gears';
 }
 Object.assign(HINTS, {
+  a_lift: ["The circus balloon is lying flat in the snow. What makes a hot-air balloon go up? The clue is in its name.", "Click the balloon in the snow: heat the air inside with the burner. Hot air is lighter than the cold air around it, so it rises."],
+  a_steer: ["Down low, the wind blows you the wrong way. A balloon can't steer, but the wind isn't the same at every height. Look at the smoke, the kite and the clouds.", "Click the burner. The kite's tail streams out towards the farms, so go to the middle, at kite height. Balloon pilots steer by going up or down."],
+  a_map: ["The burglars are hiding at the farm with the L-shaped barn, the round duck pond and three haystacks. From up here, everything looks like a map.", "Click the farms below. From above, a haystack is a circle. The right farm has an L-shaped barn, a round pond and three round haystacks."],
+  a_chute: ["Kling and Klang can't hear you from up here. Annika has written them a note, but how do you get it down to them safely?", "Use the note on Kling and Klang: tie it to Pippi's big handkerchief, like a parachute. Big and wide means lots of air resistance, so it falls slowly."],
+  a_cloud: ["Everything has gone white and wet: you're inside a cloud!", "Click the cloud. It's made of billions of tiny drops of water. And the higher you go, the colder the air gets."],
+  a_vane: ["Put the golden weathercock back on the church tower, the right way round. The flag on the tower shows which way the wind is blowing.", "Use the weathercock on the tower. The flag streams east, so the wind comes from the west: turn the beak to the west, into the wind. It's a west wind."]
+});
+function stage6(){
+  if(!S.f.up) return 'a_lift';
+  if(!S.f.steer) return 'a_steer';
+  if(!S.f.found) return 'a_map';
+  if(!S.f.dropped) return 'a_chute';
+  if(!S.f.cloud) return 'a_cloud';
+  return 'a_vane';
+}
+Object.assign(HINTS, {
   h_hoist: ["Pippi won't sail without her horse. The cargo hoist on the stern has pulleys: the more ropes hold the horse up, the less each one has to carry.", "Click the hoist and choose 4 ropes: 400 kg ÷ 4 = 100 kg each, just what the three of you can pull. Then heave."],
   h_course: ["The captain wants a course for his island. His chart in the cabin shows which way to go, and the compass by the wheel shows which way the ship points.", "On the chart the island is down and to the left: south-west. Turn the wheel until the ship points south-west, then set sail."],
   h_net: ["Mr Nilsson has thrown things overboard! You'll need something to fish them out with. Look in the hold.", "Take the fishing net from the hold, select it and use it on the sea."],
@@ -97,7 +113,7 @@ Object.assign(HINTS, {
   h_glass: ["Dawn, and something tiny on the horizon. To see far you need the captain's spyglass, and a high place.", "Take the spyglass from its hook by the wheel, then climb to the crow's nest."],
   h_landho: ["From the crow's nest you can see the island, from the deck you can't. Think about the shape of the Earth.", "Choose: the Earth is round, so from higher up you can see further over the bend of the sea."]
 });
-function stage6(){
+function stage7(){
   if(!S.f.aboard) return 'h_hoist';
   if(!S.f.course) return 'h_course';
   if(!S.f.floats) return S.inv.includes('net') ? 'h_floats' : 'h_net';
@@ -116,7 +132,7 @@ Object.assign(HINTS, {
   i_storm: ["A tropical shower! Light arrives at once, but thunder travels about 1 km every 3 seconds.", "Click the sky (or the captain) and watch: 9 seconds = 3 km. Then 3 seconds = 1 km: it's coming closer, so everybody into the hut."],
   i_turtles: ["The turtles are hatching! Baby turtles crawl towards the brightest light. On a dark beach that should be the sea.", "Click the turtle nest. Switch off the torch by the nest, the torch on the dunes and the lantern in the hut window; leave the feast torches behind the hut on. Then let them go!"]
 });
-function stage7(){
+function stage8(){
   if(!S.f.mapTaken) return 'i_map';
   if(!S.f.sundial) return 'i_sundial';
   if(!S.f.tide) return 'i_tide';
@@ -125,4 +141,61 @@ function stage7(){
   if(!S.f.chest) return 'i_chest';
   if(!S.f.storm) return 'i_storm';
   return 'i_turtles';
+}
+
+Object.assign(HINTS, {
+  m_oil: ["The garden gate is rusted shut. Pippi's moving cart is full of useful things.", "Click the moving cart and take the oil can."],
+  m_gate: ["The gate's hinges are rusty. What makes rusty metal move again?", "Use the oil can on the gate: a few drops of oil. Rust is iron eaten away by water and air."],
+  m_pump: ["The horse is thirsty, but the old pump only wheezes. Its leather seal has dried out.", "Click the pump: pour a little water in first. The air pressing on the water in the well pushes it up, like drinking through a straw."],
+  m_veranda: ["The horse needs a home. The veranda can carry 500 kg. How heavy is a horse?", "Click the veranda (or the horse): about 400 kg. With Pippi on top, 400 + 30 = 430 kg, still less than 500."],
+  m_mirror: ["The house is pitch dark inside. You could throw some sunshine in, with something shiny from the cart.", "Click the moving cart again for Pippi's hand mirror."],
+  m_light: ["Pippi's mirror can bounce the sunbeam into the dark hall. Light bounces off a mirror at the same angle it comes in.", "Use the mirror on the front door (or the dark hall). Pick B, tipped a little, so the beam goes straight in."],
+  m_boxes: ["The moving boxes are in a heap in front of the clock. Stack them up so nothing topples or gets squashed.", "Click the boxes. Heaviest at the bottom: the gold, the books, the pans, the hat box, and the eggs on top."],
+  m_clock: ["The grandfather clock stopped years ago. Through the window, the church clock shows the real time.", "Click the clock. The big hand on the 3 (15 minutes), the little hand just past the 10: a quarter past ten."]
+});
+function stage0(){
+  if(!S.f.gate) return S.inv.includes('oil0') ? 'm_gate' : 'm_oil';
+  if(!S.f.water) return 'm_pump';
+  if(!S.f.veranda) return 'm_veranda';
+  if(!S.f.light) return S.inv.includes('mirror0') ? 'm_light' : 'm_mirror';
+  if(!S.f.boxes) return 'm_boxes';
+  return 'm_clock';
+}
+
+Object.assign(HINTS, {
+  y_season: ["The captain wants to know if you've packed the right clothes. It was winter at home when you left, and now it's April.", "Click the captain (or the wheel). At home in April it's spring. Far south, below the Equator, it's autumn: the north and the south have opposite seasons."],
+  y_letter: ["Pippi has been writing something. Maybe she has a letter to post. In the middle of the sea.", "Click Pippi for her message in a bottle."],
+  y_bottle: ["Pippi's letter is in a bottle. The sea can deliver it, if you throw it into the right current.", "Use the bottle on the sea and pick number 4: that current flows north-east, to Sweden. Ocean currents are like rivers in the sea."],
+  y_storm: ["A storm! The wind pushes on the sails, and the ship leans over a long way. What could make it lean less?", "Click the sails (or the captain). Take in a reef: smaller sails. Then tie a reef knot: right over left, then left over right."],
+  y_swallows: ["Little birds have landed on the yard to rest. Where could they be going?", "Click the swallows. They're flying north to Sweden for the summer, because the northern summer is full of insects to eat."],
+  y_book: ["Three lighthouses, all flashing differently. The captain has a book that says which is which.", "Take the Book of Lighthouses from the captain's sea chest on deck."],
+  y_light: ["Our harbour's lighthouse flashes twice, then stays dark, every 10 seconds. Count the yellow squares and the dark ones.", "Use the book on the lighthouses (or click them). Pick C: two flashes every 10 seconds."],
+  y_buoys: ["Red and green buoys mark the safe way into the harbour. Ships have a red lamp on their left side, and a green one on their right.", "Click the buoys (or the wheel). Coming in from the sea, keep the red buoys on your left: route B."]
+});
+function stage9(){
+  if(!S.f.packed) return 'y_season';
+  if(!S.f.bottle) return S.inv.includes('bottle9') ? 'y_bottle' : 'y_letter';
+  if(!S.f.reefed) return 'y_storm';
+  if(!S.f.swallows) return 'y_swallows';
+  if(!S.f.light) return S.inv.includes('book9') ? 'y_light' : 'y_book';
+  return 'y_buoys';
+}
+
+Object.assign(HINTS, {
+  v_rings: ["A branch of the old oak is lying across the path. Before Pippi breaks it up, look at its broken end: a tree grows one ring every year.", "Click the fallen branch. Count the dark lines: 9 rings, so 9 years. The newest ring is the outside one, just under the bark."],
+  v_roll: ["The sea chest is far too heavy to carry or drag. But Pippi has just made a pile of nice round logs…", "Click the sea chest and put the round logs under it: rolling rubs much less than sliding."],
+  v_magnet: ["The front door is locked, and Mr Nilsson dropped the key in the rain barrel. The sea chest has a present from the captain in it.", "Open the sea chest for the magnet, then use it on the rain barrel. Tick the key, the nail and the bottle top: iron and steel. Not gold, glass or rubber."],
+  v_door: ["You've got the front-door key.", "Select the key and use it on the front door."],
+  v_larder: ["The things from Pippi's larder are on the garden table. But you've been away for five months: what is still good to eat?", "Click the garden table. Tick the crispbread, the honey, the raisins and the jam: dry or very sweet food keeps. Not the bread, the milk, the cucumber or the old pancake."],
+  v_rainbow: ["Sun and rain at the same time: a rainbow! A rainbow is always on the other side of the sky from the sun.", "Click the sky (or Pippi). The sun is in the west, so look east. A rainbow is sunlight, split into its colours by the raindrops."],
+  v_hog: ["Something is snuffling in the horse's straw on the veranda.", "Click the horse's straw. The hedgehog was hibernating. Give it water and cat food. Never milk!"]
+});
+function stage10(){
+  if(!S.f.rings) return 'v_rings';
+  if(!S.f.rolled) return 'v_roll';
+  if(!S.f.key) return 'v_magnet';
+  if(!S.f.door) return 'v_door';
+  if(!S.f.larder) return 'v_larder';
+  if(!S.f.rainbow) return 'v_rainbow';
+  return 'v_hog';
 }

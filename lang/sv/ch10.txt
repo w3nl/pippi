@@ -1,0 +1,449 @@
+# Swedish translation: Chapter 9, home again (js/chapter9.js).
+# Villa Villekulla på våren. Hästen heter Lilla Gubben, Herr Nilsson, fröken, Kling och Klang, kapten Långstrump ("Pippilotta").
+# Igelkotten, regntunnan, hästskomagneten, årsringar, friktion, regnbågen, vintersömn.
+
+= A horseshoe magnet
+> En hästskomagnet
+= The captain's goodbye present, on a long string. The label says: For finding things.
+> Kaptenens avskedspresent, i ett långt snöre. På lappen står det: För att hitta saker.
+= The key of Villa Villekulla, fished out of the rain barrel. Still dripping.
+> Nyckeln till Villa Villekulla, upphämtad ur regntunnan. Den droppar fortfarande.
+= A letter from Miss: "Dear Pippi, welcome home! School starts again on Monday. I have saved you a desk by the window, next to the geraniums."
+> Ett brev från fröken: "Kära Pippi, välkommen hem! Skolan börjar igen på måndag. Jag har sparat en bänk åt dig vid fönstret, bredvid pelargonerna."
+= Monday? Then I'll start my holidays on Tuesday.
+> Måndag? Då börjar mitt lov på tisdag.
+= A card from Kling and Klang: "A friendly reminder: horses may not be carried along the pavement. Not even by very strong girls."
+> Ett kort från Kling och Klang: "En vänlig påminnelse: hästar får inte bäras på trottoaren. Inte ens av väldigt starka flickor."
+= Then I'll carry it along the road.
+> Då bär jag honom på gatan i stället.
+= A postcard from the circus: "Dear Miss Longstocking, the strongman has still not recovered. Please come and lift him again soon. He misses it."
+> Ett vykort från cirkusen: "Bästa fröken Långstrump, starke mannen har fortfarande inte hämtat sig. Kom gärna snart och lyft honom igen. Han saknar det."
+= The spunk's jam jar, riding home on the luggage cart. The spunk has had a long voyage.
+> Spunkens syltburk, som åker hem på bagagekärran. Spunken har gjort en lång resa.
+= You take it. It looks pleased to be home. As far as anyone can tell with a spunk.
+> Du tar den. Den ser glad ut över att vara hemma. Så långt man nu kan se det på en spunk.
+= At the end of every rainbow there's a pot of gold. Somebody else can have this one: I've got a whole suitcase.
+> Vid slutet av varje regnbåge finns en kruka med guld. Den här får någon annan ta: jag har redan en hel kappsäck.
+= The rainbow ends somewhere behind Villa Villekulla. Mr Nilsson has gone to look anyway.
+> Regnbågen slutar någonstans bakom Villa Villekulla. Herr Nilsson har gått för att titta ändå.
+= A pale blue spring sky. Two swallows swoop round the roof: they've just come home from Africa, the way you've just come home from the South Seas.
+> En ljusblå vårhimmel. Två svalor susar runt taket: de har just kommit hem från Afrika, precis som du just har kommit hem från Söderhavet.
+= Villa Villekulla, with lanterns on the veranda and smoke from the chimney: Pippi is making pancakes. Home.
+> Villa Villekulla, med lyktor på verandan och rök ur skorstenen: Pippi steker pannkakor. Hemma.
+= Villa Villekulla, a little crooked, exactly as you left it. Except that the swallows have built a nest under the roof.
+> Villa Villekulla, lite sned, precis som ni lämnade den. Fast svalorna har byggt ett bo under taket.
+= They can stay. Everybody can stay. Except burglars.
+> De får bo kvar. Alla får bo kvar. Utom tjuvar.
+= The kitchen. Tommy and Annika have opened every window to let the spring in. It smells much better already.
+> Köket. Tommy och Annika har öppnat alla fönster för att släppa in våren. Det luktar redan mycket bättre.
+= You rub a clean spot on the dusty kitchen window and peek in. The stove, the bureau, the mirror… and a very old pancake on the table.
+> Du gnider en ren fläck på det dammiga köksfönstret och kikar in. Spisen, chiffonjén, spegeln… och en väldigt gammal pannkaka på bordet.
+= The front door is wide open, and the party spills in and out.
+> Ytterdörren står vidöppen, och festen väller ut och in.
+= The front door, wide open. Inside it smells of dust, old pancakes and home.
+> Ytterdörren, vidöppen. Där inne luktar det damm, gamla pannkakor och hemma.
+= The front door is still locked. You have the key in your pocket.
+> Ytterdörren är fortfarande låst. Du har nyckeln i fickan.
+= The front door is locked.
+> Ytterdörren är låst.
+= The front door is locked. Locked! At Villa Villekulla!
+> Ytterdörren är låst. Låst! I Villa Villekulla!
+= I locked it before we sailed, because of burglars. Then I gave the key to Mr Nilsson to look after. He's very good at looking after things.
+> Jag låste den innan vi seglade, för tjuvarnas skull. Sedan gav jag nyckeln till Herr Nilsson så att han kunde ta hand om den. Han är väldigt bra på att ta hand om saker.
+= Eek…
+> Iii…
+= Mr Nilsson looks at the rain barrel. Then he looks at his feet.
+> Herr Nilsson tittar på regntunnan. Sedan tittar han på sina fötter.
+= The rain barrel. Nothing left in it now but rainwater, old leaves, a gold coin, a marble and a rubber ball.
+> Regntunnan. Nu finns det bara regnvatten kvar i den, gamla löv, ett guldmynt, en kula och en gummiboll.
+= The rain barrel, full to the brim with a whole winter's rain and melted snow. It's dark and full of old leaves: you can't see the bottom.
+> Regntunnan, full till brädden med en hel vinters regn och smält snö. Den är mörk och full av gamla löv: man ser inte botten.
+= Mr Nilsson points into the barrel, then pretends to drop something: plop. The key is down there. And it's far too deep and cold to reach in.
+> Herr Nilsson pekar ner i tunnan och låtsas tappa något: plopp. Nyckeln ligger där nere. Och det är alldeles för djupt och kallt för att sticka ner handen.
+= Mr Nilsson sits on the rim of the rain barrel, looking very guilty. Every now and then he peers into the water.
+> Herr Nilsson sitter på kanten av regntunnan och ser väldigt skyldig ut. Ibland kikar han ner i vattnet.
+= Mr Nilsson is polishing his bottle top. He's very glad to have it back.
+> Herr Nilsson putsar sin kapsyl. Han är väldigt glad att ha fått tillbaka den.
+= Eek eek!
+> Iii iii!
+= Mr Nilsson has raisins in both cheeks and one in each hand.
+> Herr Nilsson har russin i båda kinderna och ett i varje hand.
+= Under the lilac, the hedgehog is eating its supper. It makes a lot of noise for something so small.
+> Under syrenen äter igelkotten sin kvällsmat. Den låter mycket för att vara så liten.
+= A lilac bush, in full flower. It smells wonderful, and a yellow butterfly can't decide which flower it likes best.
+> En syrenbuske i full blom. Den doftar underbart, och en gul fjäril kan inte bestämma sig för vilken blomma den tycker bäst om.
+= Lanterns hang in the branches of the old oak, glowing like big fireflies.
+> Lyktor hänger i den gamla ekens grenar och lyser som stora eldflugor.
+= The old oak, full of fresh green leaves. One of its big branches broke off in the winter storms: it's lying right across the garden path.
+> Den gamla eken, full av färska gröna löv. En av dess stora grenar bröts av i vinterstormarna: den ligger tvärs över trädgårdsgången.
+= The old oak. There's a hollow in it, just the right size for hiding things in.
+> Den gamla eken. Den har ett hål, precis lagom stort att gömma saker i.
+= This oak is at least a hundred years old. I counted. Well, I counted to nine and then I guessed.
+> Den här eken är minst hundra år gammal. Jag har räknat. Nåja, jag räknade till nio och sedan gissade jag.
+= A neat pile of round logs. Pippi broke the branch into pieces with her bare hands. One hand, actually: the other one is holding the horse.
+> En prydlig hög med runda kubbar. Pippi bröt grenen i bitar med bara händerna. Med en hand, faktiskt: med den andra håller hon Lilla Gubben.
+= Pippi's sea chest, full of things from the island, on the luggage cart by the gate. It weighs as much as a grown-up.
+> Pippis sjömanskista, full av saker från ön, på bagagekärran vid grinden. Den väger lika mycket som en vuxen.
+= We can't get it past that branch anyway. And Pippi's hands are full of horse.
+> Vi kommer ändå inte förbi den där grenen. Och Pippis händer är fulla av häst.
+= You open the lid. Coconuts, shells, a grass skirt for the horse, eighteen kilos of sweets… and a big red horseshoe magnet on a long string.
+> Du öppnar locket. Kokosnötter, snäckor, en gräskjol till Lilla Gubben, arton kilo karameller… och en stor röd hästskomagnet i ett långt snöre.
+= The label says: "For Pippilotta. For finding things. Love, Dad."
+> På lappen står det: "Till Pippilotta. För att hitta saker. Kram, pappa."
+= Dad always knows what I need. Even when I don't.
+> Pappa vet alltid vad jag behöver. Till och med när jag inte vet det själv.
+= The sea chest, open at the foot of the veranda. Mr Nilsson has been through it twice already.
+> Sjömanskistan, öppen vid verandan. Herr Nilsson har redan letat igenom den två gånger.
+= The garden gate, still creaking. Beyond it: the little town, the church, and the harbour, where the Hoppetossa is waiting for the captain.
+> Trädgårdsgrinden, som fortfarande gnisslar. Bortom den: den lilla staden, kyrkan och hamnen, där Hoppetossa väntar på kaptenen.
+= Tommy and Annika's house, next door. Their mother has hung a big WELCOME HOME sign in the window.
+> Tommys och Annikas hus, granne med Villa Villekulla. Deras mamma har hängt en stor VÄLKOMMEN HEM-skylt i fönstret.
+= We'll go home in a minute. First the party!
+> Vi går hem om en liten stund. Först festen!
+= The party table: crispbread, honey, raisins and strawberry jam. Mr Nilsson is guarding the raisins. From the inside.
+> Festbordet: knäckebröd, honung, russin och jordgubbssylt. Herr Nilsson vaktar russinen. Inifrån.
+= The garden table, covered in last year's leaves. Perfect for a party, once there's food on it. And the food is in the larder, behind the locked front door.
+> Trädgårdsbordet, täckt av fjolårets löv. Perfekt för en fest, bara det kommer mat på det. Och maten står i skafferiet, bakom den låsta ytterdörren.
+= The horse's own straw, on the veranda. The winter wind has blown a big heap of dry leaves on top of it.
+> Lilla Gubbens egen halm, på verandan. Vintervinden har blåst en stor hög torra löv ovanpå den.
+= The horse is back on its veranda, in its own straw. It hasn't stopped smiling.
+> Lilla Gubben är tillbaka på sin veranda, i sin egen halm. Han har inte slutat le.
+= Pfrrrr.
+> Pfrrrr.
+= The horse stares at its veranda. It wants to go home, but something on its straw is snuffling.
+> Lilla Gubben stirrar på sin veranda. Han vill hem, men något nosar i hans halm.
+= Pfrrr?
+> Pfrrr?
+= The horse looks down at you from high above Pippi's head. It is not putting a hoof in that wet grass. It wants its veranda.
+> Lilla Gubben tittar ner på dig från högt ovanför Pippis huvud. Han tänker inte sätta en hov i det blöta gräset. Han vill till sin veranda.
+= Welcome home, everybody! Especially me.
+> Välkomna hem, allihop! Särskilt jag.
+= The horse wants to go on its veranda. But there's something on its straw. Something prickly.
+> Lilla Gubben vill upp på sin veranda. Men det ligger något i hans halm. Något taggigt.
+= A welcome-home party! I've never had one, so I'm sure it'll be the best one ever.
+> En välkommen-hem-fest! Jag har aldrig haft någon förut, så det blir säkert den bästa någonsin.
+= Home! I'd put the horse down, but it says the grass is too wet. It's very particular about its hooves.
+> Hemma! Jag skulle ställa ner Lilla Gubben, men han säger att gräset är för blött. Han är väldigt noga med sina hovar.
+= What a day. And school starts on Monday.
+> Vilken dag. Och skolan börjar på måndag.
+= Don't tell Pippi.
+> Säg det inte till Pippi.
+= The sun's out, and it's still raining! Pippi says she's ordered a rainbow.
+> Solen skiner, och det regnar fortfarande! Pippi säger att hon har beställt en regnbåge.
+= Where will it be, though?
+> Men var kommer den att synas?
+= That branch was knocked down by the winter storms. Look, you can see rings where it broke.
+> Den grenen blåste ner i vinterstormarna. Titta, man kan se ringar där den bröts av.
+= Pippi could break it up in no time. If she put the horse down.
+> Pippi skulle kunna bryta sönder den på nolltid. Om hon ställde ner Lilla Gubben.
+= The sea chest is too heavy for us to carry. But those logs are nice and round…
+> Sjömanskistan är för tung för oss att bära. Men de där kubbarna är fina och runda…
+= Pippi, where's the front-door key?
+> Pippi, var är nyckeln till ytterdörren?
+= Mr Nilsson knows. Mr Nilsson knows everything.
+> Herr Nilsson vet. Herr Nilsson vet allt.
+= Let's get the party ready!
+> Nu fixar vi festen!
+= Only with things that haven't gone off. We've been away for months.
+> Bara med sådant som inte har blivit dåligt. Vi har varit borta i flera månader.
+
+= The fallen branch
+> Den nerblåsta grenen
+= The broken end, close up
+> Den avbrutna änden, på nära håll
+= Pippi is about to snap the branch into logs. "Wait!" says Annika. "Look at the end where it broke off: rings! A tree grows a new ring every year."
+> Pippi ska just bryta grenen i kubbar. "Vänta!" säger Annika. "Titta på änden där den bröts av: ringar! Ett träd får en ny ring varje år."
+= How old was the branch? Count the rings.
+> Hur gammal var grenen? Räkna ringarna.
+= One fewer
+> En färre
+= One more
+> En till
+= That's it
+> Det är rätt
+= And which ring grew last summer, just before the storm? Click it.
+> Och vilken ring växte i somras, precis före stormen? Klicka på den.
+= Nine rings: the branch was nine years old. One ring for every year.
+> Nio ringar: grenen var nio år gammal. En ring för varje år.
+= You counted the light rings and the dark lines. Each year makes a light ring (spring and summer, when the tree grows fast) and a dark line (when it slows down in autumn). Count just the dark lines.
+> Du räknade både de ljusa ringarna och de mörka linjerna. Varje år blir det en ljus ring (vår och sommar, när trädet växer fort) och en mörk linje (när det växer långsammare på hösten). Räkna bara de mörka linjerna.
+= There are more than that. Start at the dot in the middle and count every dark line out to the bark.
+> Det är fler än så. Börja vid pricken i mitten och räkna varje mörk linje ut till barken.
+= Fewer than that. Count only the dark lines, from the dot in the middle out to the bark.
+> Färre än så. Räkna bara de mörka linjerna, från pricken i mitten ut till barken.
+= The outside one, just under the bark! A tree grows outwards: every year it adds a new ring on the outside. The ring in the middle is from when the branch was a tiny twig.
+> Den yttersta, precis under barken! Ett träd växer utåt: varje år får det en ny ring på utsidan. Ringen i mitten är från när grenen var en pytteliten kvist.
+= Nine! Just like me. We're twins, this branch and I.
+> Nio! Precis som jag. Vi är tvillingar, den här grenen och jag.
+= Pippi snaps the branch into round logs with one hand, the way other people break a biscuit. The horse, in her other hand, doesn't even wobble.
+> Pippi bryter grenen i runda kubbar med en hand, som andra bryter en kaka. Lilla Gubben, i hennes andra hand, vinglar inte ens.
+= Round logs… Annika, are you thinking what I'm thinking?
+> Runda kubbar… Annika, tänker du samma sak som jag?
+= The sea chest!
+> Sjömanskistan!
+= That's the very first ring, from when the branch was a tiny twig. Every year the tree adds a new ring on the outside.
+> Det är den allra första ringen, från när grenen var en pytteliten kvist. Varje år får trädet en ny ring på utsidan.
+= Not that one. The newest ring is the one nearest the bark.
+> Inte den. Den nyaste ringen är den som sitter närmast barken.
+
+= Carry it
+> Bära den
+= Lift 80 kilos? You can't even get it off the cart. Carrying means holding up all of its weight.
+> Lyfta 80 kilo? Du får inte ens ner den från kärran. Att bära betyder att du måste hålla upp hela tyngden.
+= Drag it across the grass
+> Släpa den över gräset
+= You pull and pull. The chest digs into the soft grass and hardly moves: it takes as much pulling as 50 kilos. Far too much.
+> Du drar och drar. Kistan gräver ner sig i det mjuka gräset och rör sig knappt: du måste dra som om den vägde 50 kilo. Alldeles för mycket.
+= Push it along the gravel path
+> Skjuta den längs grusgången
+= Scraaape. The chest squeaks and scratches over the gravel. Still as much pulling as 40 kilos: twice what the three of you can manage.
+> Skraaap. Kistan gnisslar och skrapar över gruset. Fortfarande som att dra 40 kilo: dubbelt så mycket som ni tre orkar.
+= Put the round logs under it
+> Lägga de runda kubbarna under den
+= From the cart to the veranda
+> Från kärran till verandan
+= The sea chest weighs 80 kilos. Pippi's hands are full of horse, so it's up to you, Tommy and Annika. Together you can pull as hard as 20 kilos. Try it: the meter shows how hard you'd have to pull.
+> Sjömanskistan väger 80 kilo. Pippis händer är fulla av häst, så det hänger på dig, Tommy och Annika. Tillsammans kan ni dra lika hårt som 20 kilo. Prova: mätaren visar hur hårt ni skulle behöva dra.
+= you three
+> ni tre
+= how hard you have to pull
+> hur hårt ni måste dra
+= When something slides, it rubs against the ground. Rolling hardly rubs at all.
+> När något glider skaver det mot marken. Att rulla skaver nästan inte alls.
+= The logs make the chest lighter.
+> Kubbarna gör kistan lättare.
+= Logs like rolling.
+> Kubbar tycker om att rulla.
+= Only 5 kilos! But why is rolling so much easier than dragging?
+> Bara 5 kilo! Men varför är det så mycket lättare att rulla än att släpa?
+= The chest still weighs 80 kilos. It's the rubbing that changes, not the weight.
+> Kistan väger fortfarande 80 kilo. Det är skavet som ändras, inte vikten.
+= Pippi agrees. But try rolling a square log…
+> Pippi håller med. Men försök rulla en fyrkantig kubbe…
+= Exactly! That rubbing is called friction. Rollers, wheels and even the little balls inside a bicycle wheel are all ways of rolling instead of sliding.
+> Precis! Det där skavet kallas friktion. Rullar, hjul och till och med de små kulorna inuti ett cykelhjul är alla sätt att rulla i stället för att glida.
+= Roll, roll, roll. Every time a log pops out at the back, Tommy runs round and puts it in at the front again.
+> Rulla, rulla, rulla. Varje gång en kubbe ploppar ut där bak springer Tommy runt och lägger den längst fram igen.
+= That's how they built the pyramids in Egypt. I helped. Well, I would have.
+> Det är så de byggde pyramiderna i Egypten. Jag hjälpte till. Nåja, det skulle jag ha gjort.
+= The chest rumbles along the path and stops at the foot of the veranda.
+> Kistan mullrar längs gången och stannar vid verandan.
+= The chest rolls along on the logs, as easy as anything.
+> Kistan rullar fram på kubbarna, hur lätt som helst.
+
+= The key (iron)
+> Nyckeln (järn)
+= A gold coin
+> Ett guldmynt
+= A nail (iron)
+> En spik (järn)
+= A glass marble
+> En glaskula
+= A bottle top (steel)
+> En kapsyl (stål)
+= A rubber ball
+> En gummiboll
+= The rain barrel
+> Regntunnan
+= A magnet on a string
+> En magnet i ett snöre
+= Mr Nilsson tells you, with his hands, that he dropped six things in the barrel over the winter. Before you lower the magnet:
+> Herr Nilsson berättar, med händerna, att han tappade sex saker i tunnan i vintras. Innan du sänker ner magneten:
+= which things will it pull up?
+> vilka saker drar den upp?
+= Tick them.
+> Kryssa för dem.
+= Lower the magnet
+> Sänk ner magneten
+= Up comes the magnet with the key, the nail and the bottle top stuck to it. The gold coin, the marble and the ball stay at the bottom. Magnets pull things made of iron and steel, and hardly anything else.
+> Upp kommer magneten med nyckeln, spiken och kapsylen fastsittande. Guldmyntet, kulan och bollen stannar på botten. Magneter drar i saker av järn och stål, och nästan ingenting annat.
+= Mr Nilsson snatches the bottle top. He has been looking for it all winter.
+> Herr Nilsson snappar åt sig kapsylen. Han har letat efter den hela vintern.
+= He can keep the gold coin in the barrel. It's his savings.
+> Guldmyntet får han ha kvar i tunnan. Det är hans sparpengar.
+= And you have the front-door key!
+> Och du har nyckeln till ytterdörren!
+= Tick the things you think will stick to the magnet.
+> Kryssa för de saker som du tror fastnar på magneten.
+= Gold isn't magnetic! Otherwise Pippi's suitcase of gold would stick to the stove. A magnet pulls iron and steel.
+> Guld är inte magnetiskt! Annars skulle Pippis kappsäck med guld fastna på spisen. En magnet drar i järn och stål.
+= Glass and rubber aren't magnetic at all. A magnet only pulls things made of iron or steel.
+> Glas och gummi är inte magnetiska alls. En magnet drar bara i saker av järn eller stål.
+= You've missed something. Look for everything made of iron or steel.
+> Du har missat något. Leta efter allt som är gjort av järn eller stål.
+
+= Crispbread
+> Knäckebröd
+= A loaf of bread
+> En limpa
+= The bread is blue and green with mould. Mould loves soft, damp bread.
+> Brödet är blått och grönt av mögel. Mögel älskar mjukt, fuktigt bröd.
+= A jar of honey
+> En burk honung
+= A bottle of milk
+> En flaska mjölk
+= The milk has gone sour and lumpy. Tiny living things called bacteria grew in it.
+> Mjölken har blivit sur och klumpig. Pyttesmå levande varelser som heter bakterier har vuxit i den.
+= Raisins
+> Russin
+= A cucumber
+> En gurka
+= The cucumber has turned to slime. Fresh fruit and vegetables are full of water, so they go off quickly.
+> Gurkan har blivit till slem. Färsk frukt och färska grönsaker är fulla av vatten, så de blir fort dåliga.
+= Strawberry jam (never opened)
+> Jordgubbssylt (aldrig öppnad)
+= An old pancake
+> En gammal pannkaka
+= The pancake has grown a green fur coat. Mr Nilsson is very offended that nobody ate it in time.
+> Pannkakan har fått en grön pälskappa. Herr Nilsson är väldigt stött över att ingen åt upp den i tid.
+= Pippi's larder
+> Pippis skafferi
+= Everything is out on the garden table
+> Allt står ute på trädgårdsbordet
+= You've been away for five months, and nobody was here to eat anything.
+> Ni har varit borta i fem månader, och ingen har varit här och ätit något.
+= What is still good enough for the party?
+> Vad är fortfarande tillräckligt gott för festen?
+= Tick it.
+> Kryssa för det.
+= Onto the party table!
+> Upp på festbordet!
+= There are more good things than that. Dry things and very sweet things keep for a long time.
+> Det finns fler bra saker än så. Torra saker och väldigt söta saker håller länge.
+= Tick the things that are still good to eat.
+> Kryssa för det som fortfarande går att äta.
+= Crispbread and raisins are dry, and honey and jam are full of sugar. Mould and bacteria need water to grow, so dry or very sweet food keeps for months. That's why sailors take dried food on long voyages.
+> Knäckebröd och russin är torra, och honung och sylt är fulla av socker. Mögel och bakterier behöver vatten för att växa, så torr eller väldigt söt mat håller i flera månader. Det är därför sjömän tar med torkad mat på långa resor.
+= Crispbread, honey, raisins and jam go on the party table. The rest goes on the compost heap, and the old pancake gets a little funeral.
+> Knäckebröd, honung, russin och sylt hamnar på festbordet. Resten åker på komposten, och den gamla pannkakan får en liten begravning.
+= Then a grey cloud slides over the garden, and it starts to pour.
+> Då glider ett grått moln in över trädgården, och det börjar ösregna.
+= An April shower! Everybody onto the veranda!
+> Aprilväder! Alla upp på verandan!
+= But the sun is already peeping out again, low in the west, while the rain is still coming down.
+> Men solen tittar redan fram igen, lågt i väster, medan regnet fortfarande faller.
+= I've ordered a rainbow for the party. Where will it be? Somebody tell everybody where to look!
+> Jag har beställt en regnbåge till festen. Var kommer den att synas? Någon måste tala om för alla var de ska titta!
+
+= Sun and rain
+> Sol och regn
+= Where will the rainbow be?
+> Var kommer regnbågen att synas?
+= It's evening, and the sun is low in the west. It's still raining all over the garden. Everybody is on the veranda, waiting for Pippi's rainbow.
+> Det är kväll, och solen står lågt i väster. Det regnar fortfarande över hela trädgården. Alla står på verandan och väntar på Pippis regnbåge.
+= you
+> du
+= the evening sun
+> kvällssolen
+= Which way should everybody look to see the rainbow?
+> Åt vilket håll ska alla titta för att se regnbågen?
+= Look {dir}
+> Titta mot {dir}
+= And what is a rainbow made of?
+> Och vad är en regnbåge gjord av?
+= Sunlight, split into its colours by the raindrops
+> Solljus, som regndropparna delar upp i färger
+= Coloured raindrops
+> Färgade regndroppar
+= Paint, washed out of the sky by the rain
+> Målarfärg, som regnet sköljt ur himlen
+= That's looking straight into the sun! Never look at the sun. And a rainbow is never on the sun's side of the sky.
+> Då tittar du rakt in i solen! Titta aldrig på solen. Och en regnbåge syns aldrig på samma sida av himlen som solen.
+= Not quite. The sunlight has to shine into the raindrops and bounce back to you. Turn your back on the sun.
+> Inte riktigt. Solljuset måste lysa in i regndropparna och studsa tillbaka till dig. Vänd ryggen mot solen.
+= The raindrops are as clear as glass. It's the sunlight that is full of colours: the drops split it up.
+> Regndropparna är klara som glas. Det är solljuset som är fullt av färger: dropparna delar upp det.
+= The sky isn't painted. Not even in Egypt.
+> Himlen är inte målad. Inte ens i Egypten.
+= East! A rainbow is always opposite the sun: the sun behind you, the rain in front of you.
+> Öster! En regnbåge syns alltid mittemot solen: solen bakom dig, regnet framför dig.
+= Sunlight looks white, but it is all the colours mixed together. Each raindrop splits it up, like a tiny prism: red, orange, yellow, green, blue, indigo and violet.
+> Solljus ser vitt ut, men det är alla färger blandade. Varje regndroppe delar upp det, som ett pyttelitet prisma: rött, orange, gult, grönt, blått, indigo och violett.
+= Everybody turns round to face the east. And there it is: a rainbow, right over the roof of Villa Villekulla.
+> Alla vänder sig mot öster. Och där är den: en regnbåge, rakt över taket på Villa Villekulla.
+= Exactly where I ordered it.
+> Precis där jag beställde den.
+= The rain stops. The whole garden sparkles in the evening sun.
+> Regnet slutar. Hela trädgården glittrar i kvällssolen.
+= Then, from the veranda, comes a loud snuffling sound. The heap of leaves on the horse's straw is moving!
+> Då hörs ett högt nosande från verandan. Lövhögen i Lilla Gubbens halm rör sig!
+= Pfrrr?!
+> Pfrrr?!
+
+= A hedgehog!
+> En igelkott!
+= In the horse's straw
+> I Lilla Gubbens halm
+= Under the leaves, curled up in the horse's straw, a hedgehog is waking up. It's thin and very sleepy.
+> Under löven, hoprullad i Lilla Gubbens halm, håller en igelkott på att vakna. Den är mager och väldigt sömnig.
+= Why has it been asleep under the leaves all winter?
+> Varför har den sovit under löven hela vintern?
+= It was hibernating: in winter there are no beetles or worms to eat, so it sleeps and lives on its fat
+> Den gick i ide: på vintern finns det inga skalbaggar eller maskar att äta, så den sover och lever på sitt fett
+= It was hiding from Mr Nilsson
+> Den gömde sig för Herr Nilsson
+= It was keeping the straw warm for the horse
+> Den höll halmen varm åt Lilla Gubben
+= Mr Nilsson was in the South Seas! Hedgehogs sleep all winter even when there are no monkeys about.
+> Herr Nilsson var ju i Söderhavet! Igelkottar sover hela vintern även när det inte finns några apor i närheten.
+= Very kind of it, but no. It came for the warm, dry heap of leaves, not for the horse.
+> Väldigt snällt av den, men nej. Den kom för den varma, torra lövhögens skull, inte för Lilla Gubbens.
+= It has slept for months. What should you give a hungry, thirsty hedgehog?
+> Den har sovit i flera månader. Vad ska man ge en hungrig och törstig igelkott?
+= A saucer of milk
+> Ett fat mjölk
+= Some bread
+> Lite bröd
+= A shallow dish of water and some cat food
+> En grund skål med vatten och lite kattmat
+= Pippi's sweets
+> Pippis karameller
+= No milk! Hedgehogs can't digest it: it gives them a terrible tummy ache. Lots of people don't know that.
+> Ingen mjölk! Igelkottar tål den inte: de får fruktansvärt ont i magen. Det är många som inte vet det.
+= Bread fills up its tummy, but there's nothing in it that a hedgehog needs.
+> Bröd fyller magen, men det finns inget i det som en igelkott behöver.
+= Pippi offers eighteen kilos. The hedgehog needs zero kilos: sweets are very bad for hedgehogs.
+> Pippi bjuder på arton kilo. Igelkotten behöver noll kilo: karameller är väldigt dåliga för igelkottar.
+= Hibernating! Its heart beat very slowly, it hardly breathed, and it lived on the fat it ate in the autumn. Now it's spring, and it has woken up very, very hungry.
+> I ide! Hjärtat slog väldigt långsamt, den andades nästan inte, och den levde på fettet den åt i höstas. Nu är det vår, och den har vaknat väldigt, väldigt hungrig.
+= Water and meaty food, like cat food: hedgehogs eat beetles, worms and snails. And never milk!
+> Vatten och köttig mat, som kattmat: igelkottar äter skalbaggar, maskar och sniglar. Och aldrig mjölk!
+
+= Villa Villekulla, in spring. The snow has gone, the grass is up to your knees, and the old oak is full of new leaves.
+> Villa Villekulla, på våren. Snön har smält, gräset når upp till knäna, och den gamla eken är full av nya löv.
+= Home! Villa Villekulla, I'm back! Did you miss me?
+> Hemma! Villa Villekulla, jag är tillbaka! Har du saknat mig?
+= Pippi is carrying the horse high over her head. It won't put a hoof in the wet grass: it wants its own veranda.
+> Pippi bär Lilla Gubben högt över huvudet. Han vägrar sätta en hov i det blöta gräset: han vill till sin egen veranda.
+= Oh no. A big branch has come off the old oak in the winter storms. It's lying right across the path.
+> Åh nej. En stor gren har brutits av den gamla eken i vinterstormarna. Den ligger tvärs över gången.
+= And how do we get the sea chest off the cart? It weighs as much as a grown-up.
+> Och hur får vi ner sjömanskistan från kärran? Den väger lika mycket som en vuxen.
+= Tonight we'll have a welcome-home party, for the whole town! I've never had a welcome-home party, so I'm sure it'll be the best one ever.
+> I kväll ska vi ha välkommen-hem-fest, för hela staden! Jag har aldrig haft en välkommen-hem-fest förut, så det blir säkert den bästa någonsin.
+= First things first: that branch on the path.
+> Först det viktigaste: grenen på gången.
+= The hedgehog eats every last crumb, drinks the whole dish, and trundles off to live under the lilac bush.
+> Igelkotten äter upp varenda smula, dricker ur hela skålen och tultar i väg för att bo under syrenbusken.
+= And now, at last…
+> Och nu, äntligen…
+= Pippi lifts the horse high over her head one last time, and sets it down gently on its own veranda, in its own straw.
+> Pippi lyfter Lilla Gubben högt över huvudet en sista gång och ställer ner honom försiktigt på hans egen veranda, i hans egen halm.
+= Pfrrrrrr!
+> Pfrrrrrr!
+= The horse looks round at its veranda, the garden, the old oak and the rainbow, and gives a long, happy sigh. It's home.
+> Lilla Gubben tittar runt på sin veranda, trädgården, den gamla eken och regnbågen, och drar en lång, lycklig suck. Han är hemma.
+= That evening the whole town comes to the welcome-home party: Miss, Kling and Klang, and half the circus. Lanterns glow in the old oak, and Pippi makes pancakes for everybody.
+> Den kvällen kommer hela staden på välkommen-hem-festen: fröken, Kling och Klang, och halva cirkusen. Lyktor lyser i den gamla eken, och Pippi steker pannkakor åt alla.
+= Welcome home, Miss Longstocking. We have brought a cake.
+> Välkommen hem, fröken Långstrump. Vi har tagit med en tårta.
+= We ate a bit of it on the way.
+> Vi åt lite av den på vägen.
+= Pippilotta! The Hoppetossa sails again at dawn. Unless… you'd rather stay here?
+> Pippilotta! Hoppetossa seglar igen i gryningen. Om du inte… hellre vill stanna här?
+= I'll stay, Dad. Villa Villekulla is my home. But come back soon!
+> Jag stannar, pappa. Villa Villekulla är mitt hem. Men kom tillbaka snart!
+= And school starts on Monday.
+> Och skolan börjar på måndag.
+= Then on Monday I'll start my holidays from school. I've never done that before, so I'm sure I can!
+> Då börjar jag mitt lov från skolan på måndag. Det har jag aldrig provat förut, så det klarar jag säkert!

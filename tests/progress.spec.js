@@ -2,8 +2,8 @@ const { test, expect } = require('@playwright/test');
 const { KEY, seed, hs, skip } = require('./helpers');
 
 test('progress is saved and survives a refresh', async ({ page }) => {
-  await seed(page);
-  await page.locator('#btn-new').click();
+  await seed(page, null, ['-ch1']);
+  await page.locator('#btn-ch1').click();
   await skip(page);
   await hs(page, 'spunk');
   await skip(page);
@@ -35,8 +35,8 @@ test('padlock wheels and the stove stay as you left them', async ({ page }) => {
 });
 
 test('hints give a nudge, then the answer, and are counted', async ({ page }) => {
-  await seed(page);
-  await page.locator('#btn-new').click();
+  await seed(page, null, ['-ch1']);
+  await page.locator('#btn-ch1').click();
   await skip(page);
   await page.locator('#btn-hint').click();
   await expect(page.locator('#d-txt')).toContainText('Hint: ', { timeout: 5_000 });
@@ -51,8 +51,8 @@ test('scores keep the best result, and achievements carry over to a new game', a
   await expect(page.locator('#title')).not.toHaveClass(/loading/);
   await page.evaluate(() => { recordScore(1, 300, 3); recordScore(1, 400, 1); });
   await page.locator('#btn-scores').click();
-  await expect(page.locator('.scores tbody tr').first()).toContainText('05:00');
-  await expect(page.locator('.scores tbody tr').first()).toContainText('Thing-finder');
+  await expect(page.locator('.scores tbody tr').nth(1)).toContainText('05:00');
+  await expect(page.locator('.scores tbody tr').nth(1)).toContainText('Thing-finder');
   await page.locator('#m-close').click();
   await page.locator('#btn-new').click();
   const ach = await page.evaluate(KEY => JSON.parse(localStorage.getItem(KEY)).ach, KEY);

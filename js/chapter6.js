@@ -1,5 +1,6 @@
-// Chapter 6: on board the Hoppetossa. Captain Longstocking sails Pippi, Tommy, Annika and you to his island.
-// The voyage goes in legs: the quay, open sea by day, the Equator at night, and the island at dawn.
+// Chapter 6: Pippi's balloon ride. The ringmaster gives Pippi the circus's old hot-air balloon as a thank-you.
+// The flight goes in legs, like the Hoppetossa's voyage: the garden, over the town, over the farms, through a cloud,
+// and up to the church tower on the hill, where the burglars' stolen weathercock belongs.
 // Loaded in order by js/boot.js; all game files share the same global scope.
 
 const UNLOCK6 = KEY + '-ch6';
@@ -8,485 +9,426 @@ function setUnlocked6(){ try{ localStorage.setItem(UNLOCK6, '1'); }catch(e){} }
 
 /* ---------- Chapter 6 items ---------- */
 Object.assign(ITEMS, {
-  net: { name:'Fishing net', desc:'A fishing net from the hold. Good for fishing things out of the sea, and for catching monkeys.',
-    svg:'<svg viewBox="0 0 44 44"><path d="M22 4 V10" stroke="#6b4423" stroke-width="3"/><path d="M8 10 L36 10 L31 36 L13 36 Z" fill="none" stroke="#c9a46a" stroke-width="2.5"/><path d="M15 10 L18 36 M22 10 V36 M29 10 L26 36 M9 19 H35 M11 28 H33" stroke="#c9a46a" stroke-width="1.5" fill="none"/></svg>' },
-  sextant: { name:'Sextant', desc:'The captain\'s brass sextant. It measures how high a star stands above the horizon. Select it, then click the sky.',
-    svg:'<svg viewBox="0 0 44 44"><path d="M22 6 L8 34 A16 16 0 0 0 36 34 Z" fill="none" stroke="#c9952a" stroke-width="3"/><path d="M22 6 L30 36" stroke="#7a5a1a" stroke-width="2.5"/><rect x="11" y="16" width="9" height="5" rx="1" fill="#9aa0a6"/><circle cx="22" cy="6" r="3" fill="#c9952a"/></svg>' },
-  spyglass: { name:'Spyglass', desc:'The captain\'s brass spyglass. It makes far-away things look near. Select it, then click something far away.',
-    svg:'<svg viewBox="0 0 44 44"><g transform="rotate(-30 22 22)"><rect x="4" y="18" width="12" height="8" rx="2" fill="#7a5a1a"/><rect x="15" y="16" width="13" height="12" rx="2" fill="#c9952a"/><rect x="27" y="14" width="13" height="16" rx="3" fill="#f3d27a" stroke="#b07f1f"/></g></svg>' }
+  note6: { name:"Annika's note", desc:'For Kling and Klang: "The burglars are hiding behind the haystacks at the farm with the L-shaped barn!"',
+    svg:'<svg viewBox="0 0 44 44"><rect x="9" y="8" width="26" height="30" fill="#fffaf0" transform="rotate(5 22 23)"/><path d="M14 16h16M14 22h14M14 28h16" stroke="#2f5f9a" stroke-width="2" transform="rotate(5 22 23)"/></svg>' },
+  rooster: { name:'The golden weathercock', desc:'The church\'s golden weathercock. It belongs on top of the church tower, turning in the wind.',
+    svg:'<svg viewBox="0 0 44 44"><path d="M10 30 q6-20 20-16 l4-8 l3 8 q8 4 4 14 q-8 8-22 8 q-8 0-9-6z" fill="#e8b830" stroke="#a8781a" stroke-width="1.5"/><path d="M10 30 l-6-8 l9 4z" fill="#e8b830"/><path d="M22 36 v6 M18 42 h8" stroke="#5a5f66" stroke-width="2"/></svg>' }
 });
 
-/* ---------- drawing the ship ---------- */
-function buildShip(){
-  let st = '';
-  for(let i = 0; i < 46; i++){ const x = (i * 137) % 1600, y = 20 + (i * 53) % 400, r = 1 + (i % 3) * .6;
-    st += `<circle class="hp-tw" style="animation-delay:-${(i * .37 % 3).toFixed(2)}s" cx="${x}" cy="${y}" r="${r}" fill="#fff"/>`; }
-  $('#hp-stars').innerHTML = st;
+/* Where the flight is now: the garden, then over the town, the farms, through the cloud, and at the church. */
+const leg6 = () => !S.f.up ? 'ground' : !S.f.steer ? 'town' : !S.f.dropped ? 'farms' : !S.f.cloud ? 'cloud' : 'church';
+
+/* ---------- drawing the world below ---------- */
+function buildBalloon(){
+  if(!$('#bl-houses')) return;
+  let h = '';
+  [[60, 640], [200, 690], [380, 600], [470, 700], [620, 610], [860, 600], [1200, 620], [1320, 700], [180, 820], [460, 840], [1240, 840], [1480, 600]].forEach(([x, y], i) => {
+    const w = 70 + (i % 3) * 14, c = ['#b0412a', '#c9a04a', '#e8e0d0'][i % 3];
+    h += `<rect x="${x}" y="${y}" width="${w}" height="44" fill="${c}"/><path d="M${x - 6} ${y + 2} L${x + w / 2} ${y - 26} L${x + w + 6} ${y + 2}z" fill="#fff" stroke="#c9d8e8" stroke-width="2"/><rect x="${x + 12}" y="${y + 14}" width="10" height="10" fill="#fffaf0"/><rect x="${x + w - 18}" y="${y - 30}" width="8" height="18" fill="#7a3a1a"/>`;
+  });
+  $('#bl-houses').innerHTML = h;
+  // chimney smoke leans back towards Villa Villekulla: the low wind blows the wrong way
+  let sm = '';
+  [[60, 640], [380, 600], [860, 600], [1200, 620]].forEach(([x, y], i) => { const w = 70 + (i % 3) * 14, cx = x + w - 14;
+    sm += `<circle class="bl-puff" style="animation-delay:-${i * .7}s" cx="${cx}" cy="${y - 36}" r="8"/><circle class="bl-puff b" style="animation-delay:-${i * .7 + 1.2}s" cx="${cx - 14}" cy="${y - 44}" r="10"/>`; });
+  $('#bl-smoke').innerHTML = sm;
   let fl = '';
-  for(let i = 0; i < 70; i++){ const x = (i * 211 + 37) % 1600, y = (i * 389) % 900, r = 1.4 + (i % 4) * .6;
-    fl += `<circle class="hp-flake" style="animation-delay:-${(i * .53 % 10).toFixed(2)}s;animation-duration:${8 + i % 5}s" cx="${x}" cy="${y}" r="${r}"/>`; }
-  $('#hp-snow').innerHTML = fl;
-  // wave crests: two strips, each twice as wide as the stage so they can roll past
-  const strip = (y, a, w) => { let d = `M-400 ${y}`; for(let x = -400; x < 2000; x += w) d += ` q${w / 4} ${-a} ${w / 2} 0 q${w / 4} ${a} ${w / 2} 0`; return `<path d="${d}"/>`; };
-  $('#hp-waves').innerHTML = strip(560, 4, 90) + strip(580, 5, 120);
-  $('#hp-wavefront').innerHTML = strip(600, 7, 100);
-  let rl = '<path d="M186 298 H486 M486 380 H1340 Q1420 374 1484 338"/>';
-  for(let x = 196; x <= 476; x += 24) rl += `<path d="M${x} 298 V324"/>`;
-  for(let x = 500; x <= 1330; x += 30) rl += `<path d="M${x} 380 V404"/>`;
-  $('#hp-rails').innerHTML = rl;
-  let rt = '';
-  for(let y = 170; y <= 390; y += 22){ const k = (y - 150) / 252; rt += `<path d="M${(760 - 48 * k).toFixed(0)} ${y} H${(760 + 48 * k).toFixed(0)}"/>`; }
-  $('#hp-ratlines').innerHTML = rt;
+  // snowy fields, with the tops of last year's furrows and hedges showing through
+  const snows = ['#f4f8fc', '#eaf1f8', '#f8f6f0', '#e4edf6', '#f0f4f8'];
+  for(let i = 0; i < 16; i++){ const x = 1600 + (i % 8) * 200, y = 560 + Math.floor(i / 8) * 150;
+    fl += `<rect x="${x}" y="${y}" width="200" height="150" fill="${snows[i % 5]}" stroke="#9aa88a" stroke-width="4" stroke-dasharray="2 9" stroke-linecap="round"/>` + (i % 2 ? `<path d="M${x + 10} ${y + 30} h180 M${x + 10} ${y + 70} h180 M${x + 10} ${y + 110} h180" stroke="rgba(90,110,130,.12)" stroke-width="4"/>` : ''); }
+  $('#bl-fields').innerHTML = fl;
+  let pn = '';
+  for(let i = 0; i < 26; i++){ const x = 3220 + (i * 37) % 760, y = 600 + (i * 53) % 260;
+    pn += `<path d="M${x} ${y} l-18 40 h36z" fill="${i % 2 ? '#2f5a3a' : '#3f7a4a'}"/><path d="M${x} ${y} l-7 16 h14z" fill="#fff"/>`; }
+  $('#bl-pines').innerHTML = pn;
+  let cr = '';
+  for(let i = 0; i < 16; i++){ const x = 5080 + (i % 8) * 24, y = 800 + Math.floor(i / 8) * 26;
+    const col = ['#2f5f9a', '#e2483d', '#3f8a4a', '#f2c94c'][i % 4];
+    cr += `<g class="bl-cheer" style="animation-delay:-${(i * .23).toFixed(2)}s"><path d="M${x - 5} ${y + 9} l-5 -9 M${x + 5} ${y + 9} l5 -9" stroke="${col}" stroke-width="3" stroke-linecap="round"/><rect x="${x - 6}" y="${y + 6}" width="12" height="18" rx="4" fill="${col}"/><circle cx="${x}" cy="${y}" r="6" fill="#f3c9a4"/></g>`; }
+  $('#bl-crowd').innerHTML = cr;
 }
-/* The time of day follows the voyage: day until the water is made, night until the Equator, then dawn and the island. */
-function applyShip(){
+
+function applyBalloon(){
   const show = vis;   // smooth when you can see it happen (core.js)
-  const sc = $('#sc-ship'); if(!sc) return;
-  const night = !!S.f.water && !S.f.equator, dawn = !!S.f.equator && !S.f.out6, day = !night && !dawn;
-  sc.classList.toggle('sailing', !!S.f.course);
-  sc.classList.toggle('night', night);
-  show('#hp-day', day); show('#hp-sun', day && !!S.f.course); show('#hp-clouds', day);
-  show('#hp-wintersky', !S.f.course); show('#hp-snow', !S.f.course);
-  show('#hp-night', night); show('#hp-stars', night); show('#hp-moon', night); show('#hp-dark', night); show('#hp-glow', night);
-  show('#hp-dusk', dawn); show('#hp-dawnsun', dawn);
-  show('#hp-harbour', !S.f.course); show('#hit-quay6', !S.f.course); show('#hp-seafar', !!S.f.course);
-  show('#hp-isletip', dawn); show('#hp-isle', !!S.f.out6); show('#hit-isle6', !!S.f.out6);
-  show('#hp-qhorse', !S.f.aboard); show('#hit-horse6q', !S.f.aboard);
-  show('#hp-dhorse', !!S.f.aboard); show('#hit-horse6d', !!S.f.aboard);
-  show('#hp-ropelong', !S.f.aboard); show('#hp-ropeshort', !!S.f.aboard);
-  show('#hp-furl', !S.f.course); show('#hp-sails', !!S.f.course); show('#hp-spray', !!S.f.course);
-  show('#hp-zero', !!S.f.equator);
-  show('#hp-splash', !!S.f.course && !S.f.floats);
-  show('#hp-stills', !!S.f.water);
-  show('#hp-spunk', !S.f.spunkTaken); show('#hit-spunk6', !S.f.spunkTaken);
-  show('#hp-net', !S.f.netTaken); show('#hit-net6', !S.f.netTaken);
-  show('#hp-sext', !S.f.sextTaken);
-  show('#hp-glass', !S.f.glassTaken); show('#hit-glass6', !S.f.glassTaken);
+  const sc = $('#sc-balloon'); if(!sc) return;
+  const f = S.f, leg = leg6(), up = !!f.up, flying = up && !f.out6;
+  ['ground', 'town', 'farms', 'cloud', 'church'].forEach(l => sc.classList.toggle('bl-' + l, leg === l));
+  sc.classList.toggle('bl-up', up);
+  sc.classList.toggle('bl-landed', !!f.out6);
+  show('#bl-flat', !up); show('#bl-balloon', up); show('#bl-flame', flying);
+  show('#bl-gkids', !up);
+  show('#bl-spunk', !f.spunkTaken && !up); show('#bl-spunka', !f.spunkTaken && up);
+  show('#bl-fog', leg === 'cloud'); show('#bl-fog2', leg === 'cloud');
+  show('#bl-ride', up && !f.dropped); show('#bl-caught', !!f.dropped && !f.cloud); show('#bl-cops3', !!f.cloud);
+  show('#bl-feet', !f.dropped); show('#bl-cock', !!f.out6); show('#bl-crowd', !!f.cloud);
+  const at = (id, on) => show('#hit-' + id, on);
+  ['house6', 'horse6', 'balloon6g', 'ringmaster6', 'nilsson6g', 'pippi6g', 'kids6g'].forEach(id => at(id, leg === 'ground'));
+  at('spunk6', leg === 'ground' && !f.spunkTaken); at('spunk6a', flying && !f.spunkTaken);
+  ['balloon6a', 'burner6', 'kids6a', 'pippi6a', 'nilsson6a', 'basket6'].forEach(id => at(id, flying));
+  at('town6', leg === 'town'); at('kite6', leg === 'town'); at('police6t', leg === 'town');
+  at('farms6', leg === 'farms'); at('police6f', leg === 'farms'); at('saab6', leg === 'farms'); at('burglars6', leg === 'farms' && !!f.found);
+  at('cloud6', leg === 'cloud');
+  at('tower6', leg === 'church'); at('crowd6', leg === 'church'); at('harbour6', leg === 'church');
 }
-/* The horse is hoisted aboard: up from the quay, the boom swings round, down onto the deck, and it walks to its place
-   (css: .hoisting in chapter6.css). With Motion off it is simply on deck. */
-function hoist6(){
-  if(reducedMotion()) return;
-  const sc = $('#sc-ship');
-  sc.classList.remove('hoisting'); void sc.getBoundingClientRect(); sc.classList.add('hoisting');
-  setTimeout(() => sc.classList.remove('hoisting'), 6200);
-}
-/* Casting off: the sails drop, and the quay slides away behind the ship. */
-function castOff6(){
-  const sc = $('#sc-ship');
-  sc.classList.add('castoff');
-  setTimeout(() => { sc.classList.remove('castoff'); applyVisuals(); }, reducedMotion() ? 0 : 3200);
+/* The balloon rises from the snowy garden (skipped with Motion off). */
+function takeoff6(){
+  const g = $('#bl-balloon .bl-lift'); if(!g || reducedMotion()) return;
+  g.classList.remove('bl-takeoff'); void g.getBoundingClientRect(); g.classList.add('bl-takeoff');
+  setTimeout(() => g.classList.remove('bl-takeoff'), 5200);
 }
 
 /* ---------- hotspot handlers ---------- */
 const has6 = id => S.inv.includes(id);
 Object.assign(H, {
-  spunk6(){ S.f.spunkTaken = true; give('spunk'); applyVisuals(); say(["The spunk's jam jar, on the captain's chart table. Pippi has brought it along: \"It has never been to sea.\"", "You take it. A spunk knows things. Even about ships."]); },
-  quay6(){ say(["The harbour town on its hill. Right at the top, a little crooked, stands Villa Villekulla.", "The whole town has come down to the quay to wave goodbye. Well, three people and a dog."]); },
-  horse6(){
-    if(!S.f.aboard) return say(["Pippi's horse, on the quay, with a rope sling round its middle. It looks at the ship. It looks at you.", ['horse', "Pfrrrr?"], "Pippi won't sail without it. The cargo hoist on the stern could lift it aboard."]);
-    if(S.f.floats && !S.f.water) return say([['horse', "Hrrrm."], "The horse's tongue is hanging out. It drank the whole water barrel, and it's still thirsty. So is everybody else."]);
-    say([['horse', "Neeeigh!"], S.f.course ? "The horse stands on deck with its legs wide apart, like a real sailor." : "The horse is on board, sniffing the hay in the hold."]);
-  },
-  hoist(){ if(S.f.aboard) return say("The cargo hoist. Its pulleys have done their job: the horse is on board."); openHoist(); },
-  mast6(){ say(S.f.course ? ["The sails are full of wind. The Hoppetossa leans a little and hurries along.", "High above, the crow's nest sways against the sky."] : ["The sails are rolled up tight on the yards. They come down when the ship sets off.", "First the horse, then a course. The captain is very firm about that."]); },
-  crow(){
-    if(S.f.out6) return say("The crow's nest. From up here the island is all palm trees, white sand and waving people.");
-    if(!S.f.equator) return say(S.f.course ? ["You climb the rope ladder to the crow's nest. Sea, sea, and more sea, all the way round.", "Mr Nilsson waves at you from the yard. He climbed up faster."] : ["You climb to the crow's nest. You can see the whole town from here, and Villa Villekulla on its hill.", "The sea is waiting. The captain is waiting. The horse is waiting most of all."]);
-    if(!has6('spyglass')) return say(["You climb to the crow's nest. It's dawn. Far away, on the horizon, is there a tiny bump? You can't be sure.", "To see that far you'd need the captain's spyglass."]);
-    openLandHo();
-  },
-  glass6(){ S.f.glassTaken = true; give('spyglass'); applyVisuals(); say(["The captain's spyglass, hanging on the mizzen mast by the wheel.", ['captain', "Take it, sailor! A spyglass belongs to whoever is first to shout LAND HO."]]); },
-  wheel(){
-    if(S.f.course) return say(["The ship's wheel and the compass. The needle points north, and the ship's nose points south-west. Steady as she goes.", ['captain', "Don't touch, sailor. She's on course."]]);
-    if(!S.f.aboard) return say([['captain', "Not so fast, sailor! We don't leave without the horse."], ['pippi', "We don't leave without the horse!"]]);
-    openWheel();
-  },
-  captain6(){
-    if(S.f.out6) return say([['captain', "My island! And my people waving! Pippilotta, you're a princess now. A princess who climbs masts."]]);
-    if(!S.f.aboard) return say([['captain', "Ahoy, sailor! Everything aboard except the horse. Use the hoist on the stern. No lifting it by hand, Pippilotta!"], ['pippi', "Spoilsport!"]]);
-    if(!S.f.course) return say([['captain', "Now set a course for my island. My chart is in the cabin, and the wheel is right here. The compass will tell you which way you're pointing."]]);
-    if(!S.f.floats) return say([['captain', "That monkey has thrown half my cabin overboard! What floats, we fish out with the net. What sinks, Pippi fetches."]]);
-    if(!S.f.water) return say([['captain', "The horse has drunk all the drinking water. And sea water is no good: far too salty. But the sun is hot, and the sun can help."]]);
-    if(!S.f.equator) return say([['captain', "Tonight we should cross the Equator. Where are we, sailor? The stars will tell you, with my sextant."]]);
-    say([['captain', "Dawn! My island must be close now. Up to the crow's nest with my spyglass, and keep your eyes open!"]]);
-  },
-  nilsson6(){
-    S.f.nilTaps6 = (S.f.nilTaps6 || 0) + 1; save();
-    say(S.f.floats ? [['nilsson', "Eek!"], "Mr Nilsson hangs by his tail from the yard, looking very innocent. He has nothing left to throw."]
-      : S.f.course ? [['nilsson', "Eek! Eek!"], "Mr Nilsson swings from the yard by his tail. Every few minutes something splashes into the sea."]
-      : [['nilsson', "Eek!"], "Mr Nilsson has climbed into the rigging. He loves ships: so many things to throw."]);
-  },
-  ta6(){
-    if(S.f.out6) return say([['tommy', "An island with real palm trees!"], ['annika', "And real coconuts. I hope they fall down slowly."]]);
-    if(!S.f.course) return say([['annika', "I've never been on a real ship. What if I get seasick?"], ['tommy', "What if the horse gets seasick?"]]);
-    if(S.f.water && !S.f.equator) return say([['annika', "Look at all the stars! The North Star is so low tonight. At home it's high up in the sky."], ['tommy', "Maybe it's tired."]]);
-    say([['tommy', "I'm a sailor now!"], ['annika', "We're both sailors. I've written it in my diary."]]);
-  },
-  pippi6(){
-    if(S.f.equator && !S.f.out6){ S.ach.neptune = true; save();
-      return say(['pippi', "I'm King Neptune, the king of the sea! Everybody who crosses the Equator for the first time gets a bucket of water over their head. Ready?"]); }
-    say(['pippi', S.f.out6 ? "Daddy's island! I'm going to be a princess. A thing-searching princess." : S.f.course ? "I'm the figurehead! Look, no hands!" : "I've never sailed to the South Seas, so I'm sure I'll be very good at it."]);
-  },
-  isle6(){ if(S.f.out6) startCh7(); },   // ashore: on to Chapter 7
-  log6(){ openLog6(); },
-  case6(){
-    if(S.f.sextTaken) return say("The instrument box. Empty, apart from a pair of dividers and a very old biscuit.");
-    S.f.sextTaken = true; give('sextant'); applyVisuals();
-    say(["The captain's instrument box. Inside, on red velvet: a brass sextant.", "A note in the lid says: \"For measuring how high a star is above the horizon. Only works at night. Obviously.\""]);
-  },
-  chart6(){ openChart6(); },
-  stove6(){ say(S.f.water ? "The galley stove. A pot of fish soup is bubbling. Pippi made it. There's a whole fish in it, and a sock." : ["The galley stove, with a pot of soup bubbling away.", "Soup needs fresh water too. Everything on a ship needs fresh water."]); },
-  barrel(){
-    if(S.f.water) return say("The water barrel, filling up again, cupful by cupful, from the bowls in the sun.");
-    if(!S.f.floats) return say(["The drinking-water barrel, full to the top.", "On a ship, fresh water is precious. There's water all around you, but the sea is far too salty to drink."]);
-    openStill();
-  },
-  crates6(){ say(["Crates of supplies. Two of them are labelled 18 kg.", "Pippi says that's sweets for the voyage. Eighteen kilos each. \"In case we're becalmed.\""]); },
-  net6(){ S.f.netTaken = true; give('net'); applyVisuals(); say("A fishing net, hanging on a hook in the hold. You take it. It might come in handy at sea."); },
-  hold6(){ say(["The lower hold: barrels of salted fish, and a pile of heavy stones.", "The stones are ballast. They sit low down in the ship so she doesn't tip over in the wind."]); },
+  saab6(){ spotSaab(["Far below, a little red Saab 96 putters along the country road. From up here it looks like a ladybird.", ['pippi', "Hello down there! Ring-ding-ding-ding!"]]); },
+  spunk6(){ S.f.spunkTaken = true; give('spunk'); applyVisuals(); say(["The spunk's jam jar. Pippi has brought it along, so that the spunk can see the world from above.", "You take it. A spunk has never flown before. It looks calm about it."]); },
   sky6(){
-    if(S.f.water && !S.f.equator){
-      if(has6('sextant')) return openSextant6();
-      return say(["The sky is full of stars. The North Star hangs very low, just above the sea.", "The captain measures stars with his sextant. It's in the instrument box in his cabin."]);
-    }
-    if(S.f.equator && !S.f.out6) return say("Dawn. The sky turns pink, then orange, then gold. Somewhere ahead is an island.");
-    say(S.f.course ? "Blue sky, white clouds, and the sun getting hotter every day as you sail south." : "Seagulls circle over the harbour, hoping somebody drops a sandwich.");
+    const leg = leg6();
+    if(leg === 'cloud') return openCloud6();
+    if(leg === 'ground') return say(["A clear blue sky, with a nice steady breeze. Perfect for flying, says the ringmaster.", ['ringmaster', "Not too windy, not too calm. Like a good trapeze act."]]);
+    if(leg === 'town') return say(["Up here, the sky is all around you. A flock of geese flies past at eye level and looks at you very strangely.", "Down low, the chimney smoke leans back towards Villa Villekulla. Higher up, the clouds are drifting that way too."]);
+    if(leg === 'farms') return say("Blue sky above, patchwork fields below. The wind is carrying you nicely towards the farms.");
+    say(S.f.out6 ? "The sun shines on the golden weathercock. The sky is as blue as a policeman's uniform." : "Bright sunshine, after the cloud. The church tower is right next to the basket.");
   },
-  sea6(){
-    if(!S.f.course) return say("Harbour water, green and calm. A seagull floats on it, looking bored.");
-    if(!S.f.floats){
-      if(has6('net')) return openFloat();
-      return say(["Splash! Mr Nilsson has thrown the captain's things overboard. Some are bobbing on the waves; some have gone straight down.", "You'll need something to fish them out with."]);
+  house6(){ say(["Villa Villekulla, a little crooked as always. The horse is watching from the veranda.", ['pippi', "We'll be back for supper. Probably. Unless we fly to Egypt."]]); },
+  horse6(){ say(["The horse looks at the basket, and then at you. Four hundred kilos of horse in a balloon basket?", ['horse', "Pfrrr."], "It decides to stay on the veranda and guard the house."]); },
+  ringmaster6(){ say([['ringmaster', "The circus balloon! It has flown over seven countries and one very surprised cow. And now it's yours, Miss Longstocking."], ['ringmaster', "Just remember: hot air goes up. Up, up, up!"]]); },
+  balloon6(){
+    if(!S.f.up) return openLift6();
+    say(["The circus balloon: red and yellow, with two white stars. It's taller than Villa Villekulla.", ['pippi', "It's the biggest thing I've ever carried. Well, it's carrying me, actually."]]);
+  },
+  burner6(){
+    const leg = leg6();
+    if(leg === 'town') return openWinds6();
+    if(leg === 'cloud') return openCloud6();
+    if(leg === 'farms') return say("A tiny puff from the burner keeps you at kite height. Right where the wind blows towards the farms.");
+    say("A short puff from the burner, WHOOSH, keeps the balloon level with the top of the church tower.");
+  },
+  basket6(){ say(["The wicker basket creaks like an old chair. Sandbags hang from its sides, and a long rope trails down from the bottom.", ['annika', "Please don't jump, Pippi."]]); },
+  pippi6(){
+    if(!S.f.up) return say(['pippi', "I've never flown a balloon, so I'm sure I can!"]);
+    S.f.taps6 = (S.f.taps6 || 0) + 1; save();
+    if(S.f.taps6 >= 3){ S.ach.upside = true; save(); return say(["Pippi hooks her knees over the edge of the basket and hangs upside down, high above the ground.", ['pippi', "Everything looks much better this way round! The fields are the sky, and the sky is the sea."], ['annika', "PIPPI! Come back in AT ONCE!"]]); }
+    say(['pippi', leg6() === 'church' ? "Look, everybody: the whole town has come out to see us!" : "From up here you can see everything. Even the top of Kling's helmet. It needs polishing."]);
+  },
+  kids6(){
+    const leg = leg6();
+    if(leg === 'cloud'){ S.ach.cloudjar = true; save(); return say([['annika', "I'm catching a bit of cloud in a jam jar, to show Miss."], "Annika screws the lid on tightly. When she looks inside, the jar is empty. Just a few drops of water at the bottom.", ['tommy', "You caught some rain, though."]]); }
+    if(leg === 'ground') return say([['tommy', "It's lying flat in the snow, like a big red pancake."], ['annika', "Pippi, are you sure this is safe?"], ['pippi', "Completely sure! Well, nearly."]]);
+    if(leg === 'town') return say([['annika', "The smoke, the kite and the clouds all go different ways. So the wind must be different at different heights!"], ['tommy', "Then we just need the height where the wind blows to the farms."]]);
+    if(leg === 'farms') return say([['tommy', "From up here, everything looks like a map."], ['annika', "A haystack doesn't look like a hill any more. It looks like a round biscuit."]]);
+    say([['tommy', "We're higher than the church!"], ['annika', "Don't look down, Tommy. Oh. I looked down."]]);
+  },
+  nilsson6(){ say([['nilsson', "Eek!"], leg6() === 'ground' ? "Mr Nilsson is sitting on Pippi's shoulder, holding on to her plait with both hands." : "Mr Nilsson is hanging from the balloon ropes by his tail, enjoying the view."]); },
+  town6(){
+    say(["The little town, far below: snowy roofs, the square, and smoke curling from the chimneys. The smoke leans back towards Villa Villekulla.", ['annika', "At this height, the wind is blowing us the wrong way!"]]);
+  },
+  kite6(){ say(["In the park, a boy is flying a red kite, right up at your height. Its long yellow tail streams out towards the farms.", ['tommy', "A kite's tail always streams the way the wind is blowing."]]); },
+  police6(){
+    const leg = leg6();
+    if(leg === 'town') return say([['kling', "The burglars ran off towards the farms, Miss Longstocking! Follow them, if you can!"], ['klang', "We'll follow you! Pedal, Kling, pedal!"]]);
+    if(leg === 'farms'){
+      if(!S.f.found) return say([['kling', "Where are they? We can't see a thing over these haystacks!"], ['klang', "The farm with the L-shaped barn, the round duck pond and three haystacks, the farmer said!"]]);
+      if(has6('note6')) return say("Kling and Klang are on the road, far below. They can't hear you. Annika's note would tell them where the burglars are.");
+      return say("Kling and Klang are pedalling along the road below.");
     }
-    say(S.f.out6 ? "The water around the island is so clear you can see the fish nibbling your shadow." : "Fish swim alongside the ship. A dolphin jumps, now and then, just to show off.");
+    say([['kling', "Thunder-Karlsson and Bloom are under arrest, Miss Longstocking. Thanks to you."], ['klang', "And the weathercock is home. Thanks to you too."]]);
+  },
+  farms6(){
+    if(!S.f.found) return openMap6();
+    say("The farm with the L-shaped barn, the round duck pond and three haystacks. Something is wiggling behind the haystacks.");
+  },
+  burglars6(){ say(["Two pairs of feet stick out from behind the haystacks: one pair very big, one pair very small. The small pair is wiggling.", ['bloom', "Karlsson, I think that balloon can see us."], ['karlsson', "Balloons can't see, Bloom. Keep still."]]); },
+  cloud6(){ openCloud6(); },
+  tower6(){
+    if(S.f.out6) return say("The golden weathercock shines on top of the church tower, with its beak pointing into the wind.");
+    if(has6('rooster')) return openVane6();
+    say("The church tower, right next to the basket. On top there's an empty spike where the weathercock should be.");
+  },
+  crowd6(){
+    if(S.f.out6) return say([['kling', "Three cheers for Miss Longstocking!"], "The whole town cheers. Thunder-Karlsson and Bloom cheer too, a little bit, from behind Kling and Klang."]);
+    say("The whole town is gathering on the church square, pointing up at the balloon.");
+  },
+  harbour6(){
+    if(S.f.out6) return startCh7();   // on to Chapter 7: the ship in the harbour
+    say(["The harbour, behind the church. A big three-masted ship is just sailing in.", ['pippi', "That ship looks familiar. But first: the weathercock!"]]);
   }
 });
 
-/* ---------- puzzle: the cargo hoist (pulleys: more ropes, less pulling) ---------- */
-const HORSE_KG = 400, PULL_KG = 100;
-function openHoist(){
-  const st = S.pul || (S.pul = { n: 1 });
-  openModal('The cargo hoist', 'Pulleys and rope, on the stern', `
-    <svg class="hp-tackle" viewBox="0 0 300 240" aria-hidden="true" id="hp-tackle"></svg>
-    <p class="flag-p">${tx('The horse weighs 400 kg. You, Tommy and Annika can pull 100 kg together. The more ropes hold the horse up, the less each rope has to carry.')}</p>
-    <div class="row-btns">${[1, 2, 3, 4].map(n => `<button type="button" class="btn ghost hp-ropes" data-n="${n}">${tx(n === 1 ? '1 rope' : '{n} ropes', { n })}</button>`).join('')}</div>
-    <div class="row-btns"><button type="button" class="btn" id="hp-heave">${tx('Heave!')}</button></div>
-    <div class="feedback" id="hp-hfb"></div>`, () => {
-    const fb = $('#hp-hfb');
-    const draw = () => {
-      const n = st.n, each = Math.round(HORSE_KG / n), xs = Array.from({ length: n }, (_, i) => 150 - (n - 1) * 14 + i * 28);
-      let s = '<rect width="300" height="240" fill="#cfe7fb"/><rect x="40" y="10" width="220" height="12" rx="4" fill="#6b3a1a"/>';
-      s += `<rect x="${xs[0] - 14}" y="22" width="${(n - 1) * 28 + 28}" height="18" rx="6" fill="#9aa0a6"/>`;
-      xs.forEach(x => s += `<path d="M${x} 40 V140" stroke="#c9a46a" stroke-width="3"/>`);
-      s += `<path d="M${xs[n - 1] + 14} 31 Q${xs[n - 1] + 60} 60 ${xs[n - 1] + 70} 190" stroke="#c9a46a" stroke-width="3" fill="none"/><circle cx="${xs[n - 1] + 70}" cy="196" r="7" fill="#f3c9a4"/>`;
-      s += `<rect x="${xs[0] - 14}" y="138" width="${(n - 1) * 28 + 28}" height="14" rx="5" fill="#9aa0a6"/><use href="#hpHorseShape" transform="translate(${90} 150) scale(.6)"/>`;
-      s += `<text x="150" y="230" text-anchor="middle" font-size="14" font-weight="600" font-family="IBM Plex Mono, monospace" fill="#1f3f6a">${tx('Each rope: {kg} kg', { kg: each })}</text>`;
-      $('#hp-tackle').innerHTML = s;
-      document.querySelectorAll('.hp-ropes').forEach(b => b.classList.toggle('on', +b.dataset.n === n));
+/* ---------- puzzle: lift-off (hot air is lighter than cold air, so it rises) ---------- */
+function openLift6(){
+  const st = S.lft || (S.lft = { r: 0 });
+  openModal('The circus balloon', 'Lying flat in the snow', `
+    <svg class="lift6-svg" translate="no" viewBox="0 0 300 170" aria-hidden="true"><rect width="300" height="170" rx="8" fill="#cfeaf8"/><rect y="130" width="300" height="40" fill="#eef3f8"/>
+      <path d="M150 20 C200 20 222 60 214 96 C206 120 172 126 166 140 L134 140 C128 126 94 120 86 96 C78 60 100 20 150 20z" fill="#e2483d" opacity=".9"/>
+      <g fill="none" stroke="#e8571f" stroke-width="3"><path d="M138 120 q6 -10 0 -20 q-6 -10 0 -20"/><path d="M162 120 q6 -10 0 -20 q-6 -10 0 -20"/></g>
+      <ellipse cx="150" cy="142" rx="8" ry="12" fill="#ffb03a"/><rect x="128" y="146" width="44" height="22" rx="3" fill="#b08a52"/>
+      <text x="40" y="60" font-size="12" fill="#2f5f9a">${tx('cold air')}</text><text x="128" y="64" font-size="12" fill="#fffaf0">${tx('air inside')}</text></svg>
+    <div id="lift6-q"></div>
+    <div class="feedback" id="lift6-fb"></div>`, () => {
+    const fb = $('#lift6-fb');
+    const Q = [
+      { ask: 'How do you make the balloon go up?', opts: ['Blow it up with the bicycle pump', 'Heat the air inside with the burner', "Fill it with Pippi's sweets", 'Everybody jumps very high at the same time'], ok: 1,
+        no: ['Pumped-in air is just as cold and heavy as the air outside. The balloon fills up, flops over and lies there like a sleepy elephant.', '', 'Sweets are heavy, and heavy things go down, not up. (Pippi eats a few, to make it lighter.)', 'You jump. You land. The basket stays exactly where it was. Mr Nilsson enjoyed it, though.'] },
+      { ask: 'But why does hot air make the balloon rise?', opts: ['Hot air is lighter than the cold air around it, so it floats up, like a bubble in water', 'The flame pushes the balloon up like a rocket', 'The clouds pull it up'], ok: 0,
+        no: ['', "There's no rocket: the flame points up INTO the balloon. It's the warm air inside that does the lifting.", 'Clouds are far too busy being clouds. They don\'t pull anything.'] }
+    ];
+    const ask = () => {
+      const q = Q[st.r];
+      $('#lift6-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost lf6" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      document.querySelectorAll('.lf6').forEach(b => b.onclick = () => {
+        const i = +b.dataset.i;
+        if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }
+        chord([523, 659, 784]);
+        if(st.r === 0){ st.r = 1; save(); fb.className = 'feedback good'; fb.textContent = tx('The burner! WHOOOSH. The air inside the balloon gets hotter and hotter, and the balloon starts to stand up.'); ask(); return; }
+        S.f.up = true; S.lft = null; save(); chord([523, 659, 784, 1046]);
+        fb.className = 'feedback good'; fb.textContent = tx('Hot air spreads out, so a balloon full of it is lighter than the same balloon full of cold air. The cold air around pushes it up, the way water pushes a bubble up.');
+        setTimeout(() => { closeModal(); applyVisuals(); takeoff6();
+          say(["The burner roars, the balloon stands up straight, and the basket lifts off the snow!", ['ringmaster', "Bon voyage! Mind the chimneys!"], "Villa Villekulla gets smaller and smaller. Soon you're floating over the snowy roofs of the little town.", "Far below, two bicycles come racing across the square: Kling and Klang, shouting through a megaphone.", ['kling', "Miss Longstocking! The golden weathercock has been stolen from the church tower!"], ['klang', "It was Thunder-Karlsson and Bloom! They ran off towards the farms!"], ['pippi', "After them! But oh dear: the wind is blowing us back towards Villa Villekulla."], ['annika', "The wind isn't the same at every height. Look at the chimney smoke, the kite and the clouds!"]]); }, 2600);
+      });
     };
-    draw();
-    document.querySelectorAll('.hp-ropes').forEach(b => b.onclick = () => { st.n = +b.dataset.n; save(); draw(); beep(300 + st.n * 80, .05); fb.className = 'feedback'; fb.textContent = ''; });
-    $('#hp-heave').onclick = () => {
-      const each = HORSE_KG / st.n;
-      if(each <= PULL_KG){
-        S.f.aboard = true; save(); applyVisuals(); chord([523,659,784,1046]);
-        fb.className = 'feedback good'; fb.textContent = tx('Four ropes share the 400 kg: 100 kg each. Up goes the horse! You had to pull four metres of rope for every metre it rose, but you could do it.');
-        setTimeout(() => { closeModal(); hoist6(); say(["The horse rises gently into the air, swings over the rail, and lands on deck with four clonks.", ['horse', "Neeeigh!"], ['captain', "Well hoisted, sailor! Now: a course for my island. My chart is in the cabin."]]); }, 1900);
-        return;
-      }
-      nope(); fb.className = 'feedback bad';
-      fb.textContent = tx(st.n === 1 ? 'You pull with all your might. With one rope you are lifting all 400 kg. The horse doesn\'t even notice.'
-        : st.n === 2 ? 'Two ropes: 200 kg each. The horse\'s front hooves lift off… and land again with a clonk. More ropes!'
-        : 'Three ropes: about 133 kg each. So close! The horse dangles half a centimetre above the quay. One more rope!');
-    };
+    ask();
   });
 }
 
-/* ---------- puzzle: the course (the compass: north is always north; in between are NE, SE, SW, NW) ---------- */
-const HEADINGS6 = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
-const HEADING6_NAME = { N:'north', NE:'north-east', E:'east', SE:'south-east', S:'south', SW:'south-west', W:'west', NW:'north-west' };
-const COURSE6 = 'SW';
-function compassRose6(rot){
-  let s = `<g transform="rotate(${rot} 110 110)"><circle cx="110" cy="110" r="96" fill="#fffaf0" stroke="#c9952a" stroke-width="6"/>`;
-  HEADINGS6.forEach((h, i) => { const a = i * 45, big = i % 2 === 0;
-    s += `<g transform="rotate(${a} 110 110)"><path d="M110 ${big ? 26 : 42} L${big ? 118 : 115} 110 L110 104 L${big ? 102 : 105} 110 Z" fill="${i === 0 ? '#c4302b' : big ? '#1f3f6a' : '#7a8aa6'}"/><text x="110" y="${big ? 22 : 38}" text-anchor="middle" font-size="${big ? 15 : 11}" font-weight="700" fill="#1f3f6a" font-family="Fredoka, sans-serif">${tx(h)}</text></g>`; });
-  return s + '</g>';
-}
-function openWheel(){
-  const st = S.hd || (S.hd = { i: 0 });
-  openModal("The ship's wheel", 'Turn the ship until she points the right way', `
-    <svg class="hp-compass" viewBox="0 -16 220 240" aria-hidden="true" id="hp-compass"></svg>
-    <div class="hp-heading" id="hp-heading"></div>
-    <div class="row-btns"><button type="button" class="btn ghost" id="hp-port">↺ ${tx('Turn to port (left)')}</button><button type="button" class="btn ghost" id="hp-star">${tx('Turn to starboard (right)')} ↻</button></div>
-    <div class="row-btns"><button type="button" class="btn" id="hp-setsail">${tx('Set sail!')}</button></div>
-    <div class="feedback" id="hp-wfb">${tx('The compass card always points north, whichever way the ship turns. The little ship in the middle shows where her nose is pointing.')}</div>`, () => {
-    const fb = $('#hp-wfb');
-    const draw = () => {
-      const h = HEADINGS6[st.i];
-      $('#hp-compass').innerHTML = `<rect y="-16" width="220" height="240" fill="#1c2340" rx="8"/>${compassRose6(-st.i * 45)}<path d="M110 40 L122 120 L110 150 L98 120 Z" fill="#8a5028" stroke="#3e200c" stroke-width="2" opacity=".9"/><path d="M110 6 l-8 -14 h16z" fill="#f2c94c"/>`;
-      $('#hp-heading').innerHTML = `${tx('The ship points:')} <b>${tx(HEADING6_NAME[h])}</b>`;
-    };
-    draw();
-    $('#hp-port').onclick = () => { st.i = (st.i + 7) % 8; save(); beep(420, .05); draw(); };
-    $('#hp-star').onclick = () => { st.i = (st.i + 1) % 8; save(); beep(520, .05); draw(); };
-    $('#hp-setsail').onclick = () => {
-      const h = HEADINGS6[st.i];
-      if(h === COURSE6){
-        S.f.course = true; save(); chord([392,523,659,784,1046]);
-        fb.className = 'feedback good'; fb.textContent = tx('South-west! Down and to the left on the chart. "Drop the sails!" roars the captain.');
-        setTimeout(() => { closeModal(); castOff6(); say(["The sails tumble down from the yards and fill with wind with a great WHUMP. The ropes creak, the quay slides away, and the Hoppetossa is off!", ['captain', "South-west it is! Steady as she goes!"], ['sys', "Behind you, the snowy harbour gets smaller and smaller. Ahead, the clouds open, and the sun comes out."], ['pippi', "Goodbye, Villa Villekulla! Goodbye, everybody! Goodbye, dog!"]]); }, 1600);
-        return;
-      }
-      nope(); fb.className = 'feedback bad';
-      fb.textContent = tx({ N: 'North? That way is ice and polar bears. Pippi would love it, but the island is the other way.',
-        S: 'Due south runs straight down the chart. The island is south, but it\'s west as well.',
-        W: 'Due west goes straight across the chart. The island is west, but it\'s south as well.',
-        E: 'East would take you to Finland. The captain\'s island is nowhere near Finland.',
-        NE: 'North-east is exactly the wrong way. Turn the ship right round.',
-        SE: 'South-east: the right way down, but the wrong way across. Look at the chart again.',
-        NW: 'North-west: the right way across, but the wrong way up and down. Look at the chart again.' }[h]);
-    };
-  });
-}
-function openChart6(){
-  const pos = !S.f.course ? [300, 70] : !S.f.water ? [220, 150] : !S.f.equator ? [150, 220] : !S.f.out6 ? [110, 262] : [86, 290];
-  openModal("The captain's chart", 'Spread out on the chart table', `
-    <svg class="hp-chart" viewBox="0 0 400 320" aria-hidden="true">
-      <rect width="400" height="320" fill="#f3e6c4"/>
-      <path d="M270 0 Q300 40 330 50 Q350 20 380 0 Z M300 120 Q340 90 400 100 V180 Q350 170 300 120 Z M240 300 Q300 250 360 260 Q400 270 400 320 H250 Z" fill="#d9c79a" stroke="#a8946a"/>
-      <path d="M0 236 H400" stroke="#c4302b" stroke-width="1.5" stroke-dasharray="6 4"/>
-      <text x="8" y="230" font-size="12" font-weight="700" fill="#c4302b" font-family="Fredoka, sans-serif">${tx('Equator 0°')}</text>
-      <text x="8" y="70" font-size="11" fill="#7a5a1a" font-family="Fredoka, sans-serif">60°</text>
-      <path d="M0 74 H400" stroke="#a8946a" stroke-dasharray="2 4"/>
-      <circle cx="312" cy="60" r="6" fill="#e8571f"/><text x="322" y="64" font-size="11" fill="#3e200c" font-family="Fredoka, sans-serif">${tx('Villa Villekulla')}</text>
-      <path d="M312 60 Q250 140 170 200 Q110 250 60 300" stroke="#1f3f6a" stroke-width="2.5" fill="none" stroke-dasharray="7 5"/>
-      <g fill="#3f8a4a"><circle cx="54" cy="304" r="12"/></g><text x="72" y="310" font-size="11" fill="#3e200c" font-family="Fredoka, sans-serif">${tx("The captain's island")}</text>
-      <g transform="translate(${pos[0]} ${pos[1]})"><path d="M-9 -4 h18 l-4 8 h-10z" fill="#6b3a1a"/><path d="M0 -4 v-12 l9 8z" fill="#fffaf0" stroke="#6b3a1a"/></g>
-      <g transform="translate(350 230)"><circle r="28" fill="#fffaf0" stroke="#c9952a" stroke-width="2"/>
-        <path d="M0 -24 L5 0 L0 24 L-5 0 Z" fill="#1f3f6a"/><path d="M0 -24 L5 0 L-5 0 Z" fill="#c4302b"/><path d="M-24 0 L0 -4 L24 0 L0 4 Z" fill="#1f3f6a"/>
-        <g font-size="10" font-weight="700" fill="#1f3f6a" text-anchor="middle" font-family="Fredoka, sans-serif"><text y="-32">${tx('N')}</text><text y="40">${tx('S')}</text><text x="-36" y="4">${tx('W')}</text><text x="36" y="4">${tx('E')}</text></g></g>
-    </svg>
-    <p class="flag-p">${tx('On a chart, north is always at the top, south at the bottom, west on the left and east on the right. The dotted line is the way to the captain\'s island.')}</p>`);
-}
-
-/* ---------- puzzle: Mr Nilsson's things overboard (floating and sinking: what it's made of, not how big it is) ---------- */
-const FLOAT6 = [
-  { k: 'log', name: 'A big, heavy log', floats: true, svg: '<rect x="10" y="28" width="80" height="24" rx="12" fill="#8a5028"/><ellipse cx="86" cy="40" rx="6" ry="12" fill="#c98a4b"/>' },
-  { k: 'key', name: "The captain's little iron key", floats: false, svg: '<circle cx="34" cy="40" r="10" fill="none" stroke="#5a5f66" stroke-width="5"/><path d="M44 40 H76 M68 40 v8 M74 40 v6" stroke="#5a5f66" stroke-width="5"/>' },
-  { k: 'apple', name: 'An apple', floats: true, svg: '<circle cx="50" cy="44" r="18" fill="#d22d2d"/><path d="M50 26 q2 -8 8 -10" stroke="#5a3a1a" stroke-width="3" fill="none"/><path d="M52 24 q10 -6 14 0 q-8 4 -14 0z" fill="#3f8a4a"/>' },
-  { k: 'coin', name: 'A gold coin', floats: false, svg: '<circle cx="50" cy="40" r="16" fill="#f3d27a" stroke="#b07f1f" stroke-width="3"/><text x="50" y="45" text-anchor="middle" font-size="14" font-weight="700" fill="#b07f1f">1</text>' },
-  { k: 'cork', name: 'A cork', floats: true, svg: '<path d="M38 30 h24 l-3 22 h-18z" fill="#c9a46a" stroke="#8a6a3a" stroke-width="2"/>' },
-  { k: 'marble', name: 'A glass marble', floats: false, svg: '<circle cx="50" cy="40" r="12" fill="#5ad0c0" opacity=".8"/><path d="M44 34 q4 -4 8 -2" stroke="#fff" stroke-width="2" fill="none"/>' }
+/* ---------- puzzle: steering (the wind blows different ways at different heights; balloonists go up or down to steer) ---------- */
+const HEIGHTS6 = [
+  { k: 'high', name: 'Go up high', no: "Up there, the clouds are drifting back towards Villa Villekulla. Wrong way!" },
+  { k: 'mid', name: 'The middle' },
+  { k: 'low', name: 'Go down low', no: 'Down low, the chimney smoke leans back towards Villa Villekulla: the wind blows the wrong way. (And Pippi nearly lands on a chimney.)' }
 ];
-function openFloat(){
-  const st = S.flt || (S.flt = {});
-  openModal('Overboard!', "Mr Nilsson's six splashes", `
-    <p class="flag-p">${tx('What floats, you can scoop up with the net. What sinks, Pippi will have to dive for. Which of these float?')}</p>
-    <div class="hp-floats">${FLOAT6.map(o => `<button type="button" class="hp-fl" data-k="${o.k}"><svg viewBox="0 0 100 80" aria-hidden="true"><rect width="100" height="80" rx="6" fill="#cfe7fb"/>${o.svg}</svg><span>${tx(o.name)}</span><b class="hp-fs" id="hp-fs-${o.k}"></b></button>`).join('')}</div>
-    <div class="row-btns"><button type="button" class="btn" id="hp-fcheck">${tx('Out with the net!')}</button></div>
-    <div class="feedback" id="hp-ffb">${tx('Click a thing to say whether it floats or sinks.')}</div>`, () => {
-    const fb = $('#hp-ffb');
-    const draw = () => FLOAT6.forEach(o => { const v = st[o.k], el = $('#hp-fs-' + o.k);
-      el.textContent = v === 'f' ? tx('floats') : v === 's' ? tx('sinks') : '?';
-      el.parentElement.classList.toggle('f', v === 'f'); el.parentElement.classList.toggle('s', v === 's'); });
-    draw();
-    document.querySelectorAll('.hp-fl').forEach(b => b.onclick = () => { const k = b.dataset.k; st[k] = st[k] === 'f' ? 's' : 'f'; save(); beep(st[k] === 'f' ? 700 : 300, .05); draw(); });
-    $('#hp-fcheck').onclick = () => {
-      if(FLOAT6.some(o => !st[o.k])){ nope(); fb.className = 'feedback bad'; fb.textContent = tx('Decide for every one of them first: floats or sinks?'); return; }
-      const wrong = FLOAT6.find(o => (st[o.k] === 'f') !== o.floats);
-      if(wrong){
-        nope(); fb.className = 'feedback bad';
-        fb.textContent = tx({ log: 'The log is big and heavy, but it\'s made of wood, and wood is lighter than the same amount of water. Big things can float!',
-          key: 'The key is tiny and light, but iron is much heavier than the same amount of water. Small things can sink!',
-          apple: 'An apple is full of tiny pockets of air. Ever tried apple-bobbing?',
-          coin: 'Gold is very, very heavy for its size. Plop.',
-          cork: 'Cork is so light for its size that fishermen use it to keep their nets afloat.',
-          marble: 'Glass is heavier than the same amount of water. The marble goes straight to the bottom.' }[wrong.k]);
-        return;
-      }
-      S.f.floats = true; take('net'); save(); applyVisuals(); chord([523,659,784,1046]);
-      fb.className = 'feedback good'; fb.textContent = tx('The log, the apple and the cork bob on the waves: into the net they go! Whether a thing floats depends on what it\'s made of, not on how big it is.');
-      setTimeout(() => { closeModal(); say([['pippi', "And now the sinkers!"], "Pippi dives in head first. A long time later she comes up again with the key in her teeth, the coin in her ear and the marble up her nose.", ['pippi', "In Egypt everybody can hold their breath for a week."], "It's getting hotter every day. Then, from the galley, a long slurping noise…", ['captain', "The horse has drunk the water barrel dry!"]]); }, 2000);
-    };
-  });
-}
-
-/* ---------- puzzle: fresh water from sea water (the sun evaporates the water; the salt stays behind) ---------- */
-const STILL6 = [
-  { k: 'bowl', label: 'A bowl of sea water', need: true },
-  { k: 'cup', label: 'An empty cup in the middle of the bowl', need: true },
-  { k: 'lid', label: 'A clear glass lid over the bowl', need: true },
-  { k: 'pebble', label: 'A pebble on the lid, right above the cup', need: true },
-  { k: 'sun', label: 'Put it in the hot sun', need: true },
-  { k: 'shade', label: 'Put it in the cool shade', need: false },
-  { k: 'salt', label: 'Add a spoonful of salt', need: false }
-];
-function openStill(){
-  const on = S.stl || (S.stl = []);
-  openModal('Fresh water from the sea', 'The captain\'s old trick', `
-    <svg class="hp-still" viewBox="0 0 320 170" aria-hidden="true" id="hp-stillsvg"></svg>
-    <div class="hp-parts">${STILL6.map(p => `<button type="button" class="tog hp-part" data-k="${p.k}">${tx(p.label)}</button>`).join('')}</div>
-    <div class="row-btns"><button type="button" class="btn ghost" id="hp-drink">${tx('Just drink the sea water')}</button><button type="button" class="btn" id="hp-wait">${tx('Wait for the sun to work')}</button></div>
-    <div class="feedback" id="hp-sfb">${tx('Sea water is too salty to drink. But when water dries up in the sun, the salt is left behind. Choose what you need.')}</div>`, () => {
-    const fb = $('#hp-sfb');
-    const draw = (drip) => {
-      const has = k => on.includes(k);
-      let s = `<rect width="320" height="170" fill="${has('shade') ? '#5a7a9a' : '#9fd0f0'}"/>`;
-      if(has('sun')) s += '<circle cx="280" cy="30" r="20" fill="#ffd25a"/>';
-      s += '<rect y="140" width="320" height="30" fill="#a5743f"/>';
-      if(has('bowl')) s += '<path d="M60 100 Q60 140 160 140 Q260 140 260 100 Z" fill="#3a8ac0" opacity=".85"/><path d="M60 100 H260" stroke="#e9e1cc" stroke-width="3"/>';
-      if(has('salt')) s += '<g fill="#fff"><circle cx="100" cy="120" r="2"/><circle cx="210" cy="118" r="2"/><circle cx="130" cy="128" r="2"/></g>';
-      if(has('cup')) s += '<path d="M146 108 h28 l-3 26 h-22z" fill="#fffaf0" stroke="#c9b48a" stroke-width="2"/>';
-      if(has('lid')) s += has('pebble') ? '<path d="M56 98 L160 74 L264 98" fill="none" stroke="#cfe7fb" stroke-width="4"/>' : '<path d="M56 98 Q160 60 264 98" fill="none" stroke="#cfe7fb" stroke-width="4"/>';
-      if(has('pebble')) s += '<ellipse cx="160" cy="70" rx="9" ry="6" fill="#8a8f96"/>';
-      if(drip) s += '<g fill="#e9f4ff"><circle class="hp-dripdot" cx="160" cy="86" r="3"/><circle cx="110" cy="84" r="2"/><circle cx="210" cy="84" r="2"/></g><path d="M150 128 h20" stroke="#5aa0e0" stroke-width="5"/>';
-      $('#hp-stillsvg').innerHTML = s;
-      document.querySelectorAll('.hp-part').forEach(b => b.classList.toggle('on', has(b.dataset.k)));
-    };
-    draw(false);
-    document.querySelectorAll('.hp-part').forEach(b => b.onclick = () => {
-      const k = b.dataset.k, i = on.indexOf(k);
-      if(i >= 0) on.splice(i, 1);
-      else { on.push(k); const other = { sun: 'shade', shade: 'sun' }[k]; if(other && on.includes(other)) on.splice(on.indexOf(other), 1); }
-      save(); beep(500, .03); draw(false);
-    });
-    $('#hp-drink').onclick = () => { S.ach.tasted = true; save(); nope(); fb.className = 'feedback bad'; fb.textContent = tx('Bleurgh! It\'s horribly salty, and salty water makes you even thirstier. Never drink sea water.'); };
-    $('#hp-wait').onclick = () => {
-      const has = k => on.includes(k);
-      const msg = has('salt') ? 'More salt? The sea has plenty already, thank you.'
-        : has('shade') ? 'In the shade it hardly warms up. You\'d be waiting till next Christmas.'
-        : !has('bowl') ? 'There\'s no sea water to make fresh water from.'
-        : !has('sun') ? 'Where are you going to put it? Something has to warm the water up.'
-        : !has('lid') ? 'The warm water turns into vapour and floats away into the sky. Something has to catch it.'
-        : !has('cup') ? 'Drops form under the lid and fall… straight back into the salty water. Something has to catch them.'
-        : !has('pebble') ? 'Drops form under the lid but run down the sides, back into the salty bowl. Make the lid dip, right above the cup.'
-        : null;
-      if(msg){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(msg); return; }
-      S.f.water = true; save(); draw(true); chord([523,659,784,1046]);
-      fb.className = 'feedback good'; fb.textContent = tx('The sun warms the sea water and it evaporates: the salt stays behind. The vapour cools on the lid, turns back into drops, runs down to the pebble and drips into the cup. Fresh water!');
-      setTimeout(() => { closeModal(); applyVisuals(); say(["Soon there are bowls in the sun all over the deck, and the cups fill up drop by drop. The horse gets the first cupful.", ['horse', "Slurrrp. Neigh!"], "The sun sets, red and gold. Night falls over the sea, and one by one the stars come out.", ['captain', "Tonight we cross the Equator, sailor. Or do we? Ask the stars. My sextant is in my cabin."]]); }, 2400);
-    };
-  });
-}
-
-/* ---------- puzzle: the Equator by the stars (the North Star's height is how far north you are) ---------- */
-function openLog6(){
-  openModal("The captain's logbook", 'His last voyage to the South Seas', `
-    <div class="hp-log">
-      <p>${tx('Day 1. Left Villa Villekulla. North Star 59° above the horizon. Fair wind.')}</p>
-      <p>${tx('Day 8. North Star 40°. Ate a whole shark. Well, half.')}</p>
-      <p>${tx('Day 15. North Star 20°. Hot. Very hot.')}</p>
-      <p>${tx('Day 22. Crossed the Equator! King Neptune came aboard. (It was the cook in a beard made of seaweed.)')}</p>
-      <p class="hp-rule">${tx('SAILOR\'S RULE: the higher the North Star, the further north you are. At the North Pole it is straight overhead, 90° up. Sail south, and every night it sinks a little lower.')}</p>
-    </div>`);
-}
-function openSextant6(){
-  const round = S.eqr || 0;
-  const sky = `<svg class="hp-night" viewBox="0 0 400 200" aria-hidden="true"><rect width="400" height="200" fill="#070b24"/>
-      <g fill="#fff"><circle cx="40" cy="40" r="1.5"/><circle cx="120" cy="80" r="1.2"/><circle cx="300" cy="30" r="1.5"/><circle cx="360" cy="90" r="1.2"/><circle cx="250" cy="70" r="1"/><circle cx="80" cy="120" r="1"/></g>
-      <g fill="#fff8e1"><circle cx="230" cy="120" r="2.6"/><circle cx="246" cy="104" r="2.6"/><circle cx="270" cy="100" r="2.6"/><circle cx="290" cy="112" r="2.6"/><circle cx="292" cy="140" r="2.6"/><circle cx="318" cy="146" r="2.6"/><circle cx="314" cy="124" r="2.6"/></g>
-      <circle cx="160" cy="150" r="4" fill="#fff8e1"/><circle cx="160" cy="150" r="10" fill="#fff8e1" opacity=".2"/>
-      <rect y="152" width="400" height="48" fill="#0b2a4a"/><path d="M0 152 H400" stroke="#5aa0e0" stroke-width="1.5"/>
-      <text x="172" y="146" font-size="11" fill="#fff8e1" font-family="Fredoka, sans-serif">${tx('the North Star')}</text></svg>`;
-  const opts = round === 0
-    ? [['pole', 'At the North Pole'], ['home', 'Back home near Villa Villekulla'], ['half', 'Halfway between home and the Equator'], ['eq', 'On the Equator']]
-    : [['higher', 'Higher up again'], ['same', 'Exactly the same, on the horizon'], ['below', 'Below the horizon: we can\'t see it any more']];
-  openModal("The captain's sextant", round === 0 ? 'Measuring the North Star' : 'And tomorrow night?', `${sky}
-    <p class="flag-p">${tx(round === 0 ? 'Through the sextant, the North Star sits right on the horizon. The sextant reads: 0°. Where is the Hoppetossa tonight?' : 'Tomorrow night the ship will be south of the Equator. Where will the North Star be then?')}</p>
-    <div class="hands">${opts.map(([k, l]) => `<button type="button" class="hand" data-q="${k}">${tx(l)}</button>`).join('')}</div>
-    <div class="feedback" id="hp-qfb"></div>`, () => {
-    const fb = $('#hp-qfb');
-    document.querySelectorAll('.hand[data-q]').forEach(b => b.onclick = () => {
-      const k = b.dataset.q;
-      if(round === 0 && k === 'eq'){
-        S.eqr = 1; save(); chord([523,659,784]);
-        fb.className = 'feedback good'; fb.textContent = tx('0° up means 0° north: the Equator, right in the middle between the North Pole and the South Pole!');
-        setTimeout(() => { if(!$('#modal').hidden) openSextant6(); }, 1700);
-        return;
-      }
-      if(round === 1 && k === 'below'){
-        S.f.equator = true; take('sextant'); save(); applyVisuals(); chord([523,659,784,1046,1318]);
-        fb.className = 'feedback good'; fb.textContent = tx('Below the horizon! South of the Equator, the North Star is hidden behind the curve of the Earth. Instead, new stars appear, like the Southern Cross.');
-        setTimeout(() => { closeModal(); say([['captain', "We're crossing the line! Hurrah for the Equator!"], "Pippi paints a big red 0° on the mainsail, and everybody gets a bucket of sea water over their head. Even the horse.", "The night goes by in songs and splashes. Then the sky in the east turns pink… and something tiny shows on the horizon.", ['captain', "Is that… Quick, sailor! My spyglass, and up to the crow's nest!"]]); }, 2200);
-        return;
-      }
-      nope(); fb.className = 'feedback bad';
-      fb.textContent = tx({ pole: 'At the North Pole, the North Star is straight above your head: 90° up. Tonight it\'s 0°.',
-        home: 'At home it stood 59° up, high in the sky. Look at the captain\'s logbook: it sinks as you sail south.',
-        half: 'Halfway, it would be about 30° up. Tonight it\'s sitting right on the sea: 0°.',
-        higher: 'It has been sinking lower every night as you sailed south. Why would it climb again now?',
-        same: 'It has moved every single night. Keep sailing south, and it keeps sinking.' }[k]);
-    });
-  });
-}
-
-/* ---------- puzzle: land ho! (the Earth is round: from higher up you can see further) ---------- */
-function openLandHo(){
-  const st = S.lho || (S.lho = { from: 'deck' });
-  openModal('Land ho?', 'In the crow\'s nest, with the spyglass', `
-    <svg class="hp-curve" viewBox="0 0 420 200" aria-hidden="true" id="hp-curvesvg"></svg>
-    <div class="row-btns"><button type="button" class="btn ghost hp-from" data-f="deck">${tx('Look from the deck')}</button><button type="button" class="btn ghost hp-from" data-f="nest">${tx('Look from the crow\'s nest')}</button></div>
-    <p class="flag-p">${tx('From the crow\'s nest you can see the top of the island\'s mountain. From the deck, you can\'t see it at all. Why?')}</p>
-    <div class="hands">
-      <button type="button" class="hand" data-l="near">${tx('Up in the crow\'s nest you\'re closer to the island.')}</button>
-      <button type="button" class="hand" data-l="round">${tx('The Earth is round. The sea curves down, and from higher up you can see further over the bend.')}</button>
-      <button type="button" class="hand" data-l="shy">${tx('The island is shy and ducks down when people on deck look at it.')}</button>
-    </div>
-    <div class="feedback" id="hp-lfb"></div>`, () => {
-    const fb = $('#hp-lfb');
+function openWinds6(){
+  const st = S.wnd || (S.wnd = { r: 0, h: 2 });
+  openModal('Steering a balloon', 'A balloon has no steering wheel', `
+    <p class="flag-p">${tx('The farms are that way: →. A balloon goes wherever the wind blows it. But the wind is not the same at every height…')}</p>
+    <svg class="winds6-svg" translate="no" viewBox="0 0 320 240" aria-hidden="true" id="winds6-svg"></svg>
+    <div class="row-btns" id="winds6-h">${HEIGHTS6.map((h, i) => `<button type="button" class="btn ghost wh6" data-i="${i}">${tx(h.name)}</button>`).join('')}</div>
+    <div id="winds6-q" hidden></div>
+    <div class="feedback" id="winds6-fb"></div>`, () => {
+    const fb = $('#winds6-fb');
     const draw = () => {
-      // a small, very curved Earth: the ship sits at -22°, the island at +30° round the curve
-      const nest = st.from === 'nest';
-      let s = '<rect width="420" height="200" fill="#ffd9a8"/><circle cx="210" cy="420" r="300" fill="#2a6a9a"/>';
-      s += '<g transform="translate(360 160) rotate(30)"><path d="M-30 0 L0 -40 L30 0 Z" fill="#2f8a3a"/><path d="M8 -20 q2 -10 6 -14" stroke="#6b4423" stroke-width="2" fill="none"/></g>';
-      s += `<g transform="translate(97.5 142) rotate(-22)"><path d="M-22 -8 h44 l-6 10 h-32z" fill="#6b3a1a"/><path d="M0 -8 V-70" stroke="#6b4423" stroke-width="3"/><rect x="-8" y="-76" width="16" height="8" fill="#8a5028"/><circle cx="0" cy="${nest ? -70 : -10}" r="4" fill="#c4302b"/></g>`;
-      s += nest ? '<path d="M71 77 L380 125" stroke="#c4302b" stroke-width="2" stroke-dasharray="5 4"/>'
-        : '<path d="M94 134 L212 123" stroke="#c4302b" stroke-width="2" stroke-dasharray="5 4"/><path d="M206 117 l12 12 M218 117 l-12 12" stroke="#c4302b" stroke-width="3"/>';
-      s += `<text x="210" y="190" text-anchor="middle" font-size="12" fill="#fffaf0" font-family="Fredoka, sans-serif">${tx(nest ? 'From the crow\'s nest: your eye skims over the bend and finds the mountain top.' : 'From the deck: the bend of the sea is in the way.')}</text>`;
-      $('#hp-curvesvg').innerHTML = s;
-      document.querySelectorAll('.hp-from').forEach(b => b.classList.toggle('on', b.dataset.f === st.from));
+      let g = `<rect width="320" height="240" rx="8" fill="#cfeaf8"/><rect y="200" width="320" height="40" fill="#eef3f8"/>`;
+      g += `<path d="M0 80 H320 M0 150 H320" stroke="#fff" stroke-width="2" stroke-dasharray="6 6"/>`;
+      g += `<g transform="translate(150 40)"><ellipse rx="34" ry="12" fill="#fff"/><ellipse cx="-12" cy="-8" rx="16" ry="10" fill="#fff"/><path d="M44 -4 h22 M44 6 h16" stroke="#fff" stroke-width="3"/></g>`;
+      g += `<g transform="translate(130 112)"><path d="M0 -14 l12 14 l-12 14 l-12 -14z" fill="#e2483d"/><path d="M0 14 q10 6 20 0 q10 -6 20 0 q10 6 20 0" stroke="#f2c94c" stroke-width="3" fill="none"/></g>`;
+      g += `<g transform="translate(150 186)"><rect x="-20" y="0" width="40" height="14" fill="#b0412a"/><rect x="6" y="-14" width="8" height="14" fill="#7a3a1a"/><circle cx="2" cy="-22" r="5" fill="#eef0f2"/><circle cx="-8" cy="-28" r="6" fill="#eef0f2"/><circle cx="-20" cy="-32" r="7" fill="#eef0f2"/></g>`;
+      g += `<text x="8" y="232" font-size="11" fill="#2f4a2a">${tx('← Villa Villekulla')}</text><text x="312" y="232" font-size="11" fill="#2f4a2a" text-anchor="end">${tx('the farms →')}</text>`;
+      g += `<text x="8" y="18" font-size="11" fill="#2f5f9a">${tx('high')}</text><text x="8" y="96" font-size="11" fill="#2f5f9a">${tx('middle')}</text><text x="8" y="166" font-size="11" fill="#2f5f9a">${tx('low')}</text>`;
+      const y = [40, 112, 170][st.h];
+      g += `<g transform="translate(262 ${y})"><path d="M0 -26 C14 -26 18 -14 16 -4 C14 4 6 6 4 10 L-4 10 C-6 6 -14 4 -16 -4 C-18 -14 -14 -26 0 -26z" fill="#e2483d" stroke="#8a1a14"/><rect x="-6" y="12" width="12" height="8" fill="#b08a52"/></g>`;
+      $('#winds6-svg').innerHTML = g;
+      document.querySelectorAll('.wh6').forEach(b => b.classList.toggle('on', +b.dataset.i === st.h));
+    };
+    const ask = () => {
+      $('#winds6-q').hidden = false;
+      const opts = ['By going up or down, to find a wind that blows the right way', 'With a steering wheel', 'By flapping the sandbags'];
+      $('#winds6-q').innerHTML = `<p><b>${tx('So how does a balloon pilot steer?')}</b></p><div class="row-btns">${opts.map((o, i) => `<button type="button" class="btn ghost wq6" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      document.querySelectorAll('.wq6').forEach(b => b.onclick = () => {
+        const i = +b.dataset.i;
+        if(i !== 0){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(i === 1 ? 'Balloons have no steering wheel. Pippi checked twice.' : 'The sandbags flap. The balloon carries on exactly where the wind takes it.'); return; }
+        S.f.steer = true; S.wnd = null; save(); chord([523, 659, 784, 1046]);
+        fb.className = 'feedback good'; fb.textContent = tx('Exactly! A balloon pilot steers by going up and down, and looking for the wind that blows the right way.');
+        setTimeout(() => { closeModal(); applyVisuals();
+          say(["A little blast of the burner, and the balloon rises to kite height. The wind catches it, and off you float over the rooftops towards the farms.", "Far below, Kling and Klang pedal after you as fast as they can.", ['kling', "A farmer saw them! They're hiding at the farm with the L-shaped barn, the round duck pond and three haystacks!"], ['tommy', "From up here, the farms look just like a map."]]); }, 2600);
+      });
     };
     draw();
-    document.querySelectorAll('.hp-from').forEach(b => b.onclick = () => { st.from = b.dataset.f; save(); beep(600, .04); draw(); });
-    document.querySelectorAll('.hand[data-l]').forEach(b => b.onclick = () => {
-      const k = b.dataset.l;
-      if(k !== 'round'){ nope(); fb.className = 'feedback bad';
-        fb.textContent = tx(k === 'near' ? 'Only about 20 metres closer, and the island is many kilometres away. That\'s not it. Look at the picture: what is in the way of the line from the deck?' : 'Pippi says some islands are very shy. This one isn\'t. Look at the shape of the sea in the picture.'); return; }
-      S.f.out6 = true; take('spyglass'); save(); chord([523,659,784,1046,1318,1568]);
-      fb.className = 'feedback good'; fb.textContent = tx('The Earth is round! Ships and islands far away hide behind the curve of the sea. The higher you climb, the further you can see.');
-      setTimeout(() => { closeModal(); applyVisuals(); win6(); }, 2000);
+    document.querySelectorAll('.wh6').forEach(b => b.onclick = () => {
+      const i = +b.dataset.i, h = HEIGHTS6[i]; st.h = i; save(); beep(500 + i * 80, .05); draw();
+      if(h.k === 'mid'){ if(st.r === 0){ st.r = 1; save(); } chord([523, 659, 784]); fb.className = 'feedback good'; fb.textContent = tx("The kite's tail streams out towards the farms: at this height, the wind blows exactly where you want to go."); ask(); return; }
+      nope(); fb.className = 'feedback bad'; fb.textContent = tx(h.no);
     });
+    if(st.r === 1) ask();
+  });
+}
+
+/* ---------- puzzle: the map (from above, a haystack is a circle: a map shows things from above) ---------- */
+const FARMS6 = [
+  { no: 'That barn is one straight block, not an L.', barn: 'M10 14 h70 v26 h-70z', pond: '<circle cx="128" cy="34" r="16"/>', stacks: [[40, 96], [80, 104]] },
+  { no: "That pond has corners: it's square, not round.", barn: 'M10 14 h70 v22 h-38 v36 h-32z', pond: '<rect x="108" y="20" width="32" height="32"/>', stacks: [[100, 100], [130, 96], [150, 112]] },
+  { barn: 'M10 14 h70 v22 h-38 v36 h-32z', pond: '<circle cx="128" cy="34" r="16"/>', stacks: [[90, 100], [118, 108], [146, 98]] },
+  { no: 'Count the haystacks: only two.', barn: 'M10 14 h70 v22 h-38 v36 h-32z', pond: '<circle cx="128" cy="34" r="16"/>', stacks: [[100, 104], [140, 100]] }
+];
+const FARM6_OK = 2;
+function openMap6(){
+  const st = S.map6 || (S.map6 = { r: 0 });
+  openModal('The farms, from above', 'Up here, everything looks like a map', `
+    <p class="flag-p">${tx('Kling and Klang shout up: the burglars are hiding at the farm with <b>the L-shaped barn, the round duck pond and three haystacks</b>.')}</p>
+    <div id="map6-q"></div>
+    <div class="feedback" id="map6-fb"></div>`, () => {
+    const fb = $('#map6-fb');
+    const draw = () => {
+      if(st.r === 0){
+        const shapes = ['<circle cx="22" cy="22" r="14" fill="#e2b84a"/>', '<path d="M22 6 L38 36 H6z" fill="#e2b84a"/>', '<rect x="8" y="8" width="28" height="28" fill="#e2b84a"/>'];
+        $('#map6-q').innerHTML = `<div class="side6"><svg viewBox="0 0 60 44" aria-hidden="true"><path d="M6 40 q24 -44 48 0z" fill="#e2b84a"/><path d="M0 40 h60" stroke="#c9d8e8" stroke-width="3"/></svg><p>${tx('From the side, a haystack looks like a little hill. <b>What does it look like from above?</b>')}</p></div>
+          <div class="row-btns">${shapes.map((s, i) => `<button type="button" class="btn ghost shp6" data-i="${i}" aria-label="${tx(['A circle', 'A triangle', 'A square'][i])}"><svg viewBox="0 0 44 44" width="40" height="40" aria-hidden="true">${s}</svg></button>`).join('')}</div>`;
+        document.querySelectorAll('.shp6').forEach(b => b.onclick = () => {
+          const i = +b.dataset.i;
+          if(i !== 0){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(i === 1 ? "That's how it looks from the side. From above, you look down on its round top." : "Haystacks aren't square. Not even in Egypt."); return; }
+          st.r = 1; save(); chord([523, 659, 784]); fb.className = 'feedback good'; fb.textContent = tx('A circle! A map shows everything from above, the way a bird sees it.'); draw();
+        });
+        return;
+      }
+      let g = `<rect width="360" height="300" rx="8" fill="#eef3f8"/><path d="M0 150 H360 M180 0 V300" stroke="#c9ccd2" stroke-width="10"/>`;
+      FARMS6.forEach((fm, i) => {
+        const x = (i % 2) * 180, y = Math.floor(i / 2) * 150;
+        g += `<g class="fm6" data-i="${i}" transform="translate(${x + 6} ${y + 8})"><rect width="168" height="134" fill="transparent"/><path d="${fm.barn}" fill="#b0412a"/><g fill="#cfe6f2" stroke="#a9cde0" stroke-width="2">${fm.pond}</g>${fm.stacks.map(([sx, sy]) => `<circle cx="${sx}" cy="${sy}" r="11" fill="#e2b84a" stroke="#b08a2a"/>`).join('')}</g>`;
+      });
+      g += `<text x="354" y="294" text-anchor="end" font-size="10" fill="#2f4a2a">${tx('N ↑')}</text>`;
+      $('#map6-q').innerHTML = `<p><b>${tx('Which farm is it? Click it on the map.')}</b></p><svg class="map6-svg" translate="no" viewBox="0 0 360 300" aria-hidden="true">${g}</svg>`;
+      document.querySelectorAll('.map6-svg .fm6').forEach(el => el.onclick = () => {
+        const i = +el.dataset.i;
+        if(i !== FARM6_OK){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(FARMS6[i].no); return; }
+        S.f.found = true; S.map6 = null; save(); chord([523, 659, 784, 1046]);
+        fb.className = 'feedback good'; fb.textContent = tx('That one! An L-shaped roof, a round pond and three round haystacks.');
+        setTimeout(() => { closeModal(); applyVisuals(); give('note6');
+          say(["And behind those haystacks: two pairs of feet. One pair very big, one pair very small.", ['pippi', "Thunder-Karlsson and Bloom! Hello down there!"], ['annika', "Shh, Pippi! Kling and Klang are on the road, but they can't hear us from up here. I'll write them a note."], "Annika writes a note and gives it to you."]); }, 2400);
+      });
+    };
+    draw();
+  });
+}
+
+/* ---------- puzzle: the parachute (a big, wide shape pushes lots of air aside: air resistance slows the fall) ---------- */
+function openChute6(){
+  const st = S.cht || (S.cht = { r: 0 });
+  openModal('A note for Kling and Klang', 'They are far below, on the road', `
+    <p class="flag-p">${tx("Kling and Klang can't hear you from up here. The note has to float down to them, slowly and safely.")}</p>
+    <div id="chute6-q"></div>
+    <div class="feedback" id="chute6-fb"></div>`, () => {
+    const fb = $('#chute6-fb');
+    const Q = [
+      { ask: 'How do you send the note down?', opts: ['Crumple it into a ball and drop it', 'Tie it to a sandbag', "Tie it to Pippi's big handkerchief, like a parachute", 'Fold it into a paper aeroplane'], ok: 2,
+        no: ['It whistles down like a pebble, misses Kling by a mile and lands in the duck pond. Annika writes a new one.', 'Never drop heavy things from a balloon! A sandbag falls very fast, and it could flatten a bicycle. Or a policeman.', '', 'Whoosh! It loops twice, sails right over Kling\'s helmet and lands on a cow.'] },
+      { ask: 'Why does the handkerchief fall so slowly?', opts: ["It's big and wide, so it has to push lots of air out of the way: the air slows it down", 'Handkerchiefs are lighter than air', 'Kling is a very good catcher'], ok: 0,
+        no: ['', 'Then it would float up, like the balloon! It does fall, just slowly.', "He is. But that's not why."] }
+    ];
+    const ask = () => {
+      const q = Q[st.r];
+      $('#chute6-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost ch6b" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      document.querySelectorAll('.ch6b').forEach(b => b.onclick = () => {
+        const i = +b.dataset.i;
+        if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }
+        chord([523, 659, 784]);
+        if(st.r === 0){ st.r = 1; save(); fb.className = 'feedback good'; fb.textContent = tx('The handkerchief opens like a little umbrella, and the note floats gently down… right into Kling\'s hands.'); ask(); return; }
+        S.f.dropped = true; S.cht = null; take('note6'); save(); chord([523, 659, 784, 1046]);
+        fb.className = 'feedback good'; fb.textContent = tx("That's called air resistance. Parachutes are big and wide on purpose: the more air they push aside, the slower they fall.");
+        setTimeout(() => { closeModal(); applyVisuals(); give('rooster');
+          say([['kling', "The farm with the L-shaped barn! Klang, pedal!"], "Kling and Klang race up the farm track and dive behind the haystacks. A lot of shouting. A lot of hay.", "Out come Thunder-Karlsson and Bloom, with their hands up. And in Bloom's sack, shining in the sun: the golden weathercock!", ['bloom', "It was Karlsson's idea! I only carried it!"], ['klang', "Miss Longstocking! We'll tie it to your rope. Please put it back on the church tower: we are afraid of heights."], ['kling', "And of ladders."], "You haul up the rope. On the end, glittering: the golden weathercock!", "A puff of the burner, and the balloon drifts on towards the church on the hill. Then, all of a sudden, everything goes white."]); }, 2600);
+      });
+    };
+    ask();
+  });
+}
+
+/* ---------- puzzle: the cloud (tiny drops of water; the higher you go, the colder it gets) ---------- */
+function openCloud6(){
+  const st = S.cld || (S.cld = { r: 0 });
+  openModal('Inside a cloud', 'Everything has gone white and wet', `
+    <svg class="cloud6-svg" translate="no" viewBox="0 0 300 120" aria-hidden="true"><rect width="300" height="120" rx="8" fill="#eef3f7"/><g fill="#fff"><ellipse cx="70" cy="60" rx="70" ry="34"/><ellipse cx="200" cy="50" rx="90" ry="40"/></g>
+      <g fill="#7fb8e0">${[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(i => `<circle cx="${20 + i * 23}" cy="${30 + (i * 37) % 70}" r="2"/>`).join('')}</g></svg>
+    <p class="flag-p">${tx("You can't see the town. You can't see the church. You can hardly see Pippi, and she's right next to you. Everybody's hair is dripping.")}</p>
+    <div id="cloud6-q"></div>
+    <div class="feedback" id="cloud6-fb"></div>`, () => {
+    const fb = $('#cloud6-fb');
+    const Q = [
+      { ask: 'What is a cloud made of?', opts: ['Billions of tiny drops of water', 'Cotton wool', 'Smoke', "Steam from Villa Villekulla's kettle"], ok: 0,
+        no: ['', 'Pippi grabs a handful. Her hand is wet and empty. No cotton wool.', "It doesn't smell of smoke. It smells of rain.", "Pippi's kettle is good, but not THAT good."] },
+      { ask: "And why is it even colder up here than down in the snowy garden?", opts: ['The higher you go, the colder the air gets', 'The cloud is made of ice cream', "The sun can't reach up here"], ok: 0,
+        no: ['', 'Pippi licks the cloud to check. No ice cream.', "The sun shines up here just as much. You're even a tiny bit closer to it! It's the air that gets colder, higher up."] }
+    ];
+    const ask = () => {
+      const q = Q[st.r];
+      $('#cloud6-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost cl6" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      document.querySelectorAll('.cl6').forEach(b => b.onclick = () => {
+        const i = +b.dataset.i;
+        if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }
+        chord([523, 659, 784]);
+        if(st.r === 0){ st.r = 1; save(); fb.className = 'feedback good'; fb.textContent = tx("Water! A cloud is made of drops so tiny that they float in the air. That's why everybody is soaking wet."); ask(); return; }
+        S.f.cloud = true; S.cld = null; save(); chord([523, 659, 784, 1046]);
+        fb.className = 'feedback good'; fb.textContent = tx("About 6 degrees colder for every kilometre up. That's why high mountains have snow on top, even in summer.");
+        setTimeout(() => { closeModal(); applyVisuals();
+          say(["The balloon pops out of the top of the cloud into bright sunshine.", "And right next to the basket, close enough to touch: the church tower, with an empty spike on top where the weathercock should be.", ['pippi', "Weathercock delivery! But which way round does it go?"], ['annika', "Look at the flag on the tower. It shows which way the wind is blowing."]]); }, 2600);
+      });
+    };
+    ask();
+  });
+}
+
+/* ---------- puzzle: the weathercock (it points INTO the wind; a wind is named after where it comes from) ---------- */
+const VANE6 = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
+const VANE6_OK = 6;   // west: the flag streams east, so the wind comes from the west
+function openVane6(){
+  const st = S.vane || (S.vane = { r: 0, i: 0 });
+  openModal('The golden weathercock', 'Back on top of the church tower', `
+    <p class="flag-p">${tx("Pippi holds the weathercock over its spike. It can turn freely, but it has to be fitted the right way round: with its beak into the wind.")}</p>
+    <svg class="vane6-svg" translate="no" viewBox="0 0 280 260" aria-hidden="true" id="vane6-svg"></svg>
+    <div id="vane6-q"></div>
+    <div class="feedback" id="vane6-fb"></div>`, () => {
+    const fb = $('#vane6-fb');
+    const draw = () => {
+      let g = `<rect width="280" height="260" rx="8" fill="#cfeaf8"/><circle cx="130" cy="130" r="96" fill="#fffaf0" stroke="#c9c0ae" stroke-width="3"/>`;
+      g += `<g font-size="16" font-weight="700" fill="#1f3f6a" text-anchor="middle" font-family="Fredoka, sans-serif"><text x="130" y="50">${tx('N')}</text><text x="130" y="222">${tx('S')}</text><text x="52" y="136">${tx('W')}</text><text x="208" y="136">${tx('E')}</text></g>`;
+      g += `<g transform="translate(230 30)"><path d="M0 0 V50" stroke="#5a5f66" stroke-width="3"/><path class="bl-pennant" d="M0 2 l36 6 l-36 8z" fill="#2f5f9a"/><text x="18" y="66" text-anchor="middle" font-size="9" fill="#2f4a2a">${tx('the flag')}</text></g>`;
+      g += `<g transform="translate(130 130) rotate(${st.i * 45})"><path d="M0 -62 q10 4 8 16 l-8 14 l-8 -14 q-2 -12 8 -16z" fill="#e8b830" stroke="#a8781a"/><path d="M-6 -60 l6 -10 l6 10" fill="#c4302b"/><path d="M0 -32 V20" stroke="#a8781a" stroke-width="6"/><path d="M0 14 l-28 44 q28 -10 56 0z" fill="#e8b830" stroke="#a8781a"/><circle r="5" fill="#5a5f66"/></g>`;
+      $('#vane6-svg').innerHTML = g;
+    };
+    const ask = () => {
+      if(st.r === 0){
+        $('#vane6-q').innerHTML = `<div class="row-btns"><button type="button" class="btn ghost" id="vn6-l" aria-label="${tx('Turn left')}">⟲</button><button type="button" class="btn ghost" id="vn6-r" aria-label="${tx('Turn right')}">⟳</button><button type="button" class="btn" id="vn6-go">${tx('Fit it on')}</button></div>`;
+        $('#vn6-l').onclick = () => { st.i = (st.i + 7) % 8; save(); beep(500, .03); draw(); };
+        $('#vn6-r').onclick = () => { st.i = (st.i + 1) % 8; save(); beep(560, .03); draw(); };
+        $('#vn6-go').onclick = () => {
+          if(st.i !== VANE6_OK){ nope(); fb.className = 'feedback bad';
+            fb.textContent = tx(st.i === 2 ? "That's the way the flag streams: where the wind is going. But a weathercock's big tail catches the wind and gets blown away, so its beak always points INTO the wind, towards where the wind comes from." : 'Look at the flag on the tower: it streams out to the east. So where does the wind come from?'); return; }
+          st.r = 1; save(); chord([523, 659, 784]); fb.className = 'feedback good'; fb.textContent = tx("Click! The weathercock fits on its spike, with its beak pointing west, into the wind. Its big tail swings away from the wind, like a flag."); ask();
+        };
+        return;
+      }
+      const opts = ['A west wind', 'An east wind', 'A Pippi wind'];
+      $('#vane6-q').innerHTML = `<p><b>${tx('The wind comes from the west. What do we call it?')}</b></p><div class="row-btns">${opts.map((o, i) => `<button type="button" class="btn ghost vq6" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      document.querySelectorAll('.vq6').forEach(b => b.onclick = () => {
+        const i = +b.dataset.i;
+        if(i !== 0){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(i === 1 ? 'It blows TOWARDS the east, but a wind is always named after where it comes FROM.' : 'Only when Pippi sneezes.'); return; }
+        S.f.out6 = true; S.vane = null; take('rooster'); save(); chord([523, 659, 784, 1046, 1318, 1568]);
+        fb.className = 'feedback good'; fb.textContent = tx('A west wind! Winds are named after where they come from, and a weathercock points straight at it.');
+        setTimeout(() => { closeModal(); applyVisuals(); win6(); }, 2600);
+      });
+    };
+    draw(); ask();
   });
 }
 
 /* ---------- intro, start and win ---------- */
 function intro6(){
-  say([["sys", "The harbour, early in the morning. A big three-masted ship is tied up at the quay: the Hoppetossa. On her stern, a huge man with a red beard and a captain's hat is waving his arms."],
-       ["sys", "It's winter in Sweden. Snow is falling on the quay, on the roofs, and on the horse."],
-       ["captain", "Ahoy, Pippilotta! Ahoy, Tommy and Annika! And ahoy, new sailor!"],
-       ["pippi", "Daddy! We're sailing to your island in the South Seas! I've never sailed to the South Seas, so I'm sure I'll be very good at it."],
-       ["captain", "Where the sun shines all year round, Pippilotta! Leave your mittens here."],
-       ["captain", "The wind is fair and the tide is high. All aboard!"],
-       ["pippi", "Not without my horse!"],
-       ["captain", "Then hoist it aboard with the cargo hoist on the stern, sailor. And Pippilotta: no lifting it yourself. Today we sail like proper sailors."],
-       ["you", "A horse on a rope. Let's see how that hoist works."]],
+  say([["sys", "The garden of Villa Villekulla, on a frosty winter morning after the circus. A big circus wagon has just delivered an enormous present."],
+       ["ringmaster", "Miss Longstocking! The circus would like to thank you for lifting our strongman. Here is our old balloon. It's yours!"],
+       ["pippi", "A balloon! I've never flown a balloon, so I'm sure I can!"],
+       ["tommy", "A balloon ride? In the middle of winter?"],
+       ["ringmaster", "The best time of all! A hot-air balloon flies best on a cold day."],
+       ["annika", "But Pippi, it's lying flat in the snow. How do we make it go up?"],
+       ["tommy", "And where are we going?"],
+       ["pippi", "To the church on the hill, of course! From up there you can see the whole world. Well, the whole town."],
+       ["you", "First, we need to get this thing off the ground."]],
     () => { S.f.introDone = true; save(); });
 }
 function startCh6(){
   setUnlocked6();
-  S = Object.assign(fresh(), { ach: S.ach || {}, ch: 6, scene: 'ship' });
+  S = Object.assign(fresh(), { ach: S.ach || {}, ch: 6, scene: 'balloon' });
   S.started = true; sel = null;
   $('#title').hidden = true; $('#win').hidden = true;
   renderInv(); applyVisuals(); $('#timer').textContent = '00:00'; save(); intro6();
 }
 function win6(){
-  say([["you", "LAND HO!"],
-       ["captain", "Land ho! That's my island! Pippilotta, look: the palm trees, the beach, and all my people running down to wave!"],
-       ["sys", "The Hoppetossa sails into a turquoise lagoon. Palm trees sway, the sand is white, and a crowd of children is dancing on the beach."],
-       ["pippi", "Daddy is a king, so I'm a princess! A thing-searching princess with a horse."],
-       ["annika", "We hoisted a horse, crossed the Equator, made water out of the sea, and saw the island over the curve of the Earth. I've written it all down."],
-       ["tommy", "Best. Voyage. Ever."],
-       ["nilsson", "Eek!"]],
+  say([["sys", "Pippi leans out of the basket and drops the golden weathercock onto its spike. It creaks round and points its beak into the wind."],
+       ["sys", "Then you pull the vent rope. A little hot air escapes from the top, the balloon sinks gently down… and lands, bump, in the snow beside the church."],
+       ["sys", "The whole town is there, cheering. The church bell rings all by itself. (Well, Mr Nilsson is swinging on the bell rope.)"],
+       ["kling", "Thank you, Miss Longstocking. These two are going straight to the police station."],
+       ["karlsson", "Next time we'll steal something that isn't on top of a church."],
+       ["bloom", "Or something that isn't gold. Or maybe… we just won't steal anything at all."],
+       ["ringmaster", "Magnificent! The best balloon flight in the whole history of the circus!"],
+       ["sys", "And down in the harbour, a big ship has just sailed in. On deck stands a man with a very red beard and a captain's hat."],
+       ["pippi", "That ship… that beard… DADDY?!"]],
     () => showWin());
 }

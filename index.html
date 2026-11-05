@@ -24,6 +24,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Caveat:wght@500;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/chapter0.css">
   <link rel="stylesheet" href="css/chapter1.css">
   <link rel="stylesheet" href="css/chapter2.css">
   <link rel="stylesheet" href="css/chapter3.css">
@@ -31,6 +32,9 @@
   <link rel="stylesheet" href="css/chapter5.css">
   <link rel="stylesheet" href="css/chapter6.css">
   <link rel="stylesheet" href="css/chapter7.css">
+  <link rel="stylesheet" href="css/chapter8.css">
+  <link rel="stylesheet" href="css/chapter9.css">
+  <link rel="stylesheet" href="css/chapter10.css">
   <link rel="stylesheet" href="css/phone.css">
   <link rel="stylesheet" href="css/animations.css">
 </head>
@@ -75,12 +79,12 @@
           <div class="tip" id="tip" hidden></div>
 
           <div class="overlay loading" id="title">
-            <div class="eyebrow">Villa Villekulla · a small town in Sweden · four o'clock</div>
+            <div class="eyebrow" id="t-eye">Villa Villekulla · a small town in Sweden · four o'clock</div>
             <h2>Villa Villekulla<span class="cursor">!</span></h2>
-            <p class="keep">You came to play at Pippi's house. Pippi has gone to town for sweets, and Mr Nilsson, her
+            <p class="keep" id="t-story">You came to play at Pippi's house. Pippi has gone to town for sweets, and Mr Nilsson, her
               monkey, has locked the front door and run off with the key. Tommy and Annika are waiting outside. Get out!
             </p>
-            <p>Click around the kitchen, read everything, and use the things you find. Stuck? Ask for a hint, or ask the
+            <p>Click around, read everything, and use the things you find. Stuck? Ask for a hint, or ask the
               spunk. Nobody knows what a spunk is, but it's very wise.</p>
             <div class="row">
               <button class="btn" id="btn-new" type="button">New game</button>
@@ -89,6 +93,8 @@
             </div>
             <div class="chapters" id="chapters" hidden>
               <span class="chap-l">Chapters</span>
+              <button class="chapb" id="btn-ch0" type="button" hidden
+                aria-label="Chapter 0: Pippi moves in"><b>0</b><span>Pippi moves in</span></button>
               <button class="chapb" id="btn-ch1" type="button" hidden
                 aria-label="Chapter 1: Locked in with Mr Nilsson"><b>1</b><span>Locked in with Mr
                   Nilsson</span></button>
@@ -101,9 +107,15 @@
               <button class="chapb" id="btn-ch5" type="button" hidden
                 aria-label="Chapter 5: Pippi goes to the circus"><b>5</b><span>Pippi goes to the circus</span></button>
               <button class="chapb" id="btn-ch6" type="button" hidden
-                aria-label="Chapter 6: On board the Hoppetossa"><b>6</b><span>On board the Hoppetossa</span></button>
+                aria-label="Chapter 6: Pippi's balloon ride"><b>6</b><span>Pippi's balloon ride</span></button>
               <button class="chapb" id="btn-ch7" type="button" hidden
-                aria-label="Chapter 7: The South Sea island"><b>7</b><span>The South Sea island</span></button>
+                aria-label="Chapter 7: On board the Hoppetossa"><b>7</b><span>On board the Hoppetossa</span></button>
+              <button class="chapb" id="btn-ch8" type="button" hidden
+                aria-label="Chapter 8: The South Sea island"><b>8</b><span>The South Sea island</span></button>
+              <button class="chapb" id="btn-ch9" type="button" hidden
+                aria-label="Chapter 9: The voyage home"><b>9</b><span>The voyage home</span></button>
+              <button class="chapb" id="btn-ch10" type="button" hidden
+                aria-label="Chapter 10: Home again"><b>10</b><span>Home again</span></button>
             </div>
             <span class="version" id="version" translate="no"></span>
             <div class="credits"><span>Unofficial fan game, inspired by Astrid Lindgren's Pippi Longstocking</span> ·

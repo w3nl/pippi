@@ -39,7 +39,7 @@
         <g id="hpHorseShape">
             <path d="M18 34 Q4 46 8 66" stroke="#1a1a1a" stroke-width="5" fill="none"
                 stroke-linecap="round" />
-            <!-- the legs, each with its hoof, swing from the hip while the horse walks (css: .hp-leg, chapter6.css) -->
+            <!-- the legs, each with its hoof, swing from the hip while the horse walks (css: .hp-leg, chapter7.css) -->
             <g class="hp-leg a"><rect x="28" y="50" width="8" height="38" rx="3" fill="#f6f1e6" /><rect x="28" y="84" width="8" height="5" fill="#1a1a1a" /></g>
             <g class="hp-leg b"><rect x="42" y="50" width="8" height="38" rx="3" fill="#f6f1e6" /><rect x="42" y="84" width="8" height="5" fill="#1a1a1a" /></g>
             <g class="hp-leg b"><rect x="76" y="50" width="8" height="38" rx="3" fill="#f6f1e6" /><rect x="76" y="84" width="8" height="5" fill="#1a1a1a" /></g>
@@ -428,8 +428,8 @@
             <path d="M104 240 V286" />
             <path d="M104 286 q-8 10 0 16 q6 4 8 -4" stroke="#9aa0a6" />
         </g>
-        <!-- the horse on its way aboard, only while it's hoisted (class "hoisting" on #sc-ship, hoist6() in
-             chapter6.js): up from the quay in a sling, the boom swings round, down onto the deck, and it walks to its place -->
+        <!-- the horse on its way aboard, only while it's hoisted (class "hoisting" on #sc-ship, hoist7() in
+             chapter7.js): up from the quay in a sling, the boom swings round, down onto the deck, and it walks to its place -->
         <g id="hp-lift" style="display:none">
             <rect id="hp-liftrope" x="102.5" y="240" width="3" height="186" fill="#c9a46a" />
             <g id="hp-lifthorse">
@@ -515,6 +515,9 @@
                 <rect x="1289" y="384" width="7" height="20" />
             </g>
             <rect x="1274" y="354" width="26" height="34" rx="7" fill="#2f5f9a" />
+            <path d="M1277 360 L1269 382 M1297 360 L1305 382" stroke="#2f5f9a" stroke-width="5" stroke-linecap="round" />
+            <circle cx="1268" cy="385" r="3" fill="#f3c9a4" />
+            <circle cx="1306" cy="385" r="3" fill="#f3c9a4" />
             <circle cx="1287" cy="342" r="11" fill="#f3c9a4" />
             <path d="M1276 340 q2 -14 11 -14 q11 0 12 14 q-6 -6 -12 -6 q-6 0 -11 6z" fill="#7a4a22" />
             <g fill="#f3c9a4">
@@ -522,6 +525,9 @@
                 <rect x="1331" y="386" width="6" height="18" />
             </g>
             <path d="M1312 390 L1329 352 L1346 390 Z" fill="#f2a7b8" />
+            <path d="M1325 362 L1318 382 M1333 362 L1340 382" stroke="#f2a7b8" stroke-width="4" stroke-linecap="round" />
+            <circle cx="1317" cy="384" r="2.6" fill="#f3c9a4" />
+            <circle cx="1341" cy="384" r="2.6" fill="#f3c9a4" />
             <circle cx="1329" cy="342" r="10" fill="#f3c9a4" />
             <path d="M1318 344 q-2 -16 11 -16 q13 0 11 16 q-4 -8 -11 -8 q-7 0 -11 8z" fill="#e9c46a" />
             <path d="M1329 330 l-8 -6 v10z M1329 330 l8 -6 v10z" fill="#c4302b" />
@@ -540,6 +546,9 @@
             <path class="dangle b" d="M1548 324 v26" stroke="#1a1a1a" stroke-width="6"
                 stroke-linecap="round" />
             <path d="M1526 330 Q1528 300 1542 296 Q1556 300 1558 328 Z" fill="#3f8a4a" />
+            <path d="M1530 306 L1520 326 M1554 306 L1564 326" stroke="#3f8a4a" stroke-width="5" stroke-linecap="round" />
+            <circle cx="1519" cy="329" r="3.2" fill="#f3c9a4" />
+            <circle cx="1565" cy="329" r="3.2" fill="#f3c9a4" />
             <path d="M1532 312 h22" stroke="#f2c94c" stroke-width="3" />
             <circle cx="1542" cy="284" r="12" fill="#f3c9a4" />
             <path d="M1530 282 q2 -14 12 -14 q10 0 12 14 q-6 -6 -12 -6 q-6 0 -12 6z" fill="#e8571f" />
@@ -640,58 +649,58 @@
 
     <!-- hotspots -->
     <g>
-        <rect class="hit" fill="transparent" data-hs="sky6" data-label="The sky" x="0" y="0"
+        <rect class="hit" fill="transparent" data-hs="sky7" data-label="The sky" x="0" y="0"
             width="1600" height="330" />
-        <rect class="hit" fill="transparent" data-hs="sea6" data-label="The sea" x="0" y="610"
+        <rect class="hit" fill="transparent" data-hs="sea7" data-label="The sea" x="0" y="610"
             width="236" height="290" />
-        <rect class="hit" fill="transparent" data-hs="sea6" data-label="The sea" x="1450" y="560"
+        <rect class="hit" fill="transparent" data-hs="sea7" data-label="The sea" x="1450" y="560"
             width="150" height="340" />
-        <rect class="hit" fill="transparent" data-hs="sea6" data-label="The sea" x="236" y="820"
+        <rect class="hit" fill="transparent" data-hs="sea7" data-label="The sea" x="236" y="820"
             width="1214" height="80" />
-        <rect class="hit" fill="transparent" data-hs="quay6" data-label="The harbour town" x="0"
-            y="350" width="190" height="80" id="hit-quay6" />
-        <rect class="hit" fill="transparent" data-hs="horse6" data-label="The horse" x="36" y="420"
-            width="150" height="104" id="hit-horse6q" />
-        <rect class="hit" fill="transparent" data-hs="horse6" data-label="The horse" x="486" y="304"
-            width="148" height="102" id="hit-horse6d" />
+        <rect class="hit" fill="transparent" data-hs="quay7" data-label="The harbour town" x="0"
+            y="350" width="190" height="80" id="hit-quay7" />
+        <rect class="hit" fill="transparent" data-hs="horse7" data-label="The horse" x="36" y="420"
+            width="150" height="104" id="hit-horse7q" />
+        <rect class="hit" fill="transparent" data-hs="horse7" data-label="The horse" x="486" y="304"
+            width="148" height="102" id="hit-horse7d" />
         <rect class="hit" fill="transparent" data-hs="hoist" data-label="Cargo hoist" x="92" y="192"
             width="134" height="80" />
-        <rect class="hit" fill="transparent" data-hs="mast6" data-label="Sails" x="620" y="176"
+        <rect class="hit" fill="transparent" data-hs="mast7" data-label="Sails" x="620" y="176"
             width="286" height="210" />
-        <rect class="hit" fill="transparent" data-hs="mast6" data-label="Sails" x="1030" y="190"
+        <rect class="hit" fill="transparent" data-hs="mast7" data-label="Sails" x="1030" y="190"
             width="196" height="190" />
         <rect class="hit" fill="transparent" data-hs="crow" data-label="Crow's nest" x="714" y="96"
             width="92" height="64" />
-        <rect class="hit" fill="transparent" data-hs="glass6" data-label="Spyglass" x="298" y="242"
-            width="56" height="30" id="hit-glass6" />
+        <rect class="hit" fill="transparent" data-hs="glass7" data-label="Spyglass" x="298" y="242"
+            width="56" height="30" id="hit-glass7" />
         <rect class="hit" fill="transparent" data-hs="wheel" data-label="Ship's wheel and compass"
             x="326" y="258" width="104" height="66" />
-        <rect class="hit" fill="transparent" data-hs="captain6" data-label="Captain Longstocking"
+        <rect class="hit" fill="transparent" data-hs="captain7" data-label="Captain Longstocking"
             x="432" y="174" width="56" height="150" />
-        <rect class="hit" fill="transparent" data-hs="nilsson6" data-label="Mr Nilsson" x="1238"
+        <rect class="hit" fill="transparent" data-hs="nilsson7" data-label="Mr Nilsson" x="1238"
             y="196" width="52" height="84" />
-        <rect class="hit" fill="transparent" data-hs="ta6" data-label="Tommy and Annika" x="1268"
+        <rect class="hit" fill="transparent" data-hs="ta7" data-label="Tommy and Annika" x="1268"
             y="324" width="84" height="82" />
-        <rect class="hit" fill="transparent" data-hs="pippi6" data-label="Pippi" x="1496" y="262"
+        <rect class="hit" fill="transparent" data-hs="pippi7" data-label="Pippi" x="1496" y="262"
             width="92" height="96" />
-        <rect class="hit" fill="transparent" data-hs="log6" data-label="The captain's logbook"
+        <rect class="hit" fill="transparent" data-hs="log7" data-label="The captain's logbook"
             x="226" y="400" width="64" height="38" />
-        <rect class="hit" fill="transparent" data-hs="case6" data-label="Instrument box" x="372"
+        <rect class="hit" fill="transparent" data-hs="case7" data-label="Instrument box" x="372"
             y="420" width="96" height="56" />
-        <rect class="hit" fill="transparent" data-hs="chart6" data-label="Chart table" x="232"
+        <rect class="hit" fill="transparent" data-hs="chart7" data-label="Chart table" x="232"
             y="496" width="150" height="36" />
-        <rect class="hit" fill="transparent" data-hs="spunk6" data-label="Jam jar" x="386" y="484"
-            width="40" height="40" id="hit-spunk6" />
-        <rect class="hit" fill="transparent" data-hs="stove6" data-label="Galley stove" x="500"
+        <rect class="hit" fill="transparent" data-hs="spunk7" data-label="Jam jar" x="386" y="484"
+            width="40" height="40" id="hit-spunk7" />
+        <rect class="hit" fill="transparent" data-hs="stove7" data-label="Galley stove" x="500"
             y="476" width="110" height="120" />
         <rect class="hit" fill="transparent" data-hs="barrel" data-label="Water barrel" x="692"
             y="494" width="114" height="102" />
-        <rect class="hit" fill="transparent" data-hs="crates6" data-label="Crates" x="856" y="462"
+        <rect class="hit" fill="transparent" data-hs="crates7" data-label="Crates" x="856" y="462"
             width="150" height="134" />
-        <rect class="hit" fill="transparent" data-hs="net6" data-label="Fishing net" x="1256"
-            y="432" width="90" height="94" id="hit-net6" />
-        <rect class="hit" fill="transparent" data-hs="isle6" data-label="The island" x="1370" y="380" width="230" height="178" id="hit-isle6" style="display:none" />
-        <rect class="hit" fill="transparent" data-hs="hold6" data-label="The hold" x="400" y="640"
+        <rect class="hit" fill="transparent" data-hs="net7" data-label="Fishing net" x="1256"
+            y="432" width="90" height="94" id="hit-net7" />
+        <rect class="hit" fill="transparent" data-hs="isle7" data-label="The island" x="1370" y="380" width="230" height="178" id="hit-isle7" style="display:none" />
+        <rect class="hit" fill="transparent" data-hs="hold7" data-label="The hold" x="400" y="640"
             width="860" height="140" />
     </g>
 </svg>

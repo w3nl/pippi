@@ -25,12 +25,25 @@
         <g id="wtHorseShape">
             <path d="M18 34 Q4 46 8 66" stroke="#1a1a1a" stroke-width="5" fill="none"
                 stroke-linecap="round" />
-            <!-- the legs, each with its hoof, swing from the hip while the horse walks (css: .wt-leg, chapter4.css);
+            <!-- the legs, each with its hoof, swing from the hip while the horse walks (css:
+            .wt-leg, chapter4.css);
                  diagonal pairs move together: a = near hind + far fore, b = far hind + near fore -->
-            <g class="wt-leg a"><rect x="28" y="50" width="8" height="38" rx="3" fill="#f6f1e6" /><rect x="28" y="84" width="8" height="5" fill="#1a1a1a" /></g>
-            <g class="wt-leg b"><rect x="42" y="50" width="8" height="38" rx="3" fill="#f6f1e6" /><rect x="42" y="84" width="8" height="5" fill="#1a1a1a" /></g>
-            <g class="wt-leg b"><rect x="76" y="50" width="8" height="38" rx="3" fill="#f6f1e6" /><rect x="76" y="84" width="8" height="5" fill="#1a1a1a" /></g>
-            <g class="wt-leg a"><rect x="90" y="50" width="8" height="38" rx="3" fill="#f6f1e6" /><rect x="90" y="84" width="8" height="5" fill="#1a1a1a" /></g>
+            <g class="wt-leg a">
+                <rect x="28" y="50" width="8" height="38" rx="3" fill="#f6f1e6" />
+                <rect x="28" y="84" width="8" height="5" fill="#1a1a1a" />
+            </g>
+            <g class="wt-leg b">
+                <rect x="42" y="50" width="8" height="38" rx="3" fill="#f6f1e6" />
+                <rect x="42" y="84" width="8" height="5" fill="#1a1a1a" />
+            </g>
+            <g class="wt-leg b">
+                <rect x="76" y="50" width="8" height="38" rx="3" fill="#f6f1e6" />
+                <rect x="76" y="84" width="8" height="5" fill="#1a1a1a" />
+            </g>
+            <g class="wt-leg a">
+                <rect x="90" y="50" width="8" height="38" rx="3" fill="#f6f1e6" />
+                <rect x="90" y="84" width="8" height="5" fill="#1a1a1a" />
+            </g>
             <ellipse cx="62" cy="40" rx="44" ry="20" fill="#f6f1e6" />
             <path d="M30 24 h64 v30 q-32 8 -64 0z" fill="#c4302b" />
             <path d="M30 30 h64 M30 46 h64" stroke="#f2c94c" stroke-width="3" />
@@ -43,6 +56,67 @@
                 <circle cx="96" cy="26" r="4" />
                 <circle cx="118" cy="7" r="1.8" />
                 <circle cx="130" cy="15" r="1.4" />
+            </g>
+        </g>
+        <!-- Villa Villekulla, shared by the gardens of Chapters 4, 6 and 10 (drawn with <use> inside each house group):
+             yellow weatherboards, a red tiled roof with white bargeboards, blue windows and shutters, a little red
+             balcony in the gable, and a lower side wing with the blue front door behind the red veranda.
+             The glass takes its colour from --vv-pane on the <use>. -->
+        <g id="vvHouse">
+            <rect x="290" y="128" width="34" height="80" fill="#a33a22" />
+            <!-- the side wing, behind the veranda -->
+            <rect x="388" y="356" width="178" height="204" fill="#f2c94c" stroke="#c9a03a" stroke-width="3" />
+            <path d="M390 380 H566 M390 400 H566 M390 420 H566 M390 440 H566 M390 460 H566 M390 480 H566 M390 500 H566 M390 520 H566 M390 540 H566" stroke="#d9a93a" stroke-width="1.5" opacity=".7" />
+            <rect x="558" y="356" width="8" height="204" fill="#fffaf0" />
+            <path d="M378 364 L478 296 L578 364 Z" fill="#b5452a" />
+            <path d="M412 341 H544 M446 318 H510" stroke="#8a2e1a" stroke-width="2" opacity=".7" />
+            <path d="M378 364 L478 296 L578 364" stroke="#fffaf0" stroke-width="5" fill="none" stroke-linejoin="round" />
+            <circle cx="478" cy="340" r="11" style="fill:var(--vv-pane, #bfe0ef)" stroke="#2f8fbf" stroke-width="4" />
+            <!-- the front door, in its white frame, and a little window beside it -->
+            <rect x="459" y="444" width="64" height="116" fill="#fffaf0" />
+            <rect x="466" y="452" width="50" height="104" fill="#2f7fb0" stroke="#1f5a80" stroke-width="4" />
+            <path d="M474 462 h34 v34 h-34z M474 506 h34 v40 h-34z" fill="none" stroke="#1f5a80" stroke-width="2.5" />
+            <circle cx="508" cy="506" r="4" fill="#f2c94c" />
+            <rect x="422" y="456" width="34" height="46" style="fill:var(--vv-pane, #bfe0ef)" stroke="#2f8fbf" stroke-width="5" />
+            <path d="M439 456 V502" stroke="#2f8fbf" stroke-width="3" />
+            <!-- the main house -->
+            <rect x="30" y="250" width="360" height="310" fill="#f2c94c" stroke="#c9a03a" stroke-width="3" />
+            <path d="M32 280 H388 M32 300 H388 M32 320 H388 M32 340 H388 M32 360 H388 M32 380 H388 M32 400 H388 M32 420 H388 M32 440 H388 M32 460 H388 M32 480 H388 M32 500 H388 M32 520 H388 M32 540 H388" stroke="#d9a93a" stroke-width="1.5" opacity=".7" />
+            <rect x="30" y="250" width="9" height="310" fill="#fffaf0" />
+            <rect x="381" y="250" width="9" height="310" fill="#fffaf0" />
+            <path d="M10 262 L210 120 L410 262 Z" fill="#b5452a" />
+            <path d="M168 150 H252 M126 180 H294 M83 210 H337 M41 240 H379" stroke="#8a2e1a" stroke-width="2" opacity=".7" />
+            <path d="M10 262 L210 120 L410 262" stroke="#fffaf0" stroke-width="6" fill="none" stroke-linejoin="round" />
+            <!-- the gable window and its little red balcony -->
+            <rect x="186" y="168" width="48" height="42" style="fill:var(--vv-pane, #bfe0ef)" stroke="#2f8fbf" stroke-width="5" />
+            <path d="M210 168 V210" stroke="#2f8fbf" stroke-width="3" />
+            <rect x="158" y="214" width="104" height="6" fill="#c4302b" />
+            <rect x="158" y="238" width="104" height="5" fill="#c4302b" />
+            <path d="M162 220 V238 M174 220 V238 M186 220 V238 M198 220 V238 M210 220 V238 M222 220 V238 M234 220 V238 M246 220 V238 M258 220 V238" stroke="#c4302b" stroke-width="3" />
+            <!-- the kitchen window with its shutters, and a small window -->
+            <rect x="50" y="318" width="18" height="104" fill="#2f8fbf" stroke="#1f5a80" stroke-width="2" />
+            <rect x="194" y="318" width="18" height="104" fill="#2f8fbf" stroke="#1f5a80" stroke-width="2" />
+            <path d="M54 334 h10 M54 350 h10 M54 366 h10 M54 382 h10 M54 398 h10 M198 334 h10 M198 350 h10 M198 366 h10 M198 382 h10 M198 398 h10" stroke="#1f5a80" stroke-width="2" />
+            <rect x="70" y="320" width="122" height="100" style="fill:var(--vv-pane, #bfe0ef)" stroke="#fffaf0" stroke-width="7" />
+            <path d="M131 320 V420 M70 370 H192" stroke="#fffaf0" stroke-width="5" />
+            <rect x="66" y="416" width="130" height="10" fill="#fffaf0" />
+            <rect x="232" y="286" width="60" height="56" style="fill:var(--vv-pane, #bfe0ef)" stroke="#2f8fbf" stroke-width="5" />
+            <path d="M262 286 V342" stroke="#2f8fbf" stroke-width="3" />
+            <!-- the veranda: a red porch roof on red posts, in front of both the house and the side wing -->
+            <rect x="246" y="414" width="324" height="10" rx="3" fill="#8a2e1a" />
+            <rect x="250" y="422" width="316" height="16" fill="#c4302b" />
+            <path d="M250 430 H566" stroke="#fffaf0" stroke-width="2" stroke-dasharray="6 6" />
+            <g fill="#c4302b">
+                <rect x="258" y="438" width="10" height="122" />
+                <rect x="404" y="438" width="10" height="122" />
+                <rect x="552" y="438" width="10" height="122" />
+                <path d="M268 438 l18 0 l-18 16z M404 438 l-18 0 l18 16z M414 438 l18 0 l-18 16z M552 438 l-18 0 l18 16z" />
+            </g>
+            <rect x="250" y="556" width="316" height="12" fill="#a5743f" />
+            <g fill="#a5743f">
+                <rect x="566" y="568" width="58" height="24" />
+                <rect x="586" y="592" width="58" height="24" />
+                <rect x="606" y="616" width="58" height="24" />
             </g>
         </g>
     </defs>
@@ -109,6 +183,9 @@
         <ellipse cx="1300" cy="880" rx="360" ry="50" />
         <ellipse cx="900" cy="640" rx="140" ry="16" />
     </g>
+    <!-- a little Saab 96 parked in the snowy street, behind the fence -->
+    <use href="#saab96" x="1196" y="440" width="100" height="42" color="#7fb0d8" />
+    <path d="M1218 450 Q1240 436 1262 444 Q1250 450 1218 450z" fill="#fff" />
     <!-- the garden fence and gate, far right -->
     <g id="wt-fence">
         <path d="M1080 500 H1600 M1080 530 H1600" stroke="#8a6a4a" stroke-width="6" />
@@ -144,25 +221,19 @@
 
     <!-- Villa Villekulla, a little crooked, with snow on the roof -->
     <g id="wt-house" transform="rotate(-2 220 400)">
-        <rect x="30" y="250" width="360" height="310" fill="#f2c94c" stroke="#c9a03a"
-            stroke-width="3" />
-        <rect x="290" y="128" width="34" height="80" fill="#8a3a1a" />
+        <use href="#vvHouse" style="--vv-pane:url(#wtWinG)" />
         <rect x="284" y="122" width="46" height="12" rx="5" fill="#fff" />
-        <path d="M10 262 L210 120 L410 262 Z" fill="#e8571f" />
         <path d="M6 266 L210 116 L414 266 L396 266 L210 136 L24 266 Z" fill="#fff" />
         <path d="M60 236 q40 -20 70 -40 M260 156 q50 30 100 72" stroke="#fff" stroke-width="12"
             stroke-linecap="round" fill="none" />
-        <rect x="70" y="320" width="122" height="100" fill="url(#wtWinG)" stroke="#fffaf0"
-            stroke-width="7" />
-        <path d="M131 320 V420 M70 370 H192" stroke="#fffaf0" stroke-width="5" />
+        <path d="M374 368 L478 292 L582 368 L566 368 L478 308 L390 368 Z" fill="#fff" />
+        <rect x="156" y="209" width="108" height="7" rx="3" fill="#fff" />
         <rect x="66" y="416" width="130" height="10" fill="#fff" />
         <g id="wt-spunk">
             <rect x="150" y="394" width="22" height="22" rx="4" fill="#cfe6e0" opacity=".7" />
             <rect x="148" y="390" width="26" height="6" rx="2" fill="#e8571f" />
             <ellipse class="crawl" cx="161" cy="408" rx="5" ry="3.5" fill="#2f8a3a" />
         </g>
-        <rect x="232" y="286" width="60" height="56" fill="url(#wtWinG)" stroke="#fffaf0"
-            stroke-width="5" />
         <g id="wt-thermo">
             <rect x="206" y="330" width="14" height="86" rx="7" fill="#fffaf0" stroke="#9aa0a6"
                 stroke-width="2" />
@@ -170,23 +241,8 @@
             <rect x="210" y="388" width="6" height="30" fill="#d22d2d" />
         </g>
         <!-- the veranda, with fairy lights and its icy steps -->
-        <rect x="250" y="422" width="316" height="16" fill="#8a5028" />
         <rect x="246" y="414" width="324" height="10" rx="5" fill="#fff" />
-        <g fill="#8a5028">
-            <rect x="258" y="438" width="10" height="122" />
-            <rect x="404" y="438" width="10" height="122" />
-            <rect x="552" y="438" width="10" height="122" />
-        </g>
-        <rect x="466" y="452" width="50" height="104" fill="#3f8a4a" stroke="#265a2e"
-            stroke-width="4" />
-        <circle cx="508" cy="506" r="4" fill="#f2c94c" />
         <g id="wt-lights"></g>
-        <rect x="250" y="556" width="316" height="12" fill="#a5743f" />
-        <g fill="#a5743f">
-            <rect x="566" y="568" width="58" height="24" />
-            <rect x="586" y="592" width="58" height="24" />
-            <rect x="606" y="616" width="58" height="24" />
-        </g>
         <g id="wt-ice" fill="#bfe4f8" opacity=".85">
             <path d="M562 566 h66 v6 h-66z M582 590 h66 v6 h-66z M602 614 h66 v6 h-66z" />
             <path d="M572 568 l10 -2 M596 592 l12 -2 M618 616 l10 -2" stroke="#fff" stroke-width="2" />
@@ -312,6 +368,9 @@
         </g>
         <rect x="600" y="684" width="34" height="50" rx="10" fill="#2f5f9a" />
         <path d="M600 694 h34" stroke="#f2c94c" stroke-width="5" />
+        <path d="M603 692 L592 722 M631 692 L642 722" stroke="#2f5f9a" stroke-width="8" stroke-linecap="round" />
+        <circle cx="591" cy="726" r="5" fill="#c4302b" />
+        <circle cx="643" cy="726" r="5" fill="#c4302b" />
         <circle cx="617" cy="668" r="15" fill="#f3c9a4" />
         <path d="M602 664 q2 -18 15 -18 q13 0 15 18z" fill="#c4302b" />
         <circle cx="617" cy="644" r="5" fill="#fff" />
@@ -321,11 +380,20 @@
                 <rect x="680" y="730" width="8" height="28" />
             </g>
             <path d="M656 734 L678 684 L700 734 Z" fill="#f2a7b8" />
+            <!-- shivering: her arms hug her middle -->
+            <g id="wt-annhug">
+            <path d="M671 694 q-8 16 10 16 M685 694 q8 16 -10 16" stroke="#f2a7b8" stroke-width="6" stroke-linecap="round" fill="none" />
+            <circle cx="681" cy="710" r="3.5" fill="#f3c9a4" />
+            <circle cx="675" cy="710" r="3.5" fill="#f3c9a4" />
+            </g>
             <circle cx="678" cy="670" r="14" fill="#f3c9a4" />
             <path d="M664 672 q-2 -20 14 -20 q16 0 14 20 q-4 -10 -14 -10 q-10 0 -14 10z"
                 fill="#e9c46a" />
             <g id="wt-annwarm" style="display:none">
                 <path d="M656 734 L678 684 L700 734 Z" fill="#7a3a8a" />
+                <path d="M671 694 L660 722 M685 694 L696 722" stroke="#7a3a8a" stroke-width="7" stroke-linecap="round" />
+                <circle cx="659" cy="725" r="4.5" fill="#3f8a4a" />
+                <circle cx="697" cy="725" r="4.5" fill="#3f8a4a" />
                 <path d="M664 662 q14 -22 28 0z" fill="#3f8a4a" />
                 <circle cx="678" cy="646" r="5" fill="#f2c94c" />
                 <path d="M664 690 q14 8 28 0 v7 q-14 8 -28 0z" fill="#e2483d" />
@@ -392,11 +460,16 @@
             <rect x="1282" y="620" width="40" height="5" fill="#111a33" />
             <circle cx="1302" cy="614" r="3" fill="#f2c94c" />
             <path d="M1286 652 q16 8 32 0" stroke="#c4302b" stroke-width="7" fill="none" />
+            <path d="M1284 666 L1272 700" stroke="#1f2f5a" stroke-width="10" stroke-linecap="round" />
+            <circle cx="1271" cy="704" r="6" fill="#f3c9a4" />
             <path d="M1322 670 L1346 650" stroke="#1f2f5a" stroke-width="10" stroke-linecap="round" />
             <circle cx="1350" cy="646" r="9" fill="#fff" stroke="#c9d8e8" stroke-width="2" />
         </g>
         <g class="wt-stamp b">
             <ellipse cx="1440" cy="700" rx="34" ry="36" fill="#1f2f5a" />
+            <path d="M1410 686 L1394 714 M1470 686 L1486 714" stroke="#1f2f5a" stroke-width="10" stroke-linecap="round" />
+            <circle cx="1393" cy="718" r="6" fill="#f3c9a4" />
+            <circle cx="1487" cy="718" r="6" fill="#f3c9a4" />
             <g fill="#f2c94c">
                 <circle cx="1440" cy="686" r="2.5" />
                 <circle cx="1440" cy="700" r="2.5" />
@@ -479,5 +552,7 @@
             width="170" height="160" id="hit-pippi4" />
         <rect class="hit" fill="transparent" data-hs="police4" data-label="Kling and Klang" x="1180"
             y="590" width="390" height="220" />
+        <rect class="hit" fill="transparent" data-hs="saab4" data-label="A little car" x="1192"
+            y="432" width="110" height="52" />
     </g>
 </svg>

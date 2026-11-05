@@ -12,13 +12,17 @@ function ambKey(){
   if(!soundOn || !S.started || !$('#title').hidden || document.visibilityState !== 'visible') return null;
   const f = S.f;
   switch(S.scene){
+    case 'move': return 'move' + (f.out0 ? '+tick' : '');
     case 'kitchen': return 'kitchen' + (f.fire ? '+fire' : '');
     case 'bedroom': return 'bedroom' + (f.out2 ? '' : '+snore');
     case 'school': return 'school' + (f.out3 ? '' : '+horse');
     case 'winter': return 'winter' + (f.out4 ? '+cheer' : '');
     case 'circus': return 'circus' + (f.out5 ? '+show' : '');
+    case 'balloon': return 'balloon' + (!f.up ? '+ground' : f.dropped && !f.cloud ? '+cloud' : f.out6 ? '+cheer' : '');
     case 'island': return 'island' + (f.chest && !f.storm ? '+storm' : f.storm ? '+night' : '');
+    case 'home': return 'home' + (f.larder && !f.rainbow ? '+shower' : f.out10 ? '+party' : '');
     case 'ship': return 'ship' + (!f.course ? '+harbour' : f.water && !f.equator ? '+night' : '+sailing');
+    case 'voyage': { const leg = leg9(); return 'voyage' + (leg === 'storm' ? '+storm' : leg === 'night' ? '+night' : leg === 'harbour' ? '+harbour' : ''); }
   }
   return null;
 }
@@ -106,6 +110,13 @@ function every(min, max, fn){
 const later = (ms, fn) => AMB.timers.push(setTimeout(() => AMB.master && fn(), ms));
 /* ---------- one soundscape per room ---------- */
 const SOUNDSCAPES = {
+  // Chapter 0, moving day: a summer breeze, birdsong, the creak of the old house; the clock ticking once it's set.
+  move(m, mods){
+    bed(m, { freq: 360, gain: .016, wobble: .6, rate: .08 });
+    every(6000, 12000, () => [0, 1, 2, 3].forEach(i => later(i * 150, () => blip(m, 1800 + Math.random() * 1200, .12, .012, 'sine', 1500 + Math.random() * 900))));
+    every(9000, 18000, () => blip(m, 110, .6, .01, 'sawtooth', 90));
+    if(mods.includes('tick')) every(1000, 1000, () => burst(m, .03, .02, 3000));
+  },
   // Chapter 1, the kitchen of Villa Villekulla: an evening breeze, a ticking clock, a blackbird in the garden,
   // the odd monkey chatter from Mr Nilsson, and the stove crackling once it's lit.
   kitchen(m, mods){
@@ -127,6 +138,16 @@ const SOUNDSCAPES = {
   },
   // Chapter 5, the big top: the murmur of the audience, a barrel-organ waltz, the odd honk from the clown,
   // and once the show starts, a drumroll and cheering.
+  // Chapter 6, the balloon ride: the wind up high and the roar of the burner now and then; birdsong in the garden
+  // before take-off; dripping fog inside the cloud; the church bell and cheering at the end.
+  balloon(m, mods){
+    bed(m, { type: 'bandpass', freq: 600, q: .4, gain: mods.includes('ground') ? .01 : .022, wobble: .8, rate: .1 });
+    if(mods.includes('ground')){ every(5000, 10000, () => [0, 1, 2, 3].forEach(i => later(i * 150, () => blip(m, 2000 + Math.random() * 1000, .12, .01, 'sine', 1600)))); return; }
+    every(9000, 16000, () => burst(m, 1.4, .03, 300, 'lowpass'));
+    if(mods.includes('cloud')){ every(300, 900, () => blip(m, 1800 + Math.random() * 900, .04, .006, 'sine', 900)); return; }
+    every(8000, 15000, () => [0, 1].forEach(i => later(i * 260, () => blip(m, 520, .2, .01, 'sawtooth', 430))));
+    if(mods.includes('cheer')){ every(3000, 6000, () => burst(m, 1, .025, 1500, 'bandpass')); every(7000, 12000, () => blip(m, 392, 2, .014, 'sine')); }
+  },
   circus(m, mods){
     bed(m, { type: 'bandpass', freq: 500, q: .5, gain: .025, wobble: .4, rate: .15 });
     const tune = [67, 71, 74, 71, 72, 76, 74, 0, 67, 71, 74, 79, 78, 74, 76, 0]; let i = 0;
@@ -168,6 +189,30 @@ const SOUNDSCAPES = {
     if(mods.includes('harbour')) every(5000, 11000, () => [0, 1, 2].forEach(i => later(i * 180, () => blip(m, 1500 + Math.random() * 300, .18, .012, 'sine', 1100))));
     if(mods.includes('sailing')) bed(m, { type: 'bandpass', freq: 900, q: .5, gain: .012, wobble: .6, rate: .2 });
     if(mods.includes('night')) every(9000, 16000, () => { blip(m, 1320, .9, .015, 'sine'); later(450, () => blip(m, 1320, .9, .015, 'sine')); });
+  },
+  // Chapter 9, the voyage home: waves and wind in the sails; howling wind, rain and thunder in the storm;
+  // the ship's bell at night; gulls and the church bell in the harbour at home.
+  voyage(m, mods){
+    bed(m, { freq: 380, gain: .022, wobble: .8, rate: .12 });
+    every(4000, 9000, () => blip(m, 90 + Math.random() * 40, .5, .012, 'sawtooth', 70));
+    if(mods.includes('storm')){ bed(m, { type: 'bandpass', freq: 700, q: .4, gain: .03, wobble: .9, rate: .25 }); bed(m, { type: 'highpass', freq: 2500, gain: .025, wobble: .2, rate: .3 }); every(6000, 12000, () => burst(m, 1.6, .06, 180, 'lowpass')); return; }
+    if(mods.includes('night')){ every(9000, 16000, () => { blip(m, 1320, .9, .015, 'sine'); later(450, () => blip(m, 1320, .9, .015, 'sine')); }); return; }
+    bed(m, { type: 'bandpass', freq: 900, q: .5, gain: .012, wobble: .6, rate: .2 });
+    if(mods.includes('harbour')){ every(5000, 11000, () => [0, 1, 2].forEach(i => later(i * 180, () => blip(m, 1500 + Math.random() * 300, .18, .012, 'sine', 1100)))); every(20000, 35000, () => blip(m, 392, 2.2, .012, 'sine')); }
+  },
+  // Chapter 10, home again in spring: a soft breeze, a blackbird singing and swallows twittering; the patter of
+  // the April shower; and once the party starts, laughter and a little accordion tune.
+  home(m, mods){
+    bed(m, { freq: 340, gain: .015, wobble: .6, rate: .08 });
+    if(mods.includes('shower')){ bed(m, { type: 'highpass', freq: 2200, gain: .025, wobble: .3, rate: .4 }); every(150, 500, () => burst(m, .02, .01, 3000 + Math.random() * 2000, 'highpass')); return; }
+    every(6000, 12000, () => [0, 1, 2, 3, 4].forEach(i => later(i * 160, () => blip(m, 1400 + Math.random() * 1200, .14, .012, 'sine', 1200 + Math.random() * 1400))));
+    every(3000, 7000, () => [0, 1, 2].forEach(i => later(i * 70, () => blip(m, 3800 + Math.random() * 600, .05, .008, 'sine', 4200))));
+    if(mods.includes('party')){
+      every(3000, 6000, () => burst(m, 1, .02, 1500, 'bandpass'));
+      const tune = [72, 76, 79, 76, 77, 74, 71, 0, 72, 76, 79, 84, 81, 79, 77, 0]; let i = 0;
+      const play = () => { if(!AMB.master) return; const n = tune[i++ % tune.length]; if(n) blip(m, 440 * Math.pow(2, (n - 69) / 12), .35, .01, 'sawtooth'); AMB.timers.push(setTimeout(play, 360)); };
+      AMB.timers.push(setTimeout(play, 800));
+    }
   }
 };
 

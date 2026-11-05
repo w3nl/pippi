@@ -1,0 +1,78 @@
+/* Chapter 9: home again to Villa Villekulla, in spring. The garden is overgrown, the sun sinks lower after the
+   April shower, a rainbow comes out, and in the evening the lanterns are lit for the welcome-home party.
+   Close-ups: the tree rings, the sea chest on rollers, the magnet, the larder, the rainbow and the hedgehog.
+   Everything stops with the Motion setting (css/animations.css). */
+
+/* ---------- the garden comes alive ---------- */
+@keyframes vhDrift{0%{transform:translateX(0)}100%{transform:translateX(-160px)}}
+@keyframes vhSwallowA{0%{transform:translate(-120px,180px)}30%{transform:translate(420px,90px)}50%{transform:translate(360px,240px) scaleX(-1)}70%{transform:translate(120px,150px) scaleX(-1)}100%{transform:translate(-120px,60px) scaleX(-1)}}
+@keyframes vhSwallowB{0%{transform:translate(1720px,120px) scaleX(-1)}40%{transform:translate(900px,60px) scaleX(-1)}70%{transform:translate(500px,200px) scaleX(-1)}100%{transform:translate(-160px,100px) scaleX(-1)}}
+@keyframes vhCrown{0%,100%{transform:rotate(-.8deg)}50%{transform:rotate(.8deg)}}
+@keyframes vhWobble{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+@keyframes vhPlait{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}}
+@keyframes vhWave{0%,100%{transform:rotate(0)}50%{transform:rotate(-30deg)}}
+@keyframes vhBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes vhCrawl{0%,100%{transform:translateX(-5px)}50%{transform:translateX(5px)}}
+@keyframes vhFlutter{0%,90%,100%{transform:rotate(0)}93%{transform:rotate(-6deg)}96%{transform:rotate(5deg)}}
+@keyframes vhSnuffle{0%,100%{transform:translateX(0) scaleY(1)}30%{transform:translateX(3px) scaleY(1.06)}60%{transform:translateX(-2px) scaleY(.97)}}
+@keyframes vhButterfly{0%{transform:translate(160px,600px) scaleY(1)}10%{transform:translate(190px,580px) scaleY(.3)}20%{transform:translate(220px,596px) scaleY(1)}30%{transform:translate(260px,570px) scaleY(.3)}40%{transform:translate(300px,600px) scaleY(1)}50%{transform:translate(320px,640px) scaleY(.3)}60%{transform:translate(280px,620px) scaleY(1)}70%{transform:translate(240px,590px) scaleY(.3)}80%{transform:translate(200px,630px) scaleY(1)}90%{transform:translate(170px,610px) scaleY(.3)}100%{transform:translate(160px,600px) scaleY(1)}}
+@keyframes vhRain{0%{transform:translateY(-120px)}100%{transform:translateY(120px)}}
+@keyframes vhPuff{0%{transform:translateY(20px);opacity:0}30%{opacity:.8}100%{transform:translateY(-40px);opacity:0}}
+@keyframes vhGlow{0%,100%{opacity:1}50%{opacity:.65}}
+@keyframes vhNod{0%,100%{transform:translateY(0)}50%{transform:translateY(1.5px)}}
+
+#sc-home .vh-cloud{animation:vhDrift 50s ease-in-out infinite alternate}
+#sc-home .vh-cloud.b{animation-duration:64s;animation-direction:alternate-reverse}
+#sc-home .vh-swallow{transform:translate(-200px,-200px)}
+#sc-home .vh-swallow.a{animation:vhSwallowA 14s ease-in-out infinite}
+#sc-home .vh-swallow.b{animation:vhSwallowB 19s ease-in-out infinite;animation-delay:-6s}
+#sc-home .vh-crown{transform-box:view-box;transform-origin:690px 440px;animation:vhCrown 5s ease-in-out infinite}
+#vh-held .vh-wobble{transform-box:view-box;transform-origin:1158px 640px;animation:vhWobble 2.6s ease-in-out infinite}
+#vh-pippi .vh-plait{transform-box:fill-box;animation:vhPlait 1.3s ease-in-out infinite}
+#vh-pippi .vh-plait.l{transform-origin:100% 0} #vh-pippi .vh-plait.r{transform-origin:0 0;animation-delay:-.65s}
+#vh-ta .vh-wave{transform-box:view-box;transform-origin:814px 728px;animation:vhWave 1.2s ease-in-out infinite}
+#vh-nilsson .vh-bob{animation:vhBob 1.8s ease-in-out infinite}
+#vh-spunk .vh-crawl{animation:vhCrawl 4s ease-in-out infinite}
+#vh-post .vh-flutter{transform-box:fill-box;transform-origin:50% 100%;animation:vhFlutter 4s ease-in-out infinite}
+#vh-hog .vh-snuffle{transform-box:fill-box;transform-origin:50% 100%;animation:vhSnuffle 1.4s ease-in-out infinite}
+#sc-home .vh-butterfly{transform:translate(250px,600px);animation:vhButterfly 9s ease-in-out infinite}
+#vh-vhorse .vh-nod{animation:vhNod 3s ease-in-out infinite}
+@keyframes vhSmoke{0%{transform:translate(0,0) scale(.8);opacity:.9}100%{transform:translate(12px,-34px) scale(1.5);opacity:0}}
+@keyframes vhBend{0%,100%{transform:skewX(-4deg)}50%{transform:skewX(4deg)}}
+@keyframes vhBee{0%,100%{transform:translate(0,0)}20%{transform:translate(-30px,-14px)}40%{transform:translate(-50px,10px)}60%{transform:translate(-14px,24px)}80%{transform:translate(20px,-6px)}}
+#sc-home .vh-cloud.c{animation-duration:80s}
+#sc-home .vh-cloud.d{animation-duration:58s;animation-direction:alternate-reverse}
+#sc-home .vh-chimsmoke circle{transform-box:fill-box;transform-origin:50% 50%;animation:vhSmoke 4s ease-out infinite}
+#sc-home .vh-chimsmoke .b{animation-delay:-1.3s} #sc-home .vh-chimsmoke .c{animation-delay:-2.6s}
+#sc-home .vh-grass{transform-box:fill-box;transform-origin:50% 100%;animation:vhBend 4s ease-in-out infinite}
+#sc-home .vh-bee{animation:vhBee 3.4s ease-in-out infinite}
+/* the sun sinks lower after the shower, and sets behind the hills for the party */
+#vh-sun{transition:transform 6s ease-in-out}
+#sc-home.vh-late #vh-sun{transform:translateY(130px)}
+#sc-home.vh-party #vh-sun{transform:translateY(240px)}
+/* the April shower */
+#vh-rain .vh-drops{animation:vhRain .45s linear infinite}
+/* the party: smoke from the chimney (pancakes!) and glowing lanterns */
+#vh-smoke .vh-puff{animation:vhPuff 4s ease-out infinite}
+#vh-smoke .vh-puff.b{animation-delay:-1.3s} #vh-smoke .vh-puff.c{animation-delay:-2.6s}
+#vh-lanterns .vh-glow{animation:vhGlow 2.2s ease-in-out infinite}
+
+/* ---------- close-ups ---------- */
+.rings10-svg{width:100%;max-width:260px;height:auto;display:block;margin:10px auto 0}
+.rings10-svg .rg10{cursor:pointer}
+.rings10-svg .rg10:hover,.rings10-svg .rg10.on{stroke:var(--amber);stroke-opacity:.6}
+.stepper10{align-items:center}
+.num10{font-family:var(--f-mono);font-size:26px;min-width:2.2ch;text-align:center;color:var(--amber)}
+
+.roll10-svg{width:100%;max-width:440px;height:auto;display:block;margin:10px auto 0;border-radius:8px}
+.ro10.on{background:var(--amber);color:#24120a}
+
+.cards10{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0}
+.cards10.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.card10{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 4px;border:2px solid var(--line);border-radius:8px;background:var(--ink);font-size:12px;line-height:1.2;text-align:center;min-width:0}
+.card10 svg{width:40px;height:40px}
+.card10.on{border-color:var(--phosphor);color:var(--phosphor);box-shadow:inset 0 0 12px rgba(159,220,110,.18)}
+
+.rainbow10-svg{width:100%;max-width:280px;height:auto;display:block;margin:10px auto 0}
+.hog10-svg{width:100%;max-width:360px;height:auto;display:block;margin:0 auto;border-radius:8px}
+@media (max-width:520px){ .cards10.four{grid-template-columns:repeat(2,minmax(0,1fr))} .cards10{grid-template-columns:repeat(2,minmax(0,1fr))} }

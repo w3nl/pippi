@@ -1,0 +1,389 @@
+# Dutch translation: Chapter 8, the South Sea island (js/chapter8.js).
+# Kapitein Langkous calls Pippi "Pippilotta". Eb en vloed; het Schildpadeilandje; plutimiceren.
+
+= Treasure map
+> Schatkaart
+= Captain Longstocking's map of Turtle Islet, drawn on the back of a menu. It says: 12 of MY paces.
+> De kaart van kapitein Langkous van het Schildpadeilandje, getekend op de achterkant van een menukaart. Er staat: 12 van MIJN passen.
+= A spade
+> Een schep
+= The king's own spade, for digging up surprises.
+> De eigen schep van de koning, om verrassingen op te graven.
+= The spunk's jam jar, next to the sundial. Pippi has put it in the shade, so the spunk doesn't get sunburnt.
+> Het jampotje van de spunk, naast de zonnewijzer. Pippi heeft hem in de schaduw gezet, zodat de spunk niet verbrandt.
+= You take it. A spunk knows things. Even about islands.
+> Je neemt hem mee. Een spunk weet dingen. Zelfs over eilanden.
+= What a day, Pippilotta! Treasure, thunder and turtles. Tomorrow we'll do it all again, backwards.
+> Wat een dag, Pippilotta! Een schat, onweer en schildpadden. Morgen doen we alles nog een keer, achterstevoren.
+= Zzz… whuh? Pippilotta! Welcome to my island! I'm the king here, you know. That's why I wear my crown on my hat.
+> Zzz… hè? Pippilotta! Welkom op mijn eiland! Ik ben hier de koning, weet je. Daarom draag ik mijn kroon op mijn hoed.
+= I've buried a surprise for you on Turtle Islet, out in the lagoon. Here's my map. Follow MY paces exactly!
+> Ik heb een verrassing voor je begraven op het Schildpadeilandje, in de lagune. Hier is mijn kaart. Volg precies MIJN passen!
+= A treasure! Hurray! Can we go now?
+> Een schat! Hoera! Mogen we nu gaan?
+= Only at low tide, when the sandbar comes out of the water. Look at the sundial to see what time it is, and the tide post to see when the water goes down. And now… zzz…
+> Alleen bij eb, als de zandbank boven water komt. Kijk op de zonnewijzer hoe laat het is, en op de getijdenpaal wanneer het water zakt. En nu… zzz…
+= Zzz… the tide… the sundial… zzz…
+> Zzz… het getij… de zonnewijzer… zzz…
+= The king is fast asleep in his hammock. He snores like the Hoppetossa's foghorn.
+> De koning slaapt diep in zijn hangmat. Hij snurkt als de misthoorn van de Hoppetossa.
+= Low tide! Off you go. Twelve of MY paces from the turtle rock, mind. My paces are one metre long, exactly. I measured them once.
+> Eb! Vooruit maar. Twaalf van MIJN passen vanaf de schildpadrots, denk erom. Mijn passen zijn precies één meter lang. Ik heb ze een keer gemeten.
+= Did you find it? Did you? Don't tell me! Yes, tell me!
+> Heb je het gevonden? Ja? Niet zeggen! Nee, zeg het wel!
+= Night is falling, and the feast is ready. But first, look at the turtle nest: tonight's the night!
+> Het wordt donker, en het feest is klaar. Maar kijk eerst bij het schildpaddennest: vannacht is het zover!
+= The sundial says it's the afternoon. The shadow has swung right round to the other side.
+> De zonnewijzer zegt dat het middag is. De schaduw is helemaal naar de andere kant gedraaid.
+= The sundial says 9 o'clock in the morning. The stick's shadow points away from the sun.
+> De zonnewijzer zegt 9 uur 's ochtends. De schaduw van het stokje wijst van de zon af.
+= The water is way down the striped post now. Low tide! The sandbar to Turtle Islet is dry.
+> Het water staat nu helemaal onderaan de gestreepte paal. Eb! De zandbank naar het Schildpadeilandje ligt droog.
+= The tide post: a striped pole in the lagoon. Right now the water is right up at the top stripe.
+> De getijdenpaal: een gestreepte paal in de lagune. Nu staat het water helemaal tot de bovenste streep.
+= To know when the water goes down, we first need to know what time it is now.
+> Om te weten wanneer het water zakt, moeten we eerst weten hoe laat het nu is.
+= The lagoon at low tide: rock pools full of starfish and crabs, and a sandy path out to Turtle Islet.
+> De lagune bij eb: poeltjes vol zeesterren en krabben, en een zandpad naar het Schildpadeilandje.
+= The lagoon, as clear as glass. Little striped fish dart about. Turtle Islet is out in the middle.
+> De lagune, zo helder als glas. Kleine gestreepte visjes schieten heen en weer. Het Schildpadeilandje ligt in het midden.
+= Turtle Islet: one palm tree, and a rock shaped like a turtle.
+> Het Schildpadeilandje: één palmboom, en een rots in de vorm van een schildpad.
+= The sandbar that leads there is under water. You would have to swim, and the horse can't.
+> De zandbank ernaartoe ligt onder water. Je zou moeten zwemmen, en dat kan Witje niet.
+= Turtle Islet, at low tide. To find the surprise, you need the captain's map.
+> Het Schildpadeilandje, bij eb. Om de verrassing te vinden heb je de kaart van de kapitein nodig.
+= There's the X in the sand, exactly 12 metres from the turtle rock.
+> Daar is de X in het zand, precies 12 meter van de schildpadrots.
+= Now you need something to dig with.
+> Nu heb je iets nodig om mee te graven.
+= The hole where the treasure chest was. A crab has moved in already.
+> Het gat waar de schatkist lag. Er is al een krab ingetrokken.
+= The X. Dig here! But not with your hands: the sand is full of crabs' toes.
+> De X. Hier graven! Maar niet met je handen: het zand zit vol krabbentenen.
+= A spade, leaning against the king's hut. You take it. Kings don't dig their own holes.
+> Een schep, tegen de hut van de koning. Je neemt hem mee. Koningen graven hun eigen gaten niet.
+= The king's hut. The feast is in full swing behind it: you can smell grilled fish and coconut cake.
+> De hut van de koning. Erachter is het feest in volle gang: je ruikt geroosterde vis en kokostaart.
+= Everybody is squashed into the king's hut while the rain drums on the roof. The horse too.
+> Iedereen zit samengepropt in de hut van de koning terwijl de regen op het dak trommelt. Witje ook.
+= The king's hut, made of bamboo with a roof of palm leaves. Inside: a hammock, a chest of sea charts, and a very big chair.
+> De hut van de koning, van bamboe met een dak van palmbladeren. Binnen: een hangmat, een kist met zeekaarten en een heel grote stoel.
+= Captain Longstocking says it is a palace. Pippi says it is a very good palace.
+> Kapitein Langkous zegt dat het een paleis is. Pippi zegt dat het een heel goed paleis is.
+= The first stars come out over the island. The Moon is rising over the sea and making a silver path on the water.
+> De eerste sterren verschijnen boven het eiland. De maan komt op boven zee en maakt een zilveren pad op het water.
+= The sun has moved across the sky since this morning. It's afternoon now.
+> De zon is sinds vanochtend over de hemel gewandeld. Het is nu middag.
+= A hot blue sky. The sun is still low in the east: it's morning.
+> Een warme blauwe lucht. De zon staat nog laag in het oosten: het is ochtend.
+= The Hoppetossa, at anchor in the lagoon. She looks very pleased to be resting.
+> De Hoppetossa, voor anker in de lagune. Ze lijkt heel blij dat ze even mag rusten.
+= Her sails are rolled up, and her anchor chain goes straight down into the clear water. You can see the anchor on the sand at the bottom.
+> Haar zeilen zijn opgerold, en haar ankerketting gaat recht naar beneden in het heldere water. Je ziet het anker op de zandbodem liggen.
+= The nest is empty. Every baby turtle made it to the sea!
+> Het nest is leeg. Alle schildpadjes hebben de zee gehaald!
+= A sea turtle's nest, with a little fence of shells around it. The mother turtle laid her eggs here, deep in the warm sand.
+> Een zeeschildpaddennest, met een hekje van schelpen eromheen. De moederschildpad heeft hier haar eieren gelegd, diep in het warme zand.
+= They'll hatch tonight, Dad says. Baby turtles always come out in the dark.
+> Ze komen vannacht uit, zegt papa. Schildpadjes komen altijd in het donker tevoorschijn.
+= The torches have been put out on this side. The moon is bright enough.
+> De fakkels aan deze kant zijn uit. De maan geeft licht genoeg.
+= Torches for tonight's feast. They'll be lit when it gets dark.
+> Fakkels voor het feest van vanavond. Ze gaan aan als het donker wordt.
+= You shake the palm tree. BONK! A coconut lands right on your head.
+> Je schudt aan de palmboom. BONK! Er valt een kokosnoot precies op je hoofd.
+= Mr Nilsson thinks that's the funniest thing he has ever seen.
+> Meneer Nilsson vindt het het grappigste wat hij ooit heeft gezien.
+= A tall coconut palm. Mr Nilsson is halfway up, hugging a coconut. Better not shake it too hard.
+> Een hoge kokospalm. Meneer Nilsson zit halverwege, met een kokosnoot in zijn armen. Schud er maar niet te hard aan.
+= Pluttification! Pluttification! Squawk!
+> Plutimiceren! Plutimiceren! Krraa!
+= I taught him that. He's much better at it than Miss.
+> Dat heb ik hem geleerd. Hij kan het veel beter dan de juf.
+= Treasure! Treasure! Squawk!
+> Schat! Schat! Krraa!
+= Squawk! Twelve paces! Twelve paces!
+> Krraa! Twaalf passen! Twaalf passen!
+= The king's parrot. It repeats everything it hears. Mostly the captain.
+> De papegaai van de koning. Hij zegt alles na wat hij hoort. Vooral de kapitein.
+= Mr Nilsson is up the palm tree with a coconut. He has finally found a country where the fruit grows at monkey height.
+> Meneer Nilsson zit in de palmboom met een kokosnoot. Eindelijk heeft hij een land gevonden waar het fruit op apenhoogte groeit.
+= The horse is wearing a garland of flowers and looks very relaxed. It has never been on holiday before.
+> Witje draagt een bloemenkrans en ziet er heel ontspannen uit. Hij is nog nooit op vakantie geweest.
+= He's going to learn to surf. Tomorrow.
+> Hij gaat leren surfen. Morgen.
+= Turtles, treasure and a thunderstorm. Nobody at school is going to believe us.
+> Schildpadden, een schat en onweer. Niemand op school gaat ons geloven.
+= We'll bring them a coconut.
+> We nemen een kokosnoot voor ze mee.
+= Thunder! Tommy, I don't like it.
+> Onweer! Tommy, ik vind het niet fijn.
+= Count the seconds, Annika. Then we'll know how far away it is.
+> Tel de seconden, Annika. Dan weten we hoe ver weg het is.
+= We're building a sandcastle. It has a moat, a tower, and a room for the horse.
+> We bouwen een zandkasteel. Het heeft een gracht, een toren en een kamer voor Witje.
+= Pippi, can you stop standing on your hands for a minute? You're kicking sand in the moat.
+> Pippi, kun je even ophouden met op je handen staan? Je schopt zand in de gracht.
+= Goodbye, little turtles! Write to us!
+> Dag, kleine schildpadjes! Schrijf ons maar!
+= Eighteen kilos! Exactly the right amount. Dad knows me so well.
+> Achttien kilo! Precies genoeg. Papa kent me zo goed.
+= On this island everybody walks on their hands on Tuesdays. Or they should.
+> Op dit eiland loopt iedereen op dinsdag op zijn handen. Of dat zou moeten.
+= The sundial
+> De zonnewijzer
+= A stick, a stone, and the sun
+> Een stokje, een steen en de zon
+= It is shortest
+> Hij is het kortst
+= It is longest
+> Hij is het langst
+= It disappears completely
+> Hij verdwijnt helemaal
+= It points at the sun
+> Hij wijst naar de zon
+= morning ← → afternoon
+> ochtend ← → middag
+= Mr Nilsson borrowed the shadow-stick, so the sundial has no shadow. Before you put the stick back: the sun is up there.
+> Meneer Nilsson heeft het schaduwstokje geleend, dus de zonnewijzer heeft geen schaduw. Voordat je het stokje terugzet: de zon staat daar.
+= Which hour mark will the stick's shadow point to?
+> Naar welk uur wijst de schaduw van het stokje?
+= Click it.
+> Klik erop.
+= And at 12 o'clock, when the sun is at its highest in the sky, what happens to the shadow?
+> En om 12 uur, als de zon het hoogst aan de hemel staat, wat gebeurt er dan met de schaduw?
+= You put the stick back, and its shadow falls on the 9. A shadow always points away from the sun. It's 9 o'clock in the morning!
+> Je zet het stokje terug, en de schaduw valt op de 9. Een schaduw wijst altijd van de zon af. Het is 9 uur 's ochtends!
+= That mark is on the same side as the sun! A shadow never points towards the sun: it points away from it.
+> Dat streepje zit aan dezelfde kant als de zon! Een schaduw wijst nooit naar de zon toe, maar ervan af.
+= Close, but the shadow points exactly the opposite way from the sun. Draw a line from the sun, through the stick, and keep going.
+> Bijna, maar de schaduw wijst precies de andere kant op dan de zon. Trek een lijn van de zon, door het stokje, en ga zo door.
+= Shortest! When the sun is high, the shadow is short; in the morning and evening, when the sun is low, shadows are long. So: 9 o'clock now, and a short shadow at lunchtime.
+> Het kortst! Als de zon hoog staat, is de schaduw kort; 's ochtends en 's avonds, als de zon laag staat, zijn schaduwen lang. Dus: nu is het 9 uur, en tussen de middag is de schaduw kort.
+= Nine o'clock! On this island that's breakfast time, so I've had three breakfasts already.
+> Negen uur! Op dit eiland is dat ontbijttijd, dus ik heb al drie keer ontbeten.
+= Now the tide post. When will the water go down?
+> Nu de getijdenpaal. Wanneer zakt het water?
+= Longest is when the sun is low, in the morning and evening. At noon it is as high as it gets.
+> Het langst is hij als de zon laag staat, 's ochtends en 's avonds. Om 12 uur staat de zon zo hoog als ze kan.
+= Only if the sun is exactly overhead, and even then the stick has a tiny shadow under it. Not quite.
+> Alleen als de zon precies recht boven je staat, en zelfs dan heeft het stokje nog een piepklein schaduwtje. Niet helemaal.
+= A shadow never points at the sun. Never ever. Not even on a South Sea island.
+> Een schaduw wijst nooit naar de zon. Nooit niet. Zelfs niet op een eiland in de Stille Zuidzee.
+= The tide post
+> De getijdenpaal
+= High tide now: the water is at the top stripe
+> Nu is het vloed: het water staat bij de bovenste streep
+= The captain painted a sign on the post: "The sea goes OUT for about 6 hours, then comes back IN for about 6 hours. And then it does it all again."
+> De kapitein heeft een bordje op de paal geschilderd: "De zee gaat ongeveer 6 uur WEG, en komt dan ongeveer 6 uur TERUG. En dan begint het opnieuw."
+= It's 9 o'clock in the morning, and the water is as high as it goes.
+> Het is 9 uur 's ochtends, en het water staat zo hoog als het kan.
+= When will it be at its lowest, so you can walk to Turtle Islet?
+> Wanneer staat het het laagst, zodat je naar het Schildpadeilandje kunt lopen?
+= 12 o'clock
+> 12 uur
+= 3 o'clock
+> 3 uur
+= 6 o'clock
+> 6 uur
+= 9 o'clock tonight
+> 9 uur vanavond
+= That's only 3 hours: the water will be halfway down the post. Not low enough.
+> Dat is maar 3 uur: dan staat het water halverwege de paal. Niet laag genoeg.
+= 6 o'clock is 9 hours later. By then the sea is already coming back in.
+> 6 uur is 9 uur later. Dan komt de zee alweer terug.
+= 9 o'clock tonight is 12 hours later: 6 hours out, 6 hours back in. High tide again!
+> 9 uur vanavond is 12 uur later: 6 uur weg, 6 uur terug. Weer vloed!
+= But what makes the sea go in and out, twice a day?
+> Maar waardoor gaat de zee twee keer per dag weg en terug?
+= The wind blows it
+> De wind blaast het
+= The Moon pulls on it
+> De maan trekt eraan
+= The fish drink it and spit it out
+> De vissen drinken het op en spugen het weer uit
+= The wind makes waves, but it can't move a whole ocean in and out twice a day, every day, even when it's calm.
+> De wind maakt golven, maar hij kan niet een hele oceaan twee keer per dag heen en weer schuiven, elke dag, zelfs als het windstil is.
+= Pippi likes that idea a lot. But no: there aren't THAT many thirsty fish.
+> Pippi vindt dat een geweldig idee. Maar nee: ZOVEEL dorstige vissen zijn er niet.
+= 3 o'clock! 9 o'clock plus 6 hours: 10, 11, 12, 1, 2, 3.
+> 3 uur! 9 uur plus 6 uur: 10, 11, 12, 1, 2, 3.
+= The Moon! Its pull lifts the sea into a big bulge, and the Earth turns underneath it. That makes two high tides and two low tides every day.
+> De maan! Die trekt de zee omhoog tot een grote bult, en de aarde draait eronder door. Zo krijg je elke dag twee keer vloed en twee keer eb.
+= Six hours is a long time. Everybody has a swim, then a picnic, then a nap in the shade.
+> Zes uur is lang. Iedereen gaat zwemmen, dan picknicken, en dan een dutje doen in de schaduw.
+= At 3 o'clock, the water has slipped all the way down the tide post. A sandy path has come up out of the lagoon, all the way to Turtle Islet, with rock pools full of starfish along the way.
+> Om 3 uur is het water helemaal langs de getijdenpaal gezakt. Er is een zandpad uit de lagune opgedoken, helemaal tot het Schildpadeilandje, met poeltjes vol zeesterren onderweg.
+= Low tide! Treasure time!
+> Eb! Tijd voor de schat!
+= The captain's map
+> De kaart van de kapitein
+= "From the turtle rock: 12 of MY paces towards the palm. Dig at the X."
+> "Vanaf de schildpadrots: 12 van MIJN passen richting de palm. Graaf bij de X."
+= The captain is far too comfortable in his hammock to walk to the islet himself. His paces are exactly 1 metre long. Who walks, and how many paces?
+> De kapitein ligt veel te lekker in zijn hangmat om zelf naar het eilandje te lopen. Zijn passen zijn precies 1 meter lang. Wie loopt er, en hoeveel passen?
+= {who}: {cm} cm a pace
+> {who}: {cm} cm per pas
+= Paces:
+> Passen:
+= Dig here!
+> Hier graven!
+= {n} paces of {cm} cm is {m} metres: exactly 12 of the captain's paces! Everybody's pace is a different length. That's why people agreed on the metre: a metre is the same for everybody.
+> {n} passen van {cm} cm is {m} meter: precies 12 passen van de kapitein! Iedereen heeft een andere paslengte. Daarom hebben mensen de meter afgesproken: een meter is voor iedereen even lang.
+= The horse clip-clops out along the sandbar, six big steps, and stops. Right under its hoof: a red X, drawn in the sand.
+> Witje klost over de zandbank, zes grote stappen, en blijft staan. Precies onder zijn hoef: een rode X in het zand.
+= {who} paces out across Turtle Islet, counting out loud. And right at the end: a red X, drawn in the sand!
+> {who} loopt over het Schildpadeilandje en telt hardop. En precies aan het eind: een rode X in het zand!
+= Treasure! Treasure!
+> Schat! Schat!
+= 12 paces, just like the map says! But {who}'s paces are only {cm} cm, and the captain's are a whole metre. That's only {m} metres.
+> 12 passen, zoals op de kaart staat! Maar de passen van {who} zijn maar {cm} cm, en die van de kapitein een hele meter. Dat is maar {m} meter.
+= {who} took {n} paces of {cm} cm: that's {m} metres. The X is 12 of the captain's 1-metre paces from the rock: 12 metres.
+> {who} zette {n} passen van {cm} cm: dat is {m} meter. De X ligt 12 passen van 1 meter van de rots: 12 meter.
+= The Sun
+> De zon
+= A crab
+> Een krab
+= A coconut
+> Een kokosnoot
+= An octopus
+> Een octopus
+= Seaweed
+> Zeewier
+= The treasure chest
+> De schatkist
+= A lock with four picture slots
+> Een slot met vier plaatjesvakjes
+= The captain has carved a riddle on the lid:
+> De kapitein heeft een raadsel in het deksel gekerfd:
+= "From the one who feeds everybody, to the one who eats the most."
+> "Van degene die iedereen voedt, tot degene die het meest eet."
+= Put four of the pictures in the slots, in the right order.
+> Zet vier van de plaatjes in de vakjes, in de goede volgorde.
+= Take them out
+> Haal ze eruit
+= Open the lock
+> Maak het slot open
+= The lock has four slots. Fill them all.
+> Het slot heeft vier vakjes. Vul ze allemaal.
+= Click! The Sun feeds the seaweed (plants make their food from sunlight), the crab eats the seaweed, and the octopus eats the crab. Every food chain starts with the Sun.
+> Klik! De zon voedt het zeewier (planten maken hun voedsel van zonlicht), de krab eet het zeewier, en de octopus eet de krab. Elke voedselketen begint bij de zon.
+= The lid creaks open. Inside: a mountain of sweets, a little golden crown, and a letter.
+> Het deksel gaat krakend open. Binnenin: een berg snoep, een klein gouden kroontje en een brief.
+= Sweets! It says on the bag: 18 KILOS. Dad, you remembered!
+> Snoep! Op de zak staat: 18 KILO. Papa, je wist het nog!
+= The letter says: "For Pippilotta, princess of the island, and her friends. Share them with the horse."
+> In de brief staat: "Voor Pippilotta, prinses van het eiland, en haar vrienden. Deel ze met Witje."
+= Then a cold wind blows across the lagoon. The palm trees bend. The sky over the sea has gone very dark.
+> Dan waait er een koude wind over de lagune. De palmbomen buigen. De lucht boven zee is heel donker geworden.
+= A tropical shower! Quick, everybody: how far away is it? Watch for the lightning!
+> Een tropische bui! Snel, allemaal: hoe ver weg is hij? Let op de bliksem!
+= Who feeds everybody? Every food chain starts with the Sun: plants use its light to make their food.
+> Wie voedt iedereen? Elke voedselketen begint bij de zon: planten gebruiken haar licht om hun voedsel te maken.
+= A coconut? Nobody in this chain eats coconuts. Only Mr Nilsson, and he isn't in the sea.
+> Een kokosnoot? Niemand in deze keten eet kokosnoten. Alleen meneer Nilsson, en die zit niet in de zee.
+= Who eats whom? The crab nibbles the seaweed, and the octopus catches the crab.
+> Wie eet wie? De krab knabbelt aan het zeewier, en de octopus vangt de krab.
+= The tropical shower
+> De tropische bui
+= Count the seconds between the flash and the bang
+> Tel de seconden tussen de flits en de knal
+= You see lightning straight away: light is very fast. The sound of the thunder is much slower: it takes about 3 seconds to travel 1 kilometre.
+> Bliksem zie je meteen: licht is heel snel. Het geluid van de donder is veel langzamer: het doet ongeveer 3 seconden over 1 kilometer.
+= Watch for lightning
+> Let op de bliksem
+= How far away is the storm?
+> Hoe ver weg is het onweer?
+= Only 3 seconds this time: the storm is 1 km away. Is it coming closer, or going away?
+> Deze keer maar 3 seconden: het onweer is 1 km weg. Komt het dichterbij, of gaat het weg?
+= Closer: everybody into the hut!
+> Dichterbij: iedereen de hut in!
+= Going away: keep building the sandcastle
+> Het gaat weg: we bouwen door aan het zandkasteel
+= SPLOOSH. The rain comes down like a waterfall, and you are wet right through. 9 seconds, then 3 seconds: the storm is getting closer!
+> PLONS. De regen komt naar beneden als een waterval, en je bent doornat. 9 seconden, dan 3 seconden: het onweer komt dichterbij!
+= 1 km would be 3 seconds. You counted 9.
+> 1 km zou 3 seconden zijn. Jij telde er 9.
+= That's 9 × 3. But it's the other way round: every 3 seconds is 1 km, so how many threes are there in 9?
+> Dat is 9 × 3. Maar het is andersom: elke 3 seconden is 1 km, dus hoe vaak past 3 in 9?
+= 9 km would take 27 seconds to hear. Sound is slow, but not THAT slow.
+> 9 km zou 27 seconden duren. Geluid is langzaam, maar niet ZO langzaam.
+= 3 km! 9 seconds ÷ 3 = 3 kilometres. Watch again…
+> 3 km! 9 seconden ÷ 3 = 3 kilometer. Let weer op…
+= Closer! 9 seconds, then 3 seconds: 3 km, then 1 km. Into the hut, everybody, and the sweets too!
+> Dichterbij! 9 seconden, dan 3 seconden: 3 km, dan 1 km. Iedereen de hut in, en het snoep ook!
+= Everybody squeezes into the king's hut: the captain, Pippi, Tommy, Annika, Mr Nilsson, the parrot, 18 kilos of sweets and, somehow, the horse.
+> Iedereen perst zich in de hut van de koning: de kapitein, Pippi, Tommy, Annika, meneer Nilsson, de papegaai, 18 kilo snoep en, op de een of andere manier, Witje.
+= The rain drums on the roof for exactly twenty minutes. Then it stops, as suddenly as it started.
+> De regen trommelt precies twintig minuten op het dak. Dan houdt het op, net zo plotseling als het begon.
+= When you come out, the sun is going down. The sky is orange and pink, and the first stars are out.
+> Als je naar buiten komt, gaat de zon onder. De lucht is oranje en roze, en de eerste sterren zijn te zien.
+= The turtle nest! Tonight's the night. Somebody light the feast torches!
+> Het schildpaddennest! Vannacht is het zover. Steek iemand de feestfakkels aan!
+= BOOM!
+> BOEM!
+= The torch by the nest
+> De fakkel bij het nest
+= The torch on the dunes
+> De fakkel op de duinen
+= The lantern in the hut window
+> De lantaarn voor het raam van de hut
+= The feast torches behind the hut
+> De feestfakkels achter de hut
+= The turtle nest
+> Het schildpaddennest
+= The baby turtles are hatching!
+> De schildpadjes komen uit!
+= Baby turtles crawl towards the brightest light they can see. On a dark beach, that's the sea, shining under the moon. But tonight there are torches for the feast…
+> Schildpadjes kruipen naar het felste licht dat ze kunnen zien. Op een donker strand is dat de zee, die glanst onder de maan. Maar vanavond branden er fakkels voor het feest…
+= Let them go!
+> Laat ze gaan!
+= the sea, in the moonlight
+> de zee, in het maanlicht
+= {l}: on
+> {l}: aan
+= {l}: off
+> {l}: uit
+= Oh no! The baby turtles crawl the wrong way, towards {l}. Annika scoops them up and puts them back in the nest. They follow the brightest light they can see.
+> O nee! De schildpadjes kruipen de verkeerde kant op, naar {l}. Annika schept ze op en zet ze terug in het nest. Ze volgen het felste licht dat ze kunnen zien.
+= The turtles would be fine, but now the feast is pitch dark and Pippi has sat on the fish. The torches behind the hut can stay on: the hut hides them from the nest.
+> Met de schildpadden gaat het goed, maar nu is het feest pikdonker en is Pippi op de vis gaan zitten. De fakkels achter de hut mogen blijven branden: de hut verbergt ze voor het nest.
+= The beach goes dark, and the sea shines under the moon. Out pop the baby turtles, and off they scurry, straight down the beach to the water!
+> Het strand wordt donker, en de zee glanst onder de maan. Daar komen de schildpadjes tevoorschijn, en weg rennen ze, recht het strand af naar het water!
+= Captain Longstocking's island. White sand, palm trees, a turquoise lagoon, and the Hoppetossa resting at anchor.
+> Het eiland van kapitein Langkous. Wit zand, palmbomen, een turquoise lagune, en de Hoppetossa die voor anker ligt.
+= Dad's island! It's even better than he said. And he said it was the best island in the world.
+> Papa's eiland! Het is nog mooier dan hij zei. En hij zei dat het het beste eiland van de wereld was.
+= Where is your father, Pippi?
+> Waar is je vader, Pippi?
+= A snore comes from a hammock between the palm trees. In it lies the king of the island, fast asleep, with his crown on top of his captain's hat.
+> Uit een hangmat tussen de palmbomen klinkt gesnurk. Daarin ligt de koning van het eiland, diep in slaap, met zijn kroon boven op zijn kapiteinshoed.
+= He looks very comfortable.
+> Hij ligt er wel heel lekker bij.
+= Kings need a lot of sleep. It's hard work, being a king. Let's wake him up!
+> Koningen hebben veel slaap nodig. Koning zijn is hard werken. Kom, we maken hem wakker!
+= The captain is in the hammock by the hut.
+> De kapitein ligt in de hangmat bij de hut.
+= One after another, the little turtles pop out of the sand and scurry down the beach, towards the shining sea. Not one of them goes the wrong way.
+> Het ene na het andere schildpadje komt uit het zand en rent het strand af, naar de glanzende zee. Geen enkele gaat de verkeerde kant op.
+= Twenty-three, twenty-four… twenty-five! All of them!
+> Drieëntwintig, vierentwintig… vijfentwintig! Allemaal!
+= The waves carry them out into the lagoon, where the moon is making a silver path on the water.
+> De golven nemen ze mee de lagune in, waar de maan een zilveren pad op het water maakt.
+= Pippilotta, you'd make a very good queen. But I think you're an even better Pippi.
+> Pippilotta, jij zou een heel goede koningin zijn. Maar ik denk dat je een nog betere Pippi bent.
+= Tomorrow we'll sail home to Villa Villekulla. The horse misses his veranda. But tonight: the feast!
+> Morgen varen we naar huis, naar Villa Kakelbont. Witje mist zijn veranda. Maar vanavond: feest!
+= Pluttification! Squawk!
+> Plutimiceren! Krraa!
+= And behind the hut, by the light of the feast torches, the whole island eats grilled fish, coconut cake and, of course, eighteen kilos of sweets.
+> En achter de hut, bij het licht van de feestfakkels, eet het hele eiland geroosterde vis, kokostaart en natuurlijk achttien kilo snoep.
+= hut
+> hut
+= nest
+> nest
+= feast
+> feest
+= 1 km
+> 1 km

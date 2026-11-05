@@ -1,0 +1,296 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="scene" id="sc-move" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-label="Moving day at Villa Villekulla">
+  <defs>
+    <linearGradient id="mvSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5f9cc4"/><stop offset=".6" stop-color="#b9d6dc"/><stop offset="1" stop-color="#f3e2b8"/></linearGradient>
+    <linearGradient id="mvGrass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9cba62"/><stop offset="1" stop-color="#5a7d3a"/></linearGradient>
+    <linearGradient id="mvRoad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dcc79a"/><stop offset="1" stop-color="#b89a6a"/></linearGradient>
+    <radialGradient id="mvSunG" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff2c0" stop-opacity=".8"/><stop offset="1" stop-color="#fff2c0" stop-opacity="0"/></radialGradient>
+    <radialGradient id="mvVign" cx=".5" cy=".45" r=".78"><stop offset=".6" stop-color="#2a1a0c" stop-opacity="0"/><stop offset="1" stop-color="#2a1a0c" stop-opacity=".45"/></radialGradient>
+    <pattern id="mvPaper" width="40" height="40" patternUnits="userSpaceOnUse"><g fill="#c9a86a" opacity=".45"><circle cx="10" cy="10" r="3"/><circle cx="30" cy="30" r="3"/></g><g fill="#9ab07a" opacity=".4"><circle cx="5" cy="13" r="1.6"/><circle cx="15" cy="13" r="1.6"/><circle cx="25" cy="33" r="1.6"/><circle cx="35" cy="33" r="1.6"/></g></pattern>
+    <g id="mvDaisy"><g fill="#fffaf0"><circle cy="-4" r="2.6"/><circle cx="4" r="2.6"/><circle cy="4" r="2.6"/><circle cx="-4" r="2.6"/><circle cx="3" cy="-3" r="2.2"/><circle cx="-3" cy="3" r="2.2"/><circle cx="3" cy="3" r="2.2"/><circle cx="-3" cy="-3" r="2.2"/></g><circle r="2.4" fill="#f2c94c"/></g>
+    <g id="mvCup"><path d="M0 0 v12" stroke="#4f7a34" stroke-width="1.5"/><circle r="4" fill="#f2c94c"/><circle r="1.4" fill="#c9952a"/></g>
+    <g id="mvPuff"><path d="M0 0 v18" stroke="#4f7a34" stroke-width="1.5"/><circle r="7" fill="#fffaf0" opacity=".85"/><circle r="1.6" fill="#c9b48a"/></g>
+    <g id="mvTuft"><path d="M0 0 q-2 -10 -6 -14 M0 0 q0 -12 2 -18 M0 0 q3 -8 8 -12" stroke="#4f7a34" stroke-width="2" fill="none" stroke-linecap="round"/></g>
+    <linearGradient id="mvBeamG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff3b0" stop-opacity=".85"/><stop offset="1" stop-color="#fff3b0" stop-opacity="0"/></linearGradient>
+    <clipPath id="mvHall"><rect x="740" y="280" width="790" height="410"/></clipPath>
+    <!-- Pippi, standing: green dress, plaits sticking out, odd stockings, big shoes -->
+    <g id="mvPippi">
+      <path d="M-10 60 v34" stroke="#6b4423" stroke-width="8" stroke-linecap="round"/><path d="M10 60 v34" stroke="#1a1a1a" stroke-width="8" stroke-linecap="round"/>
+      <ellipse cx="-14" cy="98" rx="12" ry="6" fill="#1a1a1a"/><ellipse cx="14" cy="98" rx="12" ry="6" fill="#1a1a1a"/>
+      <path d="M-24 64 Q-22 10 0 4 Q22 10 24 64 Z" fill="#3f8a4a"/><path d="M-16 30 h32" stroke="#f2c94c" stroke-width="3"/>
+      <circle cx="0" cy="-12" r="16" fill="#f3c9a4"/>
+      <path d="M-16 -14 q2 -18 16 -18 q14 0 16 18 q-8 -8 -16 -8 q-8 0 -16 8z" fill="#e8571f"/>
+      <g class="mv-plait"><path d="M-14 -12 L-40 -24" stroke="#e8571f" stroke-width="7" stroke-linecap="round"/></g>
+      <g class="mv-plait b"><path d="M14 -12 L40 -24" stroke="#e8571f" stroke-width="7" stroke-linecap="round"/></g>
+      <g fill="#1a120c"><circle cx="-5" cy="-11" r="2"/><circle cx="5" cy="-11" r="2"/></g>
+      <g fill="#d9824a" opacity=".7"><circle cx="-9" cy="-5" r="1.2"/><circle cx="-6" cy="-3" r="1.2"/><circle cx="8" cy="-4" r="1.2"/></g>
+      <path d="M-5 -3 q5 5 10 0" stroke="#9a3a2a" stroke-width="1.8" fill="none"/>
+      <path d="M-24 20 L-38 44 M24 20 L38 44" stroke="#f3c9a4" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <!-- Mr Nilsson, sitting -->
+    <g id="mvNilsson">
+      <path d="M12 20 q16 4 12 -14" stroke="#6b4423" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="-10" y="4" width="20" height="20" rx="6" fill="#2f5f9a"/>
+      <circle cx="0" cy="-6" r="11" fill="#6b4423"/><ellipse cx="2" cy="-3" rx="7" ry="5.5" fill="#e6c49a"/>
+      <g fill="#1a120c"><circle cx="-1" cy="-5" r="1.4"/><circle cx="5" cy="-5" r="1.4"/></g>
+      <ellipse cx="0" cy="-16" rx="14" ry="3.5" fill="#e9d48a"/><path d="M-7 -16 q7 -10 14 0z" fill="#e9d48a"/>
+    </g>
+  </defs>
+
+  <!-- a summer morning: sky, hills, the little town and its church -->
+  <rect width="1600" height="900" fill="url(#mvSky)"/>
+  <circle cx="1460" cy="110" r="130" fill="url(#mvSunG)"/>
+  <g class="mv-rays" stroke="#ffe9a0" stroke-width="4" stroke-linecap="round" opacity=".7"><path d="M1460 50 v-20 M1460 170 v20 M1400 110 h-20 M1520 110 h20 M1418 68 l-14 -14 M1502 152 l14 14 M1502 68 l14 -14 M1418 152 l-14 14"/></g>
+  <circle cx="1460" cy="110" r="42" fill="#ffe08a"/><circle cx="1460" cy="110" r="34" fill="#fff0b8"/>
+  <g class="mv-cloud a" fill="#fffaf0" opacity=".92"><ellipse cx="300" cy="100" rx="80" ry="22"/><ellipse cx="274" cy="86" rx="40" ry="24"/><ellipse cx="326" cy="84" rx="44" ry="28"/><ellipse cx="300" cy="112" rx="74" ry="10" fill="#dfe6ea"/></g>
+  <g class="mv-cloud b" fill="#fffaf0" opacity=".85"><ellipse cx="1000" cy="150" rx="64" ry="18"/><ellipse cx="980" cy="138" rx="32" ry="20"/><ellipse cx="1020" cy="136" rx="26" ry="16"/></g>
+  <g class="mv-cloud c" fill="#fffaf0" opacity=".7"><ellipse cx="640" cy="60" rx="50" ry="12"/><ellipse cx="626" cy="52" rx="24" ry="14"/></g>
+  <g class="mv-cloud d" fill="#fffaf0" opacity=".75"><ellipse cx="1240" cy="230" rx="56" ry="14"/><ellipse cx="1256" cy="220" rx="28" ry="16"/></g>
+  <!-- birds flying past (they start off-screen, so they only exist while moving) -->
+  <g class="mv-birds" fill="none" stroke="#3a3440" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path class="mv-wing" d="M-140 170 q9 -9 18 0 q9 -9 18 0"/><path class="mv-wing b" d="M-100 196 q7 -7 14 0 q7 -7 14 0"/><path class="mv-wing" d="M-176 206 q7 -7 14 0 q7 -7 14 0"/>
+  </g>
+  <g class="mv-birds b" fill="none" stroke="#3a3440" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path class="mv-wing b" d="M-120 250 q6 -6 12 0 q6 -6 12 0"/><path class="mv-wing" d="M-150 266 q6 -6 12 0 q6 -6 12 0"/>
+  </g>
+  <path d="M0 420 Q240 360 520 404 Q800 350 1100 392 Q1380 360 1600 380 V520 H0 Z" fill="#b7c99a"/>
+  <path d="M0 440 Q300 380 600 420 Q900 370 1200 410 Q1400 386 1600 400 V520 H0 Z" fill="#a9c47e"/>
+  <path d="M0 456 Q200 436 420 452 M1540 424 Q1570 418 1600 420" stroke="#bcd294" stroke-width="4" fill="none"/>
+  <g fill="#6f9450"><circle cx="410" cy="420" r="14"/><circle cx="528" cy="426" r="11"/><circle cx="628" cy="426" r="11"/><circle cx="694" cy="420" r="14"/><circle cx="1584" cy="396" r="14"/></g>
+  <g fill="#86ab62"><circle cx="405" cy="415" r="7"/><circle cx="689" cy="415" r="7"/><circle cx="1579" cy="391" r="7"/></g>
+  <g fill="#b0412a"><rect x="430" y="404" width="40" height="34"/><rect x="480" y="396" width="36" height="42"/><rect x="640" y="400" width="40" height="38"/></g>
+  <g fill="#fff3c0" stroke="#fffaf0" stroke-width="1.5"><rect x="436" y="412" width="9" height="9"/><rect x="455" y="412" width="9" height="9"/><rect x="486" y="404" width="9" height="9"/><rect x="501" y="404" width="9" height="9"/><rect x="646" y="408" width="9" height="9"/><rect x="665" y="408" width="9" height="9"/></g>
+  <g fill="#6b3a1a"><rect x="446" y="426" width="8" height="12"/><rect x="494" y="424" width="8" height="14"/><rect x="656" y="424" width="8" height="14"/></g>
+  <path d="M424 406 l26 -18 l26 18z M476 398 l22 -16 l22 16z M636 402 l24 -18 l24 18z" fill="#5a3a2a"/>
+  <g fill="#8a3a1a"><rect x="456" y="388" width="6" height="10"/><rect x="504" y="382" width="6" height="10"/><rect x="666" y="386" width="6" height="10"/></g>
+  <g class="mv-smoke t" fill="#eef0f2" opacity=".8"><circle cx="459" cy="380" r="4"/><circle class="b" cx="462" cy="370" r="5"/><circle class="c" cx="466" cy="358" r="6"/></g>
+  <rect x="560" y="300" width="44" height="140" fill="#efe8dc"/>
+  <g fill="#5a5f66"><path d="M576 386 v-10 a6 6 0 0 1 12 0 v10z"/><path d="M572 440 v-18 a10 10 0 0 1 20 0 v18z"/></g>
+  <path d="M560 376 h44" stroke="#d4cbb8" stroke-width="3"/>
+  <path class="mv-pennant" d="M582 222 l18 4 l-18 4z" fill="#2f6fb0"/><path d="M554 302 L582 236 L610 302 Z" fill="#6a7f5a"/><path d="M582 236 v-16 M576 226 h12" stroke="#c9952a" stroke-width="3"/>
+  <circle cx="582" cy="340" r="15" fill="#fffaf0" stroke="#5a5f66" stroke-width="2.5"/><path d="M582 340 h11 M582 340 l-7 -5.5" stroke="#2b2118" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Tommy and Annika's house next door, behind its hedge -->
+  <g><rect x="166" y="276" width="20" height="44" fill="#a33a22"/><rect x="162" y="272" width="28" height="8" fill="#6b2a14"/>
+    <g class="mv-smoke" fill="#eef0f2" opacity=".85"><circle cx="176" cy="262" r="7"/><circle class="b" cx="182" cy="246" r="9"/><circle class="c" cx="190" cy="226" r="11"/></g>
+    <rect x="40" y="330" width="170" height="130" fill="#efe6d2" stroke="#c9bca0" stroke-width="3"/>
+    <path d="M42 348 H208 M42 366 H208 M42 384 H208 M42 402 H208 M42 420 H208 M42 438 H208" stroke="#ddd2b8" stroke-width="1.5"/>
+    <path d="M28 334 L125 268 L222 334 Z" fill="#3f6a8a"/><path d="M68 312 H182 M98 292 H152" stroke="#2f5270" stroke-width="2" stroke-dasharray="16 3"/>
+    <path d="M28 334 L125 268 L222 334" stroke="#fffaf0" stroke-width="4" fill="none" stroke-linejoin="round"/>
+    <rect x="60" y="360" width="40" height="40" fill="#a9cfe0" stroke="#fffaf0" stroke-width="4"/><rect x="150" y="360" width="40" height="40" fill="#a9cfe0" stroke="#fffaf0" stroke-width="4"/>
+    <g fill="#e89aa8" opacity=".9"><path d="M62 362 h14 l-14 24z M98 362 h-14 l14 24z M152 362 h14 l-14 24z M188 362 h-14 l14 24z"/></g>
+    <path d="M80 360 V400 M60 380 H100 M170 360 V400 M150 380 H190" stroke="#fffaf0" stroke-width="2.5"/>
+    <g fill="#7a4a22"><rect x="56" y="402" width="48" height="8"/><rect x="146" y="402" width="48" height="8"/></g>
+    <g fill="#c4302b"><circle cx="64" cy="400" r="4"/><circle cx="76" cy="398" r="4"/><circle cx="88" cy="400" r="4"/><circle cx="98" cy="398" r="3.5"/><circle cx="154" cy="400" r="4"/><circle cx="166" cy="398" r="4"/><circle cx="178" cy="400" r="4"/><circle cx="188" cy="398" r="3.5"/></g>
+    <rect x="108" y="404" width="34" height="56" fill="#fffaf0"/><rect x="113" y="409" width="24" height="51" fill="#4a6a8a"/><circle cx="132" cy="436" r="2.4" fill="#f2c94c"/>
+    <circle cx="125" cy="312" r="9" fill="#a9cfe0" stroke="#fffaf0" stroke-width="3"/></g>
+
+  <!-- the overgrown garden of Villa Villekulla -->
+  <rect y="470" width="1600" height="430" fill="url(#mvGrass)"/>
+  <!-- the old oak, behind the back hedge -->
+  <g><path d="M332 520 Q338 420 346 330 L380 330 Q386 420 392 520 Z" fill="#5a3a1e"/>
+    <path d="M322 520 q12 -8 18 -24 M402 520 q-12 -8 -16 -24" stroke="#5a3a1e" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M348 500 q4 -40 0 -80 M372 490 q-4 -30 2 -70 M360 470 q2 -20 -2 -40" stroke="#3e2610" stroke-width="2" fill="none"/>
+    <path d="M352 360 Q320 330 290 310 M372 350 Q410 320 440 300 M362 340 Q366 300 378 260" stroke="#5a3a1e" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <g class="mv-sway">
+      <g fill="#3d6a2c"><circle cx="306" cy="310" r="72"/><circle cx="386" cy="258" r="82"/><circle cx="454" cy="318" r="64"/><circle cx="364" cy="340" r="60"/></g>
+      <g fill="#4f8040"><circle cx="300" cy="300" r="62"/><circle cx="380" cy="250" r="72"/><circle cx="448" cy="308" r="54"/><circle cx="356" cy="326" r="50"/></g>
+      <g fill="#6a9a4e"><circle cx="282" cy="278" r="28"/><circle cx="360" cy="222" r="34"/><circle cx="432" cy="286" r="24"/><circle cx="336" cy="300" r="18"/></g>
+      <g fill="#8ab464" opacity=".8"><circle cx="272" cy="268" r="10"/><circle cx="350" cy="208" r="12"/><circle cx="424" cy="276" r="9"/></g>
+    </g>
+    <ellipse cx="362" cy="420" rx="12" ry="18" fill="#2a1a0c"/><path d="M350 420 a12 18 0 0 1 24 0" stroke="#3e2610" stroke-width="3" fill="none"/>
+    <!-- a squirrel, peeping out of the hollow -->
+    <g class="mv-peep"><circle cx="362" cy="414" r="7" fill="#b0602a"/><path d="M356 408 l-2 -6 l5 4z M368 408 l2 -6 l-5 4z" fill="#b0602a"/><g fill="#1a120c"><circle cx="359" cy="413" r="1.3"/><circle cx="365" cy="413" r="1.3"/></g></g></g>
+  <!-- the back hedge, with Tommy and Annika peeking over it -->
+  <g id="mv-kids">
+    <g transform="translate(-1000 120)">
+      <circle cx="1287" cy="342" r="11" fill="#f3c9a4"/><path d="M1276 340 q2 -14 11 -14 q11 0 12 14 q-6 -6 -12 -6 q-6 0 -11 6z" fill="#7a4a22"/>
+      <circle cx="1329" cy="342" r="10" fill="#f3c9a4"/><path d="M1318 344 q-2 -16 11 -16 q13 0 11 16 q-4 -8 -11 -8 q-7 0 -11 8z" fill="#e9c46a"/><path d="M1329 330 l-8 -6 v10z M1329 330 l8 -6 v10z" fill="#c4302b"/>
+      <g fill="#1a120c"><circle cx="1283" cy="343" r="1.5"/><circle cx="1291" cy="343" r="1.5"/><circle cx="1325" cy="343" r="1.5"/><circle cx="1333" cy="343" r="1.5"/></g>
+    </g>
+  </g>
+  <path d="M0 520 Q20 470 60 480 Q100 462 140 482 Q190 466 240 480 Q290 464 340 482 Q400 466 460 482 Q520 468 580 484 Q640 470 700 486 V530 H0 Z" fill="#3d6a2c"/>
+  <!-- the hedge's leaves, and wild roses -->
+  <g fill="#2f5a24"><ellipse cx="40" cy="504" rx="18" ry="9"/><ellipse cx="150" cy="500" rx="20" ry="9"/><ellipse cx="250" cy="506" rx="16" ry="8"/><ellipse cx="400" cy="502" rx="20" ry="9"/><ellipse cx="520" cy="506" rx="18" ry="8"/><ellipse cx="650" cy="508" rx="18" ry="8"/></g>
+  <g fill="#4f8040"><ellipse cx="90" cy="490" rx="14" ry="7"/><ellipse cx="210" cy="488" rx="14" ry="7"/><ellipse cx="460" cy="490" rx="14" ry="7"/><ellipse cx="590" cy="494" rx="14" ry="7"/></g>
+  <g fill="#e89aa8"><circle cx="28" cy="492" r="5"/><circle cx="118" cy="506" r="5"/><circle cx="196" cy="496" r="5"/><circle cx="430" cy="508" r="5"/><circle cx="556" cy="492" r="5"/><circle cx="676" cy="500" r="5"/></g>
+  <g fill="#f2c94c"><circle cx="28" cy="492" r="1.6"/><circle cx="118" cy="506" r="1.6"/><circle cx="196" cy="496" r="1.6"/><circle cx="430" cy="508" r="1.6"/><circle cx="556" cy="492" r="1.6"/><circle cx="676" cy="500" r="1.6"/></g>
+  <!-- tall grass and nettles everywhere: nobody has looked after this garden for years -->
+  <g class="mv-grass" stroke="#4f7a34" stroke-width="3" stroke-linecap="round" fill="none"><path d="M40 600 q4 -26 0 -40 M52 600 q8 -20 14 -32 M160 560 q-4 -24 4 -36 M300 620 q4 -24 -2 -38 M312 620 q10 -18 16 -26 M420 560 q-6 -22 2 -34 M600 610 q4 -24 -2 -36 M640 560 q6 -20 2 -30 M90 540 q4 -20 -2 -30 M520 540 q8 -18 14 -24"/></g>
+  <g><use href="#mvDaisy" x="62" y="566"/><use href="#mvDaisy" x="128" y="604"/><use href="#mvDaisy" x="186" y="546"/><use href="#mvDaisy" x="336" y="612"/><use href="#mvDaisy" x="444" y="628"/><use href="#mvDaisy" x="30" y="624"/><use href="#mvDaisy" x="760" y="716"/><use href="#mvDaisy" x="1010" y="724"/><use href="#mvDaisy" x="1290" y="712"/><use href="#mvDaisy" x="1580" y="722"/>
+    <use href="#mvCup" x="100" y="580"/><use href="#mvCup" x="170" y="620"/><use href="#mvCup" x="380" y="586"/><use href="#mvCup" x="630" y="590"/><use href="#mvCup" x="880" y="712"/><use href="#mvCup" x="1150" y="718"/><use href="#mvCup" x="1480" y="710"/>
+    <use href="#mvPuff" x="150" y="560"/><use href="#mvPuff" x="410" y="606"/><use href="#mvPuff" x="960" y="706"/><use href="#mvPuff" x="1420" y="704"/>
+    <use href="#mvTuft" x="800" y="734"/><use href="#mvTuft" x="1080" y="732"/><use href="#mvTuft" x="1350" y="730"/><use href="#mvTuft" x="1540" y="734"/><use href="#mvTuft" x="20" y="736"/><use href="#mvTuft" x="270" y="738"/><use href="#mvTuft" x="560" y="736"/></g>
+  <!-- butterflies and a bumblebee over the flowers -->
+  <g transform="translate(120 560)"><g class="mv-wander"><g class="mv-bfly"><g fill="#f29a3a"><ellipse cx="-6" cy="-2" rx="7" ry="5"/><ellipse cx="6" cy="-2" rx="7" ry="5"/></g><g fill="#f5c45a"><ellipse cx="-5" cy="5" rx="4" ry="3.5"/><ellipse cx="5" cy="5" rx="4" ry="3.5"/></g><rect x="-1" y="-6" width="2" height="14" rx="1" fill="#2b2118"/></g></g></g>
+  <g transform="translate(1000 690)"><g class="mv-wander b"><g class="mv-bfly b"><g fill="#f6f2e6"><ellipse cx="-5" cy="-2" rx="6" ry="4.5"/><ellipse cx="5" cy="-2" rx="6" ry="4.5"/><ellipse cx="-4" cy="4" rx="3.5" ry="3"/><ellipse cx="4" cy="4" rx="3.5" ry="3"/></g><g fill="#2b2118"><circle cx="-6" cy="-2" r="1.3"/><circle cx="6" cy="-2" r="1.3"/></g><rect x="-1" y="-5" width="2" height="12" rx="1" fill="#2b2118"/></g></g></g>
+  <g transform="translate(400 580)"><g class="mv-buzz"><ellipse cx="-2" cy="-6" rx="4" ry="3" fill="#e6f0f4" opacity=".8"/><ellipse cx="3" cy="-6" rx="4" ry="3" fill="#e6f0f4" opacity=".8"/><ellipse rx="6" ry="4.5" fill="#f2c94c"/><path d="M-2 -4 v8 M2 -4 v8" stroke="#2b2118" stroke-width="2"/></g></g>
+
+  <!-- the old hand pump and its trough -->
+  <g id="mv-pump">
+    <rect x="466" y="520" width="24" height="96" rx="4" fill="#4a5058"/><rect x="460" y="514" width="36" height="12" rx="3" fill="#3a3f46"/>
+    <path d="M490 538 q26 2 30 18" stroke="#4a5058" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M466 530 L420 500" stroke="#3a3f46" stroke-width="8" stroke-linecap="round"/>
+    <rect x="500" y="592" width="96" height="30" rx="4" fill="#8a5a2b" stroke="#5a3a1e" stroke-width="3"/>
+    <rect id="mv-water" x="506" y="596" width="84" height="10" fill="#6fb8e0"/>
+    <path id="mv-gush" d="M520 560 q2 16 0 34" stroke="#6fb8e0" stroke-width="6" stroke-linecap="round" fill="none"/>
+  </g>
+  <!-- a jam jar on the trough: a little green beetle has crawled into it -->
+  <g id="mv-spunk"><rect x="560" y="566" width="22" height="26" rx="4" fill="#cfe6e0" opacity=".75" stroke="#e9f4f0" stroke-width="1.5"/><rect x="558" y="562" width="26" height="6" rx="2" fill="#e8571f"/><ellipse class="mv-crawl" cx="571" cy="582" rx="5" ry="3.5" fill="#2f8a3a"/></g>
+
+  <!-- Villa Villekulla, opened up like a doll's house: dusty, dark and empty -->
+  <g id="mv-house">
+    <path d="M690 274 L1125 108 L1570 274 Z" fill="#b5452a"/>
+    <path d="M753 250 H1506 M818 225 H1439 M884 200 H1372 M949 175 H1305 M1015 150 H1238 M1080 125 H1171" stroke="#8a2e1a" stroke-width="2.5" stroke-dasharray="22 3" opacity=".75"/>
+    <path d="M690 274 L1125 108 L1570 274" stroke="#fffaf0" stroke-width="8" fill="none" stroke-linejoin="round"/>
+    <g fill="#5a3a1e" opacity=".7"><rect x="840" y="200" width="30" height="16" transform="rotate(-20 855 208)"/><rect x="1300" y="210" width="34" height="14" transform="rotate(18 1317 217)"/></g>
+    <circle cx="1125" cy="196" r="24" fill="#3a4a5a" stroke="#2f8fbf" stroke-width="6"/><path d="M1125 172 V220 M1101 196 H1149" stroke="#2f8fbf" stroke-width="3"/><path d="M1108 186 q8 -10 18 -8" stroke="#f3efe3" stroke-width="1.2" fill="none" opacity=".7"/>
+    <rect x="1350" y="130" width="40" height="100" fill="#a33a22"/><path d="M1350 150 H1390 M1350 170 H1390 M1350 190 H1390 M1350 210 H1390 M1370 130 V150 M1360 150 V170 M1380 150 V170 M1370 170 V190 M1360 190 V210 M1380 190 V210" stroke="#7a2a16" stroke-width="1.5"/><rect x="1344" y="124" width="52" height="10" fill="#6b2a14"/>
+    <!-- a blackbird's nest on the cold chimney: nobody has lit a fire here for years -->
+    <path d="M1352 124 q18 10 36 0 l-2 -8 q-16 6 -32 0z" fill="#8a6a3a"/><path d="M1356 118 q14 4 28 0" stroke="#6b4a22" stroke-width="1.5" fill="none"/>
+    <g class="mv-peck"><path d="M1372 116 q-2 -12 8 -14 q8 0 8 6 l8 2 l-8 3 q-4 6 -16 3z" fill="#2b2b2b"/><circle cx="1384" cy="106" r="1.4" fill="#fff"/></g>
+    <rect x="720" y="270" width="830" height="430" fill="#f2c94c"/><rect x="1540" y="270" width="10" height="430" fill="#fffaf0"/>
+    <!-- inside: faded wallpaper, bare boards, cobwebs -->
+    <rect x="740" y="280" width="790" height="410" fill="#e6d4a4"/>
+    <g stroke="#d4bf88" stroke-width="10"><path d="M780 280 V640 M860 280 V640 M940 280 V640 M1020 280 V640 M1100 280 V640 M1180 280 V640 M1260 280 V640 M1340 280 V640 M1420 280 V640 M1500 280 V640"/></g>
+    <rect x="740" y="280" width="790" height="360" fill="url(#mvPaper)"/>
+    <!-- pale patches where pictures used to hang -->
+    <rect x="1040" y="330" width="74" height="94" fill="#f3e6bc"/><ellipse cx="1290" cy="370" rx="34" ry="44" fill="#f3e6bc"/><rect x="780" y="420" width="56" height="44" fill="#f3e6bc"/>
+    <g fill="#5a5f66"><circle cx="1077" cy="324" r="2.5"/><circle cx="1290" cy="320" r="2.5"/><circle cx="808" cy="414" r="2.5"/></g>
+    <!-- an old oil lamp on a chain -->
+    <path d="M1200 280 V330" stroke="#5a5f66" stroke-width="2" stroke-dasharray="4 2"/><path d="M1182 330 h36 l-8 18 h-20z" fill="#3e7a5a"/><path d="M1194 348 h12 v8 a6 6 0 0 1 -12 0z" fill="#efe8dc"/>
+    <!-- a spider, going up and down on its thread -->
+    <path class="mv-thread" d="M1490 280 V356" stroke="#f3efe3" stroke-width="1"/><g class="mv-spider"><g stroke="#2b2118" stroke-width="1.5"><path d="M1484 356 l-6 -5 M1484 360 l-7 1 M1484 363 l-6 5 M1496 356 l6 -5 M1496 360 l7 1 M1496 363 l6 5"/></g><circle cx="1490" cy="360" r="6" fill="#2b2118"/></g>
+    <rect x="740" y="628" width="790" height="12" fill="#a5743f"/>
+    <rect x="740" y="640" width="790" height="50" fill="#8a5a2b"/><path d="M740 655 H1530 M740 672 H1530" stroke="#6b4423" stroke-width="2"/><path d="M820 640 v15 M1010 655 v17 M1240 640 v15 M900 672 v18 M1380 672 v18 M1480 655 v17" stroke="#6b4423" stroke-width="2"/>
+    <path d="M1340 628 v-16 a10 10 0 0 1 20 0 v16z" fill="#2a1a0c"/>
+    <!-- dust drifting in the air -->
+    <g class="mv-dust" fill="#fff3c0" opacity=".6"><circle cx="900" cy="560" r="1.8"/><circle cx="1000" cy="520" r="1.5"/><circle cx="1120" cy="500" r="2"/><circle cx="1260" cy="490" r="1.5"/><circle cx="1340" cy="470" r="1.8"/></g>
+    <g stroke="#f3efe3" stroke-width="1.5" fill="none" opacity=".9"><path d="M742 282 l60 0 M742 282 l0 60 M742 282 l46 46 M742 312 q16 -6 30 -30 M742 334 q30 -10 50 -52"/><path d="M1528 282 l-60 0 M1528 282 l0 60 M1528 282 l-46 46 M1528 312 q-16 -6 -30 -30"/></g>
+    <!-- the window at the back: nailed-up shutters, then (once there's light) the church clock far away -->
+    <g><rect x="880" y="340" width="120" height="120" fill="#bfe0ef" stroke="#fffaf0" stroke-width="6"/>
+      <g id="mv-view"><rect x="884" y="344" width="112" height="112" fill="#cfe9f8"/><rect x="928" y="370" width="24" height="90" fill="#efe8dc"/><path d="M924 372 L940 336 L956 372 Z" fill="#6a7f5a"/><circle cx="940" cy="392" r="9" fill="#fffaf0" stroke="#5a5f66" stroke-width="2"/><path d="M940 392 h7 M940 392 l-5 -4" stroke="#2b2118" stroke-width="2" stroke-linecap="round"/><path d="M884 440 H996" stroke="#9ccc6e" stroke-width="30"/></g>
+      <g id="mv-shutters"><rect x="884" y="344" width="56" height="112" fill="#6b4423" stroke="#4e2a12" stroke-width="2"/><rect x="940" y="344" width="56" height="112" fill="#7a4a22" stroke="#4e2a12" stroke-width="2"/><path d="M880 380 L1000 420 M880 424 L1000 380" stroke="#4e2a12" stroke-width="6"/></g>
+    </g>
+    <!-- the moving boxes: in a heap, then stacked properly -->
+    <g id="mv-heap">
+      <rect x="1060" y="600" width="70" height="40" fill="#c09060" stroke="#6b4423" stroke-width="2" transform="rotate(-8 1095 620)"/>
+      <rect x="1120" y="610" width="80" height="30" rx="4" fill="#6b3a1a" stroke="#3e200c" stroke-width="2"/>
+      <rect x="1180" y="560" width="60" height="44" fill="#b07f4a" stroke="#6b4423" stroke-width="2" transform="rotate(12 1210 582)"/>
+      <ellipse cx="1110" cy="586" rx="26" ry="16" fill="#e2483d" stroke="#8a1a14" stroke-width="2"/>
+      <rect x="1240" y="618" width="44" height="22" fill="#f3e6c4" stroke="#c9b48a" stroke-width="2"/>
+    </g>
+    <g id="mv-stack">
+      <rect x="1110" y="606" width="110" height="34" rx="4" fill="#6b3a1a" stroke="#3e200c" stroke-width="2"/><rect x="1152" y="616" width="24" height="12" fill="#c9952a"/>
+      <rect x="1118" y="566" width="94" height="40" fill="#b07f4a" stroke="#6b4423" stroke-width="2"/><text x="1165" y="592" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="12" fill="#4e2a12">BOOKS</text>
+      <rect x="1126" y="532" width="78" height="34" fill="#c09060" stroke="#6b4423" stroke-width="2"/><text x="1165" y="554" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="12" fill="#4e2a12">PANS</text>
+      <ellipse cx="1165" cy="518" rx="30" ry="14" fill="#e2483d" stroke="#8a1a14" stroke-width="2"/>
+      <rect x="1146" y="490" width="38" height="18" fill="#f3e6c4" stroke="#c9b48a" stroke-width="2"/>
+    </g>
+    <!-- the grandfather clock, stopped at twelve -->
+    <g id="mv-clock">
+      <rect x="1400" y="430" width="64" height="260" rx="6" fill="#6b3a1a" stroke="#3e200c" stroke-width="3"/>
+      <circle cx="1432" cy="470" r="24" fill="#fffaf0" stroke="#c9952a" stroke-width="3"/>
+      <g id="mv-hands" stroke="#2b2118" stroke-width="3" stroke-linecap="round"><path id="mv-hour" d="M1432 470 V456"/><path id="mv-min" d="M1432 470 V450"/></g>
+      <rect x="1418" y="520" width="28" height="130" fill="#3e200c"/>
+      <g class="mv-pend"><path d="M1432 520 V610" stroke="#c9952a" stroke-width="2"/><circle cx="1432" cy="614" r="10" fill="#c9952a"/></g>
+    </g>
+    <g id="mv-nilclock"><use href="#mvNilsson" transform="translate(1432 406)"/></g>
+    <!-- the left wall, with the front door onto the veranda -->
+    <rect x="720" y="270" width="22" height="430" fill="#b8902a"/>
+    <rect x="720" y="500" width="22" height="190" fill="#2a1a0c"/>
+    <!-- sunlight from the door, bounced in by Pippi's mirror -->
+    <path id="mv-beam" d="M742 560 L1440 470 L1440 520 L742 600 Z" fill="url(#mvBeamG)" pointer-events="none"/>
+    <!-- the dark, before anyone lets any light in -->
+    <rect id="mv-dark" data-in="vis-slow-in" data-out="vis-slow-out" x="742" y="280" width="788" height="410" fill="#0b0b16" opacity=".82" pointer-events="none"/>
+    <!-- stone footings, and ivy climbing up the corner -->
+    <rect x="716" y="690" width="838" height="14" fill="#8a8a82"/><path d="M760 690 v14 M820 690 v14 M890 690 v14 M960 690 v14 M1040 690 v14 M1120 690 v14 M1200 690 v14 M1280 690 v14 M1360 690 v14 M1440 690 v14 M1510 690 v14" stroke="#6a6a62" stroke-width="2"/>
+    <path d="M1546 700 q-8 -60 4 -120 q8 -50 -4 -110" stroke="#3d6a2c" stroke-width="3" fill="none"/>
+    <g fill="#3d6a2c"><ellipse cx="1540" cy="680" rx="9" ry="6"/><ellipse cx="1554" cy="650" rx="9" ry="6"/><ellipse cx="1542" cy="620" rx="9" ry="6"/><ellipse cx="1556" cy="590" rx="8" ry="5"/><ellipse cx="1546" cy="556" rx="9" ry="6"/><ellipse cx="1556" cy="520" rx="8" ry="5"/><ellipse cx="1544" cy="488" rx="8" ry="5"/></g>
+    <g fill="#6a9a4e"><ellipse cx="1550" cy="666" rx="7" ry="5"/><ellipse cx="1538" cy="604" rx="7" ry="5"/><ellipse cx="1552" cy="538" rx="7" ry="5"/><ellipse cx="1540" cy="470" rx="6" ry="4"/></g>
+  </g>
+
+  <!-- the veranda, where the horse will live -->
+  <g id="mv-veranda">
+    <path d="M576 596 H706" stroke="#c4302b" stroke-width="6"/><path d="M590 598 v38 M606 598 v38 M622 598 v38 M638 598 v38 M654 598 v38 M670 598 v38 M686 598 v38" stroke="#c4302b" stroke-width="3" opacity=".85"/>
+    <rect x="556" y="636" width="168" height="14" fill="#a5743f"/><path d="M556 643 H724" stroke="#8a5028" stroke-width="1.5"/>
+    <g fill="#c4302b"><rect x="566" y="518" width="10" height="122"/><rect x="706" y="518" width="10" height="122"/><path d="M576 518 l16 0 l-16 14z M706 518 l-16 0 l16 14z"/></g>
+    <rect x="548" y="496" width="180" height="10" rx="3" fill="#8a2e1a"/><rect x="552" y="504" width="172" height="16" fill="#c4302b"/><path d="M552 512 H724" stroke="#fffaf0" stroke-width="2" stroke-dasharray="6 6"/>
+    <g fill="#a5743f"><rect x="530" y="650" width="40" height="14"/><rect x="514" y="664" width="40" height="14"/></g>
+    <path d="M584 520 V548 M616 520 V548" stroke="#8a5028" stroke-width="1.5"/>
+    <rect x="576" y="548" width="48" height="26" fill="#fffaf0" stroke="#8a5028" stroke-width="2"/><text x="600" y="558" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="8" fill="#2a2a2a">MAX</text><text x="600" y="570" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="10" font-weight="700" fill="#c4302b">500 kg</text>
+  </g>
+
+  <!-- the front fence and the rusty gate -->
+  <g id="mv-fence">
+    <path d="M0 660 H140 M260 660 H530 M0 690 H140 M260 690 H530" stroke="#8a6a4a" stroke-width="6"/>
+    <g fill="#a5845a"><rect x="10" y="640" width="10" height="70"/><rect x="60" y="640" width="10" height="70"/><rect x="110" y="640" width="10" height="70"/><rect x="280" y="640" width="10" height="70"/><rect x="330" y="640" width="10" height="70"/><rect x="380" y="640" width="10" height="70"/><rect x="430" y="640" width="10" height="70"/><rect x="480" y="640" width="10" height="70"/></g>
+    <path d="M10 640 l5 -8 l5 8z M60 640 l5 -8 l5 8z M110 640 l5 -8 l5 8z M280 640 l5 -8 l5 8z M330 640 l5 -8 l5 8z M380 640 l5 -8 l5 8z M430 640 l5 -8 l5 8z M480 640 l5 -8 l5 8z" fill="#a5845a"/>
+    <g fill="#5a3a1e"><rect x="134" y="626" width="14" height="92"/><rect x="252" y="626" width="14" height="92"/></g><g fill="#c9952a"><circle cx="141" cy="622" r="8"/><circle cx="259" cy="622" r="8"/></g>
+    <!-- the name sign, a little crooked, on the fence -->
+    <g transform="rotate(-4 342 616)"><rect x="290" y="602" width="104" height="26" rx="3" fill="#fffaf0" stroke="#8a5028" stroke-width="2"/><text x="342" y="620" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="11" font-weight="700" fill="#c4302b">VILLA VILLEKULLA</text></g>
+    <g id="mv-gateshut"><rect x="150" y="648" width="100" height="62" fill="none" stroke="#7a5030" stroke-width="6"/><path d="M150 710 L250 648" stroke="#7a5030" stroke-width="5"/><g fill="#a0522d"><circle cx="152" cy="660" r="5"/><circle cx="152" cy="700" r="5"/></g></g>
+    <g id="mv-gateopen"><path d="M148 648 L176 636 L176 698 L148 710 Z" fill="none" stroke="#7a5030" stroke-width="6"/></g>
+  </g>
+
+  <!-- the road, with the moving cart -->
+  <path d="M0 740 Q400 720 800 750 T1600 740 V900 H0 Z" fill="url(#mvRoad)"/>
+  <path d="M0 742 Q400 722 800 752 T1600 742" stroke="#8aaa5a" stroke-width="6" fill="none"/>
+  <path d="M0 800 Q400 782 800 810 T1600 800 M0 852 Q400 834 800 862 T1600 852" stroke="#a88a5a" stroke-width="5" fill="none" stroke-linecap="round" opacity=".5"/>
+  <g fill="#a88a5a"><ellipse cx="120" cy="780" rx="5" ry="3"/><ellipse cx="640" cy="830" rx="4" ry="2.5"/><ellipse cx="880" cy="790" rx="6" ry="3"/><ellipse cx="1180" cy="840" rx="5" ry="3"/><ellipse cx="1260" cy="780" rx="4" ry="2.5"/><ellipse cx="1500" cy="860" rx="5" ry="3"/><ellipse cx="60" cy="870" rx="4" ry="2.5"/></g>
+  <ellipse cx="1000" cy="836" rx="60" ry="11" fill="#8fb4c8" opacity=".8"/><path class="mv-glint" d="M968 832 h26 M1012 838 h18" stroke="#e6f4fb" stroke-width="2" stroke-linecap="round"/>
+  <g id="mv-cart">
+    <rect x="300" y="760" width="230" height="40" fill="#a5743f" stroke="#6b4423" stroke-width="3"/>
+    <path d="M300 773 H530 M300 787 H530" stroke="#8a5a2b" stroke-width="1.5"/>
+    <path d="M318 812 h44 M340 790 v44 M324 796 l32 32 M356 796 l-32 32 M468 812 h44 M490 790 v44 M474 796 l32 32 M506 796 l-32 32" stroke="#7a5030" stroke-width="3"/>
+    <g fill="none" stroke="#5a3a1e" stroke-width="6"><circle cx="340" cy="812" r="22"/><circle cx="490" cy="812" r="22"/></g><g fill="#5a3a1e"><circle cx="340" cy="812" r="5"/><circle cx="490" cy="812" r="5"/></g>
+    <g id="mv-cargo">
+    <rect x="310" y="720" width="60" height="40" fill="#c09060" stroke="#6b4423" stroke-width="2"/>
+    <rect x="374" y="728" width="74" height="32" rx="4" fill="#6b3a1a" stroke="#3e200c" stroke-width="2"/><rect x="402" y="738" width="18" height="10" fill="#c9952a"/>
+    <rect x="452" y="716" width="60" height="44" fill="#b07f4a" stroke="#6b4423" stroke-width="2"/>
+    <ellipse cx="342" cy="712" rx="24" ry="12" fill="#e2483d" stroke="#8a1a14" stroke-width="2"/>
+    </g>
+    <g id="mv-oilcan"><path d="M470 702 h24 v14 h-24z" fill="#9aa0a6" stroke="#5a5f66" stroke-width="2"/><path d="M494 706 l14 -8" stroke="#5a5f66" stroke-width="3"/></g>
+    <g id="mv-nilcart"><use href="#mvNilsson" transform="translate(410 704)"/></g>
+    <path d="M530 780 L600 770" stroke="#6b4423" stroke-width="5"/>
+  </g>
+  <!-- a little Saab 96, parked down the road -->
+  <use id="mv-saab" href="#saab96" x="1330" y="780" width="110" height="46" color="#d9a43a"/>
+
+  <!-- the horse: on the road, then in the garden, then on its veranda -->
+  <g id="mv-horse-road" transform="translate(600 700)"><use class="mv-nod" href="#hpHorseShape"/></g>
+  <g id="mv-horse-garden" transform="translate(300 520)"><use class="mv-nod" href="#hpHorseShape"/></g>
+  <g id="mv-horse-veranda" transform="translate(580 552)"><use class="mv-nod" href="#hpHorseShape"/></g>
+  <!-- Pippi: on the road, then in the garden -->
+  <g id="mv-pippi-road" transform="translate(220 762) scale(.95)"><use href="#mvPippi"/></g>
+  <g id="mv-pippi-garden" transform="translate(240 552) scale(.9)"><use href="#mvPippi"/></g>
+
+  <rect width="1600" height="900" fill="url(#mvVign)" pointer-events="none"/>
+
+  <!-- the hotspots -->
+  <g id="mv-hits">
+    <rect class="hit" fill="transparent" data-hs="sky0" data-label="The sky" x="0" y="0" width="680" height="220"/>
+    <rect class="hit" fill="transparent" data-hs="town0" data-label="The little town" x="420" y="220" width="280" height="230"/>
+    <rect class="hit" fill="transparent" data-hs="nextdoor0" data-label="The house next door" x="30" y="260" width="200" height="200"/>
+    <rect class="hit" fill="transparent" data-hs="oak0" data-label="The old oak" x="230" y="170" width="190" height="290"/>
+    <rect class="hit" fill="transparent" data-hs="kids0" data-label="Somebody behind the hedge" x="270" y="440" width="80" height="44"/>
+    <rect class="hit" fill="transparent" data-hs="house0" data-label="Villa Villekulla" x="690" y="100" width="880" height="175"/>
+    <rect class="hit" fill="transparent" data-hs="hall0" data-label="Inside the house" x="742" y="280" width="788" height="410"/>
+    <rect class="hit" fill="transparent" data-hs="window0" data-label="The window" x="876" y="336" width="128" height="128" id="hit-window0"/>
+    <rect class="hit" fill="transparent" data-hs="boxes0" data-label="The moving boxes" x="1050" y="480" width="250" height="165" id="hit-boxes0"/>
+    <rect class="hit" fill="transparent" data-hs="clock0" data-label="The grandfather clock" x="1394" y="424" width="76" height="270" id="hit-clock0"/>
+    <rect class="hit" fill="transparent" data-hs="door0" data-label="The front door" x="716" y="496" width="30" height="196"/>
+    <rect class="hit" fill="transparent" data-hs="veranda0" data-label="The veranda" x="520" y="506" width="196" height="176"/>
+    <rect class="hit" fill="transparent" data-hs="pump0" data-label="The old pump" x="412" y="496" width="190" height="130"/>
+    <rect class="hit" fill="transparent" data-hs="spunk0" data-label="Jam jar" x="552" y="556" width="38" height="40" id="hit-spunk0"/>
+    <rect class="hit" fill="transparent" data-hs="gate0" data-label="The garden gate" x="130" y="620" width="140" height="100"/>
+    <rect class="hit" fill="transparent" data-hs="cart0" data-label="The moving cart" x="296" y="690" width="240" height="146"/>
+    <rect class="hit" fill="transparent" data-hs="nilsson0" data-label="Mr Nilsson" x="394" y="682" width="36" height="46" id="hit-nilsson0c"/>
+    <rect class="hit" fill="transparent" data-hs="nilsson0" data-label="Mr Nilsson" x="1414" y="384" width="40" height="48" id="hit-nilsson0k"/>
+    <rect class="hit" fill="transparent" data-hs="saab0" data-label="A little car" x="1320" y="770" width="130" height="66"/>
+    <rect class="hit" fill="transparent" data-hs="horse0" data-label="The horse" x="596" y="684" width="140" height="110" id="hit-horse0r"/>
+    <rect class="hit" fill="transparent" data-hs="horse0" data-label="The horse" x="296" y="504" width="140" height="110" id="hit-horse0g"/>
+    <rect class="hit" fill="transparent" data-hs="horse0" data-label="The horse" x="576" y="536" width="140" height="106" id="hit-horse0v"/>
+    <rect class="hit" fill="transparent" data-hs="pippi0" data-label="Pippi" x="180" y="720" width="80" height="140" id="hit-pippi0r"/>
+    <rect class="hit" fill="transparent" data-hs="pippi0" data-label="Pippi" x="204" y="514" width="72" height="130" id="hit-pippi0g"/>
+  </g>
+</svg>

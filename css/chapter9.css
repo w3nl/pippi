@@ -1,0 +1,89 @@
+/* Chapter 9: the voyage home. The Hoppetossa rocks on the waves while the world on the horizon slides past in legs
+   (the lagoon, the open sea, the storm, the far coast, the night of lighthouses, the harbour at home).
+   Close-ups: the seasons, the message in a bottle, the storm, the swallows, the lighthouses and the buoys.
+   Everything stops with the Motion setting (css/animations.css). */
+
+@keyframes vyRock{0%,100%{transform:rotate(-1deg) translateY(0)}50%{transform:rotate(1deg) translateY(5px)}}
+@keyframes vyHeel{0%,100%{transform:rotate(3deg) translateY(0)}50%{transform:rotate(7deg) translateY(12px)}}
+@keyframes vyCrests{0%{transform:translateX(0)}100%{transform:translateX(-422px)}}
+@keyframes vyDrift{0%{transform:translateX(0)}100%{transform:translateX(-160px)}}
+@keyframes vyFlag{0%,100%{transform:skewY(0) scaleX(1)}50%{transform:skewY(5deg) scaleX(.92)}}
+@keyframes vySwing{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+@keyframes vyPlait{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}}
+@keyframes vyDangle{0%,100%{transform:rotate(-12deg)}50%{transform:rotate(12deg)}}
+@keyframes vyNod{0%,100%{transform:translateY(0)}50%{transform:translateY(2px)}}
+@keyframes vyCrawl{0%,100%{transform:translateX(-4px)}50%{transform:translateX(4px)}}
+@keyframes vyBob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(6px) rotate(3deg)}}
+@keyframes vyTwinkle{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes vyRain{0%{transform:translate(0,-60px)}100%{transform:translate(-30px,120px)}}
+@keyframes vyBolt{0%,92%,100%{opacity:0}93%,95%{opacity:1}}
+@keyframes vyCheer{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+/* the lighthouses: A two flashes every 6 s, B one flash every 5 s, C (ours) two flashes every 10 s */
+@keyframes vyFlashA{0%,8%{opacity:1}9%,32%{opacity:0}33%,41%{opacity:1}42%,100%{opacity:0}}
+@keyframes vyFlashB{0%,10%{opacity:1}12%,100%{opacity:0}}
+@keyframes vyFlashC{0%,5%{opacity:1}6%,19%{opacity:0}20%,25%{opacity:1}26%,100%{opacity:0}}
+
+#vy-ship .vy-rock{transform-box:view-box;transform-origin:800px 640px;animation:vyRock 5s ease-in-out infinite}
+#sc-voyage.vy-storm #vy-ship .vy-rock{animation:vyHeel 2.4s ease-in-out infinite}
+#sc-voyage.vy-docked #vy-ship .vy-rock{animation-duration:9s}
+#sc-voyage .vy-crests{animation:vyCrests 12s linear infinite}
+#sc-voyage .vy-crests.front{animation-duration:8s}
+#sc-voyage.vy-storm .vy-crests{animation-duration:3.2s}
+#sc-voyage.vy-storm #vy-front{stroke-width:9;opacity:.85}
+#sc-voyage .vy-cloud{animation:vyDrift 50s ease-in-out infinite alternate}
+#sc-voyage .vy-cloud.b{animation-duration:66s;animation-direction:alternate-reverse}
+#sc-voyage .vy-cloud.c{animation-duration:80s}
+#sc-voyage .vy-cloud.d{animation-duration:56s;animation-direction:alternate-reverse}
+@keyframes vyGulls{0%{transform:translate(0,0)}50%{transform:translate(900px,-40px)}100%{transform:translate(1900px,20px)}}
+@keyframes vyWing{0%,100%{transform:scaleY(1)}50%{transform:scaleY(-.5)}}
+@keyframes vyGlint{0%,100%{opacity:.15}50%{opacity:1}}
+@keyframes vyFoam{0%,100%{transform:scaleX(1);opacity:.8}50%{transform:scaleX(1.08);opacity:.5}}
+@keyframes vyFish{0%,80%{transform:translate(900px,700px) rotate(-50deg);opacity:0}82%{opacity:1}88%{transform:translate(960px,630px) rotate(0)}94%{transform:translate(1020px,700px) rotate(50deg);opacity:1}95%,100%{transform:translate(1020px,720px) rotate(50deg);opacity:0}}
+#sc-voyage .vy-gulls{animation:vyGulls 26s linear infinite}
+#sc-voyage .vy-wing{transform-box:fill-box;transform-origin:50% 100%;animation:vyWing .6s ease-in-out infinite}
+#sc-voyage .vy-wing.b{animation-delay:-.3s}
+#sc-voyage.vy-storm .vy-gulls,#sc-voyage.vy-night .vy-gulls,#sc-voyage.vy-storm .vy-glint,#sc-voyage.vy-night .vy-glint{display:none}
+#sc-voyage .vy-glint path{animation:vyGlint 2.4s ease-in-out infinite}
+#sc-voyage .vy-glint .b{animation-delay:-1.2s}
+#sc-voyage .vy-foam{transform-box:fill-box;transform-origin:100% 50%;animation:vyFoam 1.6s ease-in-out infinite}
+#sc-voyage .vy-fish{opacity:0;animation:vyFish 9s ease-in-out infinite}
+#sc-voyage .vy-flag{transform-box:fill-box;transform-origin:0 50%;animation:vyFlag .8s ease-in-out infinite}
+#sc-voyage .vy-swing{transform-box:view-box;transform-origin:1264px 198px;animation:vySwing 2.6s ease-in-out infinite}
+#sc-voyage .vy-plait{transform-box:fill-box;animation:vyPlait 1.3s ease-in-out infinite}
+#sc-voyage .vy-plait{transform-origin:100% 50%} #sc-voyage .vy-plait.b{transform-origin:0 50%;animation-delay:-.65s}
+#sc-voyage .vy-dangle{transform-box:fill-box;transform-origin:50% 0;animation:vyDangle 1.6s ease-in-out infinite}
+#sc-voyage .vy-dangle.b{animation-delay:-.8s}
+#sc-voyage .vy-nod{animation:vyNod 3s ease-in-out infinite}
+#sc-voyage .vy-crawl{animation:vyCrawl 4s ease-in-out infinite}
+#sc-voyage .vy-bob{transform-box:fill-box;transform-origin:50% 100%;animation:vyBob 3s ease-in-out infinite}
+#sc-voyage .vy-bob.b{animation-delay:-1.5s}
+#sc-voyage .vy-tw{animation:vyTwinkle 3s ease-in-out infinite}
+#sc-voyage .vy-tw.b{animation-delay:-1.4s}
+#sc-voyage .vy-drop{animation:vyRain .7s linear infinite}
+#sc-voyage .vy-drop.b{animation-delay:-.35s}
+#sc-voyage .vy-bolt{opacity:0;animation:vyBolt 7s linear infinite}
+#sc-voyage .vy-cheer{animation:vyCheer .8s ease-in-out infinite}
+#sc-voyage .vy-cheer.b{animation-delay:-.4s}
+#sc-voyage .vy-flash.a{animation:vyFlashA 6s steps(1) infinite}
+#sc-voyage .vy-flash.b{animation:vyFlashB 5s steps(1) infinite}
+#sc-voyage .vy-flash.c{animation:vyFlashC 10s steps(1) infinite}
+#vy-sails .vy-sail{transition:transform .6s}
+/* the voyage: the world on the horizon slides past, one leg at a time */
+#vy-world{transition:transform 5s ease-in-out}
+#sc-voyage.vy-sea #vy-world{transform:translateX(-1600px)}
+#sc-voyage.vy-storm #vy-world{transform:translateX(-3200px)}
+#sc-voyage.vy-calm #vy-world{transform:translateX(-4800px)}
+#sc-voyage.vy-night #vy-world{transform:translateX(-6400px)}
+#sc-voyage.vy-harbour #vy-world{transform:translateX(-8000px)}
+#sc-voyage.vy-docked #vy-world{transform:translateX(-8600px)}
+#vy-rain,#vy-glow{pointer-events:none}
+
+/* ---------- close-ups ---------- */
+.season9-svg,.storm9-svg{width:100%;max-width:340px;height:auto;display:block;margin:6px auto 0;border-radius:8px}
+.bottle9-svg,.buoys9-svg{width:100%;max-width:360px;height:auto;display:block;margin:0 auto;border-radius:8px}
+.bottle9-svg .dp9.pick,.buoys9-svg .pick{cursor:pointer}
+.bottle9-svg .dp9.pick:hover circle{fill:#f2c94c}
+.lights9{display:flex;flex-direction:column;gap:6px;margin:8px 0}
+.lights9 .lt9{display:flex;align-items:center;gap:10px;text-align:left}
+.lights9 .lt9 b{min-width:1.2em}
+.lights9 .strip9{width:100%;max-width:300px;height:auto;display:block}

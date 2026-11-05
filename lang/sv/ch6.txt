@@ -1,517 +1,584 @@
-# Swedish translation: Chapter 6, on board the Hoppetossa (js/chapter6.js, and its item uses in js/items.js).
-# Kapten Efraim Långstrump calls Pippi "Pippilotta". The horse is Lilla Gubben. Port = babord, starboard = styrbord.
+# Swedish translation: Chapter 6, Pippis ballongfärd (js/chapter6.js), and the little Saab 96 hidden in a few rooms.
+# Luftballongen, brännaren, korgen, den gyllene vindflöjeln, direktören, Kling och Klang, Dunder-Karlsson och Blom, Lilla Gubben.
 
-= Sextant
-> Sextant
-= A fishing net from the hold. Good for fishing things out of the sea, and for catching monkeys.
-> Ett fiskenät från lastrummet. Bra för att fiska upp saker ur havet, och för att fånga apor.
-= The captain's brass sextant. It measures how high a star stands above the horizon. Select it, then click the sky.
-> Kaptenens sextant av mässing. Den mäter hur högt en stjärna står över horisonten. Välj den och klicka sedan på himlen.
-= The captain's brass spyglass. It makes far-away things look near. Select it, then click something far away.
-> Kaptenens kikare av mässing. Den får saker långt borta att se nära ut. Välj den och klicka sedan på något långt borta.
-= The spunk's jam jar, on the captain's chart table. Pippi has brought it along: "It has never been to sea."
-> Spunkens syltburk, på kaptenens sjökortsbord. Pippi har tagit med den: "Den har aldrig varit på havet."
-= You take it. A spunk knows things. Even about ships.
-> Du tar den. En spunk vet saker. Till och med om skepp.
-= The harbour town on its hill. Right at the top, a little crooked, stands Villa Villekulla.
-> Hamnstaden på sin kulle. Högst upp, lite sned, står Villa Villekulla.
-= The whole town has come down to the quay to wave goodbye. Well, three people and a dog.
-> Hela staden har kommit ner till kajen för att vinka adjö. Nåja, tre personer och en hund.
-= Pippi's horse, on the quay, with a rope sling round its middle. It looks at the ship. It looks at you.
-> Lilla Gubben, på kajen, med en repslinga runt magen. Han tittar på skeppet. Han tittar på dig.
-= Pfrrrr?
-> Pfrrrr?
-= Pippi won't sail without it. The cargo hoist on the stern could lift it aboard.
-> Pippi seglar inte utan honom. Lastvinschen på akterdäcket kan lyfta honom ombord.
-= Hrrrm.
-> Hrrrm.
-= The horse's tongue is hanging out. It drank the whole water barrel, and it's still thirsty. So is everybody else.
-> Lilla Gubbens tunga hänger ute. Han drack upp hela vattentunnan och är fortfarande törstig. Det är alla andra också.
-= Neeeigh!
-> Gnäägg!
-= The horse stands on deck with its legs wide apart, like a real sailor.
-> Lilla Gubben står på däck med benen brett isär, som en riktig sjöman.
-= The horse is on board, sniffing the hay in the hold.
-> Lilla Gubben är ombord och nosar på höet i lastrummet.
-= The cargo hoist. Its pulleys have done their job: the horse is on board.
-> Lastvinschen. Blocken har gjort sitt jobb: Lilla Gubben är ombord.
-= The sails are full of wind. The Hoppetossa leans a little and hurries along.
-> Seglen är fulla av vind. Hoppetossa lutar lite och skyndar framåt.
-= High above, the crow's nest sways against the sky.
-> Högt däruppe gungar utkiken mot himlen.
-= The sails are rolled up tight on the yards. They come down when the ship sets off.
-> Seglen är hårt ihoprullade på rårna. De kommer ner när skeppet ger sig av.
-= First the horse, then a course. The captain is very firm about that.
-> Först hästen, sedan en kurs. Där är kaptenen mycket bestämd.
-= The crow's nest. From up here the island is all palm trees, white sand and waving people.
-> Utkiken. Härifrån är ön bara palmer, vit sand och vinkande människor.
-= You climb the rope ladder to the crow's nest. Sea, sea, and more sea, all the way round.
-> Du klättrar uppför repstegen till utkiken. Hav, hav och mer hav, runt omkring.
-= Mr Nilsson waves at you from the yard. He climbed up faster.
-> Herr Nilsson vinkar åt dig från rån. Han klättrade upp fortare.
-= You climb to the crow's nest. You can see the whole town from here, and Villa Villekulla on its hill.
-> Du klättrar upp i utkiken. Härifrån ser du hela staden, och Villa Villekulla på sin kulle.
-= The sea is waiting. The captain is waiting. The horse is waiting most of all.
-> Havet väntar. Kaptenen väntar. Lilla Gubben väntar allra mest.
-= You climb to the crow's nest. It's dawn. Far away, on the horizon, is there a tiny bump? You can't be sure.
-> Du klättrar upp i utkiken. Det gryr. Långt borta vid horisonten, är det en pytteliten bula? Du är inte säker.
-= To see that far you'd need the captain's spyglass.
-> För att se så långt skulle du behöva kaptenens kikare.
-= The captain's spyglass, hanging on the mizzen mast by the wheel.
-> Kaptenens kikare, som hänger på mesanmasten vid ratten.
-= Take it, sailor! A spyglass belongs to whoever is first to shout LAND HO.
-> Ta den, matros! En kikare tillhör den som först ropar LAND I SIKTE.
-= The ship's wheel and the compass. The needle points north, and the ship's nose points south-west. Steady as she goes.
-> Ratten och kompassen. Nålen pekar mot norr, och skeppets nos pekar mot sydväst. Håll kursen.
-= Don't touch, sailor. She's on course.
-> Rör inte, matros. Hon ligger på kurs.
-= Not so fast, sailor! We don't leave without the horse.
-> Inte så fort, matros! Vi åker inte utan hästen.
-= We don't leave without the horse!
-> Vi åker inte utan hästen!
-= My island! And my people waving! Pippilotta, you're a princess now. A princess who climbs masts.
-> Min ö! Och mitt folk som vinkar! Pippilotta, nu är du prinsessa. En prinsessa som klättrar i master.
-= Ahoy, sailor! Everything aboard except the horse. Use the hoist on the stern. No lifting it by hand, Pippilotta!
-> Ohoj, matros! Allt är ombord utom hästen. Använd vinschen på akterdäcket. Ingen lyftning med händerna, Pippilotta!
-= Spoilsport!
-> Glädjedödare!
-= Now set a course for my island. My chart is in the cabin, and the wheel is right here. The compass will tell you which way you're pointing.
-> Sätt nu kurs mot min ö. Sjökortet ligger i hytten, och ratten står här. Kompassen talar om åt vilket håll du pekar.
-= That monkey has thrown half my cabin overboard! What floats, we fish out with the net. What sinks, Pippi fetches.
-> Den där apan har kastat halva min hytt överbord! Det som flyter fiskar vi upp med nätet. Det som sjunker hämtar Pippi.
-= The horse has drunk all the drinking water. And sea water is no good: far too salty. But the sun is hot, and the sun can help.
-> Hästen har druckit upp allt dricksvatten. Och havsvatten duger inte: alldeles för salt. Men solen är het, och solen kan hjälpa till.
-= Tonight we should cross the Equator. Where are we, sailor? The stars will tell you, with my sextant.
-> I natt borde vi korsa ekvatorn. Var är vi, matros? Stjärnorna talar om det, med min sextant.
-= Dawn! My island must be close now. Up to the crow's nest with my spyglass, and keep your eyes open!
-> Gryning! Min ö måste vara nära nu. Upp i utkiken med min kikare, och håll ögonen öppna!
-= Mr Nilsson hangs by his tail from the yard, looking very innocent. He has nothing left to throw.
-> Herr Nilsson hänger i svansen från rån och ser mycket oskyldig ut. Han har inget kvar att kasta.
-= Mr Nilsson swings from the yard by his tail. Every few minutes something splashes into the sea.
-> Herr Nilsson svingar sig i svansen från rån. Med några minuters mellanrum plaskar något i havet.
-= Mr Nilsson has climbed into the rigging. He loves ships: so many things to throw.
-> Herr Nilsson har klättrat upp i riggen. Han älskar skepp: så många saker att kasta.
-= An island with real palm trees!
-> En ö med riktiga palmer!
-= And real coconuts. I hope they fall down slowly.
-> Och riktiga kokosnötter. Jag hoppas att de faller ner långsamt.
-= I've never been on a real ship. What if I get seasick?
-> Jag har aldrig varit på ett riktigt skepp. Tänk om jag blir sjösjuk?
-= What if the horse gets seasick?
-> Tänk om Lilla Gubben blir sjösjuk?
-= Look at all the stars! The North Star is so low tonight. At home it's high up in the sky.
-> Titta på alla stjärnor! Polstjärnan står så lågt i natt. Hemma står den högt uppe på himlen.
-= Maybe it's tired.
-> Den kanske är trött.
-= I'm a sailor now!
-> Nu är jag sjöman!
-= We're both sailors. I've written it in my diary.
-> Vi är sjömän båda två. Jag har skrivit det i min dagbok.
-= I'm King Neptune, the king of the sea! Everybody who crosses the Equator for the first time gets a bucket of water over their head. Ready?
-> Jag är kung Neptunus, havets kung! Alla som korsar ekvatorn för första gången får en hink vatten över huvudet. Redo?
-= Daddy's island! I'm going to be a princess. A thing-searching princess.
-> Pappas ö! Jag ska bli prinsessa. En sakletarprinsessa.
-= I'm the figurehead! Look, no hands!
-> Jag är galjonsfiguren! Titta, utan händer!
-= I've never sailed to the South Seas, so I'm sure I'll be very good at it.
-> Jag har aldrig seglat till Söderhavet, så det klarar jag säkert.
-= The instrument box. Empty, apart from a pair of dividers and a very old biscuit.
-> Instrumentlådan. Tom, utom en passare och en mycket gammal kaka.
-= The captain's instrument box. Inside, on red velvet: a brass sextant.
-> Kaptenens instrumentlåda. Därinne, på röd sammet: en sextant av mässing.
-= A note in the lid says: "For measuring how high a star is above the horizon. Only works at night. Obviously."
-> På en lapp i locket står det: "För att mäta hur högt en stjärna står över horisonten. Fungerar bara på natten. Förstås."
-= The galley stove. A pot of fish soup is bubbling. Pippi made it. There's a whole fish in it, and a sock.
-> Bysspisen. En gryta fisksoppa puttrar. Pippi har gjort den. Det finns en hel fisk i den, och en strumpa.
-= The galley stove, with a pot of soup bubbling away.
-> Bysspisen, med en puttrande gryta soppa.
-= Soup needs fresh water too. Everything on a ship needs fresh water.
-> Soppa behöver också sötvatten. Allt på ett skepp behöver sötvatten.
-= The water barrel, filling up again, cupful by cupful, from the bowls in the sun.
-> Vattentunnan fylls på igen, kopp för kopp, från skålarna i solen.
-= The drinking-water barrel, full to the top.
-> Dricksvattentunnan, full ända upp.
-= On a ship, fresh water is precious. There's water all around you, but the sea is far too salty to drink.
-> På ett skepp är sötvatten dyrbart. Det finns vatten runt omkring, men havet är alldeles för salt att dricka.
-= Crates of supplies. Two of them are labelled 18 kg.
-> Lådor med förråd. På två av dem står det 18 kg.
-= Pippi says that's sweets for the voyage. Eighteen kilos each. "In case we're becalmed."
-> Pippi säger att det är godis för resan. Arton kilo var. "Ifall det blir stiltje."
-= A fishing net, hanging on a hook in the hold. You take it. It might come in handy at sea.
-> Ett fiskenät på en krok i lastrummet. Du tar det. Det kan komma till nytta på havet.
-= The lower hold: barrels of salted fish, and a pile of heavy stones.
-> Det nedre lastrummet: tunnor med saltfisk, och en hög tunga stenar.
-= The stones are ballast. They sit low down in the ship so she doesn't tip over in the wind.
-> Stenarna är barlast. De ligger långt ner i skeppet så att det inte välter i vinden.
-= The sky is full of stars. The North Star hangs very low, just above the sea.
-> Himlen är full av stjärnor. Polstjärnan hänger mycket lågt, strax över havet.
-= The captain measures stars with his sextant. It's in the instrument box in his cabin.
-> Kaptenen mäter stjärnor med sin sextant. Den ligger i instrumentlådan i hans hytt.
-= Dawn. The sky turns pink, then orange, then gold. Somewhere ahead is an island.
-> Gryning. Himlen blir rosa, sedan orange, sedan guld. Någonstans framför er ligger en ö.
-= Blue sky, white clouds, and the sun getting hotter every day as you sail south.
-> Blå himmel, vita moln, och solen blir hetare för varje dag ni seglar söderut.
-= Seagulls circle over the harbour, hoping somebody drops a sandwich.
-> Måsar cirklar över hamnen och hoppas att någon tappar en smörgås.
-= Harbour water, green and calm. A seagull floats on it, looking bored.
-> Hamnvatten, grönt och lugnt. En mås guppar på det och ser uttråkad ut.
-= Splash! Mr Nilsson has thrown the captain's things overboard. Some are bobbing on the waves; some have gone straight down.
-> Plask! Herr Nilsson har kastat kaptenens saker överbord. En del guppar på vågorna, en del har sjunkit rakt ner.
-= You'll need something to fish them out with.
-> Du behöver något att fiska upp dem med.
-= The water around the island is so clear you can see the fish nibbling your shadow.
-> Vattnet runt ön är så klart att man ser fiskarna nafsa på ens skugga.
-= Fish swim alongside the ship. A dolphin jumps, now and then, just to show off.
-> Fiskar simmar bredvid skeppet. Då och då hoppar en delfin, bara för att visa sig.
-= The cargo hoist
-> Lastvinschen
-= Pulleys and rope, on the stern
-> Block och rep, på akterdäcket
-= The horse weighs 400 kg. You, Tommy and Annika can pull 100 kg together. The more ropes hold the horse up, the less each rope has to carry.
-> Lilla Gubben väger 400 kg. Du, Tommy och Annika orkar dra 100 kg tillsammans. Ju fler rep som bär hästen, desto mindre behöver varje rep hålla.
-= 1 rope
-> 1 rep
-= {n} ropes
-> {n} rep
-= Heave!
-> Hiva!
-= Each rope: {kg} kg
-> Varje rep: {kg} kg
-= Four ropes share the 400 kg: 100 kg each. Up goes the horse! You had to pull four metres of rope for every metre it rose, but you could do it.
-> Fyra rep delar på de 400 kilona: 100 kg var. Upp åker Lilla Gubben! Du fick dra fyra meter rep för varje meter han steg, men du orkade.
-= The horse rises gently into the air, swings over the rail, and lands on deck with four clonks.
-> Lilla Gubben svävar försiktigt upp i luften, svänger över relingen och landar på däck med fyra klonk.
-= Well hoisted, sailor! Now: a course for my island. My chart is in the cabin.
-> Bra hissat, matros! Och nu: kurs mot min ö. Sjökortet ligger i hytten.
-= You pull with all your might. With one rope you are lifting all 400 kg. The horse doesn't even notice.
-> Du drar av alla krafter. Med ett rep lyfter du alla 400 kilona. Lilla Gubben märker ingenting.
-= Two ropes: 200 kg each. The horse's front hooves lift off… and land again with a clonk. More ropes!
-> Två rep: 200 kg var. Framhovarna lättar… och landar igen med ett klonk. Fler rep!
-= Three ropes: about 133 kg each. So close! The horse dangles half a centimetre above the quay. One more rope!
-> Tre rep: ungefär 133 kg var. Så nära! Lilla Gubben dinglar en halv centimeter över kajen. Ett rep till!
-= N
-> N
-= E
-> O
-= S
-> S
-= W
-> V
-= NE
-> NO
-= SE
-> SO
-= SW
-> SV
-= NW
-> NV
-= north
-> norr
-= north-east
-> nordost
-= east
-> öster
-= south-east
-> sydost
-= south
-> söder
-= south-west
-> sydväst
-= west
-> väster
-= north-west
-> nordväst
-= The ship's wheel
-> Ratten
-= Turn the ship until she points the right way
-> Vrid skeppet tills det pekar åt rätt håll
-= Turn to port (left)
-> Babord (vänster)
-= Turn to starboard (right)
-> Styrbord (höger)
-= Set sail!
-> Sätt segel!
-= The compass card always points north, whichever way the ship turns. The little ship in the middle shows where her nose is pointing.
-> Kompassrosen pekar alltid mot norr, hur skeppet än vänder. Det lilla skeppet i mitten visar vart nosen pekar.
-= The ship points:
-> Skeppet pekar mot:
-= South-west! Down and to the left on the chart. "Drop the sails!" roars the captain.
-> Sydväst! Nere till vänster på sjökortet. "Släpp seglen!" vrålar kaptenen.
-= The sails tumble down from the yards and fill with wind with a great WHUMP. The ropes creak, the quay slides away, and the Hoppetossa is off!
-> Seglen rullar ner från rårna och fylls av vind med ett väldigt VOMP. Repen knakar, kajen glider bort, och Hoppetossa har gett sig av!
-= South-west it is! Steady as she goes!
-> Sydväst! Håll kursen!
-= Goodbye, Villa Villekulla! Goodbye, everybody! Goodbye, dog!
-> Hej då, Villa Villekulla! Hej då, allihop! Hej då, hunden!
-= North? That way is ice and polar bears. Pippi would love it, but the island is the other way.
-> Norr? Där är det is och isbjörnar. Pippi skulle älska det, men ön ligger åt andra hållet.
-= Due south runs straight down the chart. The island is south, but it's west as well.
-> Rakt söderut går rakt nedåt på sjökortet. Ön ligger söderut, men också västerut.
-= Due west goes straight across the chart. The island is west, but it's south as well.
-> Rakt västerut går rakt åt vänster på sjökortet. Ön ligger västerut, men också söderut.
-= East would take you to Finland. The captain's island is nowhere near Finland.
-> Österut kommer du till Finland. Kaptenens ö ligger inte i närheten av Finland.
-= North-east is exactly the wrong way. Turn the ship right round.
-> Nordost är precis fel håll. Vänd skeppet helt om.
-= South-east: the right way down, but the wrong way across. Look at the chart again.
-> Sydost: rätt håll nedåt, men fel håll åt sidan. Titta på sjökortet igen.
-= North-west: the right way across, but the wrong way up and down. Look at the chart again.
-> Nordväst: rätt håll åt sidan, men fel håll upp och ner. Titta på sjökortet igen.
-= The captain's chart
-> Kaptenens sjökort
-= Spread out on the chart table
-> Utbrett på sjökortsbordet
-= Equator 0°
-> Ekvatorn 0°
-= The captain's island
-> Kaptenens ö
-= On a chart, north is always at the top, south at the bottom, west on the left and east on the right. The dotted line is the way to the captain's island.
-> På ett sjökort är norr alltid upptill, söder nertill, väster till vänster och öster till höger. Den prickade linjen är vägen till kaptenens ö.
-= A big, heavy log
-> En stor, tung stock
-= The captain's little iron key
-> Kaptenens lilla järnnyckel
-= An apple
-> Ett äpple
-= A gold coin
-> Ett guldmynt
-= A cork
-> En kork
-= A glass marble
-> En glaskula
-= Overboard!
-> Överbord!
-= Mr Nilsson's six splashes
-> Herr Nilssons sex plask
-= What floats, you can scoop up with the net. What sinks, Pippi will have to dive for. Which of these float?
-> Det som flyter kan du håva upp med nätet. Det som sjunker får Pippi dyka efter. Vilka flyter?
-= Out with the net!
-> Ut med nätet!
-= Click a thing to say whether it floats or sinks.
-> Klicka på en sak för att säga om den flyter eller sjunker.
-= floats
-> flyter
-= sinks
-> sjunker
-= Decide for every one of them first: floats or sinks?
-> Bestäm först för varenda en: flyter den eller sjunker den?
-= The log is big and heavy, but it's made of wood, and wood is lighter than the same amount of water. Big things can float!
-> Stocken är stor och tung, men den är gjord av trä, och trä är lättare än lika mycket vatten. Stora saker kan flyta!
-= The key is tiny and light, but iron is much heavier than the same amount of water. Small things can sink!
-> Nyckeln är liten och lätt, men järn är mycket tyngre än lika mycket vatten. Små saker kan sjunka!
-= An apple is full of tiny pockets of air. Ever tried apple-bobbing?
-> Ett äpple är fullt av små luftfickor. Har du någon gång försökt bita i äpplen som guppar i en balja?
-= Gold is very, very heavy for its size. Plop.
-> Guld är väldigt, väldigt tungt för sin storlek. Plopp.
-= Cork is so light for its size that fishermen use it to keep their nets afloat.
-> Kork är så lätt för sin storlek att fiskare använder den för att hålla näten flytande.
-= Glass is heavier than the same amount of water. The marble goes straight to the bottom.
-> Glas är tyngre än lika mycket vatten. Kulan går rakt till botten.
-= The log, the apple and the cork bob on the waves: into the net they go! Whether a thing floats depends on what it's made of, not on how big it is.
-> Stocken, äpplet och korken guppar på vågorna: in i nätet med dem! Om en sak flyter beror på vad den är gjord av, inte på hur stor den är.
-= And now the sinkers!
-> Och nu sänkena!
-= Pippi dives in head first. A long time later she comes up again with the key in her teeth, the coin in her ear and the marble up her nose.
-> Pippi dyker i med huvudet först. Långt senare kommer hon upp igen med nyckeln mellan tänderna, myntet i örat och kulan i näsan.
-= In Egypt everybody can hold their breath for a week.
-> I Egypten kan alla hålla andan i en vecka.
-= It's getting hotter every day. Then, from the galley, a long slurping noise…
-> Det blir hetare för varje dag. Sedan hörs ett långt slurpande från byssan…
-= The horse has drunk the water barrel dry!
-> Hästen har druckit ur hela vattentunnan!
-= A bowl of sea water
-> En skål havsvatten
-= An empty cup in the middle of the bowl
-> En tom kopp mitt i skålen
-= A clear glass lid over the bowl
-> Ett genomskinligt glaslock över skålen
-= A pebble on the lid, right above the cup
-> En liten sten på locket, precis ovanför koppen
-= Put it in the hot sun
-> Ställ den i den heta solen
-= Put it in the cool shade
-> Ställ den i den svala skuggan
-= Add a spoonful of salt
-> Häll i en sked salt
-= Fresh water from the sea
-> Sötvatten ur havet
-= The captain's old trick
-> Kaptenens gamla knep
-= Just drink the sea water
-> Drick havsvattnet ändå
-= Wait for the sun to work
-> Vänta på att solen gör sitt
-= Sea water is too salty to drink. But when water dries up in the sun, the salt is left behind. Choose what you need.
-> Havsvatten är för salt att dricka. Men när vatten torkar i solen blir saltet kvar. Välj vad du behöver.
-= Bleurgh! It's horribly salty, and salty water makes you even thirstier. Never drink sea water.
-> Blä! Det är hemskt salt, och salt vatten gör en ännu törstigare. Drick aldrig havsvatten.
-= More salt? The sea has plenty already, thank you.
-> Mer salt? Havet har gott om salt redan, tack.
-= In the shade it hardly warms up. You'd be waiting till next Christmas.
-> I skuggan blir det knappt varmt. Då får du vänta till nästa jul.
-= There's no sea water to make fresh water from.
-> Det finns inget havsvatten att göra sötvatten av.
-= Where are you going to put it? Something has to warm the water up.
-> Var ska du ställa den? Något måste värma upp vattnet.
-= The warm water turns into vapour and floats away into the sky. Something has to catch it.
-> Det varma vattnet blir ånga och svävar iväg upp i luften. Något måste fånga den.
-= Drops form under the lid and fall… straight back into the salty water. Something has to catch them.
-> Droppar bildas under locket och faller… rakt tillbaka i det salta vattnet. Något måste fånga dem.
-= Drops form under the lid but run down the sides, back into the salty bowl. Make the lid dip, right above the cup.
-> Droppar bildas under locket men rinner ner längs kanterna, tillbaka i den salta skålen. Få locket att svackas, precis ovanför koppen.
-= The sun warms the sea water and it evaporates: the salt stays behind. The vapour cools on the lid, turns back into drops, runs down to the pebble and drips into the cup. Fresh water!
-> Solen värmer havsvattnet och det avdunstar: saltet blir kvar. Ångan kyls av mot locket, blir droppar igen, rinner ner till stenen och droppar i koppen. Sötvatten!
-= Soon there are bowls in the sun all over the deck, and the cups fill up drop by drop. The horse gets the first cupful.
-> Snart står det skålar i solen över hela däcket, och kopparna fylls droppe för droppe. Lilla Gubben får den första koppen.
-= Slurrrp. Neigh!
-> Slurrrp. Gnägg!
-= The sun sets, red and gold. Night falls over the sea, and one by one the stars come out.
-> Solen går ner, röd och guldig. Natten faller över havet, och en efter en tänds stjärnorna.
-= Tonight we cross the Equator, sailor. Or do we? Ask the stars. My sextant is in my cabin.
-> I natt korsar vi ekvatorn, matros. Eller gör vi det? Fråga stjärnorna. Min sextant ligger i min hytt.
-= His last voyage to the South Seas
-> Hans förra resa till Söderhavet
-= Day 1. Left Villa Villekulla. North Star 59° above the horizon. Fair wind.
-> Dag 1. Lämnade Villa Villekulla. Polstjärnan 59° över horisonten. God vind.
-= Day 8. North Star 40°. Ate a whole shark. Well, half.
-> Dag 8. Polstjärnan 40°. Åt upp en hel haj. Nåja, en halv.
-= Day 15. North Star 20°. Hot. Very hot.
-> Dag 15. Polstjärnan 20°. Varmt. Mycket varmt.
-= Day 22. Crossed the Equator! King Neptune came aboard. (It was the cook in a beard made of seaweed.)
-> Dag 22. Korsade ekvatorn! Kung Neptunus kom ombord. (Det var kocken med ett skägg av sjögräs.)
-= SAILOR'S RULE: the higher the North Star, the further north you are. At the North Pole it is straight overhead, 90° up. Sail south, and every night it sinks a little lower.
-> SJÖMANSREGEL: ju högre Polstjärnan står, desto längre norrut är du. På Nordpolen står den rakt ovanför huvudet, 90° upp. Seglar du söderut sjunker den lite lägre varje natt.
-= the North Star
-> Polstjärnan
-= At the North Pole
-> På Nordpolen
-= Back home near Villa Villekulla
-> Hemma igen vid Villa Villekulla
-= Halfway between home and the Equator
-> Halvvägs mellan hemma och ekvatorn
-= On the Equator
-> På ekvatorn
-= Higher up again
-> Högre upp igen
-= Exactly the same, on the horizon
-> Precis likadant, vid horisonten
-= Below the horizon: we can't see it any more
-> Under horisonten: vi kan inte se den längre
-= The captain's sextant
-> Kaptenens sextant
-= Measuring the North Star
-> Att mäta Polstjärnan
-= And tomorrow night?
-> Och i morgon natt?
-= Through the sextant, the North Star sits right on the horizon. The sextant reads: 0°. Where is the Hoppetossa tonight?
-> Genom sextanten sitter Polstjärnan precis på horisonten. Sextanten visar: 0°. Var är Hoppetossa i natt?
-= Tomorrow night the ship will be south of the Equator. Where will the North Star be then?
-> I morgon natt är skeppet söder om ekvatorn. Var står Polstjärnan då?
-= 0° up means 0° north: the Equator, right in the middle between the North Pole and the South Pole!
-> 0° upp betyder 0° nord: ekvatorn, precis mittemellan Nordpolen och Sydpolen!
-= Below the horizon! South of the Equator, the North Star is hidden behind the curve of the Earth. Instead, new stars appear, like the Southern Cross.
-> Under horisonten! Söder om ekvatorn göms Polstjärnan bakom jordens krökning. I stället syns nya stjärnor, som Södra korset.
-= We're crossing the line! Hurrah for the Equator!
-> Vi korsar linjen! Hurra för ekvatorn!
-= Pippi paints a big red 0° on the mainsail, and everybody gets a bucket of sea water over their head. Even the horse.
-> Pippi målar en stor röd 0° på storseglet, och alla får en hink havsvatten över huvudet. Till och med Lilla Gubben.
-= The night goes by in songs and splashes. Then the sky in the east turns pink… and something tiny shows on the horizon.
-> Natten går med sång och plask. Sedan blir himlen i öster rosa… och något pyttelitet syns vid horisonten.
-= Is that… Quick, sailor! My spyglass, and up to the crow's nest!
-> Är det… Fort, matros! Min kikare, och upp i utkiken!
-= At the North Pole, the North Star is straight above your head: 90° up. Tonight it's 0°.
-> På Nordpolen står Polstjärnan rakt ovanför huvudet: 90° upp. I natt är den 0°.
-= At home it stood 59° up, high in the sky. Look at the captain's logbook: it sinks as you sail south.
-> Hemma stod den 59° upp, högt på himlen. Titta i kaptenens loggbok: den sjunker när man seglar söderut.
-= Halfway, it would be about 30° up. Tonight it's sitting right on the sea: 0°.
-> Halvvägs skulle den stå ungefär 30° upp. I natt sitter den precis på havet: 0°.
-= It has been sinking lower every night as you sailed south. Why would it climb again now?
-> Den har sjunkit lägre varje natt medan ni seglat söderut. Varför skulle den klättra upp igen nu?
-= It has moved every single night. Keep sailing south, and it keeps sinking.
-> Den har flyttat sig varenda natt. Fortsätter ni söderut fortsätter den att sjunka.
-= Land ho?
-> Land i sikte?
-= In the crow's nest, with the spyglass
-> I utkiken, med kikaren
-= Look from the deck
-> Titta från däcket
-= Look from the crow's nest
-> Titta från utkiken
-= From the crow's nest you can see the top of the island's mountain. From the deck, you can't see it at all. Why?
-> Från utkiken ser du toppen av öns berg. Från däcket ser du ingenting alls. Varför?
-= Up in the crow's nest you're closer to the island.
-> Uppe i utkiken är du närmare ön.
-= The Earth is round. The sea curves down, and from higher up you can see further over the bend.
-> Jorden är rund. Havet kröker sig nedåt, och högre upp kan man se längre över krökningen.
-= The island is shy and ducks down when people on deck look at it.
-> Ön är blyg och huckar sig när folk på däck tittar på den.
-= From the crow's nest: your eye skims over the bend and finds the mountain top.
-> Från utkiken: blicken sveper över krökningen och hittar bergstoppen.
-= From the deck: the bend of the sea is in the way.
-> Från däcket: havets krökning är i vägen.
-= Only about 20 metres closer, and the island is many kilometres away. That's not it. Look at the picture: what is in the way of the line from the deck?
-> Bara ungefär 20 meter närmare, och ön ligger många kilometer bort. Det är inte det. Titta på bilden: vad är i vägen för linjen från däcket?
-= Pippi says some islands are very shy. This one isn't. Look at the shape of the sea in the picture.
-> Pippi säger att vissa öar är mycket blyga. Den här är det inte. Titta på havets form på bilden.
-= The Earth is round! Ships and islands far away hide behind the curve of the sea. The higher you climb, the further you can see.
-> Jorden är rund! Skepp och öar långt borta gömmer sig bakom havets krökning. Ju högre man klättrar, desto längre ser man.
-= The harbour, early in the morning. A big three-masted ship is tied up at the quay: the Hoppetossa. On her stern, a huge man with a red beard and a captain's hat is waving his arms.
-> Hamnen, tidigt på morgonen. Vid kajen ligger ett stort tremastat skepp: Hoppetossa. På akterdäcket står en jättestor man med rött skägg och kaptensmössa och viftar med armarna.
-= Ahoy, Pippilotta! Ahoy, Tommy and Annika! And ahoy, new sailor!
-> Ohoj, Pippilotta! Ohoj, Tommy och Annika! Och ohoj, nya matrosen!
-= Daddy! We're sailing to your island in the South Seas! I've never sailed to the South Seas, so I'm sure I'll be very good at it.
-> Pappa! Vi ska segla till din ö i Söderhavet! Det har jag aldrig provat förut, så det klarar jag säkert.
-= The wind is fair and the tide is high. All aboard!
-> Vinden är god och vattnet står högt. Alla ombord!
-= Not without my horse!
-> Inte utan min häst!
-= Then hoist it aboard with the cargo hoist on the stern, sailor. And Pippilotta: no lifting it yourself. Today we sail like proper sailors.
-> Hissa då ombord honom med lastvinschen på akterdäcket, matros. Och Pippilotta: inte lyfta själv. I dag seglar vi som riktiga sjömän.
-= A horse on a rope. Let's see how that hoist works.
-> En häst i ett rep. Får se hur den där vinschen fungerar.
-= LAND HO!
-> LAND I SIKTE!
-= Land ho! That's my island! Pippilotta, look: the palm trees, the beach, and all my people running down to wave!
-> Land i sikte! Det är min ö! Pippilotta, titta: palmerna, stranden, och allt mitt folk som springer ner för att vinka!
-= The Hoppetossa sails into a turquoise lagoon. Palm trees sway, the sand is white, and a crowd of children is dancing on the beach.
-> Hoppetossa seglar in i en turkos lagun. Palmerna vajar, sanden är vit, och en hel skara barn dansar på stranden.
-= Daddy is a king, so I'm a princess! A thing-searching princess with a horse.
-> Pappa är kung, så jag är prinsessa! En sakletarprinsessa med häst.
-= We hoisted a horse, crossed the Equator, made water out of the sea, and saw the island over the curve of the Earth. I've written it all down.
-> Vi har hissat en häst, korsat ekvatorn, gjort vatten av havet och sett ön över jordens krökning. Jag har skrivit upp allt.
-= Best. Voyage. Ever.
-> Bästa. Resan. Någonsin.
+# ---------- menus, end screen, labels ----------
+= Pippi's balloon ride
+> Pippis ballongfärd
+= Chapter 6: Pippi's balloon ride
+> Kapitel 6: Pippis ballongfärd
+= Chapter 6 · Pippi's Balloon Ride
+> Kapitel 6 · Pippis ballongfärd
+= In the balloon
+> I ballongen
+= The harbour: on to Chapter {n}
+> Hamnen: vidare till kapitel {n}
+= The harbour
+> Hamnen
+= Weathercock home · Chapter 6 complete
+> Vindflöjeln är tillbaka · kapitel 6 klart
+= Up and away
+> Upp och iväg
+= The burglars are caught, and the golden weathercock is back on the church tower. Next: a ship sails into the harbour, and her captain has a red beard…
+> Tjuvarna är fast, och den gyllene vindflöjeln sitter på kyrktornet igen. Härnäst: ett skepp seglar in i hamnen, och kaptenen har rött skägg…
+= Continue to Chapter 9
+> Vidare till kapitel 9
+= Upside down in the sky
+> Upp och ner i luften
+= Tried to bottle a cloud
+> Försökte fånga ett moln i en burk
+= Spotted the little Saab
+> Hittade den lilla Saaben
+= Back in the balloon basket, high above the ground. Mr Nilsson is hanging from the ropes by his tail.
+> Tillbaka i ballongkorgen, högt över marken. Herr Nilsson hänger i repen med svansen.
+= Back in the garden. The circus balloon is still lying flat in the snow.
+> Tillbaka i trädgården. Cirkusballongen ligger fortfarande platt i snön.
+= Take your time. The weathercock is shining on the church tower, and the whole town is still waving at the balloon. When you're ready, the harbour leads on to Chapter {n}: a ship has just sailed in.
+> Ta god tid på dig. Vindflöjeln glänser på kyrktornet, och hela staden vinkar fortfarande åt ballongen. När du är redo leder hamnen vidare till kapitel {n}: ett skepp har just seglat in.
+= The cloud
+> Molnet
+= The little town
+> Den lilla staden
+= A kite
+> En drake
+= The farms
+> Gårdarna
+= A little car
+> En liten bil
+= A toy car
+> En leksaksbil
+= Behind the haystacks
+> Bakom höstackarna
+= The church tower
+> Kyrktornet
+= The church square
+> Kyrktorget
+= The burner
+> Brännaren
+= The basket
+> Korgen
+= The circus balloon
+> Cirkusballongen
+= Annika's note
+> Annikas lapp
+= For Kling and Klang: "The burglars are hiding behind the haystacks at the farm with the L-shaped barn!"
+> Till Kling och Klang: "Tjuvarna gömmer sig bakom höstackarna på gården med den L-formade ladan!"
+= The golden weathercock
+> Den gyllene vindflöjeln
+= The church's golden weathercock. It belongs on top of the church tower, turning in the wind.
+> Kyrkans gyllene vindflöjel, en tupp. Den hör hemma högst upp på kyrktornet, där den vänder sig i vinden.
+= Annika's note is for Kling and Klang, on the road far below.
+> Annikas lapp är till Kling och Klang, på vägen långt där nere.
+= Mr Nilsson tries to sit on the weathercock. It's not a rocking horse.
+> Herr Nilsson försöker sätta sig på vindflöjeln. Den är ingen gunghäst.
+= The golden weathercock belongs on top of the church tower.
+> Den gyllene vindflöjeln hör hemma högst upp på kyrktornet.
 
-# ---------- js/items.js: Chapter 5 ----------
-= In the harbour? The only thing to catch here is a bored seagull.
-> I hamnen? Det enda man kan fånga här är en uttråkad mås.
-= There's nothing left to fish out. Only fish, and they'd rather stay where they are.
-> Det finns inget kvar att fiska upp. Bara fisk, och de stannar helst där de är.
-= You catch Mr Nilsson in the net. He looks delighted. You let him go again.
-> Du fångar Herr Nilsson i nätet. Han ser förtjust ut. Du släpper honom igen.
-= A fishing net is for fishing things out of the sea.
-> Ett fiskenät är till för att fiska upp saker ur havet.
-= The note in the box said: only works at night. Obviously.
-> På lappen i lådan stod det: fungerar bara på natten. Förstås.
-= A sextant measures how high a star is above the horizon. Point it at the sky.
-> En sextant mäter hur högt en stjärna står över horisonten. Rikta den mot himlen.
-= From down here on deck, there's nothing but sea. Climb higher: the crow's nest!
-> Härnere på däck finns bara hav. Klättra högre: utkiken!
-= You look through the spyglass. Sea. More sea. A seagull, very close up.
-> Du tittar i kikaren. Hav. Mer hav. En mås, alldeles nära.
-= You look at the horse through the spyglass. An enormous eye looks back at you.
-> Du tittar på Lilla Gubben i kikaren. Ett jättestort öga tittar tillbaka.
-= Pfrrrr!
-> Pfrrrr!
-= I can see you! Your freckle is enormous. Well, my freckles are, anyway.
-> Jag ser dig! Din fräkne är jättestor. Nåja, mina fräknar är det i alla fall.
-= Through the spyglass, everything nearby is a blur. It's for things far away.
-> I kikaren är allt som är nära suddigt. Den är till för saker långt borta.
+# ---------- the little Saab 96 ----------
+= A little green toy car under the table: a Saab 96, with tiny round headlights and a very round roof.
+> En liten grön leksaksbil under bordet: en Saab 96, med pyttesmå runda strålkastare och ett väldigt runt tak.
+= That's my car. I drive it on Sundays. It goes ring-ding-ding-ding!
+> Det är min bil. Den kör jag på söndagar. Den säger ring-ding-ding-ding!
+= A little pale blue Saab 96, parked in the snowy street, with a heap of snow on its round roof.
+> En liten ljusblå Saab 96, parkerad på den snöiga gatan, med en hög snö på det runda taket.
+= The police chief's car. It goes up any hill in the snow. Even backwards.
+> Poliskommissariens bil. Den tar sig uppför varenda backe i snön. Till och med baklänges.
+= Klang. We do not drive backwards up hills.
+> Klang. Vi kör inte baklänges uppför backar.
+= Far below, a little red Saab 96 putters along the country road. From up here it looks like a ladybird.
+> Långt där nere puttrar en liten röd Saab 96 längs landsvägen. Härifrån ser den ut som en nyckelpiga.
+= Hello down there! Ring-ding-ding-ding!
+> Hallå där nere! Ring-ding-ding-ding!
+= A cream-coloured Saab 96 is parked outside Tommy and Annika's house, as round and shiny as a polished egg.
+> En gräddvit Saab 96 står parkerad utanför Tommys och Annikas hus, lika rund och blank som ett putsat ägg.
+= That's Dad's new car. He has washed it three times this week.
+> Det är pappas nya bil. Han har tvättat den tre gånger den här veckan.
+= I'd have bought the horse a car like that. But it wouldn't fit in.
+> Jag skulle ha köpt en sådan bil till Lilla Gubben. Men han får inte plats.
 
-# winter in Sweden, sunshine at sea
-= It's winter in Sweden. Snow is falling on the quay, on the roofs, and on the horse.
-> Det är vinter i Sverige. Snön faller på kajen, på taken och på Lilla Gubben.
-= Where the sun shines all year round, Pippilotta! Leave your mittens here.
-> Där solen skiner hela året, Pippilotta! Vantarna kan du lämna här.
-= Behind you, the snowy harbour gets smaller and smaller. Ahead, the clouds open, and the sun comes out.
-> Bakom er blir den snöiga hamnen mindre och mindre. Framför er spricker molnen upp, och solen tittar fram.
+# ---------- in the garden and in the air ----------
+= The spunk's jam jar. Pippi has brought it along, so that the spunk can see the world from above.
+> Spunkens syltburk. Pippi har tagit med den, så att spunken får se världen uppifrån.
+= You take it. A spunk has never flown before. It looks calm about it.
+> Du tar den. En spunk har aldrig flugit förut. Den ser lugn ut.
+= A clear blue sky, with a nice steady breeze. Perfect for flying, says the ringmaster.
+> En klarblå himmel, med en lagom stadig bris. Perfekt för att flyga, säger direktören.
+= Not too windy, not too calm. Like a good trapeze act.
+> Inte för blåsigt, inte för stilla. Som ett bra trapetsnummer.
+= Up here, the sky is all around you. A flock of geese flies past at eye level and looks at you very strangely.
+> Här uppe är himlen runt omkring dig. En flock gäss flyger förbi i ögonhöjd och tittar väldigt konstigt på dig.
+= Down low, the chimney smoke leans back towards Villa Villekulla. Higher up, the clouds are drifting that way too.
+> Nere vid marken lutar skorstensröken tillbaka mot Villa Villekulla. Högre upp driver molnen åt samma håll.
+= Blue sky above, patchwork fields below. The wind is carrying you nicely towards the farms.
+> Blå himmel ovanför, lapptäcksfält nedanför. Vinden bär er fint mot gårdarna.
+= The sun shines on the golden weathercock. The sky is as blue as a policeman's uniform.
+> Solen lyser på den gyllene vindflöjeln. Himlen är lika blå som en polisuniform.
+= Bright sunshine, after the cloud. The church tower is right next to the basket.
+> Strålande sol, efter molnet. Kyrktornet är alldeles bredvid korgen.
+= Villa Villekulla, a little crooked as always. The horse is watching from the veranda.
+> Villa Villekulla, lite sned som vanligt. Lilla Gubben tittar på från verandan.
+= We'll be back for supper. Probably. Unless we fly to Egypt.
+> Vi är tillbaka till kvällsmaten. Förmodligen. Om vi inte flyger till Egypten.
+= The horse looks at the basket, and then at you. Four hundred kilos of horse in a balloon basket?
+> Lilla Gubben tittar på korgen, och sedan på dig. Fyrahundra kilo häst i en ballongkorg?
+= Pfrrr.
+> Pfrrr.
+= It decides to stay on the veranda and guard the house.
+> Han bestämmer sig för att stanna på verandan och vakta huset.
+= The circus balloon! It has flown over seven countries and one very surprised cow. And now it's yours, Miss Longstocking.
+> Cirkusballongen! Den har flugit över sju länder och en väldigt förvånad ko. Och nu är den er, fröken Långstrump.
+= Just remember: hot air goes up. Up, up, up!
+> Kom bara ihåg: varm luft stiger. Upp, upp, upp!
+= The circus balloon: red and yellow, with two white stars. It's taller than Villa Villekulla.
+> Cirkusballongen: röd och gul, med två vita stjärnor. Den är högre än Villa Villekulla.
+= It's the biggest thing I've ever carried. Well, it's carrying me, actually.
+> Det är det största jag någonsin har burit. Nåja, egentligen bär den mig.
+= A tiny puff from the burner keeps you at kite height. Right where the wind blows towards the farms.
+> En liten puff från brännaren håller er kvar på drakhöjd. Precis där vinden blåser mot gårdarna.
+= A short puff from the burner, WHOOSH, keeps the balloon level with the top of the church tower.
+> En kort puff från brännaren, FRAS, håller ballongen i jämnhöjd med kyrktornets topp.
+= The wicker basket creaks like an old chair. Sandbags hang from its sides, and a long rope trails down from the bottom.
+> Flätkorgen knarrar som en gammal stol. Sandsäckar hänger på sidorna, och ett långt rep släpar under botten.
+= Please don't jump, Pippi.
+> Snälla, hoppa inte, Pippi.
+= I've never flown a balloon, so I'm sure I can!
+> Jag har aldrig flugit ballong förut, så det klarar jag säkert!
+= Pippi hooks her knees over the edge of the basket and hangs upside down, high above the ground.
+> Pippi hakar fast knäna över korgkanten och hänger upp och ner, högt över marken.
+= Everything looks much better this way round! The fields are the sky, and the sky is the sea.
+> Allting ser mycket bättre ut åt det här hållet! Fälten är himlen, och himlen är havet.
+= PIPPI! Come back in AT ONCE!
+> PIPPI! Kom in igen GENAST!
+= Look, everybody: the whole town has come out to see us!
+> Titta, allihop: hela staden har kommit ut för att se oss!
+= From up here you can see everything. Even the top of Kling's helmet. It needs polishing.
+> Härifrån ser man allt. Till och med toppen på Klings hjälm. Den behöver putsas.
+= I'm catching a bit of cloud in a jam jar, to show Miss.
+> Jag fångar lite moln i en syltburk, för att visa fröken.
+= Annika screws the lid on tightly. When she looks inside, the jar is empty. Just a few drops of water at the bottom.
+> Annika skruvar på locket ordentligt. När hon tittar i burken är den tom. Bara några vattendroppar på botten.
+= You caught some rain, though.
+> Men du fångade lite regn i alla fall.
+= It's lying flat in the snow, like a big red pancake.
+> Den ligger platt i snön, som en stor röd pannkaka.
+= Pippi, are you sure this is safe?
+> Pippi, är du säker på att det här inte är farligt?
+= Completely sure! Well, nearly.
+> Helt säker! Nåja, nästan.
+= The smoke, the kite and the clouds all go different ways. So the wind must be different at different heights!
+> Röken, draken och molnen far åt olika håll. Då måste vinden vara olika på olika höjd!
+= Then we just need the height where the wind blows to the farms.
+> Då behöver vi bara hitta höjden där vinden blåser mot gårdarna.
+= From up here, everything looks like a map.
+> Härifrån ser allting ut som en karta.
+= A haystack doesn't look like a hill any more. It looks like a round biscuit.
+> En höstack ser inte ut som en kulle längre. Den ser ut som en rund kaka.
+= We're higher than the church!
+> Vi är högre än kyrkan!
+= Don't look down, Tommy. Oh. I looked down.
+> Titta inte ner, Tommy. Åh. Jag tittade ner.
+= Mr Nilsson is sitting on Pippi's shoulder, holding on to her plait with both hands.
+> Herr Nilsson sitter på Pippis axel och håller sig fast i hennes fläta med båda händerna.
+= Mr Nilsson is hanging from the balloon ropes by his tail, enjoying the view.
+> Herr Nilsson hänger i ballongrepen med svansen och njuter av utsikten.
+= The little town, far below: snowy roofs, the square, and smoke curling from the chimneys. The smoke leans back towards Villa Villekulla.
+> Den lilla staden, långt där nere: snöiga tak, torget, och rök som ringlar ur skorstenarna. Röken lutar tillbaka mot Villa Villekulla.
+= At this height, the wind is blowing us the wrong way!
+> På den här höjden blåser vinden oss åt fel håll!
+= In the park, a boy is flying a red kite, right up at your height. Its long yellow tail streams out towards the farms.
+> I parken flyger en pojke en röd drake, precis på er höjd. Dess långa gula svans fladdrar ut mot gårdarna.
+= A kite's tail always streams the way the wind is blowing.
+> En drakes svans fladdrar alltid åt det håll vinden blåser.
+= The burglars ran off towards the farms, Miss Longstocking! Follow them, if you can!
+> Tjuvarna sprang mot gårdarna, fröken Långstrump! Följ efter dem, om ni kan!
+= We'll follow you! Pedal, Kling, pedal!
+> Vi följer efter er! Trampa, Kling, trampa!
+= Where are they? We can't see a thing over these haystacks!
+> Var är de? Vi ser ingenting över de här höstackarna!
+= The farm with the L-shaped barn, the round duck pond and three haystacks, the farmer said!
+> Gården med den L-formade ladan, den runda ankdammen och tre höstackar, sa bonden!
+= Kling and Klang are on the road, far below. They can't hear you. Annika's note would tell them where the burglars are.
+> Kling och Klang står på vägen, långt där nere. De kan inte höra dig. Annikas lapp skulle tala om var tjuvarna är.
+= Kling and Klang are pedalling along the road below.
+> Kling och Klang trampar längs vägen där nere.
+= Thunder-Karlsson and Bloom are under arrest, Miss Longstocking. Thanks to you.
+> Dunder-Karlsson och Blom är gripna, fröken Långstrump. Tack vare er.
+= And the weathercock is home. Thanks to you too.
+> Och vindflöjeln är hemma. Också tack vare er.
+= The farm with the L-shaped barn, the round duck pond and three haystacks. Something is wiggling behind the haystacks.
+> Gården med den L-formade ladan, den runda ankdammen och tre höstackar. Något vickar bakom höstackarna.
+= Two pairs of feet stick out from behind the haystacks: one pair very big, one pair very small. The small pair is wiggling.
+> Två par fötter sticker fram bakom höstackarna: ett par väldigt stora, ett par väldigt små. De små fötterna vickar.
+= Karlsson, I think that balloon can see us.
+> Karlsson, jag tror att ballongen ser oss.
+= Balloons can't see, Bloom. Keep still.
+> Ballonger kan inte se, Blom. Ligg still.
+= The golden weathercock shines on top of the church tower, with its beak pointing into the wind.
+> Den gyllene vindflöjeln glänser högst upp på kyrktornet, med näbben mot vinden.
+= The church tower, right next to the basket. On top there's an empty spike where the weathercock should be.
+> Kyrktornet, alldeles bredvid korgen. Högst upp sitter en tom spets där vindflöjeln ska sitta.
+= Three cheers for Miss Longstocking!
+> Ett fyrfaldigt leve för fröken Långstrump!
+= The whole town cheers. Thunder-Karlsson and Bloom cheer too, a little bit, from behind Kling and Klang.
+> Hela staden jublar. Dunder-Karlsson och Blom jublar också, lite grann, bakom Kling och Klang.
+= The whole town is gathering on the church square, pointing up at the balloon.
+> Hela staden samlas på kyrktorget och pekar upp mot ballongen.
+= The harbour, behind the church. A big three-masted ship is just sailing in.
+> Hamnen, bakom kyrkan. Ett stort tremastat skepp håller just på att segla in.
+= That ship looks familiar. But first: the weathercock!
+> Det där skeppet känner jag igen. Men först: vindflöjeln!
+
+# ---------- puzzle 1: lift-off ----------
+= Lying flat in the snow
+> Platt i snön
+= cold air
+> kall luft
+= air inside
+> luften inuti
+= How do you make the balloon go up?
+> Hur får man ballongen att stiga?
+= Blow it up with the bicycle pump
+> Pumpa upp den med cykelpumpen
+= Heat the air inside with the burner
+> Värm luften inuti med brännaren
+= Fill it with Pippi's sweets
+> Fyll den med Pippis karameller
+= Everybody jumps very high at the same time
+> Alla hoppar jättehögt samtidigt
+= Pumped-in air is just as cold and heavy as the air outside. The balloon fills up, flops over and lies there like a sleepy elephant.
+> Inpumpad luft är lika kall och tung som luften utanför. Ballongen fylls, faller omkull och ligger där som en sömnig elefant.
+= Sweets are heavy, and heavy things go down, not up. (Pippi eats a few, to make it lighter.)
+> Karameller är tunga, och tunga saker åker ner, inte upp. (Pippi äter några, för att göra den lättare.)
+= You jump. You land. The basket stays exactly where it was. Mr Nilsson enjoyed it, though.
+> Ni hoppar. Ni landar. Korgen står kvar precis där den stod. Herr Nilsson tyckte i alla fall att det var roligt.
+= But why does hot air make the balloon rise?
+> Men varför får varm luft ballongen att stiga?
+= Hot air is lighter than the cold air around it, so it floats up, like a bubble in water
+> Varm luft är lättare än den kalla luften runt omkring, så den flyter upp, som en bubbla i vatten
+= The flame pushes the balloon up like a rocket
+> Lågan knuffar upp ballongen som en raket
+= The clouds pull it up
+> Molnen drar upp den
+= There's no rocket: the flame points up INTO the balloon. It's the warm air inside that does the lifting.
+> Det finns ingen raket: lågan pekar upp IN i ballongen. Det är den varma luften inuti som lyfter.
+= Clouds are far too busy being clouds. They don't pull anything.
+> Molnen har alldeles för fullt upp med att vara moln. De drar inte i någonting.
+= The burner! WHOOOSH. The air inside the balloon gets hotter and hotter, and the balloon starts to stand up.
+> Brännaren! FRAAAS. Luften i ballongen blir varmare och varmare, och ballongen börjar resa sig.
+= Hot air spreads out, so a balloon full of it is lighter than the same balloon full of cold air. The cold air around pushes it up, the way water pushes a bubble up.
+> Varm luft utvidgar sig, så en ballong full av varm luft är lättare än samma ballong full av kall luft. Den kalla luften runt omkring trycker upp den, som vatten trycker upp en bubbla.
+= The burner roars, the balloon stands up straight, and the basket lifts off the snow!
+> Brännaren dånar, ballongen reser sig rakt upp, och korgen lättar från snön!
+= Bon voyage! Mind the chimneys!
+> Trevlig resa! Akta skorstenarna!
+= Villa Villekulla gets smaller and smaller. Soon you're floating over the snowy roofs of the little town.
+> Villa Villekulla blir mindre och mindre. Snart svävar ni över den lilla stadens snöiga tak.
+= Far below, two bicycles come racing across the square: Kling and Klang, shouting through a megaphone.
+> Långt där nere kommer två cyklar susande över torget: Kling och Klang, som ropar i en megafon.
+= Miss Longstocking! The golden weathercock has been stolen from the church tower!
+> Fröken Långstrump! Den gyllene vindflöjeln har blivit stulen från kyrktornet!
+= It was Thunder-Karlsson and Bloom! They ran off towards the farms!
+> Det var Dunder-Karlsson och Blom! De sprang mot gårdarna!
+= After them! But oh dear: the wind is blowing us back towards Villa Villekulla.
+> Efter dem! Men åh nej: vinden blåser oss tillbaka mot Villa Villekulla.
+= The wind isn't the same at every height. Look at the chimney smoke, the kite and the clouds!
+> Vinden är inte likadan på alla höjder. Titta på skorstensröken, draken och molnen!
+
+# ---------- puzzle 2: steering ----------
+= Go up high
+> Upp högt
+= Up there, the clouds are drifting back towards Villa Villekulla. Wrong way!
+> Där uppe driver molnen tillbaka mot Villa Villekulla. Fel håll!
+= The middle
+> I mitten
+= Go down low
+> Ner lågt
+= Down low, the chimney smoke leans back towards Villa Villekulla: the wind blows the wrong way. (And Pippi nearly lands on a chimney.)
+> Nere vid marken lutar skorstensröken tillbaka mot Villa Villekulla: vinden blåser åt fel håll. (Och Pippi landar nästan på en skorsten.)
+= Steering a balloon
+> Att styra en ballong
+= A balloon has no steering wheel
+> En ballong har ingen ratt
+= The farms are that way: →. A balloon goes wherever the wind blows it. But the wind is not the same at every height…
+> Gårdarna ligger åt det hållet: →. En ballong far dit vinden blåser den. Men vinden är inte likadan på alla höjder…
+= ← Villa Villekulla
+> ← Villa Villekulla
+= the farms →
+> gårdarna →
+= high
+> högt
+= middle
+> mitten
+= low
+> lågt
+= By going up or down, to find a wind that blows the right way
+> Genom att stiga eller sjunka, för att hitta en vind som blåser åt rätt håll
+= With a steering wheel
+> Med en ratt
+= By flapping the sandbags
+> Genom att vifta med sandsäckarna
+= So how does a balloon pilot steer?
+> Hur styr en ballongförare då?
+= Balloons have no steering wheel. Pippi checked twice.
+> Ballonger har ingen ratt. Pippi kollade två gånger.
+= The sandbags flap. The balloon carries on exactly where the wind takes it.
+> Sandsäckarna fladdrar. Ballongen fortsätter precis dit vinden tar den.
+= Exactly! A balloon pilot steers by going up and down, and looking for the wind that blows the right way.
+> Precis! En ballongförare styr genom att stiga och sjunka, och leta efter vinden som blåser åt rätt håll.
+= A little blast of the burner, and the balloon rises to kite height. The wind catches it, and off you float over the rooftops towards the farms.
+> En liten puff från brännaren, och ballongen stiger till drakhöjd. Vinden tar tag i den, och så svävar ni över hustaken mot gårdarna.
+= Far below, Kling and Klang pedal after you as fast as they can.
+> Långt där nere trampar Kling och Klang efter er så fort de kan.
+= A farmer saw them! They're hiding at the farm with the L-shaped barn, the round duck pond and three haystacks!
+> En bonde har sett dem! De gömmer sig på gården med den L-formade ladan, den runda ankdammen och tre höstackar!
+= From up here, the farms look just like a map.
+> Härifrån ser gårdarna ut precis som en karta.
+= The kite's tail streams out towards the farms: at this height, the wind blows exactly where you want to go.
+> Drakens svans fladdrar ut mot gårdarna: på den här höjden blåser vinden precis dit ni vill.
+
+# ---------- puzzle 3: the map ----------
+= That barn is one straight block, not an L.
+> Den ladan är en rak låda, inget L.
+= That pond has corners: it's square, not round.
+> Den dammen har hörn: den är fyrkantig, inte rund.
+= Count the haystacks: only two.
+> Räkna höstackarna: bara två.
+= The farms, from above
+> Gårdarna, uppifrån
+= Up here, everything looks like a map
+> Här uppe ser allting ut som en karta
+= Kling and Klang shout up: the burglars are hiding at the farm with
+> Kling och Klang ropar upp: tjuvarna gömmer sig på gården med
+= the L-shaped barn, the round duck pond and three haystacks
+> den L-formade ladan, den runda ankdammen och tre höstackar
+= From the side, a haystack looks like a little hill.
+> Från sidan ser en höstack ut som en liten kulle.
+= What does it look like from above?
+> Hur ser den ut uppifrån?
+= A circle
+> En cirkel
+= A triangle
+> En triangel
+= A square
+> En kvadrat
+= That's how it looks from the side. From above, you look down on its round top.
+> Så ser den ut från sidan. Uppifrån tittar man ner på dess runda topp.
+= Haystacks aren't square. Not even in Egypt.
+> Höstackar är inte fyrkantiga. Inte ens i Egypten.
+= A circle! A map shows everything from above, the way a bird sees it.
+> En cirkel! En karta visar allt uppifrån, som en fågel ser det.
+= Which farm is it? Click it on the map.
+> Vilken gård är det? Klicka på den på kartan.
+= N ↑
+> N ↑
+= That one! An L-shaped roof, a round pond and three round haystacks.
+> Den där! Ett L-format tak, en rund damm och tre runda höstackar.
+= And behind those haystacks: two pairs of feet. One pair very big, one pair very small.
+> Och bakom höstackarna: två par fötter. Ett par väldigt stora, ett par väldigt små.
+= Thunder-Karlsson and Bloom! Hello down there!
+> Dunder-Karlsson och Blom! Hallå där nere!
+= Shh, Pippi! Kling and Klang are on the road, but they can't hear us from up here. I'll write them a note.
+> Sch, Pippi! Kling och Klang står på vägen, men de hör oss inte härifrån. Jag skriver en lapp till dem.
+= Annika writes a note and gives it to you.
+> Annika skriver en lapp och ger den till dig.
+
+# ---------- puzzle 4: the parachute ----------
+= A note for Kling and Klang
+> En lapp till Kling och Klang
+= They are far below, on the road
+> De står långt där nere, på vägen
+= Kling and Klang can't hear you from up here. The note has to float down to them, slowly and safely.
+> Kling och Klang kan inte höra dig härifrån. Lappen måste sväva ner till dem, långsamt och säkert.
+= How do you send the note down?
+> Hur skickar man ner lappen?
+= Crumple it into a ball and drop it
+> Knöla ihop den till en boll och släppa den
+= Tie it to a sandbag
+> Knyta fast den i en sandsäck
+= Tie it to Pippi's big handkerchief, like a parachute
+> Knyta fast den i Pippis stora näsduk, som en fallskärm
+= Fold it into a paper aeroplane
+> Vika den till ett pappersflygplan
+= It whistles down like a pebble, misses Kling by a mile and lands in the duck pond. Annika writes a new one.
+> Den visslar ner som en sten, missar Kling med flera meter och landar i ankdammen. Annika skriver en ny.
+= Never drop heavy things from a balloon! A sandbag falls very fast, and it could flatten a bicycle. Or a policeman.
+> Släpp aldrig tunga saker från en ballong! En sandsäck faller jättefort, och den skulle kunna platta till en cykel. Eller en polis.
+= Whoosh! It loops twice, sails right over Kling's helmet and lands on a cow.
+> Svisch! Det gör två loopar, seglar rakt över Klings hjälm och landar på en ko.
+= Why does the handkerchief fall so slowly?
+> Varför faller näsduken så långsamt?
+= It's big and wide, so it has to push lots of air out of the way: the air slows it down
+> Den är stor och bred, så den måste knuffa undan massor av luft: luften bromsar den
+= Handkerchiefs are lighter than air
+> Näsdukar är lättare än luft
+= Kling is a very good catcher
+> Kling är väldigt bra på att fånga
+= Then it would float up, like the balloon! It does fall, just slowly.
+> Då skulle den sväva uppåt, som ballongen! Den faller ju, bara långsamt.
+= He is. But that's not why.
+> Det är han. Men det är inte därför.
+= The handkerchief opens like a little umbrella, and the note floats gently down… right into Kling's hands.
+> Näsduken vecklar ut sig som ett litet paraply, och lappen svävar sakta ner… rakt i händerna på Kling.
+= That's called air resistance. Parachutes are big and wide on purpose: the more air they push aside, the slower they fall.
+> Det kallas luftmotstånd. Fallskärmar är stora och breda med flit: ju mer luft de knuffar undan, desto långsammare faller de.
+= The farm with the L-shaped barn! Klang, pedal!
+> Gården med den L-formade ladan! Klang, trampa!
+= Kling and Klang race up the farm track and dive behind the haystacks. A lot of shouting. A lot of hay.
+> Kling och Klang rusar uppför gårdsvägen och dyker bakom höstackarna. Mycket rop. Mycket hö.
+= Out come Thunder-Karlsson and Bloom, with their hands up. And in Bloom's sack, shining in the sun: the golden weathercock!
+> Ut kommer Dunder-Karlsson och Blom, med händerna i luften. Och i Bloms säck, glänsande i solen: den gyllene vindflöjeln!
+= It was Karlsson's idea! I only carried it!
+> Det var Karlssons idé! Jag bara bar den!
+= Miss Longstocking! We'll tie it to your rope. Please put it back on the church tower: we are afraid of heights.
+> Fröken Långstrump! Vi knyter fast den i ert rep. Var snäll och sätt tillbaka den på kyrktornet: vi är höjdrädda.
+= And of ladders.
+> Och stegrädda.
+= You haul up the rope. On the end, glittering: the golden weathercock!
+> Du halar upp repet. Längst ner, glittrande: den gyllene vindflöjeln!
+= A puff of the burner, and the balloon drifts on towards the church on the hill. Then, all of a sudden, everything goes white.
+> En puff från brännaren, och ballongen driver vidare mot kyrkan på kullen. Sedan, helt plötsligt, blir allting vitt.
+
+# ---------- puzzle 5: the cloud ----------
+= Inside a cloud
+> Inne i ett moln
+= Everything has gone white and wet
+> Allt har blivit vitt och blött
+= You can't see the town. You can't see the church. You can hardly see Pippi, and she's right next to you. Everybody's hair is dripping.
+> Du ser inte staden. Du ser inte kyrkan. Du ser knappt Pippi, och hon står alldeles bredvid dig. Allas hår droppar.
+= What is a cloud made of?
+> Vad är ett moln gjort av?
+= Billions of tiny drops of water
+> Miljarder pyttesmå vattendroppar
+= Cotton wool
+> Bomull
+= Smoke
+> Rök
+= Steam from Villa Villekulla's kettle
+> Ånga från kitteln i Villa Villekulla
+= Pippi grabs a handful. Her hand is wet and empty. No cotton wool.
+> Pippi tar en handfull. Handen är blöt och tom. Ingen bomull.
+= It doesn't smell of smoke. It smells of rain.
+> Det luktar inte rök. Det luktar regn.
+= Pippi's kettle is good, but not THAT good.
+> Pippis kittel är bra, men inte SÅ bra.
+= And why is it even colder up here than down in the snowy garden?
+> Och varför är det ännu kallare här uppe än nere i den snöiga trädgården?
+= The higher you go, the colder the air gets
+> Ju högre upp man kommer, desto kallare blir luften
+= The cloud is made of ice cream
+> Molnet är gjort av glass
+= The sun can't reach up here
+> Solen når inte hit upp
+= Pippi licks the cloud to check. No ice cream.
+> Pippi slickar på molnet för att kolla. Ingen glass.
+= The sun shines up here just as much. You're even a tiny bit closer to it! It's the air that gets colder, higher up.
+> Solen lyser lika mycket här uppe. Ni är till och med lite närmare den! Det är luften som blir kallare högre upp.
+= Water! A cloud is made of drops so tiny that they float in the air. That's why everybody is soaking wet.
+> Vatten! Ett moln består av droppar så små att de svävar i luften. Därför är alla genomblöta.
+= About 6 degrees colder for every kilometre up. That's why high mountains have snow on top, even in summer.
+> Ungefär 6 grader kallare för varje kilometer uppåt. Därför har höga berg snö på toppen, till och med på sommaren.
+= The balloon pops out of the top of the cloud into bright sunshine.
+> Ballongen ploppar ut ur molnets topp, rakt in i strålande sol.
+= And right next to the basket, close enough to touch: the church tower, with an empty spike on top where the weathercock should be.
+> Och alldeles bredvid korgen, så nära att man kan röra vid det: kyrktornet, med en tom spets högst upp där vindflöjeln ska sitta.
+= Weathercock delivery! But which way round does it go?
+> Vindflöjelleverans! Men åt vilket håll ska den sitta?
+= Look at the flag on the tower. It shows which way the wind is blowing.
+> Titta på flaggan på tornet. Den visar åt vilket håll vinden blåser.
+
+# ---------- puzzle 6: the weathercock ----------
+= Back on top of the church tower
+> Tillbaka högst upp på kyrktornet
+= Pippi holds the weathercock over its spike. It can turn freely, but it has to be fitted the right way round: with its beak into the wind.
+> Pippi håller vindflöjeln över spetsen. Den kan snurra fritt, men den måste sättas på åt rätt håll: med näbben mot vinden.
+= the flag
+> flaggan
+= Turn left
+> Vrid åt vänster
+= Turn right
+> Vrid åt höger
+= Fit it on
+> Sätt på den
+= That's the way the flag streams: where the wind is going. But a weathercock's big tail catches the wind and gets blown away, so its beak always points INTO the wind, towards where the wind comes from.
+> Dit fladdrar flaggan: dit vinden är på väg. Men vindflöjelns stora stjärt fångar vinden och blåses bort, så näbben pekar alltid MOT vinden, dit vinden kommer ifrån.
+= Look at the flag on the tower: it streams out to the east. So where does the wind come from?
+> Titta på flaggan på tornet: den fladdrar mot öster. Varifrån kommer vinden då?
+= Click! The weathercock fits on its spike, with its beak pointing west, into the wind. Its big tail swings away from the wind, like a flag.
+> Klick! Vindflöjeln passar på spetsen, med näbben mot väster, mot vinden. Den stora stjärten svänger bort från vinden, som en flagga.
+= The wind comes from the west. What do we call it?
+> Vinden kommer från väster. Vad kallar vi den?
+= A west wind
+> Västanvind
+= An east wind
+> Östanvind
+= A Pippi wind
+> Pippivind
+= It blows TOWARDS the east, but a wind is always named after where it comes FROM.
+> Den blåser MOT öster, men en vind får alltid namn efter varifrån den KOMMER.
+= Only when Pippi sneezes.
+> Bara när Pippi nyser.
+= A west wind! Winds are named after where they come from, and a weathercock points straight at it.
+> Västanvind! Vindar får namn efter varifrån de kommer, och en vindflöjel pekar rakt dit.
+
+# ---------- intro and end ----------
+= The garden of Villa Villekulla, on a frosty winter morning after the circus. A big circus wagon has just delivered an enormous present.
+> Trädgården i Villa Villekulla, en frostig vintermorgon efter cirkusen. En stor cirkusvagn har just levererat en enorm present.
+= A balloon ride? In the middle of winter?
+> En ballongfärd? Mitt i vintern?
+= The best time of all! A hot-air balloon flies best on a cold day.
+> Den allra bästa tiden! En varmluftsballong flyger bäst en kall dag.
+= Miss Longstocking! The circus would like to thank you for lifting our strongman. Here is our old balloon. It's yours!
+> Fröken Långstrump! Cirkusen vill tacka er för att ni lyfte vår starke man. Här är vår gamla ballong. Den är er!
+= A balloon! I've never flown a balloon, so I'm sure I can!
+> En ballong! Jag har aldrig flugit ballong förut, så det klarar jag säkert!
+= But Pippi, it's lying flat in the snow. How do we make it go up?
+> Men Pippi, den ligger platt i snön. Hur får vi den att stiga?
+= And where are we going?
+> Och vart ska vi?
+= To the church on the hill, of course! From up there you can see the whole world. Well, the whole town.
+> Till kyrkan på kullen, förstås! Därifrån ser man hela världen. Nåja, hela staden.
+= First, we need to get this thing off the ground.
+> Först måste vi få upp den här saken från marken.
+= Pippi leans out of the basket and drops the golden weathercock onto its spike. It creaks round and points its beak into the wind.
+> Pippi lutar sig ut ur korgen och sätter den gyllene vindflöjeln på spetsen. Den knarrar runt och pekar näbben mot vinden.
+= Then you pull the vent rope. A little hot air escapes from the top, the balloon sinks gently down… and lands, bump, in the snow beside the church.
+> Sedan drar du i ventilrepet. Lite varm luft pyser ut ur toppen, ballongen sjunker sakta… och landar, duns, i snön bredvid kyrkan.
+= The whole town is there, cheering. The church bell rings all by itself. (Well, Mr Nilsson is swinging on the bell rope.)
+> Hela staden är där och jublar. Kyrkklockan ringer alldeles av sig själv. (Nåja, Herr Nilsson gungar i klockrepet.)
+= Thank you, Miss Longstocking. These two are going straight to the police station.
+> Tack, fröken Långstrump. De här två åker raka vägen till polisstationen.
+= Next time we'll steal something that isn't on top of a church.
+> Nästa gång stjäl vi något som inte sitter högst upp på en kyrka.
+= Or something that isn't gold. Or maybe… we just won't steal anything at all.
+> Eller något som inte är av guld. Eller kanske… stjäl vi ingenting alls.
+= Magnificent! The best balloon flight in the whole history of the circus!
+> Storartat! Den bästa ballongfärden i hela cirkusens historia!
+= And down in the harbour, a big ship has just sailed in. On deck stands a man with a very red beard and a captain's hat.
+> Och nere i hamnen har ett stort skepp just seglat in. På däck står en man med väldigt rött skägg och kaptensmössa.
+= That ship… that beard… DADDY?!
+> Det där skeppet… det där skägget… PAPPA?!
+
+# ---------- hints ----------
+= The circus balloon is lying flat in the snow. What makes a hot-air balloon go up? The clue is in its name.
+> Cirkusballongen ligger platt i snön. Vad får en varmluftsballong att stiga? Ledtråden finns i namnet.
+= Click the balloon in the snow: heat the air inside with the burner. Hot air is lighter than the cold air around it, so it rises.
+> Klicka på ballongen i snön: värm luften inuti med brännaren. Varm luft är lättare än den kalla luften runt omkring, så den stiger.
+= Down low, the wind blows you the wrong way. A balloon can't steer, but the wind isn't the same at every height. Look at the smoke, the kite and the clouds.
+> Nere vid marken blåser vinden er åt fel håll. En ballong kan inte styra, men vinden är inte likadan på alla höjder. Titta på röken, draken och molnen.
+= Click the burner. The kite's tail streams out towards the farms, so go to the middle, at kite height. Balloon pilots steer by going up or down.
+> Klicka på brännaren. Drakens svans fladdrar mot gårdarna, så åk till mitten, på drakhöjd. Ballongförare styr genom att stiga eller sjunka.
+= The burglars are hiding at the farm with the L-shaped barn, the round duck pond and three haystacks. From up here, everything looks like a map.
+> Tjuvarna gömmer sig på gården med den L-formade ladan, den runda ankdammen och tre höstackar. Härifrån ser allt ut som en karta.
+= Click the farms below. From above, a haystack is a circle. The right farm has an L-shaped barn, a round pond and three round haystacks.
+> Klicka på gårdarna där nere. Uppifrån är en höstack en cirkel. Rätt gård har en L-formad lada, en rund damm och tre runda höstackar.
+= Kling and Klang can't hear you from up here. Annika has written them a note, but how do you get it down to them safely?
+> Kling och Klang kan inte höra er härifrån. Annika har skrivit en lapp till dem, men hur får man ner den säkert?
+= Use the note on Kling and Klang: tie it to Pippi's big handkerchief, like a parachute. Big and wide means lots of air resistance, so it falls slowly.
+> Använd lappen på Kling och Klang: knyt fast den i Pippis stora näsduk, som en fallskärm. Stor och bred betyder mycket luftmotstånd, så den faller långsamt.
+= Everything has gone white and wet: you're inside a cloud!
+> Allt har blivit vitt och blött: ni är inne i ett moln!
+= Click the cloud. It's made of billions of tiny drops of water. And the higher you go, the colder the air gets.
+> Klicka på molnet. Det består av miljarder pyttesmå vattendroppar. Och ju högre upp man kommer, desto kallare blir luften.
+= Put the golden weathercock back on the church tower, the right way round. The flag on the tower shows which way the wind is blowing.
+> Sätt tillbaka den gyllene vindflöjeln på kyrktornet, åt rätt håll. Flaggan på tornet visar åt vilket håll vinden blåser.
+= Use the weathercock on the tower. The flag streams east, so the wind comes from the west: turn the beak to the west, into the wind. It's a west wind.
+> Använd vindflöjeln på tornet. Flaggan fladdrar mot öster, så vinden kommer från väster: vrid näbben mot väster, mot vinden. Det är västanvind.

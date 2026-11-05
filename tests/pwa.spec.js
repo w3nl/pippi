@@ -18,7 +18,8 @@ test('the game is an installable web app that works offline', async ({ page, con
   await context.setOffline(true);
   await page.reload();
   await expect(page.locator('#sc-kitchen')).toBeAttached();
-  await page.locator('#btn-new').click();
+  await expect(page.locator('#title')).not.toHaveClass(/loading/);
+  await page.evaluate(() => startNew());
   await skip(page);
   await expect(page.locator('#chap')).toHaveText('Chapter 1 · Locked In with Mr Nilsson');
   await context.setOffline(false);

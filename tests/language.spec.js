@@ -16,7 +16,8 @@ test('the language button switches to Dutch, remembers it, and comes back to Eng
   await page.reload();
   await expect(page.locator('#btn-new')).toHaveText('Nieuw spel');
 
-  await page.locator('#btn-new').click();
+  await expect(page.locator('#title')).not.toHaveClass(/loading/);
+  await page.evaluate(() => startNew());
   await expect(page.locator('#d-who')).toHaveText('Villa Kakelbont');
   await skip(page);
   await expect(page.locator('#chap')).toHaveText('Hoofdstuk 1 · Opgesloten met meneer Nilsson');
@@ -54,7 +55,8 @@ test('Swedish: the third press of the button, with the original names', async ({
   await page.reload();
   await expect(page.locator('#btn-new')).toHaveText('Nytt spel');
 
-  await page.locator('#btn-new').click();
+  await expect(page.locator('#title')).not.toHaveClass(/loading/);
+  await page.evaluate(() => startNew());
   await skip(page);
   await expect(page.locator('#chap')).toHaveText('Kapitel 1 · Inlåst med Herr Nilsson');
   await expect(page.locator('#sc-kitchen [data-hs="horse"]')).toHaveAttribute('data-label', 'Lilla Gubben');
@@ -137,9 +139,9 @@ test('Chapter 5 in Dutch and Swedish: the ringmaster, the ticket booth and the c
   }
 });
 
-test('Chapter 6 in Dutch and Swedish: the captain, the compass points and the chapter title', async ({ page }) => {
-  for (const [lang, chap, sw, label] of [['nl', 'Hoofdstuk 6 · Aan boord van de Hoppetossa', 'zuidwest', 'Kraaiennest'], ['sv', 'Kapitel 6 · Ombord på Hoppetossa', 'sydväst', 'Utkiken']]) {
-    await seed(page, { ch: 6, scene: 'ship', f: { introDone: true, aboard: true }, hd: { i: 5 } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6']);
+test('Chapter 7 in Dutch and Swedish: the captain, the compass points and the chapter title', async ({ page }) => {
+  for (const [lang, chap, sw, label] of [['nl', 'Hoofdstuk 7 · Aan boord van de Hoppetossa', 'zuidwest', 'Kraaiennest'], ['sv', 'Kapitel 7 · Ombord på Hoppetossa', 'sydväst', 'Utkiken']]) {
+    await seed(page, { ch: 7, scene: 'ship', f: { introDone: true, aboard: true }, hd: { i: 5 } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6', '-ch7']);
     await page.evaluate(([KEY, lang]) => localStorage.setItem(KEY + '-lang', lang), [KEY, lang]);
     await page.reload();
     await page.locator('#btn-cont').click();
@@ -152,18 +154,60 @@ test('Chapter 6 in Dutch and Swedish: the captain, the compass points and the ch
   }
 });
 
-test('Chapter 7 in Dutch and Swedish: the island, the parrot and the chapter title', async ({ page }) => {
-  for (const [lang, chap, parrot, nest] of [['nl', 'Hoofdstuk 7 · Het eiland in de Stille Zuidzee', 'De papegaai', 'Het schildpaddennest'], ['sv', 'Kapitel 7 · Ön i Söderhavet', 'Papegojan', 'Sköldpaddsboet']]) {
-    await seed(page, { ch: 7, scene: 'island', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6', '-ch7']);
+test('Chapter 8 in Dutch and Swedish: the island, the parrot and the chapter title', async ({ page }) => {
+  for (const [lang, chap, parrot, nest] of [['nl', 'Hoofdstuk 8 · Het eiland in de Stille Zuidzee', 'De papegaai', 'Het schildpaddennest'], ['sv', 'Kapitel 8 · Ön i Söderhavet', 'Papegojan', 'Sköldpaddsboet']]) {
+    await seed(page, { ch: 8, scene: 'island', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6', '-ch7', '-ch8']);
     await page.evaluate(([KEY, lang]) => localStorage.setItem(KEY + '-lang', lang), [KEY, lang]);
     await page.reload();
     await page.locator('#btn-cont').click();
     await skip(page);
     await expect(page.locator('#chap')).toHaveText(chap);
-    await expect(page.locator('#sc-island [data-hs="nest7"]')).toHaveAttribute('data-label', nest);
-    await hs(page, 'parrot7');
+    await expect(page.locator('#sc-island [data-hs="nest8"]')).toHaveAttribute('data-label', nest);
+    await hs(page, 'parrot8');
     await expect(page.locator('#d-who')).toHaveText(parrot);
     await skip(page);
+  }
+});
+
+test('Chapter 9 in Dutch and Swedish: the voyage home, the sails and the chapter title', async ({ page }) => {
+  for (const [lang, chap, narrator, sails] of [['nl', 'Hoofdstuk 9 · De reis naar huis', 'De Hoppetossa · op weg naar huis', 'De zeilen'], ['sv', 'Kapitel 9 · Hemresan', 'Hoppetossa · på väg hem', 'Seglen']]) {
+    await seed(page, { ch: 9, scene: 'voyage', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6', '-ch7', '-ch8', '-ch9']);
+    await page.evaluate(([KEY, lang]) => localStorage.setItem(KEY + '-lang', lang), [KEY, lang]);
+    await page.reload();
+    await page.locator('#btn-cont').click();
+    await expect(page.locator('#d-who')).toHaveText(narrator);
+    await skip(page);
+    await expect(page.locator('#chap')).toHaveText(chap);
+    await expect(page.locator('#sc-voyage [data-hs="sails9"]')).toHaveAttribute('data-label', sails);
+  }
+});
+
+test('Chapter 10 in Dutch and Swedish: Villa Kakelbont, the horse and the chapter title', async ({ page }) => {
+  for (const [lang, chap, narrator, barrel, horse] of [['nl', 'Hoofdstuk 10 · Weer thuis', 'Villa Kakelbont · lente', 'Regenton', 'Witje'], ['sv', 'Kapitel 10 · Hemma igen', 'Villa Villekulla · vår', 'Regntunna', 'Lilla Gubben']]) {
+    await seed(page, { ch: 10, scene: 'home', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6', '-ch7', '-ch8', '-ch9', '-ch10']);
+    await page.evaluate(([KEY, lang]) => localStorage.setItem(KEY + '-lang', lang), [KEY, lang]);
+    await page.reload();
+    await page.locator('#btn-cont').click();
+    await expect(page.locator('#d-who')).toHaveText(narrator);
+    await skip(page);
+    await expect(page.locator('#chap')).toHaveText(chap);
+    await expect(page.locator('#sc-home [data-hs="barrel10"]')).toHaveAttribute('data-label', barrel);
+    await hs(page, 'horse10');
+    await expect(page.locator('#d-txt')).toContainText(horse, { timeout: 5_000 });
+    await skip(page);
+  }
+});
+
+test('Chapter 6 in Dutch and Swedish: the balloon, the burner and the chapter title', async ({ page }) => {
+  for (const [lang, chap, narrator, burner] of [['nl', 'Hoofdstuk 6 · Pippi gaat de lucht in', 'In de ballon', 'De brander'], ['sv', 'Kapitel 6 · Pippis ballongfärd', 'I ballongen', 'Brännaren']]) {
+    await seed(page, { ch: 6, scene: 'balloon', f: { introDone: true, up: true } }, ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6']);
+    await page.evaluate(([KEY, lang]) => localStorage.setItem(KEY + '-lang', lang), [KEY, lang]);
+    await page.reload();
+    await page.locator('#btn-cont').click();
+    await expect(page.locator('#d-who')).toHaveText(narrator);
+    await skip(page);
+    await expect(page.locator('#chap')).toHaveText(chap);
+    await expect(page.locator('#sc-balloon [data-hs="burner6"]')).toHaveAttribute('data-label', burner);
   }
 });
 

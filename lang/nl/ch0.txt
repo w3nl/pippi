@@ -1,0 +1,542 @@
+# Dutch translation: Chapter 0, Pippi moves in (js/chapter0.js, scenes/move.svg), and the title screen per chapter.
+
+= Pippi moves in
+> Pippi verhuist naar Villa Kakelbont
+= Chapter 0: Pippi moves in
+> Hoofdstuk 0: Pippi verhuist naar Villa Kakelbont
+= Chapter 0 · Pippi Moves In
+> Hoofdstuk 0 · Pippi verhuist naar Villa Kakelbont
+= Villa Villekulla · moving day
+> Villa Kakelbont · verhuisdag
+= Moving day at Villa Villekulla
+> Verhuisdag in Villa Kakelbont
+= Moved in · Chapter 0 complete
+> Verhuisd · hoofdstuk 0 voltooid
+= Home sweet home
+> Eigen huis, eigen haard
+= Pippi lives at Villa Villekulla now, with a horse on the veranda and a monkey on the clock. Next: four o'clock on a Saturday, and Mr Nilsson has a trick up his sleeve…
+> Pippi woont nu in Villa Kakelbont, met een paard op de veranda en een aap op de klok. Straks: vier uur op een zaterdag, en meneer Nilsson heeft iets in zijn schild…
+= Continue to Chapter 1
+> Verder naar hoofdstuk 1
+= Take your time. The clock is ticking, the horse is dozing on its veranda, and Tommy and Annika are exploring the house. When you're ready, the front door leads on to Chapter {n}.
+> Neem de tijd. De klok tikt, Witje doezelt op zijn veranda, en Tommy en Annika ontdekken het huis. Als je klaar bent, gaat de voordeur verder naar hoofdstuk {n}.
+= Back at Villa Villekulla. The horse is on its veranda, and there's still work to do inside.
+> Terug in Villa Kakelbont. Witje staat op zijn veranda, en binnen is nog werk te doen.
+= Back on moving day. The cart is still waiting in the road.
+> Terug op verhuisdag. De kar staat nog op de weg te wachten.
+= Found the very first spunk
+> De allereerste spunk gevonden
+
+# the title screen, for the chapter behind it
+= Villa Villekulla · a small town in Sweden · moving day
+> Villa Kakelbont · een klein stadje in Zweden · verhuisdag
+= A girl with red plaits has come to town, with a horse, a monkey and a suitcase full of gold. Her name is Pippi, and the old house at the end of the road is hers. But nobody has lived in it for years…
+> Er is een meisje met rode vlechten in het stadje aangekomen, met een paard, een aap en een koffer vol goud. Ze heet Pippi, en het oude huis aan het eind van de weg is van haar. Maar er heeft al jaren niemand in gewoond…
+= Villa Villekulla · the same night · nearly midnight
+> Villa Kakelbont · dezelfde nacht · bijna middernacht
+= Pippi is fast asleep with her feet on the pillow, and two burglars are creeping up to the house. They've heard about a certain suitcase full of gold…
+> Pippi slaapt diep, met haar voeten op het kussen, en twee inbrekers sluipen naar het huis. Ze hebben gehoord van een zekere koffer vol goud…
+= The little school · the last morning before the holidays
+> Het schooltje · de laatste ochtend voor de vakantie
+= Pippi has come to school for the very first time. She has heard that schoolchildren get holidays, and she wants some too.
+> Pippi gaat voor het allereerst naar school. Ze heeft gehoord dat schoolkinderen vakantie krijgen, en die wil zij ook.
+= Villa Villekulla · winter · half past two
+> Villa Kakelbont · winter · half drie
+= Kling and Klang have challenged you to a snowball fight at three o'clock. And Mr Nilsson has run off with your mittens.
+> Kling en Klang dagen jullie uit voor een sneeuwballengevecht om drie uur. En meneer Nilsson is ervandoor met je wanten.
+= The big top · the circus has come to town
+> De grote tent · het circus is in de stad
+= The show should have started ten minutes ago, but nothing is ready. The ringmaster is pulling at his moustache.
+> De voorstelling had tien minuten geleden al moeten beginnen, maar niets is klaar. De directeur trekt aan zijn snor.
+= Villa Villekulla · a frosty winter morning
+> Villa Kakelbont · een ijzige winterochtend
+= The ringmaster has given Pippi the circus balloon, and the golden weathercock has been stolen from the church tower.
+> De directeur heeft Pippi de circusballon gegeven, en de gouden windhaan is van de kerktoren gestolen.
+= The harbour · winter in Sweden
+> De haven · winter in Zweden
+= Captain Longstocking has sailed in to take Pippi to his island in the South Seas. But first the horse has to come aboard.
+> Kapitein Langkous is binnengevaren om Pippi mee te nemen naar zijn eiland in de Stille Zuidzee. Maar eerst moet Witje aan boord.
+= Captain Longstocking's island · the South Seas
+> Het eiland van kapitein Langkous · de Stille Zuidzee
+= A whole day on the island, from breakfast to moonlight, with a surprise buried on Turtle Islet.
+> Een hele dag op het eiland, van ontbijt tot maanlicht, met een verrassing begraven op het Schildpadeilandje.
+= The Hoppetossa · homeward · April
+> De Hoppetossa · op weg naar huis · april
+= The long voyage home from the South Seas, through a storm and a night full of lighthouses.
+> De lange reis naar huis vanuit de Stille Zuidzee, door een storm en een nacht vol vuurtorens.
+= Home at last! But the garden is overgrown, the door is locked, and the horse won't put a hoof in the wet grass.
+> Eindelijk thuis! Maar de tuin is overwoekerd, de deur zit op slot, en Witje wil geen hoef in het natte gras zetten.
+
+# items
+= An oil can
+> Een oliekannetje
+= A little can of oil with a long spout. Pippi oils the horse's saddle with it. And her boots. And sometimes her hair.
+> Een klein kannetje olie met een lange tuit. Pippi smeert er het zadel van Witje mee in. En haar laarzen. En soms haar haar.
+= Pippi's hand mirror
+> Pippi's handspiegel
+= A round hand mirror. Pippi uses it to count her freckles. She always gets a different number.
+> Een ronde handspiegel. Pippi telt er haar sproeten mee. Ze komt elke keer op een ander getal uit.
+= Oil in the drinking water? The horse would not thank you.
+> Olie in het drinkwater? Daar zou Witje je niet dankbaar voor zijn.
+= Mr Nilsson holds out his tail to be oiled. You decide not to.
+> Meneer Nilsson steekt zijn staart uit om geolied te worden. Je besluit het maar niet te doen.
+= Oil is for things that squeak, stick or won't move.
+> Olie is voor dingen die piepen, klemmen of niet willen bewegen.
+= The gate already swings like a dream.
+> Het hek zwaait al als een zonnetje.
+= First get onto the veranda. Then you can shine the sun in through the front door.
+> Ga eerst de veranda op. Dan kun je de zon door de voordeur naar binnen laten schijnen.
+= Forty-two freckles. No, forty-three. Mr Nilsson, keep still, you're in the way.
+> Tweeënveertig sproeten. Nee, drieënveertig. Meneer Nilsson, stilzitten, je zit in de weg.
+= The horse looks into the mirror, and the horse in the mirror looks back.
+> Witje kijkt in de spiegel, en Witje in de spiegel kijkt terug.
+= The mirror catches the sun and throws a bright spot around. Where is it dark?
+> De spiegel vangt de zon en gooit een felle lichtvlek rond. Waar is het donker?
+
+# the scene
+= Somebody behind the hedge
+> Iemand achter de heg
+= The house next door
+> Het huis van de buren
+= The old oak
+> De oude eik
+= Inside the house
+> In het huis
+= The window
+> Het raam
+= The moving boxes
+> De verhuisdozen
+= The grandfather clock
+> De staande klok
+= The front door
+> De voordeur
+= The veranda
+> De veranda
+= The old pump
+> De oude pomp
+= The garden gate
+> Het tuinhek
+= The moving cart
+> De verhuiskar
+= BOOKS
+> BOEKEN
+= PANS
+> PANNEN
+= MAX
+> MAX
+= 500 kg
+> 500 kg
+= VILLA VILLEKULLA
+> VILLA KAKELBONT
+
+# hotspots
+= A little yellow Saab 96 is parked down the road, round and shiny like a lemon drop.
+> Verderop staat een klein geel Saabje 96 geparkeerd, rond en glimmend als een zuurtje.
+= When I'm grown up, I'll buy one of those. For the horse to sit in.
+> Als ik groot ben, koop ik er zo een. Om Witje in te laten zitten.
+= Look! A little green beetle, in an old jam jar. I've just made up a new word: SPUNK. And this must be one!
+> Kijk! Een klein groen kevertje, in een oud jampotje. Ik heb net een nieuw woord verzonnen: SPUNK. En dit moet er een zijn!
+= (from behind the hedge) What IS a spunk?
+> (van achter de heg) Wat IS een spunk?
+= Nobody knows. That's what makes it so clever.
+> Dat weet niemand. Daarom is hij zo slim.
+= You take the jar. The very first spunk looks at you wisely. It will help you, if you get stuck.
+> Je pakt het potje. De allereerste spunk kijkt je wijs aan. Hij helpt je als je vastzit.
+= A blue summer sky over the little town. A perfect day for moving house.
+> Een blauwe zomerlucht boven het stadje. Een perfecte dag om te verhuizen.
+= The little town: red houses, a church with a clock, and the road that leads to Villa Villekulla.
+> Het stadje: rode huizen, een kerk met een klok, en de weg naar Villa Kakelbont.
+= The church clock says a quarter past ten.
+> De kerkklok zegt kwart over tien.
+= A neat white house with a blue roof and a tidy garden. Everything there is straight. Everything here is crooked.
+> Een keurig wit huis met een blauw dak en een nette tuin. Daar is alles recht. Hier is alles scheef.
+= An enormous old oak at the bottom of the garden, with a hollow in its trunk.
+> Een enorme oude eik achter in de tuin, met een holte in zijn stam.
+= A hollow tree! Perfect for hiding lemonade in. Or letters. Or a monkey.
+> Een holle boom! Perfect om limonade in te verstoppen. Of brieven. Of een aap.
+= Two heads pop up over the hedge: a boy and a girl. When they see you looking, they duck down again. Then the girl peeks out once more.
+> Boven de heg duiken twee hoofden op: een jongen en een meisje. Als ze zien dat je kijkt, duiken ze weer weg. Dan gluurt het meisje nog één keer.
+= Tommy, she's got a HORSE. And a MONKEY.
+> Tommy, ze heeft een PAARD. En een AAP.
+= Shh, Annika! They'll hear us.
+> Ssst, Annika! Ze horen ons.
+= Villa Villekulla. The roof is missing a few tiles, the paint is peeling, and the whole house leans a little to one side.
+> Villa Kakelbont. Er missen wat dakpannen, de verf bladdert, en het hele huis hangt een beetje scheef.
+= Isn't it beautiful? Daddy bought it years ago, for when he's too old to sail. But I'm going to live in it now.
+> Is het niet prachtig? Papa heeft het jaren geleden gekocht, voor als hij te oud is om te varen. Maar ik ga er nu in wonen.
+= You can see right into the house, but you'll have to get in through the front door, on the veranda.
+> Je kunt zo het huis in kijken, maar naar binnen moet je via de voordeur, op de veranda.
+= It's pitch dark in there. The shutters are nailed shut, and the sun can't get in.
+> Het is daar pikdonker. De luiken zijn dichtgespijkerd, en de zon kan niet naar binnen.
+= If only I could catch some sunshine and throw it in there. My hand mirror is somewhere on the cart.
+> Kon ik maar wat zonneschijn vangen en naar binnen gooien. Mijn handspiegel ligt ergens op de kar.
+= Villa Villekulla, all lit up and ticking. It already feels like home.
+> Villa Kakelbont, helemaal licht en tikkend. Het voelt al als thuis.
+= A window, with its shutters nailed shut from the outside. Hardly a crack of light gets in.
+> Een raam, met de luiken van buiten dichtgespijkerd. Er komt nauwelijks een streepje licht door.
+= Through the window, far away, you can see the church tower. Its clock says a quarter past ten.
+> Door het raam zie je in de verte de kerktoren. De klok zegt kwart over tien.
+= Something big and lumpy in the dark. You bump your knee on it. Ow.
+> Iets groots en hobbeligs in het donker. Je stoot je knie eraan. Au.
+= A neat stack: the suitcase of gold at the bottom, the eggs on top. Nothing squashed, nothing wobbling.
+> Een nette stapel: de koffer met goud onderop, de eieren bovenop. Niets geplet, niets wiebelt.
+= Something tall in the corner goes… nothing. Not even a tick.
+> Iets hoogs in de hoek doet… niets. Zelfs geen tik.
+= The grandfather clock is behind a heap of moving boxes. Stack the boxes first.
+> De staande klok staat achter een berg verhuisdozen. Stapel eerst de dozen op.
+= Tick, tock. The grandfather clock is going again, right on time.
+> Tik, tak. De staande klok loopt weer, precies op tijd.
+= The front door, up on the veranda. The veranda creaks dangerously. Better check how much it can carry.
+> De voordeur, boven op de veranda. De veranda kraakt gevaarlijk. Kijk eerst maar hoeveel hij kan dragen.
+= The front door is open, but inside it's as dark as a cupboard.
+> De voordeur is open, maar binnen is het zo donker als in een kast.
+= My hand mirror! It's on the cart. With a mirror you can throw sunshine around.
+> Mijn handspiegel! Die ligt op de kar. Met een spiegel kun je zonneschijn rondgooien.
+= The front door stands wide open, letting the summer in.
+> De voordeur staat wijd open en laat de zomer binnen.
+= The veranda, on the other side of the fence. You have to get through the gate first.
+> De veranda, aan de andere kant van het hek. Je moet eerst door het tuinhek.
+= A creaky old veranda with a sign: MAX 500 kg.
+> Een krakende oude veranda met een bordje: MAX 500 kg.
+= The horse can live here! But first it needs a drink. It's thirsty after the long walk.
+> Hier kan Witje wonen! Maar eerst moet hij drinken. Hij heeft dorst na de lange wandeling.
+= The horse's new home. It has already chewed the railing a bit.
+> Het nieuwe huis van Witje. Hij heeft al een beetje aan de reling geknabbeld.
+= An old iron pump, on the other side of the fence. The gate is in the way.
+> Een oude ijzeren pomp, aan de andere kant van het hek. Het tuinhek zit in de weg.
+= The pump squeaks, and clear cold water splashes into the trough.
+> De pomp piept, en helder koud water klatert in de trog.
+= The gate swings open and shut without a squeak. Mr Nilsson is riding on it, back and forth.
+> Het hek zwaait open en dicht zonder te piepen. Meneer Nilsson rijdt erop heen en weer.
+= The garden gate is rusted solid. You push. Pippi pushes. It doesn't move.
+> Het tuinhek is helemaal vastgeroest. Jij duwt. Pippi duwt. Het beweegt niet.
+= I could lift it off, but then it would be a hole, not a gate. Something on the cart might help.
+> Ik kan het er wel uit tillen, maar dan is het een gat en geen hek. Misschien helpt iets op de kar.
+= The moving cart: a sea chest, a suitcase full of gold, boxes of books and pans, a hat box, a box of eggs, and an oil can on top.
+> De verhuiskar: een zeekist, een koffer vol goud, dozen met boeken en pannen, een hoedendoos, een doos eieren, en bovenop een oliekannetje.
+= You take the oil can.
+> Je pakt het oliekannetje.
+= Right at the bottom of the hat box: Pippi's round hand mirror.
+> Helemaal onder in de hoedendoos: Pippi's ronde handspiegel.
+= You take it. It catches the sun and makes a little bright spot on Mr Nilsson's nose.
+> Je pakt hem. Hij vangt de zon en maakt een klein lichtvlekje op de neus van meneer Nilsson.
+= Everything on the cart has gone into the house. Only a few straws are left.
+> Alles van de kar is het huis in. Er liggen alleen nog wat strootjes.
+= The moving cart, piled high. Pippi pulled it all the way from the harbour. The horse just walked alongside.
+> De verhuiskar, hoog volgeladen. Pippi heeft hem helemaal vanaf de haven getrokken. Witje liep er gewoon naast.
+= Mr Nilsson has climbed onto the grandfather clock. It's the highest place in the house, so it's his.
+> Meneer Nilsson is op de staande klok geklommen. Dat is het hoogste plekje in huis, dus het is van hem.
+= Mr Nilsson, in his blue trousers and straw hat, is sitting on top of the moving boxes like a king on his throne.
+> Meneer Nilsson, in zijn blauwe broek en met zijn strohoed, zit boven op de verhuisdozen als een koning op zijn troon.
+= Pippi's horse, white with black spots. It's looking at the long grass behind the fence.
+> Pippi's paard, wit met zwarte vlekken. Het kijkt naar het lange gras achter het hek.
+= The horse is sniffing at the old pump. It's thirsty.
+> Witje snuffelt aan de oude pomp. Hij heeft dorst.
+= The horse has its own veranda now. It looks very pleased with itself.
+> Witje heeft nu zijn eigen veranda. Hij kijkt heel tevreden.
+= Horses usually live in stables. But this one lives on a veranda. It's more fun.
+> Paarden wonen meestal in een stal. Maar dit paard woont op een veranda. Dat is leuker.
+= Villa Villekulla! My very own house. Well, Daddy's, but he's at sea. I've never lived on my own, so I'm sure I'll be very good at it.
+> Villa Kakelbont! Mijn eigen huis. Nou ja, van papa, maar die is op zee. Ik heb nog nooit alleen gewoond, dus ik denk dat ik het wel kan.
+= Look at all this grass! The horse will never be hungry again.
+> Kijk al dat gras! Witje heeft nooit meer honger.
+= Now it's a proper home. All it needs is a few friends.
+> Nu is het een echt thuis. Er moeten alleen nog een paar vrienden bij.
+= A house needs light, a tidy hall and a clock that ticks. Then it's a home.
+> Een huis heeft licht nodig, een opgeruimde gang en een klok die tikt. Dan is het een thuis.
+
+# the gate
+= Its hinges are brown and crusty with rust
+> De scharnieren zijn bruin en korstig van de roest
+= The gate squeals, shudders, and stays shut. The hinges are covered in rust.
+> Het hek piept, rammelt en blijft dicht. De scharnieren zitten onder de roest.
+= What will help the gate open?
+> Wat helpt om het hek open te krijgen?
+= A bucket of water
+> Een emmer water
+= A few drops of oil
+> Een paar druppels olie
+= A spoonful of sugar
+> Een lepel suiker
+= Pippi kicks it
+> Pippi geeft er een schop tegen
+= Water is what made it rusty in the first place! Now it's wet AND stuck.
+> Van water is het juist gaan roesten! Nu is het nat ÉN vast.
+= Now the gate is stuck AND sticky. Mr Nilsson licks it.
+> Nu zit het hek vast ÉN is het plakkerig. Meneer Nilsson likt eraan.
+= Pippi kicks it. The whole fence wobbles, a nail flies into the next garden, and the gate stays exactly where it was.
+> Pippi geeft er een schop tegen. Het hele hek wiebelt, er vliegt een spijker de tuin van de buren in, en het hek blijft precies waar het was.
+= And what is rust?
+> En wat is roest?
+= Iron that has been eaten away by water and air
+> IJzer dat is aangevreten door water en lucht
+= Brown paint
+> Bruine verf
+= Very old dust
+> Heel oud stof
+= Nobody painted it. The brown came all by itself, from the rain.
+> Niemand heeft het geverfd. Het bruin kwam vanzelf, van de regen.
+= Dust you can blow off. Rust is part of the iron itself.
+> Stof kun je wegblazen. Roest zit in het ijzer zelf.
+= Drip, drip, drip. The oil creeps into the hinges. Creeeak… the gate moves a little.
+> Drup, drup, drup. De olie kruipt in de scharnieren. Kraaak… het hek beweegt een beetje.
+= Rust is what iron turns into when water and air get at it for a long time. Oil keeps the water away, and helps the metal slide.
+> Roest is wat er van ijzer wordt als er lang water en lucht bij komen. Olie houdt het water weg, en laat het metaal soepel glijden.
+= The gate swings open without a squeak. Pippi, the horse and you march into the garden.
+> Het hek zwaait open zonder te piepen. Pippi, Witje en jij marcheren de tuin in.
+= Hello, garden! Hello, grass! Hello, old oak!
+> Dag tuin! Dag gras! Dag oude eik!
+= The horse stops at the old pump and sniffs it. It's thirsty after the long walk from the harbour.
+> Witje blijft bij de oude pomp staan en snuffelt eraan. Hij heeft dorst na de lange wandeling vanaf de haven.
+
+# the pump
+= Wheeze, wheeze: only air comes out
+> Piep, piep: er komt alleen lucht uit
+= The pipe goes deep down into the well. There is water down there: you can hear it.
+> De buis gaat diep de put in. Daar beneden is water: je kunt het horen.
+= You pump and pump, but only air comes out. What do you do?
+> Je pompt en pompt, maar er komt alleen lucht uit. Wat doe je?
+= Pump faster
+> Sneller pompen
+= Pour a little water into the top first
+> Eerst een beetje water bovenin gieten
+= Shout down the pipe
+> In de buis roepen
+= Faster wheezing is still wheezing. The pump's leather seal has dried out: the air slips past it.
+> Sneller piepen is nog steeds piepen. Het leren klepje van de pomp is uitgedroogd: de lucht glipt erlangs.
+= HELLO, WATER? The well answers: hello, water… That's just the echo.
+> HALLO, WATER? De put antwoordt: hallo, water… Dat is gewoon de echo.
+= Why does the water come up the pipe?
+> Waarom komt het water de buis omhoog?
+= The air presses down on the water in the well and pushes it up the pipe
+> De lucht drukt op het water in de put en duwt het de buis omhoog
+= The water wants to see the sun
+> Het water wil de zon zien
+= There is a little fish in the pipe that swims up
+> Er zit een visje in de buis dat omhoog zwemt
+= Water doesn't want anything. Something pushes it.
+> Water wil niets. Iets duwt het.
+= No fish. Pippi checked, with one eye down the spout.
+> Geen vis. Pippi heeft gekeken, met één oog in de tuit.
+= Pippi pours in her lemonade. The dry leather swells up and seals the pipe. Pump, pump… SPLOSH!
+> Pippi giet haar limonade erin. Het droge leer zwelt op en sluit de buis af. Pomp, pomp… PLENS!
+= Pumping takes the air out of the pipe. Then the air outside, pressing down on the water in the well, pushes the water up. It's the same when you drink through a straw.
+> Door te pompen haal je de lucht uit de buis. Dan duwt de lucht buiten, die op het water in de put drukt, het water omhoog. Net als wanneer je door een rietje drinkt.
+= Cold, clear water gushes into the trough. The horse drinks and drinks and drinks.
+> Koud, helder water stroomt de trog in. Witje drinkt en drinkt en drinkt.
+= There. Now it needs somewhere to live. Not in the kitchen: it doesn't fit through the door. The veranda!
+> Zo. Nu moet het nog ergens wonen. Niet in de keuken: het past niet door de deur. Op de veranda!
+
+# the veranda
+= The old veranda
+> De oude veranda
+= A sign on the post says: MAX 500 kg
+> Op het paaltje staat: MAX 500 kg
+= The floorboards creak. If too much weight stands on them, they will crack.
+> De planken kraken. Als er te veel gewicht op staat, breken ze.
+= How heavy is a horse?
+> Hoe zwaar is een paard?
+= About 40 kg, like a big dog
+> Ongeveer 40 kg, zoals een grote hond
+= About 400 kg
+> Ongeveer 400 kg
+= About 4000 kg, like an elephant
+> Ongeveer 4000 kg, zoals een olifant
+= 40 kg is a big dog, or Tommy with his school bag. A horse is a LOT bigger.
+> 40 kg is een grote hond, of Tommy met zijn schooltas. Een paard is VEEL groter.
+= 4000 kg is an elephant! This is a horse. Pippi could lift it anyway, but the veranda couldn't hold it.
+> 4000 kg is een olifant! Dit is een paard. Pippi zou het toch wel kunnen tillen, maar de veranda zou het niet houden.
+= About 400 kg: as heavy as thirteen Tommys! And 400 is less than 500, so the veranda can carry it.
+> Ongeveer 400 kg: zo zwaar als dertien Tommy's! En 400 is minder dan 500, dus de veranda kan het dragen.
+= Pippi weighs 30 kg. Can she sit on the horse on the veranda?
+> Pippi weegt 30 kg. Kan ze op Witje op de veranda zitten?
+= Yes: 400 + 30 = 430 kg, less than 500
+> Ja: 400 + 30 = 430 kg, minder dan 500
+= No: that makes 700 kg
+> Nee: dat is 700 kg
+= Only if Mr Nilsson gets off first
+> Alleen als meneer Nilsson er eerst af gaat
+= 400 + 30 isn't 700. Add them up again.
+> 400 + 30 is geen 700. Tel nog eens op.
+= Mr Nilsson weighs about as much as a bag of potatoes. 430 kg is fine, with or without him.
+> Meneer Nilsson weegt ongeveer zoveel als een zak aardappels. 430 kg is prima, met of zonder hem.
+= 430 kg: still less than 500. The veranda creaks, but it holds.
+> 430 kg: nog steeds minder dan 500. De veranda kraakt, maar hij houdt het.
+= Pippi lifts the horse over her head, carries it up the steps and puts it down on the veranda. Then she climbs on its back, just to check.
+> Pippi tilt Witje boven haar hoofd, draagt hem de trap op en zet hem op de veranda. Dan klimt ze op zijn rug, gewoon om het te controleren.
+= There! From now on, this is the horse's home.
+> Zo! Vanaf nu woont Witje hier.
+= Pippi opens the front door with the big old key from Daddy's letter. Inside it's pitch dark: the shutters are nailed shut.
+> Pippi maakt de voordeur open met de grote oude sleutel uit papa's brief. Binnen is het pikdonker: de luiken zijn dichtgespijkerd.
+= I can't see a thing. We need some sunshine in there.
+> Ik zie geen hand voor ogen. We hebben daar zonneschijn nodig.
+
+# the mirror
+= Sunshine in a mirror
+> Zonneschijn in een spiegel
+= The sun shines on the veranda. The hall is dark
+> De zon schijnt op de veranda. De gang is donker
+= the dark hall
+> de donkere gang
+= How should Pippi hold the mirror, so the sunbeam goes straight into the dark hall?
+> Hoe moet Pippi de spiegel houden, zodat de zonnestraal recht de donkere gang in gaat?
+= A: flat, like a tray
+> A: plat, als een dienblad
+= B: tipped a little
+> B: een beetje schuin
+= C: facing the sun
+> C: naar de zon toe
+= The sunbeam bounces off the flat mirror and shoots up into the sky. A bird blinks.
+> De zonnestraal kaatst van de platte spiegel af en schiet de lucht in. Een vogel knippert met zijn ogen.
+= The sunbeam bounces straight back where it came from: right into Pippi's eyes. She sneezes.
+> De zonnestraal kaatst recht terug naar waar hij vandaan kwam: zo in Pippi's ogen. Ze niest.
+= B! The sunbeam bounces off the mirror and shoots straight into the hall.
+> B! De zonnestraal kaatst van de spiegel af en schiet recht de gang in.
+= How does a mirror move light?
+> Hoe stuurt een spiegel licht?
+= Light bounces off it like a ball off a wall: it leaves at the same angle it came in
+> Licht kaatst ervan af als een bal tegen een muur: het gaat weg onder dezelfde hoek als het binnenkwam
+= The mirror makes its own light
+> De spiegel maakt zelf licht
+= The mirror swallows the light and spits it out
+> De spiegel slikt het licht in en spuugt het weer uit
+= In the dark the mirror is just as dark as everything else. It only sends on light that falls on it.
+> In het donker is de spiegel net zo donker als de rest. Hij stuurt alleen licht door dat erop valt.
+= It doesn't swallow anything. The light just bounces off, very fast.
+> Hij slikt niets in. Het licht kaatst er gewoon af, heel snel.
+= Exactly: light bounces off a mirror at the same angle it comes in. Tip the mirror, and the light goes somewhere else.
+> Precies: licht kaatst van een spiegel af onder dezelfde hoek als het binnenkomt. Houd de spiegel schuin, en het licht gaat ergens anders heen.
+= A bright beam of sunshine shoots across the hall. Cobwebs! Dust! A heap of moving boxes, and a tall grandfather clock in the corner.
+> Een felle zonnestraal schiet door de gang. Spinnenwebben! Stof! Een berg verhuisdozen, en een hoge staande klok in de hoek.
+= Pippi pulls the nails out of the shutters with her fingers and flings them open. Sunlight pours in everywhere.
+> Pippi trekt de spijkers met haar vingers uit de luiken en gooit ze open. Overal stroomt zonlicht naar binnen.
+= Now let's get the boxes sorted. They're all in a heap.
+> Nu de dozen opruimen. Ze liggen allemaal op een hoop.
+
+# the boxes
+= Stack them up, from the bottom to the top
+> Stapel ze op, van onder naar boven
+= (the floor)
+> (de vloer)
+= Which goes next?
+> Welke komt nu?
+= Start at the bottom.
+> Begin onderaan.
+= The suitcase of gold
+> De koffer met goud
+= The box of books
+> De doos met boeken
+= The box of pans
+> De doos met pannen
+= Pippi's hat box
+> Pippi's hoedendoos
+= The box of eggs
+> De doos met eieren
+= The eggs, down there? Everything else lands on top of them. Omelette!
+> De eieren, daar onderop? Dan komt al het andere erbovenop. Omelet!
+= Then something heavier would have to go on top of it. Squash! Put the heaviest thing left at the bottom.
+> Dan moet er iets zwaarders bovenop. Plat! Zet het zwaarste wat er nog over is onderop.
+= A perfect stack: from 50 kg at the bottom to 1 kg on top.
+> Een perfecte stapel: van 50 kg onderop tot 1 kg bovenop.
+= Why do the heavy things go at the bottom?
+> Waarom gaan de zware dingen onderop?
+= So the stack stays steady, and nothing gets squashed
+> Zodat de stapel stevig blijft staan en er niets geplet wordt
+= Because heavy things are shy
+> Omdat zware dingen verlegen zijn
+= It doesn't matter at all
+> Het maakt helemaal niet uit
+= Suitcases aren't shy. Pippi's certainly isn't.
+> Koffers zijn niet verlegen. Die van Pippi zeker niet.
+= Try it the other way round, and the stack topples over. With eggs.
+> Doe het andersom, en de stapel valt om. Met eieren.
+= Heavy at the bottom keeps the stack steady: it is hard to tip over. And light things on top don't squash anything.
+> Zwaar onderop houdt de stapel stevig: hij valt niet zomaar om. En lichte dingen bovenop pletten niets.
+= Now you can get to the grandfather clock. Its hands both point straight up: it stopped at twelve o'clock, years ago.
+> Nu kun je bij de staande klok. Beide wijzers wijzen recht omhoog: hij is jaren geleden om twaalf uur stil blijven staan.
+= A house needs a ticking clock. Let's wind it up and set it right. The church clock will tell us the time.
+> Een huis heeft een tikkende klok nodig. Laten we hem opwinden en gelijkzetten. De kerkklok vertelt ons hoe laat het is.
+
+# the clock
+= Set it to the same time as the church clock
+> Zet hem op dezelfde tijd als de kerkklok
+= Big hand
+> Grote wijzer
+= Little hand
+> Kleine wijzer
+= Set the clock
+> Klok gelijkzetten
+= the church clock
+> de kerkklok
+= the grandfather clock
+> de staande klok
+= The big hand is on the 9: that's a quarter TO. On the church clock it's on the 3: a quarter past.
+> De grote wijzer staat op de 9: dat is kwart VOOR. Op de kerkklok staat hij op de 3: kwart over.
+= Look at the big hand on the church clock: it points at the 3. Each number is 5 minutes, so that's 15 minutes: a quarter past.
+> Kijk naar de grote wijzer op de kerkklok: die wijst naar de 3. Elk cijfer is 5 minuten, dus dat is 15 minuten: kwart over.
+= The big hand is right, but the little hand shows the hour. On the church clock it is just past the 10.
+> De grote wijzer klopt, maar de kleine wijzer geeft het uur aan. Op de kerkklok staat die net voorbij de 10.
+= The big hand is right! Now the little hand: on the church clock it points just past the 10.
+> De grote wijzer klopt! Nu de kleine wijzer: op de kerkklok wijst die net voorbij de 10.
+= A quarter past ten! The big hand counts the minutes, the little hand the hours. Pippi winds the clock up, and it starts to tick.
+> Kwart over tien! De grote wijzer telt de minuten, de kleine wijzer de uren. Pippi windt de klok op, en hij begint te tikken.
+
+# intro and end
+= A little town in Sweden, on a summer morning. Down the road comes a girl with red plaits, pulling a cart piled high with boxes. A horse walks beside her, and a monkey rides on top.
+> Een klein stadje in Zweden, op een zomerochtend. Over de weg komt een meisje met rode vlechten aan, dat een kar vol dozen trekt. Er loopt een paard naast haar, en bovenop rijdt een aap.
+= Here it is: Villa Villekulla! Daddy's house. And now it's mine, until he comes back from the sea.
+> Hier is het: Villa Kakelbont! Papa's huis. En nu is het van mij, tot hij terugkomt van zee.
+= Behind the hedge next door, two heads pop up and disappear again. Then a paper aeroplane sails over the hedge.
+> Achter de heg van de buren duiken twee hoofden op en verdwijnen weer. Dan zeilt er een papieren vliegtuigje over de heg.
+= On its wing, in neat writing: "WHO ARE YOU? From Tommy and Annika, next door."
+> Op de vleugel staat in keurige letters: "WIE BEN JIJ? Van Tommy en Annika, van hiernaast."
+= I'm Pippi! I'll write back as soon as I've moved in. Moving in can't take long. I've never done it before, so I'm sure I'll be very good at it.
+> Ik ben Pippi! Ik schrijf terug zodra ik verhuisd ben. Verhuizen duurt vast niet lang. Ik heb het nog nooit gedaan, dus ik denk dat ik het wel kan.
+= The garden gate looks rusty. Maybe something on the cart can help.
+> Het tuinhek ziet er roestig uit. Misschien helpt iets op de kar.
+= BONG… BONG… The grandfather clock strikes, loud and deep, and the whole house seems to wake up.
+> BONG… BONG… De staande klok slaat, luid en diep, en het hele huis lijkt wakker te worden.
+= Pippi folds a paper aeroplane and throws it over the hedge. On it: "COME OVER! Pippi."
+> Pippi vouwt een papieren vliegtuigje en gooit het over de heg. Erop staat: "KOM LANGS! Pippi."
+= A minute later there's a knock at the open door. A polite boy and a polite girl, in very clean clothes.
+> Een minuut later wordt er op de open deur geklopt. Een beleefde jongen en een beleefd meisje, in heel schone kleren.
+= Hello. I'm Tommy, and this is my sister Annika. We live next door.
+> Hallo. Ik ben Tommy, en dit is mijn zusje Annika. We wonen hiernaast.
+= Is it true that you live here all by yourself? With a horse on the veranda?
+> Is het waar dat je hier helemaal alleen woont? Met een paard op de veranda?
+= All by myself! Well, with Mr Nilsson, and the horse, and now you. Come back on Saturday at four, and we'll go thing-searching!
+> Helemaal alleen! Nou ja, met meneer Nilsson, en Witje, en nu ook met jullie. Kom zaterdag om vier uur terug, dan gaan we dingen zoeken!
+
+# hints
+= The garden gate is rusted shut. Pippi's moving cart is full of useful things.
+> Het tuinhek is dichtgeroest. Pippi's verhuiskar staat vol handige dingen.
+= Click the moving cart and take the oil can.
+> Klik op de verhuiskar en pak het oliekannetje.
+= The gate's hinges are rusty. What makes rusty metal move again?
+> De scharnieren van het hek zijn roestig. Waardoor gaat roestig metaal weer bewegen?
+= Use the oil can on the gate: a few drops of oil. Rust is iron eaten away by water and air.
+> Gebruik het oliekannetje op het hek: een paar druppels olie. Roest is ijzer dat is aangevreten door water en lucht.
+= The horse is thirsty, but the old pump only wheezes. Its leather seal has dried out.
+> Witje heeft dorst, maar de oude pomp piept alleen. Het leren klepje is uitgedroogd.
+= Click the pump: pour a little water in first. The air pressing on the water in the well pushes it up, like drinking through a straw.
+> Klik op de pomp: giet er eerst een beetje water in. De lucht die op het water in de put drukt, duwt het omhoog, net als drinken door een rietje.
+= The horse needs a home. The veranda can carry 500 kg. How heavy is a horse?
+> Witje heeft een thuis nodig. De veranda kan 500 kg dragen. Hoe zwaar is een paard?
+= Click the veranda (or the horse): about 400 kg. With Pippi on top, 400 + 30 = 430 kg, still less than 500.
+> Klik op de veranda (of Witje): ongeveer 400 kg. Met Pippi erop is het 400 + 30 = 430 kg, nog steeds minder dan 500.
+= The house is pitch dark inside. You could throw some sunshine in, with something shiny from the cart.
+> Binnen is het pikdonker. Je zou wat zonneschijn naar binnen kunnen gooien, met iets glimmends van de kar.
+= Click the moving cart again for Pippi's hand mirror.
+> Klik nog eens op de verhuiskar voor Pippi's handspiegel.
+= Pippi's mirror can bounce the sunbeam into the dark hall. Light bounces off a mirror at the same angle it comes in.
+> Met Pippi's spiegel kun je de zonnestraal de donkere gang in kaatsen. Licht kaatst van een spiegel af onder dezelfde hoek als het binnenkomt.
+= Use the mirror on the front door (or the dark hall). Pick B, tipped a little, so the beam goes straight in.
+> Gebruik de spiegel op de voordeur (of de donkere gang). Kies B, een beetje schuin, zodat de straal recht naar binnen gaat.
+= The moving boxes are in a heap in front of the clock. Stack them up so nothing topples or gets squashed.
+> De verhuisdozen liggen op een hoop voor de klok. Stapel ze op zodat er niets omvalt of geplet wordt.
+= Click the boxes. Heaviest at the bottom: the gold, the books, the pans, the hat box, and the eggs on top.
+> Klik op de dozen. Het zwaarste onderop: het goud, de boeken, de pannen, de hoedendoos, en de eieren bovenop.
+= The grandfather clock stopped years ago. Through the window, the church clock shows the real time.
+> De staande klok staat al jaren stil. Door het raam laat de kerkklok zien hoe laat het echt is.
+= Click the clock. The big hand on the 3 (15 minutes), the little hand just past the 10: a quarter past ten.
+> Klik op de klok. De grote wijzer op de 3 (15 minuten), de kleine wijzer net voorbij de 10: kwart over tien.

@@ -26,8 +26,8 @@
 > Villa Kakelbont · een klein stadje in Zweden · vier uur
 = You came to play at Pippi's house. Pippi has gone to town for sweets, and Mr Nilsson, her monkey, has locked the front door and run off with the key. Tommy and Annika are waiting outside. Get out!
 > Je bent bij Pippi komen spelen. Pippi is snoep kopen in de stad, en meneer Nilsson, haar aapje, heeft de voordeur op slot gedaan en is er met de sleutel vandoor. Tommy en Annika wachten buiten. Zorg dat je eruit komt!
-= Click around the kitchen, read everything, and use the things you find. Stuck? Ask for a hint, or ask the spunk. Nobody knows what a spunk is, but it's very wise.
-> Klik rond in de keuken, lees alles en gebruik wat je vindt. Kom je niet verder? Vraag een hint, of vraag het aan de spunk. Niemand weet wat een spunk is, maar hij is heel wijs.
+= Click around, read everything, and use the things you find. Stuck? Ask for a hint, or ask the spunk. Nobody knows what a spunk is, but it's very wise.
+> Klik overal rond, lees alles en gebruik wat je vindt. Kom je niet verder? Vraag een hint, of vraag het aan de spunk. Niemand weet wat een spunk is, maar hij is heel wijs.
 = New game
 > Nieuw spel
 = Continue
@@ -103,7 +103,7 @@
 = Pancake on the ceiling
 > Pannenkoek aan het plafond
 = Tried to lift the horse
-> Het paard proberen op te tillen
+> Witje proberen op te tillen
 = Opened every little drawer
 > Elk laatje opengedaan
 = Said please three times
@@ -155,7 +155,7 @@
 = Pippi
 > Pippi
 = The horse
-> Het paard
+> Witje
 = The spunk
 > De spunk
 = tap ▸
@@ -292,8 +292,8 @@
 > Voorstelling! · hoofdstuk 5 voltooid
 = Bravo
 > Bravo
-= Pippi lifted the strongman, and the circus wants her to stay. Next: a ship sails into the harbour, and her captain has a red beard…
-> Pippi heeft de sterke man opgetild, en het circus wil dat ze blijft. Straks: er vaart een schip de haven binnen, en de kapitein heeft een rode baard…
+= Pippi lifted the strongman, and the circus wants her to stay. Next: the ringmaster has a thank-you present for Pippi. It is very big, very round, and it flies…
+> Pippi heeft de sterke man opgetild, en het circus wil dat ze blijft. Straks: de directeur heeft een bedankcadeau voor Pippi. Het is heel groot, heel rond, en het vliegt…
 = Pippi goes to the circus
 > Pippi gaat naar het circus
 = Chapter 5: Pippi goes to the circus
@@ -313,23 +313,23 @@
 = Take your time. School's out, and the classroom is all yours. Mr Nilsson is finishing the cake. When you're ready, the classroom door leads on to Chapter {n}.
 > Neem de tijd. De school is uit, en de klas is helemaal van jou. Meneer Nilsson eet de taart op. Als je klaar bent, gaat de deur van de klas verder naar hoofdstuk {n}.
 = Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming. When you're ready, the curtain leads on to Chapter {n}.
-> Neem de tijd. De voorstelling gaat door: het paard draaft nog steeds rondjes door de piste, en de confetti blijft vallen. Als je klaar bent, gaat het gordijn verder naar hoofdstuk {n}.
+> Neem de tijd. De voorstelling gaat door: Witje draaft nog steeds rondjes door de piste, en de confetti blijft vallen. Als je klaar bent, gaat het gordijn verder naar hoofdstuk {n}.
 
 # ---------- Chapter 6: menus, end screen, speakers ----------
 = Curtain: on to Chapter {n}
 > Gordijn: door naar hoofdstuk {n}
 = Continue to Chapter 5
 > Door naar hoofdstuk 5
-= Land ho · Chapter 6 complete
-> Land in zicht · hoofdstuk 6 voltooid
+= Land ho · Chapter 7 complete
+> Land in zicht · hoofdstuk 7 voltooid
 = Land ho
 > Land in zicht
 = On board the Hoppetossa
 > Aan boord van de Hoppetossa
-= Chapter 6: On board the Hoppetossa
-> Hoofdstuk 6: Aan boord van de Hoppetossa
-= Chapter 6 · On Board the Hoppetossa
-> Hoofdstuk 6 · Aan boord van de Hoppetossa
+= Chapter 7: On board the Hoppetossa
+> Hoofdstuk 7: Aan boord van de Hoppetossa
+= Chapter 7 · On Board the Hoppetossa
+> Hoofdstuk 7 · Aan boord van de Hoppetossa
 = Tasted the sea
 > De zee geproefd
 = A horse, very close up
@@ -339,7 +339,7 @@
 = Back on board the Hoppetossa. The captain is humming at the wheel, and Mr Nilsson is looking for things to throw.
 > Terug aan boord van de Hoppetossa. De kapitein neuriet aan het roer, en meneer Nilsson zoekt dingen om weg te gooien.
 = Back at the harbour. The horse is still waiting on the quay.
-> Terug in de haven. Het paard staat nog steeds te wachten op de kade.
+> Terug in de haven. Witje staat nog steeds te wachten op de kade.
 = Captain Longstocking
 > Kapitein Langkous
 = The Hoppetossa
@@ -374,18 +374,18 @@
 > De Hoppetossa heeft het eiland van kapitein Langkous bereikt. Straks: een hele dag op het eiland, met een begraven verrassing voor Pippi…
 = Continue to Chapter 7
 > Door naar hoofdstuk 7
-= Goodnight, turtles · Chapter 7 complete
-> Welterusten, schildpadjes · hoofdstuk 7 voltooid
+= Goodnight, turtles · Chapter 8 complete
+> Welterusten, schildpadjes · hoofdstuk 8 voltooid
 = Hooray
 > Hoera
-= Treasure, thunder and turtles: what a day on Captain Longstocking's island. Next: home again to Villa Villekulla… Chapter 8 is still being written.
-> Een schat, onweer en schildpadden: wat een dag op het eiland van kapitein Langkous. Straks: weer naar huis, naar Villa Kakelbont… Aan hoofdstuk 8 wordt nog geschreven.
+= Treasure, thunder and turtles: what a day on Captain Longstocking's island. Next: the long voyage home, through a storm and a night full of lighthouses…
+> Een schat, onweer en schildpadden: wat een dag op het eiland van kapitein Langkous. Straks: de lange reis naar huis, door een storm en een nacht vol vuurtorens…
 = The South Sea island
 > Het eiland in de Stille Zuidzee
-= Chapter 7: The South Sea island
-> Hoofdstuk 7: Het eiland in de Stille Zuidzee
-= Chapter 7 · The South Sea Island
-> Hoofdstuk 7 · Het eiland in de Stille Zuidzee
+= Chapter 8: The South Sea island
+> Hoofdstuk 8: Het eiland in de Stille Zuidzee
+= Chapter 8 · The South Sea Island
+> Hoofdstuk 8 · Het eiland in de Stille Zuidzee
 = Bonked by a coconut
 > Een kokosnoot op je hoofd
 = Soaked to the skin
@@ -400,8 +400,8 @@
 > Terug op het eiland. De koning snurkt nog steeds in zijn hangmat.
 = Take your time. The Hoppetossa is anchored in the lagoon, the palm trees are swaying, and Pippi is already up a coconut tree. When you're ready, go ashore: click the island to go on to Chapter {n}.
 > Neem de tijd. De Hoppetossa ligt voor anker in de lagune, de palmbomen wuiven, en Pippi zit al in een kokospalm. Als je klaar bent, ga je aan land: klik op het eiland om door te gaan naar hoofdstuk {n}.
-= Take your time. The feast goes on behind the hut, the moon shines on the lagoon, and somewhere out there, twenty-five little turtles are swimming.
-> Neem de tijd. Achter de hut gaat het feest door, de maan schijnt op de lagune, en ergens daarbuiten zwemmen vijfentwintig kleine schildpadjes.
+= Take your time. The feast goes on behind the hut, the moon shines on the lagoon, and somewhere out there, twenty-five little turtles are swimming. When you're ready, the Hoppetossa will sail you home: click her to go on to Chapter {n}.
+> Neem de tijd. Achter de hut gaat het feest door, de maan schijnt op de lagune, en ergens daarbuiten zwemmen vijfentwintig kleine schildpadjes. Als je klaar bent, brengt de Hoppetossa je naar huis: klik op het schip om door te gaan naar hoofdstuk {n}.
 = The parrot
 > De papegaai
 = Turtle Islet is still cut off by the water. Wait for low tide.
@@ -424,3 +424,57 @@
 > Graaf mij straks maar op, matroos. Zzz.
 = You dig a little hole. Nothing in it but sand and an offended crab. The X is somewhere else.
 > Je graaft een kuiltje. Er zit alleen zand in en een beledigde krab. De X is ergens anders.
+
+# ---------- Chapter 8: menus, end screen, speakers, item uses ----------
+= The Hoppetossa: on to Chapter {n}
+> De Hoppetossa: door naar hoofdstuk {n}
+= Continue to Chapter 8
+> Door naar hoofdstuk 8
+= Home sweet home · Chapter 10 complete
+> Eindelijk thuis · hoofdstuk 10 voltooid
+= Welcome home
+> Welkom thuis
+= The horse is on its veranda, the hedgehog is under the lilac, and the whole town is at the party. More adventures are still being written…
+> Witje staat op zijn veranda, de egel woont onder de sering, en het hele stadje is op het feest. Aan meer avonturen wordt nog geschreven…
+= Home again
+> Weer thuis
+= Chapter 10: Home again
+> Hoofdstuk 10: Weer thuis
+= Chapter 10 · Home Again
+> Hoofdstuk 10 · Weer thuis
+= Villa Villekulla · spring
+> Villa Kakelbont · lente
+= Read all the post
+> Alle post gelezen
+= A very furry pancake
+> Een heel harige pannenkoek
+= Looked for the pot of gold
+> De pot met goud gezocht
+= Back home. The rainbow is still over the roof, and something is snuffling on the veranda.
+> Weer thuis. De regenboog staat nog boven het dak, en er snuffelt iets op de veranda.
+= Back at Villa Villekulla. The party table is waiting in the garden.
+> Terug bij Villa Kakelbont. De feesttafel wacht in de tuin.
+= Back at Villa Villekulla. Pippi is still holding the horse over her head.
+> Terug bij Villa Kakelbont. Pippi houdt Witje nog steeds boven haar hoofd.
+= Take your time. The party goes on under the lanterns in the old oak, the horse is dozing on its veranda, and the hedgehog is eating its supper under the lilac.
+> Neem de tijd. Het feest gaat door onder de lampionnen in de oude eik, Witje dommelt op zijn veranda, en de egel eet zijn avondeten onder de sering.
+= There's nothing left down there that a magnet likes.
+> Er ligt daar beneden niets meer waar een magneet van houdt.
+= You hold the magnet next to Mr Nilsson. Nothing happens: his trouser buttons are made of brass, and brass isn't magnetic.
+> Je houdt de magneet naast meneer Nilsson. Er gebeurt niets: de knopen van zijn broek zijn van messing, en messing is niet magnetisch.
+= CLANK! The magnet jumps onto the iron hinge of the gate and sticks. It takes both hands to pull it off again.
+> KLENG! De magneet springt op het ijzeren scharnier van het hek en blijft plakken. Je hebt twee handen nodig om hem er weer af te trekken.
+= The magnet sticks to the iron lock. But it doesn't unlock anything. You need the key, and the key is in the rain barrel.
+> De magneet blijft aan het ijzeren slot plakken. Maar er gaat niets van open. Je hebt de sleutel nodig, en die ligt in de regenton.
+= Nothing sticks to me. I'm made of muscles, freckles and pancakes.
+> Aan mij blijft niets plakken. Ik ben gemaakt van spieren, sproeten en pannenkoeken.
+= A magnet pulls things made of iron or steel. Somewhere around here, an iron key is hiding.
+> Een magneet trekt aan dingen van ijzer of staal. Hier ergens ligt een ijzeren sleutel verstopt.
+= Mr Nilsson reaches for the key. Not this time: you hold on tight.
+> Meneer Nilsson grijpt naar de sleutel. Deze keer niet: je houdt hem stevig vast.
+= Click! The front door of Villa Villekulla swings open. Inside it smells of dust, old pancakes and home.
+> Klik! De voordeur van Villa Kakelbont zwaait open. Binnen ruikt het naar stof, oude pannenkoeken en thuis.
+= Let's get the party food out of the larder!
+> Laten we het feesteten uit de voorraadkast halen!
+= Tommy and Annika carry everything from Pippi's larder out to the garden table.
+> Tommy en Annika dragen alles uit Pippi's voorraadkast naar de tuintafel.

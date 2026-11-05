@@ -64,7 +64,7 @@
 = Three o'clock, children! Ready? Your team throws first!
 > Drie uur, kinderen! Klaar? Jullie team gooit eerst!
 = Everything is ready: the fort, the snowballs, the horse with the sledge, and a warm Annika. Throw at the policemen's fort!
-> Alles is klaar: het fort, de sneeuwballen, het paard met de slee, en een warme Annika. Gooi naar het fort van de agenten!
+> Alles is klaar: het fort, de sneeuwballen, Witje met de slee, en een warme Annika. Gooi naar het fort van de agenten!
 = The spunk's jam jar, on the kitchen windowsill, nice and warm. Pippi doesn't let it out in the snow.
 > Het jampotje van de spunk, lekker warm op de vensterbank van de keuken. Pippi laat hem niet naar buiten in de sneeuw.
 = You take it anyway, tucked inside your coat. A spunk knows things. Even about snow.
@@ -94,15 +94,15 @@
 = Whoever loses the snowball fight has to make it. Pippi has already put out a lot of cups.
 > Wie het sneeuwballengevecht verliest, moet die maken. Pippi heeft al heel veel kopjes klaargezet.
 = The horse is harnessed to the sledge, which is piled high with snowballs. It looks very proud to be on your team.
-> Het paard staat voor de slee, die hoog vol sneeuwballen ligt. Het kijkt heel trots dat het in jullie team zit.
+> Witje staat voor de slee, die hoog vol sneeuwballen ligt. Hij kijkt heel trots dat hij in jullie team zit.
 = The horse is harnessed to the sledge, waiting for something to pull.
-> Het paard staat voor de slee en wacht tot er iets te trekken valt.
+> Witje staat voor de slee en wacht tot er iets te trekken valt.
 = Crunch.
 > Knars.
 = The horse is still chewing the snowman's nose, very happily.
-> Het paard kauwt nog steeds heel tevreden op de neus van de sneeuwpop.
+> Witje kauwt nog steeds heel tevreden op de neus van de sneeuwpop.
 = The horse is on the veranda in its winter blanket. Pippi wants it to pull the sledge with the snowballs.
-> Het paard staat op de veranda in zijn winterdeken. Pippi wil dat het de slee met de sneeuwballen trekt.
+> Witje staat op de veranda in zijn winterdeken. Pippi wil dat hij de slee met de sneeuwballen trekt.
 = But the veranda steps are one big sheet of ice. Every time it puts a hoof on them, it slides.
 > Maar het verandatrapje is één grote ijsplaat. Elke keer als het er een hoef op zet, glijdt het weg.
 = The veranda steps, salted and safe. Even Mr Nilsson walks down them now, instead of sliding.
@@ -114,7 +114,7 @@
 = Mr Nilsson peeks out of the hollow in the oak, very pleased with himself. He has a snowball of his own.
 > Meneer Nilsson gluurt uit het gat in de eik, heel tevreden met zichzelf. Hij heeft zelf ook een sneeuwbal.
 = The snowman has no nose any more. The horse says it wasn't him. The horse has orange lips.
-> De sneeuwpop heeft geen neus meer. Het paard zegt dat hij het niet was. Het paard heeft oranje lippen.
+> De sneeuwpop heeft geen neus meer. Witje zegt dat hij het niet was. Witje heeft oranje lippen.
 = Pippi's snowman, wearing her old top hat and a green scarf, with a carrot for a nose.
 > Pippi's sneeuwpop, met haar oude hoge hoed en een groene sjaal, en een wortel als neus.
 = There are hoofprints all round it. Somebody has been admiring that carrot.
@@ -124,7 +124,7 @@
 = Crunch, crunch.
 > Knars, knars.
 = The horse has stretched its neck all the way from the veranda and eaten the snowman's nose. It looks delighted.
-> Het paard heeft zijn nek helemaal vanaf de veranda uitgerekt en de neus van de sneeuwpop opgegeten. Het kijkt dolblij.
+> Witje heeft zijn nek helemaal vanaf de veranda uitgerekt en de neus van de sneeuwpop opgegeten. Hij kijkt dolblij.
 = The tracks in the snow. The one with five long fingers led straight to the old oak, and Mr Nilsson.
 > De sporen in de sneeuw. Het spoor met vijf lange vingers leidde recht naar de oude eik, en naar meneer Nilsson.
 = Your fort, a bit battered, but still standing. Snowball champions!
@@ -180,7 +180,7 @@
 = Four round toes and no claw marks: a cat. Cats pull their claws in when they walk. It's the neighbour's cat, off along the fence.
 > Vier ronde tenen en geen klauwsporen: een kat. Katten trekken hun nagels in als ze lopen. Het is de kat van de buren, langs het hek.
 = Round hoofprints: the horse, from the veranda to the snowman. It was after the carrot, not your mittens.
-> Ronde hoefafdrukken: het paard, van de veranda naar de sneeuwpop. Het was op de wortel uit, niet op je wanten.
+> Ronde hoefafdrukken: Witje, van de veranda naar de sneeuwpop. Hij was op de wortel uit, niet op je wanten.
 
 # ---------- the thermometers ----------
 = North wall, in the shade
@@ -242,9 +242,9 @@
 = The icy steps
 > Het gladde trapje
 = The horse can't get down
-> Het paard kan niet naar beneden
+> Witje kan niet naar beneden
 = The veranda steps are covered in smooth, hard ice, and the horse slides on every step. Pippi's kitchen has a kettle of warm water, a bag of sugar, a box of salt, and outside there's plenty of snow. What do you put on the steps?
-> Het verandatrapje zit onder het gladde, harde ijs, en het paard glijdt op elke tree. In Pippi's keuken staan een ketel warm water, een zak suiker en een doos zout, en buiten ligt sneeuw genoeg. Wat doe je op het trapje?
+> Het verandatrapje zit onder het gladde, harde ijs, en Witje glijdt op elke tree. In Pippi's keuken staan een ketel warm water, een zak suiker en een doos zout, en buiten ligt sneeuw genoeg. Wat doe je op het trapje?
 = Warm water from the kettle
 > Warm water uit de ketel
 = Sugar
@@ -256,15 +256,15 @@
 = It melts the ice… for one minute. Then it freezes again, smoother than ever. Now the steps are a slide! Mr Nilsson loves it.
 > Het ijs smelt… één minuut lang. Dan bevriest het weer, gladder dan ooit. Nu is het trapje een glijbaan! Meneer Nilsson vindt het geweldig.
 = The horse licks the steps. Very happy horse, still very icy steps.
-> Het paard likt aan het trapje. Heel blij paard, nog steeds heel glad trapje.
+> Witje likt aan het trapje. Heel blij paard, nog steeds heel glad trapje.
 = The snow just slides about on top of the ice, and the horse slides with it.
-> De sneeuw glijdt gewoon over het ijs heen, en het paard glijdt mee.
+> De sneeuw glijdt gewoon over het ijs heen, en Witje glijdt mee.
 = Salt! It mixes with the ice into salty water, and salty water stays runny even below 0 °C. The ice melts away. (Sand works too: it doesn't melt the ice, but it gives hooves something to grip.)
 > Zout! Het mengt zich met het ijs tot zout water, en zout water blijft vloeibaar, zelfs onder 0 °C. Het ijs smelt weg. (Zand werkt ook: dat smelt het ijs niet, maar hoeven hebben er houvast aan.)
 = Clip, clop, clip, clop: the horse walks carefully down the steps into the garden. Pippi harnesses it to the sledge.
-> Klip, klop, klip, klop: het paard loopt voorzichtig het trapje af de tuin in. Pippi spant het voor de slee.
+> Klip, klop, klip, klop: Witje loopt voorzichtig het trapje af de tuin in. Pippi spant hem voor de slee.
 = You load the snowballs onto the sledge, and the horse pulls them to your fort.
-> Jullie laden de sneeuwballen op de slee, en het paard trekt ze naar jullie fort.
+> Jullie laden de sneeuwballen op de slee, en Witje trekt ze naar jullie fort.
 = Now it just needs something to pull.
 > Nu moet er alleen nog iets te trekken zijn.
 
@@ -380,7 +380,7 @@
 = Click our fort and shift every other row by half a block, like bricks in a house wall. Then let Pippi push.
 > Klik op ons fort en schuif om de andere rij een half blok op, net als stenen in een huismuur. Laat Pippi dan duwen.
 = The horse should pull the sledge with the snowballs, but it slides on the icy veranda steps. What melts ice even below 0 °C?
-> Het paard moet de slee met de sneeuwballen trekken, maar het glijdt uit op het gladde verandatrapje. Wat laat ijs smelten, zelfs onder 0 °C?
+> Witje moet de slee met de sneeuwballen trekken, maar hij glijdt uit op het gladde verandatrapje. Wat laat ijs smelten, zelfs onder 0 °C?
 = Click the veranda steps and choose salt.
 > Klik op het verandatrapje en kies zout.
 = Annika is shivering by the fence. What keeps you warmest: one thick thing, or several thin ones?
@@ -394,7 +394,7 @@
 
 # ---------- the mittens (js/items.js) ----------
 = You've made enough snowballs. Any more and the horse won't be able to pull the sledge.
-> Je hebt genoeg sneeuwballen gemaakt. Nog meer en het paard krijgt de slee niet meer vooruit.
+> Je hebt genoeg sneeuwballen gemaakt. Nog meer en Witje krijgt de slee niet meer vooruit.
 = Thank you, but those are yours. Pippi says she has spare ones somewhere. Somewhere in that wardrobe.
 > Dank je, maar die zijn van jou. Pippi zegt dat ze ergens nog reservewanten heeft. Ergens in die kleerkast.
 = Mr Nilsson eyes your mittens greedily. You put them safely back in your pocket.

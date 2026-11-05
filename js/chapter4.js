@@ -66,7 +66,7 @@ function applyWinter(){
   show('#wt-ice', !S.f.steps);
   show('#wt-vhorse', !S.f.steps); show('#hit-horse4v', !S.f.steps);
   show('#wt-ghorse', !!S.f.steps); show('#hit-horse4g', !!S.f.steps); show('#wt-sledgeballs', !!S.f.balls);
-  show('#wt-annwarm', !!S.f.warm); $('#wt-annika').classList.toggle('wt-shiver', !S.f.warm);
+  show('#wt-annwarm', !!S.f.warm); show('#wt-annhug', !S.f.warm); $('#wt-annika').classList.toggle('wt-shiver', !S.f.warm);
   show('#wt-carrot', !S.f.carrot);
   show('#wt-cap', !S.f.out4); show('#wt-capfly', !!S.f.out4); show('#wt-flag', !!S.f.out4); show('#wt-fight', !!S.f.out4);
   // where everybody is: the sledge in front of the veranda or behind our fort, the children out in the garden or behind the fort
@@ -97,6 +97,7 @@ function done4(lines){
 
 /* ---------- hotspot handlers ---------- */
 Object.assign(H, {
+  saab4(){ spotSaab(["A little pale blue Saab 96, parked in the snowy street, with a heap of snow on its round roof.", ['klang', "The police chief's car. It goes up any hill in the snow. Even backwards."], ['kling', "Klang. We do not drive backwards up hills."]]); },
   spunk4(){ S.f.spunkTaken = true; give('spunk'); applyVisuals(); say(["The spunk's jam jar, on the kitchen windowsill, nice and warm. Pippi doesn't let it out in the snow.", "You take it anyway, tucked inside your coat. A spunk knows things. Even about snow."]); },
   snow4(){
     if(!S.f.angel){ S.f.angel = true; S.ach.snowangel = true; save(); return say(["Fresh, deep snow, without a single footprint. You flop backwards into it and wave your arms and legs.", "A perfect snow angel. Pippi says it's the best she's ever seen, apart from all of hers."]); }

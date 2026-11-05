@@ -1,0 +1,708 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="scene" id="sc-balloon" viewBox="0 0 1600 900"
+    preserveAspectRatio="xMidYMid slice" aria-label="Pippi's balloon ride">
+    <defs>
+        <linearGradient id="blSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#7fb2e0" />
+            <stop offset=".7" stop-color="#d6e8f6" />
+            <stop offset="1" stop-color="#f3eef0" />
+        </linearGradient>
+        <linearGradient id="blGround" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f2f6fb" />
+            <stop offset="1" stop-color="#d8e4f0" />
+        </linearGradient>
+        <linearGradient id="blSnow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f4f8fc" />
+            <stop offset="1" stop-color="#dfe9f3" />
+        </linearGradient>
+        <radialGradient id="blSunG" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stop-color="#fff6c8" stop-opacity=".95" />
+            <stop offset="1" stop-color="#fff6c8" stop-opacity="0" />
+        </radialGradient>
+        <radialGradient id="blVign" cx=".5" cy=".45" r=".78">
+            <stop offset=".6" stop-color="#1a2a3a" stop-opacity="0" />
+            <stop offset="1" stop-color="#1a2a3a" stop-opacity=".35" />
+        </radialGradient>
+        <radialGradient id="blFlameG" cx=".5" cy=".7" r=".6">
+            <stop offset="0" stop-color="#fff1b8" />
+            <stop offset=".5" stop-color="#ffb03a" />
+            <stop offset="1" stop-color="#e8571f" stop-opacity="0" />
+        </radialGradient>
+        <clipPath id="blEnvClip">
+            <path
+                d="M560 40 C690 40 760 140 742 250 C724 340 640 380 612 430 L508 430 C480 380 396 340 378 250 C360 140 430 40 560 40 Z" />
+        </clipPath>
+        <!-- Kling and Klang on their bicycles, and Thunder-Karlsson and Bloom: drawn small, used in
+        several places -->
+        <g id="blCops">
+            <g fill="none" stroke="#2a2a2a" stroke-width="3">
+                <circle cx="10" cy="62" r="11" />
+                <circle cx="46" cy="62" r="11" />
+                <path d="M10 62 L26 44 L46 62 M26 44 L40 44" />
+                <circle cx="66" cy="64" r="10" />
+                <circle cx="100" cy="64" r="10" />
+                <path d="M66 64 L82 48 L100 64 M82 48 L94 48" />
+            </g>
+            <rect x="20" y="14" width="16" height="30" rx="5" fill="#1f2f5a" />
+            <circle cx="28" cy="8" r="8" fill="#f3c9a4" />
+            <path d="M19 4 h18 v-5 q-9 -6 -18 0z" fill="#1f2f5a" />
+            <circle cx="28" cy="-3" r="2" fill="#f2c94c" />
+            <ellipse cx="82" cy="34" rx="13" ry="15" fill="#1f2f5a" />
+            <circle cx="82" cy="14" r="9" fill="#f3c9a4" />
+            <path d="M72 10 h20 v-5 q-10 -7 -20 0z" fill="#1f2f5a" />
+            <circle cx="82" cy="1" r="2" fill="#f2c94c" />
+            <path d="M32 20 L40 42 M88 26 L94 46" stroke="#1f2f5a" stroke-width="4" stroke-linecap="round" />
+            <path d="M28 42 L22 52 L28 58 M82 48 L76 56 L82 60" stroke="#1f2f5a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <circle cx="40" cy="44" r="2.5" fill="#f3c9a4" />
+            <circle cx="94" cy="48" r="2.5" fill="#f3c9a4" />
+        </g>
+        <g id="blCrooks">
+            <rect x="0" y="16" width="26" height="40" rx="8" fill="#5a4a3a" />
+            <circle cx="13" cy="8" r="10" fill="#f3c9a4" />
+            <path d="M2 4 h22 v-4 q-11 -6 -22 0z" fill="#2a2a2a" />
+            <path d="M4 56 v14 M22 56 v14" stroke="#2a2a2a" stroke-width="6" />
+            <rect x="36" y="30" width="16" height="26" rx="5" fill="#7a5a8a" />
+            <circle cx="44" cy="22" r="8" fill="#f3c9a4" />
+            <path d="M36 18 h16 v-3 q-8 -5 -16 0z" fill="#2a2a2a" />
+            <path d="M39 56 v12 M49 56 v12" stroke="#2a2a2a" stroke-width="4" />
+            <path d="M3 22 L-5 46 M23 22 L31 46" stroke="#5a4a3a" stroke-width="6" stroke-linecap="round" />
+            <path d="M38 34 L33 52 M50 34 L55 52" stroke="#7a5a8a" stroke-width="4" stroke-linecap="round" />
+            <g fill="#f3c9a4"><circle cx="-5" cy="49" r="3.5" /><circle cx="31" cy="49" r="3.5" /><circle cx="33" cy="54" r="2.5" /><circle cx="55" cy="54" r="2.5" /></g>
+        </g>
+        <!-- a little house in the snow; its walls take the color of the <use> -->
+        <g id="blHouse">
+            <rect x="10" y="-50" width="6" height="14" fill="#8a3a1a" />
+            <rect x="-22" y="-30" width="44" height="30" fill="currentColor" />
+            <path d="M-26 -28 L0 -48 L26 -28z" fill="#fff" stroke="#c9d8e8" stroke-width="2" />
+            <g fill="#fff3c0" stroke="#fffaf0" stroke-width="1.5">
+                <rect x="-15" y="-22" width="8" height="8" />
+                <rect x="7" y="-22" width="8" height="8" />
+            </g>
+            <rect x="-4" y="-13" width="8" height="13" fill="#5a3a1e" />
+        </g>
+    </defs>
+
+    <!-- the sky -->
+    <rect width="1600" height="900" fill="url(#blSky)" />
+    <circle cx="1360" cy="120" r="100" fill="url(#blSunG)" />
+    <circle cx="1360" cy="120" r="34" fill="#fff1a8" />
+    <g class="bl-puffcloud a" fill="#fff" opacity=".9">
+        <ellipse cx="240" cy="110" rx="80" ry="22" />
+        <ellipse cx="214" cy="96" rx="40" ry="24" />
+        <ellipse cx="266" cy="92" rx="44" ry="28" />
+    </g>
+    <g class="bl-puffcloud b" fill="#fff" opacity=".8">
+        <ellipse cx="1000" cy="200" rx="64" ry="18" />
+        <ellipse cx="980" cy="188" rx="32" ry="20" />
+    </g>
+    <g class="bl-puffcloud c" fill="#fffaf0" opacity=".7">
+        <ellipse cx="620" cy="60" rx="54" ry="13" />
+        <ellipse cx="604" cy="52" rx="26" ry="15" />
+    </g>
+    <g class="bl-geese" fill="none" stroke="#2a3344" stroke-width="3" stroke-linecap="round">
+        <path
+            d="M0 0 q8 -6 16 0 q8 -6 16 0 M24 18 q8 -6 16 0 q8 -6 16 0 M48 36 q8 -6 16 0 q8 -6 16 0 M-24 18 q8 -6 16 0 q8 -6 16 0" />
+    </g>
+
+    <!-- the world below the balloon: the town, the farms, the forest and the church on the hill (it
+    slides past as you fly) -->
+    <g id="bl-world">
+        <path
+            d="M0 500 Q400 440 800 480 T1600 470 T2400 486 T3200 462 T4000 480 T4800 470 T5600 480 V900 H0 Z"
+            fill="#e6eef6" />
+        <rect y="520" width="5600" height="380" fill="url(#blGround)" />
+        <!-- the town: streets, red houses with smoking chimneys, the square with Kling and Klang, a
+        boy flying a kite -->
+        <path d="M0 640 H1600 M0 800 Q800 760 1600 810 M300 520 V900 M760 520 V900" stroke="#c9ccd2"
+            stroke-width="22" fill="none" />
+        <g id="bl-houses"></g>
+        <g id="bl-smoke" fill="#eef0f2" opacity=".85"></g>
+        <ellipse cx="1060" cy="730" rx="130" ry="44" fill="#d6dbe2" />
+        <circle cx="1060" cy="726" r="14" fill="#cfe6f2" stroke="#c9c0ae" stroke-width="4" />
+        <g id="bl-kite">
+            <path d="M1330 860 Q1380 640 1440 440" stroke="#5a5a5a" stroke-width="1.5" fill="none" />
+            <g class="bl-kitefly">
+                <path d="M1440 400 l26 40 l-26 40 l-26 -40z" fill="#e2483d" stroke="#8a1a14"
+                    stroke-width="2" />
+                <path d="M1440 400 v80 M1414 440 h52" stroke="#8a1a14" stroke-width="1.5" />
+                <path class="bl-tail" d="M1440 480 q20 10 40 0 q20 -10 40 0 q20 10 40 0"
+                    stroke="#f2c94c" stroke-width="3" fill="none" />
+            </g>
+            <circle cx="1330" cy="842" r="7" fill="#f3c9a4" />
+            <rect x="1324" y="850" width="12" height="20" rx="3" fill="#3f8a4a" />
+            <path d="M1334 853 L1331 846 M1326 853 L1320 864" stroke="#3f8a4a" stroke-width="3" stroke-linecap="round" />
+        </g>
+        <!-- Villa Villekulla, far behind already -->
+        <g>
+            <rect x="80" y="560" width="70" height="52" fill="#f2c94c" />
+            <path d="M74 562 L115 532 L156 562z" fill="#fff" />
+            <rect x="150" y="582" width="40" height="30" fill="#a5743f" />
+        </g>
+
+        <!-- the farms: patchwork fields, four farms, a windmill, and the country road -->
+        <g id="bl-fields"></g>
+        <path d="M1600 850 Q2000 800 2400 860 T3200 830" stroke="#c9ccd2" stroke-width="26"
+            fill="none" />
+        <g id="bl-farms">
+            <!-- farm A: straight barn, round pond, two haystacks -->
+            <g transform="translate(1760 600)">
+                <rect x="0" y="0" width="120" height="44" fill="#b0412a" />
+                <path d="M0 0 L60 -24 L120 0z" fill="#fff" stroke="#c9d8e8" stroke-width="2" />
+                <ellipse cx="170" cy="40" rx="30" ry="12" fill="#cfe6f2" stroke="#a9cde0"
+                    stroke-width="2" />
+                <g fill="#e2b84a" stroke="#fff" stroke-width="5">
+                    <path d="M10 92 q20 -40 40 0z" />
+                    <path d="M60 92 q20 -40 40 0z" />
+                </g>
+            </g>
+            <!-- farm B: L-shaped barn, square pond, three haystacks -->
+            <g transform="translate(2100 680)">
+                <path d="M0 0 h130 v30 h-60 v40 h-70z" fill="#b0412a" />
+                <path d="M0 0 L65 -22 L130 0z" fill="#fff" stroke="#c9d8e8" stroke-width="2" />
+                <rect x="150" y="10" width="44" height="30" fill="#cfe6f2" stroke="#a9cde0"
+                    stroke-width="2" />
+                <g fill="#e2b84a" stroke="#fff" stroke-width="5">
+                    <path d="M90 92 q18 -36 36 0z" />
+                    <path d="M130 92 q18 -36 36 0z" />
+                    <path d="M170 92 q18 -36 36 0z" />
+                </g>
+            </g>
+            <!-- farm C: L-shaped barn, round pond, three haystacks: the burglars' hideout -->
+            <g transform="translate(2480 600)">
+                <path d="M0 0 h130 v30 h-60 v40 h-70z" fill="#b0412a" />
+                <path d="M0 0 L65 -22 L130 0z" fill="#fff" stroke="#c9d8e8" stroke-width="2" />
+                <ellipse cx="180" cy="30" rx="30" ry="12" fill="#cfe6f2" stroke="#a9cde0"
+                    stroke-width="2" />
+                <g id="bl-feet" fill="#2a2a2a">
+                    <rect x="110" y="104" width="12" height="6" rx="2" />
+                    <rect x="126" y="104" width="12" height="6" rx="2" />
+                    <rect x="150" y="106" width="8" height="5" rx="2" />
+                    <rect x="160" y="106" width="8" height="5" rx="2" />
+                </g>
+                <g fill="#e2b84a" stroke="#fff" stroke-width="5">
+                    <path d="M90 110 q22 -44 44 0z" />
+                    <path d="M136 110 q22 -44 44 0z" />
+                    <path d="M182 110 q22 -44 44 0z" />
+                </g>
+            </g>
+            <!-- farm D: L-shaped barn, round pond, two haystacks -->
+            <g transform="translate(2860 640)">
+                <path d="M0 0 h130 v30 h-60 v40 h-70z" fill="#b0412a" />
+                <path d="M0 0 L65 -22 L130 0z" fill="#fff" stroke="#c9d8e8" stroke-width="2" />
+                <ellipse cx="180" cy="30" rx="30" ry="12" fill="#cfe6f2" stroke="#a9cde0"
+                    stroke-width="2" />
+                <g fill="#e2b84a" stroke="#fff" stroke-width="5">
+                    <path d="M100 100 q20 -40 40 0z" />
+                    <path d="M146 100 q20 -40 40 0z" />
+                </g>
+            </g>
+            <!-- the windmill -->
+            <g transform="translate(2360 560)">
+                <path d="M-14 70 L-8 0 H8 L14 70z" fill="#efe8dc" />
+                <g class="bl-sails" fill="#d9cdb0" stroke="#8a6a4a" stroke-width="2">
+                    <rect x="-4" y="0" width="8" height="60" />
+                    <rect x="-4" y="0" width="8" height="60" transform="rotate(90)" />
+                    <rect x="-4" y="0" width="8" height="60" transform="rotate(180)" />
+                    <rect x="-4" y="0" width="8" height="60" transform="rotate(270)" />
+                </g>
+                <circle r="5" fill="#8a6a4a" />
+            </g>
+        </g>
+        <g id="bl-caught">
+            <use href="#blCops" transform="translate(2470 760)" />
+            <use href="#blCrooks" transform="translate(2590 740)" />
+        </g>
+        <!-- a little Saab 96, puttering along the country road -->
+        <use id="bl-saab" href="#saab96" x="2770" y="808" width="110" height="46" color="#c4302b" />
+
+        <!-- the forest -->
+        <g id="bl-pines"></g>
+        <ellipse cx="3600" cy="760" rx="160" ry="40" fill="#cfe6f2" stroke="#a9cde0"
+            stroke-width="3" />
+
+        <!-- the church on the hill, its tower, the square below, and the harbour -->
+        <path d="M4000 720 Q4300 640 4600 610 Q4900 600 5150 660 Q5400 720 5600 740 V900 H4000z"
+            fill="#f4f8fc" />
+        <!-- the houses of the town on the hill, and the boathouses on the quay -->
+        <g>
+            <use href="#blHouse" transform="translate(4070 712)" color="#b0412a" />
+            <use href="#blHouse" transform="translate(4150 700)" color="#f2c94c" />
+            <use href="#blHouse" transform="translate(4236 682)" color="#d9cdb8" />
+            <use href="#blHouse" transform="translate(4110 760) scale(1.1)" color="#c4602b" />
+            <use href="#blHouse" transform="translate(4210 748) scale(1.1)" color="#b0412a" />
+            <use href="#blHouse" transform="translate(4326 664)" color="#b0412a" />
+            <use href="#blHouse" transform="translate(4420 648)" color="#e6d8b8" />
+            <use href="#blHouse" transform="translate(4330 730) scale(1.1)" color="#f2c94c" />
+            <use href="#blHouse" transform="translate(4450 716) scale(1.1)" color="#3f6a8a" />
+            <use href="#blHouse" transform="translate(4890 624)" color="#f2c94c" />
+            <use href="#blHouse" transform="translate(4970 630)" color="#b0412a" />
+            <use href="#blHouse" transform="translate(5056 648)" color="#d9cdb8" />
+            <use href="#blHouse" transform="translate(5140 670)" color="#c4602b" />
+            <use href="#blHouse" transform="translate(5216 692)" color="#3f6a8a" />
+            <use href="#blHouse" transform="translate(5130 730) scale(1.1)" color="#b0412a" />
+            <use href="#blHouse" transform="translate(5300 728) scale(1.2)" color="#8a2e1a" />
+        </g>
+        <g id="bl-church">
+            <rect x="4540" y="560" width="190" height="110" fill="#f3efe3" stroke="#c9c0ae"
+                stroke-width="3" />
+            <path d="M4530 562 L4635 500 L4740 562z" fill="#7a8aa6" />
+            <path d="M4560 548 L4635 504 L4700 542" stroke="#fff" stroke-width="8"
+                stroke-linecap="round" fill="none" />
+            <g fill="#7fb0d0">
+                <path d="M4570 610 v-20 q12 -14 24 0 v20z" />
+                <path d="M4650 610 v-20 q12 -14 24 0 v20z" />
+            </g>
+            <rect x="4716" y="440" width="68" height="260" fill="#f3efe3" stroke="#c9c0ae"
+                stroke-width="3" />
+            <path d="M4708 442 L4750 372 L4792 442z" fill="#7a8aa6" />
+            <path d="M4736 396 L4750 372 L4764 396z" fill="#fff" />
+            <circle cx="4750" cy="500" r="18" fill="#fffaf0" stroke="#5a5f66" stroke-width="3" />
+            <path d="M4750 500 V486 M4750 500 l-5 -8.7" stroke="#2b2118" stroke-width="3"
+                stroke-linecap="round" />
+            <path d="M4744 650 h12 v50 h-12z" fill="#5a3a1e" />
+            <path d="M4750 374 V338" stroke="#5a5f66" stroke-width="3" />
+            <!-- the flag on the tower: it streams out to the east (right), so the wind comes from
+            the west -->
+            <path d="M4784 470 V420" stroke="#5a5f66" stroke-width="2" />
+            <path class="bl-pennant" d="M4784 422 l40 6 l-40 8z" fill="#2f5f9a" />
+            <g id="bl-cock">
+                <path d="M4736 334 q4 -14 14 -12 l4 -6 l3 6 q8 2 6 10 q-6 8 -18 8 q-8 0 -9 -6z"
+                    fill="#e8b830" stroke="#a8781a" stroke-width="1.5" />
+                <path d="M4736 334 l-12 -8 l6 12z" fill="#e8b830" />
+            </g>
+        </g>
+        <ellipse cx="5020" cy="830" rx="260" ry="50" fill="#d6dbe2" />
+        <g id="bl-crowd"></g>
+        <g id="bl-cops3">
+            <use href="#blCops" transform="translate(4840 770)" />
+            <use href="#blCrooks" transform="translate(4960 770)" />
+        </g>
+        <g id="bl-harbour">
+            <rect x="5250" y="740" width="350" height="160" fill="#3f8ad0" />
+            <path d="M5250 740 h350" stroke="#e8f8ff" stroke-width="4" />
+            <rect x="5240" y="726" width="140" height="16" fill="#a5845a" />
+            <g transform="translate(5420 640)">
+                <path d="M0 100 H130 Q124 120 110 128 H20 Q6 120 0 100z" fill="#7a4022" />
+                <g fill="#6b4423">
+                    <rect x="30" y="20" width="4" height="82" />
+                    <rect x="62" y="6" width="5" height="96" />
+                    <rect x="94" y="24" width="4" height="78" />
+                </g>
+                <path d="M67 8 l18 4 l-18 4z" fill="#2f5f9a" />
+            </g>
+        </g>
+    </g>
+
+    <!-- Kling and Klang on their bicycles, riding after the balloon from the town to the farms (not part of
+    the world below, so they keep up as it slides past) -->
+    <g id="bl-ride"><g class="bl-pedal">
+        <use href="#blCops" />
+        <g stroke="#2a2a2a" stroke-width="2">
+            <g transform="translate(10 62)"><path class="bl-spin" d="M-9 0 H9 M0 -9 V9" /></g>
+            <g transform="translate(46 62)"><path class="bl-spin" d="M-9 0 H9 M0 -9 V9" /></g>
+            <g transform="translate(66 64)"><path class="bl-spin" d="M-8 0 H8 M0 -8 V8" /></g>
+            <g transform="translate(100 64)"><path class="bl-spin" d="M-8 0 H8 M0 -8 V8" /></g>
+        </g>
+    </g></g>
+
+    <!-- the garden of Villa Villekulla, where the balloon starts (it drops away below you at
+    take-off) -->
+    <g id="bl-garden">
+        <!-- snowy hills, the little town, and the church on the hill where the flight ends -->
+        <path d="M0 420 Q240 360 520 404 Q800 350 1100 392 Q1380 360 1600 380 V520 H0 Z" fill="#d4e0ec" />
+        <path d="M0 440 Q300 370 600 420 Q900 360 1200 410 Q1400 380 1600 400 V520 H0 Z"
+            fill="#e6eef6" />
+        <g fill="#8a3a1a">
+            <rect x="906" y="386" width="6" height="10" />
+            <rect x="954" y="380" width="6" height="10" />
+            <rect x="1094" y="384" width="6" height="10" />
+        </g>
+        <g class="bl-chimsmoke" fill="#eef0f2" opacity=".85">
+            <circle cx="957" cy="374" r="4" />
+            <circle class="b" cx="960" cy="364" r="5" />
+            <circle class="c" cx="964" cy="352" r="6" />
+        </g>
+        <g fill="#d9cdb8">
+            <rect x="880" y="404" width="40" height="34" />
+            <rect x="930" y="396" width="36" height="42" />
+            <rect x="1068" y="400" width="40" height="38" />
+            <rect x="1116" y="408" width="34" height="30" />
+        </g>
+        <g fill="#fffaf0">
+            <rect x="892" y="414" width="8" height="8" />
+            <rect x="942" y="410" width="8" height="8" />
+            <rect x="1080" y="412" width="8" height="8" />
+            <rect x="1126" y="418" width="8" height="8" />
+        </g>
+        <path
+            d="M874 406 l26 -18 l26 18z M926 398 l22 -16 l22 16z M1064 402 l24 -18 l24 18z M1112 410 l21 -14 l21 14z"
+            fill="#fff" />
+        <rect x="990" y="230" width="60" height="212" fill="#e9e1d6" />
+        <path d="M984 232 L1020 146 L1056 232 Z" fill="#7a8aa6" />
+        <path d="M1006 180 L1020 146 L1034 180 Z" fill="#fff" />
+        <!-- the spike on top of the tower is empty: the golden weathercock has gone -->
+        <path d="M1020 146 v-20" stroke="#5a5f66" stroke-width="3" />
+        <circle cx="1020" cy="292" r="21" fill="#fffaf0" stroke="#5a5f66" stroke-width="3" />
+        <path d="M1020 292 V276 M1020 292 h-10" stroke="#2b2118" stroke-width="3"
+            stroke-linecap="round" />
+        <rect x="1008" y="380" width="24" height="62" rx="12" fill="#5a3a1e" />
+        <g fill="#2f5a3a">
+            <path d="M560 430 l-28 0 l28 -70 l28 70z" />
+            <path d="M616 446 l-22 0 l22 -56 l22 56z" />
+            <path d="M1260 424 l-28 0 l28 -70 l28 70z" />
+            <path d="M1320 440 l-22 0 l22 -56 l22 56z" />
+        </g>
+        <g fill="#fff" opacity=".9">
+            <path
+                d="M560 360 l-12 28 h24z M540 416 h40 l-20 -26z M1260 354 l-12 28 h24z M1240 410 h40 l-20 -26z" />
+        </g>
+
+        <!-- the snowy garden, with a path trodden from the veranda steps to the gate -->
+        <rect y="470" width="1600" height="430" fill="url(#blSnow)" />
+        <g fill="#c9d8e8" opacity=".55">
+            <ellipse cx="300" cy="900" rx="420" ry="60" />
+            <ellipse cx="1300" cy="880" rx="360" ry="50" />
+        </g>
+        <path d="M640 628 C820 680 1080 690 1240 630 S1440 566 1500 556" stroke="#d3dfeb"
+            stroke-width="44" fill="none" stroke-linecap="round" />
+        <path d="M640 628 C820 680 1080 690 1240 630 S1440 566 1500 556" stroke="#b9c9da"
+            stroke-width="12" stroke-dasharray="6 18" fill="none" />
+        <!-- the snowman from the snowball fight, still standing -->
+        <g>
+            <ellipse cx="130" cy="736" rx="60" ry="10" fill="#c9d8e8" opacity=".6" />
+            <circle cx="130" cy="700" r="40" fill="#fbfdff" stroke="#d8e4f0" stroke-width="3" />
+            <circle cx="130" cy="640" r="28" fill="#fbfdff" stroke="#d8e4f0" stroke-width="3" />
+            <circle cx="130" cy="598" r="20" fill="#fbfdff" stroke="#d8e4f0" stroke-width="3" />
+            <g fill="#2a2a2a"><circle cx="123" cy="594" r="2.4" /><circle cx="137" cy="594" r="2.4" /><circle cx="130" cy="632" r="3" /><circle cx="130" cy="648" r="3" /><circle cx="130" cy="690" r="3" /></g>
+            <path d="M130 600 l16 4 l-16 3z" fill="#e8571f" />
+            <rect x="114" y="560" width="32" height="22" fill="#1a1a1a" /><rect x="106" y="580" width="48" height="5" fill="#1a1a1a" />
+            <path class="bl-scarf" d="M112 616 q18 8 36 0 l2 8 q-20 8 -40 0z M140 620 l8 26 l-8 2 l-6 -24z" fill="#3f8a4a" />
+            <path d="M104 636 L72 616 M156 636 L188 612" stroke="#5a3a1e" stroke-width="4" stroke-linecap="round" />
+        </g>
+        <!-- footprints, and frost glittering on the snow -->
+        <g fill="#c9d8e8" opacity=".8">
+            <ellipse cx="1300" cy="600" rx="5" ry="8" /><ellipse cx="1270" cy="612" rx="5" ry="8" /><ellipse cx="1240" cy="618" rx="5" ry="8" /><ellipse cx="1210" cy="632" rx="5" ry="8" />
+            <ellipse cx="1180" cy="636" rx="5" ry="8" /><ellipse cx="1150" cy="648" rx="5" ry="8" /><ellipse cx="1120" cy="650" rx="5" ry="8" /><ellipse cx="1090" cy="660" rx="5" ry="8" />
+        </g>
+        <g class="bl-frost" fill="#fff">
+            <path d="M240 600 l2 -6 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2z" />
+            <path class="b" d="M520 700 l2 -6 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2z" />
+            <path d="M880 860 l2 -6 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2z" />
+            <path class="b" d="M1380 700 l2 -6 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2z" />
+            <path d="M1500 820 l2 -6 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2z" />
+            <path class="b" d="M300 860 l2 -6 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2z" />
+            <path d="M1060 760 l2 -6 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2z" />
+        </g>
+        <g id="bl-fence">
+            <path d="M1080 500 H1600 M1080 530 H1600" stroke="#8a6a4a" stroke-width="6" />
+            <g fill="#a5845a">
+                <rect x="1086" y="480" width="10" height="70" />
+                <rect x="1136" y="480" width="10" height="70" />
+                <rect x="1186" y="480" width="10" height="70" />
+                <rect x="1236" y="480" width="10" height="70" />
+                <rect x="1286" y="480" width="10" height="70" />
+                <rect x="1336" y="480" width="10" height="70" />
+                <rect x="1386" y="480" width="10" height="70" />
+                <rect x="1436" y="480" width="10" height="70" />
+                <rect x="1546" y="480" width="10" height="70" />
+                <rect x="1590" y="480" width="10" height="70" />
+            </g>
+            <g fill="#fff">
+                <rect x="1084" y="474" width="14" height="8" rx="4" />
+                <rect x="1134" y="474" width="14" height="8" rx="4" />
+                <rect x="1184" y="474" width="14" height="8" rx="4" />
+                <rect x="1234" y="474" width="14" height="8" rx="4" />
+                <rect x="1284" y="474" width="14" height="8" rx="4" />
+                <rect x="1334" y="474" width="14" height="8" rx="4" />
+                <rect x="1384" y="474" width="14" height="8" rx="4" />
+                <rect x="1434" y="474" width="14" height="8" rx="4" />
+                <rect x="1544" y="474" width="14" height="8" rx="4" />
+            </g>
+            <rect x="1462" y="486" width="76" height="62" fill="none" stroke="#6b4423"
+                stroke-width="6" />
+            <path d="M1462 548 L1538 486" stroke="#6b4423" stroke-width="5" />
+        </g>
+
+        <!-- Villa Villekulla, a little crooked, with snow on the roof; the horse on its veranda, in
+        its winter blanket -->
+        <g transform="rotate(-2 220 400)">
+            <use href="#vvHouse" style="--vv-pane:#bfe0ef" />
+            <rect x="284" y="122" width="46" height="12" rx="5" fill="#fff" />
+            <path d="M6 266 L210 116 L414 266 L396 266 L210 136 L24 266 Z" fill="#fff" />
+            <path d="M60 236 q40 -20 70 -40 M260 156 q50 30 100 72" stroke="#fff" stroke-width="12"
+                stroke-linecap="round" fill="none" />
+            <path d="M374 368 L478 292 L582 368 L566 368 L478 308 L390 368 Z" fill="#fff" />
+            <rect x="156" y="209" width="108" height="7" rx="3" fill="#fff" />
+            <rect x="66" y="416" width="130" height="10" fill="#fff" />
+            <rect x="246" y="414" width="324" height="10" rx="5" fill="#fff" />
+            <path d="M260 424 l3 12 l3 -12 M300 424 l2 9 l2 -9 M350 424 l3 14 l3 -14 M420 424 l2 10 l2 -10 M470 424 l3 12 l3 -12 M530 424 l2 9 l2 -9" fill="#e6f2fb" stroke="#cfe0ee" stroke-width="1" />
+            <path d="M566 568 h58 M586 592 h58 M606 616 h58" stroke="#fff" stroke-width="4" />
+            <use href="#wtHorseShape" transform="translate(284 468)" />
+        </g>
+        <g fill="#eef0f2" opacity=".75">
+            <circle class="bl-puff" cx="304" cy="100" r="14" />
+            <circle class="bl-puff b" style="animation-delay:-1.2s" cx="316" cy="74" r="18" />
+            <circle class="bl-puff" style="animation-delay:-2.4s" cx="300" cy="44" r="22" />
+        </g>
+
+        <!-- the old oak, bare and snowy, with its hollow and the bird feeder -->
+        <g>
+            <path d="M646 650 Q652 520 662 420 L700 420 Q706 520 714 650 Z" fill="#5a3a1e" />
+            <g stroke="#5a3a1e" stroke-width="14" stroke-linecap="round" fill="none">
+                <path d="M672 430 Q600 360 540 330" />
+                <path d="M688 430 Q760 360 840 340" />
+                <path d="M680 420 Q680 330 690 250" />
+                <path d="M640 380 Q600 300 610 240" />
+                <path d="M720 380 Q790 310 800 250" />
+            </g>
+            <g stroke="#fff" stroke-width="7" stroke-linecap="round" fill="none">
+                <path d="M664 422 Q598 352 540 322" />
+                <path d="M692 420 Q762 352 840 332" />
+                <path d="M676 412 Q676 328 686 246" />
+                <path d="M634 372 Q596 296 606 236" />
+                <path d="M724 372 Q792 302 800 244" />
+            </g>
+            <ellipse cx="680" cy="520" rx="16" ry="24" fill="#2a1a0c" />
+            <path d="M800 340 V440" stroke="#5a3a1e" stroke-width="2" />
+            <path d="M778 444 h44 l-4 30 h-36z" fill="#a5743f" />
+            <path d="M772 446 l28 -16 l28 16z" fill="#fff" />
+            <rect x="784" y="474" width="32" height="4" fill="#5a3a1e" />
+            <!-- two sparrows at the feeder -->
+            <g class="bl-peck"><ellipse cx="790" cy="468" rx="7" ry="5" fill="#8a6a4a" /><circle cx="784" cy="464" r="3.5" fill="#6b4a2a" /><path d="M780 464 l-4 1 l4 1z" fill="#e2b04a" /></g>
+            <g class="bl-peck b"><ellipse cx="810" cy="468" rx="7" ry="5" fill="#8a6a4a" /><circle cx="816" cy="464" r="3.5" fill="#6b4a2a" /><path d="M820 464 l4 1 l-4 1z" fill="#e2b04a" /></g>
+        </g>
+        <!-- the circus balloon, still lying flat in the snow, with its basket on its side -->
+        <g id="bl-flat">
+            <path
+                d="M380 800 Q420 740 520 750 Q620 730 720 760 Q820 750 900 800 Q880 840 640 836 Q420 846 380 800z"
+                fill="#e2483d" />
+            <g fill="#f2c94c">
+                <path d="M460 758 Q470 800 452 838 L490 840 Q500 800 500 752z" />
+                <path d="M600 742 Q610 790 596 836 L640 836 Q646 790 640 740z" />
+                <path d="M740 762 Q750 800 744 834 L784 832 Q786 796 780 768z" />
+            </g>
+            <g transform="rotate(-80 330 790)">
+                <rect x="280" y="760" width="110" height="70" rx="6" fill="#b08a52" stroke="#7a5a2a"
+                    stroke-width="3" />
+                <path d="M280 784 h110 M280 806 h110" stroke="#7a5a2a" stroke-width="2" />
+            </g>
+            <path d="M390 800 l-40 -6 M392 812 l-44 6" stroke="#8a6a4a" stroke-width="2" />
+        </g>
+        <!-- the ringmaster, who brought the balloon as a thank-you present -->
+        <g id="bl-ringmaster">
+            <rect x="908" y="690" width="44" height="80" rx="10" fill="#c4302b" />
+            <path d="M908 700 h44" stroke="#f2c94c" stroke-width="4" />
+            <path d="M911 700 L898 740 M949 700 L954 706" stroke="#c4302b" stroke-width="9" stroke-linecap="round" />
+            <circle cx="897" cy="744" r="6" fill="#f3c9a4" />
+            <circle cx="955" cy="707" r="6" fill="#f3c9a4" />
+            <path d="M914 770 v34 M946 770 v34" stroke="#1a1a1a" stroke-width="9" />
+            <circle cx="930" cy="670" r="18" fill="#f3c9a4" />
+            <path d="M916 678 q14 10 28 0 q-6 -8 -14 -4 q-8 -4 -14 4z" fill="#3a2a1a" />
+            <rect x="914" y="616" width="32" height="40" fill="#1a1a1a" />
+            <rect x="906" y="652" width="48" height="6" fill="#1a1a1a" />
+            <rect x="914" y="644" width="32" height="5" fill="#c4302b" />
+            <path class="bl-cane" d="M954 706 L990 680" stroke="#1a1a1a" stroke-width="4"
+                stroke-linecap="round" />
+        </g>
+        <!-- Pippi (Mr Nilsson on her shoulder), Tommy and Annika, ready to fly -->
+        <g id="bl-gkids">
+            <path d="M1006 770 v36 M1022 770 v36" stroke="#1a1a1a" stroke-width="7" />
+            <path d="M998 772 Q1000 720 1014 714 Q1028 720 1030 772z" fill="#3f8a4a" />
+            <path d="M1003 728 L991 756 M1025 728 L1037 756" stroke="#3f8a4a" stroke-width="6" stroke-linecap="round" />
+            <circle cx="990" cy="759" r="4" fill="#f3c9a4" />
+            <circle cx="1038" cy="759" r="4" fill="#f3c9a4" />
+            <circle cx="1014" cy="700" r="14" fill="#f3c9a4" />
+            <path d="M1000 696 q2 -16 14 -16 q12 0 14 16 q-6 -6 -14 -6 q-8 0 -14 6z" fill="#e8571f" />
+            <path d="M1002 700 l-20 -10 M1026 700 l20 -10" stroke="#e8571f" stroke-width="5"
+                stroke-linecap="round" />
+            <g>
+                <circle cx="1030" cy="672" r="7" fill="#6b4423" />
+                <ellipse cx="1031" cy="674" rx="4" ry="3" fill="#e6c49a" />
+                <ellipse cx="1030" cy="665" rx="9" ry="2" fill="#e9d48a" />
+                <rect x="1024" y="678" width="12" height="12" rx="3" fill="#2f5f9a" />
+            </g>
+            <g>
+                <path d="M1068 776 v30 M1080 776 v30" stroke="#1f3f6a" stroke-width="7" />
+                <rect x="1062" y="730" width="28" height="48" rx="8" fill="#2f5f9a" />
+                <path d="M1064 738 L1055 766 M1088 738 L1097 766" stroke="#2f5f9a" stroke-width="6" stroke-linecap="round" />
+                <circle cx="1054" cy="769" r="4" fill="#f3c9a4" />
+                <circle cx="1098" cy="769" r="4" fill="#f3c9a4" />
+                <circle cx="1076" cy="716" r="13" fill="#f3c9a4" />
+                <path d="M1063 712 q2 -12 13 -12 q11 0 13 12 q-6 -5 -13 -5 q-7 0 -13 5z"
+                    fill="#8a5a2b" />
+            </g>
+            <g>
+                <path d="M1114 778 v28 M1124 778 v28" stroke="#f3c9a4" stroke-width="6" />
+                <path d="M1102 780 L1119 732 L1136 780z" fill="#f2a7b8" />
+                <path d="M1114 744 L1105 768 M1124 744 L1133 768" stroke="#f2a7b8" stroke-width="5" stroke-linecap="round" />
+                <circle cx="1104" cy="771" r="3.5" fill="#f3c9a4" />
+                <circle cx="1134" cy="771" r="3.5" fill="#f3c9a4" />
+                <circle cx="1119" cy="718" r="12" fill="#f3c9a4" />
+                <path d="M1107 720 q-2 -18 12 -18 q14 0 12 18 q-4 -8 -12 -8 q-8 0 -12 8z"
+                    fill="#e9c46a" />
+            </g>
+        </g>
+        <g id="bl-spunk">
+            <rect x="1186" y="760" width="24" height="30" rx="5" fill="#cfe6e0" opacity=".75"
+                stroke="#e9f4f0" stroke-width="1.5" />
+            <rect x="1184" y="756" width="28" height="6" rx="2" fill="#e8571f" />
+            <g class="bl-crawl">
+                <ellipse cx="1198" cy="778" rx="6" ry="4" fill="#2f8a3a" />
+            </g>
+        </g>
+    </g>
+
+    <!-- inside the cloud: everything goes white -->
+    <g id="bl-fog" data-in="vis-slow-in" data-out="vis-slow-out" pointer-events="none">
+        <rect width="1600" height="900" fill="#f4f7fa" opacity=".86" />
+        <g fill="#fff">
+            <ellipse cx="200" cy="300" rx="260" ry="120" />
+            <ellipse cx="900" cy="700" rx="360" ry="140" />
+            <ellipse cx="1400" cy="320" rx="260" ry="120" />
+        </g>
+    </g>
+
+    <!-- the circus balloon, with everybody in its basket -->
+    <g id="bl-balloon">
+        <g class="bl-lift">
+            <g class="bl-sway">
+                <g clip-path="url(#blEnvClip)">
+                    <rect x="370" y="30" width="380" height="410" fill="#e2483d" />
+                    <g fill="none" stroke="#f2c94c" stroke-width="34">
+                        <path d="M560 30 Q470 240 520 440" />
+                        <path d="M560 30 Q650 240 600 440" />
+                        <path d="M560 30 Q360 240 450 440" />
+                        <path d="M560 30 Q760 240 670 440" />
+                    </g>
+                    <path d="M370 210 Q560 250 750 210" stroke="#fffaf0" stroke-width="16"
+                        fill="none" />
+                    <g fill="#fffaf0">
+                        <path
+                            d="M470 214 l5 10 l11 1 l-8 7 l3 11 l-11 -6 l-11 6 l3 -11 l-8 -7 l11 -1z" />
+                        <path
+                            d="M640 214 l5 10 l11 1 l-8 7 l3 11 l-11 -6 l-11 6 l3 -11 l-8 -7 l11 -1z" />
+                    </g>
+                </g>
+                <path
+                    d="M560 40 C690 40 760 140 742 250 C724 340 640 380 612 430 L508 430 C480 380 396 340 378 250 C360 140 430 40 560 40 Z"
+                    fill="none" stroke="#8a1a14" stroke-width="3" />
+                <path d="M510 430 L498 474 M610 430 L622 474 M540 430 L536 474 M580 430 L584 474"
+                    stroke="#6b4423" stroke-width="2.5" />
+                <g id="bl-flame">
+                    <ellipse class="bl-fire" cx="560" cy="424" rx="16" ry="26" fill="url(#blFlameG)" />
+                </g>
+                <rect x="540" y="440" width="40" height="14" rx="3" fill="#8a8f96" stroke="#5a6068"
+                    stroke-width="2" />
+                <!-- the people in the basket -->
+                <circle cx="520" cy="458" r="12" fill="#f3c9a4" />
+                <path d="M508 455 q2 -12 12 -12 q10 0 12 12 q-5 -5 -12 -5 q-7 0 -12 5z"
+                    fill="#8a5a2b" />
+                <circle cx="548" cy="460" r="11" fill="#f3c9a4" />
+                <path d="M537 462 q-2 -16 11 -16 q13 0 11 16 q-4 -7 -11 -7 q-7 0 -11 7z"
+                    fill="#e9c46a" />
+                <g id="bl-pippia">
+                    <circle cx="598" cy="446" r="13" fill="#f3c9a4" />
+                    <path d="M585 443 q2 -15 13 -15 q11 0 13 15 q-6 -6 -13 -6 q-7 0 -13 6z"
+                        fill="#e8571f" />
+                    <path class="bl-plait l" d="M586 448 l-18 -10" stroke="#e8571f" stroke-width="5"
+                        stroke-linecap="round" />
+                    <path class="bl-plait r" d="M610 448 l18 -10" stroke="#e8571f" stroke-width="5"
+                        stroke-linecap="round" />
+                    <path class="bl-wave" d="M612 466 L630 444" stroke="#f3c9a4" stroke-width="6"
+                        stroke-linecap="round" />
+                    <circle cx="594" cy="447" r="1.5" fill="#111" />
+                    <circle cx="602" cy="447" r="1.5" fill="#111" />
+                </g>
+                <g id="bl-nilssona" class="bl-swing">
+                    <path d="M640 400 q6 10 2 22" stroke="#6b4423" stroke-width="3" fill="none" />
+                    <circle cx="642" cy="436" r="8" fill="#6b4423" />
+                    <ellipse cx="643" cy="438" rx="5" ry="4" fill="#e6c49a" />
+                    <ellipse cx="642" cy="428" rx="10" ry="2.5" fill="#e9d48a" />
+                    <rect x="636" y="444" width="12" height="14" rx="3" fill="#2f5f9a" />
+                </g>
+                <g id="bl-spunka">
+                    <rect x="604" y="462" width="16" height="16" rx="3" fill="#cfe6e0" opacity=".8" />
+                    <rect x="603" y="460" width="18" height="4" rx="1" fill="#e8571f" />
+                </g>
+                <!-- the basket, with sandbags and the trailing rope -->
+                <rect x="490" y="470" width="140" height="80" rx="6" fill="#b08a52" stroke="#7a5a2a"
+                    stroke-width="3" />
+                <g stroke="#7a5a2a" stroke-width="2">
+                    <path d="M490 490 h140 M490 510 h140 M490 530 h140" />
+                    <path
+                        d="M510 470 v80 M530 470 v80 M550 470 v80 M570 470 v80 M590 470 v80 M610 470 v80"
+                        opacity=".5" />
+                </g>
+                <rect x="486" y="466" width="148" height="10" rx="4" fill="#8a6a3a" />
+                <g fill="#c9b48a" stroke="#8a7a5a" stroke-width="1.5">
+                    <path d="M478 490 q-10 4 -8 18 q8 6 16 0 q2 -14 -8 -18z" />
+                    <path d="M642 490 q-10 4 -8 18 q8 6 16 0 q2 -14 -8 -18z" />
+                </g>
+                <path id="bl-rope" d="M500 550 Q490 620 520 700" stroke="#8a6a4a" stroke-width="2.5"
+                    fill="none" />
+            </g>
+        </g>
+    </g>
+
+    <!-- a little more cloud in front of the basket -->
+    <rect id="bl-fog2" data-in="vis-slow-in" data-out="vis-slow-out" width="1600" height="900"
+        fill="#fff" opacity=".35" pointer-events="none" />
+
+    <rect width="1600" height="900" fill="url(#blVign)" pointer-events="none" />
+    <!-- the hotspots -->
+    <g class="hits">
+        <rect class="hit" fill="transparent" data-hs="sky6" data-label="The sky" x="0" y="0"
+            width="1600" height="180" />
+        <rect class="hit" fill="transparent" data-hs="cloud6" data-label="The cloud" x="0" y="180"
+            width="1600" height="720" id="hit-cloud6" />
+        <rect class="hit" fill="transparent" data-hs="town6" data-label="The little town" x="0"
+            y="520" width="1600" height="380" id="hit-town6" />
+        <rect class="hit" fill="transparent" data-hs="kite6" data-label="A kite" x="1380" y="380"
+            width="160" height="130" id="hit-kite6" />
+        <rect class="hit" fill="transparent" data-hs="police6" data-label="Kling and Klang" x="940"
+            y="680" width="150" height="110" id="hit-police6t" />
+        <rect class="hit" fill="transparent" data-hs="farms6" data-label="The farms" x="0" y="520"
+            width="1600" height="380" id="hit-farms6" />
+        <rect class="hit" fill="transparent" data-hs="police6" data-label="Kling and Klang" x="560"
+            y="760" width="150" height="110" id="hit-police6f" />
+        <rect class="hit" fill="transparent" data-hs="saab6" data-label="A little car" x="1160"
+            y="796" width="130" height="66" id="hit-saab6" />
+        <rect class="hit" fill="transparent" data-hs="burglars6" data-label="Behind the haystacks"
+            x="960" y="640" width="180" height="90" id="hit-burglars6" />
+        <rect class="hit" fill="transparent" data-hs="tower6" data-label="The church tower" x="700"
+            y="310" width="120" height="400" id="hit-tower6" />
+        <rect class="hit" fill="transparent" data-hs="crowd6" data-label="The church square" x="820"
+            y="740" width="420" height="160" id="hit-crowd6" />
+        <rect class="hit" fill="transparent" data-hs="harbour6" data-label="The harbour" x="1240"
+            y="620" width="360" height="280" id="hit-harbour6" />
+        <rect class="hit" fill="transparent" data-hs="house6" data-label="Villa Villekulla" x="20"
+            y="120" width="400" height="330" id="hit-house6" />
+        <rect class="hit" fill="transparent" data-hs="horse6" data-label="The horse" x="280" y="448"
+            width="160" height="116" id="hit-horse6" />
+        <rect class="hit" fill="transparent" data-hs="balloon6" data-label="The circus balloon"
+            x="270" y="720" width="640" height="140" id="hit-balloon6g" />
+        <rect class="hit" fill="transparent" data-hs="ringmaster6" data-label="The ringmaster"
+            x="890" y="604" width="110" height="210" id="hit-ringmaster6" />
+        <rect class="hit" fill="transparent" data-hs="nilsson6" data-label="Mr Nilsson" x="1018"
+            y="652" width="30" height="40" id="hit-nilsson6g" />
+        <rect class="hit" fill="transparent" data-hs="pippi6" data-label="Pippi" x="980" y="692"
+            width="56" height="120" id="hit-pippi6g" />
+        <rect class="hit" fill="transparent" data-hs="kids6" data-label="Tommy and Annika" x="1050"
+            y="696" width="96" height="116" id="hit-kids6g" />
+        <rect class="hit" fill="transparent" data-hs="spunk6" data-label="Jam jar" x="1178" y="748"
+            width="40" height="48" id="hit-spunk6" />
+        <rect class="hit" fill="transparent" data-hs="balloon6" data-label="The circus balloon"
+            x="380" y="40" width="360" height="370" id="hit-balloon6a" />
+        <rect class="hit" fill="transparent" data-hs="burner6" data-label="The burner" x="520"
+            y="408" width="80" height="38" id="hit-burner6" />
+        <rect class="hit" fill="transparent" data-hs="kids6" data-label="Tommy and Annika" x="500"
+            y="440" width="64" height="40" id="hit-kids6a" />
+        <rect class="hit" fill="transparent" data-hs="pippi6" data-label="Pippi" x="572" y="428"
+            width="56" height="44" id="hit-pippi6a" />
+        <rect class="hit" fill="transparent" data-hs="nilsson6" data-label="Mr Nilsson" x="628"
+            y="410" width="30" height="50" id="hit-nilsson6a" />
+        <rect class="hit" fill="transparent" data-hs="spunk6" data-label="Jam jar" x="600" y="456"
+            width="24" height="26" id="hit-spunk6a" />
+        <rect class="hit" fill="transparent" data-hs="basket6" data-label="The basket" x="486"
+            y="476" width="148" height="76" id="hit-basket6" />
+    </g>
+</svg>

@@ -183,3 +183,25 @@
 > Kungens hydda
 = TURTLES
 > SKÖLDPADDOR
+
+# ---------- Chapter 8: Villa Villekulla in spring (scenes/home.svg) ----------
+= Villa Villekulla in spring
+> Villa Villekulla på våren
+= WELCOME HOME!
+> VÄLKOMMEN HEM!
+= Tommy and Annika's house
+> Tommys och Annikas hus
+= The horse's straw
+> Lilla Gubbens halm
+= Post box
+> Brevlåda
+= Rain barrel
+> Regntunna
+= The lilac bush
+> Syrenbusken
+= Pippi's sea chest
+> Pippis sjömanskista
+= The fallen branch
+> Den nerblåsta grenen
+= Garden table
+> Trädgårdsbord

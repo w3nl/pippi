@@ -1,5 +1,5 @@
-// Chapter 7: The South Sea island. Pippi visits her father's island: a whole day, from morning to moonlight.
-// Captain Longstocking has buried a surprise for Pippilotta on Turtle Islet, which you can only walk to at low tide.
+// Chapter 7: on board the Hoppetossa. Captain Longstocking sails Pippi, Tommy, Annika and you to his island.
+// The voyage goes in legs: the quay, open sea by day, the Equator at night, and the island at dawn.
 // Loaded in order by js/boot.js; all game files share the same global scope.
 
 const UNLOCK7 = KEY + '-ch7';
@@ -8,386 +8,485 @@ function setUnlocked7(){ try{ localStorage.setItem(UNLOCK7, '1'); }catch(e){} }
 
 /* ---------- Chapter 7 items ---------- */
 Object.assign(ITEMS, {
-  map: { name:'Treasure map', desc:"Captain Longstocking's map of Turtle Islet, drawn on the back of a menu. It says: 12 of MY paces.",
-    svg:'<svg viewBox="0 0 44 44"><path d="M7 10l10-3 12 3 10-3v27l-10 3-12-3-10 3z" fill="#f3e6c4" stroke="#b5651d" stroke-width="1.5"/><path d="M16 7v27M28 10v27" stroke="#d9c79a"/><path d="M10 28q8-10 16-6t10-8" stroke="#8a5a2b" stroke-width="1.5" stroke-dasharray="2 2" fill="none"/><path d="M31 12l4 4M35 12l-4 4" stroke="#c4302b" stroke-width="2"/></svg>' },
-  spade: { name:'A spade', desc:"The king's own spade, for digging up surprises.",
-    svg:'<svg viewBox="0 0 44 44"><path d="M30 6L18 28" stroke="#8a5a2b" stroke-width="4" stroke-linecap="round"/><path d="M26 6h10" stroke="#8a5a2b" stroke-width="4" stroke-linecap="round"/><path d="M14 24q-6 10 0 14q10 2 12-8z" fill="#9aa0a7" stroke="#5a6068" stroke-width="1.5"/></svg>' }
+  net: { name:'Fishing net', desc:'A fishing net from the hold. Good for fishing things out of the sea, and for catching monkeys.',
+    svg:'<svg viewBox="0 0 44 44"><path d="M22 4 V10" stroke="#6b4423" stroke-width="3"/><path d="M8 10 L36 10 L31 36 L13 36 Z" fill="none" stroke="#c9a46a" stroke-width="2.5"/><path d="M15 10 L18 36 M22 10 V36 M29 10 L26 36 M9 19 H35 M11 28 H33" stroke="#c9a46a" stroke-width="1.5" fill="none"/></svg>' },
+  sextant: { name:'Sextant', desc:'The captain\'s brass sextant. It measures how high a star stands above the horizon. Select it, then click the sky.',
+    svg:'<svg viewBox="0 0 44 44"><path d="M22 6 L8 34 A16 16 0 0 0 36 34 Z" fill="none" stroke="#c9952a" stroke-width="3"/><path d="M22 6 L30 36" stroke="#7a5a1a" stroke-width="2.5"/><rect x="11" y="16" width="9" height="5" rx="1" fill="#9aa0a6"/><circle cx="22" cy="6" r="3" fill="#c9952a"/></svg>' },
+  spyglass: { name:'Spyglass', desc:'The captain\'s brass spyglass. It makes far-away things look near. Select it, then click something far away.',
+    svg:'<svg viewBox="0 0 44 44"><g transform="rotate(-30 22 22)"><rect x="4" y="18" width="12" height="8" rx="2" fill="#7a5a1a"/><rect x="15" y="16" width="13" height="12" rx="2" fill="#c9952a"/><rect x="27" y="14" width="13" height="16" rx="3" fill="#f3d27a" stroke="#b07f1f"/></g></svg>' }
 });
 
-/* What time of day it is on the island: morning → low tide → the shower → dusk. */
-const lowtide7 = () => !!S.f.tide;
-const storm7 = () => !!S.f.chest && !S.f.storm;
-const dusk7 = () => !!S.f.storm;
-
-/* ---------- the island ---------- */
-function applyIsland(){
+/* ---------- drawing the ship ---------- */
+function buildShip(){
+  let st = '';
+  for(let i = 0; i < 46; i++){ const x = (i * 137) % 1600, y = 20 + (i * 53) % 400, r = 1 + (i % 3) * .6;
+    st += `<circle class="hp-tw" style="animation-delay:-${(i * .37 % 3).toFixed(2)}s" cx="${x}" cy="${y}" r="${r}" fill="#fff"/>`; }
+  $('#hp-stars').innerHTML = st;
+  let fl = '';
+  for(let i = 0; i < 70; i++){ const x = (i * 211 + 37) % 1600, y = (i * 389) % 900, r = 1.4 + (i % 4) * .6;
+    fl += `<circle class="hp-flake" style="animation-delay:-${(i * .53 % 10).toFixed(2)}s;animation-duration:${8 + i % 5}s" cx="${x}" cy="${y}" r="${r}"/>`; }
+  $('#hp-snow').innerHTML = fl;
+  // wave crests: two strips, each twice as wide as the stage so they can roll past; each wave's width divides 200px (one loop of hpWaves), so the loop has no jump
+  const strip = (y, a, w) => { let d = `M-400 ${y}`; for(let x = -400; x < 2000; x += w) d += ` q${w / 4} ${-a} ${w / 2} 0 q${w / 4} ${a} ${w / 2} 0`; return `<path d="${d}"/>`; };
+  $('#hp-waves').innerHTML = strip(560, 4, 100) + strip(580, 5, 200);
+  $('#hp-wavefront').innerHTML = strip(600, 7, 100);
+  let rl = '<path d="M186 298 H486 M486 380 H1340 Q1420 374 1484 338"/>';
+  for(let x = 196; x <= 476; x += 24) rl += `<path d="M${x} 298 V324"/>`;
+  for(let x = 500; x <= 1330; x += 30) rl += `<path d="M${x} 380 V404"/>`;
+  $('#hp-rails').innerHTML = rl;
+  let rt = '';
+  for(let y = 170; y <= 390; y += 22){ const k = (y - 150) / 252; rt += `<path d="M${(760 - 48 * k).toFixed(0)} ${y} H${(760 + 48 * k).toFixed(0)}"/>`; }
+  $('#hp-ratlines').innerHTML = rt;
+}
+/* The time of day follows the voyage: day until the water is made, night until the Equator, then dawn and the island. */
+function applyShip(){
   const show = vis;   // smooth when you can see it happen (core.js)
-  const sc = $('#sc-island'); if(!sc) return;
-  sc.classList.toggle('lowtide', lowtide7());
-  sc.classList.toggle('storm', storm7());
-  sc.classList.toggle('dusk', dusk7());
-  sc.classList.toggle('hatch', !!S.f.out7);
-  show('#si-sun', !storm7() && !dusk7()); show('#si-stormsky', storm7()); show('#si-rain', storm7()); show('#si-flash', storm7());
-  show('#si-dusksky', dusk7()); show('#si-moonpath', dusk7()); show('#si-tint', dusk7());
-  show('#si-torches', dusk7() && !S.f.out7); show('#si-lantern', dusk7() && !S.f.out7);
-  show('#si-x', !!S.f.paces && !S.f.dug); show('#si-hole', !!S.f.dug); show('#hit-dig7', !!S.f.paces && !S.f.chest);
-  show('#si-hatch', !!S.f.out7); show('#si-eggs', !S.f.out7);
-  show('#si-shovel', !S.f.spadeTaken); show('#hit-shovel7', !S.f.spadeTaken);
-  show('#si-spunk', !S.f.spunkTaken); show('#hit-spunk7', !S.f.spunkTaken);
-  show('#si-captain .zz', !S.f.mapTaken || (!!S.f.tide && !S.f.paces));
+  const sc = $('#sc-ship'); if(!sc) return;
+  const night = !!S.f.water && !S.f.equator, dawn = !!S.f.equator && !S.f.out7, day = !night && !dawn;
+  sc.classList.toggle('sailing', !!S.f.course);
+  sc.classList.toggle('night', night);
+  show('#hp-day', day); show('#hp-sun', day && !!S.f.course); show('#hp-clouds', day);
+  show('#hp-wintersky', !S.f.course); show('#hp-snow', !S.f.course);
+  show('#hp-night', night); show('#hp-stars', night); show('#hp-moon', night); show('#hp-dark', night); show('#hp-glow', night);
+  show('#hp-dusk', dawn); show('#hp-dawnsun', dawn);
+  show('#hp-harbour', !S.f.course); show('#hit-quay7', !S.f.course); show('#hp-seafar', !!S.f.course);
+  show('#hp-isletip', dawn); show('#hp-isle', !!S.f.out7); show('#hit-isle7', !!S.f.out7);
+  show('#hp-qhorse', !S.f.aboard); show('#hit-horse7q', !S.f.aboard);
+  show('#hp-dhorse', !!S.f.aboard); show('#hit-horse7d', !!S.f.aboard);
+  show('#hp-ropelong', !S.f.aboard); show('#hp-ropeshort', !!S.f.aboard);
+  show('#hp-furl', !S.f.course); show('#hp-sails', !!S.f.course); show('#hp-spray', !!S.f.course);
+  show('#hp-zero', !!S.f.equator);
+  show('#hp-splash', !!S.f.course && !S.f.floats);
+  show('#hp-stills', !!S.f.water);
+  show('#hp-spunk', !S.f.spunkTaken); show('#hit-spunk7', !S.f.spunkTaken);
+  show('#hp-net', !S.f.netTaken); show('#hit-net7', !S.f.netTaken);
+  show('#hp-sext', !S.f.sextTaken);
+  show('#hp-glass', !S.f.glassTaken); show('#hit-glass7', !S.f.glassTaken);
+}
+/* The horse is hoisted aboard: up from the quay, the boom swings round, down onto the deck, and it walks to its place
+   (css: .hoisting in chapter7.css). With Motion off it is simply on deck. */
+function hoist7(){
+  if(reducedMotion()) return;
+  const sc = $('#sc-ship');
+  sc.classList.remove('hoisting'); void sc.getBoundingClientRect(); sc.classList.add('hoisting');
+  setTimeout(() => sc.classList.remove('hoisting'), 6200);
+}
+/* Casting off: the sails drop, and the quay slides away behind the ship. */
+function castOff7(){
+  const sc = $('#sc-ship');
+  sc.classList.add('castoff');
+  setTimeout(() => { sc.classList.remove('castoff'); applyVisuals(); }, reducedMotion() ? 0 : 3200);
 }
 
 /* ---------- hotspot handlers ---------- */
 const has7 = id => S.inv.includes(id);
 Object.assign(H, {
-  spunk7(){ S.f.spunkTaken = true; give('spunk'); applyVisuals(); say(["The spunk's jam jar, next to the sundial. Pippi has put it in the shade, so the spunk doesn't get sunburnt.", "You take it. A spunk knows things. Even about islands."]); },
+  spunk7(){ S.f.spunkTaken = true; give('spunk'); applyVisuals(); say(["The spunk's jam jar, on the captain's chart table. Pippi has brought it along: \"It has never been to sea.\"", "You take it. A spunk knows things. Even about ships."]); },
+  quay7(){ say(["The harbour town on its hill. Right at the top, a little crooked, stands Villa Villekulla.", "The whole town has come down to the quay to wave goodbye. Well, three people and a dog."]); },
+  horse7(){
+    if(!S.f.aboard) return say(["Pippi's horse, on the quay, with a rope sling round its middle. It looks at the ship. It looks at you.", ['horse', "Pfrrrr?"], "Pippi won't sail without it. The cargo hoist on the stern could lift it aboard."]);
+    if(S.f.floats && !S.f.water) return say([['horse', "Hrrrm."], "The horse's tongue is hanging out. It drank the whole water barrel, and it's still thirsty. So is everybody else."]);
+    say([['horse', "Neeeigh!"], S.f.course ? "The horse stands on deck with its legs wide apart, like a real sailor." : "The horse is on board, sniffing the hay in the hold."]);
+  },
+  hoist(){ if(S.f.aboard) return say("The cargo hoist. Its pulleys have done their job: the horse is on board."); openHoist(); },
+  mast7(){ say(S.f.course ? ["The sails are full of wind. The Hoppetossa leans a little and hurries along.", "High above, the crow's nest sways against the sky."] : ["The sails are rolled up tight on the yards. They come down when the ship sets off.", "First the horse, then a course. The captain is very firm about that."]); },
+  crow(){
+    if(S.f.out7) return say("The crow's nest. From up here the island is all palm trees, white sand and waving people.");
+    if(!S.f.equator) return say(S.f.course ? ["You climb the rope ladder to the crow's nest. Sea, sea, and more sea, all the way round.", "Mr Nilsson waves at you from the yard. He climbed up faster."] : ["You climb to the crow's nest. You can see the whole town from here, and Villa Villekulla on its hill.", "The sea is waiting. The captain is waiting. The horse is waiting most of all."]);
+    if(!has7('spyglass')) return say(["You climb to the crow's nest. It's dawn. Far away, on the horizon, is there a tiny bump? You can't be sure.", "To see that far you'd need the captain's spyglass."]);
+    openLandHo();
+  },
+  glass7(){ S.f.glassTaken = true; give('spyglass'); applyVisuals(); say(["The captain's spyglass, hanging on the mizzen mast by the wheel.", ['captain', "Take it, sailor! A spyglass belongs to whoever is first to shout LAND HO."]]); },
+  wheel(){
+    if(S.f.course) return say(["The ship's wheel and the compass. The needle points north, and the ship's nose points south-west. Steady as she goes.", ['captain', "Don't touch, sailor. She's on course."]]);
+    if(!S.f.aboard) return say([['captain', "Not so fast, sailor! We don't leave without the horse."], ['pippi', "We don't leave without the horse!"]]);
+    openWheel();
+  },
   captain7(){
-    if(S.f.out7) return say([['captain', "What a day, Pippilotta! Treasure, thunder and turtles. Tomorrow we'll do it all again, backwards."]]);
-    if(storm7()) return openThunder7();
-    if(!S.f.mapTaken){
-      S.f.mapTaken = true; give('map'); applyVisuals();
-      return say([['captain', "Zzz… whuh? Pippilotta! Welcome to my island! I'm the king here, you know. That's why I wear my crown on my hat."], ['captain', "I've buried a surprise for you on Turtle Islet, out in the lagoon. Here's my map. Follow MY paces exactly!"], ['pippi', "A treasure! Hurray! Can we go now?"], ['captain', "Only at low tide, when the sandbar comes out of the water. Look at the sundial to see what time it is, and the tide post to see when the water goes down. And now… zzz…"]]);
-    }
-    if(!S.f.tide) return say([['captain', "Zzz… the tide… the sundial… zzz…"], "The king is fast asleep in his hammock. He snores like the Hoppetossa's foghorn."]);
-    if(!S.f.paces) return say([['captain', "Low tide! Off you go. Twelve of MY paces from the turtle rock, mind. My paces are one metre long, exactly. I measured them once."]]);
-    if(!S.f.chest) return say([['captain', "Did you find it? Did you? Don't tell me! Yes, tell me!"]]);
-    say([['captain', "Night is falling, and the feast is ready. But first, look at the turtle nest: tonight's the night!"]]);
+    if(S.f.out7) return say([['captain', "My island! And my people waving! Pippilotta, you're a princess now. A princess who climbs masts."]]);
+    if(!S.f.aboard) return say([['captain', "Ahoy, sailor! Everything aboard except the horse. Use the hoist on the stern. No lifting it by hand, Pippilotta!"], ['pippi', "Spoilsport!"]]);
+    if(!S.f.course) return say([['captain', "Now set a course for my island. My chart is in the cabin, and the wheel is right here. The compass will tell you which way you're pointing."]]);
+    if(!S.f.floats) return say([['captain', "That monkey has thrown half my cabin overboard! What floats, we fish out with the net. What sinks, Pippi fetches."]]);
+    if(!S.f.water) return say([['captain', "The horse has drunk all the drinking water. And sea water is no good: far too salty. But the sun is hot, and the sun can help."]]);
+    if(!S.f.equator) return say([['captain', "Tonight we should cross the Equator. Where are we, sailor? The stars will tell you, with my sextant."]]);
+    say([['captain', "Dawn! My island must be close now. Up to the crow's nest with my spyglass, and keep your eyes open!"]]);
   },
-  sundial(){
-    if(S.f.sundial) return say(S.f.tide ? "The sundial says it's the afternoon. The shadow has swung right round to the other side." : "The sundial says 9 o'clock in the morning. The stick's shadow points away from the sun.");
-    openSundial7();
+  nilsson7(){
+    S.f.nilTaps7 = (S.f.nilTaps7 || 0) + 1; save();
+    say(S.f.floats ? [['nilsson', "Eek!"], "Mr Nilsson hangs by his tail from the yard, looking very innocent. He has nothing left to throw."]
+      : S.f.course ? [['nilsson', "Eek! Eek!"], "Mr Nilsson swings from the yard by his tail. Every few minutes something splashes into the sea."]
+      : [['nilsson', "Eek!"], "Mr Nilsson has climbed into the rigging. He loves ships: so many things to throw."]);
   },
-  tidepost(){
-    if(S.f.tide) return say("The water is way down the striped post now. Low tide! The sandbar to Turtle Islet is dry.");
-    if(!S.f.sundial) return say(["The tide post: a striped pole in the lagoon. Right now the water is right up at the top stripe.", ['annika', "To know when the water goes down, we first need to know what time it is now."]]);
-    openTide7();
+  ta7(){
+    if(S.f.out7) return say([['tommy', "An island with real palm trees!"], ['annika', "And real coconuts. I hope they fall down slowly."]]);
+    if(!S.f.course) return say([['annika', "I've never been on a real ship. What if I get seasick?"], ['tommy', "What if the horse gets seasick?"]]);
+    if(S.f.water && !S.f.equator) return say([['annika', "Look at all the stars! The North Star is so low tonight. At home it's high up in the sky."], ['tommy', "Maybe it's tired."]]);
+    say([['tommy', "I'm a sailor now!"], ['annika', "We're both sailors. I've written it in my diary."]]);
   },
-  lagoon7(){ say(lowtide7() ? "The lagoon at low tide: rock pools full of starfish and crabs, and a sandy path out to Turtle Islet." : "The lagoon, as clear as glass. Little striped fish dart about. Turtle Islet is out in the middle."); },
-  islet7(){
-    if(!S.f.tide) return say(["Turtle Islet: one palm tree, and a rock shaped like a turtle.", "The sandbar that leads there is under water. You would have to swim, and the horse can't."]);
-    if(!S.f.paces) return has7('map') ? openPaces7() : say("Turtle Islet, at low tide. To find the surprise, you need the captain's map.");
-    if(!S.f.dug) return say(["There's the X in the sand, exactly 12 metres from the turtle rock.", "Now you need something to dig with."]);
-    if(!S.f.chest) return openChest7();
-    say("The hole where the treasure chest was. A crab has moved in already.");
+  pippi7(){
+    if(S.f.equator && !S.f.out7){ S.ach.neptune = true; save();
+      return say(['pippi', "I'm King Neptune, the king of the sea! Everybody who crosses the Equator for the first time gets a bucket of water over their head. Ready?"]); }
+    say(['pippi', S.f.out7 ? "Daddy's island! I'm going to be a princess. A thing-searching princess." : S.f.course ? "I'm the figurehead! Look, no hands!" : "I've never sailed to the South Seas, so I'm sure I'll be very good at it."]);
   },
-  dig7(){
-    if(S.f.dug) return S.f.chest ? H.islet7() : openChest7();
-    say("The X. Dig here! But not with your hands: the sand is full of crabs' toes.");
+  isle7(){ if(S.f.out7) startCh8(); },   // ashore: on to Chapter 7
+  log7(){ openLog7(); },
+  case7(){
+    if(S.f.sextTaken) return say("The instrument box. Empty, apart from a pair of dividers and a very old biscuit.");
+    S.f.sextTaken = true; give('sextant'); applyVisuals();
+    say(["The captain's instrument box. Inside, on red velvet: a brass sextant.", "A note in the lid says: \"For measuring how high a star is above the horizon. Only works at night. Obviously.\""]);
   },
-  shovel7(){ S.f.spadeTaken = true; give('spade'); applyVisuals(); say("A spade, leaning against the king's hut. You take it. Kings don't dig their own holes."); },
-  hut7(){
-    if(S.f.out7) return say("The king's hut. The feast is in full swing behind it: you can smell grilled fish and coconut cake.");
-    if(storm7()) return say("Everybody is squashed into the king's hut while the rain drums on the roof. The horse too.");
-    say(["The king's hut, made of bamboo with a roof of palm leaves. Inside: a hammock, a chest of sea charts, and a very big chair.", 'Captain Longstocking says it is a palace. Pippi says it is a very good palace.']);
+  chart7(){ openChart7(); },
+  stove7(){ say(S.f.water ? "The galley stove. A pot of fish soup is bubbling. Pippi made it. There's a whole fish in it, and a sock." : ["The galley stove, with a pot of soup bubbling away.", "Soup needs fresh water too. Everything on a ship needs fresh water."]); },
+  barrel(){
+    if(S.f.water) return say("The water barrel, filling up again, cupful by cupful, from the bowls in the sun.");
+    if(!S.f.floats) return say(["The drinking-water barrel, full to the top.", "On a ship, fresh water is precious. There's water all around you, but the sea is far too salty to drink."]);
+    openStill();
   },
+  crates7(){ say(["Crates of supplies. Two of them are labelled 18 kg.", "Pippi says that's sweets for the voyage. Eighteen kilos each. \"In case we're becalmed.\""]); },
+  net7(){ S.f.netTaken = true; give('net'); applyVisuals(); say("A fishing net, hanging on a hook in the hold. You take it. It might come in handy at sea."); },
+  hold7(){ say(["The lower hold: barrels of salted fish, and a pile of heavy stones.", "The stones are ballast. They sit low down in the ship so she doesn't tip over in the wind."]); },
   sky7(){
-    if(storm7()) return openThunder7();
-    if(dusk7()) return say("The first stars come out over the island. The Moon is rising over the sea and making a silver path on the water.");
-    say(S.f.tide ? "The sun has moved across the sky since this morning. It's afternoon now." : "A hot blue sky. The sun is still low in the east: it's morning.");
+    if(S.f.water && !S.f.equator){
+      if(has7('sextant')) return openSextant7();
+      return say(["The sky is full of stars. The North Star hangs very low, just above the sea.", "The captain measures stars with his sextant. It's in the instrument box in his cabin."]);
+    }
+    if(S.f.equator && !S.f.out7) return say("Dawn. The sky turns pink, then orange, then gold. Somewhere ahead is an island.");
+    say(S.f.course ? "Blue sky, white clouds, and the sun getting hotter every day as you sail south." : "Seagulls circle over the harbour, hoping somebody drops a sandwich.");
   },
-  ship7(){ say(["The Hoppetossa, at anchor in the lagoon. She looks very pleased to be resting.", "Her sails are rolled up, and her anchor chain goes straight down into the clear water. You can see the anchor on the sand at the bottom."]); },
-  nest7(){
-    if(S.f.out7) return say("The nest is empty. Every baby turtle made it to the sea!");
-    if(!dusk7()) return say(["A sea turtle's nest, with a little fence of shells around it. The mother turtle laid her eggs here, deep in the warm sand.", ['pippi', "They'll hatch tonight, Dad says. Baby turtles always come out in the dark."]]);
-    openTurtles7();
-  },
-  torches7(){
-    if(dusk7() && !S.f.out7) return openTurtles7();
-    say(dusk7() ? "The torches have been put out on this side. The moon is bright enough." : "Torches for tonight's feast. They'll be lit when it gets dark.");
-  },
-  palm7(){
-    S.f.bonks = (S.f.bonks || 0) + 1; save();
-    if(S.f.bonks >= 3){ S.ach.bonk = true; save(); return say(["You shake the palm tree. BONK! A coconut lands right on your head.", ['nilsson', "Eek eek eek!"], "Mr Nilsson thinks that's the funniest thing he has ever seen."]); }
-    say("A tall coconut palm. Mr Nilsson is halfway up, hugging a coconut. Better not shake it too hard.");
-  },
-  parrot7(){
-    S.f.squawks = (S.f.squawks || 0) + 1; save();
-    if(S.f.squawks >= 3){ S.ach.polly = true; save(); return say([['parrot', "Pluttification! Pluttification! Squawk!"], ['pippi', "I taught him that. He's much better at it than Miss."]]); }
-    say([['parrot', S.f.chest ? "Treasure! Treasure! Squawk!" : "Squawk! Twelve paces! Twelve paces!"], "The king's parrot. It repeats everything it hears. Mostly the captain."]);
-  },
-  nilsson7(){ say([['nilsson', "Eek!"], "Mr Nilsson is up the palm tree with a coconut. He has finally found a country where the fruit grows at monkey height."]); },
-  horse7(){ say(["The horse is wearing a garland of flowers and looks very relaxed. It has never been on holiday before.", ['pippi', "He's going to learn to surf. Tomorrow."]]); },
-  kids7(){
-    if(S.f.out7) return say([['annika', "Turtles, treasure and a thunderstorm. Nobody at school is going to believe us."], ['tommy', "We'll bring them a coconut."]]);
-    if(storm7()) return say([['annika', "Thunder! Tommy, I don't like it."], ['tommy', "Count the seconds, Annika. Then we'll know how far away it is."]]);
-    say([['tommy', "We're building a sandcastle. It has a moat, a tower, and a room for the horse."], ['annika', "Pippi, can you stop standing on your hands for a minute? You're kicking sand in the moat."]]);
-  },
-  pippi7(){ say(['pippi', S.f.out7 ? "Goodbye, little turtles! Write to us!" : S.f.chest ? "Eighteen kilos! Exactly the right amount. Dad knows me so well." : "On this island everybody walks on their hands on Tuesdays. Or they should."]); }
+  sea7(){
+    if(!S.f.course) return say("Harbour water, green and calm. A seagull floats on it, looking bored.");
+    if(!S.f.floats){
+      if(has7('net')) return openFloat();
+      return say(["Splash! Mr Nilsson has thrown the captain's things overboard. Some are bobbing on the waves; some have gone straight down.", "You'll need something to fish them out with."]);
+    }
+    say(S.f.out7 ? "The water around the island is so clear you can see the fish nibbling your shadow." : "Fish swim alongside the ship. A dolphin jumps, now and then, just to show off.");
+  }
 });
 
-/* ---------- puzzle: the sundial (a shadow points away from the sun; it is shortest at noon) ---------- */
-const DIAL_NOW = 9;   // 9 o'clock in the morning
-const dialPt = (h, r) => { const t = Math.PI - (h - 6) / 12 * Math.PI; return [150 + r * Math.cos(t), 120 + r * Math.sin(t)]; };
-function openSundial7(){
-  const st = S.sdl || (S.sdl = { r: 0, pick: 0 });
-  openModal('The sundial', 'A stick, a stone, and the sun', `
-    <svg class="dial7-svg" translate="no" viewBox="0 0 300 250" aria-hidden="true" id="dial7-svg"></svg>
-    <div class="dial7-ask" id="dial7-ask"></div>
-    <div class="row-btns" id="dial7-opts" hidden>${['It is shortest', 'It is longest', 'It disappears completely', 'It points at the sun'].map((o, i) => `<button type="button" class="btn ghost d6o" data-i="${i}">${tx(o)}</button>`).join('')}</div>
-    <div class="feedback" id="dial7-fb"></div>`, () => {
-    const fb = $('#dial7-fb');
+/* ---------- puzzle: the cargo hoist (pulleys: more ropes, less pulling) ---------- */
+const HORSE_KG = 400, PULL_KG = 100;
+function openHoist(){
+  const st = S.pul || (S.pul = { n: 1 });
+  openModal('The cargo hoist', 'Pulleys and rope, on the stern', `
+    <svg class="hp-tackle" viewBox="0 0 300 240" aria-hidden="true" id="hp-tackle"></svg>
+    <p class="flag-p">${tx('The horse weighs 400 kg. You, Tommy and Annika can pull 100 kg together. The more ropes hold the horse up, the less each rope has to carry.')}</p>
+    <div class="row-btns">${[1, 2, 3, 4].map(n => `<button type="button" class="btn ghost hp-ropes" data-n="${n}">${tx(n === 1 ? '1 rope' : '{n} ropes', { n })}</button>`).join('')}</div>
+    <div class="row-btns"><button type="button" class="btn" id="hp-heave">${tx('Heave!')}</button></div>
+    <div class="feedback" id="hp-hfb"></div>`, () => {
+    const fb = $('#hp-hfb');
     const draw = () => {
-      const [sx, sy] = dialPt(DIAL_NOW + 12, 112);   // the sun: the opposite way from the shadow
-      let g = `<rect width="300" height="250" fill="#f6e2a8"/><circle cx="150" cy="120" r="96" fill="#d8d2c7" stroke="#8a8378" stroke-width="4"/>`;
-      g += `<g transform="translate(${sx.toFixed(1)} ${sy.toFixed(1)})"><circle r="16" fill="#ffe27a"/><g stroke="#f2a13a" stroke-width="3"><path d="M0 -24v6M0 18v6M-24 0h6M18 0h7"/></g></g>`;
-      for(let h = 6; h <= 18; h++){ const [x, y] = dialPt(h, 80), lab = h > 12 ? h - 12 : h;
-        g += `<g class="hr${st.r === 0 ? ' pick' : ''}" data-h="${h}"><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="11" fill="${st.pick === h ? '#f2c94c' : '#f3efe3'}" stroke="#6a6458" stroke-width="1.5"/><text x="${x.toFixed(1)}" y="${(y + 4).toFixed(1)}" text-anchor="middle" font-size="11" font-weight="700" fill="#3a3a3a">${lab}</text></g>`; }
-      if(st.pick){ const [x, y] = dialPt(st.pick, 64); g += `<path d="M150 120 L${x.toFixed(1)} ${y.toFixed(1)}" stroke="#000" stroke-width="7" stroke-linecap="round" opacity=".3"/>`; }
-      g += `<circle cx="150" cy="120" r="6" fill="#6a6458"/><text x="150" y="238" text-anchor="middle" font-size="12" fill="#5a3a1a">${tx('morning ← → afternoon')}</text>`;
-      $('#dial7-svg').innerHTML = g;
-      $('#dial7-ask').innerHTML = st.r === 0 ? tx('Mr Nilsson borrowed the shadow-stick, so the sundial has no shadow. Before you put the stick back: the sun is up there. <b>Which hour mark will the stick\'s shadow point to?</b> Click it.')
-        : tx('<b>And at 12 o\'clock, when the sun is at its highest in the sky, what happens to the shadow?</b>');
-      $('#dial7-opts').hidden = st.r !== 1;
-      document.querySelectorAll('#dial7-svg .hr.pick').forEach(el => el.onclick = () => {
-        const h = +el.dataset.h; st.pick = h; save(); beep(600, .03); draw();
-        if(h === DIAL_NOW){ st.r = 1; save(); chord([523, 659, 784]); fb.className = 'feedback good'; fb.textContent = tx("You put the stick back, and its shadow falls on the 9. A shadow always points away from the sun. It's 9 o'clock in the morning!"); draw(); return; }
-        nope(); fb.className = 'feedback bad';
-        fb.textContent = tx(h > 12 ? 'That mark is on the same side as the sun! A shadow never points towards the sun: it points away from it.' : "Close, but the shadow points exactly the opposite way from the sun. Draw a line from the sun, through the stick, and keep going.");
-      });
+      const n = st.n, each = Math.round(HORSE_KG / n), xs = Array.from({ length: n }, (_, i) => 150 - (n - 1) * 14 + i * 28);
+      let s = '<rect width="300" height="240" fill="#cfe7fb"/><rect x="40" y="10" width="220" height="12" rx="4" fill="#6b3a1a"/>';
+      s += `<rect x="${xs[0] - 14}" y="22" width="${(n - 1) * 28 + 28}" height="18" rx="6" fill="#9aa0a6"/>`;
+      xs.forEach(x => s += `<path d="M${x} 40 V140" stroke="#c9a46a" stroke-width="3"/>`);
+      s += `<path d="M${xs[n - 1] + 14} 31 Q${xs[n - 1] + 60} 60 ${xs[n - 1] + 70} 190" stroke="#c9a46a" stroke-width="3" fill="none"/><circle cx="${xs[n - 1] + 70}" cy="196" r="7" fill="#f3c9a4"/>`;
+      s += `<rect x="${xs[0] - 14}" y="138" width="${(n - 1) * 28 + 28}" height="14" rx="5" fill="#9aa0a6"/><use href="#hpHorseShape" transform="translate(${90} 150) scale(.6)"/>`;
+      s += `<text x="150" y="230" text-anchor="middle" font-size="14" font-weight="600" font-family="IBM Plex Mono, monospace" fill="#1f3f6a">${tx('Each rope: {kg} kg', { kg: each })}</text>`;
+      $('#hp-tackle').innerHTML = s;
+      document.querySelectorAll('.hp-ropes').forEach(b => b.classList.toggle('on', +b.dataset.n === n));
     };
     draw();
-    document.querySelectorAll('.d6o').forEach(b => b.onclick = () => {
-      const i = +b.dataset.i;
-      if(i === 0){
-        S.f.sundial = true; S.sdl = null; save(); applyVisuals(); chord([523, 659, 784, 1046]);
-        fb.className = 'feedback good'; fb.textContent = tx('Shortest! When the sun is high, the shadow is short; in the morning and evening, when the sun is low, shadows are long. So: 9 o\'clock now, and a short shadow at lunchtime.');
-        setTimeout(() => { closeModal(); say([['pippi', "Nine o'clock! On this island that's breakfast time, so I've had three breakfasts already."], ['annika', "Now the tide post. When will the water go down?"]]); }, 2200);
+    document.querySelectorAll('.hp-ropes').forEach(b => b.onclick = () => { st.n = +b.dataset.n; save(); draw(); beep(300 + st.n * 80, .05); fb.className = 'feedback'; fb.textContent = ''; });
+    $('#hp-heave').onclick = () => {
+      const each = HORSE_KG / st.n;
+      if(each <= PULL_KG){
+        S.f.aboard = true; save(); applyVisuals(); chord([523,659,784,1046]);
+        fb.className = 'feedback good'; fb.textContent = tx('Four ropes share the 400 kg: 100 kg each. Up goes the horse! You had to pull four metres of rope for every metre it rose, but you could do it.');
+        setTimeout(() => { closeModal(); hoist7(); say(["The horse rises gently into the air, swings over the rail, and lands on deck with four clonks.", ['horse', "Neeeigh!"], ['captain', "Well hoisted, sailor! Now: a course for my island. My chart is in the cabin."]]); }, 1900);
         return;
       }
       nope(); fb.className = 'feedback bad';
-      fb.textContent = tx(['', 'Longest is when the sun is low, in the morning and evening. At noon it is as high as it gets.', 'Only if the sun is exactly overhead, and even then the stick has a tiny shadow under it. Not quite.', 'A shadow never points at the sun. Never ever. Not even on a South Sea island.'][i]);
+      fb.textContent = tx(st.n === 1 ? 'You pull with all your might. With one rope you are lifting all 400 kg. The horse doesn\'t even notice.'
+        : st.n === 2 ? 'Two ropes: 200 kg each. The horse\'s front hooves lift off… and land again with a clonk. More ropes!'
+        : 'Three ropes: about 133 kg each. So close! The horse dangles half a centimetre above the quay. One more rope!');
+    };
+  });
+}
+
+/* ---------- puzzle: the course (the compass: north is always north; in between are NE, SE, SW, NW) ---------- */
+const HEADINGS7 = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
+const HEADING7_NAME = { N:'north', NE:'north-east', E:'east', SE:'south-east', S:'south', SW:'south-west', W:'west', NW:'north-west' };
+const COURSE7 = 'SW';
+function compassRose7(rot){
+  let s = `<g transform="rotate(${rot} 110 110)"><circle cx="110" cy="110" r="96" fill="#fffaf0" stroke="#c9952a" stroke-width="6"/>`;
+  HEADINGS7.forEach((h, i) => { const a = i * 45, big = i % 2 === 0;
+    s += `<g transform="rotate(${a} 110 110)"><path d="M110 ${big ? 26 : 42} L${big ? 118 : 115} 110 L110 104 L${big ? 102 : 105} 110 Z" fill="${i === 0 ? '#c4302b' : big ? '#1f3f6a' : '#7a8aa6'}"/><text x="110" y="${big ? 22 : 38}" text-anchor="middle" font-size="${big ? 15 : 11}" font-weight="700" fill="#1f3f6a" font-family="Fredoka, sans-serif">${tx(h)}</text></g>`; });
+  return s + '</g>';
+}
+function openWheel(){
+  const st = S.hd || (S.hd = { i: 0 });
+  openModal("The ship's wheel", 'Turn the ship until she points the right way', `
+    <svg class="hp-compass" viewBox="0 -16 220 240" aria-hidden="true" id="hp-compass"></svg>
+    <div class="hp-heading" id="hp-heading"></div>
+    <div class="row-btns"><button type="button" class="btn ghost" id="hp-port">↺ ${tx('Turn to port (left)')}</button><button type="button" class="btn ghost" id="hp-star">${tx('Turn to starboard (right)')} ↻</button></div>
+    <div class="row-btns"><button type="button" class="btn" id="hp-setsail">${tx('Set sail!')}</button></div>
+    <div class="feedback" id="hp-wfb">${tx('The compass card always points north, whichever way the ship turns. The little ship in the middle shows where her nose is pointing.')}</div>`, () => {
+    const fb = $('#hp-wfb');
+    const draw = () => {
+      const h = HEADINGS7[st.i];
+      $('#hp-compass').innerHTML = `<rect y="-16" width="220" height="240" fill="#1c2340" rx="8"/>${compassRose7(-st.i * 45)}<path d="M110 40 L122 120 L110 150 L98 120 Z" fill="#8a5028" stroke="#3e200c" stroke-width="2" opacity=".9"/><path d="M110 6 l-8 -14 h16z" fill="#f2c94c"/>`;
+      $('#hp-heading').innerHTML = `${tx('The ship points:')} <b>${tx(HEADING7_NAME[h])}</b>`;
+    };
+    draw();
+    $('#hp-port').onclick = () => { st.i = (st.i + 7) % 8; save(); beep(420, .05); draw(); };
+    $('#hp-star').onclick = () => { st.i = (st.i + 1) % 8; save(); beep(520, .05); draw(); };
+    $('#hp-setsail').onclick = () => {
+      const h = HEADINGS7[st.i];
+      if(h === COURSE7){
+        S.f.course = true; save(); chord([392,523,659,784,1046]);
+        fb.className = 'feedback good'; fb.textContent = tx('South-west! Down and to the left on the chart. "Drop the sails!" roars the captain.');
+        setTimeout(() => { closeModal(); castOff7(); say(["The sails tumble down from the yards and fill with wind with a great WHUMP. The ropes creak, the quay slides away, and the Hoppetossa is off!", ['captain', "South-west it is! Steady as she goes!"], ['sys', "Behind you, the snowy harbour gets smaller and smaller. Ahead, the clouds open, and the sun comes out."], ['pippi', "Goodbye, Villa Villekulla! Goodbye, everybody! Goodbye, dog!"]]); }, 1600);
+        return;
+      }
+      nope(); fb.className = 'feedback bad';
+      fb.textContent = tx({ N: 'North? That way is ice and polar bears. Pippi would love it, but the island is the other way.',
+        S: 'Due south runs straight down the chart. The island is south, but it\'s west as well.',
+        W: 'Due west goes straight across the chart. The island is west, but it\'s south as well.',
+        E: 'East would take you to Finland. The captain\'s island is nowhere near Finland.',
+        NE: 'North-east is exactly the wrong way. Turn the ship right round.',
+        SE: 'South-east: the right way down, but the wrong way across. Look at the chart again.',
+        NW: 'North-west: the right way across, but the wrong way up and down. Look at the chart again.' }[h]);
+    };
+  });
+}
+function openChart7(){
+  const pos = !S.f.course ? [300, 70] : !S.f.water ? [220, 150] : !S.f.equator ? [150, 220] : !S.f.out7 ? [110, 262] : [86, 290];
+  openModal("The captain's chart", 'Spread out on the chart table', `
+    <svg class="hp-chart" viewBox="0 0 400 320" aria-hidden="true">
+      <rect width="400" height="320" fill="#f3e6c4"/>
+      <path d="M270 0 Q300 40 330 50 Q350 20 380 0 Z M300 120 Q340 90 400 100 V180 Q350 170 300 120 Z M240 300 Q300 250 360 260 Q400 270 400 320 H250 Z" fill="#d9c79a" stroke="#a8946a"/>
+      <path d="M0 236 H400" stroke="#c4302b" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <text x="8" y="230" font-size="12" font-weight="700" fill="#c4302b" font-family="Fredoka, sans-serif">${tx('Equator 0°')}</text>
+      <text x="8" y="70" font-size="11" fill="#7a5a1a" font-family="Fredoka, sans-serif">60°</text>
+      <path d="M0 74 H400" stroke="#a8946a" stroke-dasharray="2 4"/>
+      <circle cx="312" cy="60" r="6" fill="#e8571f"/><text x="322" y="64" font-size="11" fill="#3e200c" font-family="Fredoka, sans-serif">${tx('Villa Villekulla')}</text>
+      <path d="M312 60 Q250 140 170 200 Q110 250 60 300" stroke="#1f3f6a" stroke-width="2.5" fill="none" stroke-dasharray="7 5"/>
+      <g fill="#3f8a4a"><circle cx="54" cy="304" r="12"/></g><text x="72" y="310" font-size="11" fill="#3e200c" font-family="Fredoka, sans-serif">${tx("The captain's island")}</text>
+      <g transform="translate(${pos[0]} ${pos[1]})"><path d="M-9 -4 h18 l-4 8 h-10z" fill="#6b3a1a"/><path d="M0 -4 v-12 l9 8z" fill="#fffaf0" stroke="#6b3a1a"/></g>
+      <g transform="translate(350 230)"><circle r="28" fill="#fffaf0" stroke="#c9952a" stroke-width="2"/>
+        <path d="M0 -24 L5 0 L0 24 L-5 0 Z" fill="#1f3f6a"/><path d="M0 -24 L5 0 L-5 0 Z" fill="#c4302b"/><path d="M-24 0 L0 -4 L24 0 L0 4 Z" fill="#1f3f6a"/>
+        <g font-size="10" font-weight="700" fill="#1f3f6a" text-anchor="middle" font-family="Fredoka, sans-serif"><text y="-32">${tx('N')}</text><text y="40">${tx('S')}</text><text x="-36" y="4">${tx('W')}</text><text x="36" y="4">${tx('E')}</text></g></g>
+    </svg>
+    <p class="flag-p">${tx('On a chart, north is always at the top, south at the bottom, west on the left and east on the right. The dotted line is the way to the captain\'s island.')}</p>`);
+}
+
+/* ---------- puzzle: Mr Nilsson's things overboard (floating and sinking: what it's made of, not how big it is) ---------- */
+const FLOAT7 = [
+  { k: 'log', name: 'A big, heavy log', floats: true, svg: '<rect x="10" y="28" width="80" height="24" rx="12" fill="#8a5028"/><ellipse cx="86" cy="40" rx="6" ry="12" fill="#c98a4b"/>' },
+  { k: 'key', name: "The captain's little iron key", floats: false, svg: '<circle cx="34" cy="40" r="10" fill="none" stroke="#5a5f66" stroke-width="5"/><path d="M44 40 H76 M68 40 v8 M74 40 v6" stroke="#5a5f66" stroke-width="5"/>' },
+  { k: 'apple', name: 'An apple', floats: true, svg: '<circle cx="50" cy="44" r="18" fill="#d22d2d"/><path d="M50 26 q2 -8 8 -10" stroke="#5a3a1a" stroke-width="3" fill="none"/><path d="M52 24 q10 -6 14 0 q-8 4 -14 0z" fill="#3f8a4a"/>' },
+  { k: 'coin', name: 'A gold coin', floats: false, svg: '<circle cx="50" cy="40" r="16" fill="#f3d27a" stroke="#b07f1f" stroke-width="3"/><text x="50" y="45" text-anchor="middle" font-size="14" font-weight="700" fill="#b07f1f">1</text>' },
+  { k: 'cork', name: 'A cork', floats: true, svg: '<path d="M38 30 h24 l-3 22 h-18z" fill="#c9a46a" stroke="#8a6a3a" stroke-width="2"/>' },
+  { k: 'marble', name: 'A glass marble', floats: false, svg: '<circle cx="50" cy="40" r="12" fill="#5ad0c0" opacity=".8"/><path d="M44 34 q4 -4 8 -2" stroke="#fff" stroke-width="2" fill="none"/>' }
+];
+function openFloat(){
+  const st = S.flt || (S.flt = {});
+  openModal('Overboard!', "Mr Nilsson's six splashes", `
+    <p class="flag-p">${tx('What floats, you can scoop up with the net. What sinks, Pippi will have to dive for. Which of these float?')}</p>
+    <div class="hp-floats">${FLOAT7.map(o => `<button type="button" class="hp-fl" data-k="${o.k}"><svg viewBox="0 0 100 80" aria-hidden="true"><rect width="100" height="80" rx="6" fill="#cfe7fb"/>${o.svg}</svg><span>${tx(o.name)}</span><b class="hp-fs" id="hp-fs-${o.k}"></b></button>`).join('')}</div>
+    <div class="row-btns"><button type="button" class="btn" id="hp-fcheck">${tx('Out with the net!')}</button></div>
+    <div class="feedback" id="hp-ffb">${tx('Click a thing to say whether it floats or sinks.')}</div>`, () => {
+    const fb = $('#hp-ffb');
+    const draw = () => FLOAT7.forEach(o => { const v = st[o.k], el = $('#hp-fs-' + o.k);
+      el.textContent = v === 'f' ? tx('floats') : v === 's' ? tx('sinks') : '?';
+      el.parentElement.classList.toggle('f', v === 'f'); el.parentElement.classList.toggle('s', v === 's'); });
+    draw();
+    document.querySelectorAll('.hp-fl').forEach(b => b.onclick = () => { const k = b.dataset.k; st[k] = st[k] === 'f' ? 's' : 'f'; save(); beep(st[k] === 'f' ? 700 : 300, .05); draw(); });
+    $('#hp-fcheck').onclick = () => {
+      if(FLOAT7.some(o => !st[o.k])){ nope(); fb.className = 'feedback bad'; fb.textContent = tx('Decide for every one of them first: floats or sinks?'); return; }
+      const wrong = FLOAT7.find(o => (st[o.k] === 'f') !== o.floats);
+      if(wrong){
+        nope(); fb.className = 'feedback bad';
+        fb.textContent = tx({ log: 'The log is big and heavy, but it\'s made of wood, and wood is lighter than the same amount of water. Big things can float!',
+          key: 'The key is tiny and light, but iron is much heavier than the same amount of water. Small things can sink!',
+          apple: 'An apple is full of tiny pockets of air. Ever tried apple-bobbing?',
+          coin: 'Gold is very, very heavy for its size. Plop.',
+          cork: 'Cork is so light for its size that fishermen use it to keep their nets afloat.',
+          marble: 'Glass is heavier than the same amount of water. The marble goes straight to the bottom.' }[wrong.k]);
+        return;
+      }
+      S.f.floats = true; take('net'); save(); applyVisuals(); chord([523,659,784,1046]);
+      fb.className = 'feedback good'; fb.textContent = tx('The log, the apple and the cork bob on the waves: into the net they go! Whether a thing floats depends on what it\'s made of, not on how big it is.');
+      setTimeout(() => { closeModal(); say([['pippi', "And now the sinkers!"], "Pippi dives in head first. A long time later she comes up again with the key in her teeth, the coin in her ear and the marble up her nose.", ['pippi', "In Egypt everybody can hold their breath for a week."], "It's getting hotter every day. Then, from the galley, a long slurping noise…", ['captain', "The horse has drunk the water barrel dry!"]]); }, 2000);
+    };
+  });
+}
+
+/* ---------- puzzle: fresh water from sea water (the sun evaporates the water; the salt stays behind) ---------- */
+const STILL7 = [
+  { k: 'bowl', label: 'A bowl of sea water', need: true },
+  { k: 'cup', label: 'An empty cup in the middle of the bowl', need: true },
+  { k: 'lid', label: 'A clear glass lid over the bowl', need: true },
+  { k: 'pebble', label: 'A pebble on the lid, right above the cup', need: true },
+  { k: 'sun', label: 'Put it in the hot sun', need: true },
+  { k: 'shade', label: 'Put it in the cool shade', need: false },
+  { k: 'salt', label: 'Add a spoonful of salt', need: false }
+];
+function openStill(){
+  const on = S.stl || (S.stl = []);
+  openModal('Fresh water from the sea', 'The captain\'s old trick', `
+    <svg class="hp-still" viewBox="0 0 320 170" aria-hidden="true" id="hp-stillsvg"></svg>
+    <div class="hp-parts">${STILL7.map(p => `<button type="button" class="tog hp-part" data-k="${p.k}">${tx(p.label)}</button>`).join('')}</div>
+    <div class="row-btns"><button type="button" class="btn ghost" id="hp-drink">${tx('Just drink the sea water')}</button><button type="button" class="btn" id="hp-wait">${tx('Wait for the sun to work')}</button></div>
+    <div class="feedback" id="hp-sfb">${tx('Sea water is too salty to drink. But when water dries up in the sun, the salt is left behind. Choose what you need.')}</div>`, () => {
+    const fb = $('#hp-sfb');
+    const draw = (drip) => {
+      const has = k => on.includes(k);
+      let s = `<rect width="320" height="170" fill="${has('shade') ? '#5a7a9a' : '#9fd0f0'}"/>`;
+      if(has('sun')) s += '<circle cx="280" cy="30" r="20" fill="#ffd25a"/>';
+      s += '<rect y="140" width="320" height="30" fill="#a5743f"/>';
+      if(has('bowl')) s += '<path d="M60 100 Q60 140 160 140 Q260 140 260 100 Z" fill="#3a8ac0" opacity=".85"/><path d="M60 100 H260" stroke="#e9e1cc" stroke-width="3"/>';
+      if(has('salt')) s += '<g fill="#fff"><circle cx="100" cy="120" r="2"/><circle cx="210" cy="118" r="2"/><circle cx="130" cy="128" r="2"/></g>';
+      if(has('cup')) s += '<path d="M146 108 h28 l-3 26 h-22z" fill="#fffaf0" stroke="#c9b48a" stroke-width="2"/>';
+      if(has('lid')) s += has('pebble') ? '<path d="M56 98 L160 74 L264 98" fill="none" stroke="#cfe7fb" stroke-width="4"/>' : '<path d="M56 98 Q160 60 264 98" fill="none" stroke="#cfe7fb" stroke-width="4"/>';
+      if(has('pebble')) s += '<ellipse cx="160" cy="70" rx="9" ry="6" fill="#8a8f96"/>';
+      if(drip) s += '<g fill="#e9f4ff"><circle class="hp-dripdot" cx="160" cy="86" r="3"/><circle cx="110" cy="84" r="2"/><circle cx="210" cy="84" r="2"/></g><path d="M150 128 h20" stroke="#5aa0e0" stroke-width="5"/>';
+      $('#hp-stillsvg').innerHTML = s;
+      document.querySelectorAll('.hp-part').forEach(b => b.classList.toggle('on', has(b.dataset.k)));
+    };
+    draw(false);
+    document.querySelectorAll('.hp-part').forEach(b => b.onclick = () => {
+      const k = b.dataset.k, i = on.indexOf(k);
+      if(i >= 0) on.splice(i, 1);
+      else { on.push(k); const other = { sun: 'shade', shade: 'sun' }[k]; if(other && on.includes(other)) on.splice(on.indexOf(other), 1); }
+      save(); beep(500, .03); draw(false);
+    });
+    $('#hp-drink').onclick = () => { S.ach.tasted = true; save(); nope(); fb.className = 'feedback bad'; fb.textContent = tx('Bleurgh! It\'s horribly salty, and salty water makes you even thirstier. Never drink sea water.'); };
+    $('#hp-wait').onclick = () => {
+      const has = k => on.includes(k);
+      const msg = has('salt') ? 'More salt? The sea has plenty already, thank you.'
+        : has('shade') ? 'In the shade it hardly warms up. You\'d be waiting till next Christmas.'
+        : !has('bowl') ? 'There\'s no sea water to make fresh water from.'
+        : !has('sun') ? 'Where are you going to put it? Something has to warm the water up.'
+        : !has('lid') ? 'The warm water turns into vapour and floats away into the sky. Something has to catch it.'
+        : !has('cup') ? 'Drops form under the lid and fall… straight back into the salty water. Something has to catch them.'
+        : !has('pebble') ? 'Drops form under the lid but run down the sides, back into the salty bowl. Make the lid dip, right above the cup.'
+        : null;
+      if(msg){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(msg); return; }
+      S.f.water = true; save(); draw(true); chord([523,659,784,1046]);
+      fb.className = 'feedback good'; fb.textContent = tx('The sun warms the sea water and it evaporates: the salt stays behind. The vapour cools on the lid, turns back into drops, runs down to the pebble and drips into the cup. Fresh water!');
+      setTimeout(() => { closeModal(); applyVisuals(); say(["Soon there are bowls in the sun all over the deck, and the cups fill up drop by drop. The horse gets the first cupful.", ['horse', "Slurrrp. Neigh!"], "The sun sets, red and gold. Night falls over the sea, and one by one the stars come out.", ['captain', "Tonight we cross the Equator, sailor. Or do we? Ask the stars. My sextant is in my cabin."]]); }, 2400);
+    };
+  });
+}
+
+/* ---------- puzzle: the Equator by the stars (the North Star's height is how far north you are) ---------- */
+function openLog7(){
+  openModal("The captain's logbook", 'His last voyage to the South Seas', `
+    <div class="hp-log">
+      <p>${tx('Day 1. Left Villa Villekulla. North Star 59° above the horizon. Fair wind.')}</p>
+      <p>${tx('Day 8. North Star 40°. Ate a whole shark. Well, half.')}</p>
+      <p>${tx('Day 15. North Star 20°. Hot. Very hot.')}</p>
+      <p>${tx('Day 22. Crossed the Equator! King Neptune came aboard. (It was the cook in a beard made of seaweed.)')}</p>
+      <p class="hp-rule">${tx('SAILOR\'S RULE: the higher the North Star, the further north you are. At the North Pole it is straight overhead, 90° up. Sail south, and every night it sinks a little lower.')}</p>
+    </div>`);
+}
+function openSextant7(){
+  const round = S.eqr || 0;
+  const sky = `<svg class="hp-night" viewBox="0 0 400 200" aria-hidden="true"><rect width="400" height="200" fill="#070b24"/>
+      <g fill="#fff"><circle cx="40" cy="40" r="1.5"/><circle cx="120" cy="80" r="1.2"/><circle cx="300" cy="30" r="1.5"/><circle cx="360" cy="90" r="1.2"/><circle cx="250" cy="70" r="1"/><circle cx="80" cy="120" r="1"/></g>
+      <g fill="#fff8e1"><circle cx="230" cy="120" r="2.6"/><circle cx="246" cy="104" r="2.6"/><circle cx="270" cy="100" r="2.6"/><circle cx="290" cy="112" r="2.6"/><circle cx="292" cy="140" r="2.6"/><circle cx="318" cy="146" r="2.6"/><circle cx="314" cy="124" r="2.6"/></g>
+      <circle cx="160" cy="150" r="4" fill="#fff8e1"/><circle cx="160" cy="150" r="10" fill="#fff8e1" opacity=".2"/>
+      <rect y="152" width="400" height="48" fill="#0b2a4a"/><path d="M0 152 H400" stroke="#5aa0e0" stroke-width="1.5"/>
+      <text x="172" y="146" font-size="11" fill="#fff8e1" font-family="Fredoka, sans-serif">${tx('the North Star')}</text></svg>`;
+  const opts = round === 0
+    ? [['pole', 'At the North Pole'], ['home', 'Back home near Villa Villekulla'], ['half', 'Halfway between home and the Equator'], ['eq', 'On the Equator']]
+    : [['higher', 'Higher up again'], ['same', 'Exactly the same, on the horizon'], ['below', 'Below the horizon: we can\'t see it any more']];
+  openModal("The captain's sextant", round === 0 ? 'Measuring the North Star' : 'And tomorrow night?', `${sky}
+    <p class="flag-p">${tx(round === 0 ? 'Through the sextant, the North Star sits right on the horizon. The sextant reads: 0°. Where is the Hoppetossa tonight?' : 'Tomorrow night the ship will be south of the Equator. Where will the North Star be then?')}</p>
+    <div class="hands">${opts.map(([k, l]) => `<button type="button" class="hand" data-q="${k}">${tx(l)}</button>`).join('')}</div>
+    <div class="feedback" id="hp-qfb"></div>`, () => {
+    const fb = $('#hp-qfb');
+    document.querySelectorAll('.hand[data-q]').forEach(b => b.onclick = () => {
+      const k = b.dataset.q;
+      if(round === 0 && k === 'eq'){
+        S.eqr = 1; save(); chord([523,659,784]);
+        fb.className = 'feedback good'; fb.textContent = tx('0° up means 0° north: the Equator, right in the middle between the North Pole and the South Pole!');
+        setTimeout(() => { if(!$('#modal').hidden) openSextant7(); }, 1700);
+        return;
+      }
+      if(round === 1 && k === 'below'){
+        S.f.equator = true; take('sextant'); save(); applyVisuals(); chord([523,659,784,1046,1318]);
+        fb.className = 'feedback good'; fb.textContent = tx('Below the horizon! South of the Equator, the North Star is hidden behind the curve of the Earth. Instead, new stars appear, like the Southern Cross.');
+        setTimeout(() => { closeModal(); say([['captain', "We're crossing the line! Hurrah for the Equator!"], "Pippi paints a big red 0° on the mainsail, and everybody gets a bucket of sea water over their head. Even the horse.", "The night goes by in songs and splashes. Then the sky in the east turns pink… and something tiny shows on the horizon.", ['captain', "Is that… Quick, sailor! My spyglass, and up to the crow's nest!"]]); }, 2200);
+        return;
+      }
+      nope(); fb.className = 'feedback bad';
+      fb.textContent = tx({ pole: 'At the North Pole, the North Star is straight above your head: 90° up. Tonight it\'s 0°.',
+        home: 'At home it stood 59° up, high in the sky. Look at the captain\'s logbook: it sinks as you sail south.',
+        half: 'Halfway, it would be about 30° up. Tonight it\'s sitting right on the sea: 0°.',
+        higher: 'It has been sinking lower every night as you sailed south. Why would it climb again now?',
+        same: 'It has moved every single night. Keep sailing south, and it keeps sinking.' }[k]);
     });
   });
 }
 
-/* ---------- puzzle: the tide (two high tides a day; about 6 hours from high to low; the Moon pulls the sea) ---------- */
-function openTide7(){
-  const st = S.tdq || (S.tdq = { r: 0 });
-  openModal('The tide post', 'High tide now: the water is at the top stripe', `
-    <div class="tide7">
-      <svg class="tide7-svg" viewBox="0 0 120 220" aria-hidden="true"><rect width="120" height="220" fill="#bfe8f7"/><rect y="40" width="120" height="180" fill="#3cd0d0"/><rect x="52" y="10" width="16" height="200" fill="#fffaf0"/>${[0, 1, 2, 3, 4].map(i => `<rect x="52" y="${20 + i * 40}" width="16" height="20" fill="#c4302b"/>`).join('')}<path d="M0 40 q15 -6 30 0 t30 0 t30 0 t30 0" stroke="#fff" stroke-width="3" fill="none"/></svg>
-      <div class="tide7-side">
-        <p class="flag-p">${tx('The captain painted a sign on the post: "The sea goes OUT for about 6 hours, then comes back IN for about 6 hours. And then it does it all again."')}</p>
-        <div id="tide7-q"></div>
-      </div>
+/* ---------- puzzle: land ho! (the Earth is round: from higher up you can see further) ---------- */
+function openLandHo(){
+  const st = S.lho || (S.lho = { from: 'deck' });
+  openModal('Land ho?', 'In the crow\'s nest, with the spyglass', `
+    <svg class="hp-curve" viewBox="0 0 420 200" aria-hidden="true" id="hp-curvesvg"></svg>
+    <div class="row-btns"><button type="button" class="btn ghost hp-from" data-f="deck">${tx('Look from the deck')}</button><button type="button" class="btn ghost hp-from" data-f="nest">${tx('Look from the crow\'s nest')}</button></div>
+    <p class="flag-p">${tx('From the crow\'s nest you can see the top of the island\'s mountain. From the deck, you can\'t see it at all. Why?')}</p>
+    <div class="hands">
+      <button type="button" class="hand" data-l="near">${tx('Up in the crow\'s nest you\'re closer to the island.')}</button>
+      <button type="button" class="hand" data-l="round">${tx('The Earth is round. The sea curves down, and from higher up you can see further over the bend.')}</button>
+      <button type="button" class="hand" data-l="shy">${tx('The island is shy and ducks down when people on deck look at it.')}</button>
     </div>
-    <div class="feedback" id="tide7-fb"></div>`, () => {
-    const fb = $('#tide7-fb');
-    const Q = [
-      { ask: "It's 9 o'clock in the morning, and the water is as high as it goes. <b>When will it be at its lowest, so you can walk to Turtle Islet?</b>", opts: ["12 o'clock", "3 o'clock", "6 o'clock", "9 o'clock tonight"], ok: 1,
-        no: ["That's only 3 hours: the water will be halfway down the post. Not low enough.", '', "6 o'clock is 9 hours later. By then the sea is already coming back in.", "9 o'clock tonight is 12 hours later: 6 hours out, 6 hours back in. High tide again!"] },
-      { ask: '<b>But what makes the sea go in and out, twice a day?</b>', opts: ['The wind blows it', 'The Moon pulls on it', 'The fish drink it and spit it out'], ok: 1,
-        no: ['The wind makes waves, but it can\'t move a whole ocean in and out twice a day, every day, even when it\'s calm.', '', "Pippi likes that idea a lot. But no: there aren't THAT many thirsty fish."] }
-    ];
-    const draw = () => { const q = Q[st.r]; $('#tide7-q').innerHTML = `<p>${tx(q.ask)}</p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost t6o" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
-      document.querySelectorAll('.t6o').forEach(b => b.onclick = () => {
-        const i = +b.dataset.i;
-        if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }
-        chord([523, 659, 784]);
-        if(st.r === 0){ st.r = 1; save(); fb.className = 'feedback good'; fb.textContent = tx("3 o'clock! 9 o'clock plus 6 hours: 10, 11, 12, 1, 2, 3."); draw(); return; }
-        S.f.tide = true; S.tdq = null; save(); applyVisuals();
-        fb.className = 'feedback good'; fb.textContent = tx('The Moon! Its pull lifts the sea into a big bulge, and the Earth turns underneath it. That makes two high tides and two low tides every day.');
-        setTimeout(() => { closeModal(); say(["Six hours is a long time. Everybody has a swim, then a picnic, then a nap in the shade.", "At 3 o'clock, the water has slipped all the way down the tide post. A sandy path has come up out of the lagoon, all the way to Turtle Islet, with rock pools full of starfish along the way.", ['pippi', "Low tide! Treasure time!"]]); }, 2400);
-      }); };
-    draw();
-  });
-}
-
-/* ---------- puzzle: the captain's paces (measuring: everybody's pace is a different length, so we use metres) ---------- */
-const PACE_GOAL = 12;   // 12 of the captain's paces, and his paces are 1 metre
-const WALKERS7 = [{ k: 'pippi', who: 'Pippi', cm: 50 }, { k: 'tommy', who: 'Tommy', cm: 40 }, { k: 'annika', who: 'Annika', cm: 30 }, { k: 'horse', who: 'The horse', cm: 200 }];
-function openPaces7(){
-  const st = S.pcs || (S.pcs = { w: 0, n: 12 });
-  openModal("The captain's map", '"From the turtle rock: 12 of MY paces towards the palm. Dig at the X."', `
-    <p class="flag-p">${tx("The captain is far too comfortable in his hammock to walk to the islet himself. His paces are exactly 1 metre long. Who walks, and how many paces?")}</p>
-    <div class="row-btns walkers">${WALKERS7.map((w, i) => `<button type="button" class="btn ghost wk7" data-i="${i}">${tx('{who}: {cm} cm a pace', { who: tx(w.who), cm: w.cm })}</button>`).join('')}</div>
-    <label class="pace7">${tx('Paces:')} <b id="pc7-n"></b><input type="range" id="pc7" min="1" max="40" step="1" value="${st.n}"></label>
-    <svg class="pace7-svg" translate="no" viewBox="0 0 400 90" aria-hidden="true" id="pace7-svg"></svg>
-    <div class="row-btns"><button type="button" class="btn" id="pc7-go">${tx('Dig here!')}</button></div>
-    <div class="feedback" id="pc7-fb"></div>`, () => {
-    const fb = $('#pc7-fb');
-    const metres = () => st.n * WALKERS7[st.w].cm / 100;
+    <div class="feedback" id="hp-lfb"></div>`, () => {
+    const fb = $('#hp-lfb');
     const draw = () => {
-      $('#pc7-n').textContent = st.n;
-      document.querySelectorAll('.wk7').forEach(b => b.classList.toggle('on', +b.dataset.i === st.w));
-      const m = metres(), px = v => 30 + Math.min(v, 16) * 21;
-      let g = `<rect width="400" height="90" fill="#efd79a"/><path d="M30 60 H366" stroke="#8a5a2b" stroke-width="2"/>`;
-      for(let i = 0; i <= 16; i++) g += `<path d="M${px(i)} 56 v${i % 2 ? 6 : 10}" stroke="#8a5a2b" stroke-width="2"/>` + (i % 2 ? '' : `<text x="${px(i)}" y="82" text-anchor="middle" font-size="10" fill="#5a3a1a">${i} m</text>`);
-      g += `<path d="M14 58 q4 -20 18 -20 q12 0 14 20z" fill="#8a8f96"/><circle cx="36" cy="40" r="5" fill="#8a8f96"/>`;
-      g += `<path d="M${px(PACE_GOAL) - 7} 30 l14 14 M${px(PACE_GOAL) + 7} 30 l-14 14" stroke="#c4302b" stroke-width="4" stroke-linecap="round" opacity=".35"/>`;
-      g += `<g transform="translate(${px(m)} 0)"><path d="M0 52 v-30" stroke="#2f5f9a" stroke-width="3"/><path d="M0 22 l16 6 l-16 6z" fill="#2f5f9a"/></g>`;
-      $('#pace7-svg').innerHTML = g;
+      // a small, very curved Earth: the ship sits at -22°, the island at +30° round the curve
+      const nest = st.from === 'nest';
+      let s = '<rect width="420" height="200" fill="#ffd9a8"/><circle cx="210" cy="420" r="300" fill="#2a6a9a"/>';
+      s += '<g transform="translate(360 160) rotate(30)"><path d="M-30 0 L0 -40 L30 0 Z" fill="#2f8a3a"/><path d="M8 -20 q2 -10 6 -14" stroke="#6b4423" stroke-width="2" fill="none"/></g>';
+      s += `<g transform="translate(97.5 142) rotate(-22)"><path d="M-22 -8 h44 l-6 10 h-32z" fill="#6b3a1a"/><path d="M0 -8 V-70" stroke="#6b4423" stroke-width="3"/><rect x="-8" y="-76" width="16" height="8" fill="#8a5028"/><circle cx="0" cy="${nest ? -70 : -10}" r="4" fill="#c4302b"/></g>`;
+      s += nest ? '<path d="M71 77 L380 125" stroke="#c4302b" stroke-width="2" stroke-dasharray="5 4"/>'
+        : '<path d="M94 134 L212 123" stroke="#c4302b" stroke-width="2" stroke-dasharray="5 4"/><path d="M206 117 l12 12 M218 117 l-12 12" stroke="#c4302b" stroke-width="3"/>';
+      s += `<text x="210" y="190" text-anchor="middle" font-size="12" fill="#fffaf0" font-family="Fredoka, sans-serif">${tx(nest ? 'From the crow\'s nest: your eye skims over the bend and finds the mountain top.' : 'From the deck: the bend of the sea is in the way.')}</text>`;
+      $('#hp-curvesvg').innerHTML = s;
+      document.querySelectorAll('.hp-from').forEach(b => b.classList.toggle('on', b.dataset.f === st.from));
     };
     draw();
-    document.querySelectorAll('.wk7').forEach(b => b.onclick = () => { st.w = +b.dataset.i; save(); beep(500, .03); fb.className = 'feedback'; fb.textContent = ''; draw(); });
-    $('#pc7').oninput = e => { st.n = +e.target.value; save(); draw(); };
-    $('#pc7-go').onclick = () => {
-      const m = metres(), w = WALKERS7[st.w];
-      if(m === PACE_GOAL){
-        S.f.paces = true; S.pcs = null; take('map'); save(); applyVisuals(); chord([523, 659, 784, 1046]);
-        fb.className = 'feedback good'; fb.textContent = tx('{n} paces of {cm} cm is {m} metres: exactly 12 of the captain\'s paces! Everybody\'s pace is a different length. That\'s why people agreed on the metre: a metre is the same for everybody.', { n: st.n, cm: w.cm, m });
-        setTimeout(() => { closeModal(); say([w.k === 'horse' ? "The horse clip-clops out along the sandbar, six big steps, and stops. Right under its hoof: a red X, drawn in the sand." : tx('{who} paces out across Turtle Islet, counting out loud. And right at the end: a red X, drawn in the sand!', { who: tx(w.who) }), ['parrot', "Treasure! Treasure!"], "Now you need something to dig with."]); }, 2400);
-        return;
-      }
-      nope(); fb.className = 'feedback bad';
-      fb.textContent = st.n === PACE_GOAL && w.k !== 'horse' ? tx("12 paces, just like the map says! But {who}'s paces are only {cm} cm, and the captain's are a whole metre. That's only {m} metres.", { who: tx(w.who), cm: w.cm, m })
-        : tx('{who} took {n} paces of {cm} cm: that\'s {m} metres. The X is 12 of the captain\'s 1-metre paces from the rock: 12 metres.', { who: tx(w.who), n: st.n, cm: w.cm, m: String(m).replace('.', LANG === 'en' ? '.' : ',') });
-    };
-  });
-}
-
-/* ---------- puzzle: the treasure chest's lock (a food chain: it starts with the Sun) ---------- */
-const CHAIN7 = [
-  { k: 'sun', name: 'The Sun', svg: '<circle cx="22" cy="22" r="10" fill="#ffe27a"/><g stroke="#f2a13a" stroke-width="3"><path d="M22 4v6M22 34v6M4 22h6M34 22h6M9 9l4 4M31 31l4 4M35 9l-4 4M9 35l4-4"/></g>' },
-  { k: 'crab', name: 'A crab', svg: '<ellipse cx="22" cy="26" rx="12" ry="8" fill="#e2483d"/><path d="M10 22l-6-6M34 22l7-6M12 30l-6 4M32 30l7 4" stroke="#e2483d" stroke-width="3"/><circle cx="18" cy="20" r="2" fill="#111"/><circle cx="26" cy="20" r="2" fill="#111"/>' },
-  { k: 'coconut', name: 'A coconut', svg: '<circle cx="22" cy="24" r="12" fill="#6b4423"/><circle cx="18" cy="20" r="2" fill="#3a2210"/><circle cx="26" cy="20" r="2" fill="#3a2210"/><circle cx="22" cy="26" r="2" fill="#3a2210"/>' },
-  { k: 'octopus', name: 'An octopus', svg: '<ellipse cx="22" cy="16" rx="11" ry="10" fill="#b0508a"/><path d="M13 22q-4 12 2 16M18 24q-2 12 2 14M26 24q2 12 -2 14M31 22q4 12 -2 16" stroke="#b0508a" stroke-width="3" fill="none"/><circle cx="18" cy="15" r="2" fill="#fff"/><circle cx="26" cy="15" r="2" fill="#fff"/>' },
-  { k: 'seaweed', name: 'Seaweed', svg: '<path d="M14 40q-6-12 2-20t0-16M22 40q7-14-2-22t4-14M30 40q-4-10 4-18" stroke="#3f8a4a" stroke-width="4" fill="none" stroke-linecap="round"/>' }
-];
-const CHAIN6_OK = ['sun', 'seaweed', 'crab', 'octopus'];
-function openChest7(){
-  const st = S.chn || (S.chn = []);
-  openModal('The treasure chest', 'A lock with four picture slots', `
-    <p class="flag-p">${tx('The captain has carved a riddle on the lid: <b>"From the one who feeds everybody, to the one who eats the most."</b> Put four of the pictures in the slots, in the right order.')}</p>
-    <div class="slots7" id="slots7"></div>
-    <div class="cards7" id="cards7">${CHAIN7.map((c, i) => `<button type="button" class="card7" data-i="${i}"><svg viewBox="0 0 44 44" aria-hidden="true">${c.svg}</svg><span>${tx(c.name)}</span></button>`).join('')}</div>
-    <div class="row-btns"><button type="button" class="btn ghost" id="ch7-clear">${tx('Take them out')}</button><button type="button" class="btn" id="ch7-go">${tx('Open the lock')}</button></div>
-    <div class="feedback" id="ch7-fb"></div>`, () => {
-    const fb = $('#ch7-fb');
-    const draw = () => {
-      $('#slots7').innerHTML = [0, 1, 2, 3].map(i => { const c = CHAIN7.find(x => x.k === st[i]); return `<span class="slot7">${c ? `<svg viewBox="0 0 44 44" aria-hidden="true">${c.svg}</svg><small>${tx(c.name)}</small>` : `<b>${i + 1}</b>`}</span>` + (i < 3 ? '<span class="arrow7">→</span>' : ''); }).join('');
-      document.querySelectorAll('.card7').forEach(b => { const used = st.includes(CHAIN7[+b.dataset.i].k); b.classList.toggle('gone', used); b.disabled = used; });
-    };
-    draw();
-    document.querySelectorAll('.card7').forEach(b => b.onclick = () => { if(st.length < 4){ st.push(CHAIN7[+b.dataset.i].k); save(); beep(640, .03); draw(); } });
-    $('#ch7-clear').onclick = () => { st.length = 0; save(); fb.className = 'feedback'; fb.textContent = ''; draw(); };
-    $('#ch7-go').onclick = () => {
-      if(st.length < 4){ nope(); fb.className = 'feedback bad'; fb.textContent = tx('The lock has four slots. Fill them all.'); return; }
-      if(st.join() === CHAIN6_OK.join()){
-        S.f.chest = true; S.chn = null; save(); chord([523, 659, 784, 1046, 1318]);
-        fb.className = 'feedback good'; fb.textContent = tx('Click! The Sun feeds the seaweed (plants make their food from sunlight), the crab eats the seaweed, and the octopus eats the crab. Every food chain starts with the Sun.');
-        setTimeout(() => { closeModal(); applyVisuals(); say(["The lid creaks open. Inside: a mountain of sweets, a little golden crown, and a letter.", ['pippi', "Sweets! It says on the bag: 18 KILOS. Dad, you remembered!"], ['annika', "The letter says: \"For Pippilotta, princess of the island, and her friends. Share them with the horse.\""], "Then a cold wind blows across the lagoon. The palm trees bend. The sky over the sea has gone very dark.", ['captain', "A tropical shower! Quick, everybody: how far away is it? Watch for the lightning!"]]); }, 2600);
-        return;
-      }
-      nope(); fb.className = 'feedback bad';
-      fb.textContent = tx(st[0] !== 'sun' ? 'Who feeds everybody? Every food chain starts with the Sun: plants use its light to make their food.'
-        : st.includes('coconut') ? 'A coconut? Nobody in this chain eats coconuts. Only Mr Nilsson, and he isn\'t in the sea.'
-        : 'Who eats whom? The crab nibbles the seaweed, and the octopus catches the crab.');
-    };
-  });
-}
-
-/* ---------- puzzle: the thunder (light is fast, sound is slow: about 3 seconds for every kilometre) ---------- */
-const THUNDER7 = [9, 3];
-function openThunder7(){
-  const st = S.thn || (S.thn = { r: 0, seen: false });
-  openModal('The tropical shower', 'Count the seconds between the flash and the bang', `
-    <p class="flag-p">${tx('You see lightning straight away: light is very fast. The sound of the thunder is much slower: it takes about 3 seconds to travel 1 kilometre.')}</p>
-    <div class="thunder7"><div class="flash7" id="th7-flash"><svg viewBox="0 0 40 60" aria-hidden="true"><path d="M26 2 L8 34 h12 L12 58 L34 22 h-12 L30 2z" fill="#fff6b0" stroke="#c9952a" stroke-width="2"/></svg></div><div class="count7" id="th7-count">0</div><div class="boom7" id="th7-boom"></div></div>
-    <div class="row-btns"><button type="button" class="btn" id="th7-watch">${tx('Watch for lightning')}</button></div>
-    <div id="th7-q" hidden></div>
-    <div class="feedback" id="th7-fb"></div>`, () => {
-    const fb = $('#th7-fb');
-    const ask = () => {
-      const q = st.r === 0 ? { ask: 'How far away is the storm?', opts: ['1 km', '3 km', '9 km', '27 km'], ok: 1 } : { ask: 'Only 3 seconds this time: the storm is 1 km away. Is it coming closer, or going away?', opts: ['Closer: everybody into the hut!', 'Going away: keep building the sandcastle'], ok: 0 };
-      $('#th7-q').hidden = false;
-      $('#th7-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost th6o" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
-      document.querySelectorAll('.th6o').forEach(b => b.onclick = () => {
-        const i = +b.dataset.i;
-        if(i !== q.ok){ nope(); fb.className = 'feedback bad';
-          if(st.r === 1){ S.ach.soaked = true; save(); fb.textContent = tx('SPLOOSH. The rain comes down like a waterfall, and you are wet right through. 9 seconds, then 3 seconds: the storm is getting closer!'); return; }
-          fb.textContent = tx(i === 0 ? '1 km would be 3 seconds. You counted 9.' : i === 3 ? "That's 9 × 3. But it's the other way round: every 3 seconds is 1 km, so how many threes are there in 9?" : '9 km would take 27 seconds to hear. Sound is slow, but not THAT slow.'); return; }
-        chord([523, 659, 784]);
-        if(st.r === 0){ st.r = 1; st.seen = false; save(); fb.className = 'feedback good'; fb.textContent = tx('3 km! 9 seconds ÷ 3 = 3 kilometres. Watch again…'); $('#th7-q').hidden = true; $('#th7-watch').disabled = false; return; }
-        S.f.storm = true; S.thn = null; save();
-        fb.className = 'feedback good'; fb.textContent = tx('Closer! 9 seconds, then 3 seconds: 3 km, then 1 km. Into the hut, everybody, and the sweets too!');
-        setTimeout(() => { closeModal(); applyVisuals(); say(["Everybody squeezes into the king's hut: the captain, Pippi, Tommy, Annika, Mr Nilsson, the parrot, 18 kilos of sweets and, somehow, the horse.", "The rain drums on the roof for exactly twenty minutes. Then it stops, as suddenly as it started.", "When you come out, the sun is going down. The sky is orange and pink, and the first stars are out.", ['captain', "The turtle nest! Tonight's the night. Somebody light the feast torches!"]]); }, 2600);
-      });
-    };
-    const watch = () => {
-      $('#th7-watch').disabled = true; $('#th7-boom').textContent = ''; fb.className = 'feedback'; fb.textContent = '';
-      const n = THUNDER7[st.r], fl = $('#th7-flash'); fl.classList.add('on'); setTimeout(() => fl && fl.classList.remove('on'), 250);
-      let k = 0;
-      const step = () => { if(!$('#th7-count')) return; $('#th7-count').textContent = k;
-        if(k >= n){ $('#th7-boom').textContent = tx('BOOM!'); beep(70, .6, 'sawtooth', .06); st.seen = true; save(); ask(); return; }
-        k++; beep(900, .02, 'sine', .02); setTimeout(step, reducedMotion() ? 0 : 420); };
-      step();
-    };
-    $('#th7-watch').onclick = watch;
-    if(st.seen){ $('#th7-count').textContent = THUNDER7[st.r]; $('#th7-boom').textContent = tx('BOOM!'); $('#th7-watch').disabled = true; ask(); }
-  });
-}
-
-/* ---------- puzzle: the turtles (hatchlings crawl towards the brightest light; on a dark beach, that's the sea) ---------- */
-const LIGHTS7 = [
-  { k: 'nest', name: 'The torch by the nest', x: 150, y: 46, seen: true },
-  { k: 'dune', name: 'The torch on the dunes', x: 60, y: 30, seen: true },
-  { k: 'window', name: 'The lantern in the hut window', x: 282, y: 60, seen: true },
-  { k: 'feast', name: 'The feast torches behind the hut', x: 342, y: 14, seen: false }
-];
-function openTurtles7(){
-  const st = S.trt || (S.trt = { on: [1, 1, 1, 1] });
-  openModal('The turtle nest', 'The baby turtles are hatching!', `
-    <p class="flag-p">${tx("Baby turtles crawl towards the brightest light they can see. On a dark beach, that's the sea, shining under the moon. But tonight there are torches for the feast…")}</p>
-    <svg class="turtle7-svg" translate="no" viewBox="0 0 380 230" aria-hidden="true" id="turtle7-svg"></svg>
-    <div class="row-btns lights7">${LIGHTS7.map((l, i) => `<button type="button" class="tog lt7" data-i="${i}">${tx(l.name)}</button>`).join('')}</div>
-    <div class="row-btns"><button type="button" class="btn" id="tt7-go">${tx('Let them go!')}</button></div>
-    <div class="feedback" id="tt7-fb"></div>`, () => {
-    const fb = $('#tt7-fb');
-    const lure = () => LIGHTS7.find((l, i) => l.seen && st.on[i]);
-    const draw = () => {
-      const L = lure();
-      let g = `<rect width="380" height="230" fill="#e2c27a"/><rect y="0" width="380" height="80" fill="#c9a85a"/><rect y="160" width="380" height="70" fill="#2a4a7a"/><path d="M0 160 q20 -6 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" stroke="#fff" stroke-width="3" fill="none" opacity=".7"/>`;
-      g += `<g fill="#fdf6d8" opacity=".8"><rect x="160" y="176" width="60" height="4" rx="2"/><rect x="146" y="190" width="90" height="4" rx="2"/><rect x="130" y="206" width="120" height="5" rx="2"/></g><text x="190" y="226" text-anchor="middle" font-size="10" fill="#fdf6d8">${tx('the sea, in the moonlight')}</text>`;
-      g += `<rect x="250" y="10" width="70" height="60" fill="#8a6a3a"/><text x="285" y="44" text-anchor="middle" font-size="10" fill="#fffaf0">${tx('hut')}</text><text x="342" y="44" text-anchor="middle" font-size="9" fill="#5a3a1a">${tx('feast')}</text>`;
-      g += `<ellipse cx="190" cy="80" rx="26" ry="10" fill="#b9985a"/><text x="190" y="100" text-anchor="middle" font-size="10" fill="#5a3a1a">${tx('nest')}</text>`;
-      LIGHTS7.forEach((l, i) => { g += `<circle cx="${l.x}" cy="${l.y}" r="${st.on[i] ? 22 : 8}" fill="${st.on[i] ? '#ffcf6a' : '#5a5a5a'}" opacity="${st.on[i] ? .55 : .8}"/><circle cx="${l.x}" cy="${l.y}" r="4" fill="${st.on[i] ? '#ff9a2a' : '#2a2a2a'}"/>`; });
-      // the hatchlings and the way they're heading
-      const [tx2, ty2] = L ? [L.x, L.y] : [190, 160];
-      g += `<path d="M190 84 L${tx2} ${ty2}" stroke="${L ? '#c4302b' : '#3f8a4a'}" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#t6arrow)"/>`;
-      g += `<defs><marker id="t6arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="${L ? '#c4302b' : '#3f8a4a'}"/></marker></defs>`;
-      [[180, 86], [196, 88], [188, 78]].forEach(([x, y]) => g += `<ellipse cx="${x}" cy="${y}" rx="5" ry="4" fill="#3f6a3a"/>`);
-      $('#turtle7-svg').innerHTML = g;
-      document.querySelectorAll('.lt7').forEach(b => { const on = !!st.on[+b.dataset.i]; b.classList.toggle('on', on); b.textContent = tx(on ? '{l}: on' : '{l}: off', { l: tx(LIGHTS7[+b.dataset.i].name) }); });
-    };
-    draw();
-    document.querySelectorAll('.lt7').forEach(b => b.onclick = () => { const i = +b.dataset.i; st.on[i] = st.on[i] ? 0 : 1; save(); beep(st.on[i] ? 700 : 400, .04); fb.className = 'feedback'; fb.textContent = ''; draw(); });
-    $('#tt7-go').onclick = () => {
-      const L = lure();
-      if(L){ nope(); fb.className = 'feedback bad'; fb.textContent = tx('Oh no! The baby turtles crawl the wrong way, towards {l}. Annika scoops them up and puts them back in the nest. They follow the brightest light they can see.', { l: tx(L.name).toLowerCase() }); return; }
-      if(!st.on[3]){ nope(); fb.className = 'feedback bad'; fb.textContent = tx("The turtles would be fine, but now the feast is pitch dark and Pippi has sat on the fish. The torches behind the hut can stay on: the hut hides them from the nest."); return; }
-      S.f.out7 = true; S.trt = null; save(); chord([523, 659, 784, 1046, 1318, 1568]);
-      fb.className = 'feedback good'; fb.textContent = tx('The beach goes dark, and the sea shines under the moon. Out pop the baby turtles, and off they scurry, straight down the beach to the water!');
-      setTimeout(() => { closeModal(); applyVisuals(); win7(); }, 2600);
-    };
+    document.querySelectorAll('.hp-from').forEach(b => b.onclick = () => { st.from = b.dataset.f; save(); beep(600, .04); draw(); });
+    document.querySelectorAll('.hand[data-l]').forEach(b => b.onclick = () => {
+      const k = b.dataset.l;
+      if(k !== 'round'){ nope(); fb.className = 'feedback bad';
+        fb.textContent = tx(k === 'near' ? 'Only about 20 metres closer, and the island is many kilometres away. That\'s not it. Look at the picture: what is in the way of the line from the deck?' : 'Pippi says some islands are very shy. This one isn\'t. Look at the shape of the sea in the picture.'); return; }
+      S.f.out7 = true; take('spyglass'); save(); chord([523,659,784,1046,1318,1568]);
+      fb.className = 'feedback good'; fb.textContent = tx('The Earth is round! Ships and islands far away hide behind the curve of the sea. The higher you climb, the further you can see.');
+      setTimeout(() => { closeModal(); applyVisuals(); win7(); }, 2000);
+    });
   });
 }
 
 /* ---------- intro, start and win ---------- */
 function intro7(){
-  say([["sys", "Captain Longstocking's island. White sand, palm trees, a turquoise lagoon, and the Hoppetossa resting at anchor."],
-       ["pippi", "Dad's island! It's even better than he said. And he said it was the best island in the world."],
-       ["annika", "Where is your father, Pippi?"],
-       ["sys", "A snore comes from a hammock between the palm trees. In it lies the king of the island, fast asleep, with his crown on top of his captain's hat."],
-       ["tommy", "He looks very comfortable."],
-       ["pippi", "Kings need a lot of sleep. It's hard work, being a king. Let's wake him up!"],
-       ["you", "The captain is in the hammock by the hut."]],
+  say([["sys", "The harbour, early in the morning. A big three-masted ship is tied up at the quay: the Hoppetossa. On her stern, a huge man with a red beard and a captain's hat is waving his arms."],
+       ["sys", "It's winter in Sweden. Snow is falling on the quay, on the roofs, and on the horse."],
+       ["captain", "Ahoy, Pippilotta! Ahoy, Tommy and Annika! And ahoy, new sailor!"],
+       ["pippi", "Daddy! We're sailing to your island in the South Seas! I've never sailed to the South Seas, so I'm sure I'll be very good at it."],
+       ["captain", "Where the sun shines all year round, Pippilotta! Leave your mittens here."],
+       ["captain", "The wind is fair and the tide is high. All aboard!"],
+       ["pippi", "Not without my horse!"],
+       ["captain", "Then hoist it aboard with the cargo hoist on the stern, sailor. And Pippilotta: no lifting it yourself. Today we sail like proper sailors."],
+       ["you", "A horse on a rope. Let's see how that hoist works."]],
     () => { S.f.introDone = true; save(); });
 }
 function startCh7(){
   setUnlocked7();
-  S = Object.assign(fresh(), { ach: S.ach || {}, ch: 7, scene: 'island' });
+  S = Object.assign(fresh(), { ach: S.ach || {}, ch: 7, scene: 'ship' });
   S.started = true; sel = null;
   $('#title').hidden = true; $('#win').hidden = true;
   renderInv(); applyVisuals(); $('#timer').textContent = '00:00'; save(); intro7();
 }
 function win7(){
-  say([["sys", "One after another, the little turtles pop out of the sand and scurry down the beach, towards the shining sea. Not one of them goes the wrong way."],
-       ["annika", "Twenty-three, twenty-four… twenty-five! All of them!"],
-       ["sys", "The waves carry them out into the lagoon, where the moon is making a silver path on the water."],
-       ["captain", "Pippilotta, you'd make a very good queen. But I think you're an even better Pippi."],
-       ["pippi", "Tomorrow we'll sail home to Villa Villekulla. The horse misses his veranda. But tonight: the feast!"],
-       ["parrot", "Pluttification! Squawk!"],
-       ["sys", "And behind the hut, by the light of the feast torches, the whole island eats grilled fish, coconut cake and, of course, eighteen kilos of sweets."]],
+  say([["you", "LAND HO!"],
+       ["captain", "Land ho! That's my island! Pippilotta, look: the palm trees, the beach, and all my people running down to wave!"],
+       ["sys", "The Hoppetossa sails into a turquoise lagoon. Palm trees sway, the sand is white, and a crowd of children is dancing on the beach."],
+       ["pippi", "Daddy is a king, so I'm a princess! A thing-searching princess with a horse."],
+       ["annika", "We hoisted a horse, crossed the Equator, made water out of the sea, and saw the island over the curve of the Earth. I've written it all down."],
+       ["tommy", "Best. Voyage. Ever."],
+       ["nilsson", "Eek!"]],
     () => showWin());
 }

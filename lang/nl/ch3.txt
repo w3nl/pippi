@@ -20,11 +20,11 @@
 = You take it. A spunk knows things, even at school. Especially at school.
 > Je neemt hem mee. Een spunk weet dingen, ook op school. Vooral op school.
 = The horse is lying in the sun in the schoolyard, full of geraniums. It's on holiday too.
-> Het paard ligt in de zon op het schoolplein, vol geraniums. Het heeft ook vakantie.
+> Witje ligt in de zon op het schoolplein, vol geraniums. Hij heeft ook vakantie.
 = Out in the schoolyard, Pippi's horse is eating Miss's flowerbed, one geranium at a time.
 > Buiten op het schoolplein eet Pippi's paard het bloemperkje van de juf op, één geranium tegelijk.
 = Miss chased it round and round for a while. The horse thought it was a game, and won. Now she's watching you all through the little window in the door instead.
-> De juf heeft er een tijdje rondjes achteraan gerend. Het paard dacht dat het een spelletje was, en won. Nu kijkt ze maar door het raampje in de deur naar jullie.
+> De juf heeft er een tijdje rondjes achteraan gerend. Witje dacht dat het een spelletje was, en won. Nu kijkt ze maar door het raampje in de deur naar jullie.
 = The school clock has Roman numerals: XII at the top, then III, VI and IX. The little hand is just before the XII and the big hand points at VIII: twenty to twelve.
 > De schoolklok heeft Romeinse cijfers: XII bovenaan, dan III, VI en IX. De kleine wijzer staat net voor de XII en de grote wijst naar VIII: twintig voor twaalf.
 = At twelve, Miss rings the bell and the summer holidays begin.
@@ -298,7 +298,7 @@
 = Five tasks before twelve. But the chalk box is empty. Miss must keep the chalk somewhere.
 > Vijf opdrachten voor twaalf uur. Maar het krijtdoosje is leeg. De juf moet het krijt ergens bewaren.
 = Pippi grabs the hand bell and rings it. Very loudly. For a very long time. The windows rattle, and out in the schoolyard the horse stops chewing.
-> Pippi grijpt de handbel en luidt hem. Heel hard. Heel lang. De ramen rammelen, en buiten op het schoolplein houdt het paard op met kauwen.
+> Pippi grijpt de handbel en luidt hem. Heel hard. Heel lang. De ramen rammelen, en buiten op het schoolplein houdt Witje op met kauwen.
 = Pippi! Who said you could ring the bell? It's only twenty to twelve!
 > Pippi! Wie zei dat jij de bel mocht luiden? Het is pas twintig voor twaalf!
 = But Miss, she's done all five tasks. Look: five gold stars. We only helped a little.
@@ -342,7 +342,7 @@
 
 # after the bell: the first snow
 = The schoolyard is white with snow. The horse is trying to catch snowflakes on its tongue. It's on holiday too.
-> Het schoolplein is wit van de sneeuw. Het paard probeert sneeuwvlokken op zijn tong te vangen. Het heeft ook vakantie.
+> Het schoolplein is wit van de sneeuw. Witje probeert sneeuwvlokken op zijn tong te vangen. Hij heeft ook vakantie.
 = The holidays fly by: long sunny days, then falling leaves… and then one morning, the first snowflakes drift past the classroom window.
 > De vakantie vliegt voorbij: lange zonnige dagen, dan vallende blaadjes… en dan, op een ochtend, dwarrelen de eerste sneeuwvlokken langs het raam van de klas.
 = Snow! Heaps and heaps of it! Tommy, Annika, come on: it's snowball weather!

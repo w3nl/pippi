@@ -1,0 +1,531 @@
+# Dutch translation: Chapter 9, the voyage home (js/chapter9.js, scenes/voyage.svg, hints, ui).
+# Kapitein Langkous calls Pippi "Pippilotta". Bakboord/stuurboord; de platte knoop; de Meeuwenrots en de Zeehondenkaap.
+
+= The voyage home
+> De reis naar huis
+= Chapter 9: The voyage home
+> Hoofdstuk 9: De reis naar huis
+= Chapter 9 · The Voyage Home
+> Hoofdstuk 9 · De reis naar huis
+= The Hoppetossa · homeward
+> De Hoppetossa · op weg naar huis
+= Continue to Chapter 10
+> Verder naar hoofdstuk 10
+= Safe in harbour · Chapter 9 complete
+> Veilig in de haven · hoofdstuk 9 voltooid
+= Home port
+> Thuishaven
+= Through the storm, past the lighthouses and between the buoys: the Hoppetossa is home. Next: Villa Villekulla in spring, where somebody can't wait to see its veranda…
+> Door de storm, langs de vuurtorens en tussen de boeien door: de Hoppetossa is thuis. Straks: Villa Kakelbont in de lente, waar iemand niet kan wachten om zijn veranda weer te zien…
+= Take your time. The Hoppetossa is resting against the quay, and the whole town is waving. When you're ready, step onto the quay to go on to Chapter {n}.
+> Neem de tijd. De Hoppetossa ligt aan de kade, en het hele stadje staat te zwaaien. Als je klaar bent, stap je op de kade om verder te gaan naar hoofdstuk {n}.
+= The quay: on to Chapter {n}
+> De kade: verder naar hoofdstuk {n}
+= Back in the harbour. The whole town is still waiting on the quay.
+> Terug in de haven. Het hele stadje staat nog op de kade te wachten.
+= Back on board. The harbour at home is right ahead.
+> Terug aan boord. De haven thuis ligt recht voor je.
+= Back on board the Hoppetossa, sailing north towards home.
+> Terug aan boord van de Hoppetossa, op weg naar het noorden, naar huis.
+= A seasick horse
+> Een zeeziek paard
+= Ahoy, Sweden!
+> Ahoi, Zweden!
+
+# items
+= A message in a bottle
+> Flessenpost
+= Pippi's letter to Miss, rolled up in an empty lemonade bottle with a cork in it. For throwing into the sea.
+> Pippi's brief aan de juf, opgerold in een lege limonadefles met een kurk erop. Om in zee te gooien.
+= The Book of Lighthouses
+> Het vuurtorenboek
+= Captain Longstocking's book. Every lighthouse on the coast has its own pattern of flashes, so sailors can tell them apart at night.
+> Het boek van kapitein Langkous. Elke vuurtoren langs de kust knippert op zijn eigen manier, zodat zeelui ze 's nachts uit elkaar kunnen houden.
+= A message in a bottle is for throwing into the sea. The right bit of sea.
+> Flessenpost gooi je in zee. In het goede stukje zee.
+= Mr Nilsson wants to pull the cork out. You hold the bottle up high.
+> Meneer Nilsson wil de kurk eruit trekken. Je houdt de fles hoog in de lucht.
+= My Book of Lighthouses! Every light on the coast is in there. Find ours, sailor.
+> Mijn vuurtorenboek! Elk licht langs de kust staat erin. Zoek de onze maar op, matroos.
+= The Book of Lighthouses is for telling lighthouses apart at night.
+> Met het vuurtorenboek houd je 's nachts de vuurtorens uit elkaar.
+
+# the scene
+= The coast
+> De kust
+= The lighthouses
+> De vuurtorens
+= The quay
+> De kade
+= The buoys
+> De boeien
+= Ice
+> IJs
+= The sails
+> De zeilen
+= Swallows
+> Zwaluwen
+= The wheel
+> Het stuurwiel
+
+# hotspots
+= The spunk's jam jar, wedged between two coils of rope on the stern deck. The spunk is a good sailor.
+> Het jampotje van de spunk, klemgezet tussen twee rollen touw op het achterdek. De spunk is een goede zeeman.
+= You take it. It doesn't seem to mind the waves.
+> Je pakt het. De golven lijken hem niets te kunnen schelen.
+= Black clouds, a howling wind, and rain coming sideways. The Hoppetossa is leaning over a long way.
+> Zwarte wolken, gierende wind en regen die van opzij komt. De Hoppetossa helt ver over.
+= Can't we make the ship lean less?
+> Kunnen we het schip niet minder scheef laten hangen?
+= A clear night. Along the coast, three lighthouses are flashing, each in its own way.
+> Een heldere nacht. Langs de kust knipperen drie vuurtorens, elk op zijn eigen manier.
+= One of them is ours, sailor. My book of lighthouses will tell you which. It's in my sea chest.
+> Eentje daarvan is de onze, matroos. Mijn vuurtorenboek vertelt je welke. Het ligt in mijn zeekist.
+= A bright spring morning. Gulls are circling over the quay, hoping somebody has brought fish.
+> Een stralende lenteochtend. Meeuwen cirkelen boven de kade, in de hoop dat iemand vis heeft meegebracht.
+= Dawn. The sky turns pink, then gold, over the little town on the hill.
+> Het wordt licht. De lucht kleurt roze, en dan goud, boven het stadje op de heuvel.
+= A big blue sky. The trade wind fills the sails and pushes the Hoppetossa north, towards home.
+> Een grote blauwe lucht. De passaatwind blaast in de zeilen en duwt de Hoppetossa naar het noorden, naar huis.
+= The open sea, blue as far as you can see. Somewhere far to the north is Sweden.
+> De open zee, blauw zo ver je kunt kijken. Ergens ver in het noorden ligt Zweden.
+= Grey waves, as high as a house. Spray flies over the deck. Mr Nilsson holds on with his hands, his feet AND his tail.
+> Grijze golven, zo hoog als een huis. Het schuim spat over het dek. Meneer Nilsson houdt zich vast met zijn handen, zijn voeten ÉN zijn staart.
+= The water in the harbour is calm and cold. Little bits of ice bump gently against the hull.
+> Het water in de haven is kalm en koud. Kleine stukjes ijs botsen zachtjes tegen de romp.
+= Waves, waves and more waves. A flying fish skips past the bow.
+> Golven, golven en nog meer golven. Een vliegende vis wipt langs de boeg.
+= Captain Longstocking's island, getting smaller behind the ship. On the beach, the islanders are waving palm leaves.
+> Het eiland van kapitein Langkous, dat achter het schip steeds kleiner wordt. Op het strand zwaaien de eilanders met palmbladeren.
+= Goodbye, island! Goodbye, parrot! I'll come back when I'm queen.
+> Dag eiland! Dag papegaai! Ik kom terug als ik koningin ben.
+= The island is just a green dot on the horizon now.
+> Het eiland is nu nog maar een groen stipje aan de horizon.
+= A long, sandy coast far away, with a little white town. Hundreds of birds are flying over it, all heading north.
+> Een lange zandkust in de verte, met een klein wit stadje. Honderden vogels vliegen eroverheen, allemaal naar het noorden.
+= Everybody's going north. Like us!
+> Iedereen gaat naar het noorden. Net als wij!
+= Three lighthouses along the dark coast, each flashing in its own way. The captain says one of them is at the mouth of our harbour.
+> Drie vuurtorens langs de donkere kust, die elk op hun eigen manier knipperen. De kapitein zegt dat er eentje bij de ingang van onze haven staat.
+= Look it up in my book of lighthouses, sailor. It's in my sea chest on deck.
+> Zoek het op in mijn vuurtorenboek, matroos. Het ligt in mijn zeekist op het dek.
+= The captain's sea chest. Inside: a spare hat, a whole cheese, and a blue book with a lighthouse on the cover: The Book of Lighthouses.
+> De zeekist van de kapitein. Erin: een reservehoed, een hele kaas en een blauw boek met een vuurtoren op de kaft: het vuurtorenboek.
+= You take the book. The cheese stays where it is. It smells very strongly of cheese.
+> Je pakt het boek. De kaas laat je liggen. Die ruikt heel erg naar kaas.
+= The captain's sea chest. A spare hat and a very smelly cheese. Nothing else you need.
+> De zeekist van de kapitein. Een reservehoed en een heel stinkende kaas. Verder niets wat je nodig hebt.
+= AHOY, SWEDEN! WE'RE HOOOME!
+> AHOI, ZWEDEN! WE ZIJN THUUUIS!
+= Pippi shouts so loud that the church bell rings all by itself, and every gull in the harbour takes off at once.
+> Pippi roept zo hard dat de kerkklok vanzelf gaat luiden, en alle meeuwen in de haven tegelijk opvliegen.
+= Your little town, on its hill: red houses, the white church, and right at the top, a yellow house that is a little crooked.
+> Jullie stadje op de heuvel: rode huizen, de witte kerk, en helemaal bovenaan een geel huis dat een beetje scheef staat.
+= Villa Villekulla! I can see the veranda from here.
+> Villa Kakelbont! Ik kan de veranda al zien.
+= The quay, with its iron bollards. First you have to get the Hoppetossa safely through the buoys.
+> De kade, met zijn ijzeren bolders. Eerst moet je de Hoppetossa veilig tussen de boeien door krijgen.
+= The last bits of ice, floating near the shore. It's spring, but the harbour only thawed a few weeks ago.
+> De laatste stukjes ijs, die bij de kant drijven. Het is lente, maar de haven is pas een paar weken ontdooid.
+= The ice comes from the river, sailor. Sea water is salty, so it has to get colder before it freezes: about two degrees below zero. The river freezes first, and the sea last.
+> Dat ijs komt uit de rivier, matroos. Zeewater is zout, dus het moet kouder worden voordat het bevriest: ongeveer twee graden onder nul. De rivier bevriest als eerste, de zee als laatste.
+= The sails are set and waiting. But first the captain wants a word about what to pack.
+> De zeilen staan klaar. Maar eerst wil de kapitein het even hebben over wat je inpakt.
+= The sails are rolled up neatly on their yards. The Hoppetossa is having a rest.
+> De zeilen zijn netjes opgerold op de ra's. De Hoppetossa rust even uit.
+= The sails are full of wind. The Hoppetossa is flying along.
+> De zeilen staan bol van de wind. De Hoppetossa vliegt over het water.
+= The wheel creaks as the captain steers. North, always north.
+> Het stuurwiel kraakt terwijl de kapitein stuurt. Naar het noorden, altijd naar het noorden.
+= Steady as she goes! If you've got anything to say to anybody at home, sailor, this is a good place to post it.
+> Recht zo die gaat! Als je iemand thuis iets wilt vertellen, matroos, dan is dit een goede plek om het te posten.
+= Post it? There isn't a post box for a thousand miles.
+> Posten? Er staat geen brievenbus binnen duizend mijl.
+= We have company, sailor. Look up at the yard.
+> We hebben bezoek, matroos. Kijk eens omhoog naar de ra.
+= Find our lighthouse in the book, sailor, and I'll steer for it.
+> Zoek onze vuurtoren op in het boek, matroos, dan stuur ik erop af.
+= One of those lighthouses is ours. My book of lighthouses is in my sea chest.
+> Een van die vuurtorens is de onze. Mijn vuurtorenboek ligt in mijn zeekist.
+= Home port, Pippilotta! I'll stay a few days, and then the Hoppetossa sails back to my island.
+> Thuishaven, Pippilotta! Ik blijf een paar dagen, en dan zeilt de Hoppetossa terug naar mijn eiland.
+= A few days is long enough for a very big party.
+> Een paar dagen is lang genoeg voor een heel groot feest.
+= Red buoys and green buoys. Get them on the right side, sailor, or we'll be stuck on the rocks.
+> Rode boeien en groene boeien. Houd ze aan de goede kant, matroos, anders zitten we vast op de rotsen.
+= The horse is standing very still, with its legs wide apart. It has turned a little bit green.
+> Witje staat heel stil, met zijn benen wijd uit elkaar. Hij ziet een beetje groen.
+= Pfrrr…
+> Pfrrr…
+= Poor horse. When we're home, you can have your veranda all to yourself for a week.
+> Arm paard. Als we thuis zijn, mag je een week lang je veranda helemaal voor jezelf hebben.
+= The horse is looking at the quay, then at Pippi, then at the quay again.
+> Witje kijkt naar de kade, dan naar Pippi, en dan weer naar de kade.
+= Yes, yes, we're home. I'll carry you.
+> Ja, ja, we zijn thuis. Ik draag je wel.
+= The horse is standing on deck, sniffing the wind. It can smell home.
+> Witje staat op het dek en snuift de wind op. Hij ruikt al naar huis.
+= Pfrrr!
+> Pfrrr!
+= It feels strange to go home. We've been away so long!
+> Het voelt raar om naar huis te gaan. We zijn zo lang weg geweest!
+= Do you think it's still winter at home?
+> Denk je dat het thuis nog winter is?
+= I'm not scared. I'm just holding on to Tommy very tightly.
+> Ik ben niet bang. Ik houd me alleen heel stevig vast aan Tommy.
+= Ow.
+> Au.
+= In the dark, all the lighthouses look the same. But they flash differently. Count them!
+> In het donker zien alle vuurtorens er hetzelfde uit. Maar ze knipperen anders. Tel maar!
+= Look, there's Miss! And Kling and Klang!
+> Kijk, daar is de juf! En Kling en Klang!
+= And the luggage cart, for Pippi's sea chest.
+> En de bagagekar, voor Pippi's zeekist.
+= I've stopped feeling seasick. Mostly.
+> Ik ben niet meer zeeziek. Bijna niet.
+= Mr Nilsson is hanging on to the yard with everything he's got. His hat has blown away. No: there it is, on the horse.
+> Meneer Nilsson houdt zich met alles wat hij heeft vast aan de ra. Zijn hoed is weggewaaid. Nee: daar is hij, op Witje.
+= Mr Nilsson is hanging from the yard by his tail, watching the world go by.
+> Meneer Nilsson hangt aan zijn staart aan de ra en kijkt naar de wereld die voorbijtrekt.
+= I've written a letter to Miss! "Dear Miss, I'm coming home soon. Please keep some holidays for me. Love, Pippi."
+> Ik heb een brief aan de juf geschreven! "Liefe juf, ik kom gauw thuis. Wilt u wat vakantie voor me bewaren? Groetjes, Pippi."
+= Pippi rolls the letter up, pushes it into an empty lemonade bottle and corks it.
+> Pippi rolt de brief op, duwt hem in een lege limonadefles en doet de kurk erop.
+= Now the sea can post it. You throw it, you've got the best aim.
+> Nu kan de zee hem bezorgen. Gooi jij maar, jij mikt het best.
+= Whee! It's like a swing, only wetter!
+> Joepie! Net een schommel, alleen natter!
+= Home! I can't wait. I've never come home before. Well, I have, but never from this far away.
+> Naar huis! Ik kan niet wachten. Ik ben nog nooit thuisgekomen. Nou ja, wel, maar nog nooit van zo ver weg.
+= On the island it's always summer. At home it's anything but. I like both.
+> Op het eiland is het altijd zomer. Thuis allesbehalve. Ik vind ze allebei leuk.
+
+# the seasons
+= What to pack?
+> Wat pak je in?
+= The captain's calendar says: April
+> Op de kalender van de kapitein staat: april
+= far south
+> ver in het zuiden
+= the Sun
+> de zon
+= When we sailed away, it was winter at home. Now it's April.
+> Toen we wegvoeren, was het thuis winter. Nu is het april.
+= What season is it at Villa Villekulla?
+> Welk seizoen is het in Villa Kakelbont?
+= Still winter
+> Nog steeds winter
+= Spring
+> Lente
+= Summer
+> Zomer
+= Autumn
+> Herfst
+= In April? The snow has had months to melt. The days at home are getting longer and longer.
+> In april? De sneeuw heeft maanden de tijd gehad om te smelten. Thuis worden de dagen steeds langer.
+= Not yet: summer at home starts in June. In April it's only just warming up.
+> Nog niet: thuis begint de zomer in juni. In april wordt het net een beetje warmer.
+= Autumn comes after summer. You've skipped a few months!
+> De herfst komt na de zomer. Je hebt een paar maanden overgeslagen!
+= And far down south, below the Equator, what season is it there in April?
+> En ver in het zuiden, onder de evenaar: welk seizoen is het daar in april?
+= Spring too, everywhere
+> Ook lente, overal
+= Autumn: the south has the opposite season
+> Herfst: het zuiden heeft het omgekeerde seizoen
+= The south has no seasons
+> Het zuiden heeft geen seizoenen
+= Look at the picture: when the north leans towards the Sun, the south leans away. They can't both have spring.
+> Kijk naar het plaatje: als het noorden naar de zon toe leunt, leunt het zuiden ervan af. Ze kunnen niet allebei lente hebben.
+= It does! Far south it gets cold in June and hot at Christmas.
+> Jawel! Ver in het zuiden wordt het koud in juni en heet met kerst.
+= Spring! The north is starting to lean towards the Sun again: longer days, and the snow melts.
+> Lente! Het noorden begint weer naar de zon toe te leunen: langere dagen, en de sneeuw smelt.
+= Autumn! The Earth leans the same way all year, so the north and the south take turns leaning towards the Sun. When it's spring at home, it's autumn far south.
+> Herfst! De aarde leunt het hele jaar dezelfde kant op, dus het noorden en het zuiden leunen om de beurt naar de zon toe. Als het thuis lente is, is het ver in het zuiden herfst.
+= Spring at home! Then I'll pack my mittens AND my sunhat.
+> Thuis is het lente! Dan pak ik mijn wanten ÉN mijn zonnehoed in.
+= Anchor up! Set the sails! Course: north, to Villa Villekulla!
+> Anker op! Zeilen hijsen! Koers: noord, naar Villa Kakelbont!
+= The sails fill, and the island slides away behind the Hoppetossa. Soon there's nothing but sea all around.
+> De zeilen bollen op, en het eiland glijdt weg achter de Hoppetossa. Al gauw is er rondom alleen nog maar zee.
+= How long will it take?
+> Hoe lang duurt het?
+= Weeks, sailor. Plenty of time to write some letters.
+> Weken, matroos. Tijd genoeg om een paar brieven te schrijven.
+
+# the message in a bottle
+= The captain's chart of the ocean currents
+> De kaart van de kapitein met de zeestromingen
+= America
+> Amerika
+= Africa
+> Afrika
+= the Hoppetossa
+> de Hoppetossa
+= From there, the current goes round and round in a big circle. Your bottle would still be going round when you're a grandmother.
+> Daar draait de stroming rond en rond in een grote kring. Je fles zou nog steeds ronddraaien als jij al oma bent.
+= That current flows west, all the way to America. Miss would never get it.
+> Die stroming gaat naar het westen, helemaal naar Amerika. De juf zou hem nooit krijgen.
+= That current flows south, along the coast of Africa. Wrong way!
+> Die stroming gaat naar het zuiden, langs de kust van Afrika. Verkeerde kant op!
+= The blue arrows are currents: the sea is always flowing that way.
+> De blauwe pijlen zijn stromingen: daar stroomt de zee altijd heen.
+= Where should you throw the bottle, so the sea carries it to Sweden?
+> Waar moet je de fles in zee gooien, zodat de zee hem naar Zweden brengt?
+= Click a number.
+> Klik op een nummer.
+= So what carries a bottle across the sea?
+> Wat brengt een fles dan over de zee?
+= Ocean currents: huge rivers of water that flow through the sea
+> Zeestromingen: enorme rivieren van water die door de zee stromen
+= The fish pass it along
+> De vissen geven hem aan elkaar door
+= It swims, if you shake it first
+> Hij zwemt, als je hem eerst schudt
+= Number 4! From there, the current flows north-east, all the way up to Sweden.
+> Nummer 4! Daar stroomt de zee naar het noordoosten, helemaal naar Zweden.
+= Fish are far too busy. And they can't read the address.
+> Vissen hebben het veel te druk. En ze kunnen het adres niet lezen.
+= Bottles can't swim. Not even Pippi's bottles.
+> Flessen kunnen niet zwemmen. Zelfs Pippi's flessen niet.
+= Ocean currents! The sea is never still: big currents flow through it like rivers, driven by the wind and the warm and cold water. A bottle can drift thousands of kilometres.
+> Zeestromingen! De zee staat nooit stil: grote stromingen gaan erdoorheen als rivieren, aangedreven door de wind en door warm en koud water. Een fles kan duizenden kilometers drijven.
+= The Hoppetossa sails to the spot, and you throw the bottle as far as you can. Plop! It bobs away on the current.
+> De Hoppetossa vaart naar die plek, en jij gooit de fles zo ver als je kunt. Plop! Hij dobbert weg op de stroming.
+= Miss will get it before we're home. Probably. Unless a whale reads it first.
+> De juf krijgt hem nog voordat wij thuis zijn. Waarschijnlijk. Tenzij een walvis hem eerst leest.
+= But the sky behind the ship is turning dark grey. The wind starts to howl, and the waves grow bigger and bigger.
+> Maar de lucht achter het schip wordt donkergrijs. De wind begint te gieren, en de golven worden groter en groter.
+= A storm! All hands on deck!
+> Storm! Alle hens aan dek!
+
+# the storm
+= The storm
+> De storm
+= The Hoppetossa is leaning over a long way
+> De Hoppetossa helt ver over
+= the wind →
+> de wind →
+= Two ends of a reef point, ready to tie
+> Twee eindjes van een knuttel, klaar om te knopen
+= The wind is howling, and the ship leans over further and further.
+> De wind giert, en het schip helt steeds verder over.
+= What do you do with the sails?
+> Wat doe je met de zeilen?
+= Put up even more sail, to get out of the storm faster
+> Nog meer zeil bijzetten, om sneller uit de storm te komen
+= Make the sails smaller: take in a reef
+> De zeilen kleiner maken: reven
+= Pippi holds the mast straight
+> Pippi houdt de mast recht
+= More sail catches more wind: the ship leans over even further, and Annika slides across the deck into the horse.
+> Meer zeil vangt meer wind: het schip helt nog verder over, en Annika glijdt over het dek tegen Witje aan.
+= Pippi grabs the mast and pulls. The ship stays up for exactly one wave. Even Pippi can't hold back a storm.
+> Pippi grijpt de mast en trekt. Het schip blijft precies één golf lang rechtop. Zelfs Pippi kan geen storm tegenhouden.
+= Roll up the bottom of each sail and tie it down with the little ropes, the reef points.
+> Rol de onderkant van elk zeil op en bind die vast met de touwtjes: de knuttels.
+= How do you tie a reef knot?
+> Hoe leg je een platte knoop?
+= Right over left, then right over left again
+> Rechts over links, en dan weer rechts over links
+= Right over left, then left over right
+> Rechts over links, en dan links over rechts
+= Lots of knots on top of each other, just in case
+> Heel veel knopen op elkaar, voor de zekerheid
+= That's a granny knot. In a storm it slips, or it jams so tight that nobody can undo it again.
+> Dat is een oudewijvenknoop. In een storm schiet die los, of hij trekt zo vast dat niemand hem nog los krijgt.
+= A big tangle! When the storm is over, a sailor would need a knife to get it undone. Two neat crossings are enough.
+> Een grote warboel! Als de storm voorbij is, heeft een zeeman een mes nodig om hem los te krijgen. Twee nette kruisingen zijn genoeg.
+= Less sail, less push from the wind, so the ship stands up straighter. Now tie the sails down.
+> Minder zeil, minder duw van de wind, dus het schip staat rechter. Bind de zeilen nu vast.
+= A reef knot! It lies flat and holds tight, and when the storm is over you can undo it with one pull.
+> Een platte knoop! Die ligt plat en houdt stevig, en als de storm voorbij is, trek je hem met één ruk los.
+= With smaller sails, the Hoppetossa stands up straighter and rides the waves like a duck.
+> Met kleinere zeilen staat de Hoppetossa rechter en deint ze over de golven als een eend.
+= By morning the storm has blown itself out. The sea is calm, the sails are set again, and far away there's a long, sandy coast.
+> 's Ochtends is de storm uitgeraasd. De zee is kalm, de zeilen staan weer bij, en ver weg ligt een lange zandkust.
+= Look! Little birds, landing on the yard!
+> Kijk! Kleine vogeltjes, ze landen op de ra!
+
+# the swallows
+= Five tired swallows, resting on the yard
+> Vijf moeie zwaluwen, die uitrusten op de ra
+= A forked tail, a red throat and a white tummy. They flew over the sea all night.
+> Een gevorkte staart, een rode keel en een wit buikje. Ze hebben de hele nacht over zee gevlogen.
+= Where are the swallows flying?
+> Waar vliegen de zwaluwen naartoe?
+= North, to spend the summer in Sweden
+> Naar het noorden, om de zomer in Zweden door te brengen
+= South, to Africa for the winter
+> Naar het zuiden, naar Afrika voor de winter
+= Nowhere: they're stowaways, sailing to the South Seas
+> Nergens heen: het zijn verstekelingen, op weg naar de Stille Zuidzee
+= In April? They spent the whole winter in Africa. Now they're on their way back.
+> In april? Ze hebben de hele winter in Afrika gezeten. Nu zijn ze op de terugweg.
+= They're only resting their wings. In a minute they'll fly on, faster than the Hoppetossa.
+> Ze laten alleen hun vleugels even rusten. Zo vliegen ze verder, sneller dan de Hoppetossa.
+= Why do they fly such a long way?
+> Waarom vliegen ze zo'n eind?
+= Because it gets too hot in Africa
+> Omdat het in Afrika te heet wordt
+= In the northern summer there are lots of insects to eat, and long days to feed their chicks
+> In de zomer is er in het noorden veel insecten te eten, en zijn de dagen lang om hun jongen te voeren
+= To see Pippi
+> Om Pippi te zien
+= Heat isn't the problem: swallows love warm weather. It's all about food.
+> Hitte is het probleem niet: zwaluwen houden van warm weer. Het draait allemaal om eten.
+= Pippi would like that to be true. But they'd fly north even without her.
+> Dat zou Pippi wel willen. Maar ook zonder haar vliegen ze naar het noorden.
+= North! Every spring, swallows fly thousands of kilometres from Africa to Europe, and every autumn they fly back.
+> Naar het noorden! Elke lente vliegen zwaluwen duizenden kilometers van Afrika naar Europa, en elke herfst vliegen ze terug.
+= Insects! In the northern summer the air is full of flies and midges, and the days are long. In the winter there are none, so the swallows fly south.
+> Insecten! In de zomer zit de lucht in het noorden vol vliegjes en muggen, en zijn de dagen lang. In de winter zijn er geen, dus vliegen de zwaluwen naar het zuiden.
+= The swallows shake their feathers, twitter, and fly off north, much faster than the Hoppetossa.
+> De zwaluwen schudden hun veren, tjilpen, en vliegen weg naar het noorden, veel sneller dan de Hoppetossa.
+= Maybe they'll build a nest under the roof of Villa Villekulla!
+> Misschien bouwen ze een nest onder het dak van Villa Kakelbont!
+= Days go by. Then one evening the sun sets, and lights start to flash along a dark coast.
+> De dagen gaan voorbij. Op een avond gaat de zon onder, en langs een donkere kust beginnen lichten te knipperen.
+= Lighthouses, sailor! One of them marks the way into our harbour.
+> Vuurtorens, matroos! Een daarvan wijst de weg naar onze haven.
+
+# the lighthouses
+= Each square is one second. Yellow: the light flashes
+> Elk vakje is één seconde. Geel: het licht knippert
+= The book says:
+> In het boek staat:
+= Our harbour: two flashes, then dark, every 10 seconds.
+> Onze haven: twee flitsen, dan donker, elke 10 seconden.
+= Gull Rock: one flash every 5 seconds. Seal Point: two flashes every 6 seconds.
+> Meeuwenrots: één flits elke 5 seconden. Zeehondenkaap: twee flitsen elke 6 seconden.
+= You watch the three lighthouses for 30 seconds.
+> Je kijkt 30 seconden naar de drie vuurtorens.
+= Which one is ours?
+> Welke is de onze?
+= Click A, B or C.
+> Klik op A, B of C.
+= Why does every lighthouse flash differently?
+> Waarom knippert elke vuurtoren anders?
+= So that sailors know which lighthouse it is, even in the dark
+> Zodat zeelui weten welke vuurtoren het is, ook in het donker
+= To save oil
+> Om olie te sparen
+= Lighthouse keepers like to dance
+> Vuurtorenwachters houden van dansen
+= A dark lighthouse saves oil, but then nobody would see it. That's not why.
+> Een donkere vuurtoren spaart olie, maar dan ziet niemand hem. Daarom is het niet.
+= They might. But the flashing is for the sailors.
+> Misschien wel. Maar het knipperen is voor de zeelui.
+= Exactly. Every lighthouse has its own pattern, written down in the sailors' books. Count the flashes and the dark, and you know where you are.
+> Precies. Elke vuurtoren heeft zijn eigen patroon, en dat staat in de boeken van de zeelui. Tel de flitsen en het donker, en je weet waar je bent.
+= Lighthouse C it is! Steer for the two flashes, sailor.
+> Vuurtoren C dus! Stuur op de twee flitsen af, matroos.
+= All night the Hoppetossa sails towards the flashing light. And when the sun comes up, there it is: the little harbour, the little town on its hill, and right at the top, a yellow house.
+> De hele nacht vaart de Hoppetossa op het knipperende licht af. En als de zon opkomt, ligt het daar: het haventje, het stadje op de heuvel, en helemaal bovenaan een geel huis.
+= VILLA VILLEKULLA!
+> VILLA KAKELBONT!
+= Careful now. Into the harbour between the buoys, and not on the rocks.
+> Voorzichtig nu. Tussen de boeien door de haven in, en niet op de rotsen.
+= Two flashes, yes. But count the dark: they come every 6 seconds. That's Seal Point.
+> Twee flitsen, ja. Maar tel het donker: ze komen elke 6 seconden. Dat is de Zeehondenkaap.
+= One flash every 5 seconds: that's Gull Rock. Ours flashes twice.
+> Eén flits elke 5 seconden: dat is de Meeuwenrots. De onze knippert twee keer.
+= C! Two flashes, then dark, and again after 10 seconds. That's our harbour.
+> C! Twee flitsen, dan donker, en na 10 seconden weer. Dat is onze haven.
+
+# the buoys
+= Into the harbour
+> De haven in
+= Red and green buoys mark the safe way in
+> Rode en groene boeien wijzen de veilige weg naar binnen
+= the quay
+> de kade
+= ↑ coming in from the sea
+> ↑ vanaf zee naar binnen
+= Sailing INTO the harbour, which side do you keep the red buoys on?
+> Als je de haven IN vaart, aan welke kant houd je dan de rode boeien?
+= On your left (port), like the red lamp on the left side of a ship
+> Aan je linkerkant (bakboord), net als de rode lamp aan de linkerkant van een schip
+= On your right (starboard)
+> Aan je rechterkant (stuurboord)
+= Either side, as long as you're quick
+> Maakt niet uit, als je maar snel bent
+= Which way in is safe?
+> Welke weg naar binnen is veilig?
+= Route {k}
+> Route {k}
+= Then you'd be outside the channel, on the rocks. Think of a ship's lamps: red on the left.
+> Dan zit je buiten de vaargeul, op de rotsen. Denk aan de lampen van een schip: rood links.
+= Quick or slow, the rocks don't care. The buoys show where the deep water is.
+> Snel of langzaam, dat kan de rotsen niets schelen. De boeien laten zien waar het water diep is.
+= Red on the left, green on the right, coming in from the sea. Between them, the water is deep enough.
+> Rood links, groen rechts, als je vanaf zee binnenkomt. Daartussen is het water diep genoeg.
+= Route A goes to the right of the green buoys: straight onto the rocks!
+> Route A gaat rechts langs de groene boeien: zo de rotsen op!
+= Route C goes to the left of the red buoys: straight onto the rocks!
+> Route C gaat links langs de rode boeien: zo de rotsen op!
+= Route B: every red buoy on your left, every green buoy on your right. Safely in!
+> Route B: elke rode boei aan je linkerkant, elke groene boei aan je rechterkant. Veilig binnen!
+
+# intro and end
+= The morning after the feast. The Hoppetossa is ready to sail, and the whole island has come down to the beach to wave goodbye.
+> De ochtend na het feest. De Hoppetossa is klaar om uit te varen, en het hele eiland is naar het strand gekomen om te zwaaien.
+= Pippilotta! I'll sail you home to Villa Villekulla. But first: have you packed the right clothes?
+> Pippilotta! Ik breng je met de boot naar huis, naar Villa Kakelbont. Maar eerst: heb je de goede kleren ingepakt?
+= I've packed my sunhat, my bucket and spade, and eighteen kilos of coconuts.
+> Ik heb mijn zonnehoed ingepakt, mijn emmer en schepje, en achttien kilo kokosnoten.
+= But it was winter when we left home. Will it still be winter?
+> Maar het was winter toen we van huis weggingen. Is het daar nog steeds winter?
+= Ask my calendar, sailor. It's by the wheel.
+> Vraag het mijn kalender maar, matroos. Die hangt bij het stuurwiel.
+= What season will it be at home? Let's ask the captain.
+> Welk seizoen zal het thuis zijn? Laten we het de kapitein vragen.
+= Red buoy on the left, green buoy on the right. The Hoppetossa glides into the harbour and comes to rest against the quay, as gently as a sleeping cat.
+> Rode boei links, groene boei rechts. De Hoppetossa glijdt de haven in en komt tegen de kade tot stilstand, zo zachtjes als een slapende kat.
+= The whole town is there. Miss is waving her umbrella, and Kling and Klang are standing to attention.
+> Het hele stadje is er. De juf zwaait met haar paraplu, en Kling en Klang staan in de houding.
+= Pippi! I got your letter! It came in a bottle, washed up on the beach last Tuesday.
+> Pippi! Ik heb je brief gekregen! Hij zat in een fles en spoelde vorige week dinsdag aan op het strand.
+= Then the sea is faster than the post!
+> Dan is de zee sneller dan de post!
+= Welcome home, Miss Longstocking. A reminder: horses must be carried, not ridden, along the quay.
+> Welkom thuis, juffrouw Langkous. Ter herinnering: paarden moeten over de kade gedragen worden, niet bereden.
+= Pippi lifts the horse over her head and carries it down the gangway. It won't put a hoof on the wet stones.
+> Pippi tilt Witje boven haar hoofd en draagt hem de loopplank af. Hij wil geen hoef op de natte stenen zetten.
+= Home to Villa Villekulla! The horse wants its veranda.
+> Naar huis, naar Villa Kakelbont! Witje wil naar zijn veranda.
+
+# hints
+= The captain wants to know if you've packed the right clothes. It was winter at home when you left, and now it's April.
+> De kapitein wil weten of je de goede kleren hebt ingepakt. Het was thuis winter toen jullie vertrokken, en nu is het april.
+= Click the captain (or the wheel). At home in April it's spring. Far south, below the Equator, it's autumn: the north and the south have opposite seasons.
+> Klik op de kapitein (of het stuurwiel). Thuis is het in april lente. Ver in het zuiden, onder de evenaar, is het herfst: het noorden en het zuiden hebben omgekeerde seizoenen.
+= Pippi has been writing something. Maybe she has a letter to post. In the middle of the sea.
+> Pippi heeft iets zitten schrijven. Misschien heeft ze een brief om te posten. Midden op zee.
+= Click Pippi for her message in a bottle.
+> Klik op Pippi voor haar flessenpost.
+= Pippi's letter is in a bottle. The sea can deliver it, if you throw it into the right current.
+> Pippi's brief zit in een fles. De zee kan hem bezorgen, als je hem in de goede stroming gooit.
+= Use the bottle on the sea and pick number 4: that current flows north-east, to Sweden. Ocean currents are like rivers in the sea.
+> Gebruik de fles op de zee en kies nummer 4: die stroming gaat naar het noordoosten, naar Zweden. Zeestromingen zijn net rivieren in de zee.
+= A storm! The wind pushes on the sails, and the ship leans over a long way. What could make it lean less?
+> Storm! De wind duwt tegen de zeilen, en het schip helt ver over. Hoe kan het minder scheef hangen?
+= Click the sails (or the captain). Take in a reef: smaller sails. Then tie a reef knot: right over left, then left over right.
+> Klik op de zeilen (of de kapitein). Reven: kleinere zeilen. Leg dan een platte knoop: rechts over links, en dan links over rechts.
+= Little birds have landed on the yard to rest. Where could they be going?
+> Er zijn vogeltjes op de ra geland om uit te rusten. Waar zouden ze heen gaan?
+= Click the swallows. They're flying north to Sweden for the summer, because the northern summer is full of insects to eat.
+> Klik op de zwaluwen. Ze vliegen naar het noorden, naar Zweden, voor de zomer, want in de zomer zit het noorden vol insecten om te eten.
+= Three lighthouses, all flashing differently. The captain has a book that says which is which.
+> Drie vuurtorens, die allemaal anders knipperen. De kapitein heeft een boek waarin staat welke welke is.
+= Take the Book of Lighthouses from the captain's sea chest on deck.
+> Pak het vuurtorenboek uit de zeekist van de kapitein op het dek.
+= Our harbour's lighthouse flashes twice, then stays dark, every 10 seconds. Count the yellow squares and the dark ones.
+> De vuurtoren van onze haven knippert twee keer en blijft dan donker, elke 10 seconden. Tel de gele vakjes en de donkere.
+= Use the book on the lighthouses (or click them). Pick C: two flashes every 10 seconds.
+> Gebruik het boek op de vuurtorens (of klik erop). Kies C: twee flitsen elke 10 seconden.
+= Red and green buoys mark the safe way into the harbour. Ships have a red lamp on their left side, and a green one on their right.
+> Rode en groene boeien wijzen de veilige weg de haven in. Schepen hebben een rode lamp aan hun linkerkant en een groene aan hun rechterkant.
+= Click the buoys (or the wheel). Coming in from the sea, keep the red buoys on your left: route B.
+> Klik op de boeien (of het stuurwiel). Als je vanaf zee binnenkomt, houd je de rode boeien links: route B.

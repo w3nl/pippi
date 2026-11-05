@@ -8,7 +8,7 @@ Every puzzle teaches something real, for children of about 8 to 12.
 
 ## Play
 
-The game speaks **UK English**, **Dutch** (*Pippi Langkous* in *Villa Kakelbont*) and **Swedish**, Pippi's own language (*Pippi Långstrump*, with Herr Nilsson and Lilla Gubben). Switch with the **EN · NL · SV** button; it starts in Dutch or Swedish when your browser is set to one of them. Turn on **Voices** to hear the dialogue read aloud.
+The game speaks **UK English**, **Dutch** (*Pippi Langkous* in *Villa Kakelbont*, with Witje) and **Swedish**, Pippi's own language (*Pippi Långstrump*, with Herr Nilsson and Lilla Gubben). Switch with the **EN · NL · SV** button; it starts in Dutch or Swedish when your browser is set to one of them. Turn on **Voices** to hear the dialogue read aloud.
 
 Play online once GitHub Pages is on (Settings → Pages → deploy from `main`).
 
@@ -24,15 +24,19 @@ Stuck? Press **Hint** (first a nudge, then the answer), or pick up the spunk fro
 
 ## Chapters
 
+0. **Pippi moves in** (Villa Villekulla on moving day): Pippi arrives in town with her horse, Mr Nilsson and a cart full of boxes, and the old house has stood empty for years. Rust and oil, a pump and air pressure, how heavy a horse is, a mirror and a sunbeam, stacking boxes, and reading a clock.
 1. **Locked in with Mr Nilsson** (the kitchen of Villa Villekulla): mirror writing, sums, what a fire needs, steps in the right order, signal flags, feeding a horse.
 2. **Burglars in the night** (Pippi's bedroom): two burglars are after Pippi's gold, and Pippi won't wake up. Batteries in a torch, shadows, the North Star, Morse code and a balance scale.
 3. **Pippi goes to school** (the classroom): Pippi has heard that schoolchildren get holidays, and she wants some too. Roman numerals, the nines times table, ABC order, insects, fractions and why the seasons happen.
 4. **Snowball fight** (the garden of Villa Villekulla in the snow): the policemen Kling and Klang challenge you to a friendly snowball fight at three o'clock. Reading animal tracks, temperatures below zero, building a wall that holds, salt on ice, staying warm in layers, and the best angle for a throw, with falling snow and snowballs flying.
 5. **Pippi goes to the circus** (the big top): the show can't begin until the ringmaster's checklist is done. Money and change, mixing coloured light, levers, patterns, pendulums and gears, with a horse trotting round the ring, swinging trapezes and confetti.
-6. **On board the Hoppetossa** (a cut-away sailing ship): Captain Longstocking sails Pippi, Tommy, Annika and you to his island. Hoist the horse aboard, set a course, drop the sails, cross the Equator by night and spot the island at dawn. Pulleys, compass points, floating and sinking, fresh water from the sea, the North Star and the round Earth, with fish, dolphins and swaying palm trees.
-7. **The South Sea island** (Captain Longstocking's island): a whole day on the island, with a surprise buried on Turtle Islet. A sundial, the tide and the Moon, paces and metres, a food chain, counting the seconds between lightning and thunder, and baby turtles finding the sea, with a lagoon that empties at low tide, a tropical shower and a moonlit night.
+6. **Pippi's balloon ride** (the circus balloon): on a frosty winter morning, the ringmaster gives Pippi the circus's old hot-air balloon, and the golden weathercock has been stolen from the church tower. Fly from Villa Villekulla over the town and the farms, through a cloud, to the church on the hill. Why hot air rises, steering by the wind, maps from above, parachutes, clouds and weathercocks, with the world sliding past below the basket.
+7. **On board the Hoppetossa** (a cut-away sailing ship): Captain Longstocking sails Pippi, Tommy, Annika and you to his island. Hoist the horse aboard, set a course, drop the sails, cross the Equator by night and spot the island at dawn. Pulleys, compass points, floating and sinking, fresh water from the sea, the North Star and the round Earth, with fish, dolphins and swaying palm trees.
+8. **The South Sea island** (Captain Longstocking's island): a whole day on the island, with a surprise buried on Turtle Islet. A sundial, the tide and the Moon, paces and metres, a food chain, counting the seconds between lightning and thunder, and baby turtles finding the sea, with a lagoon that empties at low tide, a tropical shower and a moonlit night.
+9. **The voyage home** (the Hoppetossa, sailing north): from the island back to Sweden, through a storm and a night full of lighthouses. Opposite seasons north and south, a message in a bottle and ocean currents, reefing the sails and tying a reef knot, swallows flying north, telling lighthouses apart by their flashes, and red and green buoys, with the world sliding past on the horizon.
+10. **Home again** (the garden of Villa Villekulla in spring): the horse wants nothing but its own veranda. Tree rings, rolling versus sliding, magnets, why food goes off, where to look for a rainbow, and what a hedgehog needs after its winter sleep, with swallows, an April shower and a welcome-home party under the lanterns.
 
-More chapters are planned (home again to Villa Villekulla). See [AGENTS.md](AGENTS.md).
+More chapters may follow. See [AGENTS.md](AGENTS.md).
 
 ## Install it as an app
 

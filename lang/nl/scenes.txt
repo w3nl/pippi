@@ -183,3 +183,25 @@
 > De hut van de koning
 = TURTLES
 > SCHILDPADDEN
+
+# ---------- Chapter 8: Villa Villekulla in spring (scenes/home.svg) ----------
+= Villa Villekulla in spring
+> Villa Kakelbont in de lente
+= WELCOME HOME!
+> WELKOM THUIS!
+= Tommy and Annika's house
+> Het huis van Tommy en Annika
+= The horse's straw
+> Het stro van Witje
+= Post box
+> Brievenbus
+= Rain barrel
+> Regenton
+= The lilac bush
+> De seringenstruik
+= Pippi's sea chest
+> Pippi's zeemanskist
+= The fallen branch
+> De afgebroken tak
+= Garden table
+> Tuintafel

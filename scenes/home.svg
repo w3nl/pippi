@@ -1,0 +1,785 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="scene" id="sc-home" viewBox="0 0 1600 900"
+    preserveAspectRatio="xMidYMid slice" aria-label="Villa Villekulla in spring">
+    <defs>
+        <linearGradient id="vhSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#6aa6d0" />
+            <stop offset=".7" stop-color="#c4dfe6" />
+            <stop offset="1" stop-color="#f2ead0" />
+        </linearGradient>
+        <linearGradient id="vhShowerG" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#5d6878" />
+            <stop offset="1" stop-color="#a9b3bd" />
+        </linearGradient>
+        <linearGradient id="vhGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#a6c86a" />
+            <stop offset="1" stop-color="#5e8c3e" />
+        </linearGradient>
+        <radialGradient id="vhVign" cx=".5" cy=".45" r=".78">
+            <stop offset=".6" stop-color="#2a1a0c" stop-opacity="0" />
+            <stop offset="1" stop-color="#2a1a0c" stop-opacity=".4" />
+        </radialGradient>
+        <g id="vhTulip">
+            <path d="M0 0 v-22" stroke="#4f7a34" stroke-width="2.5" />
+            <path d="M0 -8 q-8 -4 -8 -12 q6 2 8 8z" fill="#5e8c3e" />
+            <path d="M-6 -30 l3 6 l3 -6 l3 6 l3 -6 v6 q0 8 -6 8 q-6 0 -6 -8z" />
+        </g>
+        <radialGradient id="vhSunG" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stop-color="#fff6c8" stop-opacity=".95" />
+            <stop offset="1" stop-color="#fff6c8" stop-opacity="0" />
+        </radialGradient>
+        <radialGradient id="vhLampG" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stop-color="#ffd27a" stop-opacity=".8" />
+            <stop offset="1" stop-color="#ffd27a" stop-opacity="0" />
+        </radialGradient>
+        <linearGradient id="vhDustG" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#cfe0e4" />
+            <stop offset="1" stop-color="#9fb6bc" />
+        </linearGradient>
+        <!-- the horse (white with black spots), drawn twice: in Pippi's arms, and on its veranda at
+        the end -->
+        <g id="vhHorseShape">
+            <path d="M18 34 Q4 46 8 66" stroke="#1a1a1a" stroke-width="5" fill="none"
+                stroke-linecap="round" />
+            <g fill="#f6f1e6">
+                <rect x="28" y="50" width="8" height="38" rx="3" />
+                <rect x="42" y="50" width="8" height="38" rx="3" />
+                <rect x="76" y="50" width="8" height="38" rx="3" />
+                <rect x="90" y="50" width="8" height="38" rx="3" />
+            </g>
+            <g fill="#1a1a1a">
+                <rect x="28" y="84" width="8" height="5" />
+                <rect x="42" y="84" width="8" height="5" />
+                <rect x="76" y="84" width="8" height="5" />
+                <rect x="90" y="84" width="8" height="5" />
+            </g>
+            <ellipse cx="62" cy="40" rx="44" ry="20" fill="#f6f1e6" />
+            <path d="M94 36 Q106 20 110 6" stroke="#f6f1e6" stroke-width="18" fill="none"
+                stroke-linecap="round" />
+            <path d="M90 30 Q100 16 104 0" stroke="#1a1a1a" stroke-width="4" fill="none"
+                stroke-linecap="round" />
+            <ellipse cx="120" cy="10" rx="15" ry="8.5" fill="#f6f1e6" transform="rotate(22 120 10)" />
+            <path d="M106 -2 l4 -10 l5 10z" fill="#f6f1e6" />
+            <g fill="#1a1a1a">
+                <circle cx="74" cy="60" r="5" />
+                <circle cx="44" cy="34" r="6" />
+                <circle cx="70" cy="28" r="4" />
+                <circle cx="96" cy="26" r="4" />
+                <circle cx="118" cy="7" r="1.8" />
+                <circle cx="130" cy="15" r="1.4" />
+            </g>
+        </g>
+    </defs>
+
+    <!-- a spring afternoon; later the sun sinks low in the west (right), and at the end the evening
+    comes -->
+    <rect width="1600" height="520" fill="url(#vhSky)" />
+    <g class="vh-cloud a" fill="#fff" opacity=".9">
+        <ellipse cx="520" cy="90" rx="80" ry="22" />
+        <ellipse cx="490" cy="76" rx="38" ry="24" />
+        <ellipse cx="546" cy="72" rx="44" ry="28" />
+    </g>
+    <g class="vh-cloud b" fill="#fff" opacity=".8">
+        <ellipse cx="1060" cy="140" rx="60" ry="17" />
+        <ellipse cx="1038" cy="130" rx="30" ry="19" />
+    </g>
+    <g class="vh-cloud c" fill="#fffaf0" opacity=".7">
+        <ellipse cx="200" cy="170" rx="56" ry="14" />
+        <ellipse cx="218" cy="160" rx="28" ry="16" />
+    </g>
+    <g class="vh-cloud d" fill="#fffaf0" opacity=".75">
+        <ellipse cx="1300" cy="60" rx="64" ry="15" />
+        <ellipse cx="1284" cy="50" rx="30" ry="17" />
+        <ellipse cx="1320" cy="48" rx="24" ry="14" />
+    </g>
+    <!-- the April shower: a grey sky; the sun still peeps out under the clouds -->
+    <g id="vh-showersky" data-in="vis-slow-in" data-out="vis-slow-out">
+        <rect width="1600" height="520" fill="url(#vhShowerG)" opacity=".8" />
+        <g fill="#6c7786">
+            <ellipse cx="300" cy="90" rx="240" ry="64" />
+            <ellipse cx="700" cy="70" rx="260" ry="70" />
+            <ellipse cx="1060" cy="100" rx="220" ry="60" />
+            <ellipse cx="520" cy="140" rx="200" ry="44" />
+        </g>
+    </g>
+    <g id="vh-sun">
+        <circle cx="1440" cy="150" r="110" fill="url(#vhSunG)" />
+        <circle cx="1440" cy="150" r="38" fill="#fff1a8" />
+    </g>
+    <!-- the rainbow, opposite the sun: over the roof of Villa Villekulla, in the east -->
+    <g id="vh-rainbow" data-in="vis-slow-in" data-out="vis-slow-out" fill="none" stroke-width="10"
+        opacity=".75">
+        <path d="M-80 520 A400 400 0 0 1 720 520" stroke="#e8463a" />
+        <path d="M-70 520 A390 390 0 0 1 710 520" stroke="#f28c2e" />
+        <path d="M-60 520 A380 380 0 0 1 700 520" stroke="#f6d34a" />
+        <path d="M-50 520 A370 370 0 0 1 690 520" stroke="#62b84a" />
+        <path d="M-40 520 A360 360 0 0 1 680 520" stroke="#3f8ad8" />
+        <path d="M-30 520 A350 350 0 0 1 670 520" stroke="#4b4fb0" />
+        <path d="M-20 520 A340 340 0 0 1 660 520" stroke="#8a52b8" />
+    </g>
+    <!-- swallows, back from Africa (only while things move) -->
+    <g class="vh-swallow a" fill="#1f2a44">
+        <path d="M0 0 q12 -10 24 -2 q12 -8 24 2 q-12 -2 -24 6 q-12 -8 -24 -6z" />
+    </g>
+    <g class="vh-swallow b" fill="#1f2a44">
+        <path d="M0 0 q10 -8 20 -2 q10 -6 20 2 q-10 -2 -20 5 q-10 -7 -20 -5z" />
+    </g>
+
+    <!-- green hills, the little town and its church -->
+    <path d="M0 420 Q240 360 520 404 Q800 350 1100 392 Q1380 360 1600 380 V520 H0 Z" fill="#b7c99a" />
+    <path d="M0 440 Q300 380 600 420 Q900 370 1200 410 Q1400 386 1600 400 V520 H0 Z" fill="#a9c47e" />
+    <g fill="#6f9450">
+        <circle cx="850" cy="420" r="13" />
+        <circle cx="1170" cy="414" r="12" />
+        <circle cx="1380" cy="394" r="14" />
+        <circle cx="1572" cy="392" r="13" />
+    </g>
+    <g fill="#86ab62">
+        <circle cx="845" cy="415" r="6" />
+        <circle cx="1375" cy="389" r="7" />
+    </g>
+    <g id="vh-town">
+        <g fill="#b0412a">
+            <rect x="880" y="404" width="40" height="34" />
+            <rect x="930" y="396" width="36" height="42" />
+            <rect x="1068" y="400" width="40" height="38" />
+            <rect x="1116" y="408" width="34" height="30" />
+        </g>
+        <g fill="#5a3a2a">
+            <path
+                d="M874 406 l26 -18 l26 18z M926 398 l22 -16 l22 16z M1064 402 l24 -18 l24 18z M1112 410 l21 -14 l21 14z" />
+        </g>
+        <g fill="#fffaf0">
+            <rect x="892" y="416" width="8" height="8" />
+            <rect x="942" y="412" width="8" height="8" />
+            <rect x="1080" y="414" width="8" height="8" />
+        </g>
+        <g fill="#8a3a1a">
+            <rect x="906" y="388" width="6" height="10" />
+            <rect x="954" y="382" width="6" height="10" />
+            <rect x="1094" y="386" width="6" height="10" />
+        </g>
+        <g class="vh-chimsmoke" fill="#eef0f2" opacity=".8">
+            <circle cx="957" cy="378" r="4" />
+            <circle class="b" cx="960" cy="368" r="5" />
+            <circle class="c" cx="964" cy="356" r="6" />
+        </g>
+        <rect x="990" y="230" width="60" height="212" fill="#efe8dc" />
+        <path d="M984 232 L1020 146 L1056 232 Z" fill="#6a7f5a" />
+        <path d="M1020 146 v-20 M1012 132 h16" stroke="#c9952a" stroke-width="3" />
+        <circle cx="1020" cy="292" r="21" fill="#fffaf0" stroke="#5a5f66" stroke-width="3" />
+        <path d="M1020 292 V275 M1020 292 h10" stroke="#2b2118" stroke-width="3"
+            stroke-linecap="round" />
+        <rect x="1008" y="380" width="24" height="62" rx="12" fill="#5a3a1e" />
+    </g>
+    <!-- Tommy and Annika's house next door, with a sign in the window -->
+    <g id="vh-nextdoor">
+        <rect x="1300" y="300" width="18" height="44" fill="#a33a22" />
+        <rect x="1296" y="296" width="26" height="8" fill="#6b2a14" />
+        <g class="vh-chimsmoke" fill="#eef0f2" opacity=".85">
+            <circle cx="1309" cy="286" r="7" />
+            <circle class="b" cx="1315" cy="270" r="9" />
+            <circle class="c" cx="1323" cy="250" r="11" />
+        </g>
+        <rect x="1180" y="360" width="160" height="120" fill="#efe6d2" stroke="#c9bca0"
+            stroke-width="3" />
+        <path d="M1182 378 H1338 M1182 396 H1338 M1182 414 H1338 M1182 432 H1338" stroke="#ddd2b8"
+            stroke-width="1.5" />
+        <path d="M1168 364 L1260 300 L1352 364 Z" fill="#3f6a8a" />
+        <path d="M1204 342 H1316 M1232 322 H1288" stroke="#2f5270" stroke-width="2"
+            stroke-dasharray="16 3" />
+        <path d="M1168 364 L1260 300 L1352 364" stroke="#fffaf0" stroke-width="4" fill="none"
+            stroke-linejoin="round" />
+        <circle cx="1260" cy="340" r="8" fill="#a9cfe0" stroke="#fffaf0" stroke-width="3" />
+        <rect x="1196" y="390" width="40" height="40" fill="#a9cfe0" stroke="#fffaf0"
+            stroke-width="4" />
+        <rect x="1284" y="390" width="40" height="40" fill="#a9cfe0" stroke="#fffaf0"
+            stroke-width="4" />
+        <path d="M1198 392 h12 l-12 20z M1234 392 h-12 l12 20z M1286 392 h12 l-12 20z M1322 392 h-12 l12 20z"
+            fill="#e89aa8" opacity=".9" />
+        <path d="M1216 390 V430 M1196 410 H1236 M1304 390 V430 M1284 410 H1324" stroke="#fffaf0"
+            stroke-width="2.5" />
+        <rect x="1190" y="440" width="140" height="22" rx="3" fill="#f2c94c" />
+        <text x="1260" y="456" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="12"
+            font-weight="700" fill="#c4302b">WELCOME HOME!</text>
+    </g>
+
+    <!-- the garden: long spring grass, a gravel path, the fence and the gate -->
+    <use href="#saab96" x="1452" y="428" width="100" height="42" color="#f3e6c4" />
+    <rect y="470" width="1600" height="430" fill="url(#vhGrass)" />
+    <g id="vh-fence">
+        <path d="M1080 500 H1600 M1080 530 H1600" stroke="#8a6a4a" stroke-width="6" />
+        <g fill="#a5845a">
+            <rect x="1086" y="480" width="10" height="70" />
+            <rect x="1136" y="480" width="10" height="70" />
+            <rect x="1186" y="480" width="10" height="70" />
+            <rect x="1236" y="480" width="10" height="70" />
+            <rect x="1286" y="480" width="10" height="70" />
+            <rect x="1336" y="480" width="10" height="70" />
+            <rect x="1386" y="480" width="10" height="70" />
+            <rect x="1436" y="480" width="10" height="70" />
+            <rect x="1546" y="480" width="10" height="70" />
+            <rect x="1590" y="480" width="10" height="70" />
+            <path
+                d="M1086 480 l5 -8 l5 8z M1136 480 l5 -8 l5 8z M1186 480 l5 -8 l5 8z M1236 480 l5 -8 l5 8z M1286 480 l5 -8 l5 8z M1336 480 l5 -8 l5 8z M1386 480 l5 -8 l5 8z M1436 480 l5 -8 l5 8z M1546 480 l5 -8 l5 8z" />
+        </g>
+        <g id="vh-gate">
+            <rect x="1462" y="486" width="76" height="62" fill="none" stroke="#6b4423"
+                stroke-width="6" />
+            <path d="M1462 548 L1538 486" stroke="#6b4423" stroke-width="5" />
+        </g>
+    </g>
+    <path d="M640 628 C820 680 1080 690 1240 630 S1440 566 1500 556" stroke="#dcc79c"
+        stroke-width="44" fill="none" stroke-linecap="round" />
+    <path d="M640 628 C820 680 1080 690 1240 630 S1440 566 1500 556" stroke="#cdb689"
+        stroke-width="44" stroke-dasharray="2 14" fill="none" />
+    <!-- dandelions and long grass everywhere: nobody has mown it all winter -->
+    <g fill="#f6d34a">
+        <circle cx="120" cy="770" r="6" />
+        <circle cx="330" cy="820" r="5" />
+        <circle cx="560" cy="760" r="6" />
+        <circle cx="640" cy="860" r="5" />
+        <circle cx="900" cy="830" r="6" />
+        <circle cx="1050" cy="870" r="5" />
+        <circle cx="1240" cy="840" r="6" />
+        <circle cx="1500" cy="800" r="5" />
+        <circle cx="1380" cy="880" r="6" />
+        <circle cx="760" cy="590" r="4" />
+        <circle cx="1180" cy="560" r="4" />
+        <circle cx="460" cy="880" r="6" />
+    </g>
+    <g class="vh-grass" stroke="#4f7a34" stroke-width="3" stroke-linecap="round" fill="none">
+        <path
+            d="M60 880 q4 -20 0 -34 M70 880 q8 -18 14 -28 M240 860 q-4 -22 4 -34 M250 860 q8 -16 16 -22 M700 880 q-2 -22 6 -32 M980 790 q4 -20 -2 -30 M990 790 q10 -14 16 -20 M1320 880 q-6 -20 0 -30 M1560 860 q4 -20 -2 -32 M820 870 q6 -18 2 -30 M1110 740 q-4 -18 2 -28" />
+    </g>
+    <!-- daisies, cowslips, dandelion clocks, and tulips coming up along the house -->
+    <g>
+        <use href="#mvDaisy" x="80" y="820" />
+        <use href="#mvDaisy" x="300" y="760" />
+        <use href="#mvDaisy" x="470" y="720" />
+        <use href="#mvDaisy" x="980" y="860" />
+        <use href="#mvDaisy" x="1300" y="780" />
+        <use href="#mvDaisy" x="1450" y="860" />
+        <use href="#mvDaisy" x="1560" y="620" />
+        <use href="#mvDaisy" x="860" y="760" />
+        <use href="#mvCup" x="200" y="860" />
+        <use href="#mvCup" x="420" y="800" />
+        <use href="#mvCup" x="1180" y="880" />
+        <use href="#mvCup" x="1530" y="760" />
+        <use href="#mvPuff" x="520" y="840" />
+        <use href="#mvPuff" x="1420" y="640" />
+        <use href="#mvTuft" x="150" y="720" />
+        <use href="#mvTuft" x="520" y="690" />
+        <use href="#mvTuft" x="1000" y="720" />
+        <use href="#mvTuft" x="1400" y="720" />
+    </g>
+    <g>
+        <use href="#vhTulip" x="350" y="590" fill="#d9443a" />
+        <use href="#vhTulip" x="372" y="594" fill="#f2c94c" />
+        <use href="#vhTulip" x="394" y="588" fill="#d9443a" />
+        <use href="#vhTulip" x="416" y="594" fill="#e89aa8" />
+        <use href="#vhTulip" x="438" y="590" fill="#f2c94c" />
+    </g>
+
+    <!-- Villa Villekulla, a little crooked, with the horse's veranda -->
+    <g id="vh-house" transform="rotate(-2 220 400)">
+        <use href="#vvHouse" style="--vv-pane:url(#vhDustG)" />
+        <!-- the swallows' nest under the eaves -->
+        <path d="M356 268 q14 18 28 0z" fill="#8a6a4a" />
+        <circle cx="370" cy="268" r="3" fill="#1f2a44" />
+        <path d="M74 324 l22 18 M74 342 l10 8 M188 324 l-16 12" stroke="#e6eef0" stroke-width="1.5"
+            opacity=".9" />
+        <rect x="503" y="512" width="6" height="10" rx="2" fill="#2a2a2a" />
+        <g id="vh-dooropen">
+            <rect x="466" y="452" width="50" height="104" fill="#2a1a0c" />
+            <path d="M466 452 l-18 8 v104 l18 -8z" fill="#2f7fb0" stroke="#1f5a80" stroke-width="3" />
+            <rect x="474" y="530" width="34" height="26" fill="#5a3a1a" opacity=".6" />
+        </g>
+        <!-- the horse's straw, with a heap of winter leaves on it (and something asleep underneath) -->
+        <path d="M276 557 q18 -22 70 -24 q60 -2 84 24z" fill="#e2c46a" />
+        <g stroke="#c9a03a" stroke-width="2">
+            <path d="M290 552 l12 -10 M320 550 l6 -14 M360 552 l-4 -14 M396 552 l10 -12" />
+        </g>
+        <g id="vh-leaves" fill="#a8743a">
+            <ellipse cx="320" cy="548" rx="22" ry="10" />
+            <ellipse cx="350" cy="542" rx="26" ry="13" fill="#c48a3a" />
+            <ellipse cx="384" cy="548" rx="22" ry="10" fill="#8a5a2b" />
+            <ellipse cx="340" cy="530" rx="14" ry="7" fill="#b07a32" />
+        </g>
+        <g id="vh-hog">
+            <g class="vh-snuffle">
+                <path d="M326 540 q24 -26 52 -6 q-26 -4 -52 6z" fill="#6b4a2b" />
+                <g stroke="#3a2614" stroke-width="2" stroke-linecap="round">
+                    <path
+                        d="M332 534 l-4 -8 M340 530 l-2 -9 M350 527 l0 -9 M360 527 l2 -9 M368 529 l4 -8" />
+                </g>
+                <path d="M376 536 q12 -2 14 4 q-6 4 -14 2z" fill="#d9b58a" />
+                <circle cx="391" cy="539" r="2" fill="#1a1a1a" />
+                <circle cx="380" cy="535" r="1.6" fill="#1a1a1a" />
+            </g>
+        </g>
+        <g id="vh-vhorse" transform="translate(284 468)">
+            <g class="vh-nod">
+                <use href="#vhHorseShape" />
+            </g>
+        </g>
+    </g>
+    <g id="vh-smoke" fill="#eef0f2" opacity=".75">
+        <circle class="vh-puff" cx="304" cy="100" r="14" />
+        <circle class="vh-puff b" cx="316" cy="74" r="18" />
+        <circle class="vh-puff c" cx="300" cy="44" r="22" />
+    </g>
+
+    <!-- the rain barrel under the drainpipe, with Mr Nilsson on its rim -->
+    <path d="M16 270 V588" stroke="#7a7f86" stroke-width="8" />
+    <path d="M16 588 q0 12 14 12" stroke="#7a7f86" stroke-width="8" fill="none" />
+    <g id="vh-barrel">
+        <path d="M20 596 h90 l-6 104 h-78z" fill="#7a4a24" />
+        <g stroke="#3a3a3a" stroke-width="5">
+            <path d="M22 620 h86 M24 676 h82" />
+        </g>
+        <g stroke="#5a3418" stroke-width="2">
+            <path d="M44 600 v98 M66 600 v98 M88 600 v98" />
+        </g>
+        <ellipse cx="65" cy="596" rx="46" ry="10" fill="#3a5a5a" stroke="#5a3418" stroke-width="4" />
+        <g fill="#a8743a">
+            <ellipse cx="50" cy="596" rx="8" ry="3" />
+            <ellipse cx="78" cy="594" rx="6" ry="2.5" />
+        </g>
+    </g>
+    <g id="vh-nilsson">
+        <g class="vh-bob">
+            <path d="M100 584 q14 6 12 -16 q-2 -12 8 -14" stroke="#6b4423" stroke-width="4"
+                fill="none" stroke-linecap="round" />
+            <ellipse cx="88" cy="572" rx="12" ry="14" fill="#2f5f9a" />
+            <circle cx="88" cy="550" r="11" fill="#6b4423" />
+            <ellipse cx="90" cy="554" rx="7" ry="5.5" fill="#e6c49a" />
+            <g fill="#1a120c">
+                <circle cx="87" cy="552" r="1.5" />
+                <circle cx="93" cy="552" r="1.5" />
+            </g>
+            <ellipse cx="88" cy="540" rx="15" ry="3.5" fill="#e9d48a" />
+            <path d="M80 540 q8 -12 16 0z" fill="#e9d48a" />
+            <path d="M78 576 l-6 16 M98 576 l4 16" stroke="#6b4423" stroke-width="4"
+                stroke-linecap="round" />
+        </g>
+    </g>
+
+    <!-- a lilac bush in flower, where the hedgehog will live -->
+    <g id="vh-bush">
+        <g fill="#2f5a24">
+            <ellipse cx="230" cy="670" rx="82" ry="40" />
+            <ellipse cx="188" cy="646" rx="46" ry="34" />
+        </g>
+        <g fill="#3f7a34">
+            <ellipse cx="230" cy="660" rx="80" ry="44" />
+            <ellipse cx="190" cy="640" rx="44" ry="34" />
+            <ellipse cx="270" cy="636" rx="46" ry="36" />
+        </g>
+        <g fill="#5a9a48" opacity=".8">
+            <ellipse cx="200" cy="628" rx="20" ry="12" />
+            <ellipse cx="262" cy="624" rx="20" ry="12" />
+        </g>
+        <g fill="#9a6ac8">
+            <ellipse cx="204" cy="640" rx="9" ry="14" />
+            <ellipse cx="252" cy="636" rx="9" ry="14" />
+            <ellipse cx="290" cy="676" rx="8" ry="12" />
+        </g>
+        <g fill="#b48ad8">
+            <ellipse cx="180" cy="626" rx="10" ry="16" />
+            <ellipse cx="226" cy="612" rx="11" ry="17" />
+            <ellipse cx="276" cy="620" rx="10" ry="16" />
+            <ellipse cx="300" cy="650" rx="9" ry="14" />
+            <ellipse cx="160" cy="660" rx="9" ry="14" />
+        </g>
+        <g fill="#d9c2ee">
+            <ellipse cx="178" cy="620" rx="4" ry="6" />
+            <ellipse cx="224" cy="605" rx="4" ry="6" />
+            <ellipse cx="274" cy="613" rx="4" ry="6" />
+        </g>
+        <g id="vh-hog2">
+            <path d="M226 704 q22 -24 46 -4 q-24 -2 -46 4z" fill="#6b4a2b" />
+            <g stroke="#3a2614" stroke-width="2" stroke-linecap="round">
+                <path d="M232 698 l-3 -8 M242 693 l-1 -9 M252 692 l1 -9 M262 694 l3 -8" />
+            </g>
+            <path d="M268 700 q10 -2 12 4 q-6 3 -12 1z" fill="#d9b58a" />
+            <circle cx="280" cy="703" r="1.8" fill="#1a1a1a" />
+            <ellipse cx="300" cy="708" rx="14" ry="4" fill="#dfe6ea" />
+            <ellipse cx="300" cy="706" rx="10" ry="2.5" fill="#bfe0ef" />
+        </g>
+        <g class="vh-butterfly">
+            <path d="M0 0 q-10 -12 -14 0 q4 8 14 0 q10 -12 14 0 q-4 8 -14 0z" fill="#f6d34a" />
+        </g>
+        <g transform="translate(250 600)">
+            <g class="vh-bee">
+                <ellipse cx="-2" cy="-6" rx="4" ry="3" fill="#e6f0f4" opacity=".8" />
+                <ellipse cx="3" cy="-6" rx="4" ry="3" fill="#e6f0f4" opacity=".8" />
+                <ellipse rx="6" ry="4.5" fill="#f2c94c" />
+                <path d="M-2 -4 v8 M2 -4 v8" stroke="#2b2118" stroke-width="2" />
+            </g>
+        </g>
+    </g>
+
+    <!-- the old oak, in new leaves, with a broken stump where a branch came down in the winter
+    storms -->
+    <g id="vh-oak">
+        <path d="M646 650 Q652 520 662 420 L700 420 Q706 520 714 650 Z" fill="#5a3a1e" />
+        <g stroke="#5a3a1e" stroke-width="14" stroke-linecap="round" fill="none">
+            <path d="M672 430 Q600 360 540 330" />
+            <path d="M688 430 Q760 360 840 340" />
+            <path d="M680 420 Q680 330 690 250" />
+            <path d="M640 380 Q600 300 610 240" />
+        </g>
+        <path d="M700 480 Q740 466 770 462" stroke="#5a3a1e" stroke-width="18"
+            stroke-linecap="round" />
+        <path d="M766 452 l8 6 l-4 4 l8 4 l-10 6z" fill="#e8c58a" />
+        <ellipse cx="680" cy="520" rx="16" ry="24" fill="#2a1a0c" />
+        <g class="vh-crown">
+            <g fill="#3d6a2c">
+                <circle cx="566" cy="330" r="72" />
+                <circle cx="698" cy="342" r="88" />
+                <circle cx="826" cy="292" r="80" />
+                <circle cx="606" cy="390" r="48" />
+            </g>
+            <g fill="#4f8a3a">
+                <circle cx="560" cy="320" r="70" />
+                <circle cx="640" cy="250" r="80" />
+                <circle cx="730" cy="220" r="86" />
+                <circle cx="820" cy="280" r="78" />
+                <circle cx="860" cy="340" r="50" />
+                <circle cx="690" cy="330" r="86" />
+                <circle cx="600" cy="380" r="46" />
+            </g>
+            <g fill="#6aa84a" opacity=".85">
+                <circle cx="610" cy="236" r="40" />
+                <circle cx="740" cy="190" r="46" />
+                <circle cx="830" cy="262" r="36" />
+                <circle cx="560" cy="300" r="32" />
+                <circle cx="700" cy="300" r="40" />
+            </g>
+            <g fill="#9ac46a" opacity=".8">
+                <circle cx="598" cy="222" r="12" />
+                <circle cx="726" cy="174" r="14" />
+                <circle cx="820" cy="248" r="10" />
+            </g>
+        </g>
+    </g>
+
+    <!-- the branch that came down, lying right across the path; later a pile of round logs -->
+    <g id="vh-branch">
+        <path d="M880 702 L1080 604" stroke="#5a3a1e" stroke-width="26" stroke-linecap="round" />
+        <g stroke="#5a3a1e" stroke-width="9" stroke-linecap="round" fill="none">
+            <path d="M960 664 Q980 620 1010 600" />
+            <path d="M1010 630 Q1040 650 1070 650" />
+            <path d="M930 686 Q930 650 950 630" />
+        </g>
+        <g fill="#4f9a3a">
+            <circle cx="1012" cy="596" r="22" />
+            <circle cx="1074" cy="648" r="20" />
+            <circle cx="952" cy="624" r="18" />
+            <circle cx="1090" cy="596" r="20" />
+        </g>
+        <g fill="#6cb84a">
+            <circle cx="1000" cy="588" r="12" />
+            <circle cx="1062" cy="640" r="10" />
+            <circle cx="1100" cy="588" r="10" />
+        </g>
+        <ellipse cx="878" cy="703" rx="9" ry="14" fill="#e8c58a" transform="rotate(-26 878 703)" />
+    </g>
+    <g id="vh-logs">
+        <g fill="#8a5a2b">
+            <rect x="928" y="668" width="40" height="34" rx="6" />
+            <rect x="972" y="668" width="40" height="34" rx="6" />
+            <rect x="1016" y="668" width="40" height="34" rx="6" />
+            <rect x="950" y="636" width="40" height="34" rx="6" />
+            <rect x="994" y="636" width="40" height="34" rx="6" />
+        </g>
+        <g fill="#e8c58a" stroke="#a8743a" stroke-width="2">
+            <circle cx="948" cy="685" r="15" />
+            <circle cx="992" cy="685" r="15" />
+            <circle cx="1036" cy="685" r="15" />
+            <circle cx="970" cy="653" r="15" />
+            <circle cx="1014" cy="653" r="15" />
+        </g>
+        <g fill="none" stroke="#a8743a" stroke-width="1.5">
+            <circle cx="948" cy="685" r="8" />
+            <circle cx="992" cy="685" r="8" />
+            <circle cx="1036" cy="685" r="8" />
+            <circle cx="970" cy="653" r="8" />
+            <circle cx="1014" cy="653" r="8" />
+        </g>
+    </g>
+
+    <!-- the luggage cart at the gate: Pippi's sea chest, and the spunk's jam jar -->
+    <g id="vh-cart">
+        <path d="M1452 650 L1404 700" stroke="#6b4423" stroke-width="6" stroke-linecap="round" />
+        <rect x="1448" y="640" width="152" height="14" fill="#8a5028" />
+        <circle cx="1520" cy="672" r="26" fill="none" stroke="#5a3a1e" stroke-width="7" />
+        <path d="M1520 646 v52 M1494 672 h52" stroke="#5a3a1e" stroke-width="3" />
+        <g id="vh-chest">
+            <rect x="1460" y="580" width="100" height="60" rx="4" fill="#7a4022" />
+            <path d="M1460 596 h100" stroke="#5a2e14" stroke-width="3" />
+            <g fill="#c9952a">
+                <rect x="1490" y="572" width="8" height="68" />
+                <rect x="1522" y="572" width="8" height="68" />
+                <rect x="1504" y="600" width="12" height="14" rx="2" />
+            </g>
+            <path d="M1460 584 q50 -18 100 0" stroke="#5a2e14" stroke-width="3" fill="none" />
+        </g>
+        <g id="vh-spunk">
+            <rect x="1568" y="608" width="24" height="30" rx="5" fill="#cfe6e0" opacity=".75"
+                stroke="#e9f4f0" stroke-width="1.5" />
+            <rect x="1566" y="604" width="28" height="6" rx="2" fill="#e8571f" />
+            <g class="vh-crawl">
+                <ellipse cx="1580" cy="626" rx="6" ry="4" fill="#2f8a3a" />
+            </g>
+        </g>
+    </g>
+    <!-- the post box by the gate, stuffed full of letters -->
+    <g id="vh-post">
+        <rect x="1412" y="500" width="8" height="64" fill="#6b4423" />
+        <rect x="1392" y="468" width="48" height="36" rx="4" fill="#2f5f9a" />
+        <path d="M1392 480 h48" stroke="#1f3f6a" stroke-width="2" />
+        <g class="vh-flutter">
+            <rect x="1398" y="458" width="22" height="14" fill="#fffaf0"
+                transform="rotate(-12 1409 465)" />
+            <rect x="1414" y="456" width="20" height="13" fill="#f3e6c4"
+                transform="rotate(10 1424 462)" />
+        </g>
+    </g>
+
+    <!-- the sea chest, once it has rolled to the veranda on the logs -->
+    <g id="vh-chest2">
+        <g transform="translate(-120 30)">
+            <g fill="#8a5a2b">
+                <rect x="440" y="656" width="40" height="20" rx="6" />
+                <rect x="510" y="656" width="40" height="20" rx="6" />
+            </g>
+            <g fill="#e8c58a" stroke="#a8743a" stroke-width="2">
+                <circle cx="440" cy="666" r="10" />
+                <circle cx="510" cy="666" r="10" />
+            </g>
+            <rect x="440" y="600" width="110" height="58" rx="4" fill="#7a4022" />
+            <g fill="#c9952a">
+                <rect x="470" y="600" width="8" height="58" />
+                <rect x="510" y="600" width="8" height="58" />
+            </g>
+            <g id="vh-lidshut">
+                <path d="M440 604 q55 -22 110 0z" fill="#8a4a26" />
+                <rect x="488" y="610" width="12" height="14" rx="2" fill="#c9952a" />
+            </g>
+            <g id="vh-lidopen">
+                <path d="M444 600 l-6 -50 q55 -14 110 0 l-6 50z" fill="#8a4a26" stroke="#5a2e14"
+                    stroke-width="2" />
+                <g>
+                    <circle cx="466" cy="598" r="10" fill="#6b4423" />
+                    <path d="M486 600 q8 -18 20 0z" fill="#fff3e0" stroke="#e2b38c" />
+                    <rect x="514" y="588" width="18" height="12" fill="#e2483d" />
+                </g>
+            </g>
+        </g>
+    </g>
+
+    <!-- the garden table: empty, then the larder's things, then the party food -->
+    <g id="vh-table">
+        <g id="vh-cloth">
+            <path d="M1262 708 h186 l8 26 h-202z" fill="#e2483d" />
+            <path
+                d="M1286 708 l-6 26 M1316 708 l-4 26 M1346 708 v26 M1376 708 l4 26 M1406 708 l6 26 M1430 708 l8 26 M1256 720 h196"
+                stroke="#fffaf0" stroke-width="3" />
+        </g>
+        <rect x="1262" y="700" width="186" height="10" fill="#a5743f" />
+        <g fill="#8a5028">
+            <rect x="1276" y="710" width="10" height="80" />
+            <rect x="1424" y="710" width="10" height="80" />
+        </g>
+        <g id="vh-jars">
+            <rect x="1276" y="664" width="22" height="36" rx="4" fill="#f2b34a" opacity=".9" />
+            <rect x="1274" y="660" width="26" height="6" fill="#b5651d" />
+            <rect x="1306" y="652" width="16" height="48" rx="5" fill="#fffaf0" />
+            <rect x="1330" y="676" width="44" height="24" rx="4" fill="#d9c79a" />
+            <circle cx="1388" cy="688" r="13" fill="#e3a54e" />
+            <path d="M1380 684 q8 -6 16 0" stroke="#6b8a3a" stroke-width="3" fill="none" />
+            <ellipse cx="1388" cy="688" rx="9" ry="5" fill="#9fc46a" opacity=".8" />
+            <rect x="1404" y="670" width="20" height="30" rx="4" fill="#c4302b" />
+            <rect x="1402" y="666" width="24" height="6" fill="#fffaf0" />
+            <path d="M1428 694 q8 -20 14 0z" fill="#3f8a4a" />
+        </g>
+        <g id="vh-feast">
+            <ellipse cx="1300" cy="698" rx="26" ry="6" fill="#fffaf0" />
+            <g fill="#d9a25a">
+                <rect x="1282" y="684" width="34" height="10" rx="2" />
+                <rect x="1286" y="676" width="30" height="10" rx="2" />
+            </g>
+            <rect x="1328" y="664" width="22" height="34" rx="4" fill="#f2b34a" />
+            <rect x="1326" y="660" width="26" height="6" fill="#b5651d" />
+            <ellipse cx="1376" cy="696" rx="20" ry="6" fill="#fffaf0" />
+            <g fill="#5a2a3a">
+                <circle cx="1368" cy="690" r="3" />
+                <circle cx="1376" cy="688" r="3" />
+                <circle cx="1384" cy="690" r="3" />
+                <circle cx="1372" cy="694" r="3" />
+            </g>
+            <rect x="1404" y="670" width="20" height="30" rx="4" fill="#c4302b" />
+            <rect x="1402" y="666" width="24" height="6" fill="#fffaf0" />
+        </g>
+    </g>
+
+    <!-- Tommy and Annika (Annika waves) -->
+    <g id="vh-ta">
+        <g fill="#1f3f6a">
+            <rect x="726" y="758" width="9" height="30" />
+            <rect x="739" y="758" width="9" height="30" />
+        </g>
+        <rect x="720" y="714" width="34" height="50" rx="10" fill="#2f5f9a" />
+        <path d="M723 722 L712 752 M751 722 L762 752" stroke="#2f5f9a" stroke-width="8" stroke-linecap="round" />
+        <circle cx="711" cy="756" r="5" fill="#f3c9a4" />
+        <circle cx="763" cy="756" r="5" fill="#f3c9a4" />
+        <circle cx="737" cy="698" r="15" fill="#f3c9a4" />
+        <path d="M722 694 q2 -14 15 -14 q13 0 15 14 q-6 -6 -15 -6 q-9 0 -15 6z" fill="#8a5a2b" />
+        <g fill="#1a120c">
+            <circle cx="732" cy="699" r="1.6" />
+            <circle cx="742" cy="699" r="1.6" />
+        </g>
+        <path d="M732 706 q5 3 10 0" stroke="#9a3a2a" stroke-width="2" fill="none" />
+        <g fill="#f3c9a4">
+            <rect x="788" y="760" width="8" height="28" />
+            <rect x="800" y="760" width="8" height="28" />
+        </g>
+        <path d="M776 764 L798 714 L820 764 Z" fill="#f2a7b8" />
+        <path d="M792 726 L782 752" stroke="#f2a7b8" stroke-width="6" stroke-linecap="round" />
+        <circle cx="781" cy="755" r="4" fill="#f3c9a4" />
+        <path class="vh-wave" d="M814 728 L834 704" stroke="#f3c9a4" stroke-width="6"
+            stroke-linecap="round" />
+        <circle cx="798" cy="700" r="14" fill="#f3c9a4" />
+        <path d="M784 702 q-2 -20 14 -20 q16 0 14 20 q-4 -10 -14 -10 q-10 0 -14 10z" fill="#e9c46a" />
+        <g fill="#1a120c">
+            <circle cx="793" cy="701" r="1.6" />
+            <circle cx="803" cy="701" r="1.6" />
+        </g>
+        <path d="M793 708 q5 3 10 0" stroke="#9a3a2a" stroke-width="2" fill="none" />
+    </g>
+
+    <!-- Pippi, carrying the horse over her head (it won't put a hoof in the wet grass) -->
+    <g id="vh-held">
+        <g class="vh-wobble">
+            <g transform="translate(1094 575)">
+                <use href="#vhHorseShape" />
+            </g>
+        </g>
+    </g>
+    <g id="vh-pippi">
+        <rect x="1146" y="748" width="9" height="40" fill="#8a5028" />
+        <rect x="1160" y="748" width="9" height="40" fill="#1a1a1a" />
+        <g fill="#1a1a1a">
+            <rect x="1132" y="786" width="26" height="10" rx="4" />
+            <rect x="1156" y="786" width="26" height="10" rx="4" />
+        </g>
+        <path d="M1136 752 Q1138 704 1158 698 Q1178 704 1180 752 Z" fill="#3f8a4a" />
+        <path d="M1150 740 l4 4 M1166 728 l-4 4" stroke="#f2c94c" stroke-width="3" />
+        <g id="vh-armsup" stroke="#f3c9a4" stroke-width="7" stroke-linecap="round">
+            <path d="M1144 712 L1130 640" />
+            <path d="M1172 712 L1186 640" />
+        </g>
+        <g id="vh-armsdown" stroke="#f3c9a4" stroke-width="7" stroke-linecap="round">
+            <path d="M1142 714 L1124 744" />
+            <path d="M1174 714 L1196 690" />
+        </g>
+        <circle cx="1158" cy="684" r="14" fill="#f3c9a4" />
+        <path d="M1144 680 q2 -16 14 -16 q12 0 14 16 q-6 -6 -14 -6 q-8 0 -14 6z" fill="#e8571f" />
+        <path class="vh-plait l" d="M1146 684 L1124 674" stroke="#e8571f" stroke-width="6"
+            stroke-linecap="round" />
+        <path class="vh-plait r" d="M1170 684 L1192 674" stroke="#e8571f" stroke-width="6"
+            stroke-linecap="round" />
+        <g fill="#1a120c">
+            <circle cx="1154" cy="685" r="1.6" />
+            <circle cx="1162" cy="685" r="1.6" />
+        </g>
+        <path d="M1152 692 q6 4 12 0" stroke="#9a3a2a" stroke-width="2" fill="none" />
+        <g fill="#d9824a">
+            <circle cx="1150" cy="689" r="1" />
+            <circle cx="1166" cy="689" r="1" />
+            <circle cx="1153" cy="691" r="1" />
+        </g>
+    </g>
+
+    <!-- the April shower, in front of everything -->
+    <g id="vh-rain" data-in="vis-slow-in" data-out="vis-slow-out" stroke="#e6eef6" stroke-width="2"
+        opacity=".7" pointer-events="none">
+        <g class="vh-drops">
+            <path
+                d="M40 0 l-10 40 M160 60 l-10 40 M280 20 l-10 40 M400 90 l-10 40 M520 10 l-10 40 M640 70 l-10 40 M760 30 l-10 40 M880 100 l-10 40 M1000 0 l-10 40 M1120 60 l-10 40 M1240 20 l-10 40 M1360 80 l-10 40 M1480 10 l-10 40 M1580 70 l-10 40 M100 220 l-10 40 M340 260 l-10 40 M580 220 l-10 40 M820 280 l-10 40 M1060 230 l-10 40 M1300 270 l-10 40 M1540 240 l-10 40 M220 420 l-10 40 M460 460 l-10 40 M700 420 l-10 40 M940 480 l-10 40 M1180 430 l-10 40 M1420 470 l-10 40 M140 640 l-10 40 M380 680 l-10 40 M620 640 l-10 40 M860 700 l-10 40 M1100 650 l-10 40 M1340 690 l-10 40 M1560 660 l-10 40" />
+        </g>
+    </g>
+    <!-- evening falls on the welcome-home party -->
+    <rect id="vh-dusk" data-in="vis-slow-in" data-out="vis-slow-out" width="1600" height="900"
+        fill="#3a2a5a" opacity=".28" pointer-events="none" />
+    <!-- lanterns in the old oak and on the veranda for the party, lit at the end -->
+    <g id="vh-lanterns" pointer-events="none">
+        <g class="vh-glow">
+            <circle cx="560" cy="400" r="30" fill="url(#vhLampG)" />
+            <circle cx="700" cy="410" r="30" fill="url(#vhLampG)" />
+            <circle cx="820" cy="380" r="30" fill="url(#vhLampG)" />
+            <circle cx="420" cy="440" r="30" fill="url(#vhLampG)" />
+            <circle cx="520" cy="436" r="30" fill="url(#vhLampG)" />
+        </g>
+        <path d="M560 360 v28 M700 370 v28 M820 340 v28" stroke="#3a2a1a" stroke-width="2" />
+        <g>
+            <ellipse cx="560" cy="400" rx="12" ry="14" fill="#e8571f" />
+            <ellipse cx="700" cy="410" rx="12" ry="14" fill="#f2c94c" />
+            <ellipse cx="820" cy="380" rx="12" ry="14" fill="#c4302b" />
+            <ellipse cx="420" cy="440" rx="10" ry="12" fill="#f2c94c" />
+            <ellipse cx="520" cy="436" rx="10" ry="12" fill="#e8571f" />
+        </g>
+    </g>
+    <rect width="1600" height="900" fill="url(#vhVign)" pointer-events="none" />
+
+    <!-- the hotspots -->
+    <g class="hits">
+        <rect class="hit" fill="transparent" data-hs="sky10" data-label="The sky" x="0" y="0"
+            width="1600" height="200" />
+        <rect class="hit" fill="transparent" data-hs="nextdoor10"
+            data-label="Tommy and Annika's house" x="1170" y="300" width="180" height="170" />
+        <rect class="hit" fill="transparent" data-hs="saab10" data-label="A little car" x="1448"
+            y="420" width="110" height="54" />
+        <rect class="hit" fill="transparent" data-hs="house10" data-label="Villa Villekulla" x="20"
+            y="110" width="400" height="200" />
+        <rect class="hit" fill="transparent" data-hs="window10" data-label="Kitchen window" x="64"
+            y="314" width="132" height="112" />
+        <rect class="hit" fill="transparent" data-hs="door10" data-label="Front door" x="456" y="440"
+            width="70" height="120" />
+        <rect class="hit" fill="transparent" data-hs="straw10" data-label="The horse's straw" x="270"
+            y="500" width="176" height="64" />
+        <rect class="hit" fill="transparent" data-hs="horse10" data-label="The horse" x="276" y="448"
+            width="164" height="112" id="hit-horse10b" />
+        <rect class="hit" fill="transparent" data-hs="oak10" data-label="The old oak" x="480" y="150"
+            width="440" height="290" />
+        <rect class="hit" fill="transparent" data-hs="oak10" data-label="The old oak" x="640" y="440"
+            width="80" height="210" />
+        <rect class="hit" fill="transparent" data-hs="gate10" data-label="Garden gate" x="1456"
+            y="476" width="90" height="80" />
+        <rect class="hit" fill="transparent" data-hs="post10" data-label="Post box" x="1384" y="450"
+            width="62" height="114" />
+        <rect class="hit" fill="transparent" data-hs="barrel10" data-label="Rain barrel" x="10"
+            y="584" width="104" height="120" />
+        <rect class="hit" fill="transparent" data-hs="nilsson10" data-label="Mr Nilsson" x="64"
+            y="526" width="62" height="66" />
+        <rect class="hit" fill="transparent" data-hs="bush10" data-label="The lilac bush" x="140"
+            y="590" width="170" height="124" />
+        <rect class="hit" fill="transparent" data-hs="chest10" data-label="Pippi's sea chest"
+            x="1446" y="560" width="154" height="140" id="hit-chest10a" />
+        <rect class="hit" fill="transparent" data-hs="spunk10" data-label="Jam jar" x="1562" y="598"
+            width="38" height="44" id="hit-spunk10" />
+        <rect class="hit" fill="transparent" data-hs="chest10" data-label="Pippi's sea chest" x="312"
+            y="576" width="132" height="138" id="hit-chest10b" />
+        <rect class="hit" fill="transparent" data-hs="branch10" data-label="The fallen branch"
+            x="860" y="570" width="250" height="150" id="hit-branch10" />
+        <rect class="hit" fill="transparent" data-hs="kids10" data-label="Tommy and Annika" x="710"
+            y="676" width="134" height="124" />
+        <rect class="hit" fill="transparent" data-hs="table10" data-label="Garden table" x="1250"
+            y="650" width="206" height="146" />
+        <rect class="hit" fill="transparent" data-hs="horse10" data-label="The horse" x="1086"
+            y="556" width="160" height="92" id="hit-horse10a" />
+        <rect class="hit" fill="transparent" data-hs="pippi10" data-label="Pippi" x="1118" y="648"
+            width="92" height="152" />
+    </g>
+</svg>

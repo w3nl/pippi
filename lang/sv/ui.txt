@@ -27,8 +27,8 @@
 > Villa Villekulla · en liten stad i Sverige · klockan fyra
 = You came to play at Pippi's house. Pippi has gone to town for sweets, and Mr Nilsson, her monkey, has locked the front door and run off with the key. Tommy and Annika are waiting outside. Get out!
 > Du har kommit för att leka hos Pippi. Pippi har gått till stan för att köpa godis, och Herr Nilsson, hennes apa, har låst ytterdörren och sprungit iväg med nyckeln. Tommy och Annika väntar utanför. Ta dig ut!
-= Click around the kitchen, read everything, and use the things you find. Stuck? Ask for a hint, or ask the spunk. Nobody knows what a spunk is, but it's very wise.
-> Klicka runt i köket, läs allt och använd sakerna du hittar. Kör du fast? Be om en ledtråd, eller fråga spunken. Ingen vet vad en spunk är, men den är väldigt klok.
+= Click around, read everything, and use the things you find. Stuck? Ask for a hint, or ask the spunk. Nobody knows what a spunk is, but it's very wise.
+> Klicka runt överallt, läs allt och använd sakerna du hittar. Kör du fast? Be om en ledtråd, eller fråga spunken. Ingen vet vad en spunk är, men den är väldigt klok.
 = New game
 > Nytt spel
 = Continue
@@ -293,8 +293,8 @@
 > Föreställning! · kapitel 5 klart
 = Bravo
 > Bravo
-= Pippi lifted the strongman, and the circus wants her to stay. Next: a ship sails into the harbour, and her captain has a red beard…
-> Pippi lyfte starke mannen, och cirkusen vill att hon stannar. Härnäst: ett skepp seglar in i hamnen, och kaptenen har rött skägg…
+= Pippi lifted the strongman, and the circus wants her to stay. Next: the ringmaster has a thank-you present for Pippi. It is very big, very round, and it flies…
+> Pippi lyfte starke mannen, och cirkusen vill att hon stannar. Härnäst: direktören har en tackpresent till Pippi. Den är väldigt stor, väldigt rund, och den flyger…
 = Pippi goes to the circus
 > Pippi på cirkus
 = Chapter 5: Pippi goes to the circus
@@ -314,23 +314,23 @@
 = Take your time. School's out, and the classroom is all yours. Mr Nilsson is finishing the cake. When you're ready, the classroom door leads on to Chapter {n}.
 > Ta den tid du behöver. Skolan är slut, och klassrummet är ditt. Herr Nilsson äter upp tårtan. När du är redo leder klassrumsdörren vidare till kapitel {n}.
 = Take your time. The show goes on: the horse is still trotting round the ring, and the confetti keeps coming. When you're ready, the curtain leads on to Chapter {n}.
-> Ta den tid du behöver. Föreställningen fortsätter: hästen travar fortfarande runt i manegen, och konfettin bara fortsätter att falla. När du är redo leder ridån vidare till kapitel {n}.
+> Ta den tid du behöver. Föreställningen fortsätter: Lilla Gubben travar fortfarande runt i manegen, och konfettin bara fortsätter att falla. När du är redo leder ridån vidare till kapitel {n}.
 
 # ---------- Chapter 6: menus, end screen, speakers ----------
 = Curtain: on to Chapter {n}
 > Ridå: vidare till kapitel {n}
 = Continue to Chapter 5
 > Vidare till kapitel 5
-= Land ho · Chapter 6 complete
-> Land i sikte · kapitel 6 klart
+= Land ho · Chapter 7 complete
+> Land i sikte · kapitel 7 klart
 = Land ho
 > Land i sikte
 = On board the Hoppetossa
 > Ombord på Hoppetossa
-= Chapter 6: On board the Hoppetossa
-> Kapitel 6: Ombord på Hoppetossa
-= Chapter 6 · On Board the Hoppetossa
-> Kapitel 6 · Ombord på Hoppetossa
+= Chapter 7: On board the Hoppetossa
+> Kapitel 7: Ombord på Hoppetossa
+= Chapter 7 · On Board the Hoppetossa
+> Kapitel 7 · Ombord på Hoppetossa
 = Tasted the sea
 > Smakade på havet
 = A horse, very close up
@@ -375,18 +375,18 @@
 > Hoppetossa har kommit fram till kapten Långstrumps ö. Nästa gång: en hel dag på ön, med en nedgrävd överraskning till Pippi…
 = Continue to Chapter 7
 > Vidare till kapitel 7
-= Goodnight, turtles · Chapter 7 complete
-> God natt, sköldpaddor · kapitel 7 klart
+= Goodnight, turtles · Chapter 8 complete
+> God natt, sköldpaddor · kapitel 8 klart
 = Hooray
 > Hurra
-= Treasure, thunder and turtles: what a day on Captain Longstocking's island. Next: home again to Villa Villekulla… Chapter 8 is still being written.
-> Skatt, åska och sköldpaddor: vilken dag på kapten Långstrumps ö. Nästa gång: hem igen till Villa Villekulla… Kapitel 8 skrivs fortfarande.
+= Treasure, thunder and turtles: what a day on Captain Longstocking's island. Next: the long voyage home, through a storm and a night full of lighthouses…
+> Skatt, åska och sköldpaddor: vilken dag på kapten Långstrumps ö. Nästa gång: den långa resan hem, genom en storm och en natt full av fyrar…
 = The South Sea island
 > Ön i Söderhavet
-= Chapter 7: The South Sea island
-> Kapitel 7: Ön i Söderhavet
-= Chapter 7 · The South Sea Island
-> Kapitel 7 · Ön i Söderhavet
+= Chapter 8: The South Sea island
+> Kapitel 8: Ön i Söderhavet
+= Chapter 8 · The South Sea Island
+> Kapitel 8 · Ön i Söderhavet
 = Bonked by a coconut
 > Bonk, en kokosnöt
 = Soaked to the skin
@@ -401,8 +401,8 @@
 > Tillbaka på ön. Kungen snarkar fortfarande i sin hängmatta.
 = Take your time. The Hoppetossa is anchored in the lagoon, the palm trees are swaying, and Pippi is already up a coconut tree. When you're ready, go ashore: click the island to go on to Chapter {n}.
 > Ta god tid på dig. Hoppetossa ligger för ankar i lagunen, palmerna vajar, och Pippi sitter redan uppe i en kokospalm. När du är redo går du i land: klicka på ön för att gå vidare till kapitel {n}.
-= Take your time. The feast goes on behind the hut, the moon shines on the lagoon, and somewhere out there, twenty-five little turtles are swimming.
-> Ta god tid på dig. Festen fortsätter bakom hyddan, månen lyser på lagunen, och någonstans där ute simmar tjugofem små sköldpaddor.
+= Take your time. The feast goes on behind the hut, the moon shines on the lagoon, and somewhere out there, twenty-five little turtles are swimming. When you're ready, the Hoppetossa will sail you home: click her to go on to Chapter {n}.
+> Ta god tid på dig. Festen fortsätter bakom hyddan, månen lyser på lagunen, och någonstans där ute simmar tjugofem små sköldpaddor. När du är redo seglar Hoppetossa hem dig: klicka på skeppet för att gå vidare till kapitel {n}.
 = The parrot
 > Papegojan
 = Turtle Islet is still cut off by the water. Wait for low tide.
@@ -425,3 +425,57 @@
 > Gräv upp mig sen, sjöman. Zzz.
 = You dig a little hole. Nothing in it but sand and an offended crab. The X is somewhere else.
 > Du gräver en liten grop. Där finns bara sand och en förolämpad krabba. Krysset är någon annanstans.
+
+# ---------- Chapter 8: menus, end screen, speakers, item uses ----------
+= The Hoppetossa: on to Chapter {n}
+> Hoppetossa: vidare till kapitel {n}
+= Continue to Chapter 8
+> Vidare till kapitel 8
+= Home sweet home · Chapter 10 complete
+> Borta bra men hemma bäst · kapitel 10 klart
+= Welcome home
+> Välkommen hem
+= The horse is on its veranda, the hedgehog is under the lilac, and the whole town is at the party. More adventures are still being written…
+> Lilla Gubben står på sin veranda, igelkotten bor under syrenen, och hela staden är på festen. Fler äventyr skrivs fortfarande…
+= Home again
+> Hemma igen
+= Chapter 10: Home again
+> Kapitel 10: Hemma igen
+= Chapter 10 · Home Again
+> Kapitel 10 · Hemma igen
+= Villa Villekulla · spring
+> Villa Villekulla · vår
+= Read all the post
+> Läste all post
+= A very furry pancake
+> En väldigt luden pannkaka
+= Looked for the pot of gold
+> Letade efter guldkrukan
+= Back home. The rainbow is still over the roof, and something is snuffling on the veranda.
+> Hemma igen. Regnbågen syns fortfarande över taket, och något nosar på verandan.
+= Back at Villa Villekulla. The party table is waiting in the garden.
+> Tillbaka i Villa Villekulla. Festbordet väntar i trädgården.
+= Back at Villa Villekulla. Pippi is still holding the horse over her head.
+> Tillbaka i Villa Villekulla. Pippi håller fortfarande Lilla Gubben över huvudet.
+= Take your time. The party goes on under the lanterns in the old oak, the horse is dozing on its veranda, and the hedgehog is eating its supper under the lilac.
+> Ta god tid på dig. Festen fortsätter under lyktorna i den gamla eken, Lilla Gubben slumrar på sin veranda, och igelkotten äter sin kvällsmat under syrenen.
+= There's nothing left down there that a magnet likes.
+> Det finns inget kvar där nere som en magnet tycker om.
+= You hold the magnet next to Mr Nilsson. Nothing happens: his trouser buttons are made of brass, and brass isn't magnetic.
+> Du håller magneten bredvid Herr Nilsson. Ingenting händer: hans byxknappar är av mässing, och mässing är inte magnetiskt.
+= CLANK! The magnet jumps onto the iron hinge of the gate and sticks. It takes both hands to pull it off again.
+> KLONK! Magneten hoppar upp på grindens järngångjärn och fastnar. Du behöver båda händerna för att dra loss den.
+= The magnet sticks to the iron lock. But it doesn't unlock anything. You need the key, and the key is in the rain barrel.
+> Magneten fastnar på järnlåset. Men den låser inte upp något. Du behöver nyckeln, och nyckeln ligger i regntunnan.
+= Nothing sticks to me. I'm made of muscles, freckles and pancakes.
+> Ingenting fastnar på mig. Jag är gjord av muskler, fräknar och pannkakor.
+= A magnet pulls things made of iron or steel. Somewhere around here, an iron key is hiding.
+> En magnet drar i saker av järn eller stål. Någonstans här gömmer sig en järnnyckel.
+= Mr Nilsson reaches for the key. Not this time: you hold on tight.
+> Herr Nilsson sträcker sig efter nyckeln. Inte den här gången: du håller hårt i den.
+= Click! The front door of Villa Villekulla swings open. Inside it smells of dust, old pancakes and home.
+> Klick! Ytterdörren till Villa Villekulla svänger upp. Där inne luktar det damm, gamla pannkakor och hemma.
+= Let's get the party food out of the larder!
+> Nu hämtar vi festmaten ur skafferiet!
+= Tommy and Annika carry everything from Pippi's larder out to the garden table.
+> Tommy och Annika bär ut allt ur Pippis skafferi till trädgårdsbordet.
