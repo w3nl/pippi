@@ -6,7 +6,8 @@ const ALL = ['-ch2', '-ch3', '-ch4', '-ch5', '-ch6', '-ch7', '-ch8', '-ch9', '-c
 test('the animals in every room react when you click them', async ({ page }) => {
   await seed(page, null, ALL);
   await expect(page.locator('#title')).not.toHaveClass(/loading/);
-  const rooms = [['startCh5', 'seal', 'Ork! Ork!'], ['startCh6', 'geese6', 'Honk honk!'], ['startCh6', 'birds6', 'Tweet tweet!'],
+  const rooms = [['startNew', 'kids1', 'Hello!'], ['startCh2', 'owl2', 'Hoo-hoo!'], ['startCh3', 'horse3', 'Pfrrrr!'],
+    ['startCh5', 'seal', 'Ork! Ork!'], ['startCh6', 'geese6', 'Honk honk!'], ['startCh6', 'birds6', 'Tweet tweet!'],
     ['startCh7', 'gulls7', 'Kee-ow!'], ['startCh8', 'parrot8', 'Squawk!'], ['startCh8', 'crab8', 'Snip snap!'], ['startCh9', 'gulls9', 'Kee-ow!'],
     ['startCh10', 'swallows10', 'Tswit tswit!'], ['startCh10', 'bee10', 'Bzzzz!'], ['startCh10', 'bfly10', 'Flutter!']];
   for (const [start, id, word] of rooms) {

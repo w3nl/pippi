@@ -178,7 +178,7 @@ function openLift6(){
     ];
     const ask = () => {
       const q = Q[st.r];
-      $('#lift6-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost lf6" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      $('#lift6-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns mix">${q.opts.map((o, i) => `<button type="button" class="btn ghost lf6" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#lift6-q'));
       document.querySelectorAll('.lf6').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }
@@ -225,7 +225,7 @@ function openWinds6(){
     const ask = () => {
       $('#winds6-q').hidden = false;
       const opts = ['By going up or down, to find a wind that blows the right way', 'With a steering wheel', 'By flapping the sandbags'];
-      $('#winds6-q').innerHTML = `<p><b>${tx('So how does a balloon pilot steer?')}</b></p><div class="row-btns">${opts.map((o, i) => `<button type="button" class="btn ghost wq6" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      $('#winds6-q').innerHTML = `<p><b>${tx('So how does a balloon pilot steer?')}</b></p><div class="row-btns mix">${opts.map((o, i) => `<button type="button" class="btn ghost wq6" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#winds6-q'));
       document.querySelectorAll('.wq6').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== 0){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(i === 1 ? 'Balloons have no steering wheel. Pippi checked twice.' : 'The sandbags flap. The balloon carries on exactly where the wind takes it.'); return; }
@@ -308,7 +308,7 @@ function openChute6(){
     ];
     const ask = () => {
       const q = Q[st.r];
-      $('#chute6-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost ch6b" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      $('#chute6-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns mix">${q.opts.map((o, i) => `<button type="button" class="btn ghost ch6b" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#chute6-q'));
       document.querySelectorAll('.ch6b').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }
@@ -342,7 +342,7 @@ function openCloud6(){
     ];
     const ask = () => {
       const q = Q[st.r];
-      $('#cloud6-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost cl6" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      $('#cloud6-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns mix">${q.opts.map((o, i) => `<button type="button" class="btn ghost cl6" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#cloud6-q'));
       document.querySelectorAll('.cl6').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }
@@ -389,7 +389,7 @@ function openVane6(){
         return;
       }
       const opts = ['A west wind', 'An east wind', 'A Pippi wind'];
-      $('#vane6-q').innerHTML = `<p><b>${tx('The wind comes from the west. What do we call it?')}</b></p><div class="row-btns">${opts.map((o, i) => `<button type="button" class="btn ghost vq6" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      $('#vane6-q').innerHTML = `<p><b>${tx('The wind comes from the west. What do we call it?')}</b></p><div class="row-btns mix">${opts.map((o, i) => `<button type="button" class="btn ghost vq6" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#vane6-q'));
       document.querySelectorAll('.vq6').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== 0){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(i === 1 ? 'It blows TOWARDS the east, but a wind is always named after where it comes FROM.' : 'Only when Pippi sneezes.'); return; }

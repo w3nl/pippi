@@ -66,6 +66,8 @@
 @keyframes dangle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
 @keyframes tablink{0%,49%{fill:#fff3c4}50%,100%{fill:#4a4a5a}}
 #br-window .tw{animation:tw 3s ease-in-out infinite}
+@keyframes brBlink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+#br-owl .br-owleyes{transform-box:fill-box;transform-origin:50% 50%;animation:brBlink 4s ease-in-out infinite}
 #br-window .glow{animation:glow 5s ease-in-out infinite}
 .shoot{animation:shoot 17s linear infinite;opacity:0}
 #br-thieves.sneak{animation:sneak 7s ease-in-out infinite}

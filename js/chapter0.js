@@ -169,7 +169,7 @@ function openGate0(){
     ];
     const ask = () => {
       const q = Q[st.r];
-      $('#gate0-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost gt0" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      $('#gate0-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns mix">${q.opts.map((o, i) => `<button type="button" class="btn ghost gt0" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#gate0-q'));
       document.querySelectorAll('.gt0').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }
@@ -202,7 +202,7 @@ function openPump0(){
     ];
     const ask = () => {
       const q = Q[st.r];
-      $('#pump0-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost pm0" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      $('#pump0-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns mix">${q.opts.map((o, i) => `<button type="button" class="btn ghost pm0" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#pump0-q'));
       document.querySelectorAll('.pm0').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }
@@ -228,14 +228,14 @@ function openVeranda0(){
     <div class="feedback" id="vrd0-fb"></div>`, () => {
     const fb = $('#vrd0-fb');
     const Q = [
-      { ask: 'How heavy is a horse?', opts: ['About 40 kg, like a big dog', 'About 400 kg', 'About 4000 kg, like an elephant'], ok: 1,
+      { ask: 'How heavy is a horse?', opts: ['About 40 kg, like a big dog', 'About 400 kg', 'About 4000 kg, like an elephant'], ok: 1, fixed: true,
         no: ['40 kg is a big dog, or Tommy with his school bag. A horse is a LOT bigger.', '', "4000 kg is an elephant! This is a horse. Pippi could lift it anyway, but the veranda couldn't hold it."] },
       { ask: 'Pippi weighs 30 kg. Can she sit on the horse on the veranda?', opts: ['Yes: 400 + 30 = 430 kg, less than 500', 'No: that makes 700 kg', 'Only if Mr Nilsson gets off first'], ok: 0,
         no: ['', "400 + 30 isn't 700. Add them up again.", 'Mr Nilsson weighs about as much as a bag of potatoes. 430 kg is fine, with or without him.'] }
     ];
     const ask = () => {
       const q = Q[st.r];
-      $('#vrd0-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost vr0" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      $('#vrd0-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns${q.fixed ? '' : ' mix'}">${q.opts.map((o, i) => `<button type="button" class="btn ghost vr0" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#vrd0-q'));
       document.querySelectorAll('.vr0').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }

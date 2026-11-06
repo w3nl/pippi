@@ -274,7 +274,7 @@ function openFort4(){
 function openSteps4(){
   openModal('The icy steps', 'The horse can\'t get down', `
     <p class="flag-p">${tx('The veranda steps are covered in smooth, hard ice, and the horse slides on every step. Pippi\'s kitchen has a kettle of warm water, a bag of sugar, a box of salt, and outside there\'s plenty of snow. What do you put on the steps?')}</p>
-    <div class="hands">${[['water', 'Warm water from the kettle'], ['sugar', 'Sugar'], ['salt', 'Salt'], ['snow', 'More snow']].map(([k, l]) => `<button type="button" class="hand" data-i="${k}">${tx(l)}</button>`).join('')}</div>
+    <div class="hands mix">${[['water', 'Warm water from the kettle'], ['sugar', 'Sugar'], ['salt', 'Salt'], ['snow', 'More snow']].map(([k, l]) => `<button type="button" class="hand" data-i="${k}">${tx(l)}</button>`).join('')}</div>
     <div class="feedback" id="wt-sfb"></div>`, () => {
     document.querySelectorAll('.hand[data-i]').forEach(b => b.onclick = () => {
       const k = b.dataset.i, fb = $('#wt-sfb');
@@ -300,7 +300,7 @@ function openWarm4(){
     : ['Now her hands. Annika\'s fingers are like icicles. What keeps hands warmest?', [['gloves', 'Gloves, with a finger for every finger'], ['mittens', 'Mittens'], ['socks', 'Pippi\'s socks (one has a hole)']]];
   openModal('Keeping Annika warm', round === 0 ? 'Pippi\'s wardrobe' : 'And her hands?', `
     <p class="flag-p">${tx(q[0])}</p>
-    <div class="hands">${q[1].map(([k, l]) => `<button type="button" class="hand" data-w="${k}">${tx(l)}</button>`).join('')}</div>
+    <div class="hands mix">${q[1].map(([k, l]) => `<button type="button" class="hand" data-w="${k}">${tx(l)}</button>`).join('')}</div>
     <div class="feedback" id="wt-wfb"></div>`, () => {
     document.querySelectorAll('.hand[data-w]').forEach(b => b.onclick = () => {
       const k = b.dataset.w, fb = $('#wt-wfb');

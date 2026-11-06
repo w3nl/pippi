@@ -205,7 +205,7 @@ function openRoll10(){
   openModal("Pippi's sea chest", 'From the cart to the veranda', `
     <p class="flag-p">${tx("The sea chest weighs 80 kilos. Pippi's hands are full of horse, so it's up to you, Tommy and Annika. Together you can pull as hard as 20 kilos. Try it: the meter shows how hard you'd have to pull.")}</p>
     <svg class="roll10-svg" translate="no" viewBox="0 0 320 120" aria-hidden="true" id="roll10-svg"></svg>
-    <div class="row-btns" id="roll10-opts">${ROLL10.map((o, i) => `<button type="button" class="btn ghost ro10" data-i="${i}">${tx(o.name)}</button>`).join('')}</div>
+    <div class="row-btns mix" id="roll10-opts">${ROLL10.map((o, i) => `<button type="button" class="btn ghost ro10" data-i="${i}">${tx(o.name)}</button>`).join('')}</div>
     <div id="roll10-q" hidden></div>
     <div class="feedback" id="roll10-fb"></div>`, () => {
     const fb = $('#roll10-fb');
@@ -224,7 +224,7 @@ function openRoll10(){
     const ask = () => {
       $('#roll10-q').hidden = false;
       const opts = ['When something slides, it rubs against the ground. Rolling hardly rubs at all.', 'The logs make the chest lighter.', 'Logs like rolling.'];
-      $('#roll10-q').innerHTML = `<p><b>${tx('Only 5 kilos! But why is rolling so much easier than dragging?')}</b></p><div class="row-btns">${opts.map((o, i) => `<button type="button" class="btn ghost rq10" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      $('#roll10-q').innerHTML = `<p><b>${tx('Only 5 kilos! But why is rolling so much easier than dragging?')}</b></p><div class="row-btns mix">${opts.map((o, i) => `<button type="button" class="btn ghost rq10" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#roll10-q'));
       document.querySelectorAll('.rq10').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== 0){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(i === 1 ? "The chest still weighs 80 kilos. It's the rubbing that changes, not the weight." : 'Pippi agrees. But try rolling a square log…'); return; }
@@ -333,7 +333,7 @@ function openRainbow10(){
       const q = st.r === 0
         ? { ask: '<b>Which way should everybody look to see the rainbow?</b>', opts: DIRS10.map(([, n]) => tx('Look {dir}', { dir: tx(n) })), ok: 1 }
         : { ask: '<b>And what is a rainbow made of?</b>', opts: ['Sunlight, split into its colours by the raindrops', 'Coloured raindrops', 'Paint, washed out of the sky by the rain'].map(o => tx(o)), ok: 0 };
-      $('#rbw10-q').innerHTML = `<p>${tx(q.ask)}</p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost rb10" data-i="${i}">${o}</button>`).join('')}</div>`;
+      $('#rbw10-q').innerHTML = `<p>${tx(q.ask)}</p><div class="row-btns${st.r ? ' mix' : ''}">${q.opts.map((o, i) => `<button type="button" class="btn ghost rb10" data-i="${i}">${o}</button>`).join('')}</div>`; mixIn($('#rbw10-q'));
       document.querySelectorAll('.rb10').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== q.ok){ nope(); fb.className = 'feedback bad';
@@ -370,7 +370,7 @@ function openHog10(){
     ];
     const ask = () => {
       const q = Q[st.r];
-      $('#hog10-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost hg10" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      $('#hog10-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns mix">${q.opts.map((o, i) => `<button type="button" class="btn ghost hg10" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#hog10-q'));
       document.querySelectorAll('.hg10').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }

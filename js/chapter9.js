@@ -172,7 +172,7 @@ function openSeason9(){
     ];
     const ask = () => {
       const q = Q[st.r];
-      $('#season9-q').innerHTML = `<p>${tx(q.ask)}</p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost ss9" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      $('#season9-q').innerHTML = `<p>${tx(q.ask)}</p><div class="row-btns${st.r ? ' mix' : ''}">${q.opts.map((o, i) => `<button type="button" class="btn ghost ss9" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#season9-q'));
       document.querySelectorAll('.ss9').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }
@@ -200,7 +200,7 @@ function openBottle9(){
   openModal('A message in a bottle', "The captain's chart of the ocean currents", `
     <svg class="bottle9-svg" translate="no" viewBox="0 0 340 260" aria-hidden="true" id="bottle9-svg"></svg>
     <p id="bottle9-ask"></p>
-    <div class="row-btns" id="bottle9-opts" hidden>${['Ocean currents: huge rivers of water that flow through the sea', 'The fish pass it along', 'It swims, if you shake it first'].map((o, i) => `<button type="button" class="btn ghost bt9" data-i="${i}">${tx(o)}</button>`).join('')}</div>
+    <div class="row-btns mix" id="bottle9-opts" hidden>${['Ocean currents: huge rivers of water that flow through the sea', 'The fish pass it along', 'It swims, if you shake it first'].map((o, i) => `<button type="button" class="btn ghost bt9" data-i="${i}">${tx(o)}</button>`).join('')}</div>
     <div class="feedback" id="bottle9-fb"></div>`, () => {
     const fb = $('#bottle9-fb');
     const arrow = (d) => `<path d="${d}" stroke="#2f5f9a" stroke-width="3" fill="none" marker-end="url(#bt9-arr)" stroke-dasharray="7 5"/>`;
@@ -264,7 +264,7 @@ function openStorm9(){
     const ask = () => {
       draw();
       const q = Q[st.r];
-      $('#storm9-q').innerHTML = `<p>${tx(q.ask)}</p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost sm9" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      $('#storm9-q').innerHTML = `<p>${tx(q.ask)}</p><div class="row-btns mix">${q.opts.map((o, i) => `<button type="button" class="btn ghost sm9" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#storm9-q'));
       document.querySelectorAll('.sm9').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }
@@ -297,7 +297,7 @@ function openSwallows9(){
     ];
     const ask = () => {
       const q = Q[st.r];
-      $('#swallow9-q').innerHTML = `<p>${tx(q.ask)}</p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost sw9" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      $('#swallow9-q').innerHTML = `<p>${tx(q.ask)}</p><div class="row-btns mix">${q.opts.map((o, i) => `<button type="button" class="btn ghost sw9" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#swallow9-q'));
       document.querySelectorAll('.sw9').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }
@@ -327,7 +327,8 @@ function openLights9(){
     const fb = $('#lights9-fb');
     const ask = () => {
       $('#lights9-q').innerHTML = st.r === 0 ? `<p>${tx('You watch the three lighthouses for 30 seconds. <b>Which one is ours?</b> Click A, B or C.')}</p>`
-        : `<p><b>${tx('Why does every lighthouse flash differently?')}</b></p><div class="row-btns">${['So that sailors know which lighthouse it is, even in the dark', 'To save oil', 'Lighthouse keepers like to dance'].map((o, i) => `<button type="button" class="btn ghost lq9" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+        : `<p><b>${tx('Why does every lighthouse flash differently?')}</b></p><div class="row-btns mix">${['So that sailors know which lighthouse it is, even in the dark', 'To save oil', 'Lighthouse keepers like to dance'].map((o, i) => `<button type="button" class="btn ghost lq9" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      mixIn($('#lights9-q'));
       document.querySelectorAll('.lq9').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== 0){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(['', "A dark lighthouse saves oil, but then nobody would see it. That's not why.", "They might. But the flashing is for the sailors."][i]); return; }
@@ -372,8 +373,9 @@ function openBuoys9(){
     const ask = () => {
       draw();
       $('#buoys9-q').innerHTML = st.r === 0
-        ? `<p>${tx('<b>Sailing INTO the harbour, which side do you keep the red buoys on?</b>')}</p><div class="row-btns">${['On your left (port), like the red lamp on the left side of a ship', 'On your right (starboard)', "Either side, as long as you're quick"].map((o, i) => `<button type="button" class="btn ghost by9" data-i="${i}">${tx(o)}</button>`).join('')}</div>`
+        ? `<p>${tx('<b>Sailing INTO the harbour, which side do you keep the red buoys on?</b>')}</p><div class="row-btns mix">${['On your left (port), like the red lamp on the left side of a ship', 'On your right (starboard)', "Either side, as long as you're quick"].map((o, i) => `<button type="button" class="btn ghost by9" data-i="${i}">${tx(o)}</button>`).join('')}</div>`
         : `<p>${tx('<b>Which way in is safe?</b>')}</p><div class="row-btns">${routes.map((r, i) => `<button type="button" class="btn ghost by9" data-i="${i}">${tx('Route {k}', { k: r.k })}</button>`).join('')}</div>`;
+      mixIn($('#buoys9-q'));
       document.querySelectorAll('.by9').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(st.r === 0){

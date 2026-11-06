@@ -227,10 +227,19 @@ document.querySelectorAll('.hit').forEach(h => { h.setAttribute('tabindex','0');
   h.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' '){ e.preventDefault(); e.stopPropagation(); h.dispatchEvent(new MouseEvent('click',{bubbles:true})); } }); });
 
 /* ---------- modal ---------- */
+/* Answer buttons inside a .mix element come in a random order, so the right one isn't always in the same place. */
+function mixIn(root){
+  root.querySelectorAll('.mix').forEach(box => {
+    const kids = [...box.children];
+    for(let i = kids.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [kids[i], kids[j]] = [kids[j], kids[i]]; }
+    kids.forEach(k => box.appendChild(k));
+  });
+}
 let modalClose = null;
 function openModal(title, sub, html, onOpen, onClose){
   $('#m-title').textContent = title; $('#m-sub').textContent = sub || '';
   $('#m-body').innerHTML = html; $('#modal').hidden = false; tip.hidden = true;
+  mixIn($('#m-body'));
   modalClose = onClose || null;
   onOpen && onOpen($('#m-body'));
 }

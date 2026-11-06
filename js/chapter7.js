@@ -396,7 +396,7 @@ function openSextant7(){
     : [['higher', 'Higher up again'], ['same', 'Exactly the same, on the horizon'], ['below', 'Below the horizon: we can\'t see it any more']];
   openModal("The captain's sextant", round === 0 ? 'Measuring the North Star' : 'And tomorrow night?', `${sky}
     <p class="flag-p">${tx(round === 0 ? 'Through the sextant, the North Star sits right on the horizon. The sextant reads: 0°. Where is the Hoppetossa tonight?' : 'Tomorrow night the ship will be south of the Equator. Where will the North Star be then?')}</p>
-    <div class="hands">${opts.map(([k, l]) => `<button type="button" class="hand" data-q="${k}">${tx(l)}</button>`).join('')}</div>
+    <div class="hands${round === 0 ? '' : ' mix'}">${opts.map(([k, l]) => `<button type="button" class="hand" data-q="${k}">${tx(l)}</button>`).join('')}</div>
     <div class="feedback" id="hp-qfb"></div>`, () => {
     const fb = $('#hp-qfb');
     document.querySelectorAll('.hand[data-q]').forEach(b => b.onclick = () => {
@@ -430,7 +430,7 @@ function openLandHo(){
     <svg class="hp-curve" viewBox="0 0 420 200" aria-hidden="true" id="hp-curvesvg"></svg>
     <div class="row-btns"><button type="button" class="btn ghost hp-from" data-f="deck">${tx('Look from the deck')}</button><button type="button" class="btn ghost hp-from" data-f="nest">${tx('Look from the crow\'s nest')}</button></div>
     <p class="flag-p">${tx('From the crow\'s nest you can see the top of the island\'s mountain. From the deck, you can\'t see it at all. Why?')}</p>
-    <div class="hands">
+    <div class="hands mix">
       <button type="button" class="hand" data-l="near">${tx('Up in the crow\'s nest you\'re closer to the island.')}</button>
       <button type="button" class="hand" data-l="round">${tx('The Earth is round. The sea curves down, and from higher up you can see further over the bend.')}</button>
       <button type="button" class="hand" data-l="shy">${tx('The island is shy and ducks down when people on deck look at it.')}</button>

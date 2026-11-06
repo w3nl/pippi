@@ -1,6 +1,14 @@
 # Swedish translation: Chapter 2, burglars in the night (js/chapter2.js).
 # Tommy's Morse answer is a word puzzle: TICKLE / KIETEL / KITTLA (tickleWord() in js/chapter2.js).
 
+# silly clicks
+= An owl
+> En uggla
+= Hoo-hoo!
+> Hu-hu!
+= An owl in the old oak. Owls hunt at night: their big eyes see in the dark, and their soft feathers let them fly without a sound.
+> En uggla i den gamla eken. Ugglor jagar på natten: med sina stora ögon ser de i mörkret, och de mjuka fjädrarna gör att de flyger helt tyst.
+
 = TICKLE
 > KITTLA
 = Batteries

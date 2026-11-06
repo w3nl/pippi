@@ -131,7 +131,7 @@ function openSundial8(){
   openModal('The sundial', 'A stick, a stone, and the sun', `
     <svg class="dial8-svg" translate="no" viewBox="0 0 300 250" aria-hidden="true" id="dial8-svg"></svg>
     <div class="dial8-ask" id="dial8-ask"></div>
-    <div class="row-btns" id="dial8-opts" hidden>${['It is shortest', 'It is longest', 'It disappears completely', 'It points at the sun'].map((o, i) => `<button type="button" class="btn ghost d8o" data-i="${i}">${tx(o)}</button>`).join('')}</div>
+    <div class="row-btns mix" id="dial8-opts" hidden>${['It is shortest', 'It is longest', 'It disappears completely', 'It points at the sun'].map((o, i) => `<button type="button" class="btn ghost d8o" data-i="${i}">${tx(o)}</button>`).join('')}</div>
     <div class="feedback" id="dial8-fb"></div>`, () => {
     const fb = $('#dial8-fb');
     const draw = () => {
@@ -187,7 +187,7 @@ function openTide8(){
       { ask: '<b>But what makes the sea go in and out, twice a day?</b>', opts: ['The wind blows it', 'The Moon pulls on it', 'The fish drink it and spit it out'], ok: 1,
         no: ['The wind makes waves, but it can\'t move a whole ocean in and out twice a day, every day, even when it\'s calm.', '', "Pippi likes that idea a lot. But no: there aren't THAT many thirsty fish."] }
     ];
-    const draw = () => { const q = Q[st.r]; $('#tide8-q').innerHTML = `<p>${tx(q.ask)}</p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost t8o" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+    const draw = () => { const q = Q[st.r]; $('#tide8-q').innerHTML = `<p>${tx(q.ask)}</p><div class="row-btns${st.r ? ' mix' : ''}">${q.opts.map((o, i) => `<button type="button" class="btn ghost t8o" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#tide8-q'));
       document.querySelectorAll('.t8o').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== q.ok){ nope(); fb.className = 'feedback bad'; fb.textContent = tx(q.no[i]); return; }
@@ -299,7 +299,7 @@ function openThunder8(){
     const ask = () => {
       const q = st.r === 0 ? { ask: 'How far away is the storm?', opts: ['1 km', '3 km', '9 km', '27 km'], ok: 1 } : { ask: 'Only 3 seconds this time: the storm is 1 km away. Is it coming closer, or going away?', opts: ['Closer: everybody into the hut!', 'Going away: keep building the sandcastle'], ok: 0 };
       $('#th8-q').hidden = false;
-      $('#th8-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns">${q.opts.map((o, i) => `<button type="button" class="btn ghost th8o" data-i="${i}">${tx(o)}</button>`).join('')}</div>`;
+      $('#th8-q').innerHTML = `<p><b>${tx(q.ask)}</b></p><div class="row-btns${st.r ? ' mix' : ''}">${q.opts.map((o, i) => `<button type="button" class="btn ghost th8o" data-i="${i}">${tx(o)}</button>`).join('')}</div>`; mixIn($('#th8-q'));
       document.querySelectorAll('.th8o').forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         if(i !== q.ok){ nope(); fb.className = 'feedback bad';

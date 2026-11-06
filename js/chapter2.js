@@ -50,6 +50,11 @@ Object.assign(H, {
   },
   torch(){ if(S.f.torchOn) return say("The torch is in your pocket, switched on. Select it to point it at something."); if(S.inv.includes('batteries')) return openTorch2(); say(["A torch. You click the switch. Nothing. You shake it. It rattles: it's empty.", "Torches need batteries. Something else in this room runs on batteries too."]); },
   card2(){ openSpyCard(); },
+  owl2(){
+    S.f.owl2 = (S.f.owl2 || 0) + 1;
+    gag('#br-owl', 'gag-hop', 1100); gagText('Hoo-hoo!'); chord([440, 370], 260);
+    if(S.f.owl2 === 3) say("An owl in the old oak. Owls hunt at night: their big eyes see in the dark, and their soft feathers let them fly without a sound.");
+  },
   sky(){
     if(S.f.sos) return say(S.f.morse ? "Tommy and Annika's window is dark again. They've gone to wake their dad." : "Tommy and Annika's window is still flashing at you. Use your torch on the window to read it again.");
     if(S.f.north) return say(["The North Star, and right below it Tommy and Annika's upstairs window.", S.f.torchOn ? "Select your torch and use it on the window to send them a signal." : "If only you had some light to signal with."]);

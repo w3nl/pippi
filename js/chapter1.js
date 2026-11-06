@@ -109,6 +109,7 @@ const H = {
   sign(){ openSign(); },
   wood(){ say("Pippi's wood basket, full of logs. She chops them herself, with one hand, while reading a book with the other."); },
   bowl(){ say(["A big mixing bowl and a whisk. Pippi makes her pancake batter at the stove, where it's warm.", "There's a faint pancake smell. Mr Nilsson keeps sniffing in this direction."]); },
+  kids1(){ gag('#vk-ta', 'gag-hop', 1100); gagText('Hello!'); chord([880, 1100], 100); },
   window(){ say(["Through the window: the garden, the big old oak tree with a hollow trunk, and the gate.",
                  "Tommy and Annika are leaning on the gate, waving. Annika is pointing at her wristwatch."]); },
   flags(){ openFlags(); },
@@ -355,7 +356,7 @@ function openChest(){
 function openHorse(){
   openModal('The horse', 'It sniffs: sugar!', `
     <p class="flag-p">${tx('How do you hold out a sugar cube to a horse?')}</p>
-    <div class="hands">
+    <div class="hands mix">
       <button type="button" class="hand" data-h="tips">${tx('Between my fingertips, like a sweet')}</button>
       <button type="button" class="hand" data-h="fist">${tx('In my closed fist')}</button>
       <button type="button" class="hand" data-h="flat">${tx('On my flat, open hand')}</button>

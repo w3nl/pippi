@@ -81,8 +81,8 @@
 > Använd kritan på svarta tavlan och kryssa 9 × 5, 9 × 8 och 9 × 10 (det ska vara 45, 72 och 90). Klicka sedan på Klar med kryssen.
 = Task 2: put the names in the class register on Miss's desk back in ABC order. When two names start with the same letter, look at the next letter.
 > Uppgift 2: sätt namnen i klasslistan på frökens kateder i bokstavsordning igen. När två namn börjar på samma bokstav, titta på nästa bokstav.
-= Annika, Axel, Britta, Olle, Peter, Pippi, Tommy, Tora.
-> Annika, Axel, Britta, Olle, Peter, Pippi, Tommy, Tora.
+= Annika, Axel, Britta, Olle, Per, Pippi, Tommy, Tora.
+> Annika, Axel, Britta, Olle, Per, Pippi, Tommy, Tora.
 = Task 3: which creatures on the nature table are insects? They're tiny, so look through the magnifying glass. Count the legs.
 > Uppgift 3: vilka djur på naturbordet är insekter? De är pyttesmå, så titta genom förstoringsglaset. Räkna benen.
 = Use the magnifying glass on the nature table and tick the ant, the ladybird and the bumblebee: six legs each.

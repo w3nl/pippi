@@ -132,6 +132,17 @@ test('the animals on moving day react when you click them', async ({ page }) => 
   await expect(page.locator('#sc-move')).not.toHaveClass(/mv-garden/);
 });
 
+test('answers come in a mixed order, but ordered lists (like weights) stay in order', async ({ page }) => {
+  await seed(page, { ch: 0, scene: 'move', f: { introDone: true, gate: true, water: true } });
+  await expect(page.locator('#title')).not.toHaveClass(/loading/);
+  const orders = new Set();
+  for (let i = 0; i < 12; i++) orders.add(await page.evaluate(() => { openGate0(); const o = [...document.querySelectorAll('.gt0')].map(b => b.dataset.i).join(''); closeModal(); return o; }));
+  expect(orders.size).toBeGreaterThan(1);
+  for (const o of orders) expect([...o].sort().join('')).toBe('0123');
+  await page.evaluate(() => openVeranda0());
+  await expect(page.locator('.vr0')).toHaveText(['About 40 kg, like a big dog', 'About 400 kg', 'About 4000 kg, like an elephant']);
+});
+
 test('the title screen tells the story of the saved chapter', async ({ page }) => {
   // Pippi is asleep in bed in Chapter 2, so the title must not say she has gone to town for sweets
   await seed(page, { ch: 2, scene: 'bedroom', f: { introDone: true } }, ['-ch2']);

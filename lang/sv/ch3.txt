@@ -1,6 +1,10 @@
 # Swedish translation: Chapter 3, Pippi goes to school (js/chapter3.js, and its item uses in js/items.js).
 # Pippi's word for multiplying: pluttification / plutimiceren / pluttifikation. The teacher is "fröken".
 
+# silly clicks
+= My geraniums! Would somebody please take that horse home after school?
+> Mina pelargoner! Kan någon snälla ta med sig den där hästen hem efter skolan?
+
 = Chalk
 > Krita
 = A stick of white chalk from Miss's drawer. For the blackboard, not for Mr Nilsson.
