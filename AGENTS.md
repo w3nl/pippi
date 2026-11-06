@@ -249,7 +249,7 @@ Everything in the blueprint's "Lessons learned" applies. In particular:
   - **Coming and going:** the `applyX()` functions show and hide things with `show = vis` (`vis()` in `core.js`), so nothing pops: things fade in and out (`.vis-in`/`.vis-out` in `base.css`), big changes of light use the slow fade (`data-in="vis-slow-in" data-out="vis-slow-out"` on the sky layers of the ship and the island), and an element can name its own entrance or exit with `data-in`/`data-out` (the kitchen horse trots out of the door's window, `vk-horse-off`; the ship's island grows up from the tip on the horizon, `hp-isle-in`). It switches at once on the first draw, when the room changes or a new game starts, on the title screen, with Motion off, for hotspots, and for elements that already have an animation of their own. Changes made while a close-up is open wait and play when it closes (`visFlush()` in `closeModal()`).
   - Interface (`css/base.css`): a new item pops into its pocket (`justGiven` in `core.js`), the end screen's title bounces in, portraits pop in.
 - Check new close-ups at 412×915 and 915×412 (`tests/phone.spec.js`), also with `PW_LANG=nl` and `PW_LANG=sv`.
-- **Bump `CACHE` in `sw.js` and `GAME_VERSION` in `js/boot.js` together** on every change, and list new files in `CORE`.
+- **Bump `CACHE` in `sw.js` and `GAME_VERSION` in `js/boot.js` together** on every change, and list new files in `CORE` (a test checks). The service worker only deletes its own old caches (`pippi-`): Hello, IT and Sinterklaas may share the origin.
 - No `alert/confirm/prompt`. Buttons have `type="button"`.
 
 ## Tone and writing
