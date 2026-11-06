@@ -1,6 +1,16 @@
 # Swedish translation: Chapter 4, snowball fight (js/chapter4.js, its hints, item uses, scene labels and menus).
 # The policemen are Kling och Klang. The horse is Lilla Gubben. Mittens = vantar. Half past two = halv tre.
 
+# silly clicks
+= Sparrows
+> Sparvar
+= Splat!
+> Splatt!
+= Missed!
+> Miss!
+= Just warming up our arms! Practice throws don't count.
+> Vi värmer bara upp armarna! Övningskast räknas inte.
+
 # ---------- menus, end screen, speakers ----------
 = Garden gate: on to Chapter {n}
 > Grinden: vidare till kapitel {n}

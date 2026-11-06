@@ -1,6 +1,14 @@
 # Dutch translation: Chapter 2, burglars in the night (js/chapter2.js).
 # Tommy's Morse answer is a word puzzle: TICKLE / KIETEL / KITTLA (tickleWord() in js/chapter2.js).
 
+# silly clicks
+= An owl
+> Een uil
+= Hoo-hoo!
+> Oehoe!
+= An owl in the old oak. Owls hunt at night: their big eyes see in the dark, and their soft feathers let them fly without a sound.
+> Een uil in de oude eik. Uilen jagen 's nachts: met hun grote ogen zien ze in het donker, en door hun zachte veren vliegen ze zonder geluid.
+
 = TICKLE
 > KIETEL
 = Batteries

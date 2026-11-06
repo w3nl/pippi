@@ -49,12 +49,12 @@ test('Chapter 3: Pippi earns her holidays', async ({ page }) => {
   await waitModalClosed(page);
   await expect(page.locator('#sl-n5')).toHaveText('9×5=45');
 
-  // task 2: the class register in ABC order (Pippi before Peter is wrong)
+  // task 2: the class register in ABC order (Pippi before Per is wrong)
   await hs(page, 'register');
   for (const n of ['Annika', 'Axel', 'Britta', 'Olle']) await page.locator(`.s3-name[data-n="${n}"]`).click();
   await page.locator('.s3-name[data-n="Pippi"]').click();
   await expect(page.locator('#reg-fb')).toContainText('e comes before i');
-  for (const n of ['Peter', 'Pippi', 'Tommy', 'Tora']) await page.locator(`.s3-name[data-n="${n}"]`).click();
+  for (const n of ['Per', 'Pippi', 'Tommy', 'Tora']) await page.locator(`.s3-name[data-n="${n}"]`).click();
   await expect(page.locator('#reg-fb')).toHaveClass(/good/);
   await waitModalClosed(page);
 

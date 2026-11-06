@@ -27,9 +27,9 @@
   <g class="vy-cloud c" fill="#fffaf0" opacity=".7"><ellipse cx="620" cy="70" rx="56" ry="13"/><ellipse cx="604" cy="62" rx="28" ry="15"/></g>
   <g class="vy-cloud d" fill="#fffaf0" opacity=".8"><ellipse cx="1480" cy="300" rx="66" ry="16"/><ellipse cx="1462" cy="288" rx="32" ry="18"/><ellipse cx="1500" cy="286" rx="26" ry="15"/></g>
   <!-- gulls following the ship (they start off-screen) -->
-  <g class="vy-gulls" fill="none" stroke="#f6f2e6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+  <g id="vy-gullbox"><g class="vy-gulls" fill="none" stroke="#f6f2e6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
     <path class="vy-wing" d="M-140 200 q10 -10 20 0 q10 -10 20 0"/><path class="vy-wing b" d="M-90 240 q8 -8 16 0 q8 -8 16 0"/>
-  </g>
+  </g></g>
   <g id="vy-dawnsky" data-in="vis-slow-in" data-out="vis-slow-out"><rect width="1600" height="900" fill="url(#vyDawn)"/>
     <circle cx="200" cy="380" r="90" fill="url(#vySunG)"/><circle cx="200" cy="380" r="34" fill="#ffd27a"/></g>
   <g id="vy-nightsky" data-in="vis-slow-in" data-out="vis-slow-out"><rect width="1600" height="900" fill="url(#vyNight)"/>
@@ -222,6 +222,7 @@
   <!-- the hotspots -->
   <g id="vy-hits">
     <rect class="hit" fill="transparent" data-hs="sky9" data-label="The sky" x="0" y="0" width="1600" height="200"/>
+    <g class="vy-gulls"><rect class="hit" fill="transparent" data-hs="gulls9" data-label="Gulls" x="-150" y="180" width="110" height="70"/></g>
     <rect class="hit" fill="transparent" data-hs="sea9" data-label="The sea" x="0" y="640" width="1600" height="260"/>
     <rect class="hit" fill="transparent" data-hs="isle9" data-label="Captain Longstocking's island" x="0" y="250" width="620" height="222" id="hit-isle9"/>
     <rect class="hit" fill="transparent" data-hs="coast9" data-label="The coast" x="0" y="400" width="1600" height="80" id="hit-coast9"/>

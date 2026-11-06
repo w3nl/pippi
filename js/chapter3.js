@@ -49,6 +49,11 @@ function goldStar3(lines){
 /* ---------- hotspot handlers ---------- */
 Object.assign(H, {
   spunk3(){ S.f.spunkTaken = true; give('spunk'); applyVisuals(); say(["The spunk, in its jam jar on Pippi's desk. Pippi has brought it to school. \"It wants to learn things,\" she says.", "You take it. A spunk knows things, even at school. Especially at school."]); },
+  horse3(){
+    S.f.horse3 = (S.f.horse3 || 0) + 1;
+    gag('#sl-horsebox', 'gag-hop', 1100); gagText('Pfrrrr!'); chord([200, 260], 120);
+    if(S.f.horse3 === 3) say(['teacher', "My geraniums! Would somebody please take that horse home after school?"]);
+  },
   window3(){
     if(S.f.snow3) return say("The schoolyard is white with snow. The horse is trying to catch snowflakes on its tongue. It's on holiday too.");
     if(S.f.out3) return say("The horse is lying in the sun in the schoolyard, full of geraniums. It's on holiday too.");
@@ -203,8 +208,8 @@ function openTables(){
 }
 
 /* ---------- puzzle: ABC order (the class register) ---------- */
-const PUPILS3 = ['Tommy', 'Pippi', 'Britta', 'Axel', 'Tora', 'Annika', 'Olle', 'Peter'];   // Pippi's order: her favourites first
-const PUPILS3_ABC = ['Annika', 'Axel', 'Britta', 'Olle', 'Peter', 'Pippi', 'Tommy', 'Tora'];
+const PUPILS3 = ['Tommy', 'Pippi', 'Britta', 'Axel', 'Tora', 'Annika', 'Olle', 'Per'];   // Pippi's order: her favourites first
+const PUPILS3_ABC = ['Annika', 'Axel', 'Britta', 'Olle', 'Per', 'Pippi', 'Tommy', 'Tora'];
 function openRegister(){
   if(S.f.abc) return say("The class register, in perfect ABC order again. Miss will be pleased. Pippi has drawn a small horse next to her own name.");
   const reg = S.reg || (S.reg = []);
@@ -349,7 +354,7 @@ function openGlobe(){
     </svg>
     <div class="s3-legend"><span class="s3-dot red"></span>${tx('Sweden')} <span class="s3-dot yellow"></span>${tx("Pippi's father's island")} <span class="s3-dot sun"></span>${tx('the Sun, in June')}</div>
     <p class="flag-p">${tx('Why is it winter on the island when it is summer in Sweden?')}</p>
-    <div class="hands">
+    <div class="hands mix">
       <button type="button" class="hand" data-g="far">${tx('The island is further away from the Sun.')}</button>
       <button type="button" class="hand" data-g="tilt">${tx('The Earth leans over. In June the northern half leans towards the Sun, and the southern half leans away.')}</button>
       <button type="button" class="hand" data-g="chest">${tx("Pippi's father packed all the summer into a sea chest and sent it to Sweden.")}</button>

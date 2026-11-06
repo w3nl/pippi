@@ -1,6 +1,38 @@
 # Swedish translation: Chapter 0, Pippi moves in (js/chapter0.js, scenes/move.svg), and the title screen per chapter.
 # The horse is Lilla Gubben.
 
+# the animals you can click for fun
+= The hollow in the oak
+> Hålet i eken
+= Birds
+> Fåglar
+= A blackbird
+> En koltrast
+= A spider
+> En spindel
+= A bumblebee
+> En humla
+= A butterfly
+> En fjäril
+= Tweet tweet!
+> Kvitt kvitt!
+= Chik-chik!
+> Tjick-tjick!
+= Tirra-lirra!
+> Tirili-tirili!
+= Bzzzz!
+> Bzzzz!
+= Flutter!
+> Fladder!
+= Hello!
+> Hej!
+= That squirrel lives in MY oak now. It can stay, as long as it doesn't eat my lemonade.
+> Den där ekorren bor i MIN ek nu. Den får stanna, bara den inte äter upp min saft.
+= A blackbird has built its nest on the cold chimney. Nobody has lit a fire in this house for years.
+> En koltrast har byggt sitt bo på den kalla skorstenen. Ingen har eldat i det här huset på många år.
+= Leave it be. It lived here first, and it catches the flies. Good morning, Mrs Spider!
+> Låt den vara. Den bodde här först, och den fångar flugorna. God morgon, fru Spindel!
+
 = Pippi moves in
 > Pippi flyttar in i Villa Villekulla
 = Chapter 0: Pippi moves in

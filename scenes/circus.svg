@@ -66,9 +66,9 @@
   <!-- the seal on its stool, balancing a ball -->
   <g id="cc-seal">
     <rect x="300" y="610" width="70" height="40" rx="6" fill="#2f5f9a" stroke="#f2c94c" stroke-width="4"/>
-    <path d="M312 612 q-6 -50 20 -66 q30 -12 34 20 q2 30 -10 46z" fill="#4a4f5a"/>
+    <g id="cc-sealbody"><path d="M312 612 q-6 -50 20 -66 q30 -12 34 20 q2 30 -10 46z" fill="#4a4f5a"/>
     <circle cx="344" cy="552" r="3" fill="#111"/><path d="M356 562 h10" stroke="#111" stroke-width="2"/>
-    <circle class="sealball" cx="352" cy="526" r="14" fill="#e8571f" stroke="#fffaf0" stroke-width="3"/>
+    <circle class="sealball" cx="352" cy="526" r="14" fill="#e8571f" stroke="#fffaf0" stroke-width="3"/></g>
   </g>
 
   <!-- the clown, by the curtain: three balls on the floor, or juggling once you've fixed his pattern -->

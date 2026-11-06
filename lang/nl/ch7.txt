@@ -1,6 +1,12 @@
 # Dutch translation: Chapter 7, on board the Hoppetossa (js/chapter7.js, and its item uses in js/items.js).
 # Kapitein Efraïm Langkous calls Pippi "Pippilotta". Port = bakboord, starboard = stuurboord.
 
+# silly clicks (the gulls, here and in Chapter 9)
+= Gulls
+> Meeuwen
+= Kee-ow!
+> Kriiieuw!
+
 = Sextant
 > Sextant
 = A fishing net from the hold. Good for fishing things out of the sea, and for catching monkeys.

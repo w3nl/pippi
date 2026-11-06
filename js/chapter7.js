@@ -50,6 +50,7 @@ function applyShip(){
   show('#hp-night', night); show('#hp-stars', night); show('#hp-moon', night); show('#hp-dark', night); show('#hp-glow', night);
   show('#hp-dusk', dawn); show('#hp-dawnsun', dawn);
   show('#hp-harbour', !S.f.course); show('#hit-quay7', !S.f.course); show('#hp-seafar', !!S.f.course);
+  show('#hit-gulls7a', !S.f.course); show('#hit-gulls7b', !S.f.course);
   show('#hp-isletip', dawn); show('#hp-isle', !!S.f.out7); show('#hit-isle7', !!S.f.out7);
   show('#hp-qhorse', !S.f.aboard); show('#hit-horse7q', !S.f.aboard);
   show('#hp-dhorse', !!S.f.aboard); show('#hit-horse7d', !!S.f.aboard);
@@ -145,6 +146,7 @@ Object.assign(H, {
   crates7(){ say(["Crates of supplies. Two of them are labelled 18 kg.", "Pippi says that's sweets for the voyage. Eighteen kilos each. \"In case we're becalmed.\""]); },
   net7(){ S.f.netTaken = true; give('net'); applyVisuals(); say("A fishing net, hanging on a hook in the hold. You take it. It might come in handy at sea."); },
   hold7(){ say(["The lower hold: barrels of salted fish, and a pile of heavy stones.", "The stones are ballast. They sit low down in the ship so she doesn't tip over in the wind."]); },
+  gulls7(){ gag('#hp-gulls', 'gag-flyup', 1400); gagText('Kee-ow!'); chord([1500, 1100, 1400], 110); },
   sky7(){
     if(S.f.water && !S.f.equator){
       if(has7('sextant')) return openSextant7();
@@ -394,7 +396,7 @@ function openSextant7(){
     : [['higher', 'Higher up again'], ['same', 'Exactly the same, on the horizon'], ['below', 'Below the horizon: we can\'t see it any more']];
   openModal("The captain's sextant", round === 0 ? 'Measuring the North Star' : 'And tomorrow night?', `${sky}
     <p class="flag-p">${tx(round === 0 ? 'Through the sextant, the North Star sits right on the horizon. The sextant reads: 0°. Where is the Hoppetossa tonight?' : 'Tomorrow night the ship will be south of the Equator. Where will the North Star be then?')}</p>
-    <div class="hands">${opts.map(([k, l]) => `<button type="button" class="hand" data-q="${k}">${tx(l)}</button>`).join('')}</div>
+    <div class="hands${round === 0 ? '' : ' mix'}">${opts.map(([k, l]) => `<button type="button" class="hand" data-q="${k}">${tx(l)}</button>`).join('')}</div>
     <div class="feedback" id="hp-qfb"></div>`, () => {
     const fb = $('#hp-qfb');
     document.querySelectorAll('.hand[data-q]').forEach(b => b.onclick = () => {
@@ -428,7 +430,7 @@ function openLandHo(){
     <svg class="hp-curve" viewBox="0 0 420 200" aria-hidden="true" id="hp-curvesvg"></svg>
     <div class="row-btns"><button type="button" class="btn ghost hp-from" data-f="deck">${tx('Look from the deck')}</button><button type="button" class="btn ghost hp-from" data-f="nest">${tx('Look from the crow\'s nest')}</button></div>
     <p class="flag-p">${tx('From the crow\'s nest you can see the top of the island\'s mountain. From the deck, you can\'t see it at all. Why?')}</p>
-    <div class="hands">
+    <div class="hands mix">
       <button type="button" class="hand" data-l="near">${tx('Up in the crow\'s nest you\'re closer to the island.')}</button>
       <button type="button" class="hand" data-l="round">${tx('The Earth is round. The sea curves down, and from higher up you can see further over the bend.')}</button>
       <button type="button" class="hand" data-l="shy">${tx('The island is shy and ducks down when people on deck look at it.')}</button>

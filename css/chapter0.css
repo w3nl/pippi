@@ -12,8 +12,8 @@
 
 #sc-move .mv-cloud{animation:mvDrift 50s ease-in-out infinite alternate}
 #sc-move .mv-cloud.b{animation-duration:64s;animation-direction:alternate-reverse}
-#sc-move .mv-plait{transform-box:fill-box;transform-origin:100% 50%;animation:mvPlait 1.4s ease-in-out infinite}
-#sc-move .mv-plait.b{transform-origin:0 50%;animation-delay:-.7s}
+.mv-plait{transform-box:fill-box;transform-origin:100% 50%;animation:mvPlait 1.4s ease-in-out infinite}
+.mv-plait.b{transform-origin:0 50%;animation-delay:-.7s}
 #sc-move .mv-nod{animation:mvNod 3s ease-in-out infinite}
 #sc-move .mv-crawl{animation:mvCrawl 4s ease-in-out infinite}
 #sc-move #mv-gush{transform-box:fill-box;transform-origin:50% 0;animation:mvGush .4s ease-in-out infinite}
@@ -59,6 +59,49 @@
 #sc-move .mv-thread{transform-box:view-box;transform-origin:1490px 280px;animation:mvThread 8s ease-in-out infinite}
 #sc-move .mv-dust{animation:mvDust 12s ease-in-out infinite}
 #sc-move .mv-glint{animation:mvGlint 3s ease-in-out infinite}
+
+/* ---------- the horse and Pippi move house ----------
+   One horse and one Pippi, drawn on the road. .mv-garden / .mv-house on #sc-move put them in their place;
+   walk0() adds .mv-walkin (through the gate) or .mv-carry (Pippi carries the horse to the veranda) for as long as
+   the walk takes. The horse's legs are in the shared <use> drawing (ship.svg), so they get their walk as
+   inherited custom properties (.hp-leg in chapter7.css). */
+#mv-horse,#mv-pippi{transform-box:view-box}
+#sc-move.mv-garden #mv-horse{transform:translate(-300px,-180px)}
+#sc-move.mv-house #mv-horse{transform:translate(-20px,-148px)}
+#sc-move.mv-garden #mv-pippi,#sc-move.mv-house #mv-pippi{transform:translate(20px,-210px)}
+#sc-move .mv-hturn{transform-box:view-box;transform-origin:70px 45px}
+.mv-armsup{opacity:0;animation:var(--mv-arms-up,none) 6.2s linear both}
+.mv-armsdown{animation:var(--mv-arms-down,none) 6.2s linear both}
+
+@keyframes mvHorseIn{0%,8%{transform:none}42%{transform:translate(-470px,-10px)}68%,74%{transform:translate(-470px,-180px)}100%{transform:translate(-300px,-180px)}}
+@keyframes mvTurnIn{0%,4%{transform:none}9%,70%{transform:scaleX(-1)}76%,100%{transform:none}}
+@keyframes mvPippiIn{0%{transform:none}36%,100%{transform:translate(20px,-210px)}}
+@keyframes mvStep{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+#sc-move.mv-walkin #mv-horse{animation:mvHorseIn 5.6s ease-in-out both;--hp-leg-a:hpLegA;--hp-leg-b:hpLegB;--hp-leg-at:.3s;--hp-steps:10}
+#sc-move.mv-walkin .mv-hturn{animation:mvTurnIn 5.6s linear both}
+#sc-move.mv-walkin #mv-pippi{animation:mvPippiIn 5.6s ease-in-out both}
+#sc-move.mv-walkin .mv-pstep{animation:mvStep .4s ease-in-out 5}
+
+@keyframes mvCarryHorse{0%,18%{transform:translate(-300px,-180px)}28%{transform:translate(-302px,-276px)}62%{transform:translate(-20px,-276px)}72%,100%{transform:translate(-20px,-148px)}}
+@keyframes mvCarryPippi{0%{transform:translate(20px,-210px)}18%,28%{transform:translate(148px,-210px)}62%,72%{transform:translate(430px,-210px)}100%{transform:translate(20px,-210px)}}
+@keyframes mvArmsUp{0%,19%{opacity:0}23%,70%{opacity:1}74%,100%{opacity:0}}
+@keyframes mvArmsDown{0%,19%{opacity:1}23%,70%{opacity:0}74%,100%{opacity:1}}
+#sc-move.mv-carry #mv-horse{animation:mvCarryHorse 6.2s ease-in-out both;--hp-leg-a:hpLegA;--hp-leg-b:hpLegB;--hp-leg-at:1.7s;--hp-steps:4}
+#sc-move.mv-carry #mv-pippi{animation:mvCarryPippi 6.2s ease-in-out both;--mv-arms-up:mvArmsUp;--mv-arms-down:mvArmsDown}
+#sc-move.mv-carry .mv-pstep{animation:mvStep .4s ease-in-out 15}
+
+/* ---------- silly clicks on the animals (gag() in core.js; chapter0.js) ---------- */
+@keyframes mvPeepOut{0%{opacity:0;transform:translateY(6px)}15%,80%{opacity:1;transform:translateY(-4px)}40%{transform:translateY(-4px) rotate(-12deg)}55%{transform:translateY(-4px) rotate(12deg)}100%{opacity:0;transform:translateY(6px)}}
+@keyframes mvBirdHop{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes mvBeeLoop{0%,100%{transform:translate(0,0)}25%{transform:translate(30px,-40px)}50%{transform:translate(0,-70px)}75%{transform:translate(-30px,-40px)}}
+@keyframes mvFlit{0%,100%{transform:translate(0,0)}40%{transform:translate(16px,-70px)}70%{transform:translate(-10px,-40px)}}
+@keyframes mvWiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-25deg)}75%{transform:rotate(25deg)}}
+#sc-move #mv-squirrel.mv-out{transform-box:fill-box;transform-origin:50% 100%;animation:mvPeepOut 1.8s ease-in-out both}
+#sc-move > .mv-birds.mv-flurry .mv-wing{animation-duration:.14s}
+#sc-move #mv-blackbird.mv-hop{animation:mvBirdHop .3s ease-in-out 3}
+#sc-move #mv-bee.mv-loop{animation:mvBeeLoop 1.2s ease-in-out}
+#sc-move .mv-flit.mv-up{animation:mvFlit 1.4s ease-in-out}
+#sc-move #mv-spiderbody.mv-wave{transform-box:fill-box;transform-origin:50% 0;animation:mvWiggle .4s ease-in-out 3}
 
 /* ---------- close-ups ---------- */
 .light0-svg,.clock0-svg{width:100%;max-width:340px;height:auto;display:block;margin:6px auto 0;border-radius:8px}

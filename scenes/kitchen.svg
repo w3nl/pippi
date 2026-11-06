@@ -420,6 +420,8 @@
       y="214" width="140" height="436" />
     <rect class="hit" fill="transparent" data-hs="window" data-label="Window" x="504" y="140"
       width="210" height="290" />
+    <rect class="hit" fill="transparent" data-hs="kids1" data-label="Tommy and Annika" x="664" y="352"
+      width="66" height="40" />
     <rect class="hit" fill="transparent" data-hs="spunk" data-label="Jam jar" x="718" y="380"
       width="56" height="54" id="hit-spunk" />
     <rect class="hit" fill="transparent" data-hs="mirror" data-label="Mirror" x="794" y="190"

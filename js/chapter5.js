@@ -76,7 +76,11 @@ Object.assign(H, {
     openJuggle();
   },
   trapeze(){ if(notInside5()) return; if(S.f.trapeze) return say("The two trapezes swing back and forth in perfect time. The flyers catch each other every single time."); openTrapeze(); },
-  seal(){ say([['seal', "Ork! Ork!"], "A seal on a stool, balancing a ball on its nose. It's the only one in the circus who's ready for the show."]); },
+  seal(){
+    gag('#cc-sealbody', 'gag-hop', 1100); gagText('Ork! Ork!'); chord([260, 330], 140);
+    S.f.seal5 = (S.f.seal5 || 0) + 1;
+    if(S.f.seal5 === 1) say("A seal on a stool, balancing a ball on its nose. It's the only one in the circus who's ready for the show.");
+  },
   curtain(){
     if(S.f.out5) return startCh6();
     say(["The performers' curtain, heavy red velvet with gold fringes. Behind it, the horses are stamping and someone is warming up a trumpet.", "It opens with the winch on its right. But only when the show is ready."]);

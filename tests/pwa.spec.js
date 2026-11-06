@@ -25,6 +25,28 @@ test('the game is an installable web app that works offline', async ({ page, con
   await context.setOffline(false);
 });
 
+test('every file in the offline list exists, and every game file is in it', async () => {
+  const fs = require('fs'), path = require('path'), root = path.join(__dirname, '..');
+  const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
+  const core = [...sw.match(/const CORE = \[([\s\S]*?)\];/)[1].matchAll(/'\.\/([^']*)'/g)].map(m => m[1]).filter(Boolean);
+  for (const f of core) expect(fs.existsSync(path.join(root, f)), f).toBe(true);
+  const dirs = ['js', 'css', 'scenes', 'portraits', ...fs.readdirSync(path.join(root, 'lang')).map(l => `lang/${l}`)];
+  for (const dir of dirs)
+    for (const f of fs.readdirSync(path.join(root, dir))) expect(core, `${dir}/${f} is not in sw.js`).toContain(`${dir}/${f}`);
+});
+
+test('the service worker only deletes its own old caches', async ({ page }) => {
+  await page.goto('/');
+  await page.evaluate(() => navigator.serviceWorker.ready);
+  await page.evaluate(() => Promise.all([caches.open('it-v1'), caches.open('sint-v1'), caches.open('pippi-villa-v1')]));
+  await page.evaluate(() => navigator.serviceWorker.getRegistration().then(r => r.unregister()));
+  await page.reload();
+  await page.evaluate(() => navigator.serviceWorker.ready);
+  await expect.poll(() => page.evaluate(() => caches.keys())).not.toContain('pippi-villa-v1');
+  const keys = await page.evaluate(() => caches.keys());
+  expect(keys).toEqual(expect.arrayContaining(['it-v1', 'sint-v1']));
+});
+
 test('the title screen shows the version, and a newer version offers a reload', async ({ page }) => {
   const sw = require('fs').readFileSync(require('path').join(__dirname, '..', 'sw.js'), 'utf8');
   const cacheVersion = +sw.match(/const CACHE = 'pippi-villa-v(\d+)'/)[1];

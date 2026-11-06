@@ -1,5 +1,9 @@
 # Swedish translation: Chapter 9, home again (js/chapter9.js).
 # Villa Villekulla på våren. Hästen heter Lilla Gubben, Herr Nilsson, fröken, Kling och Klang, kapten Långstrump ("Pippilotta").
+
+# silly clicks
+= Tswit tswit!
+> Kvitt kvitt!
 # Igelkotten, regntunnan, hästskomagneten, årsringar, friktion, regnbågen, vintersömn.
 
 = A horseshoe magnet

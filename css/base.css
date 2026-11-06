@@ -161,3 +161,20 @@ button.chip:hover{border-color:var(--amber);color:var(--amber)}
 .vis-out{animation:visOut .7s ease-in both}
 .vis-slow-in{animation:visIn 2.4s ease-in-out both}
 .vis-slow-out{animation:visOut 2.4s ease-in-out both}
+/* silly clicks: a word that floats up from what you clicked (gagText() in core.js) */
+@keyframes gagUp{0%{transform:translateY(0);opacity:0}15%{opacity:1}100%{transform:translateY(-50px);opacity:0}}
+.gag-txt{font-family:var(--f-display);font-weight:700;font-size:34px;fill:#fff7d6;stroke:#3a1d12;stroke-width:5px;paint-order:stroke;text-anchor:middle;pointer-events:none;animation:gagUp 1.3s ease-out forwards}
+/* shared gags (gag(el, 'gag-hop', ms)): they animate translate/rotate, not transform, so they add to a group's
+   own transform attribute instead of replacing it. Put them on a group that has no animation of its own. */
+@keyframes gagHop{0%,100%{translate:0 0}50%{translate:0 -16px}}
+@keyframes gagFlyUp{0%,100%{translate:0 0}40%{translate:20px -70px}70%{translate:-14px -40px}}
+@keyframes gagLoop{0%,100%{translate:0 0}25%{translate:30px -40px}50%{translate:0 -70px}75%{translate:-30px -40px}}
+@keyframes gagScuttle{0%,100%{translate:0 0}20%{translate:-26px 0}40%{translate:22px 0}60%{translate:-16px 0}80%{translate:12px 0}}
+@keyframes gagWobble{0%,100%{rotate:0deg}25%{rotate:-7deg}75%{rotate:7deg}}
+@keyframes gagDuck{0%,100%{translate:0 0}30%,70%{translate:0 18px}}
+.gag-hop{animation:gagHop .35s ease-in-out 3}
+.gag-flyup{animation:gagFlyUp 1.4s ease-in-out}
+.gag-loop{animation:gagLoop 1.2s ease-in-out}
+.gag-scuttle{animation:gagScuttle 1s linear}
+.gag-wobble{transform-box:fill-box;transform-origin:50% 100%;animation:gagWobble .5s ease-in-out 2}
+.gag-duck{animation:gagDuck .9s ease-in-out}

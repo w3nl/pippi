@@ -651,6 +651,10 @@
     <g>
         <rect class="hit" fill="transparent" data-hs="sky7" data-label="The sky" x="0" y="0"
             width="1600" height="330" />
+        <rect class="hit" fill="transparent" data-hs="gulls7" data-label="Gulls" x="292" y="144"
+            width="210" height="42" id="hit-gulls7a" />
+        <rect class="hit" fill="transparent" data-hs="gulls7" data-label="Gulls" x="552" y="96"
+            width="150" height="38" id="hit-gulls7b" />
         <rect class="hit" fill="transparent" data-hs="sea7" data-label="The sea" x="0" y="610"
             width="236" height="290" />
         <rect class="hit" fill="transparent" data-hs="sea7" data-label="The sea" x="1450" y="560"

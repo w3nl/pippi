@@ -1,7 +1,7 @@
 // Service worker for Villa Villekulla: makes the game installable and playable offline.
 // Bump CACHE when you change the game, so phones pick up the new version, and keep GAME_VERSION in js/boot.js
 // the same number (tests/pwa.spec.js checks). The page shows that number and offers a reload when a newer one arrives.
-const CACHE = 'pippi-villa-v19';
+const CACHE = 'pippi-villa-v20';
 const CORE = [
   './',
   './index.html',
@@ -105,7 +105,8 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('activate', event => {
-  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())
+  // only our own old caches: Hello, IT and Sinterklaas may share this origin and keep theirs
+  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith('pippi-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())
     .then(() => self.clients.matchAll({ type: 'window' })).then(pages => pages.forEach(p => p.postMessage({ type: 'version', cache: CACHE }))));
 });
 

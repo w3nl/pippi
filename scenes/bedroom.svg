@@ -120,6 +120,13 @@
       <circle cx="722" cy="290" r="26" />
       <circle cx="776" cy="288" r="28" />
     </g>
+    <!-- an owl in the old oak -->
+    <g id="br-owl">
+      <ellipse cx="760" cy="244" rx="9" ry="12" fill="#5a4a3a" />
+      <path d="M752 234 l2 -6 l4 4z M768 234 l-2 -6 l-4 4z" fill="#5a4a3a" />
+      <g class="br-owleyes" fill="#f2c94c"><circle cx="756" cy="239" r="3" /><circle cx="764" cy="239" r="3" /></g>
+      <path d="M758 244 l2 3 l2 -3z" fill="#d9a24a" />
+    </g>
     <!-- the burglars in the garden, with their lantern -->
     <g id="br-thieves" class="sneak">
       <circle class="lglow" cx="930" cy="372" r="34" fill="url(#brLantern)" />
@@ -330,6 +337,7 @@
       width="44" height="50" id="hit-spunk2" />
     <rect class="hit" fill="transparent" data-hs="sky" data-label="Window" x="690" y="120"
       width="340" height="300" />
+    <rect class="hit" fill="transparent" data-hs="owl2" data-label="An owl" x="744" y="224" width="32" height="36" />
     <rect class="hit" fill="transparent" data-hs="nilsson2" data-label="Mr Nilsson, asleep" x="708"
       y="416" width="128" height="56" />
     <rect class="hit" fill="transparent" data-hs="scale" data-label="Pippi's scale" x="868" y="410"
