@@ -51,6 +51,18 @@
 .wt-fly.b{animation:wtFlyB 1.9s ease-in-out infinite;animation-delay:-.6s}
 .wt-fly.c{animation:wtFlyC 2.2s ease-in-out infinite;animation-delay:-1.2s}
 
+/* ---------- practice throws: click Kling and Klang (throw4() in chapter4.js) ----------
+   Kling winds up and hits the snowman; Klang's ball flies over Pippi's head (she ducks). */
+@keyframes wtWind{0%,100%{rotate:0deg}25%{rotate:35deg}40%{rotate:-70deg}70%{rotate:0deg}}
+@keyframes wtKBall{0%,25%{opacity:1}26%,92%{opacity:0}100%{opacity:1}}
+@keyframes wtThrowK{0%,25%{transform:translate(1350px,646px);opacity:0}26%{opacity:1}50%{transform:translate(1220px,530px)}75%{transform:translate(1085px,505px)}97%{transform:translate(955px,556px);opacity:1}100%{transform:translate(955px,556px);opacity:0}}
+@keyframes wtThrowC{0%{transform:translate(1393px,712px)}35%{transform:translate(1150px,540px)}65%{transform:translate(900px,560px)}97%{transform:translate(630px,770px);opacity:1}100%{transform:translate(630px,770px);opacity:0}}
+#wt-klingarm{transform-box:view-box;transform-origin:1322px 670px}
+#sc-winter.wt-throwk #wt-klingarm{animation:wtWind 1.4s ease-in-out}
+#sc-winter.wt-throwk #wt-kball{animation:wtKBall 1.4s linear both}
+#sc-winter.wt-throwk .wt-pball{animation:wtThrowK 1.4s linear both}
+#sc-winter.wt-throwc .wt-pball{animation:wtThrowC 1.2s linear both}
+
 /* ---------- where everybody is (a class on the scene for each stage) ---------- */
 /* the sledge waits in front of the veranda until the steps are safe; then it stands behind our fort */
 #wt-team{transform:translate(70px,-105px)}

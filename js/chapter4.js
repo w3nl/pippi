@@ -148,9 +148,21 @@ Object.assign(H, {
   police4(){
     if(S.f.out4) return say([['klang', "We surrender! The cap is a bit wet, but it'll dry."], ['kling', "Same time next year, children?"]]);
     if(ready4()) return openThrow4();
-    say([['kling', "Our fort is ready, children! Is yours?"], ['klang', "At three o'clock sharp. Losers make the hot chocolate. With whipped cream!"]]);
-  }
+    S.f.policeTaps = (S.f.policeTaps || 0) + 1; save();
+    throw4(S.f.policeTaps % 2 ? 'kling' : 'klang');
+    if(S.f.policeTaps === 1) say([['kling', "Our fort is ready, children! Is yours?"], ['klang', "At three o'clock sharp. Losers make the hot chocolate. With whipped cream!"]]);
+    if(S.f.policeTaps === 3) say(['klang', "Just warming up our arms! Practice throws don't count."]);
+  },
+  birds4(){ gag('#wt-birds', 'gag-flyup', 1400); gagText('Tweet tweet!'); chord([2200, 2600, 2300], 70); }
 });
+/* A practice throw: Kling hits the snowman, Klang's ball sails over Pippi's head. */
+function throw4(who){
+  const k = who === 'kling';
+  gag('#sc-winter', k ? 'wt-throwk' : 'wt-throwc', 1500);
+  chord([700, 520, 380], 90);
+  if(k) setTimeout(() => { gag('#wt-snowman', 'gag-wobble', 1000); gagText('Splat!', $('#hit-snowman4')); beep(110, .18, 'square', .03); }, 1350);
+  else { setTimeout(() => gag('#wt-pippi', 'gag-duck', 900), 450); setTimeout(() => gagText('Missed!', $('#hit-pippi4')), 900); }
+}
 
 /* ---------- puzzle: the tracks in the snow (reading animal tracks) ---------- */
 function openTracks4(){

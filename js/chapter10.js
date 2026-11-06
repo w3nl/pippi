@@ -81,6 +81,8 @@ Object.assign(H, {
     if(!S.f.larder) return say([['nilsson', "Eek!"], "Mr Nilsson is polishing his bottle top. He's very glad to have it back."]);
     say([['nilsson', "Eek eek!"], "Mr Nilsson has raisins in both cheeks and one in each hand."]);
   },
+  bee10(){ gag('#vh-beebox', 'gag-loop', 1200); gagText('Bzzzz!'); beep(220, .5, 'sawtooth', .02); },
+  bfly10(){ gag('#vh-bflybox', 'gag-flyup', 1400); gagText('Flutter!'); chord([1200, 1500], 120); },
   bush10(){
     if(S.f.out10) return say("Under the lilac, the hedgehog is eating its supper. It makes a lot of noise for something so small.");
     say("A lilac bush, in full flower. It smells wonderful, and a yellow butterfly can't decide which flower it likes best.");

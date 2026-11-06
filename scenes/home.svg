@@ -406,10 +406,10 @@
             <ellipse cx="300" cy="708" rx="14" ry="4" fill="#dfe6ea" />
             <ellipse cx="300" cy="706" rx="10" ry="2.5" fill="#bfe0ef" />
         </g>
-        <g class="vh-butterfly">
+        <g id="vh-bflybox"><g class="vh-butterfly">
             <path d="M0 0 q-10 -12 -14 0 q4 8 14 0 q10 -12 14 0 q-4 8 -14 0z" fill="#f6d34a" />
-        </g>
-        <g transform="translate(250 600)">
+        </g></g>
+        <g id="vh-beebox" transform="translate(250 600)">
             <g class="vh-bee">
                 <ellipse cx="-2" cy="-6" rx="4" ry="3" fill="#e6f0f4" opacity=".8" />
                 <ellipse cx="3" cy="-6" rx="4" ry="3" fill="#e6f0f4" opacity=".8" />
@@ -765,6 +765,8 @@
             y="526" width="62" height="66" />
         <rect class="hit" fill="transparent" data-hs="bush10" data-label="The lilac bush" x="140"
             y="590" width="170" height="124" />
+        <g transform="translate(250 600)"><g class="vh-bee"><rect class="hit" fill="transparent" data-hs="bee10" data-label="A bumblebee" x="-20" y="-20" width="40" height="36" /></g></g>
+        <g class="vh-butterfly"><rect class="hit" fill="transparent" data-hs="bfly10" data-label="A butterfly" x="-22" y="-18" width="44" height="34" /></g>
         <rect class="hit" fill="transparent" data-hs="chest10" data-label="Pippi's sea chest"
             x="1446" y="560" width="154" height="140" id="hit-chest10a" />
         <rect class="hit" fill="transparent" data-hs="spunk10" data-label="Jam jar" x="1562" y="598"

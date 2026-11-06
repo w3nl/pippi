@@ -1,6 +1,12 @@
 # Swedish translation: Chapter 8, the South Sea island (js/chapter8.js).
 # Kapten Långstrump calls Pippi "Pippilotta". The horse is Lilla Gubben. Ebb och högvatten; Sköldpaddsholmen; pluttifikation.
 
+# silly clicks
+= Snip snap!
+> Knipp knapp!
+= Crabs walk sideways, because their legs bend that way. I tried it all the way to the hut. It works, but you keep bumping into palm trees.
+> Krabbor går i sidled, för att deras ben böjer sig så. Jag provade hela vägen till hyddan. Det fungerar, men man krockar hela tiden med palmer.
+
 = Treasure map
 > Skattkarta
 = Captain Longstocking's map of Turtle Islet, drawn on the back of a menu. It says: 12 of MY paces.

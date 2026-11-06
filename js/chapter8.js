@@ -108,6 +108,11 @@ Object.assign(H, {
     say([['parrot', S.f.chest ? "Treasure! Treasure! Squawk!" : "Squawk! Twelve paces! Twelve paces!"], "The king's parrot. It repeats everything it hears. Mostly the captain."]);
   },
   nilsson8(){ say([['nilsson', "Eek!"], "Mr Nilsson is up the palm tree with a coconut. He has finally found a country where the fruit grows at monkey height."]); },
+  crab8(){
+    S.f.crab8 = (S.f.crab8 || 0) + 1;
+    gag('#si-craba', 'gag-scuttle', 1000); gagText('Snip snap!'); chord([900, 700, 900], 60);
+    if(S.f.crab8 === 3) say(['pippi', "Crabs walk sideways, because their legs bend that way. I tried it all the way to the hut. It works, but you keep bumping into palm trees."]);
+  },
   horse8(){ say(["The horse is wearing a garland of flowers and looks very relaxed. It has never been on holiday before.", ['pippi', "He's going to learn to surf. Tomorrow."]]); },
   kids8(){
     if(S.f.out8) return say([['annika', "Turtles, treasure and a thunderstorm. Nobody at school is going to believe us."], ['tommy', "We'll bring them a coconut."]]);

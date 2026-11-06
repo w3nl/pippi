@@ -462,8 +462,10 @@
             <path d="M1286 652 q16 8 32 0" stroke="#c4302b" stroke-width="7" fill="none" />
             <path d="M1284 666 L1272 700" stroke="#1f2f5a" stroke-width="10" stroke-linecap="round" />
             <circle cx="1271" cy="704" r="6" fill="#f3c9a4" />
+            <g id="wt-klingarm">
             <path d="M1322 670 L1346 650" stroke="#1f2f5a" stroke-width="10" stroke-linecap="round" />
-            <circle cx="1350" cy="646" r="9" fill="#fff" stroke="#c9d8e8" stroke-width="2" />
+            <circle id="wt-kball" cx="1350" cy="646" r="9" fill="#fff" stroke="#c9d8e8" stroke-width="2" />
+            </g>
         </g>
         <g class="wt-stamp b">
             <ellipse cx="1440" cy="700" rx="34" ry="36" fill="#1f2f5a" />
@@ -510,6 +512,11 @@
         <circle class="wt-fly c" cx="0" cy="0" r="9" transform="translate(-100 -100)" />
     </g>
 
+    <!-- a practice throw when you click Kling and Klang (only while things move; police4 in chapter4.js) -->
+    <g id="wt-pthrow" fill="#fff" stroke="#c9d8e8" stroke-width="2">
+        <circle class="wt-pball" cx="0" cy="0" r="9" transform="translate(-100 -100)" />
+    </g>
+
     <!-- falling snow -->
     <g id="wt-snow" fill="#fff" pointer-events="none"></g>
     <rect width="1600" height="900" fill="url(#wtVign)" pointer-events="none" />
@@ -538,9 +545,11 @@
             width="320" height="310" />
         <rect class="hit" fill="transparent" data-hs="oak4" data-label="The old oak" x="672" y="540"
             width="48" height="110" />
+        <rect class="hit" fill="transparent" data-hs="birds4" data-label="Sparrows" x="752" y="474"
+            width="96" height="36" />
         <rect class="hit" fill="transparent" data-hs="steps4" data-label="Veranda steps" x="556"
             y="546" width="114" height="88" />
-        <rect class="hit" fill="transparent" data-hs="snowman4" data-label="Snowman" x="900" y="508"
+        <rect class="hit" fill="transparent" data-hs="snowman4" data-label="Snowman" id="hit-snowman4" x="900" y="508"
             width="112" height="200" />
         <rect class="hit" fill="transparent" data-hs="tracks4" data-label="Tracks in the snow"
             x="880" y="720" width="300" height="180" />

@@ -120,6 +120,22 @@ test('every hotspot in the garden can be clicked: nothing lies on top of it', as
   expect(await covered()).toEqual([]);
 });
 
+test('Kling and Klang throw practice snowballs, and the sparrows fly up', async ({ page }) => {
+  await seed(page, { ch: 4, scene: 'winter', f: { introDone: true } }, ['-ch2', '-ch3', '-ch4']);
+  await page.locator('#btn-cont').click();
+  await skip(page);
+  expect(await page.evaluate(() => { H.police4(); return document.querySelector('#sc-winter').classList.contains('wt-throwk'); })).toBe(true);
+  await expect(page.locator('#d-txt')).toContainText('Our fort is ready', { timeout: 5_000 });
+  await skip(page);
+  expect(await page.evaluate(() => { H.police4(); return document.querySelector('#sc-winter').classList.contains('wt-throwc'); })).toBe(true);
+  await expect(page.locator('#dialog')).toBeHidden();
+  await page.evaluate(() => H.police4());
+  await expect(page.locator('#d-txt')).toContainText("Practice throws don't count", { timeout: 5_000 });
+  await expect(page.locator('#modal')).toBeHidden();
+  await skip(page);
+  expect(await page.evaluate(() => { H.birds4(); return document.querySelector('#wt-birds').classList.contains('gag-flyup'); })).toBe(true);
+});
+
 test('finishing Chapter 3 leads to Chapter 4', async ({ page }) => {
   await seed(page, { ch: 3, scene: 'school', f: { out3: true } }, ['-ch2', '-ch3']);
   await expect(page.locator('#btn-cont')).toHaveText('Continue to Chapter 4');
