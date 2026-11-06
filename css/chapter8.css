@@ -40,8 +40,9 @@
 @keyframes siBend{0%,100%{transform:skewX(-5deg)}50%{transform:skewX(5deg)}}
 #sc-island .si-glint path{animation:siGlint 2.4s ease-in-out infinite}
 #sc-island .si-glint .b{animation-delay:-1.2s}
-#sc-island .si-dune use{transform-box:fill-box;transform-origin:50% 100%;animation:siBend 3.5s ease-in-out infinite}
-#sc-island .si-dune use:nth-child(even){animation-delay:-1.7s}
+/* each tuft bends from its root (0 0 in its own group), so it stays planted in the sand */
+#sc-island .si-dune use{transform-box:view-box;transform-origin:0 0;animation:siBend 3.5s ease-in-out infinite}
+#sc-island .si-dune g:nth-child(even) use{animation-delay:-1.7s}
 #sc-island .rays{transform-box:view-box;transform-origin:1240px 96px;animation:siSun 70s linear infinite}
 #sc-island .si-bird{transform:translate(-200px,0);animation:siBird 24s linear infinite}
 #sc-island .si-bird .wings{transform-box:fill-box;transform-origin:50% 100%;animation:siFlap .6s ease-in-out infinite}
