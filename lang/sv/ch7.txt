@@ -1,6 +1,12 @@
 # Swedish translation: Chapter 7, on board the Hoppetossa (js/chapter7.js, and its item uses in js/items.js).
 # Kapten Efraim Långstrump calls Pippi "Pippilotta". The horse is Lilla Gubben. Port = babord, starboard = styrbord.
 
+# silly clicks (the gulls, here and in Chapter 9)
+= Gulls
+> Måsar
+= Kee-ow!
+> Kliii-a!
+
 = Sextant
 > Sextant
 = A fishing net from the hold. Good for fishing things out of the sea, and for catching monkeys.

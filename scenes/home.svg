@@ -117,12 +117,12 @@
         <path d="M-20 520 A340 340 0 0 1 660 520" stroke="#8a52b8" />
     </g>
     <!-- swallows, back from Africa (only while things move) -->
-    <g class="vh-swallow a" fill="#1f2a44">
+    <g id="vh-swallowbox"><g class="vh-swallow a" fill="#1f2a44">
         <path d="M0 0 q12 -10 24 -2 q12 -8 24 2 q-12 -2 -24 6 q-12 -8 -24 -6z" />
     </g>
     <g class="vh-swallow b" fill="#1f2a44">
         <path d="M0 0 q10 -8 20 -2 q10 -6 20 2 q-10 -2 -20 5 q-10 -7 -20 -5z" />
-    </g>
+    </g></g>
 
     <!-- green hills, the little town and its church -->
     <path d="M0 420 Q240 360 520 404 Q800 350 1100 392 Q1380 360 1600 380 V520 H0 Z" fill="#b7c99a" />
@@ -783,5 +783,7 @@
             y="556" width="160" height="92" id="hit-horse10a" />
         <rect class="hit" fill="transparent" data-hs="pippi10" data-label="Pippi" x="1118" y="648"
             width="92" height="152" />
+        <g class="vh-swallow a"><rect class="hit" fill="transparent" data-hs="swallows10" data-label="Swallows" x="-8" y="-16" width="64" height="30" /></g>
+        <g class="vh-swallow b"><rect class="hit" fill="transparent" data-hs="swallows10" data-label="Swallows" x="-8" y="-14" width="56" height="26" /></g>
     </g>
 </svg>

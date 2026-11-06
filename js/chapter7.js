@@ -50,6 +50,7 @@ function applyShip(){
   show('#hp-night', night); show('#hp-stars', night); show('#hp-moon', night); show('#hp-dark', night); show('#hp-glow', night);
   show('#hp-dusk', dawn); show('#hp-dawnsun', dawn);
   show('#hp-harbour', !S.f.course); show('#hit-quay7', !S.f.course); show('#hp-seafar', !!S.f.course);
+  show('#hit-gulls7a', !S.f.course); show('#hit-gulls7b', !S.f.course);
   show('#hp-isletip', dawn); show('#hp-isle', !!S.f.out7); show('#hit-isle7', !!S.f.out7);
   show('#hp-qhorse', !S.f.aboard); show('#hit-horse7q', !S.f.aboard);
   show('#hp-dhorse', !!S.f.aboard); show('#hit-horse7d', !!S.f.aboard);
@@ -145,6 +146,7 @@ Object.assign(H, {
   crates7(){ say(["Crates of supplies. Two of them are labelled 18 kg.", "Pippi says that's sweets for the voyage. Eighteen kilos each. \"In case we're becalmed.\""]); },
   net7(){ S.f.netTaken = true; give('net'); applyVisuals(); say("A fishing net, hanging on a hook in the hold. You take it. It might come in handy at sea."); },
   hold7(){ say(["The lower hold: barrels of salted fish, and a pile of heavy stones.", "The stones are ballast. They sit low down in the ship so she doesn't tip over in the wind."]); },
+  gulls7(){ gag('#hp-gulls', 'gag-flyup', 1400); gagText('Kee-ow!'); chord([1500, 1100, 1400], 110); },
   sky7(){
     if(S.f.water && !S.f.equator){
       if(has7('sextant')) return openSextant7();

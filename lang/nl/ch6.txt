@@ -1,6 +1,12 @@
 # Dutch translation: Chapter 6, Pippi gaat de lucht in (js/chapter6.js), and the little Saab 96 hidden in a few rooms.
 # De luchtballon, de brander, de mand, de gouden windhaan, de directeur, Kling en Klang, Donder-Karlsson en Blom.
 
+# silly clicks
+= Wild geese
+> Wilde ganzen
+= Honk honk!
+> Gak gak!
+
 # ---------- menus, end screen, labels ----------
 = Pippi's balloon ride
 > Pippi gaat de lucht in

@@ -103,6 +103,7 @@ Object.assign(H, {
     say("A tall coconut palm. Mr Nilsson is halfway up, hugging a coconut. Better not shake it too hard.");
   },
   parrot8(){
+    gag('#si-parrot', 'gag-hop', 1100); gagText('Squawk!'); chord([1800, 1300], 90);
     S.f.squawks = (S.f.squawks || 0) + 1; save();
     if(S.f.squawks >= 3){ S.ach.polly = true; save(); return say([['parrot', "Pluttification! Pluttification! Squawk!"], ['pippi', "I taught him that. He's much better at it than Miss."]]); }
     say([['parrot', S.f.chest ? "Treasure! Treasure! Squawk!" : "Squawk! Twelve paces! Twelve paces!"], "The king's parrot. It repeats everything it hears. Mostly the captain."]);

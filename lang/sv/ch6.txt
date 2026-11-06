@@ -1,6 +1,12 @@
 # Swedish translation: Chapter 6, Pippis ballongfärd (js/chapter6.js), and the little Saab 96 hidden in a few rooms.
 # Luftballongen, brännaren, korgen, den gyllene vindflöjeln, direktören, Kling och Klang, Dunder-Karlsson och Blom, Lilla Gubben.
 
+# silly clicks
+= Wild geese
+> Vildgäss
+= Honk honk!
+> Snatter snatter!
+
 # ---------- menus, end screen, labels ----------
 = Pippi's balloon ride
 > Pippis ballongfärd

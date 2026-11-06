@@ -63,6 +63,7 @@ function applyVoyage(){
 const has9 = id => S.inv.includes(id);
 Object.assign(H, {
   spunk9(){ S.f.spunkTaken = true; give('spunk'); applyVisuals(); say(["The spunk's jam jar, wedged between two coils of rope on the stern deck. The spunk is a good sailor.", "You take it. It doesn't seem to mind the waves."]); },
+  gulls9(){ gag('#vy-gullbox', 'gag-flyup', 1400); gagText('Kee-ow!'); chord([1500, 1100, 1400], 110); },
   sky9(){
     const leg = leg9();
     if(leg === 'storm') return say(["Black clouds, a howling wind, and rain coming sideways. The Hoppetossa is leaning over a long way.", ['annika', "Can't we make the ship lean less?"]]);

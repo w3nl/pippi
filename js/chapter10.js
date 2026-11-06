@@ -81,6 +81,7 @@ Object.assign(H, {
     if(!S.f.larder) return say([['nilsson', "Eek!"], "Mr Nilsson is polishing his bottle top. He's very glad to have it back."]);
     say([['nilsson', "Eek eek!"], "Mr Nilsson has raisins in both cheeks and one in each hand."]);
   },
+  swallows10(){ gag('#vh-swallowbox', 'gag-loop', 1200); gagText('Tswit tswit!'); chord([2400, 2800, 2600], 60); },
   bee10(){ gag('#vh-beebox', 'gag-loop', 1200); gagText('Bzzzz!'); beep(220, .5, 'sawtooth', .02); },
   bfly10(){ gag('#vh-bflybox', 'gag-flyup', 1400); gagText('Flutter!'); chord([1200, 1500], 120); },
   bush10(){

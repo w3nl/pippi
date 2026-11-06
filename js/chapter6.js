@@ -63,7 +63,7 @@ function applyBalloon(){
   show('#bl-ride', up && !f.dropped); show('#bl-caught', !!f.dropped && !f.cloud); show('#bl-cops3', !!f.cloud);
   show('#bl-feet', !f.dropped); show('#bl-cock', !!f.out6); show('#bl-crowd', !!f.cloud);
   const at = (id, on) => show('#hit-' + id, on);
-  ['house6', 'horse6', 'balloon6g', 'ringmaster6', 'nilsson6g', 'pippi6g', 'kids6g'].forEach(id => at(id, leg === 'ground'));
+  ['house6', 'horse6', 'balloon6g', 'ringmaster6', 'nilsson6g', 'pippi6g', 'kids6g', 'birds6'].forEach(id => at(id, leg === 'ground'));
   at('spunk6', leg === 'ground' && !f.spunkTaken); at('spunk6a', flying && !f.spunkTaken);
   ['balloon6a', 'burner6', 'kids6a', 'pippi6a', 'nilsson6a', 'basket6'].forEach(id => at(id, flying));
   at('town6', leg === 'town'); at('kite6', leg === 'town'); at('police6t', leg === 'town');
@@ -83,6 +83,8 @@ const has6 = id => S.inv.includes(id);
 Object.assign(H, {
   saab6(){ spotSaab(["Far below, a little red Saab 96 putters along the country road. From up here it looks like a ladybird.", ['pippi', "Hello down there! Ring-ding-ding-ding!"]]); },
   spunk6(){ S.f.spunkTaken = true; give('spunk'); applyVisuals(); say(["The spunk's jam jar. Pippi has brought it along, so that the spunk can see the world from above.", "You take it. A spunk has never flown before. It looks calm about it."]); },
+  geese6(){ gag('#bl-geesebox', 'gag-hop', 1100); gagText('Honk honk!'); chord([330, 300, 330, 300], 120); },
+  birds6(){ gag('#bl-sparrows', 'gag-flyup', 1400); gagText('Tweet tweet!'); chord([2200, 2600, 2300], 70); },
   sky6(){
     const leg = leg6();
     if(leg === 'cloud') return openCloud6();

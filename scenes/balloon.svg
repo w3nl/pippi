@@ -98,10 +98,10 @@
         <ellipse cx="620" cy="60" rx="54" ry="13" />
         <ellipse cx="604" cy="52" rx="26" ry="15" />
     </g>
-    <g class="bl-geese" fill="none" stroke="#2a3344" stroke-width="3" stroke-linecap="round">
+    <g id="bl-geesebox"><g class="bl-geese" fill="none" stroke="#2a3344" stroke-width="3" stroke-linecap="round">
         <path
             d="M0 0 q8 -6 16 0 q8 -6 16 0 M24 18 q8 -6 16 0 q8 -6 16 0 M48 36 q8 -6 16 0 q8 -6 16 0 M-24 18 q8 -6 16 0 q8 -6 16 0" />
-    </g>
+    </g></g>
 
     <!-- the world below the balloon: the town, the farms, the forest and the church on the hill (it
     slides past as you fly) -->
@@ -467,8 +467,8 @@
             <path d="M772 446 l28 -16 l28 16z" fill="#fff" />
             <rect x="784" y="474" width="32" height="4" fill="#5a3a1e" />
             <!-- two sparrows at the feeder -->
-            <g class="bl-peck"><ellipse cx="790" cy="468" rx="7" ry="5" fill="#8a6a4a" /><circle cx="784" cy="464" r="3.5" fill="#6b4a2a" /><path d="M780 464 l-4 1 l4 1z" fill="#e2b04a" /></g>
-            <g class="bl-peck b"><ellipse cx="810" cy="468" rx="7" ry="5" fill="#8a6a4a" /><circle cx="816" cy="464" r="3.5" fill="#6b4a2a" /><path d="M820 464 l4 1 l-4 1z" fill="#e2b04a" /></g>
+            <g id="bl-sparrows"><g class="bl-peck"><ellipse cx="790" cy="468" rx="7" ry="5" fill="#8a6a4a" /><circle cx="784" cy="464" r="3.5" fill="#6b4a2a" /><path d="M780 464 l-4 1 l4 1z" fill="#e2b04a" /></g>
+            <g class="bl-peck b"><ellipse cx="810" cy="468" rx="7" ry="5" fill="#8a6a4a" /><circle cx="816" cy="464" r="3.5" fill="#6b4a2a" /><path d="M820 464 l4 1 l-4 1z" fill="#e2b04a" /></g></g>
         </g>
         <!-- the circus balloon, still lying flat in the snow, with its basket on its side -->
         <g id="bl-flat">
@@ -652,6 +652,7 @@
     <g class="hits">
         <rect class="hit" fill="transparent" data-hs="sky6" data-label="The sky" x="0" y="0"
             width="1600" height="180" />
+        <g class="bl-geese"><rect class="hit" fill="transparent" data-hs="geese6" data-label="Wild geese" x="-34" y="-16" width="118" height="64" /></g>
         <rect class="hit" fill="transparent" data-hs="cloud6" data-label="The cloud" x="0" y="180"
             width="1600" height="720" id="hit-cloud6" />
         <rect class="hit" fill="transparent" data-hs="town6" data-label="The little town" x="0"
@@ -704,5 +705,6 @@
             width="24" height="26" id="hit-spunk6a" />
         <rect class="hit" fill="transparent" data-hs="basket6" data-label="The basket" x="486"
             y="476" width="148" height="76" id="hit-basket6" />
+        <rect class="hit" fill="transparent" data-hs="birds6" data-label="Sparrows" x="772" y="452" width="56" height="30" id="hit-birds6" />
     </g>
 </svg>

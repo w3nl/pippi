@@ -1,5 +1,9 @@
 # Dutch translation: Chapter 9, home again (js/chapter9.js).
 # Villa Kakelbont in de lente. Het paard, meneer Nilsson, de juf, Kling en Klang, kapitein Langkous ("Pippilotta").
+
+# silly clicks
+= Tswit tswit!
+> Tsjiep tsjiep!
 # De egel, de regenton, de hoefijzermagneet, jaarringen, wrijving, de regenboog, winterslaap.
 
 = A horseshoe magnet
