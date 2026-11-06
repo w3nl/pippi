@@ -24,8 +24,7 @@ function applyMove(){
   const sc = $('#sc-move'); if(!sc) return;
   const f = S.f, leg = leg0(), at0 = (id, on) => show('#hit-' + id, on);
   show('#mv-gateshut', !f.gate); show('#mv-gateopen', !!f.gate);
-  show('#mv-horse-road', leg === 'road'); show('#mv-horse-garden', leg === 'garden'); show('#mv-horse-veranda', leg === 'house');
-  show('#mv-pippi-road', leg === 'road'); show('#mv-pippi-garden', leg !== 'road');
+  sc.classList.toggle('mv-garden', leg === 'garden'); sc.classList.toggle('mv-house', leg === 'house');
   show('#mv-oilcan', !f.oilTaken);
   show('#mv-water', !!f.water); show('#mv-gush', !!f.water && !f.veranda);
   show('#mv-spunk', !f.spunkTaken);
@@ -44,6 +43,12 @@ function applyMove(){
   at('pippi0r', leg === 'road'); at('pippi0g', leg !== 'road');
   at('spunk0', !f.spunkTaken);
 }
+/* Pippi and the horse walk to their new place (css/chapter0.css); with Motion off they are simply there. */
+function walk0(cls, ms){
+  if(reducedMotion()) return;
+  const sc = $('#sc-move'); sc.classList.add(cls);
+  setTimeout(() => sc.classList.remove(cls), ms);
+}
 
 /* ---------- hotspot handlers ---------- */
 const has0 = id => S.inv.includes(id);
@@ -54,6 +59,24 @@ Object.assign(H, {
     say([['pippi', "Look! A little green beetle, in an old jam jar. I've just made up a new word: SPUNK. And this must be one!"], ['annika', "(from behind the hedge) What IS a spunk?"], ['pippi', "Nobody knows. That's what makes it so clever."], "You take the jar. The very first spunk looks at you wisely. It will help you, if you get stuck."]);
   },
   sky0(){ say("A blue summer sky over the little town. A perfect day for moving house."); },
+  birds0(){ document.querySelectorAll('#sc-move > .mv-birds').forEach(b => gag(b, 'mv-flurry', 1200)); gagText('Tweet tweet!'); chord([2200, 2600, 2300, 2800], 70); },
+  squirrel0(){
+    S.f.squirrel0 = (S.f.squirrel0 || 0) + 1;
+    gag('#mv-squirrel', 'mv-out', 1800); gagText('Chik-chik!'); chord([1500, 1300, 1500], 60);
+    if(S.f.squirrel0 === 3) say(['pippi', "That squirrel lives in MY oak now. It can stay, as long as it doesn't eat my lemonade."]);
+  },
+  blackbird0(){
+    S.f.blackbird0 = (S.f.blackbird0 || 0) + 1;
+    gag('#mv-blackbird', 'mv-hop', 1000); gagText('Tirra-lirra!'); chord([1600, 2000, 1800, 2400, 2100], 90);
+    if(S.f.blackbird0 === 3) say("A blackbird has built its nest on the cold chimney. Nobody has lit a fire in this house for years.");
+  },
+  bee0(){ gag('#mv-bee', 'mv-loop', 1200); gagText('Bzzzz!'); beep(220, .5, 'sawtooth', .02); },
+  bfly0(){ gag('#mv-flit' + (lastHit && lastHit.dataset.b || 1), 'mv-up', 1400); gagText('Flutter!'); chord([1200, 1500], 120); },
+  spider0(){
+    S.f.spider0 = (S.f.spider0 || 0) + 1;
+    gag('#mv-spiderbody', 'mv-wave', 1200); gagText('Hello!'); chord([900, 1100], 80);
+    if(S.f.spider0 === 3) say(['pippi', "Leave it be. It lived here first, and it catches the flies. Good morning, Mrs Spider!"]);
+  },
   town0(){ say(["The little town: red houses with smoking chimneys, and the road that leads to Villa Villekulla.", "The church is behind Villa Villekulla. To see its clock, you'd have to look out of a window at the back."]); },
   nextdoor0(){ say("A neat white house with a blue roof and a tidy garden. Everything there is straight. Everything here is crooked."); },
   oak0(){ say(["An enormous old oak at the bottom of the garden, with a hollow in its trunk.", ['pippi', "A hollow tree! Perfect for hiding lemonade in. Or letters. Or a monkey."]]); },
@@ -154,7 +177,7 @@ function openGate0(){
         if(st.r === 0){ st.r = 1; save(); fb.className = 'feedback good'; fb.textContent = tx('Drip, drip, drip. The oil creeps into the hinges. Creeeak… the gate moves a little.'); ask(); return; }
         take('oil0'); S.f.gate = true; S.gt0 = null; save(); chord([523, 659, 784, 1046]);
         fb.className = 'feedback good'; fb.textContent = tx('Rust is what iron turns into when water and air get at it for a long time. Oil keeps the water away, and helps the metal slide.');
-        setTimeout(() => { closeModal(); applyVisuals();
+        setTimeout(() => { closeModal(); applyVisuals(); walk0('mv-walkin', 5600);
           say(["The gate swings open without a squeak. Pippi, the horse and you march into the garden.", ['pippi', "Hello, garden! Hello, grass! Hello, old oak!"], "The horse stops at the old pump and sniffs it. It's thirsty after the long walk from the harbour."]); }, 2600);
       });
     };
@@ -220,7 +243,7 @@ function openVeranda0(){
         if(st.r === 0){ st.r = 1; save(); fb.className = 'feedback good'; fb.textContent = tx('About 400 kg: as heavy as thirteen Tommys! And 400 is less than 500, so the veranda can carry it.'); ask(); return; }
         S.f.veranda = true; S.vrd = null; save(); chord([523, 659, 784, 1046]);
         fb.className = 'feedback good'; fb.textContent = tx('430 kg: still less than 500. The veranda creaks, but it holds.');
-        setTimeout(() => { closeModal(); applyVisuals();
+        setTimeout(() => { closeModal(); applyVisuals(); walk0('mv-carry', 6200);
           say(["Pippi lifts the horse over her head, carries it up the steps and puts it down on the veranda. Then she climbs on its back, just to check.", ['pippi', "There! From now on, this is the horse's home."], "Pippi opens the front door with the big old key from Daddy's letter. Inside it's pitch dark: the shutters are nailed shut.", ['pippi', "I can't see a thing. We need some sunshine in there."]]); }, 2800);
       });
     };

@@ -1,5 +1,37 @@
 # Dutch translation: Chapter 0, Pippi moves in (js/chapter0.js, scenes/move.svg), and the title screen per chapter.
 
+# the animals you can click for fun
+= The hollow in the oak
+> Het gat in de eik
+= Birds
+> Vogels
+= A blackbird
+> Een merel
+= A spider
+> Een spin
+= A bumblebee
+> Een hommel
+= A butterfly
+> Een vlinder
+= Tweet tweet!
+> Tjilp tjilp!
+= Chik-chik!
+> Tsjak-tsjak!
+= Tirra-lirra!
+> Tiedelie-die!
+= Bzzzz!
+> Bzzzz!
+= Flutter!
+> Fladder!
+= Hello!
+> Hallo!
+= That squirrel lives in MY oak now. It can stay, as long as it doesn't eat my lemonade.
+> Dat eekhoorntje woont nu in MIJN eik. Het mag blijven, als het mijn limonade maar niet opeet.
+= A blackbird has built its nest on the cold chimney. Nobody has lit a fire in this house for years.
+> Een merel heeft zijn nest op de koude schoorsteen gebouwd. In dit huis heeft al jaren niemand de kachel aangestoken.
+= Leave it be. It lived here first, and it catches the flies. Good morning, Mrs Spider!
+> Laat maar zitten. Hij woonde hier het eerst, en hij vangt de vliegen. Goedemorgen, mevrouw Spin!
+
 = Pippi moves in
 > Pippi verhuist naar Villa Kakelbont
 = Chapter 0: Pippi moves in

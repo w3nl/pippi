@@ -30,6 +30,7 @@ test('Chapter 0: Pippi moves in to Villa Villekulla', async ({ page }) => {
   await expect(page.locator('#gate0-fb')).toHaveClass(/good/);
   await waitModalClosed(page);
   await expect(page.locator('#mv-gateopen')).toBeVisible();
+  await expect(page.locator('#sc-move')).toHaveClass(/mv-garden/);
 
   // 2. the dry pump: prime it, then air pressure pushes the water up
   await hs(page, 'pump0');
@@ -109,6 +110,26 @@ test('finishing Chapter 0 leads to Chapter 1, also through the front door', asyn
   await hs(page, 'door0');
   await expect(page.locator('#chap')).toHaveText('Chapter 1 · Locked In with Mr Nilsson');
   await expect(page.locator('#btn-ch1')).toBeAttached();
+});
+
+test('the animals on moving day react when you click them', async ({ page }) => {
+  await seed(page, { ch: 0, scene: 'move', f: { introDone: true } });
+  await expect(page.locator('#title')).not.toHaveClass(/loading/);
+  await page.evaluate(() => { document.querySelector('#title').hidden = true; applyVisuals(); });
+  expect(await page.evaluate(() => { lastHit = document.querySelector('[data-hs=bee0]'); H.bee0(); return document.querySelector('#mv-bee').classList.contains('mv-loop'); })).toBe(true);
+  await expect(page.locator('#sc-move .gag-txt').first()).toHaveText('Bzzzz!');
+  await expect(page.locator('#dialog')).toBeHidden();
+  for (const id of ['birds0', 'bfly0', 'blackbird0', 'spider0']) await hs(page, id);
+  for (let i = 0; i < 3; i++) await hs(page, 'squirrel0');
+  await expect(page.locator('#d-txt')).toContainText('lives in MY oak', { timeout: 5_000 });
+  await expect(page.locator('#d-who')).toHaveText('Pippi');
+  await skip(page);
+  // the gate opens: Pippi and the horse walk into the garden, then she carries it to the veranda
+  await page.evaluate(() => { S.f.gate = true; applyVisuals(); walk0('mv-walkin', 5600); });
+  await expect(page.locator('#sc-move')).toHaveClass(/mv-garden/);
+  await page.evaluate(() => { S.f.water = S.f.veranda = true; applyVisuals(); });
+  await expect(page.locator('#sc-move')).toHaveClass(/mv-house/);
+  await expect(page.locator('#sc-move')).not.toHaveClass(/mv-garden/);
 });
 
 test('the title screen tells the story of the saved chapter', async ({ page }) => {

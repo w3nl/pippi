@@ -48,6 +48,7 @@ const chord = (arr, gap=90) => arr.forEach((f,i)=>setTimeout(()=>beep(f,.14,'tri
 const WHO = { you:'You', sys:'Villa Villekulla', pippi:'Pippi', nilsson:'Mr Nilsson', horse:'The horse', spunk:'The spunk', tommy:'Tommy', annika:'Annika', karlsson:'Thunder-Karlsson', bloom:'Bloom', teacher:'Miss', ringmaster:'The ringmaster', clown:'The clown', strongman:'The strongman', seal:'The seal', captain:'Captain Longstocking', kling:'Kling', klang:'Klang', parrot:'The parrot' };
 let queue = [], typing = null, full = '', onDone = null, curLine = null;
 function say(lines, done){
+  if(Array.isArray(lines) && lines.length === 2 && typeof lines[1] === 'string' && lines[0] in WHO) lines = [lines];   // say(['pippi', 'Hello!'])
   queue = (Array.isArray(lines) ? lines : [lines]).map(l => typeof l === 'string' ? ['you', l] : l);
   onDone = done || null;
   next();
@@ -153,6 +154,26 @@ function visFlush(){
   all.forEach(([el, on]) => { if(on !== el._vis) visSet(el, on, !reducedMotion() && !!el.closest('.scene.on')); });
 }
 
+/* ---------- silly clicks ---------- */
+/* gag() turns a class on for a moment (a CSS animation, so Motion off stops it); gagText() floats a word
+   ("Bzzzz!") up from the hotspot that was just clicked. */
+let lastHit = null;
+function gag(el, cls, ms){
+  if(typeof el === 'string') el = $(el);
+  if(!el || el.classList.contains(cls)) return false;
+  el.classList.add(cls); setTimeout(() => el.classList.remove(cls), ms);
+  return true;
+}
+function gagText(text, el = lastHit){
+  const svg = el && el.ownerSVGElement; if(!svg) return;
+  const r = el.getBoundingClientRect(), pt = svg.createSVGPoint();
+  pt.x = r.x + r.width / 2; pt.y = r.y;
+  const p = pt.matrixTransform(svg.getScreenCTM().inverse());
+  const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+  t.setAttribute('x', p.x.toFixed(0)); t.setAttribute('y', p.y.toFixed(0)); t.setAttribute('class', 'gag-txt'); t.textContent = tx(text);
+  svg.appendChild(t); setTimeout(() => t.remove(), 1300);
+}
+
 /* ---------- scene visuals ---------- */
 function applyVisuals(){
   // a room you're only just walking into (or a new game) is drawn at once; changes you can watch are smooth
@@ -196,7 +217,7 @@ stage.addEventListener('click', e => {
   if(e.detail) h.blur();
   if(matchMedia('(hover: none)').matches) tip.hidden = true;
   beep(440,.03,'sine',.03);
-  const id = h.dataset.hs;
+  const id = h.dataset.hs; lastHit = h;
   if(sel){ const it = sel; sel = null; renderInv(); useItem(it, id); return; }
   (H[id] || (() => say("Nothing interesting. Which is unusual, in this house.")))();
 });
