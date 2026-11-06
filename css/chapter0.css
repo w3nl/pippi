@@ -34,7 +34,6 @@
 @keyframes mvSpider{0%,100%{transform:translateY(0)}50%{transform:translateY(-34px)}}
 @keyframes mvThread{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.55)}}
 @keyframes mvDust{0%,100%{transform:translate(0,0);opacity:.2}50%{transform:translate(-20px,-30px);opacity:.7}}
-@keyframes mvFlutter{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.7) skewY(6deg)}}
 @keyframes mvGlint{0%,100%{opacity:.2}50%{opacity:1}}
 
 #sc-move .mv-cloud.c{animation-duration:80s}
@@ -47,7 +46,6 @@
 #sc-move .mv-smoke .b{animation-delay:-1.3s}
 #sc-move .mv-smoke .c{animation-delay:-2.6s}
 #sc-move .mv-rays{transform-box:view-box;transform-origin:1460px 110px;animation:mvSpin 60s linear infinite}
-#sc-move .mv-pennant{transform-box:fill-box;transform-origin:0 50%;animation:mvFlutter 1.2s ease-in-out infinite}
 #sc-move .mv-sway{transform-box:view-box;transform-origin:362px 360px;animation:mvSway 6s ease-in-out infinite}
 #sc-move .mv-grass{transform-box:fill-box;transform-origin:50% 100%;animation:mvBend 4s ease-in-out infinite}
 #sc-move .mv-wander{animation:mvWander 10s ease-in-out infinite}

@@ -11,6 +11,7 @@
     <g id="mvPuff"><path d="M0 0 v18" stroke="#4f7a34" stroke-width="1.5"/><circle r="7" fill="#fffaf0" opacity=".85"/><circle r="1.6" fill="#c9b48a"/></g>
     <g id="mvTuft"><path d="M0 0 q-2 -10 -6 -14 M0 0 q0 -12 2 -18 M0 0 q3 -8 8 -12" stroke="#4f7a34" stroke-width="2" fill="none" stroke-linecap="round"/></g>
     <linearGradient id="mvBeamG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff3b0" stop-opacity=".85"/><stop offset="1" stop-color="#fff3b0" stop-opacity="0"/></linearGradient>
+    <clipPath id="mvWinClip"><rect x="884" y="344" width="112" height="112"/></clipPath>
     <clipPath id="mvHall"><rect x="740" y="280" width="790" height="410"/></clipPath>
     <!-- Pippi, standing: green dress, plaits sticking out, odd stockings, big shoes -->
     <g id="mvPippi">
@@ -63,11 +64,9 @@
   <path d="M424 406 l26 -18 l26 18z M476 398 l22 -16 l22 16z M636 402 l24 -18 l24 18z" fill="#5a3a2a"/>
   <g fill="#8a3a1a"><rect x="456" y="388" width="6" height="10"/><rect x="504" y="382" width="6" height="10"/><rect x="666" y="386" width="6" height="10"/></g>
   <g class="mv-smoke t" fill="#eef0f2" opacity=".8"><circle cx="459" cy="380" r="4"/><circle class="b" cx="462" cy="370" r="5"/><circle class="c" cx="466" cy="358" r="6"/></g>
-  <rect x="560" y="300" width="44" height="140" fill="#efe8dc"/>
-  <g fill="#5a5f66"><path d="M576 386 v-10 a6 6 0 0 1 12 0 v10z"/><path d="M572 440 v-18 a10 10 0 0 1 20 0 v18z"/></g>
-  <path d="M560 376 h44" stroke="#d4cbb8" stroke-width="3"/>
-  <path class="mv-pennant" d="M582 222 l18 4 l-18 4z" fill="#2f6fb0"/><path d="M554 302 L582 236 L610 302 Z" fill="#6a7f5a"/><path d="M582 236 v-16 M576 226 h12" stroke="#c9952a" stroke-width="3"/>
-  <circle cx="582" cy="340" r="15" fill="#fffaf0" stroke="#5a5f66" stroke-width="2.5"/><path d="M582 340 h11 M582 340 l-7 -5.5" stroke="#2b2118" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- the church is behind Villa Villekulla: you can only see it through the back window -->
+  <rect x="560" y="402" width="40" height="36" fill="#d9cdb8"/><path d="M556 404 l24 -18 l24 18z" fill="#5a3a2a"/>
+  <g fill="#fff3c0" stroke="#fffaf0" stroke-width="1.5"><rect x="566" y="410" width="9" height="9"/><rect x="585" y="410" width="9" height="9"/></g>
 
   <!-- Tommy and Annika's house next door, behind its hedge -->
   <g><rect x="166" y="276" width="20" height="44" fill="#a33a22"/><rect x="162" y="272" width="28" height="8" fill="#6b2a14"/>
@@ -168,7 +167,20 @@
     <g stroke="#f3efe3" stroke-width="1.5" fill="none" opacity=".9"><path d="M742 282 l60 0 M742 282 l0 60 M742 282 l46 46 M742 312 q16 -6 30 -30 M742 334 q30 -10 50 -52"/><path d="M1528 282 l-60 0 M1528 282 l0 60 M1528 282 l-46 46 M1528 312 q-16 -6 -30 -30"/></g>
     <!-- the window at the back: nailed-up shutters, then (once there's light) the church clock far away -->
     <g><rect x="880" y="340" width="120" height="120" fill="#bfe0ef" stroke="#fffaf0" stroke-width="6"/>
-      <g id="mv-view"><rect x="884" y="344" width="112" height="112" fill="#cfe9f8"/><rect x="928" y="370" width="24" height="90" fill="#efe8dc"/><path d="M924 372 L940 336 L956 372 Z" fill="#6a7f5a"/><circle cx="940" cy="392" r="9" fill="#fffaf0" stroke="#5a5f66" stroke-width="2"/><path d="M940 392 h7 M940 392 l-5 -4" stroke="#2b2118" stroke-width="2" stroke-linecap="round"/><path d="M884 440 H996" stroke="#9ccc6e" stroke-width="30"/></g>
+      <g id="mv-view"><g clip-path="url(#mvWinClip)">
+        <rect x="884" y="344" width="112" height="112" fill="url(#mvSky)"/>
+        <ellipse cx="910" cy="366" rx="16" ry="5" fill="#fffaf0" opacity=".85"/>
+        <path d="M884 418 Q930 404 996 412 V456 H884Z" fill="#b7c99a"/>
+        <rect x="958" y="378" width="16" height="46" fill="#efe8dc"/><path d="M955 380 L966 356 L977 380 Z" fill="#6a7f5a"/><path d="M966 356 v-6" stroke="#c9952a" stroke-width="1.5"/>
+        <circle cx="966" cy="389" r="5.5" fill="#fffaf0" stroke="#5a5f66" stroke-width="1.2"/><path d="M966 389 h4 M966 389 l-3 -2.4" stroke="#2b2118" stroke-width="1.2" stroke-linecap="round"/>
+        <g fill="#b0412a"><rect x="896" y="414" width="16" height="12"/><rect x="920" y="412" width="14" height="14"/><rect x="980" y="416" width="14" height="10"/></g>
+        <path d="M894 415 l10 -7 l10 7z M918 413 l9 -7 l9 7z M978 417 l9 -6 l9 6z" fill="#5a3a2a"/>
+        <g fill="#6f9450"><circle cx="944" cy="420" r="6"/><circle cx="888" cy="420" r="5"/></g>
+        <path d="M884 434 Q950 422 996 430 V456 H884Z" fill="#a9c47e"/>
+        <path d="M884 446 Q950 438 996 444 V456 H884Z" fill="#9cba62"/>
+      </g>
+      <path d="M940 344 V456 M884 400 H996" stroke="#fffaf0" stroke-width="4"/>
+      <path d="M890 380 L916 352 M896 392 L928 356" stroke="#fffaf0" stroke-width="2" opacity=".35" stroke-linecap="round"/></g>
       <g id="mv-shutters"><rect x="884" y="344" width="56" height="112" fill="#6b4423" stroke="#4e2a12" stroke-width="2"/><rect x="940" y="344" width="56" height="112" fill="#7a4a22" stroke="#4e2a12" stroke-width="2"/><path d="M880 380 L1000 420 M880 424 L1000 380" stroke="#4e2a12" stroke-width="6"/></g>
     </g>
     <!-- the moving boxes: in a heap, then stacked properly -->
@@ -269,7 +281,7 @@
   <!-- the hotspots -->
   <g id="mv-hits">
     <rect class="hit" fill="transparent" data-hs="sky0" data-label="The sky" x="0" y="0" width="680" height="220"/>
-    <rect class="hit" fill="transparent" data-hs="town0" data-label="The little town" x="420" y="220" width="280" height="230"/>
+    <rect class="hit" fill="transparent" data-hs="town0" data-label="The little town" x="420" y="370" width="280" height="80"/>
     <rect class="hit" fill="transparent" data-hs="nextdoor0" data-label="The house next door" x="30" y="260" width="200" height="200"/>
     <rect class="hit" fill="transparent" data-hs="oak0" data-label="The old oak" x="230" y="170" width="190" height="290"/>
     <rect class="hit" fill="transparent" data-hs="kids0" data-label="Somebody behind the hedge" x="270" y="440" width="80" height="44"/>

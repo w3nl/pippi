@@ -54,7 +54,7 @@ Object.assign(H, {
     say([['pippi', "Look! A little green beetle, in an old jam jar. I've just made up a new word: SPUNK. And this must be one!"], ['annika', "(from behind the hedge) What IS a spunk?"], ['pippi', "Nobody knows. That's what makes it so clever."], "You take the jar. The very first spunk looks at you wisely. It will help you, if you get stuck."]);
   },
   sky0(){ say("A blue summer sky over the little town. A perfect day for moving house."); },
-  town0(){ say(["The little town: red houses, a church with a clock, and the road that leads to Villa Villekulla.", "The church clock says a quarter past ten."]); },
+  town0(){ say(["The little town: red houses with smoking chimneys, and the road that leads to Villa Villekulla.", "The church is behind Villa Villekulla. To see its clock, you'd have to look out of a window at the back."]); },
   nextdoor0(){ say("A neat white house with a blue roof and a tidy garden. Everything there is straight. Everything here is crooked."); },
   oak0(){ say(["An enormous old oak at the bottom of the garden, with a hollow in its trunk.", ['pippi', "A hollow tree! Perfect for hiding lemonade in. Or letters. Or a monkey."]]); },
   kids0(){

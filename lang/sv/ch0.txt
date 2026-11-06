@@ -145,10 +145,10 @@
 > Du tar burken. Den allra första spunken tittar klokt på dig. Den hjälper dig om du kör fast.
 = A blue summer sky over the little town. A perfect day for moving house.
 > En blå sommarhimmel över den lilla staden. En perfekt dag att flytta.
-= The little town: red houses, a church with a clock, and the road that leads to Villa Villekulla.
-> Den lilla staden: röda hus, en kyrka med en klocka, och vägen som leder till Villa Villekulla.
-= The church clock says a quarter past ten.
-> Kyrkklockan är kvart över tio.
+= The little town: red houses with smoking chimneys, and the road that leads to Villa Villekulla.
+> Den lilla staden: röda hus med rykande skorstenar, och vägen som leder till Villa Villekulla.
+= The church is behind Villa Villekulla. To see its clock, you'd have to look out of a window at the back.
+> Kyrkan ligger bakom Villa Villekulla. För att se klockan måste du titta ut genom ett fönster på baksidan.
 = A neat white house with a blue roof and a tidy garden. Everything there is straight. Everything here is crooked.
 > Ett prydligt vitt hus med blått tak och en välskött trädgård. Där är allting rakt. Här är allting snett.
 = An enormous old oak at the bottom of the garden, with a hollow in its trunk.

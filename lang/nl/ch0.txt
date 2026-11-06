@@ -144,10 +144,10 @@
 > Je pakt het potje. De allereerste spunk kijkt je wijs aan. Hij helpt je als je vastzit.
 = A blue summer sky over the little town. A perfect day for moving house.
 > Een blauwe zomerlucht boven het stadje. Een perfecte dag om te verhuizen.
-= The little town: red houses, a church with a clock, and the road that leads to Villa Villekulla.
-> Het stadje: rode huizen, een kerk met een klok, en de weg naar Villa Kakelbont.
-= The church clock says a quarter past ten.
-> De kerkklok zegt kwart over tien.
+= The little town: red houses with smoking chimneys, and the road that leads to Villa Villekulla.
+> Het stadje: rode huizen met rokende schoorstenen, en de weg naar Villa Kakelbont.
+= The church is behind Villa Villekulla. To see its clock, you'd have to look out of a window at the back.
+> De kerk staat achter Villa Kakelbont. Om de klok te zien, moet je door een raam aan de achterkant kijken.
 = A neat white house with a blue roof and a tidy garden. Everything there is straight. Everything here is crooked.
 > Een keurig wit huis met een blauw dak en een nette tuin. Daar is alles recht. Hier is alles scheef.
 = An enormous old oak at the bottom of the garden, with a hollow in its trunk.
