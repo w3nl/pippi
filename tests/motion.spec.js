@@ -1,4 +1,4 @@
-// The Motion setting: auto (follows the device), on, off. Every moving part in the rooms is a CSS animation,
+// The Motion setting: on (the default), off, auto (follows the device). Every moving part in the rooms is a CSS animation,
 // so the kill-switch at the end of css/animations.css stops them all.
 const { test, expect } = require('@playwright/test');
 const { KEY, seed, skip } = require('./helpers');
@@ -7,24 +7,25 @@ const anim = (page, sel) => page.locator(sel).first().evaluate(e => getComputedS
 /* How many elements in the shown room are animating right now. */
 const moving = page => page.evaluate(() => [...document.querySelectorAll('.scene.on *')].filter(e => getComputedStyle(e).animationName !== 'none').length);
 
-test('devices that prefer reduced motion stand still, unless the player picks "Motion on"', async ({ page }) => {
+test('Motion is on by default, even on devices that prefer reduced motion; "Motion auto" follows the device', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await seed(page, { f: { introDone: true } });
   await page.locator('#btn-cont').click();
   await skip(page);
-  await expect(page.locator('#btn-motion')).toHaveText('Motion auto');
-  expect(await anim(page, '#vk-nilsson')).toBe('none');
-  expect(await moving(page)).toBe(0);
-
-  await page.locator('#btn-motion').click();
   await expect(page.locator('#btn-motion')).toHaveText('Motion on');
   await expect.poll(() => anim(page, '#vk-nilsson')).toBe('bob');
   expect(await anim(page, '#vk-ta .wave')).toBe('wave');
 
+  await page.locator('#btn-motion').click();   // off
+  await page.locator('#btn-motion').click();   // auto
+  await expect(page.locator('#btn-motion')).toHaveText('Motion auto');
+  await expect.poll(() => anim(page, '#vk-nilsson')).toBe('none');
+  expect(await moving(page)).toBe(0);
+
   // the choice is remembered
-  expect(await page.evaluate(KEY => localStorage.getItem(KEY + '-motion'), KEY)).toBe('on');
+  expect(await page.evaluate(KEY => localStorage.getItem(KEY + '-motion'), KEY)).toBe('auto');
   await page.reload();
-  await expect(page.locator('#btn-motion')).toHaveText('Motion on');
+  await expect(page.locator('#btn-motion')).toHaveText('Motion auto');
 });
 
 test('"Motion off" stops everything, in every room', async ({ page }) => {
@@ -39,7 +40,6 @@ test('"Motion off" stops everything, in every room', async ({ page }) => {
   expect(await anim(page, '#br-talight')).toBe('tablink');
   expect(await moving(page)).toBeGreaterThan(10);
 
-  await page.locator('#btn-motion').click();   // on
   await page.locator('#btn-motion').click();   // off
   await expect(page.locator('#btn-motion')).toHaveText('Motion off');
   await expect.poll(() => moving(page)).toBe(0);
@@ -254,7 +254,7 @@ test('things come and go smoothly: the horse trots off, the island grows; with M
   await page.evaluate(() => { S.f.out7 = true; applyVisuals(); });
   await expect(page.locator('#hp-isle')).toHaveClass(/hp-isle-in/);
   // Motion off: no fades, things just switch
-  await page.locator('#btn-motion').click(); await page.locator('#btn-motion').click();
+  await page.locator('#btn-motion').click();
   await expect(page.locator('#btn-motion')).toHaveText('Motion off');
   await page.evaluate(() => { S.f.out7 = false; applyVisuals(); });
   await expect(page.locator('#hp-isle')).toBeHidden();
