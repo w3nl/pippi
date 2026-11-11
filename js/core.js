@@ -7,8 +7,8 @@ const fresh = () => ({ v:1, ch:1, scene:'kitchen', f:{}, inv:[], hl:{}, hints:0,
 let S = fresh();
 let sel = null;
 let justGiven = null;   // the item that just went into your pockets: its slot pops (css/base.css .slot.pop)
-/* Motion: 'auto' follows the device's "reduce motion" setting; 'on' and 'off' override it. Saved per device. */
-let motionPref = (() => { try{ return localStorage.getItem(KEY + '-motion') || 'auto'; }catch(e){ return 'auto'; } })();
+/* Motion: 'on' (the default) and 'off' override the device; 'auto' follows its "reduce motion" setting. Saved per device. */
+let motionPref = (() => { try{ return localStorage.getItem(KEY + '-motion') || 'on'; }catch(e){ return 'on'; } })();
 const deviceReducesMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 function reducedMotion(){ return motionPref === 'off' || (motionPref === 'auto' && deviceReducesMotion()); }
 function applyMotion(){
