@@ -42,6 +42,10 @@ More chapters may follow. See [AGENTS.md](AGENTS.md).
 
 It's a Progressive Web App: install it from the game's **Install** button or your browser's menu (on iPhone: Share → Add to Home Screen). After the first visit it works offline. The version number is at the bottom of the title screen; when a new version is out, a bar offers to reload (your progress is kept).
 
+## Android app
+
+There is also an Android app for phones and tablets, with the game inside it (it works offline). Every change on `main` puts a new `villa-villekulla.apk` in the **android** release on GitHub; see [docs/android.md](docs/android.md) for how to install it. It is not in the Google Play Store: Pippi and her world belong to the rights holders (see *Rights* in that file).
+
 ## Saved progress
 
 Progress is saved in your browser after every step. Press **Continue** to carry on. **Scores** shows your best time, fewest hints, rank and achievements.
