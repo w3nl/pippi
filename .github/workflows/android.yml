@@ -1,0 +1,122 @@
+# Builds the Android app (phones and tablets) with the game inside it, so it works offline.
+# On main the app goes to the release "android", to install it on a phone (see docs/android.md).
+name: Build the Android app
+
+on:
+  push:
+    branches: [main]
+    paths: ["android/**", "index.html", "privacy.html", "css/**", "js/**", "lang/**", "scenes/**", "portraits/**", "icons/**", "tools/android-assets.js", ".github/workflows/android.yml"]
+  pull_request:
+    paths: ["android/**", "index.html", "privacy.html", "css/**", "js/**", "lang/**", "scenes/**", "portraits/**", "icons/**", "tools/android-assets.js", ".github/workflows/android.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: android-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build the Android app
+    runs-on: ubuntu-26.04
+    timeout-minutes: 30
+    env:
+      # With a fixed key in the secrets we also build the bundle for Google Play.
+      HAS_KEY: ${{ secrets.ANDROID_KEYSTORE_BASE64 != '' }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '25'
+
+      - uses: gradle/actions/setup-gradle@v6
+        with:
+          gradle-version: '9.9.1'
+
+      - name: Put the game in the app
+        run: |
+          # the Android SDK is already on the GitHub runner
+          echo "sdk.dir=$ANDROID_HOME" > android/local.properties
+          node tools/android-assets.js
+
+      - name: Fixed key (optional, so updates install over the old app and Google Play gets a signed bundle)
+        env:
+          KEYSTORE: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: |
+          if [ -z "$KEYSTORE" ]; then exit 0; fi
+          # Verdraagt regeleinden (ook Windows), spaties, de kop- en voetregels van certutil en URL-veilige base64.
+          CLEAN=$(printf '%s' "$KEYSTORE" | grep -v -- '-----' | tr -d ' \r\n\t' | tr '_-' '/+')
+          # De '=' of '==' aan het eind vallen bij het kopiëren vaak weg: vul ze aan (een echt afgekapte sleutel vangt keytool hieronder).
+          while [ $(( ${#CLEAN} % 4 )) -eq 2 ] || [ $(( ${#CLEAN} % 4 )) -eq 3 ]; do CLEAN="$CLEAN="; done
+          # Python in plaats van base64 -d: de base64 van Ubuntu 26.04 (uutils) is erg streng over de laatste tekens.
+          if ! printf '%s' "$CLEAN" | python3 -c 'import base64,sys; sys.stdout.buffer.write(base64.b64decode(sys.stdin.read()))' > android/keystore.jks 2> /dev/null; then
+            # Veilige details (geen inhoud): helpen zien wat er in het secret staat.
+            BAD=$(printf '%s' "$CLEAN" | tr -d 'A-Za-z0-9+/=' | wc -c)
+            echo "Het secret heeft ${#CLEAN} tekens (rest bij delen door 4: $(( ${#CLEAN} % 4 ))), waarvan $BAD niet in base64 horen."
+            if [ "${#CLEAN}" -lt 1000 ]; then echo "Dat is te kort voor een sleutelbestand (meestal 2500 tot 4000 tekens): staat er misschien de bestandsnaam, een pad of het wachtwoord in?"; fi
+            if [ "$BAD" -gt 0 ]; then echo "Er staan tekens in die niet in base64 horen: is er tekst of uitvoer van keytool mee geplakt?"; fi
+            if [ "$BAD" -eq 0 ] && [ $(( ${#CLEAN} % 4 )) -ne 0 ]; then echo "De lengte klopt niet: is de tekst bij het kopiëren afgekapt?"; fi
+            # Een '=' hoort alleen helemaal aan het eind; staat hij eerder, dan is er iets mee geplakt (bijv. "NAAM=" of de tekst twee keer).
+            EQ=$(printf '%s' "$CLEAN" | grep -ob '=' | cut -d: -f1 | awk -v n="${#CLEAN}" '$1 < n - 2 { printf "%s ", $1 + 1 }')
+            if [ -n "$EQ" ]; then echo "Er staat een '=' midden in de tekst (op positie $EQ van ${#CLEAN}). Staat de naam ervoor (ANDROID_KEYSTORE_BASE64=...), of is de tekst twee keer geplakt? Plak alleen de tekst zelf."; fi
+            echo "::error::ANDROID_KEYSTORE_BASE64 is geen geldige base64-tekst van pippi.jks. Maak hem opnieuw met de opdracht voor jouw computer in docs/android.md."
+            exit 1
+          fi
+          if ! KT=$(keytool -list -keystore android/keystore.jks -storepass "$ANDROID_KEYSTORE_PASSWORD" -alias pippi 2>&1); then
+            echo "keytool zegt: $(printf '%s' "$KT" | grep -v JAVA_TOOL_OPTIONS | tail -1)"
+            echo "Uitgepakt: $(wc -c < android/keystore.jks) bytes (een sleutel is meestal 2500 tot 2800 bytes)."
+            echo "::error::De sleutel opent niet. Bij 'password was incorrect': controleer ANDROID_KEYSTORE_PASSWORD. Bij 'alias does not exist': maak de sleutel met -alias pippi. Bij een andere melding is de tekst in ANDROID_KEYSTORE_BASE64 niet compleet: maak hem opnieuw (zie docs/android.md)."
+            exit 1
+          fi
+          echo "De sleutel is in orde."
+
+      - name: Build the app (.apk)
+        env:
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: |
+          gradle -p android assembleDebug --no-daemon
+          cp android/app/build/outputs/apk/debug/app-debug.apk villa-villekulla.apk
+
+      # For Google Play: a signed app bundle (.aab). Only with a fixed key in the secrets, because Google Play
+      # doesn't accept an unsigned bundle. Without a key we still build the release variant, so its errors (like lint)
+      # show up straight away; only with a key do we keep the bundle.
+      - name: Build the bundle for Google Play (.aab)
+        env:
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: |
+          gradle -p android bundleRelease --no-daemon
+          if [ "$HAS_KEY" = "true" ]; then cp android/app/build/outputs/bundle/release/app-release.aab villa-villekulla.aab; fi
+
+      - name: Note when there is no key
+        if: env.HAS_KEY != 'true'
+        run: |
+          echo "::notice::No .aab for Google Play: first set the secrets ANDROID_KEYSTORE_BASE64 and ANDROID_KEYSTORE_PASSWORD (see docs/android.md)."
+
+      - name: Keep the app
+        uses: actions/upload-artifact@v7
+        with:
+          name: villa-villekulla-android
+          path: |
+            villa-villekulla.apk
+            villa-villekulla.aab
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Put the app in the release "android"
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view android >/dev/null 2>&1 || gh release create android --title "Android app" --latest=false \
+            --notes "Villa Villekulla for Android phones and tablets. To install it, see docs/android.md."
+          gh release upload android villa-villekulla.apk --clobber
+          if [ -f villa-villekulla.aab ]; then gh release upload android villa-villekulla.aab --clobber; fi

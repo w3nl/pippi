@@ -153,3 +153,11 @@ vite.config.ts.timestamp-*
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# Android app (android/): build output, the copied game, the key and local settings
+/android/.gradle/
+/android/build/
+/android/app/build/
+/android/app/src/main/assets/
+/android/keystore.jks
+/android/local.properties

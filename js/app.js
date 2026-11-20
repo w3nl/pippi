@@ -282,7 +282,10 @@ function start(data){
   renderInv(); applyVisuals(); $('#timer').textContent = fmt(S.t);
 }
 /* ---------- installable app (PWA) ---------- */
-if('serviceWorker' in navigator && document.querySelector('link[rel="manifest"]') && /^https?:$/.test(location.protocol)){
+/* In the Android app (android/) the game is inside the app and loaded from appassets.androidplatform.net:
+   it is already installed and offline, so no service worker and no Install button there. */
+const IN_ANDROID_APP = location.hostname === 'appassets.androidplatform.net';
+if(!IN_ANDROID_APP && 'serviceWorker' in navigator && document.querySelector('link[rel="manifest"]') && /^https?:$/.test(location.protocol)){
   navigator.serviceWorker.addEventListener('message', e => { if(e.data && e.data.type === 'version') swVersion(e.data.cache); });
   navigator.serviceWorker.register('sw.js').catch(() => {});
   navigator.serviceWorker.ready.then(r => r.active && r.active.postMessage({ type: 'version?' })).catch(() => {});
@@ -295,9 +298,19 @@ function swVersion(cache){
 $('#btn-update').onclick = () => { save(); location.reload(); };
 $('#version').textContent = 'v' + GAME_VERSION;
 let installEvt = null;
-window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); installEvt = e; $('#btn-install').hidden = false; });
+window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); if(IN_ANDROID_APP) return; installEvt = e; $('#btn-install').hidden = false; });
 window.addEventListener('appinstalled', () => { installEvt = null; $('#btn-install').hidden = true; say(['pippi', "Installed! Now Villa Villekulla lives on your device. Mr Nilsson has already moved in."]); });
 $('#btn-install').onclick = async () => { if(!installEvt) return; installEvt.prompt(); try{ await installEvt.userChoice; }catch(e){} installEvt = null; $('#btn-install').hidden = true; };
 
 window.claude?.hot?.snapshot?.(() => S);
 window.claude?.hot?.ready ? window.claude.hot.ready(start) : start(window.claude?.hot?.data ?? null);
+
+/* ---------- the Android back button (android/, MainActivity) ----------
+   One step back: close a close-up, else go to the title screen. On the title screen it returns false,
+   and the app closes. */
+window.appBack = () => {
+  if(!$('#modal').hidden){ closeModal(); return true; }
+  if(!$('#title').hidden) return false;
+  $('#btn-menu').click();
+  return true;
+};

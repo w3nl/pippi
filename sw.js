@@ -1,10 +1,11 @@
 // Service worker for Villa Villekulla: makes the game installable and playable offline.
 // Bump CACHE when you change the game, so phones pick up the new version, and keep GAME_VERSION in js/boot.js
 // the same number (tests/pwa.spec.js checks). The page shows that number and offers a reload when a newer one arrives.
-const CACHE = 'pippi-villa-v21';
+const CACHE = 'pippi-villa-v22';
 const CORE = [
   './',
   './index.html',
+  './privacy.html',
   './manifest.webmanifest',
   './icons/icon.svg',
   './icons/icon-192.png',
